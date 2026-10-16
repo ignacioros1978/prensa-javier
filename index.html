@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prensa de Javier</title>
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icono-192.png">
+<link rel="apple-touch-icon" href="icono-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Quiosco de prensa en negro y amarillo: barra con Atrás y Hablar, cuadrícula de diarios, ficha de diario y noticia */
+:root{
+  color-scheme: dark;
+  --bg:#000000; --surface:#121008; --line:#5C4E14;
+  --fg:#FFD84D; --soft:#F2E3A6; --dim:#C9B76E; --mark:#4A3D0A; --ink:#000000; --live:#FF8A65;
+  --font:"Atkinson Hyperlegible","Verdana","Tahoma",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:19px;line-height:1.45;-webkit-text-size-adjust:100%;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible,a:focus-visible{outline:4px solid var(--fg);outline-offset:3px}
+[hidden]{display:none!important}
+
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--line)}
+.bar-in{max-width:860px;margin:0 auto;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));
+  display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pill{display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 18px;border-radius:999px;border:2px solid var(--fg);background:none;font-weight:700;font-size:1.05em;text-decoration:none}
+.pill.solid{background:var(--fg);color:var(--ink)}
+.pill svg{width:22px;height:22px;flex:none}
+.pill.live{background:var(--live);border-color:var(--live);color:var(--ink)}
+
+.wrap{max-width:860px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px));
+  display:flex;flex-direction:column;gap:18px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--line);padding-bottom:12px}
+.top h1{font-size:1.9em;line-height:1.1;margin:0}
+.top .date{color:var(--dim);font-size:.95em}
+
+.talk{display:flex;align-items:center;gap:16px;width:100%;text-align:left;background:var(--fg);color:var(--ink);border:0;border-radius:18px;padding:22px}
+.talk svg{width:48px;height:48px;flex:none}
+.talk b{display:block;font-size:1.6em;line-height:1.1}
+.talk small{display:block;font-size:.9em;margin-top:2px}
+.talk.live{background:var(--live)}
+.lead{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;background:var(--surface);border:2px solid var(--fg);border-radius:14px;padding:16px 20px;font-size:1.2em;font-weight:700}
+.lead small{font-weight:400;font-size:.75em;color:var(--dim)}
+
+.label{font-size:.85em;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:6px 0 -6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:118px;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px}
+.tile:active{border-color:var(--fg)}
+.mono{width:48px;height:48px;border-radius:50%;border:2px solid var(--fg);display:grid;place-items:center;font-weight:700;font-size:.85em}
+.tile .name{font-weight:700;font-size:1.1em;line-height:1.2}
+.tile .meta{font-size:.8em;color:var(--dim)}
+
+.paperhead{display:flex;align-items:center;gap:14px}
+.paperhead .mono{width:60px;height:60px;font-size:1em;flex:none}
+.paperhead h2{font-size:1.8em;margin:0;line-height:1.1}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:54px;padding:0 20px;border-radius:12px;border:2px solid var(--fg);background:none;font-weight:700;font-size:1em;text-decoration:none}
+.btn.solid{background:var(--fg);color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+.note{color:var(--dim);font-size:.95em;margin:0;max-width:60ch}
+
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.item{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;width:100%;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:14px 16px;font-size:1.08em;line-height:1.3;font-weight:700}
+.item .num{color:var(--dim);font-variant-numeric:tabular-nums;min-width:1.4em}
+.item .src{display:block;font-weight:400;font-size:.78em;color:var(--dim);margin-bottom:3px}
+.item.now{border-color:var(--fg)}
+
+.story h2{font-size:1.65em;line-height:1.2;margin:0;text-wrap:balance;border-radius:6px}
+.story h2.now{background:var(--mark)}
+.story .kicker{font-size:.85em;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:0 0 6px}
+.story .text{font-size:1.15em;line-height:1.65;color:var(--soft);max-width:62ch;margin:0}
+.story .text span{border-radius:4px}
+.story .text span.now{background:var(--mark);color:var(--fg)}
+.pager{display:flex;justify-content:space-between;gap:10px;border-top:2px solid var(--line);padding-top:14px}
+.speed{display:flex;align-items:center;gap:8px;color:var(--dim);font-size:.9em}
+.speed button{width:46px;height:46px;border-radius:10px;border:2px solid var(--line);background:none;font-weight:700;font-size:1.2em}
+.empty{padding:30px 0;color:var(--soft);font-size:1.1em}
+.heard{min-height:1.4em;color:var(--dim);font-size:.95em;margin:0;text-align:center}
+@media (max-width:420px){ .grid{grid-template-columns:1fr 1fr} .tile{min-height:104px} .top h1{font-size:1.6em} .talk b{font-size:1.4em} }
+@media (prefers-reduced-motion:reduce){ *{scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+
+<div class="bar" id="bar" hidden>
+  <div class="bar-in">
+    <button class="pill" type="button" id="backBtn" aria-label="Volver atrás">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Atrás</button>
+    <button class="pill solid" type="button" id="barTalk">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg><span>Hablar</span></button>
+  </div>
+</div>
+<main class="wrap" id="app"><p class="empty">Cargando las noticias…</p></main>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Diarios (los que tienen resumen vienen de noticias.json) ---------- */
+var CATALOGO = [
+  { id:"abc", nombre:"ABC", sigla:"ABC", web:"https://www.abc.es/", alias:["abc","a b c"] },
+  { id:"elmundo", nombre:"El Mundo", sigla:"EM", web:"https://www.elmundo.es/", alias:["el mundo","mundo"] },
+  { id:"larazon", nombre:"La Razón", sigla:"LR", web:"https://www.larazon.es/", alias:["la razon","razon"] },
+  { id:"ld", nombre:"Libertad Digital", sigla:"LD", web:"https://www.libertaddigital.com/", alias:["libertad digital","libertad"] },
+  { id:"ee", nombre:"El Español", sigla:"EE", web:"https://www.elespanol.com/", alias:["el espanol","espanol"] },
+  { id:"ed", nombre:"El Debate", sigla:"ED", web:"https://www.eldebate.com/", alias:["el debate","debate"] },
+  { id:"to", nombre:"The Objective", sigla:"TO", web:"https://theobjective.com/", alias:["the objective","objective","objetive","el objetivo","di objective"] },
+  { id:"ok", nombre:"OKDiario", sigla:"OK", web:"https://okdiario.com/", alias:["okdiario","ok diario","okey diario","o k diario"] },
+  { id:"ec", nombre:"El Confidencial", sigla:"EC", web:"https://www.elconfidencial.com/", alias:["el confidencial","confidencial"] },
+  { id:"edi", nombre:"elDiario.es", sigla:"eD", web:"https://www.eldiario.es/", alias:["eldiario","el diario es","el diario","eldiario es","diario es"] },
+  { id:"elpais", nombre:"El País", sigla:"EP", web:"https://elpais.com/", alias:["el pais","pais"] }
+];
+var NOMBRE = "Javier";
+
+var app = document.getElementById("app");
+var bar = document.getElementById("bar");
+var data = null, items = {}, byPaper = {};
+var screen = { name:"home" }, stack = [];
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ var d = document.createElement("div"); d.textContent = s == null ? "" : String(s); return d.innerHTML; }
+function lsGet(k, d){ try{ var v = localStorage.getItem(k); return v === null ? d : v; }catch(e){ return d; } }
+function lsSet(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
+function norm(s){ return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ\s]/g, " ").replace(/\s+/g, " ").trim(); }
+function paperInfo(id){ return CATALOGO.find(function(p){ return p.id === id; }); }
+
+/* ---------- Voz que lee ---------- */
+var synth = window.speechSynthesis || null, voice = null, rate = parseFloat(lsGet("rate","0.95")) || 0.95;
+var token = 0, speaking = false;
+function pickVoice(){
+  if (!synth) return;
+  var vs = synth.getVoices() || [];
+  var es = vs.filter(function(v){ return /^es[-_]ES/i.test(v.lang); });
+  voice = es.find(function(v){ return /(Google|Mónica|Monica|Marisol|Elvira|Alvaro|Álvaro|Jorge)/i.test(v.name); }) || es[0] ||
+          vs.find(function(v){ return /^es/i.test(v.lang); }) || null;
+}
+if (synth){ pickVoice(); try{ synth.onvoiceschanged = pickVoice; }catch(e){} }
+function sentences(text){
+  var out = [], cur = "";
+  for (var i = 0; i < text.length; i++){
+    var c = text[i]; cur += c;
+    if ((c === "." || c === "!" || c === "?") && (i + 1 >= text.length || /\s/.test(text[i+1]))){ if (cur.trim()) out.push(cur.trim()); cur = ""; }
+  }
+  if (cur.trim()) out.push(cur.trim());
+  return out;
+}
+function setListenLabel(){ var b = $("listenBtn"); if (b) b.querySelector("span").textContent = speaking ? "Parar" : (b.dataset.label || "Escuchar"); }
+function mark(i){
+  document.querySelectorAll("[data-s]").forEach(function(el){ el.classList.toggle("now", +el.dataset.s === i); });
+  if (i < 0) return;
+  var el = document.querySelector('[data-s="' + i + '"]');
+  if (el){ try{ el.scrollIntoView({ block:"center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }catch(e){} }
+}
+function stop(){ token++; if (synth) synth.cancel(); speaking = false; setListenLabel(); mark(-1); }
+function speak(chunks, marks, onEnd){
+  if (!synth){ if (onEnd) setTimeout(onEnd, 0); return; }
+  token++; var my = token, i = 0;
+  speaking = true; setListenLabel();
+  function next(){
+    if (my !== token) return;
+    if (i >= chunks.length){ speaking = false; setListenLabel(); mark(-1); if (onEnd) onEnd(); return; }
+    var u = new SpeechSynthesisUtterance(chunks[i]);
+    u.lang = "es-ES"; if (voice) u.voice = voice; u.rate = rate;
+    u.onstart = function(){ if (my === token && marks) mark(marks[i] == null ? -1 : marks[i]); };
+    u.onend = function(){ if (my === token){ i++; next(); } };
+    u.onerror = function(){ if (my === token){ i++; next(); } };
+    synth.speak(u);
+  }
+  if (synth.speaking || synth.pending){ synth.cancel(); setTimeout(next, 80); } else next();
+}
+function say(text, onEnd){ if (text) speak(sentences(text), null, onEnd); else if (onEnd) onEnd(); }
+
+/* ---------- Datos ---------- */
+function ingest(d){
+  data = d; items = {}; byPaper = {};
+  (d.diarios || []).forEach(function(p){
+    if (!paperInfo(p.id)) CATALOGO.push({ id:p.id, nombre:p.nombre, sigla:p.nombre.slice(0,2).toUpperCase(), web:"", alias:[norm(p.nombre)] });
+    byPaper[p.id] = (p.noticias || []).map(function(n){
+      var it = { id:n.id, titular:n.titular, resumen:n.resumen, url:n.url, diario:p.nombre, diarioId:p.id };
+      items[n.id] = it; return it;
+    });
+  });
+  if (screen.name === "story" && !items[screen.id]) screen = { name:"home" };
+}
+function load(first){
+  return fetch("noticias.json?t=" + Date.now(), { cache:"no-store" })
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(d){
+      var changed = !data || d.actualizado !== data.actualizado;
+      if (!changed) return;
+      if (speaking || V.on){ pendingData = d; return; }
+      ingest(d); render();
+    })
+    .catch(function(){ if (first){ app.innerHTML = '<p class="empty">No se han podido cargar las noticias. Comprueba la conexión a internet y vuelve a abrir la página.</p>'; } });
+}
+var pendingData = null;
+setInterval(function(){
+  if (pendingData && !speaking && !V.on){ ingest(pendingData); pendingData = null; render(); }
+}, 3000);
+setInterval(function(){ load(false); }, 10 * 60 * 1000);
+document.addEventListener("visibilitychange", function(){ if (!document.hidden) load(false); });
+
+function updatedText(){
+  if (!data) return "";
+  var t = "";
+  try{ var d = new Date(data.actualizado); if (!isNaN(d)) t = " · actualizado a las " + d.toLocaleTimeString("es-ES", { hour:"2-digit", minute:"2-digit" }); }catch(e){}
+  return (data.fechaTexto ? data.fechaTexto.charAt(0).toUpperCase() + data.fechaTexto.slice(1) : "") + t;
+}
+function portadaList(){ return ((data && data.portada) || []).map(function(id){ return items[id]; }).filter(Boolean); }
+function currentList(){
+  if (screen.name === "paper") return byPaper[screen.id] || [];
+  if (screen.name === "story"){ var n = items[screen.id]; return screen.from === "portada" ? portadaList() : (byPaper[n.diarioId] || []); }
+  return portadaList();
+}
+
+/* ---------- Pantallas ---------- */
+var ICON_EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>';
+var ICON_SPK = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>';
+var ICON_MIC = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg>';
+
+function same(a, b){ return a.name === b.name && a.id === b.id; }
+function go(s){
+  if (!same(s, screen)) stack.push(screen);
+  if (s.name === "home") stack = [];
+  screen = s; render(); window.scrollTo(0, 0);
+}
+function back(){ stop(); screen = stack.pop() || { name:"home" }; render(); window.scrollTo(0, 0); }
+
+function render(){
+  bar.hidden = screen.name === "home";
+  if (!data){ app.innerHTML = '<p class="empty">Cargando las noticias…</p>'; return; }
+  if (screen.name === "portada") renderList();
+  else if (screen.name === "paper") renderPaper(screen.id);
+  else if (screen.name === "story") renderStory(screen.id, screen.from);
+  else renderHome();
+  setPhase(V.phase);
+}
+function renderHome(){
+  var tiles = CATALOGO.map(function(p){
+    var n = (byPaper[p.id] || []).length;
+    return '<button class="tile" type="button" data-go-paper="' + esc(p.id) + '"><span class="mono" aria-hidden="true">' + esc(p.sigla) + '</span>' +
+           '<span><span class="name">' + esc(p.nombre) + '</span><br><span class="meta">' + (n ? n + " resúmenes" : "Su web") + '</span></span></button>';
+  }).join("");
+  app.innerHTML =
+    '<header class="top"><h1>Prensa</h1><span class="date">' + esc(updatedText()) + '</span></header>' +
+    '<button class="talk" type="button" id="homeTalk">' + ICON_MIC + '<span><b>Hablar</b><small>Pídeme un periódico o que te lea una noticia</small></span></button>' +
+    '<p class="heard" id="heard" aria-live="polite"></p>' +
+    '<button class="lead" type="button" data-go="portada">Lo más importante de hoy <small>' + portadaList().length + ' noticias</small></button>' +
+    '<p class="label">Elige un diario</p><div class="grid">' + tiles + '</div>';
+}
+function renderPaper(id){
+  var p = paperInfo(id) || { nombre:id, sigla:"", web:"" };
+  var list = byPaper[id] || [];
+  var html =
+    '<div class="paperhead"><span class="mono" aria-hidden="true">' + esc(p.sigla) + '</span><h2>' + esc(p.nombre) + '</h2></div>' +
+    '<p class="heard" id="heard" aria-live="polite"></p>' +
+    '<div class="actions">' +
+      (p.web ? '<a class="btn solid" href="' + esc(p.web) + '">' + ICON_EXT + 'Abrir el periódico</a>' : '') +
+      (list.length ? '<button class="btn" type="button" id="listenBtn" data-label="Escuchar los titulares">' + ICON_SPK + '<span>Escuchar los titulares</span></button>' : '') +
+    '</div>';
+  html += list.length
+    ? '<p class="label">Resumen de titulares · toca uno para leerlo</p>' + listHtml(list, false)
+    : '<p class="note">De este diario no hay resúmenes. Ábrelo con el botón de arriba para leerlo en su web.</p>';
+  html += '<p class="note">Para que te lea en voz alta una noticia de su web: ábrela y, en el menú ⋮ de Chrome, elige «Escuchar esta página».</p>';
+  app.innerHTML = html;
+}
+function renderList(){
+  app.innerHTML =
+    '<header class="top"><h1>Lo más importante</h1><span class="date">' + esc(updatedText()) + '</span></header>' +
+    '<p class="heard" id="heard" aria-live="polite"></p>' +
+    '<div class="actions"><button class="btn solid" type="button" id="listenBtn" data-label="Escuchar los titulares">' + ICON_SPK + '<span>Escuchar los titulares</span></button></div>' +
+    '<p class="label">Toca una noticia para leerla</p>' + listHtml(portadaList(), true);
+}
+function listHtml(list, withSrc){
+  return '<ol class="list">' + list.map(function(n, i){
+    return '<li><button class="item" type="button" data-s="' + (i + 1) + '" data-go-story="' + esc(n.id) + '"><span class="num">' + (i + 1) + '</span><span>' +
+      (withSrc ? '<span class="src">' + esc(n.diario) + '</span>' : '') + esc(n.titular) + '</span></button></li>';
+  }).join("") + '</ol>';
+}
+function renderStory(id, from){
+  var n = items[id]; if (!n){ screen = { name:"home" }; renderHome(); return; }
+  var list = from === "portada" ? portadaList() : (byPaper[n.diarioId] || []);
+  var pos = list.findIndex(function(x){ return x.id === id; });
+  var prev = list[pos - 1], next = list[pos + 1];
+  app.innerHTML =
+    '<article class="story"><p class="kicker">' + esc(n.diario) + (pos >= 0 ? ' · ' + (pos + 1) + ' de ' + list.length : '') + '</p>' +
+      '<h2 data-s="0">' + esc(n.titular) + '</h2></article>' +
+    '<p class="heard" id="heard" aria-live="polite"></p>' +
+    '<div class="actions"><button class="btn solid" type="button" id="listenBtn" data-label="Escuchar">' + ICON_SPK + '<span>Escuchar</span></button>' +
+      (n.url ? '<a class="btn" href="' + esc(n.url) + '">' + ICON_EXT + 'Noticia original</a>' : '') +
+      '<span class="speed">Voz <button type="button" data-rate="-0.1" aria-label="Más despacio">−</button><button type="button" data-rate="0.1" aria-label="Más rápido">+</button></span></div>' +
+    '<article class="story"><p class="text">' + sentences(n.resumen).map(function(s, i){ return '<span data-s="' + (i + 1) + '">' + esc(s) + '</span>'; }).join(" ") + '</p></article>' +
+    '<p class="note">Resumen preparado a partir de ' + esc(n.diario) + '.</p>' +
+    '<nav class="pager">' +
+      (prev ? '<button class="btn" type="button" data-go-story="' + esc(prev.id) + '" data-swap="1">← Anterior</button>' : '<span></span>') +
+      (next ? '<button class="btn" type="button" data-go-story="' + esc(next.id) + '" data-swap="1">Siguiente →</button>' : '<span></span>') +
+    '</nav>';
+}
+
+/* ---------- Lectura ---------- */
+function readStory(intro, onEnd){
+  var n = items[screen.id]; if (!n) return;
+  var chunks = [], marks = [];
+  if (intro){ chunks.push(intro); marks.push(-1); }
+  chunks.push(n.diario + ". " + n.titular + "."); marks.push(0);
+  sentences(n.resumen).forEach(function(s, i){ chunks.push(s); marks.push(i + 1); });
+  speak(chunks, marks, onEnd);
+}
+function readHeadlines(intro, onEnd){
+  var portada = screen.name === "portada";
+  var list = portada ? portadaList() : (byPaper[screen.id] || []);
+  var chunks = [intro || (portada ? "Lo más importante de hoy." : ((paperInfo(screen.id) || {}).nombre || "") + ".")], marks = [-1];
+  list.forEach(function(n, i){ chunks.push((i + 1) + ". " + (portada ? n.diario + ": " : "") + n.titular + "."); marks.push(i + 1); });
+  if (onEnd){ chunks.push("¿Cuál quieres que te lea? Dime el número o de qué trata."); marks.push(-1); }
+  speak(chunks, marks, onEnd);
+}
+function listen(){ if (speaking){ stop(); return; } if (screen.name === "story") readStory(); else readHeadlines(); }
+
+/* ---------- Hablar: micrófono directo ---------- */
+var SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+var V = { on:false, rec:null, misses:0, primed:false, phase:"", confirmWeb:null };
+function setPhase(txt){
+  V.phase = txt || "";
+  var label = V.on ? (V.phase || "Te escucho…") : "Hablar";
+  var h = document.querySelector("#homeTalk b"); if (h) h.textContent = label;
+  var hs = document.querySelector("#homeTalk small"); if (hs) hs.textContent = V.on ? "Toca para terminar" : "Pídeme un periódico o que te lea una noticia";
+  var hb = $("homeTalk"); if (hb) hb.classList.toggle("live", V.on);
+  var b = $("barTalk"); b.querySelector("span").textContent = label; b.classList.toggle("live", V.on);
+}
+function heard(t){ var h = $("heard"); if (h) h.textContent = t ? "«" + t + "»" : ""; }
+function greeting(){
+  var h = new Date().getHours();
+  return (h < 14 ? "Buenos días" : h < 21 ? "Buenas tardes" : "Buenas noches") + ", " + NOMBRE + ". ¿Qué quieres que te lea?";
+}
+function blockedErr(e){ return e && (e.error === "not-allowed" || e.error === "service-not-allowed" || e.error === "audio-capture"); }
+function noMic(){
+  V.on = false; setPhase("");
+  say("No puedo usar el micrófono. Revisa que Chrome tenga permiso para el micrófono en esta página.");
+}
+function startVoice(){
+  if (V.on){ endVoice(); return; }
+  stop();
+  if (!SR){ say("Este navegador no me deja escucharte. Abre la página en Chrome."); return; }
+  V.on = true; V.misses = 0; V.confirmWeb = null;
+  if (V.primed){ setPhase("Hablando…"); say(greeting(), listenOnce); return; }
+  // El micrófono se abre dentro del mismo toque para que Chrome pida permiso; luego se saluda y se escucha
+  setPhase("Un momento…");
+  var done = false;
+  function ready(){ if (done) return; done = true; V.primed = true; if (!V.on) return; setPhase("Hablando…"); say(greeting(), listenOnce); }
+  try{
+    var p = new SR(); p.lang = "es-ES";
+    p.onstart = function(){ try{ p.abort(); }catch(e){} ready(); };
+    p.onerror = function(e){ if (done || !blockedErr(e)) return; done = true; noMic(); };
+    p.onend = function(){ ready(); };
+    V.rec = p; p.start();
+  }catch(err){ noMic(); }
+}
+function endVoice(msg){
+  V.on = false; V.confirmWeb = null;
+  try{ V.rec && V.rec.abort(); }catch(e){}
+  V.rec = null; setPhase(""); heard("");
+  if (msg) say(msg); else stop();
+}
+function listenOnce(){
+  if (!V.on) return;
+  var got = "";
+  try{
+    var r = new SR();
+    r.lang = "es-ES"; r.interimResults = true; r.continuous = false; r.maxAlternatives = 1;
+    r.onresult = function(e){
+      var t = "";
+      for (var k = 0; k < e.results.length; k++){ t += e.results[k][0].transcript; if (e.results[k].isFinal) got = t; }
+      heard(t);
+    };
+    r.onerror = function(e){ if (blockedErr(e)) noMic(); };
+    r.onend = function(){
+      V.rec = null;
+      if (!V.on) return;
+      var t = got.trim();
+      if (t){ V.misses = 0; handle(t); return; }
+      V.misses++;
+      if (V.misses >= 2){ endVoice("Te dejo tranquilo. Toca Hablar cuando me necesites."); return; }
+      setPhase("Hablando…"); say("No te he oído. ¿Me lo repites?", listenOnce);
+    };
+    V.rec = r; r.start(); setPhase("Te escucho…");
+  }catch(err){ endVoice(); }
+}
+function reply(text, then){ setPhase("Hablando…"); say(text, then || listenOnce); }
+
+/* ---------- Entender lo que dice ---------- */
+var STOP = ("leeme lee leer la el los las de del noticia noticias sobre que habla hablan quiero oir escuchar dime cuentame me " +
+  "por favor una un uno en y a con eso esa ese lo le se al su sus hoy diario periodico pon ponme busca buscame dame algo " +
+  "mas acerca tema esta este va dice abre abreme hay").split(" ");
+var ORD = { primera:1, primero:1, uno:1, una:1, segunda:2, segundo:2, dos:2, tercera:3, tercero:3, tres:3, cuarta:4, cuarto:4, cuatro:4,
+  quinta:5, quinto:5, cinco:5, sexta:6, sexto:6, seis:6, septima:7, septimo:7, siete:7, octava:8, octavo:8, ocho:8,
+  novena:9, noveno:9, nueve:9, decima:10, decimo:10, diez:10, ultima:-1 };
+var ORD_WORDS = ["primera","primero","segunda","segundo","tercera","tercero","cuarta","cuarto","quinta","quinto","sexta","sexto","septima","septimo","octava","octavo","novena","noveno","decima","decimo","ultima"];
+
+function detectPaper(n){
+  var found = null, key = "", s = " " + n + " ";
+  CATALOGO.forEach(function(p){
+    (p.alias || []).forEach(function(k){ if (k && s.indexOf(" " + k + " ") >= 0 && k.length > key.length){ found = p; key = k; } });
+  });
+  return found ? { paper:found, key:key } : null;
+}
+function detectOrdinal(words){
+  for (var i = 0; i < words.length; i++){
+    var w = words[i];
+    if (/^\d{1,2}$/.test(w)) return parseInt(w, 10);
+    if (w === "numero" && words[i+1]){ var x = words[i+1]; if (/^\d+$/.test(x)) return +x; if (ORD[x]) return ORD[x]; }
+    if (ORD_WORDS.indexOf(w) >= 0) return ORD[w];
+  }
+  var m = (" " + words.join(" ") + " ").match(/ la (una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez) /);
+  return m ? ORD[m[1]] : 0;
+}
+function search(words, pool){
+  return pool.map(function(n){
+    var tw = norm(n.titular).split(" "), rw = norm(n.resumen).split(" "), s = 0;
+    words.forEach(function(w){
+      var stem = w.length > 5 ? w.slice(0, 5) : w;
+      var hit = function(x){ return x === w || (w.length > 4 && x.indexOf(stem) === 0); };
+      if (tw.some(hit)) s += 3; else if (rw.some(hit)) s += 1;
+    });
+    return { n:n, s:s };
+  }).sort(function(a, b){ return b.s - a.s; });
+}
+function openStory(id, intro){
+  var n = items[id];
+  var from = screen.name === "portada" || (screen.name === "story" && screen.from === "portada") ? "portada" : "paper";
+  if (from === "portada" && (data.portada || []).indexOf(id) < 0) from = "paper";
+  if (screen.name === "story") screen = { name:"story", id:id, from:from }; else go({ name:"story", id:id, from:from });
+  render(); window.scrollTo(0, 0);
+  setPhase("Hablando…");
+  readStory(intro, function(){ if (V.on){ say("¿Quieres otra noticia?", listenOnce); } });
+}
+function openWeb(p){
+  endVoice();
+  say("Abro " + p.nombre + ". Para volver, usa el botón de atrás del teléfono.", function(){ location.href = p.web; });
+}
+
+function handle(raw){
+  var n = norm(raw);
+  var has = function(re){ return re.test(" " + n + " "); };
+  heard(raw);
+
+  // Respuesta a "¿quieres que abra su web?"
+  if (V.confirmWeb){
+    var p0 = V.confirmWeb; V.confirmWeb = null;
+    if (has(/ (si|vale|claro|venga|de acuerdo|abrela|abrelo|por favor) /) && !has(/ no /)){ openWeb(p0); return; }
+    if (has(/ no /)){ reply("De acuerdo. ¿Qué más quieres?"); return; }
+  }
+
+  if (/^(gracias|muchas gracias|adios|hasta luego|nada|nada mas|ya esta|eso es todo|vale gracias|ya vale)$/.test(n) || has(/ (adios|hasta luego|eso es todo) /)){
+    endVoice("De nada, " + NOMBRE + ". Aquí estoy cuando me necesites."); return;
+  }
+  if (/^(para|parar|calla|callate|basta|silencio|stop)$/.test(n)){ stop(); setPhase("Te escucho…"); listenOnce(); return; }
+  if (has(/ (mas despacio|mas lento|despacio|lento) /)){ rate = Math.max(0.6, Math.round((rate - 0.1) * 100) / 100); lsSet("rate", rate); reply("Vale, más despacio."); return; }
+  if (has(/ (mas rapido|mas deprisa|rapido|deprisa) /)){ rate = Math.min(1.4, Math.round((rate + 0.1) * 100) / 100); lsSet("rate", rate); reply("Vale, más rápido."); return; }
+  if (has(/ (ayuda|que puedo decir|que puedo pedir|como funciona) /)){
+    reply("Puedes decirme: lo más importante. O el nombre de un periódico, como El Debate. O léeme la noticia de Ceuta. O la número dos. También siguiente, repite, atrás, o abre la web de El Mundo. Para terminar, di gracias."); return;
+  }
+  if (/^(atras|volver|vuelve|vuelve atras|ir atras)$/.test(n)){ back(); reply("Hecho."); return; }
+  if (/^(inicio|al inicio|pantalla de inicio|vuelve al inicio|principio)$/.test(n)){ stop(); go({ name:"home" }); reply("Estás en el inicio."); return; }
+  if (has(/ (repite|repitela|repitelo|otra vez|de nuevo) /)){
+    setPhase("Hablando…");
+    if (screen.name === "story") readStory(null, function(){ if (V.on) say("¿Quieres otra noticia?", listenOnce); });
+    else if (screen.name === "paper" || screen.name === "portada") readHeadlines(null, listenOnce);
+    else reply("¿Qué quieres que te repita?");
+    return;
+  }
+  if (has(/ (siguiente|la proxima|la otra|otra noticia|pasa a la siguiente) /) && screen.name === "story"){
+    var L = currentList(), i = L.findIndex(function(x){ return x.id === screen.id; });
+    if (L[i + 1]) openStory(L[i + 1].id); else reply("Era la última de esta lista. ¿Qué más quieres?");
+    return;
+  }
+  if (has(/ (anterior|la de antes) /) && screen.name === "story"){
+    var L2 = currentList(), j = L2.findIndex(function(x){ return x.id === screen.id; });
+    if (L2[j - 1]) openStory(L2[j - 1].id); else reply("Esta es la primera. ¿Qué más quieres?");
+    return;
+  }
+  if (has(/ (que periodicos|que diarios|cuales periodicos|cuales diarios) /)){
+    var con = CATALOGO.filter(function(p){ return (byPaper[p.id] || []).length; }).map(function(p){ return p.nombre; });
+    var sin = CATALOGO.filter(function(p){ return !(byPaper[p.id] || []).length; }).map(function(p){ return p.nombre; });
+    reply("Tengo resúmenes de " + con.join(", ") + ". De " + sin.join(", ") + " puedo abrirte su web. ¿Cuál quieres?"); return;
+  }
+  if (has(/ (cuantas noticias|cuantas hay) /)){
+    var total = Object.keys(items).length;
+    reply("Hoy tengo " + total + " noticias resumidas, y " + portadaList().length + " en lo más importante. ¿Quieres que te lea lo más importante?"); return;
+  }
+
+  var dp = detectPaper(n);
+  var wantsWeb = has(/ (web|pagina|portada de|periodico entero|en internet) /) && dp;
+  if (wantsWeb){ openWeb(dp.paper); return; }
+
+  var rest = dp ? (" " + n + " ").replace(" " + dp.key + " ", " ").trim() : n;
+  var words = rest.split(" ").filter(Boolean);
+  var ord = detectOrdinal(words);
+  var topic = words.filter(function(w){ return w.length > 2 && STOP.indexOf(w) < 0 && !ORD[w] && w !== "numero" && !/^\d+$/.test(w) &&
+    ["portada","principales","importante","importantes","titulares","periodicos","lista","resumen","resumeme","resume","mas"].indexOf(w) < 0; });
+
+  if (!dp && !topic.length && has(/ (lo mas importante|portada|principales|importantes|resumen|resumeme|titulares|noticias de hoy|que hay hoy) /)){
+    stop(); go({ name:"portada" }); setPhase("Hablando…"); readHeadlines("Lo más importante de hoy.", listenOnce); return;
+  }
+
+  if (ord){
+    if (dp && (byPaper[dp.paper.id] || []).length){ if (!(screen.name === "paper" && screen.id === dp.paper.id)) go({ name:"paper", id:dp.paper.id }); }
+    else if (screen.name !== "paper" && screen.name !== "story"){ go({ name:"portada" }); }
+    var LL = screen.name === "paper" ? (byPaper[screen.id] || []) : currentList();
+    var k = ord === -1 ? LL.length : ord;
+    if (k >= 1 && k <= LL.length) openStory(LL[k - 1].id); else reply("En esta lista solo hay " + LL.length + " noticias. ¿Cuál quieres?");
+    return;
+  }
+
+  if (dp && !topic.length){
+    stop();
+    if ((byPaper[dp.paper.id] || []).length){
+      go({ name:"paper", id:dp.paper.id }); setPhase("Hablando…");
+      readHeadlines(dp.paper.nombre + ". Hoy tengo " + byPaper[dp.paper.id].length + " noticias.", listenOnce);
+    } else {
+      go({ name:"paper", id:dp.paper.id });
+      V.confirmWeb = dp.paper;
+      reply("De " + dp.paper.nombre + " no tengo resúmenes. ¿Quieres que abra su web?");
+    }
+    return;
+  }
+
+  if (topic.length){
+    var pool = dp ? (byPaper[dp.paper.id] || []) : Object.keys(items).map(function(x){ return items[x]; });
+    var res = search(topic, pool);
+    if (res[0] && res[0].s > 0){ stop(); openStory(res[0].n.id, "Te leo esta."); return; }
+    reply("No encuentro esa noticia" + (dp ? " en " + dp.paper.nombre : "") + ". Puedes pedirme lo más importante, o un periódico."); return;
+  }
+
+  reply("No te he entendido. Puedes decir: lo más importante, el nombre de un periódico, o léeme la noticia de lo que quieras.");
+}
+
+/* ---------- Toques ---------- */
+$("backBtn").addEventListener("click", function(){ if (V.on) endVoice(); back(); });
+$("barTalk").addEventListener("click", startVoice);
+app.addEventListener("click", function(e){
+  var t = e.target.closest("button"); if (!t) return;
+  if (t.id === "homeTalk"){ startVoice(); return; }
+  if (V.on && t.id !== "listenBtn") endVoice();
+  if (t.id === "listenBtn"){ if (V.on) endVoice(); listen(); return; }
+  stop();
+  if (t.dataset.go === "portada") return go({ name:"portada" });
+  if (t.dataset.goPaper) return go({ name:"paper", id:t.dataset.goPaper });
+  if (t.dataset.goStory){
+    var from = screen.name === "story" ? screen.from : (screen.name === "portada" ? "portada" : "paper");
+    if (t.dataset.swap){ screen = { name:"story", id:t.dataset.goStory, from:from }; render(); window.scrollTo(0, 0); return; }
+    return go({ name:"story", id:t.dataset.goStory, from:from });
+  }
+  if (t.dataset.rate){
+    rate = Math.min(1.4, Math.max(0.6, Math.round((rate + parseFloat(t.dataset.rate)) * 100) / 100));
+    lsSet("rate", rate); say("Así leeré ahora.");
+  }
+});
+document.addEventListener("visibilitychange", function(){ if (document.hidden){ if (V.on) endVoice(); stop(); } });
+
+load(true);
+})();
+</script>
+</body>
+</html>
