@@ -48,10 +48,10 @@ button:focus-visible,a:focus-visible{outline:4px solid var(--fg);outline-offset:
 .talk small{display:block;font-size:.9em;margin-top:2px}
 .talk.live{background:var(--live)}
 .lead{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;text-align:left;background:var(--surface);border:2px solid var(--fg);border-radius:14px;padding:18px 20px;font-size:1.38em;font-weight:700}
-.lead small{font-weight:400;font-size:.8em;color:var(--dim)}
+.lead small{font-weight:400;font-size:.8em;white-space:nowrap;color:var(--dim)}
 
 .label{font-size:.98em;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:6px 0 -6px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(210px,calc(50% - 6px)),1fr));gap:12px}
 .tile{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:134px;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px}
 .tile:active{border-color:var(--fg)}
 .mono{width:56px;height:56px;border-radius:50%;border:2px solid var(--fg);display:grid;place-items:center;font-weight:700;font-size:.95em}
