@@ -1,17 +1,18 @@
 {
  "fecha": "2026-10-17",
  "fechaTexto": "sábado 17 de octubre",
- "actualizado": "2026-10-17T08:50:00+02:00",
+ "actualizado": "2026-10-17T14:35:00+02:00",
  "portada": [
-  "ld1",
-  "edi3",
+  "ee3",
+  "ld3",
+  "ed1",
   "to1",
-  "edi2",
-  "ed2",
-  "to2",
   "ee1",
-  "ok2",
-  "to3"
+  "ee2",
+  "edi2",
+  "ok3",
+  "ee4",
+  "ok4"
  ],
  "diarios": [
   {
@@ -20,21 +21,27 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Dimite Montse Mínguez, portavoz del PSOE, por los pisos de su pareja",
-     "resumen": "Montse Mínguez ha dejado la portavocía del PSOE y su puesto en la dirección federal del partido. Lo anunció el viernes en las redes sociales, diciendo que se va en paz consigo misma y que es lo mejor para el proyecto colectivo. Su salida llega tras la polémica por los negocios inmobiliarios de su pareja, cuya sociedad, según un reportaje, multiplicó su patrimonio en plena crisis de la vivienda. El contraste con el discurso que ella defendía sobre vivienda en el Congreso le valió duras críticas, también del Sindicato de Inquilinos. Según El País, además deja las listas electorales, aunque días antes había sido confirmada como cabeza de lista por Lérida. En su carta no menciona la polémica. El PSOE dice respetar su decisión y elogia su trayectoria.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-16/montse-minguez-dimite-arrastrada-por-la-polemica-de-los-pisos-de-su-pareja-7477454/"
+     "titular": "Feijóo pide desplegar la Armada en Ceuta y llamar a los embajadores",
+     "resumen": "El presidente del Partido Popular, Alberto Núñez Feijóo, ha exigido este viernes al Gobierno que despliegue la Armada en la zona de Ceuta. También pide convocar a la embajadora de Marruecos y llamar a consultas al embajador español en Rabat. Reacciona así a una exclusiva de Libertad Digital. Según este diario, el Gobierno habría ocultado una nueva entrada de buques marroquíes en aguas españolas el siete de septiembre. La dirección del Partido Popular asegura que esos barcos penetraron en aguas españolas al menos en tres ocasiones, y lo califica de asunto muy grave. Feijóo acusa además a Pedro Sánchez de ser dócil y sumiso con Marruecos. La jueza Tardón, que investiga lo ocurrido, ya dispone de informes del servicio de inteligencia. El artículo no recoge la respuesta del Gobierno. Feijóo tenía previsto dedicar el día a medidas de vivienda, pero el asunto de Ceuta pasó a ocupar el primer plano.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-16/feijoo-exige-desplegar-al-ejercito-y-convocar-a-los-embajadores-tras-incursion-de-marruecos-en-ceuta-desvelada-por-ld-7476970/"
     },
     {
      "id": "ld2",
-     "titular": "El CNI concluye que la pasividad de Marruecos permitió la entrada masiva en Ceuta",
-     "resumen": "Según publica Libertad Digital, el Centro Nacional de Inteligencia ha entregado a la jueza de la Audiencia Nacional que investiga la entrada masiva en Ceuta un informe en el que sostiene que las autoridades marroquíes sabían con antelación lo que iba a pasar. Días antes habían decidido reforzar su dispositivo, pero su actuación fue irregular. Hasta la víspera interceptaban a buena parte de los nadadores, pero cuando creció el número de personas, el despliegue se quedó corto y la pasividad lo desbordó. El informe añade que no hubo reacción cuando se perdió el control, y que Marruecos conocía las convocatorias en redes sociales coincidiendo con la Fiesta del Trono. Feijóo ha pedido desplegar el Ejército y convocar a los embajadores.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cni-senala-que-la-pasividad-de-marruecos-permitio-la-invasion-de-ceuta-y-que-eran-plenamente-conscientes-7477471/"
+     "titular": "Dimite Montse Mínguez, portavoz del PSOE, por los pisos de su pareja",
+     "resumen": "Montse Mínguez ha dejado la portavocía del Partido Socialista y su puesto en la dirección federal. Lo anunció el viernes en las redes sociales, diciendo que se marcha con la conciencia tranquila y la cabeza alta. Su salida llega pocos días después de conocerse los negocios inmobiliarios de su pareja. Según Libertad Digital, esas prácticas chocaban con el discurso sobre vivienda que ella defendió en el Congreso. Una sociedad inmobiliaria de su pareja habría multiplicado su patrimonio por dos y medio durante la crisis de la vivienda. El partido la había confirmado hace unos días como número uno por Lérida. Mínguez no menciona la polémica en su mensaje y habla de la ultraderecha y de los avances sociales. El Partido Socialista dijo respetar su decisión y elogió su coherencia. El Sindicato de Inquilinos criticó con dureza la hipocresía del partido.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-16/montse-minguez-dimite-arrastrada-por-la-polemica-de-los-pisos-de-su-pareja-7477454/"
     },
     {
      "id": "ld3",
-     "titular": "El presunto cerebro económico del caso Plus Ultra niega irregularidades ante el juez",
-     "resumen": "Simon Verhoeven, señalado como cerebro económico de la presunta trama de blanqueo ligada a la aerolínea Plus Ultra, declaró unas tres horas ante el juez de la Audiencia Nacional que investiga el rescate de la compañía. Según fuentes presentes, aseguró que prestó dos coma un millones de euros a la aerolínea sin saber que el Gobierno la iba a rescatar, y negó cualquier irregularidad. Su defensa alega que el mismo caso ya se investiga en Suiza, donde está imputado, y que no debería responder también en España. Explicó que sus empresas compran y venden oro, y dijo conocer solo a Felipe Baca, que le presentó a la aerolínea. Negó conocer a Zapatero y a los dueños de Plus Ultra. La declaración fue difícil porque el intérprete no dominaba la jerga jurídica.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cerebro-economico-de-la-trama-plus-ultra-intentara-salvarse-aludiendo-a-otra-investigacion-en-suiza-7477203/"
+     "titular": "El servicio de inteligencia avisó al Gobierno y a Marruecos antes de la entrada en Ceuta",
+     "resumen": "Según Libertad Digital, el Centro Nacional de Inteligencia ha entregado a la jueza María Tardón un informe que acredita que alertó de lo que iba a ocurrir en Ceuta. Los avisos habrían llegado al Ministerio del Interior, a la Delegación del Gobierno y a los servicios secretos de Marruecos. Los días treinta y treinta y uno de julio, miles de personas cruzaron la frontera terrestre, mientras buques de guerra marroquíes entraban en aguas españolas. El diario cita fuentes anónimas del caso que afirman que las advertencias se desoyeron de forma negligente. El exjefe de gabinete de la Delegación del Gobierno, Gonzalo Sanz, declaró como testigo y menciona diecinueve mensajes y una llamada con el servicio de inteligencia. Feijóo exige desplegar al Ejército, y Ayuso critica la actitud del Gobierno. El artículo no recoge la respuesta del Ejecutivo.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cni-acredita-en-un-informe-remitido-a-la-juez-tardon-que-alerto-al-gobierno-y-a-marruecos-de-la-invasion-de-ceuta-7476611/"
+    },
+    {
+     "id": "ld4",
+     "titular": "Ayuso cierra la estación de Metro de Sol por la acampada",
+     "resumen": "La presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, ha anunciado el cierre urgente de la estación de Metro de Sol. Lo dijo el viernes en una entrevista en la radio con Federico Jiménez Losantos. Según Ayuso, el cierre es inmediato y durará al menos hasta terminar los trabajos de limpieza y seguridad. Asegura que Prevención de Riesgos Laborales y los sindicatos lo habían pedido, y que dentro hay condiciones de insalubridad. La acampada en la Puerta del Sol lleva casi tres semanas y la impulsan grupos de izquierda, entre ellos el Sindicato de Inquilinas. Ayuso advirtió de que perjudicará al comercio del centro en plena campaña de Navidad. Llamó mamarrachos a los acampados. El Sindicato de Inquilinas la acusa de criminalizar la protesta. No se ha dado fecha de reapertura.",
+     "url": "https://www.libertaddigital.com/madrid/2026-10-16/ayuso-anuncia-el-cierre-urgente-de-la-estacion-de-sol-por-las-condiciones-de-insalubridad-7477105/"
     }
    ]
   },
@@ -44,21 +51,27 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Feijóo pide desplegar la Armada y llamar a consultas al embajador en Rabat",
-     "resumen": "El líder del PP, Alberto Núñez Feijóo, ha pedido al Gobierno que despliegue la Armada en Ceuta, llame a consultas al embajador español en Rabat y convoque a la embajadora de Marruecos. También exige explicaciones de alto nivel a Marruecos e información a los ciudadanos. Lo hizo tras conocerse dos episodios de buques marroquíes en aguas españolas: el de finales de julio, durante la llegada de más de 80.000 personas a Ceuta, y el de esta semana, cuando una patrullera estuvo siete horas en la bahía sur tras la visita de los Reyes. El Gobierno sostiene que no informó porque fue un hecho aislado, resuelto con normalidad entre vecinos, y la portavoz Elma Saiz lo repitió varias veces. Feijóo cree que son incursiones repetidas que exigen una respuesta firme.",
-     "url": "https://www.elespanol.com/espana/politica/20261016/feijoo-pide-desplegar-armada-llamar-embajador-rabat-consultas-reiteradas-agresiones-marroquies/1003744422277_0.html"
+     "titular": "La campaña contra los fondos buitre se vuelve contra el PSOE",
+     "resumen": "Montse Mínguez ha dimitido como portavoz del Partido Socialista y renuncia a encabezar la lista por Lérida en las elecciones generales. Todo ocurre tras conocerse la actividad inmobiliaria de su pareja, Sergi Vélez, al frente de la empresa Nest Capital. Según El Español, ese grupo tiene unos treinta pisos en alquiler, y Mínguez, siendo concejal, participó en una decisión que favoreció a la empresa. Pedro Sánchez y la cúpula del partido intentaron evitar su salida. Los socialistas la atribuyen a razones personales y al acoso a los políticos. Sánchez habló de una cacería y de un clima de odio. El caso choca con el discurso del Gobierno contra la especulación a pocas semanas de las elecciones del 29 de noviembre. El Sindicato de Inquilinas acusó al partido de ser rentista. Rebeca Torró será la nueva portavoz.",
+     "url": "https://www.elespanol.com/espana/politica/20261017/campana-fondos-buitre-vuelve-psoe-tumba-montse-minguez-sanchez-intento-siguiera/1003744423598_0.html"
     },
     {
      "id": "ee2",
-     "titular": "El Gobierno no llevó al Consejo de Seguridad Nacional la entrada de buques marroquíes en Ceuta",
-     "resumen": "Según El Español, el Gobierno dejó fuera de la reunión extraordinaria del Consejo de Seguridad Nacional del 25 de agosto la incursión de la Marina marroquí en aguas de Ceuta. Esa reunión se celebró casi un mes después de que unas 80.000 personas entraran de forma ilegal en la ciudad. Fuentes militares y del Gobierno citadas por el diario aseguran que ni el jefe del Estado Mayor de la Defensa ni la ministra Robles mencionaron que una fragata marroquí estuvo en aguas españolas el 30 y el 31 de julio. Tampoco lo citaron Sánchez ni Marlaska en el Congreso, ni aparece en los documentos desclasificados. El ministro Bolaños defendió ese silencio por tratarse de asuntos reservados. Las fuentes, que no se identifican, creen que la omisión fue deliberada y que la maniobra marroquí fue una provocación.",
-     "url": "https://www.elespanol.com/espana/20261016/gobierno-decidio-excluir-reunion-consejo-seguridad-nacional-intrusion-marina-marroqui-ceuta/1003744421545_0.html"
+     "titular": "Un vídeo muestra la tensión entre Policía y Guardia Civil en Ceuta",
+     "resumen": "El Español publica un vídeo que muestra la tensión entre mandos de la Policía Nacional y de la Guardia Civil durante la entrada masiva en Ceuta del treinta de julio. Según el diario, la falta de agentes y de instrucciones claras de Interior dejó a los guardias desbordados ante más de ochenta mil personas. Cientos de migrantes llegaron a un recinto aduanero en suelo español. El mando policial quería devolverlos por la fuerza, pero la Guardia Civil abrió la cancela para evitar muertes por aplastamiento. Varias fuentes sostienen que la orden llegó del Gobierno. Un sindicato de guardias civiles denuncia que solo había seis agentes de Extranjería y doce antidisturbios para todo el Tarajal. El ministro Grande-Marlaska anunció que ampliará el espigón del Tarajal, una obra que ese sindicato reclama desde 2014.",
+     "url": "https://www.elespanol.com/espana/politica/20261017/video-verguenza-policia-intento-evitar-asalto-ceuta-guardia-civil-abrio-verja-orden-gobierno/1003744423431_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Malestar en el Ejército con Robles: las asociaciones militares se sienten abandonadas",
-     "resumen": "Cuatro asociaciones profesionales de militares critican con dureza a la ministra de Defensa, Margarita Robles, justo cuando va a ser la número dos de la lista del PSOE por Madrid. Su principal queja es la gestión de la crisis de Ceuta de finales de julio. Dicen que los soldados desplegados allí están desamparados, con problemas de alojamiento y comida, vacaciones cortadas y horas sin pagar. También reprochan que Defensa llevara a los tribunales las acusaciones contra militares basadas en un informe de una ONG sin investigar antes internamente. Además reclaman mejores sueldos: una de ellas cifra la subida recibida en unos 200 euros brutos, frente a los 800 que pedía. Una de las asociaciones, AUME, reconoce que al menos la ministra defiende públicamente a las Fuerzas Armadas.",
-     "url": "https://www.elespanol.com/espana/20261016/indignacion-ejercito-robles-aval-sanchez-amnistia-cloaca-corrupcion-asalto-ceuta/1003744422075_0.html"
+     "titular": "Líderes europeos critican a Sánchez por Ceuta y la regularización",
+     "resumen": "Pedro Sánchez afrontó el viernes en Bruselas un duro debate sobre migración en el Consejo Europeo. Varios líderes criticaron la regularización masiva de inmigrantes aprobada este año, que, según ellos, produjo un efecto llamada y favoreció lo ocurrido en Ceuta. La primera ministra danesa, Mette Frederiksen, pidió a la Comisión Europea que investigue si la medida respeta las normas comunitarias. El canciller austriaco la calificó de mala señal. Dinamarca, Italia y Polonia presentaron una enmienda para endurecer la política migratoria, apoyada por dieciocho países, pero no prosperó porque exigía unanimidad. Sánchez se opuso, con el respaldo de Francia, Portugal y Luxemburgo. Solo Emmanuel Macron lo defendió en público. Sánchez dijo que España aplica una política muy responsable y celebró que las conclusiones mencionen a Ceuta y Melilla con muestras de solidaridad.",
+     "url": "https://www.elespanol.com/mundo/europa/20261017/lideres-ue-acorralan-sanchez-crisis-ceuta-mando-mala-senal-regularizacion-masiva/1003744423639_0.html"
+    },
+    {
+     "id": "ee4",
+     "titular": "Trump levanta varias sanciones a Rusia",
+     "resumen": "El presidente de Estados Unidos, Donald Trump, ha suspendido un amplio paquete de sanciones contra Rusia, alegando el interés nacional. La medida afecta a una ley que él mismo había promulgado el dieciocho de septiembre y que buscaba limitar los recursos que financian la guerra de Ucrania. La orden exime a personas y entidades vinculadas al Gobierno ruso, suspende restricciones financieras y comerciales y levanta aranceles. Seguirá vigente hasta que Trump o el secretario de Estado decidan nuevas medidas. Otras sanciones contra Rusia siguen en vigor. El giro llega tras permitir, el nueve de octubre, operaciones con diésel ruso hasta abril de dos mil veintisiete para aliviar los precios de la energía. Republicanos y demócratas han criticado la decisión. La Casa Blanca la defiende como necesaria para contener los costes. Los líderes europeos rechazan relajar las sanciones.",
+     "url": "https://www.elespanol.com/mundo/america/eeuu/20261017/trump-levanta-varias-sanciones-rusia-guerra-ucrania-nombre-interes-nacional-estadounidense/1003744423930_0.html"
     }
    ]
   },
@@ -68,21 +81,27 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El Debate calcula que la ley de nietos podría dar al PSOE diez escaños más",
-     "resumen": "Según un análisis de El Debate, el fuerte aumento del censo de españoles residentes en el extranjero desde la ley de nietos podría dar al PSOE hasta diez escaños más en las elecciones generales. Con sus cálculos, el PP perdería siete, entre ellos uno en Madrid, Junts dos en Cataluña y el BNG uno en Galicia. Así, el PSOE pasaría de 121 a 131 diputados, uno más que el PP. El periódico recuerda que en Madrid los socialistas se quedaron a unos 4.000 votos de un escaño en 2023, y que el censo exterior de la provincia ha crecido en más de 118.000 inscritos. El Gobierno sostiene que el efecto de ese voto es marginal. El propio artículo advierte de que las cifras no distinguen a los nacionalizados por esta ley de otros inscritos.",
-     "url": "https://www.eldebate.com/espana/20261017/psoe-tendria-alcance-arrebatar-diez-escanos-aumento-censo-ley-nietos_470387.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "El Defensor del Pueblo recurre al Constitucional para que voten los nacionalizados por la ley de nietos",
-     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, ha presentado un recurso de amparo ante el Tribunal Constitucional contra la decisión del Supremo de suspender el voto de los nacionalizados por la ley de nietos. Pide medidas urgentes para que el censo no quede bloqueado de cara a las elecciones del 29 de noviembre. El Supremo mantuvo la suspensión para unas 163.000 personas inscritas en el censo de residentes en el extranjero, y solo podrán votar los que su consulado acredite como descendientes de exiliados. Gabilondo defiende que cualquier español tiene derecho a votar y que la nacionalidad no puede darse y quitarse según el momento. El Debate recuerda que Gabilondo fue candidato socialista. Mientras tanto, la Junta Electoral ha ordenado enviar las papeletas, aunque esos votos no valdrán si no cumplen lo que exige el Supremo.",
+     "titular": "El Defensor del Pueblo recurre ante el Constitucional el veto al voto de los nietos",
+     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, presentó el viernes un recurso ante el Tribunal Constitucional contra la decisión del Tribunal Supremo sobre la ley de nietos. El Supremo suspendió el voto de parte de los nuevos españoles nacionalizados con esa ley. Gabilondo pide medidas urgentes para que puedan votar el 29 de noviembre. La suspensión afecta, según datos del Gobierno, a ciento sesenta y tres mil veinte inscritos en el censo de residentes en el extranjero. Solo podrán votar quienes sus consulados acrediten como descendientes directos de exiliados políticos. Fiscales y abogados del Estado advirtieron de que es materialmente imposible revisar casi ciento setenta mil expedientes antes de las urnas. Gabilondo afirmó que, si eres español, tienes derecho al voto. Su mandato termina el dieciséis de noviembre, así que el Constitucional tendría que actuar muy rápido.",
      "url": "https://www.eldebate.com/espana/20261016/defensor-pueblo-acude-constitucional-puedan-votar-nacionalizados-ley-nietos_470612.html"
     },
     {
+     "id": "ed2",
+     "titular": "El informe del servicio de inteligencia dice que Marruecos sabía lo de Ceuta",
+     "resumen": "Según El Debate, un informe del Centro Nacional de Inteligencia remitido a la Audiencia Nacional sostiene que Marruecos conocía con antelación la entrada masiva en Ceuta de los días treinta y treinta y uno de julio. El veintinueve de julio, el servicio avisó a la Delegación del Gobierno y a la Guardia Civil de una convocatoria de entrada por tierra y mar para el día siguiente a las ocho de la tarde. Los llamamientos circulaban en grupos de Facebook con unos ciento ochenta mil seguidores. Ese mismo día envió una alerta urgente a los servicios marroquíes. El informe califica de insuficiente el dispositivo de Marruecos y de pasiva su respuesta inicial, y lo atribuye a la prioridad dada a las celebraciones con el rey Mohamed sexto. Los primeros nadadores llegaron hacia las ocho de la mañana del treinta de julio, y el flujo masivo empezó sobre las once.",
+     "url": "https://www.eldebate.com/espana/20261017/contundente-informe-cni-jueza-desmonta-version-interior-confirma-marruecos-conocia-antelacion-entrada-masiva-ceuta_470593.html"
+    },
+    {
      "id": "ed3",
-     "titular": "El Debate repasa el patrimonio inmobiliario de Sánchez y Begoña Gómez",
-     "resumen": "El Debate publica una investigación sobre las viviendas de Pedro Sánchez y Begoña Gómez, basada en datos del Registro de la Propiedad. Entre los dos suman seis inmuebles, algunos a su nombre y otros compartidos con familiares. Sánchez tiene un piso pequeño en Tres Olivos, en Madrid, comprado en 1994, con una plaza de garaje, y con su mujer una vivienda en Aluche, adquirida en 2005. Begoña Gómez tiene además un piso en Pozuelo de Alarcón compartido con su padre y su hermano, otro en la calle Prado, también con su hermano, y una casa de obra nueva en Mojácar, comprada en 2013. El periódico lo publica en plena campaña, cuando Sánchez ha puesto la vivienda en el centro de su discurso. No recoge reacciones del PSOE.",
-     "url": "https://www.eldebate.com/espana/20261017/patrimonio-sanchez-begona-tres-pisos-piscina-casa-playa_469468.html"
+     "titular": "Sánchez compromete al Defensor del Pueblo en la batalla por la ley de nietos",
+     "resumen": "Según El Debate, el recurso del Defensor del Pueblo contra la suspensión del voto de los nacionalizados por la ley de nietos coloca al Tribunal Constitucional ante una decisión política. El diario sostiene que el Gobierno no puede recurrir por su cuenta, porque la Abogacía del Estado no puede presentar ese tipo de recurso. Por eso Ángel Gabilondo actúa como vía institucional. El texto señala que el Supremo ya rechazó los recursos del Estado y de la Fiscalía el doce de octubre. La suspensión afecta a unos ciento sesenta y tres mil inscritos en el censo de residentes en el extranjero. El Constitucional está presidido por Cándido Conde-Pumpido, a quien el diario sitúa ahora en una posición incómoda. Las elecciones generales son el veintinueve de noviembre y el tribunal tendría que resolver con mucha rapidez para que los afectados puedan votar.",
+     "url": "https://www.eldebate.com/espana/20261017/sanchez-compromete-defensor-pueblo-batalla-ley-nietos-obligara-condepumpido-retratarse_470629.html"
+    },
+    {
+     "id": "ed4",
+     "titular": "Gabilondo denuncia una intervención excesiva del Supremo",
+     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, ha presentado ante el Tribunal Constitucional un recurso de veinticinco páginas contra las medidas cautelares del Tribunal Supremo sobre la ley de nietos. Esas medidas congelan de forma provisional el censo de nacionalizados que residen en el extranjero, tras recursos de Vox y de otra asociación. Gabilondo habla de una intervención excesiva del Alto Tribunal y de una situación nueva que suspende el voto de ciudadanos con un derecho ya adquirido. Advierte de que el daño al derecho de sufragio sería irreversible y de que podría sentar un precedente peligroso. Según El Debate, unos ciento ochenta mil residentes en el extranjero figuran en ese censo, y el Gobierno defiende que voten el veintinueve de noviembre. Los consulados siguen repartiendo propaganda electoral sin mencionar las restricciones.",
+     "url": "https://www.eldebate.com/espana/20261017/gabilondo-senala-intervencion-excesiva-supremo-ley-nietos-constitucional-corrija_470674.html"
     }
    ]
   },
@@ -92,21 +111,27 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "El PSOE y sus socios irán juntos al Senado para intentar ganar la mayoría",
-     "resumen": "El PSOE ha cerrado un acuerdo con Izquierda Unida, Sumar, Compromís, Más Madrid y otros partidos para presentarse juntos al Senado en las elecciones del 29 de noviembre. La candidatura se llamará Senado de Progreso y se presentará en 46 provincias. Las negociaciones duraron hasta la medianoche del viernes, cuando acababa el plazo. Según un informe socialista, esta fórmula podría sumar hasta 40 senadores más, y la izquierda llegaría a unos 150 de los 267, por encima de la mayoría absoluta. Por separado, las previsiones dan al PP 96 y al PSOE 89. El PSOE lo califica de hito histórico. En cambio, el Frente Amplio y Podemos no lograron ir juntos al Congreso, en parte por el puesto de Irene Montero en las listas.",
+     "titular": "El PSOE y Frente Amplio irán juntos al Senado",
+     "resumen": "El Partido Socialista alcanzó el viernes un acuerdo con Izquierda Unida, Sumar, Compromís, Más Madrid, Chunta y Batzarre para presentarse juntos al Senado. La coalición se llamará Senado de Progreso y abarcará cuarenta y seis provincias. Las negociaciones se alargaron hasta la medianoche, justo antes de que acabara el plazo para registrar coaliciones. Según un informe interno del partido, la coalición podría lograr hasta cuarenta escaños más en el Senado y superar la mayoría absoluta. Los socialistas lo calificaron de paso histórico. El acuerdo contrasta con la ruptura entre Frente Amplio y Podemos, que no irán juntos a las elecciones del veintinueve de noviembre. Podemos rechazó una oferta que excluía Madrid y Cataluña, y el encaje de Irene Montero en las listas fue uno de los principales obstáculos.",
      "url": "https://theobjective.com/espana/politica/2026-10-17/psoe-frente-amplio-acuerdosenado/"
     },
     {
      "id": "to2",
-     "titular": "La fragata insignia de Marruecos desapareció del radar un día antes del asalto a Ceuta",
-     "resumen": "Según The Objective, la fragata Mohamed Sexto, buque insignia de la Marina de Marruecos, dejó de emitir su posición poco antes de la entrada masiva en Ceuta. Estaba fondeada en Casablanca el 29 de julio y, a primera hora de la tarde, desapareció de los registros. El periódico asegura que el resto de la flota militar marroquí de la zona tampoco emitió señales hasta el 14 de agosto, y que se sospecha que esos barcos entraron en aguas españolas sin permiso. Eso llevó a la Armada a movilizar dos fragatas y otro buque, algo que, según el diario, el Gobierno ocultó más de dos meses. Las fuentes consultadas explican que apagar ese sistema de localización puede deberse a razones de seguridad en misiones militares.",
-     "url": "https://theobjective.com/espana/2026-10-17/buque-marruecos-radar-ceuta/"
+     "titular": "El servicio de inteligencia acusa a Marruecos de saber del asalto a Ceuta",
+     "resumen": "Según The Objective, el Centro Nacional de Inteligencia ha enviado a la jueza María Tardón un informe según el cual las autoridades marroquíes sabían con antelación que se produciría la entrada masiva en Ceuta. Marruecos habría detectado días antes una situación anómala, pero sus fuerzas actuaron con pasividad y con un despliegue insuficiente. Las convocatorias en redes sociales pedían entrar durante la Fiesta del Trono, y el informe sostiene que Rabat priorizó la seguridad de ese acto, porque el rey Mohamed sexto estaba a unos cuarenta kilómetros. Las medidas más contundentes llegaron cuando ya se había alcanzado el pico de entradas. Al día siguiente comenzó el retorno voluntario, con refugios, un hospital de campaña y autobuses. El informe cree que el objetivo era controlar el mensaje y proyectar la imagen de socio fiable ante España y la Unión Europea.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-16/cni-marruecos-asalto-ceuta/"
     },
     {
      "id": "to3",
-     "titular": "El prestamista de Plus Ultra dice que compraba oro en Níger y lo vendía en Dubái",
-     "resumen": "El financiero neerlandés Simon Verhoeven, considerado el principal prestamista de la aerolínea Plus Ultra, declaró ante el juez de la Audiencia Nacional. Explicó que el oro encontrado en su casa de Palma de Mallorca procede de su negocio: lo compraba al banco central de Níger, lo llevaba en avión a Dubái y lo vendía a una joyería de allí. Los investigadores sostienen, en cambio, que creó facturas falsas para justificar movimientos de dinero y que montó con otro socio esquemas para blanquear capitales. Las autoridades suizas los relacionan con fondos venezolanos. En el registro de su casa, en 2024, la policía encontró joyas, relojes de lujo, dinero en efectivo y dos lingotes. Verhoeven niega haber blanqueado dinero del rescate público a la aerolínea.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-17/prestamista-plus-ultra-oro/"
+     "titular": "Feijóo llama coalición de desesperados al pacto de PSOE y Frente Amplio",
+     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, calificó este sábado de coalición de desesperados el pacto entre el Partido Socialista y Frente Amplio para ir juntos al Senado. Habló con los periodistas en un congreso de la ONCE en Pozuelo de Alarcón, en Madrid. Según Feijóo, los socialistas han diluido sus siglas al sumar unas veinte formaciones, lo que demuestra que hablar de ganar las elecciones es una falsedad. Planteó a los ciudadanos elegir entre la alternativa de Sánchez, Colau e Irene Montero y la suya, y defendió que el cambio es más necesario que nunca. Preguntado por el nombramiento de Rebeca Torró como portavoz socialista tras la dimisión de Montse Mínguez, ironizó sobre los fichajes del partido y recordó los casos de Ábalos y Cerdán.",
+     "url": "https://theobjective.com/espana/politica/2026-10-17/feijoo-coalicion-pacto-psoe-frente-amplio/"
+    },
+    {
+     "id": "to4",
+     "titular": "Sánchez declara su amor a Begoña Gómez en un mitin",
+     "resumen": "El presidente del Gobierno, Pedro Sánchez, habló en Fuenlabrada ante la militancia socialista, justo después del Comité Federal del partido. En pleno acto le declaró su amor a su esposa, Begoña Gómez, con la frase: que lo escuchen alto y claro, te quiero. Después se besaron, y ella se levantó para abrazarlo. Gómez reapareció en público por primera vez en casi dos años. Según The Objective, será juzgada por presuntos delitos de malversación y tráfico de influencias. Sánchez afirmó que sus adversarios habían intentado quebrar a la familia, pero que habían logrado lo contrario. La militancia respondió con una ovación. El acto llegó un día después de anunciarse el acuerdo con Frente Amplio para el Senado, y el partido proclamó por unanimidad a Sánchez candidato a la reelección el veintinueve de noviembre.",
+     "url": "https://theobjective.com/espana/politica/2026-10-17/sanchez-declaracion-de-amor-begona-te-quiero"
     }
    ]
   },
@@ -116,21 +141,27 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Un informe de Exteriores detalla los expedientes de la ley de nietos",
-     "resumen": "Según OKDiario, el Ministerio de Asuntos Exteriores tiene estadísticas detalladas de los expedientes de nacionalidad de la ley de nietos. Un informe con datos hasta el 31 de agosto cuenta 369.017 nacionalidades concedidas, más de 231.000 aún sin inscribir y más de 644.000 pendientes de resolver. El Supremo exige al Gobierno identificar a los nacionalizados por esta ley para aplicar sus medidas sobre el censo electoral, y la Administración dijo que era incapaz de hacerlo. Vox sostiene que el informe demuestra que sí es posible y lo ha usado en un recurso ante el Supremo. Hay que tener en cuenta que esa conclusión es la interpretación del periódico y de Vox, y que el informe no muestra que permita identificar a cada persona.",
-     "url": "https://okdiario.com/espana/este-informe-exteriores-prueba-que-gobierno-puede-identificar-falsos-nietos-como-exige-supremo-20568300"
+     "titular": "Podemos rechaza la oferta de Frente Amplio y no habrá lista conjunta",
+     "resumen": "Podemos y Frente Amplio no irán juntos en una lista conjunta a las elecciones del veintinueve de noviembre. El plazo para registrar coaliciones terminó el viernes a medianoche sin acuerdo global. Solo compartirán candidaturas en Canarias y en la Comunidad Valenciana. La negociación fracasó por exigencias incompatibles. Frente Amplio quería un pacto en todo el país, mientras Podemos pedía excluir Madrid y Cataluña para mantener su alianza con Esquerra Republicana. Frente Amplio ofreció puestos de salida prioritarios en esas dos comunidades, una coportavocía y un reparto equitativo de recursos, pero los morados lo rechazaron. Podemos acusó a la dirección de Frente Amplio de bloquear acuerdos en varias comunidades. Izquierda Unida, Sumar, Más Madrid y los comunes concurrirán con alianzas sin Podemos en la mayoría del país. Por otro lado, el Partido Socialista y Frente Amplio sí irán juntos al Senado.",
+     "url": "https://okdiario.com/espana/podemos-rechaza-oferta-coalicion-frente-amplio-29-n-ofrece-pacto-que-excluye-madrid-cataluna-20569866"
     },
     {
      "id": "ok2",
-     "titular": "La primera ministra danesa critica en Bruselas la regularización de inmigrantes de Sánchez",
-     "resumen": "La primera ministra de Dinamarca, la socialdemócrata Mette Frederiksen, criticó el viernes en el Consejo Europeo la regularización extraordinaria de inmigrantes que impulsa el Gobierno de España, que afectaría a entre 500.000 y 600.000 personas. Según OKDiario, sostuvo que permitir quedarse legalmente a quien entró de forma ilegal va en contra de lo que piensa la mayoría en Europa. Lo planteó en un desayuno sobre migración con una veintena de países, al que Sánchez no fue invitado, y pidió a la Comisión Europea que estudie las consecuencias de esa medida. El periódico describe que Sánchez la escuchó serio en la reunión. El artículo no recoge respuesta del Gobierno español.",
-     "url": "https://okdiario.com/espana/primera-ministra-danesa-afea-politica-migratoria-sanchez-que-escucha-serio-sin-levantarse-asiento-20568210"
+     "titular": "El PSOE y Frente Amplio acuerdan listas conjuntas para el Senado",
+     "resumen": "El Partido Socialista y la coalición Frente Amplio han acordado presentarse con una lista conjunta al Senado en las elecciones del veintinueve de noviembre, bajo una única papeleta. Según OKDiario, el pacto se hizo oficial justo antes de que se cerrara el plazo para registrar candidaturas, poco después de la medianoche. Ambas formaciones calificaron el acuerdo de histórico. La noticia aparece como breve y en ampliación, así que el diario no aporta todavía detalles concretos, como el número de candidatos o el reparto de escaños. El mismo medio recuerda que Podemos rechazó una oferta de coalición de Frente Amplio que excluía a Madrid y Cataluña, y que el intento de pacto de la izquierda a la izquierda del Partido Socialista fracasó.",
+     "url": "https://okdiario.com/espana/psoe-frente-amplio-acuerdan-listas-conjuntas-concurrir-senado-29-n-20569999"
     },
     {
      "id": "ok3",
-     "titular": "Podemos y el Frente Amplio no logran ir juntos a las elecciones",
-     "resumen": "Podemos y el Frente Amplio no se presentarán juntos a las elecciones generales del 29 de noviembre. El plazo para registrar coaliciones acabó el viernes a medianoche sin acuerdo general, y solo compartirán candidatura en Canarias y en la Comunidad Valenciana. El choque vino de exigencias incompatibles: el Frente Amplio quería un pacto en toda España, y Podemos pedía dejar fuera Madrid y Cataluña, donde mantiene su alianza con Esquerra Republicana. Horas antes, el Frente Amplio le ofreció puestos destacados en esas dos comunidades, sin éxito. En cambio, el PSOE y el Frente Amplio sí irán juntos al Senado, con el objetivo de quitar al PP la mayoría absoluta en esa cámara. Ada Colau encabezará la lista del Frente Amplio por Barcelona.",
-     "url": "https://okdiario.com/espana/podemos-rechaza-oferta-coalicion-frente-amplio-29-n-ofrece-pacto-que-excluye-madrid-cataluna-20569866"
+     "titular": "El Papa llama a Putin desde el hospital para pedir un alto el fuego",
+     "resumen": "El Papa León catorce llamó por teléfono el viernes al presidente ruso, Vladímir Putin, desde el hospital Gemelli de Roma. Según OKDiario, la información procede de un comunicado de la Santa Sede. El Papa expresó su profunda preocupación por la grave situación humanitaria en la ciudad de Oleshki, en la provincia de Jersón. Pidió un alto el fuego que permita enviar comida y ayuda médica, y evacuar de forma voluntaria y segura a los civiles. La llamada se produjo tres días después de que el Pontífice fuera operado de un nódulo pulmonar. El Kremlin respaldó la iniciativa del Vaticano. Sin embargo, según medios estatales rusos, Putin atribuyó a Ucrania la responsabilidad de la catástrofe y acusó a las fuerzas de Kiev de bloquear los suministros.",
+     "url": "https://okdiario.com/espana/papa-leon-xiv-llama-telefono-putin-desde-hospital-pedirle-alto-fuego-ucrania-20568288"
+    },
+    {
+     "id": "ok4",
+     "titular": "Sánchez se lanza como candidato y pide gobernar después del 29 de noviembre",
+     "resumen": "Pedro Sánchez fue proclamado el sábado candidato del Partido Socialista a la presidencia del Gobierno en un Comité Federal celebrado en Fuenlabrada. El partido ratificó también las listas para las elecciones generales del veintinueve de noviembre. Sánchez apareció con su esposa, Begoña Gómez, a quien OKDiario describe como imputada por tráfico de influencias y malversación. Según el partido, asistieron unos tres mil simpatizantes. En su discurso pidió movilizarse para gobernar después de las elecciones y defendió a su mujer ante la presión judicial. Destacó la revalorización de las pensiones y un fondo de reserva de más de veinte mil millones de euros. Prometió mantener y reforzar los decretos de vivienda, que el Partido Popular y Vox han recurrido. Sobre la dimisión de Montse Mínguez, no se pronunció.",
+     "url": "https://okdiario.com/espana/sanchez-cercado-corrupcion-lanza-como-candidato-elecciones-tenemos-que-gobernar-despues-del-29-n-20570944"
     }
    ]
   },
@@ -140,21 +171,27 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El Frente Amplio ofreció a Podemos el número dos por Madrid para Irene Montero",
-     "resumen": "El viernes, poco antes de las diez de la noche, el Frente Amplio envió a Podemos por escrito una última oferta para ir juntos a las elecciones. Según elDiario.es, le ofrecía el número dos de la lista por Madrid, pensado para Irene Montero, y las mismas condiciones en Cataluña, aunque allí Podemos ya había pactado ir con Esquerra. También proponía que Podemos tuviera un portavoz en el futuro grupo parlamentario y un reparto de los recursos según el peso de cada partido. A cambio, exigía un acuerdo en toda España, mientras Podemos solo negociaba con Izquierda Unida en diez comunidades. Gabriel Rufián reconoció que la lista unitaria de la izquierda había fracasado. Al final, el plazo terminó sin acuerdo general.",
+     "titular": "Frente Amplio hace una última oferta a Podemos con un puesto para Irene Montero",
+     "resumen": "El viernes por la noche, Frente Amplio envió a Podemos una última oferta por escrito para integrarse en la alianza de cara a las elecciones generales. La propuesta incluye un puesto de salida prioritario en la lista por Madrid, que podría ocupar Irene Montero. Según fuentes de Frente Amplio, sería la número dos. Se replican las mismas condiciones para Cataluña, aunque Podemos ya pactó integrarse en las listas de Esquerra Republicana. También se ofrece que Podemos nombre a uno de los portavoces del grupo parlamentario y que los recursos se repartan de forma equitativa. A cambio, Frente Amplio exige un acuerdo a nivel estatal. Podemos mantiene que solo pactará con Izquierda Unida en diez comunidades. El escrito concluye que había tiempo para el acuerdo esa misma noche. El texto no recoge la respuesta de Podemos.",
      "url": "https://www.eldiario.es/politica/frente-amplio-ofrece-escrito-puesto-salida-madrid-irene-montero_1_13592988.html"
     },
     {
      "id": "edi2",
-     "titular": "La media de las encuestas da a PP y Vox quince puntos de ventaja sobre la izquierda",
-     "resumen": "elDiario.es ha publicado su media de encuestas para las elecciones del 29 de noviembre. El PP lidera con cerca del 32 por ciento de los votos, seguido del PSOE con el 26, Vox con el 19, Sumar con el 6 y Podemos con el 3. La derecha aventaja así al bloque de izquierdas en unos quince puntos, y los sondeos apenas se han movido desde la convocatoria. Al traducirlo a escaños, el PP tendría unos 135, el PSOE 106 y Vox 66, de modo que PP y Vox superarían la mayoría absoluta en nueve de cada diez simulaciones. Una mayoría absoluta del PP en solitario parece poco probable. El periódico insiste en que es una foto de las encuestas actuales, no una predicción.",
-     "url": "https://www.eldiario.es/politica/dice-hoy-media-encuestas-pp-vox-aventajan-bloque-progresista-15-puntos-izquierda-sigue-negociando_1_13585216.html"
+     "titular": "Miles de personas marchan en Madrid por la educación pública",
+     "resumen": "Miles de personas marcharon el viernes desde la plaza de Murillo hasta la Puerta del Sol, en Madrid. El comité de huelga calcula entre setenta mil y cien mil asistentes. La protesta cerró la tercera jornada de la huelga indefinida de docentes, que abarca desde Infantil hasta Secundaria. Participaron profesorado, estudiantes y familias. Los convocantes piden una subida salarial de seiscientos euros, menos alumnos por aula y menos horas de clase. También reclaman más personal para el alumnado con necesidades especiales y mejoras en los colegios. Denuncian que no hay avances en las negociaciones con la Consejería de Educación del Gobierno de Ayuso y que no se cumple el acuerdo firmado hace un año. Una representante del sindicato STEM advirtió de que, si no se sientan a negociar, exigirán la dimisión.",
+     "url": "https://www.eldiario.es/madrid/miles-personas-toman-centro-madrid-exigir-educacion-publica-calidad-plena-huelga-profesores_1_13592159.html"
     },
     {
      "id": "edi3",
-     "titular": "El CNI informa a la jueza de que Marruecos sabía del riesgo de entrada masiva en Ceuta",
-     "resumen": "El Centro Nacional de Inteligencia ha entregado a la jueza que investiga la entrada masiva de migrantes en Ceuta un informe de unas veinte páginas. Según el documento, el 29 de julio avisó con urgencia a los servicios marroquíes de las convocatorias difundidas en redes sociales, y les pasó los grupos más activos. Desde ese momento, Marruecos conocía con detalle el alcance y la hora de la posible entrada, que se produjo hacia las once de la mañana del 30 de julio. El CNI atribuye a las fuerzas marroquíes controles insuficientes y una actuación pasiva, y cita entre las causas la Fiesta del Trono, que desvió agentes. Aun así, el informe destaca la cooperación con Marruecos en otras ocasiones y en el retorno de los migrantes.",
-     "url": "https://www.eldiario.es/politica/cni-informa-jueza-marruecos-conocia-riesgo-entrada-masiva-migrantes_1_13592362.html"
+     "titular": "Ayuso cierra la estación de Sol y culpa a los acampados",
+     "resumen": "El Gobierno de Isabel Díaz Ayuso ordenó el viernes cerrar la estación de Metro de Sol por trabajos de limpieza urgentes y de seguridad. Ayuso atribuyó la petición a Prevención de Riesgos Laborales y a los sindicatos, pero el comité de empresa de Metro niega haberla hecho. El jueves, el consejero de Transportes había culpado a los acampados de acumular orina y residuos en los accesos de ventilación. El cierre empezó hacia las doce, sin fecha de reapertura. La estación de Cercanías sigue abierta, porque Renfe no ha detectado problemas de salubridad. Ayuso llamó mamarrachos a los acampados. La Delegación del Gobierno criticó la decisión por su grave impacto en los ciudadanos. La acampada niega las acusaciones y dice que el lugar está limpio. Tras una asamblea, decidieron mantener la protesta.",
+     "url": "https://www.eldiario.es/madrid/somos/ayuso-ordena-cerrar-estacion-sol-limpieza-echa-culpa-acampados-llama-mamarrachos_1_13590340.html"
+    },
+    {
+     "id": "edi4",
+     "titular": "Un bulo de la Comunidad de Madrid provoca amenazas contra un colegio",
+     "resumen": "Según elDiario.es, el quince de octubre la consejera de Educación de Madrid, Mercedes Zarzalejo, acusó a un colegio de Villarejo de Salvanés de animar a convertir las calles en una pesadilla para los fascistas del Partido Popular y de Ayuso. El correo era real, pero lo envió un colegio privado concertado, no un centro público. La frase procedía de una consigna del Sindicato de Estudiantes. La Comunidad anunció que expedientaría al director, y Ayuso compartió la acusación en la red social X. Como consecuencia, el único colegio público de la localidad recibió mensajes de odio, algunos amenazantes. El director del colegio aclaró que la frase era una cita y no representaba al centro. El viernes, el portavoz del Gobierno regional rechazó retractarse y dijo que la huelga es absolutamente política.",
+     "url": "https://www.eldiario.es/sociedad/comunidad-madrid-lanza-bulo-huelga-educativa-desencadena-ola-amenazas-colegio-publico_1_13588454.html"
     }
    ]
   }
