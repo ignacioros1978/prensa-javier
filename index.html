@@ -94,8 +94,6 @@ button:focus-visible,a:focus-visible{outline:4px solid var(--fg);outline-offset:
   <div class="bar-in">
     <button class="pill" type="button" id="backBtn" aria-label="Volver atrás">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Atrás</button>
-    <button class="pill solid" type="button" id="barTalk">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11z"/></svg><span>Hablar</span></button>
   </div>
 </div>
 <main class="wrap" id="app"><p class="empty">Cargando las noticias…</p></main>
@@ -333,7 +331,7 @@ function setPhase(txt){
   var h = document.querySelector("#homeTalk b"); if (h) h.textContent = label;
   var hs = document.querySelector("#homeTalk small"); if (hs) hs.textContent = V.on ? "Toca para terminar" : "Pídeme un periódico o que te lea una noticia";
   var hb = $("homeTalk"); if (hb) hb.classList.toggle("live", V.on);
-  var b = $("barTalk"); b.querySelector("span").textContent = label; b.classList.toggle("live", V.on);
+  var b = $("barTalk"); if (b){ b.querySelector("span").textContent = label; b.classList.toggle("live", V.on); }
 }
 function heard(t){ var h = $("heard"); if (h) h.textContent = t ? "«" + t + "»" : ""; }
 function greeting(){
@@ -544,7 +542,6 @@ function handle(raw){
 
 /* ---------- Toques ---------- */
 $("backBtn").addEventListener("click", function(){ if (V.on) endVoice(); back(); });
-$("barTalk").addEventListener("click", startVoice);
 app.addEventListener("click", function(e){
   var t = e.target.closest("button"); if (!t) return;
   if (t.id === "homeTalk"){ startVoice(); return; }
