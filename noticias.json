@@ -1,18 +1,17 @@
 {
- "fecha": "2026-10-16",
- "fechaTexto": "viernes 16 de octubre",
- "actualizado": "2026-10-16T13:45:00+02:00",
+ "fecha": "2026-10-17",
+ "fechaTexto": "sábado 17 de octubre",
+ "actualizado": "2026-10-17T08:50:00+02:00",
  "portada": [
-  "to3",
-  "ee2",
-  "ed1",
-  "edi4",
-  "ld2",
-  "ok1",
-  "ee1",
-  "edi1",
+  "ld1",
+  "edi3",
   "to1",
-  "ed3"
+  "edi2",
+  "ed2",
+  "to2",
+  "ee1",
+  "ok2",
+  "to3"
  ],
  "diarios": [
   {
@@ -21,27 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Muface prevé vender 86 viviendas y el ministro Óscar López niega haber pedido desahucios",
-     "resumen": "Según Libertad Digital, el plan de Muface hasta 2028 contempla vender 204 inmuebles de su Fondo Especial, de los cuales 86 son viviendas, para pagar las pensiones de ese fondo, que se calcularon con cuantías de los años setenta. El periódico sostiene que vender esos pisos supondría sacar a los inquilinos, por las buenas o mediante desahucio. La noticia parte de una información de otro medio, que atribuía al ministro de Transformación Digital, Óscar López, de quien depende Muface, el impulso de un desahucio cerca del caso de Maricarmen, la anciana desalojada en Madrid. López ha respondido que el titular es falso, que no ha pedido ni firmado ningún desahucio y ha exigido una rectificación. También acusa a la oposición de votar en contra de los decretos que prohíben los desahucios.",
-     "url": "https://www.libertaddigital.com/madrid/2026-10-15/el-plan-de-oscar-lopez-en-muface-incluye-desahucios-masivos-liquidar-86-pisos-para-capitalizar-su-fondo-especial-7476540/"
+     "titular": "Dimite Montse Mínguez, portavoz del PSOE, por los pisos de su pareja",
+     "resumen": "Montse Mínguez ha dejado la portavocía del PSOE y su puesto en la dirección federal del partido. Lo anunció el viernes en las redes sociales, diciendo que se va en paz consigo misma y que es lo mejor para el proyecto colectivo. Su salida llega tras la polémica por los negocios inmobiliarios de su pareja, cuya sociedad, según un reportaje, multiplicó su patrimonio en plena crisis de la vivienda. El contraste con el discurso que ella defendía sobre vivienda en el Congreso le valió duras críticas, también del Sindicato de Inquilinos. Según El País, además deja las listas electorales, aunque días antes había sido confirmada como cabeza de lista por Lérida. En su carta no menciona la polémica. El PSOE dice respetar su decisión y elogia su trayectoria.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-16/montse-minguez-dimite-arrastrada-por-la-polemica-de-los-pisos-de-su-pareja-7477454/"
     },
     {
      "id": "ld2",
-     "titular": "Sánchez dice desconocer los negocios de la pareja de Montse Mínguez",
-     "resumen": "Desde Bruselas, Pedro Sánchez dijo no saber a qué se dedica la pareja de Montse Mínguez, portavoz del PSOE, después de publicarse que posee unos treinta pisos y dos sociedades en Panamá. Según Libertad Digital, el presidente no entró en el fondo del asunto y dirigió sus críticas a Isabel Díaz Ayuso. El periódico añade que dos decretos de vivienda rechazados en el Congreso se debatirán en la Diputación Permanente, todavía sin fecha, y sugiere que el Gobierno podría acercar esa votación a las elecciones del 29 de noviembre. Sánchez también elogió a la ministra de Defensa, Margarita Robles, que irá de número dos en la lista socialista por Madrid, y habló de más de diez años de amistad. El medio recuerda además que Mínguez presidió la junta municipal de Lérida que aprobó cambios urbanísticos que beneficiaron a su pareja.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-15/sanchez-alega-que-desconoce-los-negocios-de-la-pareja-de-montse-minguez-e-intenta-desviar-el-foco-a-ayuso-7476458/"
+     "titular": "El CNI concluye que la pasividad de Marruecos permitió la entrada masiva en Ceuta",
+     "resumen": "Según publica Libertad Digital, el Centro Nacional de Inteligencia ha entregado a la jueza de la Audiencia Nacional que investiga la entrada masiva en Ceuta un informe en el que sostiene que las autoridades marroquíes sabían con antelación lo que iba a pasar. Días antes habían decidido reforzar su dispositivo, pero su actuación fue irregular. Hasta la víspera interceptaban a buena parte de los nadadores, pero cuando creció el número de personas, el despliegue se quedó corto y la pasividad lo desbordó. El informe añade que no hubo reacción cuando se perdió el control, y que Marruecos conocía las convocatorias en redes sociales coincidiendo con la Fiesta del Trono. Feijóo ha pedido desplegar el Ejército y convocar a los embajadores.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cni-senala-que-la-pasividad-de-marruecos-permitio-la-invasion-de-ceuta-y-que-eran-plenamente-conscientes-7477471/"
     },
     {
      "id": "ld3",
-     "titular": "Feijóo asegura que los líderes europeos están sorprendidos por la actitud de Sánchez con Ceuta",
-     "resumen": "Tras reunirse en Bruselas con los dirigentes del Partido Popular Europeo, Alberto Núñez Feijóo afirmó que están sorprendidos por la reacción del Gobierno ante la entrada masiva de personas en Ceuta desde Marruecos. Según Feijóo, el Ejecutivo prefirió mirar hacia otro lado, mientras que él impulsó una condena del Parlamento Europeo. Calificó de extravagante la política exterior del Gobierno y prometió investigar lo ocurrido en Ceuta si llega al poder, incluida la entrada de buques marroquíes en aguas españolas, que acusa al Gobierno de haber ocultado. Según la información, el Partido Popular Europeo quiere una ley europea que facilite las expulsiones en casos de guerra híbrida, y Ursula von der Leyen querría tenerla lista antes de fin de año. Feijóo rechazó además el presupuesto europeo por los recortes en la política agraria común.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-15/los-presidentes-europeos-muy-sorprendidos-por-la-dejadez-de-sanchez-ante-la-invasion-de-ceuta-7476507/"
-    },
-    {
-     "id": "ld4",
-     "titular": "Vivienda, Muface y corrupción, protagonistas del pleno de la Asamblea de Madrid",
-     "resumen": "El pleno del jueves en la Asamblea de Madrid fue más tranquilo que el de la semana anterior. La portavoz de Más Madrid, Manuela Bergerot, suavizó su frase de que en las calles de Madrid no habría paz, que el PP había denunciado ante la Policía, y explicó que se refería a la falta de justicia en materia de vivienda. El portavoz del PP, Carlos Díaz Pache, acusó al PSOE de hipocresía por los negocios inmobiliarios de la pareja de Montse Mínguez y por el desahucio en un piso de Muface. La presidenta, Isabel Díaz Ayuso, preguntó si los casos que afectan al PSOE son personales o puntuales, citó entre otros a Begoña Gómez y el rescate de Plus Ultra, y acusó a la izquierda de ocupar las calles por miedo a perder las elecciones.",
-     "url": "https://www.libertaddigital.com/madrid/2026-10-15/montse-minguez-alias-neptuno-el-desahucio-de-lopez-y-la-recogida-de-cable-de-bergerot-protagonistas-en-la-asamblea-7476524/"
+     "titular": "El presunto cerebro económico del caso Plus Ultra niega irregularidades ante el juez",
+     "resumen": "Simon Verhoeven, señalado como cerebro económico de la presunta trama de blanqueo ligada a la aerolínea Plus Ultra, declaró unas tres horas ante el juez de la Audiencia Nacional que investiga el rescate de la compañía. Según fuentes presentes, aseguró que prestó dos coma un millones de euros a la aerolínea sin saber que el Gobierno la iba a rescatar, y negó cualquier irregularidad. Su defensa alega que el mismo caso ya se investiga en Suiza, donde está imputado, y que no debería responder también en España. Explicó que sus empresas compran y venden oro, y dijo conocer solo a Felipe Baca, que le presentó a la aerolínea. Negó conocer a Zapatero y a los dueños de Plus Ultra. La declaración fue difícil porque el intérprete no dominaba la jerga jurídica.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cerebro-economico-de-la-trama-plus-ultra-intentara-salvarse-aludiendo-a-otra-investigacion-en-suiza-7477203/"
     }
    ]
   },
@@ -51,9 +44,9 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Malestar en el Ejército con Robles: las asociaciones militares se sienten abandonadas",
-     "resumen": "Cuatro asociaciones profesionales de militares critican con dureza a la ministra de Defensa, Margarita Robles, justo cuando va a ser la número dos de la lista del PSOE por Madrid. Su principal queja es la gestión de la crisis de Ceuta de finales de julio. Dicen que los soldados desplegados allí están desamparados, con problemas de alojamiento y comida, vacaciones cortadas y horas sin pagar. También reprochan que Defensa llevara a los tribunales las acusaciones contra militares basadas en un informe de una ONG sin investigar antes internamente. Además reclaman mejores sueldos: una de ellas cifra la subida recibida en unos 200 euros brutos, frente a los 800 que pedía. Una de las asociaciones, AUME, reconoce que al menos la ministra defiende públicamente a las Fuerzas Armadas.",
-     "url": "https://www.elespanol.com/espana/20261016/indignacion-ejercito-robles-aval-sanchez-amnistia-cloaca-corrupcion-asalto-ceuta/1003744422075_0.html"
+     "titular": "Feijóo pide desplegar la Armada y llamar a consultas al embajador en Rabat",
+     "resumen": "El líder del PP, Alberto Núñez Feijóo, ha pedido al Gobierno que despliegue la Armada en Ceuta, llame a consultas al embajador español en Rabat y convoque a la embajadora de Marruecos. También exige explicaciones de alto nivel a Marruecos e información a los ciudadanos. Lo hizo tras conocerse dos episodios de buques marroquíes en aguas españolas: el de finales de julio, durante la llegada de más de 80.000 personas a Ceuta, y el de esta semana, cuando una patrullera estuvo siete horas en la bahía sur tras la visita de los Reyes. El Gobierno sostiene que no informó porque fue un hecho aislado, resuelto con normalidad entre vecinos, y la portavoz Elma Saiz lo repitió varias veces. Feijóo cree que son incursiones repetidas que exigen una respuesta firme.",
+     "url": "https://www.elespanol.com/espana/politica/20261016/feijoo-pide-desplegar-armada-llamar-embajador-rabat-consultas-reiteradas-agresiones-marroquies/1003744422277_0.html"
     },
     {
      "id": "ee2",
@@ -63,15 +56,9 @@
     },
     {
      "id": "ee3",
-     "titular": "El PP pide a la jueza que reclame a Moncloa los informes sobre los buques marroquíes en Ceuta",
-     "resumen": "El Partido Popular, que actúa como acusación popular, ha pedido a la jueza María Tardón, de la Audiencia Nacional, que averigüe si el Gobierno relacionó la entrada masiva de personas en Ceuta del 30 y 31 de julio con la presencia de buques militares marroquíes en aguas españolas. Pide a Moncloa y a Seguridad Nacional los informes y actas de los órganos de crisis, y que se conserven con urgencia los registros de radar y de comunicaciones militares de esas fechas, porque se borran automáticamente. También solicita documentación a Defensa, a Exteriores, al CNI, a Frontex y al centro de satélites de la Unión Europea, y que el Consejo de Ministros desclasifique lo que haga falta. Según el periódico, Sánchez reconoció haber mantenido el asunto en secreto unos dos meses y medio.",
-     "url": "https://www.elespanol.com/espana/politica/20261016/pp-pide-juez-reclame-moncloa-vinculo-asalto-ceuta-entrada-buques-marroquies-algun-informe/1003744421232_0.html"
-    },
-    {
-     "id": "ee4",
-     "titular": "Ceuta teme una nueva entrada masiva tras las amenazas de Marruecos",
-     "resumen": "En el cuarto Foro Económico Español celebrado en Ceuta, la frontera ocupó buena parte de los debates. Un día antes, la dirigente socialista marroquí Nabila Mounib había dicho que Ceuta y Melilla pertenecen a Marruecos, tras la visita de los Reyes a las dos ciudades. El general Miguel Ángel Ballesteros, antiguo director de Seguridad Nacional, considera que la entrada del 30 de julio fue un ataque deliberado y plantea como peor escenario una nueva oleada de unas 100.000 personas. Opina que la frontera no se ha reforzado y propuso declarar el estado de excepción. El presidente de Ceuta, Juan Jesús Vivas, también habla de un ataque premeditado, critica la falta de reacción del Gobierno central y pregunta por qué siguen en la ciudad unas 15.000 personas que entraron de forma ilegal.",
-     "url": "https://www.elespanol.com/eventos/2026/iv-foro-economico-espanol-ceuta/20261016/planea-ahora-marruecos-ceuta-teme-invasion-personas-nuevas-amenazas-rabat/1003744422001_0.html"
+     "titular": "Malestar en el Ejército con Robles: las asociaciones militares se sienten abandonadas",
+     "resumen": "Cuatro asociaciones profesionales de militares critican con dureza a la ministra de Defensa, Margarita Robles, justo cuando va a ser la número dos de la lista del PSOE por Madrid. Su principal queja es la gestión de la crisis de Ceuta de finales de julio. Dicen que los soldados desplegados allí están desamparados, con problemas de alojamiento y comida, vacaciones cortadas y horas sin pagar. También reprochan que Defensa llevara a los tribunales las acusaciones contra militares basadas en un informe de una ONG sin investigar antes internamente. Además reclaman mejores sueldos: una de ellas cifra la subida recibida en unos 200 euros brutos, frente a los 800 que pedía. Una de las asociaciones, AUME, reconoce que al menos la ministra defiende públicamente a las Fuerzas Armadas.",
+     "url": "https://www.elespanol.com/espana/20261016/indignacion-ejercito-robles-aval-sanchez-amnistia-cloaca-corrupcion-asalto-ceuta/1003744422075_0.html"
     }
    ]
   },
@@ -81,33 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Una revisión independiente del CIS le quita 41 escaños al PSOE",
-     "resumen": "El último CIS de Tezanos, con más de 5.000 entrevistas hechas entre el 1 y el 6 de octubre, da al PSOE casi 12 puntos de ventaja sobre el PP y 154 diputados para las elecciones del 29 de noviembre. El Debate recoge las críticas de José Miguel Silva, de la empresa de encuestas Target Point, que sostiene que el CIS no ajusta sus datos según lo que la gente votó la última vez, y que eso infla a la izquierda y rebaja a la derecha. Su propia reestimación deja al PSOE con 41 escaños menos, en torno a 113. El periódico añade que, desde que Tezanos preside el CIS, el instituto habría sobrestimado al PSOE en tres de cada cuatro elecciones, y que la encuesta se hizo antes de hechos recientes como la muerte de Maricarmen o la entrada de barcos marroquíes. No recoge respuesta del CIS ni del PSOE.",
-     "url": "https://www.eldebate.com/espana/20261016/revision-independiente-cis-resta-41-escanos-psoe-todo-informe-tezanos-esta-viciado_468114.html"
+     "titular": "El Debate calcula que la ley de nietos podría dar al PSOE diez escaños más",
+     "resumen": "Según un análisis de El Debate, el fuerte aumento del censo de españoles residentes en el extranjero desde la ley de nietos podría dar al PSOE hasta diez escaños más en las elecciones generales. Con sus cálculos, el PP perdería siete, entre ellos uno en Madrid, Junts dos en Cataluña y el BNG uno en Galicia. Así, el PSOE pasaría de 121 a 131 diputados, uno más que el PP. El periódico recuerda que en Madrid los socialistas se quedaron a unos 4.000 votos de un escaño en 2023, y que el censo exterior de la provincia ha crecido en más de 118.000 inscritos. El Gobierno sostiene que el efecto de ese voto es marginal. El propio artículo advierte de que las cifras no distinguen a los nacionalizados por esta ley de otros inscritos.",
+     "url": "https://www.eldebate.com/espana/20261017/psoe-tendria-alcance-arrebatar-diez-escanos-aumento-censo-ley-nietos_470387.html"
     },
     {
      "id": "ed2",
-     "titular": "La Junta Electoral abre expediente a Sánchez por su mitin en Moncloa",
-     "resumen": "La Junta Electoral Central ha abierto un expediente al presidente Pedro Sánchez por una posible infracción de la ley electoral en una rueda de prensa en Moncloa, después de convocar las elecciones. Responde a una denuncia del Partido Popular, que sostiene que Sánchez usó la sede de la Presidencia para presumir de logros, desacreditar a la oposición y pedir una mayoría más amplia, algo propio de un mitin. El PP también pidió retirar el vídeo de la web de Moncloa. Los populares celebraron la decisión y recordaron que Sánchez ya ha sido multado en otras ocasiones, con sanciones de 6.600 euros, en varios procesos electorales desde 2019. El expediente podría acabar en una nueva multa, pero todavía no hay resolución.",
-     "url": "https://www.eldebate.com/espana/20261015/junta-electoral-abre-expediente-sanchez-mitin-moncloa-denuncio-pp_470067.html"
+     "titular": "El Defensor del Pueblo recurre al Constitucional para que voten los nacionalizados por la ley de nietos",
+     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, ha presentado un recurso de amparo ante el Tribunal Constitucional contra la decisión del Supremo de suspender el voto de los nacionalizados por la ley de nietos. Pide medidas urgentes para que el censo no quede bloqueado de cara a las elecciones del 29 de noviembre. El Supremo mantuvo la suspensión para unas 163.000 personas inscritas en el censo de residentes en el extranjero, y solo podrán votar los que su consulado acredite como descendientes de exiliados. Gabilondo defiende que cualquier español tiene derecho a votar y que la nacionalidad no puede darse y quitarse según el momento. El Debate recuerda que Gabilondo fue candidato socialista. Mientras tanto, la Junta Electoral ha ordenado enviar las papeletas, aunque esos votos no valdrán si no cumplen lo que exige el Supremo.",
+     "url": "https://www.eldebate.com/espana/20261016/defensor-pueblo-acude-constitucional-puedan-votar-nacionalizados-ley-nietos_470612.html"
     },
     {
      "id": "ed3",
-     "titular": "La izquierda apura las últimas horas para cerrar coaliciones electorales",
-     "resumen": "Este viernes a medianoche acaba el plazo para registrar coaliciones para las elecciones generales del 29 de noviembre, y la izquierda tiene dos asuntos pendientes. El primero es si Podemos y el Frente Amplio irán juntos. Ada Colau es la candidata del Frente Amplio e Irene Montero quiere encabezar la lista de Podemos, pero las negociaciones se complicaron por un pacto de Podemos con Gabriel Rufián que los Comunes vivieron como una traición. El segundo asunto es el Senado: el PSOE negocia candidaturas conjuntas con el resto de la izquierda para impedir que PP y Vox logren tres quintos de la cámara, la mayoría que permite nombrar magistrados del Tribunal Constitucional y vocales del Poder Judicial. El Debate sostiene que las peleas son por puestos y no por programas.",
-     "url": "https://www.eldebate.com/espana/20261016/izquierda-intenta-cerrar-coaliciones-in-extremis-aminorar-derrota-predicen-sondeos_470125.html"
-    },
-    {
-     "id": "ed4",
-     "titular": "El reparto de las listas divide al PSOE de Galicia y provoca la primera dimisión",
-     "resumen": "La elaboración de las listas del PSOE gallego para las generales ha abierto una fuerte división interna. El caso más llamativo es el del exalcalde de Lugo José López Orozco, que se ha quedado fuera de la lista al Senado por su provincia en favor de César Mogo, cercano a Sánchez. Orozco asegura que tuvo más apoyos y pidió revisar el resultado, sin éxito. El líder del PSOE gallego, José Ramón Gómez Besteiro, defiende que las listas se aprobaron por aclamación en las cuatro provincias y que se tuvieron en cuenta la paridad y el reparto territorial. Mientras tanto, el alcalde de Láncara, Darío Piñeiro, ha dimitido de la gestora provincial porque cree que la dirección eligió a los candidatos de antemano.",
-     "url": "https://www.eldebate.com/espana/galicia/20261016/confeccion-carta-listas-29n-fractura-psoe-galicia-provoca-primera-dimision_470104.html"
-    },
-    {
-     "id": "ed5",
-     "titular": "El socio de Aldama pide declarar voluntariamente en el caso de los hidrocarburos",
-     "resumen": "El empresario Claudio Rivas, socio de Víctor de Aldama e investigado en el llamado caso de los hidrocarburos, ha pedido al juez Santiago Pedraz, de la Audiencia Nacional, declarar de forma voluntaria a partir de la última semana de noviembre. Quiere aportar documentos e información que considera importantes. Su abogado ha pedido retrasar la comparecencia por problemas de salud. Rivas está implicado en dos causas por presunto fraude del IVA en el sector de los carburantes: una relacionada con la empresa Gaslow, por la que Aldama entró en prisión provisional, y otra con la sociedad Villafuel. Su defensa sostiene que se le incluyó tarde en el procedimiento, cuando ya había vencido el plazo de investigación, y que eso le deja indefenso.",
-     "url": "https://www.eldebate.com/espana/20261016/socio-aldama-toma-iniciativa-pide-declaracion-voluntaria-caso-hidrocarburos_470196.html"
+     "titular": "El Debate repasa el patrimonio inmobiliario de Sánchez y Begoña Gómez",
+     "resumen": "El Debate publica una investigación sobre las viviendas de Pedro Sánchez y Begoña Gómez, basada en datos del Registro de la Propiedad. Entre los dos suman seis inmuebles, algunos a su nombre y otros compartidos con familiares. Sánchez tiene un piso pequeño en Tres Olivos, en Madrid, comprado en 1994, con una plaza de garaje, y con su mujer una vivienda en Aluche, adquirida en 2005. Begoña Gómez tiene además un piso en Pozuelo de Alarcón compartido con su padre y su hermano, otro en la calle Prado, también con su hermano, y una casa de obra nueva en Mojácar, comprada en 2013. El periódico lo publica en plena campaña, cuando Sánchez ha puesto la vivienda en el centro de su discurso. No recoge reacciones del PSOE.",
+     "url": "https://www.eldebate.com/espana/20261017/patrimonio-sanchez-begona-tres-pisos-piscina-casa-playa_469468.html"
     }
    ]
   },
@@ -117,33 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Ayuso cierra la estación de metro de Sol por la acampada en la plaza",
-     "resumen": "Isabel Díaz Ayuso anunció en una entrevista en esRadio que la estación de metro de Sol cerrará temporalmente para limpiarla. Lo atribuye a las malas condiciones sanitarias que, según ella, ha provocado la acampada instalada en la plaza para protestar por la vivienda, tras el desahucio de la vecina conocida como Maricarmen. Ayuso reconoció que no sabía la hora exacta del cierre ni cuánto duraría, y acusó al Gobierno de permitir el caos en el centro de Madrid. En la misma entrevista criticó los efectos de la llamada ley de nietos sobre el censo electoral, aunque dijo no dudar del sistema de votación, y pronosticó que el exdirigente socialista Santos Cerdán acabará en prisión. El artículo no recoge respuesta del Gobierno ni del metro.",
-     "url": "https://theobjective.com/espana/politica/2026-10-16/ayuso-cierra-sol-insalubridad-acampada/"
+     "titular": "El PSOE y sus socios irán juntos al Senado para intentar ganar la mayoría",
+     "resumen": "El PSOE ha cerrado un acuerdo con Izquierda Unida, Sumar, Compromís, Más Madrid y otros partidos para presentarse juntos al Senado en las elecciones del 29 de noviembre. La candidatura se llamará Senado de Progreso y se presentará en 46 provincias. Las negociaciones duraron hasta la medianoche del viernes, cuando acababa el plazo. Según un informe socialista, esta fórmula podría sumar hasta 40 senadores más, y la izquierda llegaría a unos 150 de los 267, por encima de la mayoría absoluta. Por separado, las previsiones dan al PP 96 y al PSOE 89. El PSOE lo califica de hito histórico. En cambio, el Frente Amplio y Podemos no lograron ir juntos al Congreso, en parte por el puesto de Irene Montero en las listas.",
+     "url": "https://theobjective.com/espana/politica/2026-10-17/psoe-frente-amplio-acuerdosenado/"
     },
     {
      "id": "to2",
-     "titular": "Sánchez acaba la legislatura con 1.255 asesores y cargos de confianza",
-     "resumen": "El Gobierno llega a las elecciones con 1.255 puestos de asesores y personal de confianza, según la última relación de puestos de trabajo, con datos del 1 de octubre. La Presidencia del Gobierno concentra 576. Según The Objective, el dinero presupuestado al principio para este personal pasó de unos 40 millones de euros en 2018 a unos 71 millones en 2025, un aumento de alrededor del 77 por ciento. En enero de este año había 959 eventuales, frente a 604 en la época de Rajoy. Más de la mitad de los puestos están en los niveles más altos de la Administración. El periódico añade que 145 de quienes trabajaban con Sánchez en 2024 ya ocupaban puestos parecidos con Rajoy, y que el registro no incluye nombres ni sueldos.",
-     "url": "https://theobjective.com/espana/2026-10-16/sanchez-elecciones-1255-asesores-personal-confianza/"
+     "titular": "La fragata insignia de Marruecos desapareció del radar un día antes del asalto a Ceuta",
+     "resumen": "Según The Objective, la fragata Mohamed Sexto, buque insignia de la Marina de Marruecos, dejó de emitir su posición poco antes de la entrada masiva en Ceuta. Estaba fondeada en Casablanca el 29 de julio y, a primera hora de la tarde, desapareció de los registros. El periódico asegura que el resto de la flota militar marroquí de la zona tampoco emitió señales hasta el 14 de agosto, y que se sospecha que esos barcos entraron en aguas españolas sin permiso. Eso llevó a la Armada a movilizar dos fragatas y otro buque, algo que, según el diario, el Gobierno ocultó más de dos meses. Las fuentes consultadas explican que apagar ese sistema de localización puede deberse a razones de seguridad en misiones militares.",
+     "url": "https://theobjective.com/espana/2026-10-17/buque-marruecos-radar-ceuta/"
     },
     {
      "id": "to3",
-     "titular": "Una patrullera marroquí vuelve a entrar en aguas de Ceuta tras la visita de los Reyes",
-     "resumen": "El jueves, un día después de que los Reyes terminaran su visita a Ceuta y Melilla, una patrullera de la Marina marroquí entró en aguas españolas frente a Ceuta. Según fuentes policiales, llegó a la bahía sur hacia las nueve y media de la mañana y se quedó unas siete horas a la vista de la costa. Pasadas las cuatro de la tarde, cuando salió a su encuentro una patrullera de la Guardia Civil, el barco marroquí dio la vuelta antes de cualquier contacto. Se desconoce el motivo. El episodio se suma a la presencia de buques de guerra marroquíes durante la entrada masiva del 30 y 31 de julio. Feijóo pide desplegar la Armada y convocar a la embajadora marroquí. El Gobierno niega nuevas entradas desde julio y destaca la buena coordinación con Marruecos.",
-     "url": "https://theobjective.com/espana/2026-10-16/marruecos-patrullera-aguas-ceuta-reyes/"
-    },
-    {
-     "id": "to4",
-     "titular": "Las fragatas marroquíes apagaron su localización durante el asalto a Ceuta",
-     "resumen": "Según The Objective, los tres principales buques de guerra de Marruecos, las fragatas Mohamed Sexto y Hassan Segundo y la corbeta Tarik Ben Ziyad, desconectaron el sistema que transmite su posición, rumbo y velocidad durante los días de la entrada masiva en Ceuta, lo que dificultó seguir sus movimientos. Las maniobras en aguas españolas siguieron hasta principios de agosto, cuando Defensa envió el buque Rayo. El periódico asegura que hubo riesgo de colisión y que la Armada pidió a Rabat que cesaran. Añade que Marruecos movió aviones militares a Tetuán y que hubo cazas y drones cerca de Melilla. Sánchez admitió que buques marroquíes rodearon Ceuta y habló de días difíciles, mientras que PP y Vox desconfían de las explicaciones oficiales.",
-     "url": "https://theobjective.com/espana/politica/2026-10-16/fragatas-marroquies-geolocalizacion-ceuta/"
-    },
-    {
-     "id": "to5",
-     "titular": "Dieciséis embajadas relajan el control del voto desde el extranjero",
-     "resumen": "The Objective informa de que dieciséis embajadas españolas han dejado de usar el correo certificado para el voto de los españoles residentes en el extranjero y lo han cambiado por un franqueo pagado en destino, mediante acuerdos con los servicios postales locales. Entre los países están Argentina, México, Venezuela, Francia, Alemania y Suiza. La medida afecta a unos dos millones de votantes, cerca del 70 por ciento de ese censo. El objetivo sería evitar que el votante tenga que adelantar y luego recuperar el coste del envío. El periódico, citando fuentes del sector que no identifica, advierte de que así se pierde el rastro del envío, sin fecha ni justificante. Exteriores no ha hecho declaraciones y Correos dice ajustarse a la ley electoral.",
-     "url": "https://theobjective.com/espana/2026-10-16/embajadas-reducen-control-voto-cera-franqueo/"
+     "titular": "El prestamista de Plus Ultra dice que compraba oro en Níger y lo vendía en Dubái",
+     "resumen": "El financiero neerlandés Simon Verhoeven, considerado el principal prestamista de la aerolínea Plus Ultra, declaró ante el juez de la Audiencia Nacional. Explicó que el oro encontrado en su casa de Palma de Mallorca procede de su negocio: lo compraba al banco central de Níger, lo llevaba en avión a Dubái y lo vendía a una joyería de allí. Los investigadores sostienen, en cambio, que creó facturas falsas para justificar movimientos de dinero y que montó con otro socio esquemas para blanquear capitales. Las autoridades suizas los relacionan con fondos venezolanos. En el registro de su casa, en 2024, la policía encontró joyas, relojes de lujo, dinero en efectivo y dos lingotes. Verhoeven niega haber blanqueado dinero del rescate público a la aerolínea.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-17/prestamista-plus-ultra-oro/"
     }
    ]
   },
@@ -153,27 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Melchor León, diputado del PSOE en Ceuta, votará en blanco mientras Sánchez sea el candidato",
-     "resumen": "Melchor León, diputado socialista en la Asamblea de Ceuta, anunció en el programa La Mesa, de Antena 3, que no votará a Pedro Sánchez en las elecciones del 29 de noviembre y que votará en blanco mientras él sea el candidato del PSOE. Su motivo es la gestión del Gobierno ante la entrada masiva de personas desde Marruecos en Ceuta el 30 y el 31 de julio, que el periódico cifra en unas 80.000 y que León califica de invasión. Ya en agosto, junto a otro diputado socialista, había reclamado medidas urgentes y defendido que los intereses de Ceuta están por encima de la disciplina de partido. En el debate discutió con un analista marroquí que rechaza hablar de invasión. León aclara que no deja el PSOE y asegura que la dirección no le ha llamado tras sus declaraciones.",
-     "url": "https://okdiario.com/espana/melchor-leon-diputado-del-psoe-estalla-contra-partido-avisa-votare-blanco-mientras-pedro-sanchez-sea-candidato-del-psoe-20560325"
+     "titular": "Un informe de Exteriores detalla los expedientes de la ley de nietos",
+     "resumen": "Según OKDiario, el Ministerio de Asuntos Exteriores tiene estadísticas detalladas de los expedientes de nacionalidad de la ley de nietos. Un informe con datos hasta el 31 de agosto cuenta 369.017 nacionalidades concedidas, más de 231.000 aún sin inscribir y más de 644.000 pendientes de resolver. El Supremo exige al Gobierno identificar a los nacionalizados por esta ley para aplicar sus medidas sobre el censo electoral, y la Administración dijo que era incapaz de hacerlo. Vox sostiene que el informe demuestra que sí es posible y lo ha usado en un recurso ante el Supremo. Hay que tener en cuenta que esa conclusión es la interpretación del periódico y de Vox, y que el informe no muestra que permita identificar a cada persona.",
+     "url": "https://okdiario.com/espana/este-informe-exteriores-prueba-que-gobierno-puede-identificar-falsos-nietos-como-exige-supremo-20568300"
     },
     {
      "id": "ok2",
-     "titular": "El Congreso suspende unas jornadas de diplomáticos sobre la ley de nietos",
-     "resumen": "Según OKDiario, el Congreso que preside Francina Armengol ha impedido unas jornadas de la Asociación de Diplomáticos Españoles sobre el servicio consular, la llamada ley de nietos y el voto desde el extranjero. Estaban previstas para el lunes 19 de octubre, el día en que se cierra el censo de residentes en el exterior, y la Mesa del Congreso las había autorizado meses antes. El jueves, un funcionario de la Cámara avisó al presidente de la asociación, Alberto Virella, de que el acto no podía hacerse como estaba previsto y propuso pasarlo a una mañana, algo inviable con tres días de margen. El periódico recuerda que Sumar celebró en la misma sala un acto parecido el 7 de octubre. Fuentes diplomáticas, sin aportar pruebas, atribuyen la decisión al Gobierno. La asociación lo celebrará más adelante. No hay respuesta del Congreso.",
-     "url": "https://okdiario.com/espana/armengol-veta-reunion-autorizada-diplomaticos-sobre-ley-nietos-dia-que-cierra-censo-electoral-20559541"
+     "titular": "La primera ministra danesa critica en Bruselas la regularización de inmigrantes de Sánchez",
+     "resumen": "La primera ministra de Dinamarca, la socialdemócrata Mette Frederiksen, criticó el viernes en el Consejo Europeo la regularización extraordinaria de inmigrantes que impulsa el Gobierno de España, que afectaría a entre 500.000 y 600.000 personas. Según OKDiario, sostuvo que permitir quedarse legalmente a quien entró de forma ilegal va en contra de lo que piensa la mayoría en Europa. Lo planteó en un desayuno sobre migración con una veintena de países, al que Sánchez no fue invitado, y pidió a la Comisión Europea que estudie las consecuencias de esa medida. El periódico describe que Sánchez la escuchó serio en la reunión. El artículo no recoge respuesta del Gobierno español.",
+     "url": "https://okdiario.com/espana/primera-ministra-danesa-afea-politica-migratoria-sanchez-que-escucha-serio-sin-levantarse-asiento-20568210"
     },
     {
      "id": "ok3",
-     "titular": "El juez Peinado se jubila y agradece a sus compañeros el apoyo en el caso de Begoña Gómez",
-     "resumen": "El juez Juan Carlos Peinado deja la carrera judicial al cumplir 72 años. Se ha despedido con una carta a sus compañeros de los juzgados de Plaza de Castilla, en Madrid, en la que les agradece el ánimo que le dieron desde que decidió investigar a Begoña Gómez, la esposa del presidente del Gobierno, en abril de 2024, y en la que defiende la independencia judicial. Poco antes de jubilarse, Peinado envió a Begoña Gómez a juicio con jurado popular. OKDiario repasa las críticas y ataques personales que recibió durante la instrucción, incluidos bulos sobre su vida privada, a los que el juez nunca respondió en público. Peinado, que era titular del Juzgado de Instrucción número 41 de Madrid, volverá a ejercer como abogado, la profesión que tenía antes de ser juez.",
-     "url": "https://okdiario.com/espana/peinado-despide-agradeciendo-sus-companeros-apoyo-que-dieron-imputar-begona-cuando-fuerzas-flaqueaban-20552666"
-    },
-    {
-     "id": "ok4",
-     "titular": "Una enmienda socialista en Bruselas abriría ayudas industriales europeas a Marruecos",
-     "resumen": "Doce eurodiputados socialistas españoles han presentado una enmienda a una norma europea sobre la industria, la llamada ley de aceleración industrial. Según OKDiario, la propuesta pide que las ayudas pensadas para empresas de la Unión Europea puedan extenderse, con un trato más flexible, a países con acuerdos comerciales con la Unión, entre ellos Marruecos. Los firmantes lo justifican por la necesidad de mantener las cadenas de producción integradas. La enmienda todavía tiene que votarse en el Parlamento Europeo. Fuentes del Partido Popular, que el periódico no identifica, advierten de que piezas fabricadas en Marruecos podrían contar como europeas para recibir ayudas públicas, y defienden que ese trato solo se dé al Reino Unido y a otros socios cercanos. El artículo no recoge la respuesta del PSOE.",
-     "url": "https://okdiario.com/espana/psoe-cuela-treta-bruselas-que-marruecos-pueda-acceder-ayudas-industriales-como-resto-ue-20541611"
+     "titular": "Podemos y el Frente Amplio no logran ir juntos a las elecciones",
+     "resumen": "Podemos y el Frente Amplio no se presentarán juntos a las elecciones generales del 29 de noviembre. El plazo para registrar coaliciones acabó el viernes a medianoche sin acuerdo general, y solo compartirán candidatura en Canarias y en la Comunidad Valenciana. El choque vino de exigencias incompatibles: el Frente Amplio quería un pacto en toda España, y Podemos pedía dejar fuera Madrid y Cataluña, donde mantiene su alianza con Esquerra Republicana. Horas antes, el Frente Amplio le ofreció puestos destacados en esas dos comunidades, sin éxito. En cambio, el PSOE y el Frente Amplio sí irán juntos al Senado, con el objetivo de quitar al PP la mayoría absoluta en esa cámara. Ada Colau encabezará la lista del Frente Amplio por Barcelona.",
+     "url": "https://okdiario.com/espana/podemos-rechaza-oferta-coalicion-frente-amplio-29-n-ofrece-pacto-que-excluye-madrid-cataluna-20569866"
     }
    ]
   },
@@ -183,27 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Defensa entrega a la Justicia audios de militares que presumen de golpear a migrantes en Ceuta",
-     "resumen": "elDiario.es ha publicado grabaciones en las que varios soldados destinados en Ceuta presumen, entre risas, de haber golpeado a migrantes durante una guardia. Según fuentes de Defensa citadas por Radio Nacional, el ministerio está analizando los audios con la autoridad que investiga las posibles agresiones y malos tratos, y los ha puesto a disposición de la Justicia. Ya había denuncias anteriores de palizas, humillaciones y robos de dinero y teléfonos, documentadas por Amnistía Internacional, que Defensa remitió a la Fiscalía y al juzgado de guardia de Ceuta. Días antes, la ministra Robles había defendido a los soldados y había calificado de injustas las críticas. El director de Amnistía Internacional en España afirma que los audios muestran castigos para humillar y no una defensa legítima, y pide saber si los militares han sido suspendidos.",
-     "url": "https://www.eldiario.es/desalambre/defensa-asegura-investigara-audios-militares-presumen-palizas-migrantes-ceuta_1_13587546.html"
+     "titular": "El Frente Amplio ofreció a Podemos el número dos por Madrid para Irene Montero",
+     "resumen": "El viernes, poco antes de las diez de la noche, el Frente Amplio envió a Podemos por escrito una última oferta para ir juntos a las elecciones. Según elDiario.es, le ofrecía el número dos de la lista por Madrid, pensado para Irene Montero, y las mismas condiciones en Cataluña, aunque allí Podemos ya había pactado ir con Esquerra. También proponía que Podemos tuviera un portavoz en el futuro grupo parlamentario y un reparto de los recursos según el peso de cada partido. A cambio, exigía un acuerdo en toda España, mientras Podemos solo negociaba con Izquierda Unida en diez comunidades. Gabriel Rufián reconoció que la lista unitaria de la izquierda había fracasado. Al final, el plazo terminó sin acuerdo general.",
+     "url": "https://www.eldiario.es/politica/frente-amplio-ofrece-escrito-puesto-salida-madrid-irene-montero_1_13592988.html"
     },
     {
      "id": "edi2",
-     "titular": "Podemos, Nueva Canarias, IU y Sumar irán juntos en Canarias",
-     "resumen": "Nueva Canarias, Podemos, Izquierda Unida y Movimiento Sumar se presentarán juntos a las elecciones generales del 29 de noviembre en Canarias, con el nombre de Unidad del Pueblo Canario, que recupera unas siglas históricas. El acuerdo, cerrado tras una larga reunión, se basa en defender los intereses de las islas, el derecho a la vivienda y los servicios públicos como la sanidad y la educación. Los partidos lo presentan como la coalición más amplia de toda España para estas elecciones, y Podemos lo propone como modelo para el resto de la izquierda. Nueva Canarias reconoce que hubo tensiones, pero dice que el objetivo común es frenar un posible Gobierno del PP con Vox. Los candidatos todavía no se conocen.",
-     "url": "https://www.eldiario.es/canariasahora/politica/acuerdo-historico-izquierda-canaria-suma-confluencia-llamara-unidad-pueblo-canario_1_13589265.html"
+     "titular": "La media de las encuestas da a PP y Vox quince puntos de ventaja sobre la izquierda",
+     "resumen": "elDiario.es ha publicado su media de encuestas para las elecciones del 29 de noviembre. El PP lidera con cerca del 32 por ciento de los votos, seguido del PSOE con el 26, Vox con el 19, Sumar con el 6 y Podemos con el 3. La derecha aventaja así al bloque de izquierdas en unos quince puntos, y los sondeos apenas se han movido desde la convocatoria. Al traducirlo a escaños, el PP tendría unos 135, el PSOE 106 y Vox 66, de modo que PP y Vox superarían la mayoría absoluta en nueve de cada diez simulaciones. Una mayoría absoluta del PP en solitario parece poco probable. El periódico insiste en que es una foto de las encuestas actuales, no una predicción.",
+     "url": "https://www.eldiario.es/politica/dice-hoy-media-encuestas-pp-vox-aventajan-bloque-progresista-15-puntos-izquierda-sigue-negociando_1_13585216.html"
     },
     {
      "id": "edi3",
-     "titular": "Podemos ofrece pactos solo a IU en diez comunidades y Maíllo lo rechaza",
-     "resumen": "Podemos ha dejado claro que, de momento, no buscará un acuerdo general con el Frente Amplio. Ione Belarra lo confirmó en Radio Nacional. Según fuentes del partido, ofrece pactos solo a Izquierda Unida en diez comunidades, entre ellas Andalucía, Galicia y Castilla-La Mancha, y deja fuera Madrid y Cataluña. El líder de Izquierda Unida, Antonio Maíllo, rechazó la propuesta minutos después: no negociará si Podemos se aparta del Frente Amplio, y le pidió que decida si quiere sumarse a un gran frente de izquierdas. Belarra acusó al Frente Amplio de cambiar de nombre como un trilero, y Ada Colau criticó que Podemos no someta su pacto a primarias. En la Comunidad Valenciana, el acuerdo con Compromís está avanzado.",
-     "url": "https://www.eldiario.es/politica/limita-acuerdos-iu-fuera-madrid-catalunya-negociacion-unidad-izquierda_1_13586819.html"
-    },
-    {
-     "id": "edi4",
-     "titular": "La Junta Electoral expedienta a Sánchez por una rueda de prensa en Moncloa",
-     "resumen": "La Junta Electoral Central ha abierto un expediente sancionador a Pedro Sánchez por sus declaraciones en una rueda de prensa en Moncloa, tras el Consejo de Ministros y poco después de anunciar el adelanto electoral. Atiende en parte denuncias del PP y de Se Acabó La Fiesta. La Junta considera que Sánchez no se limitó a explicar los decretos aprobados, sino que valoró la acción de su Gobierno con cifras de empleo, pensiones y vivienda, criticó a la oposición y pidió una mayoría parlamentaria más amplia. Por eso exige a la Presidencia que retire esas declaraciones de todos sus canales y recuerda a Sánchez su deber de neutralidad. La Junta aclara que un presidente puede defender su postura, pero no usando los medios públicos de su cargo en periodo electoral.",
-     "url": "https://www.eldiario.es/politica/junta-electoral-expedienta-sanchez-manifestaciones-valorativas-rueda-prensa-moncloa_1_13588771.html"
+     "titular": "El CNI informa a la jueza de que Marruecos sabía del riesgo de entrada masiva en Ceuta",
+     "resumen": "El Centro Nacional de Inteligencia ha entregado a la jueza que investiga la entrada masiva de migrantes en Ceuta un informe de unas veinte páginas. Según el documento, el 29 de julio avisó con urgencia a los servicios marroquíes de las convocatorias difundidas en redes sociales, y les pasó los grupos más activos. Desde ese momento, Marruecos conocía con detalle el alcance y la hora de la posible entrada, que se produjo hacia las once de la mañana del 30 de julio. El CNI atribuye a las fuerzas marroquíes controles insuficientes y una actuación pasiva, y cita entre las causas la Fiesta del Trono, que desvió agentes. Aun así, el informe destaca la cooperación con Marruecos en otras ocasiones y en el retorno de los migrantes.",
+     "url": "https://www.eldiario.es/politica/cni-informa-jueza-marruecos-conocia-riesgo-entrada-masiva-migrantes_1_13592362.html"
     }
    ]
   }
