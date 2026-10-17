@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
 <style>
-/* Quiosco de prensa en negro y amarillo: barra con Atrás y Hablar, cuadrícula de diarios, ficha de diario y noticia */
+/* Quiosco de prensa en negro y amarillo: barra con Atrás, cuadrícula de diarios, ficha de diario y noticia */
 :root{
   color-scheme: dark;
   --bg:#000000; --surface:#121008; --line:#5C4E14;
@@ -21,7 +21,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:19px;line-height:1.45;-webkit-text-size-adjust:100%;
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:23px;line-height:1.45;-webkit-text-size-adjust:100%;
   padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 a{color:inherit}
 button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -51,7 +51,7 @@ button:focus-visible,a:focus-visible{outline:4px solid var(--fg);outline-offset:
 .lead small{font-weight:400;font-size:.75em;color:var(--dim)}
 
 .label{font-size:.85em;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:6px 0 -6px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .tile{display:flex;flex-direction:column;justify-content:space-between;gap:10px;min-height:118px;text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:14px}
 .tile:active{border-color:var(--fg)}
 .mono{width:48px;height:48px;border-radius:50%;border:2px solid var(--fg);display:grid;place-items:center;font-weight:700;font-size:.85em}
@@ -76,7 +76,7 @@ button:focus-visible,a:focus-visible{outline:4px solid var(--fg);outline-offset:
 .story h2{font-size:1.65em;line-height:1.2;margin:0;text-wrap:balance;border-radius:6px}
 .story h2.now{background:var(--mark)}
 .story .kicker{font-size:.85em;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:0 0 6px}
-.story .text{font-size:1.15em;line-height:1.65;color:var(--soft);max-width:62ch;margin:0}
+.story .text{font-size:1.3em;line-height:1.6;color:var(--soft);max-width:62ch;margin:0}
 .story .text span{border-radius:4px}
 .story .text span.now{background:var(--mark);color:var(--fg)}
 .pager{display:flex;justify-content:space-between;gap:10px;border-top:2px solid var(--line);padding-top:14px}
