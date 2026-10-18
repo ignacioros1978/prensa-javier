@@ -61,6 +61,7 @@ PERMISOS DE WEBFETCH: en esta sesión WebFetch rechaza (PROVENANCE_REQUIRED) las
    a. Con Bash: git clone --depth 1 https://github.com/ignacioros1978/prensa-javier /tmp/pj
    b. Sustituye SOLO el archivo /tmp/pj/noticias.json por el nuevo, con esta estructura exacta (UTF-8, JSON válido):
 {"fecha":"AAAA-MM-DD","fechaTexto":"lunes 19 de octubre","actualizado":"<ISO con zona +01:00/+02:00, hora de Madrid>","portada":["to3","ee2",...],"diarios":[{"id":"ld","nombre":"Libertad Digital","noticias":[{"id":"ld1","titular":"…","resumen":"…","url":"…"}]},{"id":"ee","nombre":"El Español",…},{"id":"ed","nombre":"El Debate",…},{"id":"to","nombre":"The Objective",…},{"id":"ok","nombre":"OKDiario",…},{"id":"edi","nombre":"elDiario.es",…}]}
+      FECHA Y HORA: justo antes de escribir el archivo, ejecuta en Bash TZ=Europe/Madrid date -Iseconds y usa esa salida exacta para "actualizado", para "fecha" y "fechaTexto", y para la hora del mensaje del commit. No calcules ni inventes la hora.
       Mantén exactamente esos ids y nombres de periódico. Todos los ids de "portada" deben existir en "diarios". Valida el JSON con python3 -m json.tool antes de guardar.
    c. No toques index.html, familia.html ni ningún otro archivo. En /tmp/pj: git add noticias.json; git -c user.name=Claude -c user.email=noreply@anthropic.com commit -m "Noticias del <fecha> <hora>"; git push origin HEAD:main. Si el push falla por cambios remotos, haz git pull --rebase y vuelve a empujar una vez.
 6. Termina con una línea: cuántas noticias guardaste, si algún periódico falló y si el push funcionó.
