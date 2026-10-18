@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Viajes · Ofertas de la semana</title>
+<meta name="description" content="La mejor escapada en pareja y el mejor viaje en familia de la semana, saliendo de Sevilla, Málaga o Jerez.">
+<meta name="theme-color" content="#102a33">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --band:#102a33; --on-band:#eaf3f5; --on-band-2:#c9dde2;
+  --bg:#eef2f4; --surface:#ffffff; --surface-2:#f5f8fa; --line:#dbe2e8;
+  --fg:#14202b; --label:#2f3d48; --muted:#4a5864;
+  --accent:#0e5a6b; --accent-soft:#e0eef1; --on-accent:#ffffff;
+  --pareja:#8c2f39; --pareja-2:#b4424d; --familia:#1d4f91; --familia-2:#2c6bc0;
+  --ok:#1f7a3c; --warn:#9a5b00;
+  --shadow:0 1px 2px rgba(16,42,51,.06),0 8px 22px rgba(16,42,51,.08);
+  --r:18px;
+  --f-display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --band:#0a1d24; --on-band:#eef6f8; --on-band-2:#c9dde2;
+  --bg:#0c1318; --surface:#141e25; --surface-2:#19252d; --line:#2a3944;
+  --fg:#f1f5f8; --label:#c4ced6; --muted:#b4c0c9;
+  --accent:#5cc0d4; --accent-soft:#163139; --on-accent:#06191e;
+  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91;
+  --ok:#6fd08f; --warn:#f0b05a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.3); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --band:#0a1d24; --on-band:#eef6f8; --on-band-2:#c9dde2;
+  --bg:#0c1318; --surface:#141e25; --surface-2:#19252d; --line:#2a3944;
+  --fg:#f1f5f8; --label:#c4ced6; --muted:#b4c0c9;
+  --accent:#5cc0d4; --accent-soft:#163139; --on-accent:#06191e;
+  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91;
+  --ok:#6fd08f; --warn:#f0b05a; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:500 16px/1.5 var(--f-body);padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:var(--f-display);margin:0;line-height:1.1}
+
+/* Cabecera */
+.top{background:var(--band);color:var(--on-band);padding:calc(18px + env(safe-area-inset-top,0)) 0 26px;position:relative;overflow:hidden}
+.top svg.art{position:absolute;right:-30px;top:-10px;width:300px;height:200px;opacity:.12;pointer-events:none}
+.kicker{font-family:var(--f-display);font-size:.9rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--on-band-2)}
+.top h1{font-size:clamp(2.1rem,8vw,3rem);font-weight:800;margin-top:6px;color:#fff}
+.top p{margin:8px 0 0;font-size:1rem;font-weight:600;color:var(--on-band-2);max-width:60ch}
+.upd{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:rgba(255,255,255,.12);border-radius:999px;padding:6px 12px;font-size:.88rem;font-weight:700;color:#fff}
+.upd i{width:8px;height:8px;border-radius:50%;background:#7fe0a0;display:block}
+.upd.old i{background:#f0b05a}
+
+main{margin-top:-14px;position:relative}
+.grid{display:grid;gap:16px}
+@media (min-width:820px){.grid{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* Tarjeta de oferta */
+.offer{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.ob{position:relative;color:#fff;padding:18px 18px 20px;overflow:hidden}
+.offer.pareja .ob{background:linear-gradient(135deg,var(--pareja),var(--pareja-2))}
+.offer.familia .ob{background:linear-gradient(135deg,var(--familia),var(--familia-2))}
+.ob svg.bg{position:absolute;right:-16px;bottom:-26px;width:150px;height:150px;opacity:.16;pointer-events:none}
+.ob .who{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:800;font-size:.92rem;letter-spacing:.07em;text-transform:uppercase}
+.ob .who svg{width:20px;height:20px}
+.ob .dest{font-size:clamp(2rem,8vw,2.6rem);font-weight:800;margin-top:10px;color:#fff}
+.ob .country{font-weight:700;font-size:1rem;margin-top:2px;color:#fff;opacity:.95}
+.price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:14px}
+.price b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;line-height:1;color:#fff;font-variant-numeric:tabular-nums}
+.price span{font-weight:700;font-size:.95rem;color:#fff}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.chip{font-size:.85rem;font-weight:700;background:rgba(255,255,255,.18);border-radius:999px;padding:4px 10px;color:#fff}
+
+.obody{padding:16px 18px 18px}
+.facts{display:grid;gap:12px;margin:0}
+.fact{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+.fact svg{width:22px;height:22px;color:var(--accent);margin-top:2px}
+.fact dt{font-size:.82rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--label)}
+.fact dd{margin:1px 0 0;font-weight:600;font-size:1rem;color:var(--fg)}
+.fact dd small{display:block;font-weight:600;font-size:.92rem;color:var(--muted);margin-top:1px}
+.why{margin:16px 0 0;padding:12px 14px;background:var(--surface-2);border-radius:12px;font-size:.98rem;font-weight:500;color:var(--fg)}
+.why b{display:block;font-size:.82rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--label);margin-bottom:3px}
+.cta{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;min-height:52px;border-radius:14px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:1.05rem;text-decoration:none}
+.cta svg{width:18px;height:18px}
+.src{margin-top:8px;text-align:center;font-size:.88rem;font-weight:600;color:var(--muted)}
+
+.alts{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+.alts h3{font-size:.85rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--label);font-family:var(--f-body)}
+.alt{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.alt:last-child{border-bottom:0}
+.alt .an{flex:1;min-width:0}
+.alt .an b{display:block;font-weight:800;font-size:1rem}
+.alt .an small{display:block;font-weight:600;font-size:.9rem;color:var(--muted)}
+.alt .ap{font-family:var(--f-display);font-weight:800;font-size:1.2rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.alt svg{width:16px;height:16px;color:var(--muted);flex:none}
+
+.empty{padding:22px 18px;font-weight:600;color:var(--fg)}
+.empty b{display:block;font-family:var(--f-display);font-size:1.2rem;margin-bottom:6px}
+
+/* Secciones inferiores */
+.sec{margin-top:26px}
+.sec h2{font-size:.95rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--label);font-family:var(--f-display);margin-bottom:10px}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:6px 18px}
+.hrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:10px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.hrow:last-child{border-bottom:0}
+.hrow .wk{font-weight:800;font-size:.95rem}
+.hrow span{font-weight:600;font-size:.95rem;color:var(--fg);min-width:0}
+.hrow span b{font-family:var(--f-display);font-weight:800;font-variant-numeric:tabular-nums}
+.hrow span small{display:block;font-size:.82rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--label)}
+.srcs{display:flex;flex-wrap:wrap;gap:8px;padding:14px 0}
+.s{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.92rem;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.s i{width:8px;height:8px;border-radius:50%;background:var(--ok);display:block}
+.s.no i{background:var(--warn)}
+.how{padding:14px 0;font-size:.98rem;font-weight:500}
+.how p{margin:0 0 10px}
+.how p:last-child{margin:0}
+.how b{font-weight:800}
+.foot{margin:26px 0 30px;text-align:center;font-size:.9rem;font-weight:600;color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="top">
+  <svg class="art" viewBox="0 0 300 200" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M40 150c60-70 140-100 230-110"/><path d="M200 40l70 0-30 30"/><circle cx="70" cy="60" r="22"/><path d="M20 180h260"/></g></svg>
+  <div class="wrap">
+    <div class="kicker">Viajes · cada lunes</div>
+    <h1>Ofertas de la semana</h1>
+    <p>La mejor escapada en pareja y el mejor viaje en familia, saliendo de Sevilla, Málaga o Jerez.</p>
+    <div class="upd" id="upd"><i></i><span>Cargando…</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid" id="offers" aria-live="polite"></div>
+
+  <section class="sec" id="histSec" hidden>
+    <h2>Semanas anteriores</h2>
+    <div class="card" id="hist"></div>
+  </section>
+
+  <section class="sec" id="srcSec" hidden>
+    <h2>Dónde ha buscado esta semana</h2>
+    <div class="card"><div class="srcs" id="srcs"></div></div>
+  </section>
+
+  <section class="sec">
+    <h2>Cómo funciona</h2>
+    <div class="card"><div class="how">
+      <p>Cada <b>lunes por la mañana</b>, Claude revisa paquetes de vuelo + hotel, vuelos y alojamientos en varias webs de viajes, y elige la oferta más barata que cumple lo que buscamos.</p>
+      <p><b>Pareja:</b> 2 adultos, 3 o 4 noches. <b>Familia:</b> 2 adultos y 3 hijos, en fin de semana, puente o vacaciones del colegio. Salidas en las próximas 8 semanas, ciudades europeas, alojamiento céntrico y bien valorado.</p>
+      <p>Los precios son los que había el lunes y <b>cambian rápido</b>: comprueba siempre el precio final antes de reservar.</p>
+    </div></div>
+  </section>
+
+  <p class="foot" id="foot"></p>
+</main>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const eur=n=>(typeof n==='number'&&isFinite(n))?String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €':'';
+const safe=u=>/^https:\/\//.test(u||'')?u:'';
+const I={
+  heart:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  fam:'<circle cx="8" cy="7" r="2.6"/><circle cx="16" cy="7" r="2.6"/><circle cx="12" cy="13.2" r="1.9"/><path d="M3.5 20c0-3 2-5 4.5-5M20.5 20c0-3-2-5-4.5-5M9 20c0-2 1.3-3.3 3-3.3s3 1.3 3 3.3"/>',
+  cal:'<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+  plane:'<path d="M10.5 13.5 3 11l1.5-1.5 8 1 4.5-4.5a2 2 0 0 1 3 3L15.5 13l1 8L15 22.5 12.5 15l-3 3v2.5L8 22l-1-3.5L3.5 17 5 15.5H7.5z"/>',
+  bed:'<path d="M3 18v-8M3 14h18v4M21 14v-2a3 3 0 0 0-3-3h-7v5"/><circle cx="7" cy="11.5" r="1.8"/>',
+  bag:'<rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>',
+  ext:'<path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>',
+  chev:'<path d="M9 6l6 6-6 6"/>'
+};
+const svg=(k,cls)=>'<svg'+(cls?' class="'+cls+'"':'')+' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+I[k]+'</svg>';
+
+function fact(icon,label,main,sub){
+  if(!main)return '';
+  return '<div class="fact">'+svg(icon)+'<div><dt>'+esc(label)+'</dt><dd>'+esc(main)+(sub?'<small>'+esc(sub)+'</small>':'')+'</dd></div></div>';
+}
+function offer(kind,o){
+  const isP=kind==='pareja',title=isP?'Escapada en pareja':'Viaje en familia',ic=isP?'heart':'fam';
+  if(!o||!o.destino){
+    return '<article class="offer '+kind+'"><div class="ob"><div class="who">'+svg(ic)+title+'</div>'+svg(ic,'bg')+'</div><div class="empty"><b>Sin oferta esta semana</b>'+esc((o&&o.motivo)||'No ha salido nada que cumpla los criterios. El lunes que viene vuelve a buscar.')+'</div></article>';
+  }
+  const v=o.vuelo||{},h=o.alojamiento||{},url=safe(o.url);
+  const chips=[o.tipo,o.noches?o.noches+(o.noches===1?' noche':' noches'):'',v.directo===true?'Vuelo directo':(v.directo===false?'Con escala':''),o.cancelable===true?'Cancelación gratis':''].filter(Boolean);
+  const hotelSub=[h.estrellas?h.estrellas+' estrellas':'',h.nota?'nota '+h.nota:'',h.zona||''].filter(Boolean).join(' · ');
+  let alts='';
+  if(Array.isArray(o.alternativas)&&o.alternativas.length){
+    alts='<div class="alts"><h3>Otras opciones</h3>'+o.alternativas.slice(0,3).map(a=>{
+      const au=safe(a.url),tag=au?'a':'div';
+      return '<'+tag+' class="alt"'+(au?' href="'+esc(au)+'" target="_blank" rel="noopener"':'')+'><div class="an"><b>'+esc(a.destino)+'</b><small>'+esc([a.fechasTexto,a.origen?'desde '+a.origen:'',a.fuente].filter(Boolean).join(' · '))+'</small></div><span class="ap">'+eur(a.precioTotal)+'</span>'+(au?svg('chev'):'')+'</'+tag+'>';
+    }).join('')+'</div>';
+  }
+  return '<article class="offer '+kind+'"><div class="ob">'+svg(ic,'bg')+
+    '<div class="who">'+svg(ic)+title+'</div>'+
+    '<h2 class="dest">'+esc(o.destino)+'</h2>'+(o.pais?'<div class="country">'+esc(o.pais)+'</div>':'')+
+    '<div class="price"><b>'+eur(o.precioTotal)+'</b><span>en total'+(o.precioPersona?' · '+eur(o.precioPersona)+' por persona':'')+'</span></div>'+
+    (chips.length?'<div class="chips">'+chips.map(c=>'<span class="chip">'+esc(c)+'</span>').join('')+'</div>':'')+
+    '</div><div class="obody"><dl class="facts">'+
+      fact('cal','Fechas',o.fechasTexto,o.viajeros)+
+      fact('plane','Vuelo',[o.origen?'Desde '+o.origen:'',v.compania].filter(Boolean).join(' · '),v.detalle)+
+      fact('bed','Alojamiento',h.nombre,hotelSub)+
+      fact('bag','Incluye',o.incluye)+
+    '</dl>'+
+    (o.porQue?'<p class="why"><b>Por qué esta</b>'+esc(o.porQue)+'</p>':'')+
+    (url?'<a class="cta" href="'+esc(url)+'" target="_blank" rel="noopener">Ver la oferta'+svg('ext')+'</a>':'')+
+    (o.fuente?'<div class="src">Encontrada en '+esc(o.fuente)+'</div>':'')+
+    alts+'</div></article>';
+}
+function render(d){
+  const upd=$('#upd');
+  if(d.actualizado){
+    const t=new Date(d.actualizado),days=(Date.now()-t)/864e5;
+    upd.classList.toggle('old',days>8);
+    upd.querySelector('span').textContent='Barrido del '+(d.semanaTexto||t.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'}))+(days>8?' · hace más de una semana':'');
+  }else upd.querySelector('span').textContent='Aún no hay barrido';
+  if(d.estado==='pendiente'){
+    $('#offers').innerHTML='<article class="offer"><div class="empty"><b>Primer barrido en marcha</b>'+esc(d.nota||'Las ofertas aparecerán aquí en cuanto termine.')+'</div></article>';
+  }else{
+    $('#offers').innerHTML=offer('pareja',d.pareja)+offer('familia',d.familia);
+  }
+  const H=Array.isArray(d.anteriores)?d.anteriores.slice(0,8):[];
+  $('#histSec').hidden=!H.length;
+  $('#hist').innerHTML=H.map(w=>{
+    const c=(x,l)=>'<span><small>'+l+'</small>'+(x&&x.destino?esc(x.destino)+' · <b>'+eur(x.precioTotal)+'</b>':'—')+'</span>';
+    return '<div class="hrow"><span class="wk">'+esc(w.semanaTexto||'')+'</span>'+c(w.pareja,'Pareja')+c(w.familia,'Familia')+'</div>';
+  }).join('');
+  const S=Array.isArray(d.fuentes)?d.fuentes:[];
+  $('#srcSec').hidden=!S.length;
+  $('#srcs').innerHTML=S.map(s=>'<span class="s'+(s.estado&&s.estado!=='ok'?' no':'')+'" title="'+esc(s.estado||'')+'"><i></i>'+esc(s.nombre)+'</span>').join('');
+  $('#foot').textContent=d.nota&&d.estado!=='pendiente'?d.nota:'Los precios cambian: comprueba el precio final antes de reservar.';
+}
+fetch('ofertas.json?t='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}).then(render).catch(()=>{
+  $('#upd').querySelector('span').textContent='No se han podido cargar las ofertas';
+  $('#offers').innerHTML='<article class="offer"><div class="empty"><b>No se han podido cargar las ofertas</b>Comprueba la conexión y vuelve a abrir la página.</div></article>';
+});
+</script>
+</body>
+</html>

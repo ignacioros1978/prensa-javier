@@ -1,0 +1,35 @@
+{
+  "_nota": "Criterios del barrido semanal de la app Viajes. La tarea programada de los lunes lee este archivo. Para cambiar lo que busca, cambia este archivo (no hace falta tocar la tarea).",
+  "origenes": [
+    { "iata": "SVQ", "nombre": "Sevilla" },
+    { "iata": "AGP", "nombre": "Málaga" },
+    { "iata": "XRY", "nombre": "Jerez" }
+  ],
+  "ventanaSalida": "entre 7 y 56 días después del lunes del barrido",
+  "pareja": {
+    "viajeros": "2 adultos",
+    "lastminute": { "adults": "2", "ch_ages": "" },
+    "duracion": "3 o 4 noches, cualquier día de la semana",
+    "presupuestoOrientativo": "hasta 900 € en total"
+  },
+  "familia": {
+    "viajeros": "2 adultos y 3 hijos de 14, 11 y 4 años",
+    "lastminute": { "adults": "3", "ch_ages": "11,4", "nota": "lastminute solo admite niños hasta 11 años: la hija de 14 cuenta como adulto. Si no salen resultados, prueba dos habitaciones: adults \"2;1\" y ch_ages \"11,4;\"" },
+    "duracion": "fin de semana de viernes a domingo (2 noches) o un puente o vacaciones escolares de Andalucía; nunca días de colegio entre semana",
+    "alojamiento": "habitación familiar o apartamento para 5",
+    "presupuestoOrientativo": "hasta 1.800 € en total"
+  },
+  "destinos": "ciudades europeas fuera de España (Lisboa y Oporto valen)",
+  "calidadMinima": "alojamiento a menos de 4 km del centro, con nota de 7,5/10 o más (en lastminute, rating 75 o más) y al menos 50 opiniones; nada de campings, hostales ni albergues",
+  "fechasOcupadas": [
+    { "desde": "2026-11-06", "hasta": "2026-11-23", "motivo": "viaje a Laponia" },
+    { "desde": "2026-12-04", "hasta": "2026-12-09", "motivo": "viaje a Londres" }
+  ],
+  "festivosEscolaresAndalucia": [
+    { "desde": "2026-12-05", "hasta": "2026-12-08", "nombre": "Puente de la Constitución" },
+    { "desde": "2026-12-23", "hasta": "2027-01-07", "nombre": "Navidad" },
+    { "desde": "2027-02-26", "hasta": "2027-03-01", "nombre": "Día de Andalucía" },
+    { "desde": "2027-03-20", "hasta": "2027-03-28", "nombre": "Semana Santa" }
+  ],
+  "destinosCandidatos": ["LIS", "OPO", "ROM", "MIL", "PAR", "LON", "AMS", "BRU", "BER", "PRG", "BUD", "VIE", "DUB", "EDI", "NAP", "VCE", "BOD", "MLA"]
+}
