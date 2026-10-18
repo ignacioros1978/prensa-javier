@@ -103,3 +103,8 @@ Web de ofertas de viaje para Ignacio y Rosa: cada lunes, la mejor escapada en pa
 - Conectores que necesita la cuenta: **lastminute.com** (paquetes vuelo + hotel, la fuente principal), **eDreams** (vuelos) y **Booking.com** (alojamiento). Al crear la tarea se adjuntan los conectores que tenga la cuenta; si falta alguno, conéctalo antes.
 - lastminute solo admite niños de hasta 11 años: la hija de 14 cuenta como adulto (adults 3, ch_ages "11,4").
 - Para probarla: lánzala a mano y comprueba que hay un commit nuevo «Ofertas de viaje del …» y que `viajes/ofertas.json` tiene "estado":"ok".
+
+## Depósitos (carpeta depositos/)
+- Página: https://ignacioros1978.github.io/prensa-javier/depositos/ · se abre desde la Cartera (Liquidez › Reserva estratégica › «Top 5 del mercado»).
+- La Cartera le pasa el mejor depósito vivo en la dirección: ?mi=<TAE>&ent=<entidad>&nom=<nombre>&vence=<AAAA-MM-DD>.
+- top5.json lo escribe la tarea programada «Top 5 depósitos (lunes y jueves)». Sus instrucciones están en depositos/PROMPT.md.

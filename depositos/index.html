@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Depósitos · Top 5 del mercado</title>
+<meta name="description" content="Los 5 depósitos a plazo con mejor TAE del mercado español, actualizados los lunes y jueves.">
+<meta name="theme-color" content="#102a33">
+<link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --band:#102a33; --on-band:#eaf3f5; --on-band-2:#c9dde2;
+  --bg:#eef2f4; --surface:#ffffff; --surface-2:#f5f8fa; --line:#dbe2e8;
+  --fg:#14202b; --label:#2f3d48; --muted:#4a5864;
+  --accent:#0e5a6b; --accent-soft:#e0eef1; --on-accent:#ffffff;
+  --gold:#f2b233; --gold-ink:#2a1d00;
+  --pos:#1b7a4b; --pos-soft:#e3f2ea; --warn:#9a5b00; --warn-soft:#f8eedd;
+  --shadow:0 1px 2px rgba(16,42,51,.06),0 8px 22px rgba(16,42,51,.08);
+  --r:18px;
+  --f-display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Public Sans","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --band:#0a1d24; --on-band:#eef6f8; --on-band-2:#c3d6db;
+  --bg:#0c1318; --surface:#141e25; --surface-2:#19252d; --line:#2a3944;
+  --fg:#eef3f6; --label:#c9d4dc; --muted:#b3c0ca;
+  --accent:#5cc0d4; --accent-soft:#163139; --on-accent:#06191e;
+  --pos:#5fd09a; --pos-soft:#14301f; --warn:#e9b25a; --warn-soft:#3a2b12;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.3); color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font:500 17px/1.5 var(--f-body);-webkit-tap-highlight-color:transparent}
+h1,h2,h3{margin:0;font-family:var(--f-display);line-height:1.12;text-wrap:balance}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.num{font-variant-numeric:tabular-nums}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+.top{background:var(--band);color:var(--on-band);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{padding-block:16px 34px}
+.bar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.back{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);flex:none}
+.back svg{width:22px;height:22px}
+.kicker{font-family:var(--f-display);font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-band-2)}
+.top h1{font-size:clamp(2rem,8vw,2.7rem);font-weight:800;color:#fff}
+.top p{margin:8px 0 0;color:var(--on-band-2);font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:rgba(255,255,255,.12);border-radius:999px;padding:7px 14px;font-weight:700;font-size:.95rem;color:#fff}
+.pill i{width:9px;height:9px;border-radius:50%;background:#7fe0a0}
+.pill.old i{background:var(--gold)}
+
+main{margin-top:-18px;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);padding:18px}
+.mine{display:flex;flex-direction:column;gap:6px}
+.mine .k{font-size:.85rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--label)}
+.mine .v{font-family:var(--f-display);font-weight:800;font-size:1.25rem}
+.mine .d{font-weight:600;color:var(--muted)}
+.delta{display:inline-block;margin-top:4px;padding:6px 12px;border-radius:10px;font-weight:800;font-size:.98rem}
+.delta.up{background:var(--warn-soft);color:var(--warn)}
+.delta.ok{background:var(--pos-soft);color:var(--pos)}
+
+.dep{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 14px;align-items:start}
+.rank{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:1.25rem;background:var(--accent-soft);color:var(--accent)}
+.dep.first .rank{background:var(--gold);color:var(--gold-ink)}
+.dep h2{font-size:1.25rem;font-weight:800}
+.dep .prod{font-weight:600;color:var(--muted);font-size:.95rem;margin-top:2px}
+.tae{text-align:right}
+.tae b{display:block;font-family:var(--f-display);font-weight:800;font-size:2rem;line-height:1;color:var(--fg)}
+.tae small{display:block;font-weight:800;font-size:.85rem;color:var(--muted);margin-top:3px}
+.facts{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.facts div{min-width:0}
+.facts .k{display:block;font-size:.78rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--label)}
+.facts .v{display:block;font-weight:700;font-size:1rem;margin-top:1px}
+.facts .wide{grid-column:1/-1}
+.go{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;margin-top:12px;border-radius:12px;background:var(--fg);color:var(--bg);font-weight:800;text-decoration:none}
+.go svg{width:17px;height:17px}
+.note{font-size:.92rem;font-weight:600;color:var(--muted);margin:0}
+.empty b{display:block;font-family:var(--f-display);font-size:1.2rem;margin-bottom:6px}
+.empty p{margin:0;font-weight:600;color:var(--muted)}
+.foot{font-size:.9rem;font-weight:600;color:var(--muted)}
+.foot p{margin:0 0 8px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <a class="back" id="back" href="https://claude.ai/artifact/AyUDwE9EAhhZE6WVTCxy6B" aria-label="Volver a la Cartera" title="Volver a la Cartera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 9.6 10.4 3v4.1c6.3.2 10.4 4.4 10.4 10.1 0 1.4-.3 2.7-.8 3.8-.4-4.6-3.9-7.6-9.6-7.8v4.2z" fill="#fff"/></svg></a>
+      <div class="kicker">Cartera · Liquidez</div>
+    </div>
+    <h1>Top 5 depósitos</h1>
+    <p>Los depósitos a plazo con mejor TAE del mercado en España. Se revisan los lunes y los jueves.</p>
+    <div class="pill" id="when"><i></i>Cargando…</div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card mine" id="mine" hidden></section>
+  <section id="list" style="display:flex;flex-direction:column;gap:14px"></section>
+  <section class="card foot" id="foot"></section>
+</main>
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nf=(n,d)=>typeof n==='number'&&isFinite(n)?n.toLocaleString('es-ES',{minimumFractionDigits:d,maximumFractionDigits:d}):'';
+const eur=n=>typeof n==='number'&&isFinite(n)?n.toLocaleString('es-ES',{maximumFractionDigits:0})+' €':'';
+const safe=u=>/^https:\/\//.test(u||'')?u:'';
+const ext='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>';
+const Q=new URLSearchParams(location.search);
+const mi={tae:parseFloat((Q.get('mi')||'').replace(',','.')),nombre:Q.get('nom')||'',ent:Q.get('ent')||'',vence:Q.get('vence')||''};
+const ago=iso=>{const t=new Date(iso).getTime();if(!isFinite(t))return null;return Math.floor((Date.now()-t)/864e5);};
+
+function render(d){
+  const days=ago(d.actualizado);
+  const w=$('#when');
+  w.className='pill'+(days!=null&&days>5?' old':'');
+  w.innerHTML='<i></i>'+(d.estado==='ok'?'Revisado el '+esc(d.fechaTexto||'')+(days!=null&&days>5?' · hace '+days+' días':''):'Primera revisión en marcha');
+  const top=Array.isArray(d.top)?d.top.filter(x=>x&&typeof x.tae==='number').slice(0,5):[];
+  if(isFinite(mi.tae)&&mi.tae>0){
+    const best=top[0];
+    const diff=best?best.tae-mi.tae:null;
+    $('#mine').hidden=false;
+    $('#mine').innerHTML='<span class="k">Tu mejor depósito vivo</span><span class="v num">'+nf(mi.tae,2)+' %'+(mi.ent?' · '+esc(mi.ent):'')+'</span>'+(mi.nombre||mi.vence?'<span class="d">'+esc(mi.nombre)+(mi.vence?' · vence el '+esc(new Date(mi.vence+'T12:00').toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric'})):'')+'</span>':'')+
+      (diff!=null?'<span class="delta '+(diff>0.05?'up':'ok')+'">'+(diff>0.05?'El primero del ranking da '+nf(diff,2)+' puntos más':'Tu depósito está a la altura de los mejores')+'</span>':'');
+  }
+  $('#list').innerHTML=top.length?top.map((x,i)=>{
+    const u=safe(x.url);
+    const f=[];
+    f.push(['Plazo',x.plazoTexto||'']);
+    f.push(['Importe',x.minimo||x.maximo?(x.minimo?'desde '+eur(x.minimo):'')+(x.maximo?(x.minimo?' hasta ':'hasta ')+eur(x.maximo):''):'']);
+    if(x.tin)f.push(['TIN',nf(x.tin,2)+' %']);
+    f.push(['Garantía',x.garantia||'']);
+    if(x.condiciones)f.push(['Condiciones',x.condiciones,1]);
+    if(x.nota)f.push(['A tener en cuenta',x.nota,1]);
+    return '<article class="card dep'+(i===0?' first':'')+'"><span class="rank">'+(i+1)+'</span><div style="min-width:0"><h2>'+esc(x.banco)+'</h2><div class="prod">'+esc(x.producto||'')+'</div></div><div class="tae"><b class="num">'+nf(x.tae,2)+' %</b><small>TAE</small></div>'+
+      '<div class="facts">'+f.filter(r=>r[1]).map(r=>'<div'+(r[2]?' class="wide"':'')+'><span class="k">'+r[0]+'</span><span class="v">'+esc(r[1])+'</span></div>').join('')+'</div>'+
+      (u?'<a class="go" href="'+esc(u)+'" target="_blank" rel="noopener">Ver en '+esc(x.fuente&&!/^(helpmycash|rankia|iahorro|finanzarel)/i.test(x.fuente)?x.fuente:'la web del banco')+ext+'</a>':'')+'</article>';
+  }).join(''):'<div class="card empty"><b>'+(d.estado==='ok'?'No hay datos fiables esta vez':'Preparando el primer ranking')+'</b><p>'+esc(d.nota||'La tarea busca los depósitos los lunes y jueves por la mañana. Vuelve en un rato.')+'</p></div>';
+  $('#foot').innerHTML='<p>Solo depósitos a plazo fijo para particulares en euros, comercializados en España y con garantía de un fondo de depósitos de la Unión Europea. Las cuentas remuneradas y las ofertas con regalo no entran.</p>'+
+    (d.nota&&top.length?'<p>'+esc(d.nota)+'</p>':'')+
+    (Array.isArray(d.fuentes)&&d.fuentes.length?'<p>Fuentes: '+d.fuentes.map(esc).join(', ')+'.</p>':'')+
+    '<p>Los tipos cambian a menudo: confirma la TAE en la web del banco antes de contratar. Esto es información, no una recomendación.</p>';
+}
+fetch('top5.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(render).catch(()=>{
+  $('#when').innerHTML='<i></i>Sin conexión';
+  $('#list').innerHTML='<div class="card empty"><b>No se ha podido cargar</b><p>Revisa la conexión y vuelve a abrir la página.</p></div>';
+});
+})();
+</script>
+</body>
+</html>
