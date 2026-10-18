@@ -1,17 +1,16 @@
 {
- "fecha": "2026-10-17",
- "fechaTexto": "sábado 17 de octubre",
- "actualizado": "2026-10-17T15:25:00+02:00",
+ "fecha": "2026-10-18",
+ "fechaTexto": "domingo 18 de octubre",
+ "actualizado": "2026-10-18T09:00:00+02:00",
  "portada": [
-  "ee1",
   "ld1",
-  "ed2",
-  "to1",
-  "ed1",
-  "edi2",
+  "ed3",
   "ee3",
-  "ok2",
-  "to2"
+  "ld2",
+  "ee2",
+  "ld3",
+  "ok3",
+  "edi3"
  ],
  "diarios": [
   {
@@ -20,21 +19,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Feijóo exige desplegar la Armada por las incursiones marroquíes en Ceuta",
-     "resumen": "El presidente del PP, Alberto Núñez Feijóo, ha reaccionado este viernes a una exclusiva de Libertad Digital. Según este periódico, el Gobierno ocultó una segunda incursión marítima de Marruecos en Ceuta, ocurrida el siete de septiembre. La dirección del PP asegura que barcos marroquíes entraron en aguas españolas al menos en tres ocasiones. Feijóo pide enviar la Armada a la zona, convocar a la embajadora de Marruecos y llamar a consultas al embajador español en Rabat. También reclama explicaciones al más alto nivel y que se informe a los españoles. Habla de una agresión reiterada que exige una respuesta firme. Fuentes del PP reprochan a Sánchez una actitud sumisa. El artículo no recoge ninguna respuesta del Gobierno, de Marruecos ni de la jueza que investiga lo ocurrido en Ceuta. Conviene recordar que buena parte de la información procede de Libertad Digital y de fuentes del PP.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-16/feijoo-exige-desplegar-al-ejercito-y-convocar-a-los-embajadores-tras-incursion-de-marruecos-en-ceuta-desvelada-por-ld-7476970/"
+     "titular": "El Comité Federal del PSOE proclama a Sánchez entre la dimisión de Mínguez",
+     "resumen": "El Comité Federal del PSOE se reunió este sábado en Fuenlabrada, en Madrid. Proclamó por unanimidad a Pedro Sánchez candidato a presidir el Gobierno en las elecciones generales del 29 de noviembre. Según Libertad Digital, no hubo intervenciones de los casi trescientos miembros y se impidió el paso a los fotógrafos. La reunión llegó un día después de que Montse Mínguez dejara la portavocía del partido y renunciara a ir en las listas. Su salida se debe a la polémica por los negocios inmobiliarios de su pareja, en pleno debate sobre la vivienda. Sánchez dijo que ella estaba rota y que le pidió que no se marchara. El partido presentó las candidaturas con paridad, cuatrocientas cuarenta y cuatro mujeres y cuatrocientos cuarenta y tres hombres. El Partido Popular habla de treinta pisos vinculados al caso. El medio presenta el comité como un acto de reafirmación del líder.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-17/zozobra-en-el-comite-federal-del-psoe-tras-la-dimision-de-monse-minguez-7477588/"
     },
     {
      "id": "ld2",
-     "titular": "El cerebro económico de Plus Ultra alega que Suiza ya le investiga",
-     "resumen": "El empresario neerlandés Simon Verhoeven, señalado como cerebro económico de la presunta trama de blanqueo de Plus Ultra, declaró el viernes ante el juez José Luis Calama, de la Audiencia Nacional. La declaración duró unas tres horas. Según Libertad Digital, negó cualquier irregularidad y dijo que presentará documentos para probar que Suiza ya investiga los mismos hechos. Su defensa sostiene que, por eso, no puede ser investigado dos veces. Afirmó haber prestado dos millones cien mil euros a la aerolínea sin saber que el Gobierno iba a rescatarla. Dijo no conocer a Zapatero ni a los responsables de la compañía, y que solo trató con el empresario Felipe Baca. Admitió su firma en unos contratos, pero no en otros. Estos detalles proceden de fuentes presentes en la sala, y el periódico no ofrece verificación independiente.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-16/el-cerebro-economico-de-la-trama-plus-ultra-intentara-salvarse-aludiendo-a-otra-investigacion-en-suiza-7477203/"
+     "titular": "Disturbios en Francia: queman el ayuntamiento de Limoges",
+     "resumen": "Las protestas sociales en Francia derivaron este sábado en disturbios en varias ciudades. En París, cientos de manifestantes intentaron llegar al palacio del Elíseo y chocaron con la policía. En Limoges, según Libertad Digital, encapuchados incendiaron un vehículo policial frente al ayuntamiento, entraron en el edificio y el fuego alcanzó parte del tejado. Es un edificio de mil ochocientos ochenta y tres, protegido como monumento histórico. También hubo ataques en Lyon y Marsella, y incidentes en otras ciudades. El ministro del Interior, Laurent Núñez, habló de unas cuatrocientas detenciones y de cerca de quinientas cincuenta mil personas en las calles. Los organizadores elevan esa cifra a ochocientas mil. Emmanuel Macron condenó la violencia y prometió perseguir a los responsables. Las protestas se deben a la pérdida de poder adquisitivo y al coste de la vida.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-17/francia-manifestantes-intentan-llegar-al-eliseo-y-queman-el-ayuntamiento-de-limoges-durante-protestas-sociales-7477830/"
     },
     {
      "id": "ld3",
-     "titular": "La Audiencia de Madrid reabre la denuncia de Begoña Gómez contra Vito Quiles",
-     "resumen": "La Audiencia Provincial de Madrid ha revocado el archivo de la denuncia de Begoña Gómez contra Vito Quiles y ordena seguir investigando posibles coacciones. Así lo cuenta Libertad Digital, citando fuentes jurídicas. Los hechos se remontan al veintinueve de abril, en un restaurante de Las Rozas. Según la denuncia, Quiles le impidió salir del local y la siguió fuera. El tribunal admite que las grabaciones no prueban un zarandeo ni que la rodeara con el brazo. Pero considera que eso no agota la valoración jurídica. Opina que el encuentro podría no haber sido casual, sino buscado a propósito, mientras Gómez hacía una actividad privada en un lugar público. Cerrar el caso sin examinar si se limitó su libertad sería, dice el auto, prematuro. El artículo no incluye declaraciones de ninguna de las partes.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-16/la-audiencia-de-madrid-rechaza-archivar-la-denuncia-de-begona-gomez-contra-vito-quiles-por-posibles-coacciones-7477292/"
+     "titular": "El Supremo mantiene frenada la ley de nietos para las elecciones",
+     "resumen": "El Tribunal Supremo ha rechazado los argumentos de la Abogacía del Estado, que pedía levantar las medidas cautelares sobre la llamada ley de nietos. Con esas medidas, las personas afectadas no pueden votar en las elecciones generales del 29 de noviembre. Según Libertad Digital, el tribunal critica que la Administración y la Oficina del Censo Electoral no aportaron ningún documento que acredite que cumplieron lo ordenado. Recuerda también que el informe del 31 de agosto pudo presentarse en la vista oral del 7 de septiembre y no se hizo. Sobre la queja de que el auto se adelantaba a la sentencia, el Supremo responde que es un juicio de probabilidad, propio de este tipo de decisiones. El auto original con las cautelares es del 10 de septiembre. El medio recuerda que tiene una línea editorial crítica con el Gobierno.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-17/el-supremo-tumba-los-argumentos-de-la-abogacia-del-estado-sobre-la-ley-de-nietos-no-han-aportado-ningun-documento-7477242/"
     }
    ]
   },
@@ -44,21 +43,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Dimite la portavoz del PSOE, Montse Mínguez, por los negocios de su pareja",
-     "resumen": "La portavoz del PSOE, Montse Mínguez, ha dejado el cargo y renuncia a encabezar la lista por Lleida. Según El Español, la causa son los negocios inmobiliarios de su pareja, Sergi Vélez, que dirige un grupo con al menos treinta pisos en alquiler. El periódico añade que Mínguez, siendo concejala, participó en una decisión municipal que favoreció a la empresa de él. Ella habló de dar un paso atrás por motivos personales. Pedro Sánchez la defendió en Bruselas y la calificó de extraordinaria portavoz. Este sábado, el comité federal del PSOE, convertido en mitin, nombró a Rebeca Torró nueva portavoz. El caso es incómodo porque Sánchez basa parte de su campaña en combatir a los fondos buitre. El Sindicato de Inquilinas acusa al PSOE de ser un partido rentista y mantiene la huelga general del once de noviembre. Las elecciones son el veintinueve de noviembre.",
+     "titular": "La dimisión de Montse Mínguez deja un duro golpe al PSOE",
+     "resumen": "Según El Español, la portavoz del PSOE, Montse Mínguez, dejó su cargo y renunció a encabezar la lista por Lleida. El motivo es la actividad de su pareja, Sergi Vélez, que dirige una empresa inmobiliaria con unos treinta pisos en alquiler. El diario reveló que Mínguez, siendo concejal, participó en una decisión municipal que favoreció a esa empresa. Ella había criticado con dureza a los fondos de inversión que hacen negocio con el alquiler. Pedro Sánchez habló de cacería y dijo, desde Bruselas, que intentó convencerla de que siguiera. Un dirigente socialista aseguró que no aguantó la presión. El Sindicato de Inquilinas, que impulsa la huelga general del once de noviembre, acusó al PSOE de ser un partido rentista. En el Gobierno admiten que es un grave revés a las puertas de las elecciones del 29 de noviembre.",
      "url": "https://www.elespanol.com/espana/politica/20261017/campana-fondos-buitre-vuelve-psoe-tumba-montse-minguez-sanchez-intento-siguiera/1003744423598_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Un vídeo muestra la tensión entre Policía y Guardia Civil en la entrada a Ceuta",
-     "resumen": "El Español publica un vídeo de la discusión entre mandos de la Policía Nacional y de la Guardia Civil durante la entrada masiva de migrantes en Ceuta, el treinta de julio. Cientos de personas llegaron a un recinto en suelo español, junto a la frontera comercial. Según el periódico, la Policía quería hacerlas retroceder por la fuerza. La asociación de guardias civiles AUGC advirtió de que había mujeres con niños y riesgo de aplastamiento. El mando de la Guardia Civil ordenó entonces abrir la cancela. Distintas fuentes, citadas por el medio, atribuyen esa orden al Gobierno. En el texto no hay respuesta oficial. Los mandos denuncian falta de agentes y de instrucciones claras: había seis policías de frontera y doce antidisturbios para todo el paso. La mayor parte de la información sobre la orden procede de fuentes anónimas.",
+     "titular": "Un vídeo muestra la discusión entre mandos durante la entrada en Ceuta",
+     "resumen": "El Español publica un vídeo de la discusión entre los máximos responsables de la Policía Nacional y la Guardia Civil durante la entrada masiva en Ceuta del 30 de julio. Según el diario, la Policía quería hacer retroceder a los migrantes y devolverlos en caliente. La Guardia Civil ordenó abrir la cancela para evitar aplastamientos y entró una gran masa de personas. Distintas fuentes aseguran al medio que la orden vino del Gobierno, aunque no hay confirmación oficial. Los antidisturbios desplegados eran solo doce agentes. La asociación AUGC de la Guardia Civil habla de un riesgo real de aplastamiento y pide protocolos claros. Un exjefe de gabinete de la Delegación del Gobierno declaró ante la jueza que transmitió los avisos del CNI. El ministro Marlaska anunció que se prolongará el espigón del Tarajal cien metros.",
      "url": "https://www.elespanol.com/espana/politica/20261017/video-verguenza-policia-intento-evitar-asalto-ceuta-guardia-civil-abrio-verja-orden-gobierno/1003744423431_0.html"
     },
     {
      "id": "ee3",
-     "titular": "La inflación en España se duplica desde el inicio de la guerra de Irán",
-     "resumen": "Según datos de Eurostat que recoge El Español, la inflación en España se ha duplicado desde el inicio del conflicto con Irán, a finales de febrero. Pasó del dos con cinco por ciento al cinco por ciento en septiembre. Es un treinta por ciento más que la media de la Unión Europea, que está en el tres con ocho. Entre los países históricos del euro, solo Grecia supera a España. Los carburantes se han encarecido mucho: el diésel un treinta y cuatro por ciento en un año y la gasolina un veintisiete con cinco. También suben las hortalizas, los huevos y los cítricos. El periódico señala varias causas: la retirada de ayudas en junio, la escalada del conflicto en julio, la fuerte demanda interna y la dependencia energética. El Fondo Monetario Internacional y la OCDE prevén una inflación media del tres con siete por ciento este año.",
-     "url": "https://www.elespanol.com/invertia/economia/macroeconomia/20261017/espana-duplica-inflacion-comienzo-guerra-iran-encima-media-ue/1003744420280_0.html"
+     "titular": "Trump suspende un paquete de sanciones contra Rusia",
+     "resumen": "El presidente de Estados Unidos, Donald Trump, ha suspendido un amplio paquete de sanciones contra Rusia, alegando el interés nacional. Según El Español, la decisión se tomó el viernes y afecta a una ley que buscaba endurecer las sanciones y limitar los recursos que financian la guerra en Ucrania. La orden exime a personas y entidades ligadas al Gobierno ruso y suspende restricciones financieras y comerciales. Otras sanciones estadounidenses siguen en pie. Antes, Trump había autorizado el diésel ruso hasta el siete de abril de dos mil veintisiete, con el argumento de aliviar los precios. Dos días después anunció una tregua sobre infraestructuras energéticas que no duró. Críticos republicanos y demócratas advierten de que Moscú podría financiar así la guerra. La Casa Blanca lo defiende para contener los costes de la energía.",
+     "url": "https://www.elespanol.com/mundo/america/eeuu/20261017/trump-levanta-varias-sanciones-rusia-guerra-ucrania-nombre-interes-nacional-estadounidense/1003744423930_0.html"
     }
    ]
   },
@@ -68,21 +67,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El PSOE podría ganar diez escaños gracias al voto exterior de la ley de nietos",
-     "resumen": "El Debate calcula que el PSOE podría arrebatar hasta diez escaños en las elecciones del veintinueve de noviembre por el aumento del voto de residentes en el extranjero desde la llamada ley de nietos. Es un cálculo del propio periódico, no una estimación oficial. Usa los resultados de dos mil veintitrés y el crecimiento de ese censo. Según sus cuentas, el PP perdería siete escaños, Junts dos y el BNG uno. El PSOE pasaría de ciento veintiuno a ciento treinta y uno, uno más que el PP. Entre las provincias en juego están Madrid, Málaga, Tarragona, Girona y Salamanca. El periódico advierte de que no distingue cuántos inscritos llegaron por esa ley. La Abogacía del Estado dice que unos ciento sesenta y tres mil votantes quedarían excluidos por decisión del Supremo, y sostiene que el efecto en los escaños es marginal.",
+     "titular": "El voto exterior podría dar diez escaños más al PSOE",
+     "resumen": "Un análisis de El Debate sostiene que el PSOE podría ganar hasta diez escaños en las elecciones del 29 de noviembre por el fuerte aumento del censo de españoles residentes en el extranjero tras la ley de nietos. Según el cálculo del propio diario, el PSOE pasaría de ciento veintiuno a ciento treinta y uno. El Partido Popular perdería siete escaños, Junts dos y el BNG uno. Diez provincias tendrían posibilidades reales, entre ellas Madrid, Málaga y Las Palmas. En Madrid, en las elecciones de dos mil veintitrés, el PSOE quedó a menos de cuatro mil votos del escaño. El Supremo ha suspendido de forma cautelar el voto de parte de los nacionalizados. La Abogacía del Estado calcula que unos ciento sesenta y tres mil votantes quedarían excluidos. El Gobierno sostiene que el efecto es marginal. Son proyecciones, no resultados.",
      "url": "https://www.eldebate.com/espana/20261017/psoe-tendria-alcance-arrebatar-diez-escanos-aumento-censo-ley-nietos_470387.html"
     },
     {
      "id": "ed2",
-     "titular": "Un informe del CNI dice que Marruecos sabía de la entrada masiva en Ceuta",
-     "resumen": "El Debate publica un informe del Centro Nacional de Inteligencia, enviado a la Audiencia Nacional, según el cual Marruecos conocía con antelación la entrada masiva en Ceuta de finales de julio. El periódico sostiene que contradice la versión del Ministerio del Interior. Según el informe, el veintinueve de julio el CNI detectó una convocatoria por tierra y mar para el día siguiente y avisó a las autoridades españolas y a los servicios marroquíes. El treinta de julio, los primeros nadadores llegaron hacia las ocho de la mañana. El documento afirma que Marruecos reaccionó tarde y con pocos medios, porque priorizó la seguridad de la Fiesta del Trono, con el rey presente. El texto no recoge la respuesta de Interior ni la de Marruecos.",
-     "url": "https://www.eldebate.com/espana/20261017/contundente-informe-cni-jueza-desmonta-version-interior-confirma-marruecos-conocia-antelacion-entrada-masiva-ceuta_470593.html"
+     "titular": "El CNI dice que Marruecos sabía de la entrada masiva en Ceuta",
+     "resumen": "Según El Debate, que cita a Europa Press, el Centro Nacional de Inteligencia ha enviado un informe a la jueza de la Audiencia Nacional María Tardón. El documento sostiene que las fuerzas de seguridad marroquíes actuaron con pasividad y que eso contribuyó al desbordamiento. Afirma que las autoridades de Marruecos conocían con detalle las convocatorias en redes sociales que pedían una entrada masiva en Ceuta, coincidiendo con la Fiesta del Trono. Días antes detectaron una situación anómala y reforzaron el dispositivo. Según el informe, cuando aumentó mucho el número de personas, el despliegue marroquí fue insuficiente y no hubo reacción cuando empezaron a perder el control. La entrada se produjo los días 30 y 31 de julio. Fuentes policiales hablan de más de veinte mil personas, cifra que no figura en el informe. No hay reacciones oficiales.",
+     "url": "https://www.eldebate.com/espana/20261016/cni-traslada-juez-pasividad-marruecos-motivo-desbordamiento-ceuta_470553.html"
     },
     {
      "id": "ed3",
-     "titular": "Dónde recibe más votos del exterior el PSOE tras la ley de nietos",
-     "resumen": "El Debate analiza el voto de los residentes en el extranjero en las últimas elecciones generales. Según el periódico, el PSOE logra sus mejores porcentajes en provincias pequeñas, donde pocos votos pueden decidir un escaño. En Cuenca supera el cuarenta y dos por ciento. Le siguen Huesca con cuarenta con setenta y dos, Ávila con treinta y ocho con cuarenta y uno, y Albacete y Castellón, cerca del treinta y ocho. Los peores datos son para Ourense, con diecisiete con cincuenta, y Madrid, con veintiuno con sesenta y seis. El texto sostiene que la reforma ha disparado las inscripciones en el extranjero y habla de inquietud en la oposición, aunque no cita a nadie concreto. Son interpretaciones del medio, y el artículo no incluye la respuesta del PSOE ni del Gobierno.",
-     "url": "https://www.eldebate.com/espana/20261017/mapa-voto-exterior-psoe-ley-nietos-huesca-cuenca-avila-marcan-mayores-porcentajes-cnsm_470310.html"
+     "titular": "El PSOE y Frente Amplio irán juntos al Senado",
+     "resumen": "El PSOE y Frente Amplio han acordado presentarse juntos a las elecciones al Senado. Según El Debate, la candidatura se llamará Senado de Progreso e incluirá a Izquierda Unida, Movimiento Sumar, Compromís, Más Madrid y otras formaciones. Podemos queda fuera. El pacto abarca más de cuarenta provincias y excluye Cataluña y Canarias. El objetivo es quitar al Partido Popular la mayoría absoluta en la Cámara. En las elecciones de julio de dos mil veintitrés, el PP logró ciento veinte de los doscientos ocho escaños elegidos en las urnas y el PSOE setenta y dos. Un informe interno del PSOE calcula que la coalición podría llegar a ciento veintinueve senadores electos. El diario advierte de que esa previsión puede ser demasiado optimista. El PSOE acusa al PP y a Vox de querer sepultar el Estado de bienestar.",
+     "url": "https://www.eldebate.com/espana/20261017/psoe-frente-amplio-pactan-concurrir-juntos-senado_470618.html"
     }
    ]
   },
@@ -92,21 +91,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "PSOE y Frente Amplio irán juntos al Senado",
-     "resumen": "El PSOE ha pactado con Izquierda Unida, Sumar, Compromís, Más Madrid, Chunta Aragonesista y Batzarre presentarse juntos al Senado en las elecciones del veintinueve de noviembre. Según The Objective, la coalición se llamará Senado de Progreso y cubrirá cuarenta y seis provincias. El plazo para comunicarlo a la Junta Electoral terminó a medianoche del viernes. El objetivo es quitar al PP la mayoría absoluta en esa cámara. Un informe interno del PSOE, adelantado por eldiario.es, calcula que la alianza podría lograr hasta cuarenta escaños más. El PSOE habla de un paso histórico. Mientras tanto, Frente Amplio y Podemos no han logrado un acuerdo para el Congreso. Según el periódico, discrepancias sobre el liderazgo y el puesto de Irene Montero lo impidieron. Las cifras son estimaciones de partido, no resultados.",
-     "url": "https://theobjective.com/espana/politica/2026-10-17/psoe-frente-amplio-acuerdosenado/"
-    },
-    {
-     "id": "to2",
-     "titular": "El buque insignia marroquí desapareció del radar antes del asalto a Ceuta",
-     "resumen": "The Objective afirma, con datos del sistema de identificación de barcos, que la fragata marroquí Mohamed Sexto dejó de emitir su posición la tarde del veintinueve de julio. Estaba amarrada en el puerto de Casablanca. El periódico dice que la entrada masiva en Ceuta empezó al día siguiente. Según sus informaciones anteriores, la flota militar marroquí de la zona no emitió señal entre el veintinueve de julio y el catorce de agosto. También se habrían apagado la corbeta Tarik Ben Ziyad y la fragata Hassan Segundo. El medio recuerda que el sistema puede apagarse por seguridad, y que eso no prueba una orden ni un propósito. Fuentes de la Armada sitúan a la fragata en aguas de Ceuta poco después del asalto. No hay declaraciones oficiales de España ni de Marruecos.",
+     "titular": "La fragata insignia de Marruecos dejó de emitir señal antes del asalto a Ceuta",
+     "resumen": "Según The Objective, la fragata Mohammed Sexto, buque insignia de la Marina marroquí, dejó de emitir su posición por el sistema de identificación automática horas antes de la entrada masiva en Ceuta. Los registros que dice haber consultado muestran su última señal el veintinueve de julio, a las dos y treinta y tres de la tarde, fondeada junto a Casablanca. El medio asegura que otras unidades de la zona, como una corbeta y otra fragata, también dejaron de emitir hasta el catorce de agosto. Las señala como principales sospechosas de haber entrado en aguas de Ceuta. El diario reconoce que apagar esa señal no prueba por sí solo que participaran. Según el medio, el Gobierno ocultó la movilización naval durante más de dos meses y ahora la llama hecho puntual. No hay respuesta oficial de Marruecos. El texto tiene algunas incoherencias en las horas.",
      "url": "https://theobjective.com/espana/2026-10-17/buque-marruecos-radar-ceuta/"
     },
     {
+     "id": "to2",
+     "titular": "Rebeca Torró sustituye a Montse Mínguez como portavoz del PSOE",
+     "resumen": "La Ejecutiva Federal del PSOE ha nombrado a Rebeca Torró nueva portavoz del partido, en lugar de Montse Mínguez. Mínguez dimitió el viernes de la portavocía y de la secretaría de Estudios y Programas, y renunció a encabezar la lista por Lleida. Según The Objective, la causa son los negocios inmobiliarios de su pareja, Sergi Vélez, cuyo holding gestiona treinta inmuebles y declaró un millón trescientos mil euros de ingresos. El diario recuerda que en dos mil veinticinco informó de que el Ayuntamiento de Lleida le perdonó una deuda de trescientos mil euros cuando ella era concejal. Cristina Narbona asume Estudios y Programas. Pedro Sánchez dijo que le pidió que no dimitiera y la calificó de gran activo. Torró le agradeció que antepusiera el interés colectivo.",
+     "url": "https://theobjective.com/espana/politica/2026-10-17/rebeca-torro-montse-minguez-psoe-dimision"
+    },
+    {
      "id": "to3",
-     "titular": "El prestamista de Plus Ultra dice que comerciaba con oro de Níger",
-     "resumen": "Simon Verhoeven, el principal prestamista de Plus Ultra, declaró el viernes ante el juez Calama. Según The Objective, explicó que el oro hallado en su casa procede de su negocio de metales preciosos y es legal. Dijo que lo compraba al Banco Central de Níger, lo llevaba a Dubái y lo vendía a la joyería Al Sayegh, con la mediación del empresario peruano Luis Felipe Baca. Negó haber blanqueado más de dos millones de euros del rescate del Gobierno a la aerolínea. En el registro de su casa de Palma, la Policía se llevó joyas, relojes de lujo por más de doscientos cuarenta mil euros, dinero en efectivo y dos lingotes. El periódico recoge sospechas de los investigadores, como facturas falsas, que no son hechos probados. Verhoeven fue sometido a prisión provisional en Suiza en dos mil veinticuatro.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-17/prestamista-plus-ultra-oro/"
+     "titular": "Una patrullera marroquí vuelve a aguas de Ceuta",
+     "resumen": "Una patrullera de la Marina marroquí volvió a entrar en aguas españolas frente a Ceuta, un día después de que los Reyes terminaran su visita a Ceuta y Melilla. Según The Objective, que cita a ABC y a fuentes policiales, entró el jueves a las nueve y media de la mañana. Estuvo unas siete horas en la bahía sur, hasta que salió una patrullera de la Guardia Civil y el barco regresó a Marruecos. No hubo aviso previo y se desconoce el motivo. El Gobierno asegura que no hay constancia de nuevos incidentes desde los días treinta y treinta y uno de julio. Alberto Núñez Feijóo pidió desplegar la Armada, convocar a la embajadora marroquí y exigir explicaciones al máximo nivel. La información procede de fuentes anónimas.",
+     "url": "https://theobjective.com/espana/2026-10-16/marruecos-patrullera-aguas-ceuta-reyes/"
     }
    ]
   },
@@ -116,21 +115,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Dimite Montse Mínguez, portavoz del PSOE, por los negocios de su pareja",
-     "resumen": "La portavoz del PSOE, Montse Mínguez, anunció el viernes que da un paso atrás, tras las informaciones sobre los negocios inmobiliarios de su pareja. Según OKDiario, iba a encabezar la lista socialista al Congreso por Lleida. En sus redes sociales dijo que se marcha con la conciencia tranquila, la cabeza alta y fidelidad a sus principios. El periódico interpreta que renuncia a repetir como diputada, aunque no lo confirma de forma expresa. El artículo no detalla qué propiedades son ni cuál es su valor, y tampoco recoge reacciones del PSOE ni de otros partidos. Mínguez era portavoz desde julio de dos mil veinticinco. Antes fue diputada por Lleida y responsable de Trabajo, Economía Social y Autónomos en la ejecutiva del partido. Las elecciones generales serán el veintinueve de noviembre.",
-     "url": "https://okdiario.com/espana/dimite-portavoz-del-psoe-montse-minguez-destaparse-negocios-inmobiliarios-pareja-20568253"
+     "titular": "Un informe de Exteriores da cifras de los nacionalizados por la ley de nietos",
+     "resumen": "Según OKDiario, un informe del Ministerio de Asuntos Exteriores, con datos a treinta y uno de agosto, desglosa los expedientes de la ley de nietos. Suman trescientas sesenta y nueve mil diecisiete nacionalidades concedidas. De ellas, ciento sesenta y ocho mil ochocientas noventa y seis corresponden a quienes deben acreditar el exilio de sus familiares. Quedan más de seiscientos cuarenta y cuatro mil expedientes por resolver. El diario sostiene que esto prueba que el Gobierno puede identificar a los nacionalizados, como exige el Supremo. Vox usa el documento en un recurso ante el tribunal y pide que se obligue a explicar qué se hace para excluirlos del censo. No consta respuesta del Gobierno. Es una interpretación del medio y de Vox, y el diario no publica el informe completo.",
+     "url": "https://okdiario.com/espana/este-informe-exteriores-prueba-que-gobierno-puede-identificar-falsos-nietos-como-exige-supremo-20568300"
     },
     {
      "id": "ok2",
-     "titular": "El Papa llama a Putin desde el hospital para pedir un alto el fuego",
-     "resumen": "El papa León Catorce llamó por teléfono el viernes al presidente ruso, Vladímir Putin, desde el hospital Gemelli de Roma. Según un comunicado del Vaticano, citado por OKDiario, le pidió un alto el fuego que permita llevar comida y ayuda médica a Oleshki, en la provincia de Jersón. También reclamó la evacuación voluntaria y segura de civiles. El Papa expresó su profunda preocupación por la grave situación humanitaria de la zona. La llamada se produjo tres días después de que fuera operado de un nódulo en el pulmón. Según el Kremlin, Putin apoyó la iniciativa del Vaticano. Los medios estatales rusos añaden que culpó a Ucrania de bloquear los suministros, una acusación que el artículo no verifica. No se ofrecen cifras ni la respuesta de Ucrania.",
-     "url": "https://okdiario.com/espana/papa-leon-xiv-llama-telefono-putin-desde-hospital-pedirle-alto-fuego-ucrania-20568288"
+     "titular": "El Supremo ordena apartar del voto a unos 163.000 nacionalizados",
+     "resumen": "Según OKDiario, el Tribunal Supremo ordenó suspender el voto de unos ciento sesenta y tres mil españoles residentes en el extranjero, nacionalizados por la ley de nietos, y sacarlos del censo electoral. No afecta a quienes acrediten ser descendientes de exiliados. Fuentes del Supremo, sin identificar, aseguran al diario que el Gobierno no quiere cumplirlo. El Ejecutivo dice que es muy complejo por el poco margen antes de las elecciones del 29 de noviembre. La portavoz, Elma Saiz, lo calificó de extrema gravedad. El tribunal dio cinco días a los afectados para personarse. Baltasar Garzón ofrece gratis su despacho a quienes quieran recurrir. Según el diario, ya no habría tiempo de llegar al Constitucional antes de las elecciones.",
+     "url": "https://okdiario.com/espana/supremo-cree-que-gobierno-resiste-sacar-del-censo-falsos-nietos-pero-avisa-tendra-que-hacerlo-20560059"
     },
     {
      "id": "ok3",
-     "titular": "El Defensor del Pueblo recurre al Constitucional por el voto de los nietos",
-     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, presentó el viernes un recurso de amparo ante el Tribunal Constitucional contra la suspensión del voto de los nacionalizados por la ley de memoria democrática, conocida como ley de nietos. Pide medidas urgentes para que puedan votar el veintinueve de noviembre. La suspensión la decidió el Tribunal Supremo y, según la información, afecta a ciento sesenta y tres mil veinte personas, salvo que los consulados acrediten que descienden de exiliados. El doce de octubre el Supremo rechazó el recurso de la Abogacía del Estado, que apoyaba la Fiscalía. Gabilondo sostiene que la nacionalidad conlleva el derecho al voto. OKDiario presenta el recurso como un rescate a Sánchez, una valoración propia del periódico. La Junta Electoral enviará documentación a todos los inscritos, avisando de que no todos podrán votar.",
-     "url": "https://okdiario.com/espana/defensor-del-pueblo-sale-rescate-sanchez-recurre-constitucional-suspension-del-derecho-voto-nietos-20569840"
+     "titular": "El Papa llama a Putin desde el hospital",
+     "resumen": "El papa León catorce llamó por teléfono al presidente ruso, Vladímir Putin, el viernes dieciséis de octubre, según la Oficina de Prensa de la Santa Sede. Lo hizo desde el hospital Gemelli de Roma, tres días después de ser operado de un nódulo en el pulmón. Expresó su profunda preocupación por la situación humanitaria en Oleshki, en la provincia de Jersón. Pidió un alto el fuego que permita enviar alimentos y asistencia médica, y la evacuación voluntaria y segura de civiles. El Kremlin dijo que Putin apoyó la iniciativa del Vaticano. Según medios estatales rusos, Putin culpó a Ucrania de bloquear los suministros, algo que el artículo no verifica. No hay respuesta de Kiev. Sigue hospitalizado para su recuperación.",
+     "url": "https://okdiario.com/espana/papa-leon-xiv-llama-telefono-putin-desde-hospital-pedirle-alto-fuego-ucrania-20568288"
     }
    ]
   },
@@ -140,21 +139,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Dimite la portavoz del PSOE, Montse Mínguez, por los negocios de su pareja",
-     "resumen": "La portavoz del PSOE, Montse Mínguez, presentó el viernes su dimisión, según elDiario.es, después de varias informaciones sobre los negocios inmobiliarios de su pareja. En un mensaje en redes dijo que daba un paso atrás porque era lo mejor para el proyecto colectivo. Añadió que el momento es decisivo y que la ultraderecha quiere cuestionar los avances sociales. Había sido elegida portavoz en julio de dos mil veinticinco, en sustitución de Esther Peña. El miércoles anterior, el PSOE había defendido la legalidad de la empresa familiar, y el ministro Óscar López sostuvo que la pareja cumple la ley. El partido dijo en un comunicado que respeta su decisión y destacó su coherencia al votar a favor de los decretos de vivienda. El artículo no incluye cifras sobre los negocios ni menciona ninguna investigación formal.",
-     "url": "https://www.eldiario.es/politica/dimite-portavoz-psoe-montse-minguez-informaciones-negocios-inmobiliarios-pareja_1_13592500.html"
+     "titular": "Sánchez dedica su mitin a Begoña Gómez",
+     "resumen": "Pedro Sánchez abrió este sábado su mitin de precampaña en Fuenlabrada dedicando el discurso a su pareja, Begoña Gómez, investigada y enviada a juicio. Según elDiario.es, entró con ella de la mano, la besó y le dijo que la quería. Aseguró que intentaron romper al matrimonio y que han logrado lo contrario. Acusó a las derechas de poner en riesgo con un Gobierno del Partido Popular y Vox las conquistas sociales de los últimos cuarenta años. Defendió las pensiones como una conquista y criticó a Alberto Núñez Feijóo. Pidió una movilización histórica el 29 de noviembre. Ese mismo día, el Comité Federal lo proclamó candidato por unanimidad y Rebeca Torró fue nombrada nueva portavoz. El diario no recoge reacciones del PP ni de Vox.",
+     "url": "https://www.eldiario.es/politica/sanchez-mete-campana-begona-gomez-hoy-unidos-fuertes-quiero_1_13593802.html"
     },
     {
      "id": "edi2",
-     "titular": "Miles de personas marchan en Madrid en el tercer día de huelga docente",
-     "resumen": "Miles de personas recorrieron el viernes el centro de Madrid, de la plaza de Murillo a la Puerta del Sol, al cierre del tercer día de huelga indefinida del profesorado, de Infantil a Secundaria. Según elDiario.es, el comité de huelga calcula entre setenta mil y cien mil participantes, más que en la protesta del miércoles anterior. Los docentes piden una subida salarial de seiscientos euros, menos alumnos por aula, menos horas de clase, más personal especializado y mejoras en los centros, como climatización. Dicen que la negociación con la Consejería de Educación, del gobierno de Isabel Díaz Ayuso, está bloqueada. Los sindicatos amenazan con exigir la dimisión de la consejera si no cambia su actitud. La consejería sostiene que las ratios están bajando. El artículo no recoge una respuesta del gobierno regional a la marcha.",
-     "url": "https://www.eldiario.es/madrid/miles-personas-toman-centro-madrid-exigir-educacion-publica-calidad-plena-huelga-profesores_1_13592159.html"
+     "titular": "El PP elige a Albiol para competir con Vox en Barcelona",
+     "resumen": "El Partido Popular ha elegido al alcalde de Badalona, Xavier García Albiol, como candidato por Barcelona en las elecciones del 29 de noviembre. Según elDiario.es, la decisión busca competir con Vox en Cataluña. El PP lo confirmó este sábado en redes sociales. Albiol había dicho que daría el paso si podía conservar la alcaldía, y asegura que seguirá siendo alcalde. Alberto Núñez Feijóo oficializará la candidatura el domingo en el Palau de Congresos de Cataluña. Albiol dice que quiere atajar desde el Congreso las ocupaciones ilegales, la multirreincidencia y la inmigración irregular. El diario recuerda que lleva más de diez años con un discurso que une inmigración e inseguridad. También se anunciaron candidatos en Lérida, Gerona y Tarragona.",
+     "url": "https://www.eldiario.es/catalunya/pp-elige-albiol-competir-vox-barcelona_1_13594147.html"
     },
     {
      "id": "edi3",
-     "titular": "Ayuso ordena cerrar la estación de Metro de Sol por la acampada",
-     "resumen": "La Comunidad de Madrid ordenó el viernes cerrar la estación de Metro de Sol por trabajos urgentes de limpieza y seguridad. La estación de Cercanías de Renfe siguió abierta. Según elDiario.es, la presidenta, Isabel Díaz Ayuso, lo anunció en la radio y habló de condiciones de insalubridad. El día anterior, el consejero Jorge Rodrigo había culpado a la acampada de acumular orines y excrementos en pozos y accesos de ventilación. El comité de empresa del Metro niega haber pedido el cierre y Renfe dice que no tiene problemas de salubridad. La Delegación del Gobierno criticó el grave impacto en la ciudadanía. Ayuso llamó mamarrachos a los acampados. El grupo Acampada veintiséis S asegura que el lugar está limpio y rechaza sus palabras.",
-     "url": "https://www.eldiario.es/madrid/somos/ayuso-ordena-cerrar-estacion-sol-limpieza-echa-culpa-acampados-llama-mamarrachos_1_13590340.html"
+     "titular": "Detenidos dos jóvenes en Irún por posible terrorismo",
+     "resumen": "La Ertzaintza y la Audiencia Nacional investigan a dos jóvenes de nacionalidad española por posibles delitos de terrorismo. Son un hombre de treinta y cuatro años y una mujer de veintidós. Según elDiario.es, el veintiséis de septiembre, en un control en Eskoriatza, en Guipúzcoa, se identificó a tres personas con material muy sensible. El sábado diecisiete de octubre los dos investigados se presentaron en la comisaría de Irún con su abogado y quedaron detenidos. Entre lo incautado había información sobre fuerzas de seguridad y la posible ubicación de un lugar con material, presumiblemente armas y explosivos. Serán puestos a disposición de la Audiencia Nacional. Fuentes consultadas dicen que no es yihadismo. El PNV expresó su absoluta preocupación y pidió respetar la investigación.",
+     "url": "https://www.eldiario.es/euskadi/ertzaintza-audiencia-nacional-investigan-jovenes-nacionalidad-espanola-delitos-graves-terrorismo_1_13594556.html"
     }
    ]
   }
