@@ -1,1 +1,93 @@
-{"actualizado": "2026-10-18T22:05:00+02:00", "fechaTexto": "domingo 18 de octubre", "estado": "pendiente", "top": [], "fuentes": [], "nota": "La primera revisión se hará el lunes 19 de octubre a las 8:41. Vuelve a mirar después."}
+{
+ "actualizado": "2026-10-18T22:21:04+02:00",
+ "fechaTexto": "domingo 18 de octubre",
+ "estado": "ok",
+ "top": [
+  {
+   "banco": "Bank DiMare",
+   "producto": "Depósito a 2 años",
+   "tae": 3.4,
+   "tin": 3.4,
+   "plazoMeses": 24,
+   "plazoTexto": "24 meses",
+   "minimo": 10000,
+   "maximo": 100000,
+   "condiciones": "Sin condiciones. Contratación online; no se puede cancelar antes del vencimiento.",
+   "garantia": "Fondo de Garantía de Depósitos de Malta (100.000 €)",
+   "pais": "Malta",
+   "url": "https://www.kelisto.es/depositos/bancos/bank-dimare/deposito-2-anos",
+   "fuente": "kelisto.es y rankia.com",
+   "nota": "Antes se llamaba Novum Bank. Intereses al vencimiento."
+  },
+  {
+   "banco": "CA Auto Bank",
+   "producto": "Depósito a 2 años",
+   "tae": 3.39,
+   "plazoMeses": 24,
+   "plazoTexto": "24 meses",
+   "minimo": 30000,
+   "maximo": 100000,
+   "condiciones": "Se contrata a través de Raisin.",
+   "garantia": "Fondo de Garantía de Depósitos de Italia (100.000 €)",
+   "pais": "Italia",
+   "url": "https://www.helpmycash.com/depositos/ca-auto-bank/deposito-a-dos-anos/",
+   "fuente": "helpmycash.com",
+   "nota": "Italia no aplica retención a no residentes."
+  },
+  {
+   "banco": "Achmea Bank",
+   "producto": "Depósito a 3 años",
+   "tae": 3.38,
+   "tin": 3.38,
+   "plazoMeses": 36,
+   "plazoTexto": "36 meses",
+   "minimo": 5000,
+   "maximo": 100000,
+   "condiciones": "Se contrata a través de Raisin; sin cancelación anticipada.",
+   "garantia": "Fondo de Garantía de Depósitos de Países Bajos (100.000 €)",
+   "pais": "Países Bajos",
+   "url": "https://www.rankia.com/redirections/181660",
+   "fuente": "rankia.com",
+   "nota": ""
+  },
+  {
+   "banco": "AB Mano bankas",
+   "producto": "Depósito a 12 meses",
+   "tae": 3.38,
+   "tin": 3.33,
+   "plazoMeses": 12,
+   "plazoTexto": "12 meses",
+   "minimo": 20000,
+   "maximo": 100000,
+   "condiciones": "Se contrata a través de Raisin; sin cancelación anticipada.",
+   "garantia": "Fondo de Garantía de Depósitos de Lituania (100.000 €)",
+   "pais": "Lituania",
+   "url": "https://www.rankia.com/redirections/181661",
+   "fuente": "rankia.com",
+   "nota": "HelpMyCash lo da al 3,31 % TAE (14 de octubre); Rankia, más reciente, al 3,38 %."
+  },
+  {
+   "banco": "BluOr Bank",
+   "producto": "Depósito a 12 meses",
+   "tae": 3.35,
+   "tin": 3.35,
+   "plazoMeses": 12,
+   "plazoTexto": "12 meses",
+   "minimo": 1,
+   "maximo": 100000,
+   "condiciones": "Se contrata a través de Raisin; renovación automática; sin cancelación anticipada.",
+   "garantia": "Fondo de Garantía de Depósitos de Letonia (100.000 €)",
+   "pais": "Letonia",
+   "url": "https://www.rankia.com/redirections/181669",
+   "fuente": "rankia.com",
+   "nota": "HelpMyCash lo da al 3,30 % TAE (14 de octubre)."
+  }
+ ],
+ "anteriores": [],
+ "fuentes": [
+  "rankia.com (actualizado el 16 de octubre)",
+  "helpmycash.com (14 de octubre)",
+  "kelisto.es"
+ ],
+ "nota": "Fuera del ranking: SME Bank (3,35 % a 12 meses, empatado con BluOr) y Renault Bank (3,34 % a 36 meses). Deutsche Bank anuncia hasta un 3,50 % a 12 meses, pero solo con nómina, tarjeta y fondo; sin ellos, un 2,50 %. Los bancos de fuera de España suelen contratarse a través de Raisin."
+}

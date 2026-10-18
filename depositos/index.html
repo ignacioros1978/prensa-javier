@@ -109,7 +109,7 @@ main{margin-top:-18px;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nf=(n,d)=>typeof n==='number'&&isFinite(n)?n.toLocaleString('es-ES',{minimumFractionDigits:d,maximumFractionDigits:d}):'';
-const eur=n=>typeof n==='number'&&isFinite(n)?n.toLocaleString('es-ES',{maximumFractionDigits:0})+' €':'';
+const eur=n=>typeof n==='number'&&isFinite(n)?String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+' €':'';
 const safe=u=>/^https:\/\//.test(u||'')?u:'';
 const ext='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>';
 const Q=new URLSearchParams(location.search);
@@ -144,7 +144,7 @@ function render(d){
     if(x.nota)f.push(['A tener en cuenta',x.nota,1]);
     return '<article class="card dep'+(i===0?' first':'')+'"><span class="rank">'+(i+1)+'</span><div style="min-width:0"><h2>'+esc(x.banco)+'</h2><div class="prod">'+esc(x.producto||'')+'</div></div><div class="tae"><b class="num">'+nf(x.tae,2)+' %</b><small>TAE</small></div>'+
       '<div class="facts">'+f.filter(r=>r[1]).map(r=>'<div'+(r[2]?' class="wide"':'')+'><span class="k">'+r[0]+'</span><span class="v">'+esc(r[1])+'</span></div>').join('')+'</div>'+
-      (u?'<a class="go" href="'+esc(u)+'" target="_blank" rel="noopener">Ver en '+esc(x.fuente&&!/^(helpmycash|rankia|iahorro|finanzarel)/i.test(x.fuente)?x.fuente:'la web del banco')+ext+'</a>':'')+'</article>';
+      (u?'<a class="go" href="'+esc(u)+'" target="_blank" rel="noopener">Ver la oferta'+ext+'</a>':'')+'</article>';
   }).join(''):'<div class="card empty"><b>'+(d.estado==='ok'?'No hay datos fiables esta vez':'Preparando el primer ranking')+'</b><p>'+esc(d.nota||'La tarea busca los depósitos los lunes y jueves por la mañana. Vuelve en un rato.')+'</p></div>';
   $('#foot').innerHTML='<p>Solo depósitos a plazo fijo para particulares en euros, comercializados en España y con garantía de un fondo de depósitos de la Unión Europea. Las cuentas remuneradas y las ofertas con regalo no entran.</p>'+
     (d.nota&&top.length?'<p>'+esc(d.nota)+'</p>':'')+
