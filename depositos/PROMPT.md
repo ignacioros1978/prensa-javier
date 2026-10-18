@@ -10,14 +10,15 @@ PERMISOS DE WEBFETCH: WebFetch rechaza (PROVENANCE_REQUIRED) las URLs que no hay
    c. Ejecuta TZ=Europe/Madrid date -Iseconds para saber la fecha y hora reales. No la calcules ni la inventes.
 
 2. BUSCAR (como máximo unas 14 llamadas entre WebSearch y WebFetch)
-   - WebSearch (mode standard) del tipo «mejores depósitos a plazo fijo» + mes y año actuales, con allowed_domains ["helpmycash.com","rankia.com","iahorro.com","finanzarel.com","bankimia.com"], y abre con WebFetch 2 o 3 de los rankings más recientes que salgan.
+   - WebSearch (mode standard) del tipo «mejores depósitos bancos españoles» y «mejores depósitos a plazo fijo» + mes y año actuales, con allowed_domains ["helpmycash.com","rankia.com","iahorro.com","finanzarel.com","bankimia.com"], y abre con WebFetch 2 o 3 de los rankings más recientes que salgan.
    - Para los candidatos con TAE más alta, comprueba la oferta en la web del propio banco si sale en una búsqueda (WebSearch con allowed_domains = el dominio del banco). Si la web del banco da otra TAE o la oferta ya no existe, manda la web del banco.
    - Qué cuenta:
-     · Solo depósitos a plazo fijo para particulares, en euros, comercializados en España.
-     · Con garantía de un fondo de garantía de depósitos de un país de la Unión Europea (España, Alemania, Francia, Países Bajos, Lituania, Portugal, Italia…), hasta 100.000 € por titular.
+     · Solo depósitos a plazo fijo para particulares, en euros, de bancos con IBAN ESPAÑOL: entidades españolas o sucursales en España (por ejemplo ING, Facto, WiZink, MyInvestor, Banca March, Deutsche Bank España, Self Bank, Openbank). Es un requisito de Ignacio.
+     · NO cuentan los bancos que se contratan a través de Raisin u otras plataformas (aunque el banco sea español, la cuenta no tiene IBAN español), ni los bancos extranjeros sin sucursal en España. Si dudas de que un banco tenga IBAN español, descártalo.
+     · Con garantía de un fondo de garantía de depósitos de un país de la Unión Europea, hasta 100.000 € por titular.
      · Plazo entre 3 y 36 meses.
      · NO cuentan: cuentas remuneradas, depósitos estructurados o combinados con fondos, ofertas con regalo en vez de intereses, ni bancos de fuera de la UE.
-     · Si una oferta exige condiciones (ser cliente nuevo, domiciliar la nómina, importe máximo pequeño…), puede entrar, pero escríbelo en "condiciones".
+     · Si una oferta exige condiciones (ser cliente nuevo, domiciliar la nómina, importe máximo pequeño…), puede entrar, pero escríbelo en "condiciones". Si la TAE anunciada es «hasta» y depende de contratar otros productos (nómina, tarjeta, fondos), ordénala por la TAE SIN esas vinculaciones y menciona la máxima en "condiciones".
    - NO INVENTES NADA: cada TAE, plazo, importe y condición tiene que salir de una página que hayas leído hoy. Si dos fuentes no coinciden, usa la de la web del banco o, si no la tienes, la más reciente, y dilo en "nota".
 
 3. ELEGIR los 5 de mayor TAE, de bancos distintos (si un banco tiene varios plazos, quédate con su mejor TAE y menciona los otros plazos en "nota" si es útil). Ante una TAE parecida (menos de 0,05 puntos de diferencia), primero el que no tenga condiciones.

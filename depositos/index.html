@@ -94,7 +94,7 @@ main{margin-top:-18px;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)
       <div class="kicker">Cartera · Liquidez</div>
     </div>
     <h1>Top 5 depósitos</h1>
-    <p>Los depósitos a plazo con mejor TAE del mercado en España. Se revisan los lunes y los jueves.</p>
+    <p>Los depósitos a plazo con mejor TAE de bancos con IBAN español. Se revisan los lunes y los jueves.</p>
     <div class="pill" id="when"><i></i>Cargando…</div>
   </div>
 </header>
@@ -146,7 +146,7 @@ function render(d){
       '<div class="facts">'+f.filter(r=>r[1]).map(r=>'<div'+(r[2]?' class="wide"':'')+'><span class="k">'+r[0]+'</span><span class="v">'+esc(r[1])+'</span></div>').join('')+'</div>'+
       (u?'<a class="go" href="'+esc(u)+'" target="_blank" rel="noopener">Ver la oferta'+ext+'</a>':'')+'</article>';
   }).join(''):'<div class="card empty"><b>'+(d.estado==='ok'?'No hay datos fiables esta vez':'Preparando el primer ranking')+'</b><p>'+esc(d.nota||'La tarea busca los depósitos los lunes y jueves por la mañana. Vuelve en un rato.')+'</p></div>';
-  $('#foot').innerHTML='<p>Solo depósitos a plazo fijo para particulares en euros, comercializados en España y con garantía de un fondo de depósitos de la Unión Europea. Las cuentas remuneradas y las ofertas con regalo no entran.</p>'+
+  $('#foot').innerHTML='<p>Solo depósitos a plazo fijo para particulares en euros, de bancos con IBAN español (entidades españolas o sucursales en España, como ING o Facto) y con garantía de un fondo de depósitos de la Unión Europea. No entran las cuentas remuneradas, las ofertas con regalo ni los bancos que se contratan a través de Raisin.</p>'+
     (d.nota&&top.length?'<p>'+esc(d.nota)+'</p>':'')+
     (Array.isArray(d.fuentes)&&d.fuentes.length?'<p>Fuentes: '+d.fuentes.map(esc).join(', ')+'.</p>':'')+
     '<p>Los tipos cambian a menudo: confirma la TAE en la web del banco antes de contratar. Esto es información, no una recomendación.</p>';
