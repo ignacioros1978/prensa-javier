@@ -43,8 +43,10 @@ a{color:var(--accent)}
 .top{background:var(--band);color:var(--on-band);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{padding-block:16px 34px}
 .bar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.back{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);flex:none}
+.back{display:inline-flex;align-items:center;gap:9px;min-height:46px;padding:0 16px 0 12px;border-radius:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font-weight:800;font-size:1rem;text-decoration:none;flex:none}
 .back svg{width:22px;height:22px}
+.back:active{background:rgba(255,255,255,.28)}
+.bar{flex-wrap:wrap}
 .kicker{font-family:var(--f-display);font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-band-2)}
 .top h1{font-size:clamp(2rem,8vw,2.7rem);font-weight:800;color:#fff}
 .top p{margin:8px 0 0;color:var(--on-band-2);font-weight:600}
@@ -88,7 +90,7 @@ main{margin-top:-18px;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)
 <header class="top">
   <div class="wrap">
     <div class="bar">
-      <a class="back" id="back" href="https://claude.ai/artifact/AyUDwE9EAhhZE6WVTCxy6B" aria-label="Volver a la Cartera" title="Volver a la Cartera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 9.6 10.4 3v4.1c6.3.2 10.4 4.4 10.4 10.1 0 1.4-.3 2.7-.8 3.8-.4-4.6-3.9-7.6-9.6-7.8v4.2z" fill="#fff"/></svg></a>
+      <a class="back" id="back" href="https://claude.ai/artifact/AyUDwE9EAhhZE6WVTCxy6B" aria-label="Volver a la Cartera" title="Volver a la Cartera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 9.6 10.4 3v4.1c6.3.2 10.4 4.4 10.4 10.1 0 1.4-.3 2.7-.8 3.8-.4-4.6-3.9-7.6-9.6-7.8v4.2z" fill="#fff"/></svg>Volver a la Cartera</a>
       <div class="kicker">Cartera · Liquidez</div>
     </div>
     <h1>Top 5 depósitos</h1>
@@ -111,6 +113,10 @@ const eur=n=>typeof n==='number'&&isFinite(n)?n.toLocaleString('es-ES',{maximumF
 const safe=u=>/^https:\/\//.test(u||'')?u:'';
 const ext='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>';
 const Q=new URLSearchParams(location.search);
+$('#back').addEventListener('click',e=>{
+  if(window.opener&&!window.opener.closed){e.preventDefault();window.close();setTimeout(()=>{location.href=$('#back').href;},300);}
+  else if(history.length>1&&document.referrer){e.preventDefault();history.back();}
+});
 const mi={tae:parseFloat((Q.get('mi')||'').replace(',','.')),nombre:Q.get('nom')||'',ent:Q.get('ent')||'',vence:Q.get('vence')||''};
 const ago=iso=>{const t=new Date(iso).getTime();if(!isFinite(t))return null;return Math.floor((Date.now()-t)/864e5);};
 
