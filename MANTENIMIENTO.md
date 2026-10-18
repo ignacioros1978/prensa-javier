@@ -82,3 +82,24 @@ Es igual que el PROMPT A, con estos cambios:
 - Para cambiar el diseño o las órdenes de voz, edita `index.html` (o `familia.html`) y haz push a `main`. GitHub Pages publica en uno o dos minutos.
 - No cambies los ids de periódico ("ld", "ee", "ed", "to", "ok", "edi") sin cambiar también el catálogo de `index.html` y `familia.html`.
 - Prueba siempre en la tablet de Javier con Chrome. El micrófono solo funciona abriendo la web en Chrome, no dentro de la app de Claude.
+
+---
+
+# App «Viajes» (carpeta `viajes/`)
+
+Web de ofertas de viaje para Ignacio y Rosa: cada lunes, la mejor escapada en pareja y el mejor viaje en familia (2 adultos y 3 hijos de 14, 11 y 4 años) a una ciudad europea, saliendo de Sevilla, Málaga o Jerez.
+
+- Web: https://ignacioros1978.github.io/prensa-javier/viajes/ (enlazada desde el Portal de Casa con la tarjeta «Viajes»).
+- `viajes/index.html`: la página. Solo lee `ofertas.json`.
+- `viajes/ofertas.json`: **el único archivo que cambia**. Lo escribe la tarea programada.
+- `viajes/criterios.json`: qué buscar (orígenes, viajeros, noches, presupuesto, calidad mínima, fechas ocupadas, festivos escolares, destinos). Para cambiar la búsqueda, cambia este archivo; la tarea lo lee cada vez. **Actualiza `fechasOcupadas` y `festivosEscolaresAndalucia`** cuando haya viajes nuevos o empiece otro curso.
+- `viajes/PROMPT.md`: el prompt exacto de la tarea.
+
+## Tarea programada
+
+- Nombre: «Ofertas de viaje de la semana (lunes, 7:47)»
+- cron: `CRON_TZ=Europe/Madrid 47 7 * * 1`
+- Avisos: correo y notificación al móvil (el mensaje final de la tarea es el resumen).
+- Conectores que necesita la cuenta: **lastminute.com** (paquetes vuelo + hotel, la fuente principal), **eDreams** (vuelos) y **Booking.com** (alojamiento). Al crear la tarea se adjuntan los conectores que tenga la cuenta; si falta alguno, conéctalo antes.
+- lastminute solo admite niños de hasta 11 años: la hija de 14 cuenta como adulto (adults 3, ch_ages "11,4").
+- Para probarla: lánzala a mano y comprueba que hay un commit nuevo «Ofertas de viaje del …» y que `viajes/ofertas.json` tiene "estado":"ok".
