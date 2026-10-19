@@ -1,16 +1,18 @@
 {
- "fecha": "2026-10-18",
- "fechaTexto": "domingo 18 de octubre",
- "actualizado": "2026-10-18T07:04:06+02:00",
+ "fecha": "2026-10-19",
+ "fechaTexto": "lunes 19 de octubre",
+ "actualizado": "2026-10-19T07:04:21+02:00",
  "portada": [
-  "ld1",
-  "ed3",
-  "ee3",
   "ld2",
-  "ee2",
+  "ee1",
+  "ld1",
+  "ed1",
   "ld3",
-  "ok3",
-  "edi3"
+  "ok1",
+  "ld4",
+  "edi4",
+  "to1",
+  "ok3"
  ],
  "diarios": [
   {
@@ -19,21 +21,27 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "El Comité Federal del PSOE proclama a Sánchez entre la dimisión de Mínguez",
-     "resumen": "El Comité Federal del PSOE se reunió este sábado en Fuenlabrada, en Madrid. Proclamó por unanimidad a Pedro Sánchez candidato a presidir el Gobierno en las elecciones generales del 29 de noviembre. Según Libertad Digital, no hubo intervenciones de los casi trescientos miembros y se impidió el paso a los fotógrafos. La reunión llegó un día después de que Montse Mínguez dejara la portavocía del partido y renunciara a ir en las listas. Su salida se debe a la polémica por los negocios inmobiliarios de su pareja, en pleno debate sobre la vivienda. Sánchez dijo que ella estaba rota y que le pidió que no se marchara. El partido presentó las candidaturas con paridad, cuatrocientas cuarenta y cuatro mujeres y cuatrocientos cuarenta y tres hombres. El Partido Popular habla de treinta pisos vinculados al caso. El medio presenta el comité como un acto de reafirmación del líder.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-17/zozobra-en-el-comite-federal-del-psoe-tras-la-dimision-de-monse-minguez-7477588/"
+     "titular": "Trump suspende las sanciones a Rusia y Moscú lo celebra",
+     "resumen": "Según Libertad Digital, el presidente de Estados Unidos, Donald Trump, suspendió el viernes diecisiete de octubre un amplio paquete de sanciones contra Rusia. Lo hizo pese a que el Congreso había aprobado ese texto, conocido como Ley Graham. La Casa Blanca justificó la decisión por el interés nacional. El sábado, el Gobierno ruso expresó su satisfacción. Kiril Dimitriev, jefe del Fondo Ruso de Inversión y negociador de Moscú, habló de un momento importante y verdaderamente histórico. Dimitriev defendió que la cooperación económica beneficia a los dos países y pidió diálogo en lugar de sanciones. El periódico describe la medida como un jarro de agua fría para Ucrania, que según el texto está siendo presionada por Trump. Añade que el día dieciséis Trump había criticado a Volodímir Zelenski, y dijo que le resulta más difícil negociar con él que con Vladímir Putin. El artículo no detalla qué medidas concretas quedan suspendidas.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-18/rusia-celebra-que-trump-haya-suspendido-las-sanciones-es-un-momento-historico-7477851/"
     },
     {
      "id": "ld2",
-     "titular": "Disturbios en Francia: queman el ayuntamiento de Limoges",
-     "resumen": "Las protestas sociales en Francia derivaron este sábado en disturbios en varias ciudades. En París, cientos de manifestantes intentaron llegar al palacio del Elíseo y chocaron con la policía. En Limoges, según Libertad Digital, encapuchados incendiaron un vehículo policial frente al ayuntamiento, entraron en el edificio y el fuego alcanzó parte del tejado. Es un edificio de mil ochocientos ochenta y tres, protegido como monumento histórico. También hubo ataques en Lyon y Marsella, y incidentes en otras ciudades. El ministro del Interior, Laurent Núñez, habló de unas cuatrocientas detenciones y de cerca de quinientas cincuenta mil personas en las calles. Los organizadores elevan esa cifra a ochocientas mil. Emmanuel Macron condenó la violencia y prometió perseguir a los responsables. Las protestas se deben a la pérdida de poder adquisitivo y al coste de la vida.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-17/francia-manifestantes-intentan-llegar-al-eliseo-y-queman-el-ayuntamiento-de-limoges-durante-protestas-sociales-7477830/"
+     "titular": "Macron promete firmeza tras los disturbios en Francia",
+     "resumen": "El presidente francés, Emmanuel Macron, habló a la nación el domingo dieciocho de octubre, tras las protestas contra el coste de la vida del sábado. Según Libertad Digital, las marchas derivaron en disturbios en París, Marsella, Lyon, Burdeos y Limoges, donde ardió el ayuntamiento. Hubo saqueos de cientos de comercios y choques con la Policía. El Gobierno cifra en unas quinientas cincuenta mil las personas que salieron a la calle, mientras el sindicato CGT habla de más de ochocientas mil. Se produjeron dos mil trescientas noventa y siete detenciones y novecientos noventa y siete agentes heridos. Macron aseguró que nada justifica la violencia y culpó a extremistas de ultraizquierda y a grupos de delincuentes. Anunció que los prefectos y alcaldes podrán prohibir concentraciones. Pidió que quienes han destruido paguen y que los sindicatos condenen la violencia. Marine Le Pen habló de una profunda crisis de confianza y de autoridad.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-18/macron-lanza-un-mensaje-de-maxima-firmeza-a-francia-tras-los-disturbios-quienes-han-destruido-deben-pagar-7478032/"
     },
     {
      "id": "ld3",
-     "titular": "El Supremo mantiene frenada la ley de nietos para las elecciones",
-     "resumen": "El Tribunal Supremo ha rechazado los argumentos de la Abogacía del Estado, que pedía levantar las medidas cautelares sobre la llamada ley de nietos. Con esas medidas, las personas afectadas no pueden votar en las elecciones generales del 29 de noviembre. Según Libertad Digital, el tribunal critica que la Administración y la Oficina del Censo Electoral no aportaron ningún documento que acredite que cumplieron lo ordenado. Recuerda también que el informe del 31 de agosto pudo presentarse en la vista oral del 7 de septiembre y no se hizo. Sobre la queja de que el auto se adelantaba a la sentencia, el Supremo responde que es un juicio de probabilidad, propio de este tipo de decisiones. El auto original con las cautelares es del 10 de septiembre. El medio recuerda que tiene una línea editorial crítica con el Gobierno.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-17/el-supremo-tumba-los-argumentos-de-la-abogacia-del-estado-sobre-la-ley-de-nietos-no-han-aportado-ningun-documento-7477242/"
+     "titular": "Un audio apunta a una trama contra jueces vinculada al PSOE",
+     "resumen": "Libertad Digital publicó este lunes un audio que, según el periódico, procede de un grupo de mensajería de la llamada cloaca del PSOE. El grupo se habría creado en agosto de dos mil veinticuatro. En la grabación, enviada el quince de octubre de ese año, el exjuez Luis José Sáenz de Tejada afirma que la Policía, la Fiscalía y otros órganos actuaban contra personas, y dice que se sienten protegidos desde arriba. Según el audio, habría que tumbar a los responsables, aunque aclara que habla de quienes están arriba. Leire Díez, presentada como fontanera del PSOE, responde que hay que instaurar un nuevo sistema o reparar el actual. El diario liga el chat con las causas contra Begoña Gómez y contra el hermano de Pedro Sánchez. El texto no recoge respuestas de los citados ni del PSOE, no explica cómo obtuvo el material y se trata de una única fuente, sin verificación independiente.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-19/el-audio-de-la-cloaca-del-psoe-conspirando-contra-el-poder-judicial-como-no-los-tumbeis-no-se-que-va-a-pasar-7469339/"
+    },
+    {
+     "id": "ld4",
+     "titular": "La primera gran dana del otoño deja una víctima en Cataluña",
+     "resumen": "La primera gran dana del otoño, llamada Adam, ha causado una víctima mortal, según Libertad Digital. Una mujer fue arrastrada por la riera de Cabrera de Mar, en Barcelona, el sábado diecisiete de octubre hacia las siete y media de la tarde. Caminaba con su marido y sus dos hijos cerca del pabellón municipal. El domingo por la mañana, los equipos de emergencia hallaron su cuerpo en el mar, a unos seis kilómetros de donde desapareció, según Bomberos de la Generalitat. En Baleares, parte del archipiélago estuvo en alerta roja hasta las seis de la madrugada del lunes, y el Gobierno balear suspendió las clases en Mallorca, Ibiza y Formentera. La Unidad Militar de Emergencias trasladó efectivos desde Valencia. Unos diez municipios valencianos cancelaron las clases el domingo. Protección Civil pidió a la población no bajar la guardia.",
+     "url": "https://www.libertaddigital.com/cataluna/2026-10-18/la-primera-gran-dana-del-otono-deja-ya-una-victima-hallan-el-cuerpo-de-la-mujer-arrastrada-por-el-agua-en-cataluna-7478025/"
     }
    ]
   },
@@ -43,21 +51,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "La dimisión de Montse Mínguez deja un duro golpe al PSOE",
-     "resumen": "Según El Español, la portavoz del PSOE, Montse Mínguez, dejó su cargo y renunció a encabezar la lista por Lleida. El motivo es la actividad de su pareja, Sergi Vélez, que dirige una empresa inmobiliaria con unos treinta pisos en alquiler. El diario reveló que Mínguez, siendo concejal, participó en una decisión municipal que favoreció a esa empresa. Ella había criticado con dureza a los fondos de inversión que hacen negocio con el alquiler. Pedro Sánchez habló de cacería y dijo, desde Bruselas, que intentó convencerla de que siguiera. Un dirigente socialista aseguró que no aguantó la presión. El Sindicato de Inquilinas, que impulsa la huelga general del once de noviembre, acusó al PSOE de ser un partido rentista. En el Gobierno admiten que es un grave revés a las puertas de las elecciones del 29 de noviembre.",
-     "url": "https://www.elespanol.com/espana/politica/20261017/campana-fondos-buitre-vuelve-psoe-tumba-montse-minguez-sanchez-intento-siguiera/1003744423598_0.html"
+     "titular": "Un informe eleva a más de noventa y seis mil las entradas en Ceuta",
+     "resumen": "Según un informe interno del Gobierno de Ceuta, al que tuvo acceso El Español, al menos noventa y seis mil cincuenta y ocho personas entraron en la ciudad los días treinta y treinta y uno de julio. Esa cifra equivale al ciento quince por ciento de la población censada. El informe, fechado el catorce de octubre, suma campamentos, menores tutelados, salidas colectivas y regresos. También asegura que más de catorce mil migrantes siguen en la ciudad, y que hasta tres mil estarían ocultos. El Gobierno central ha ido cambiando sus cálculos: el ministro Marlaska habló de cincuenta mil, luego de setenta y dos mil, y Pedro Sánchez de más de ochenta mil. El presidente ceutí, Juan Jesús Vivas, acusa al Estado de ineficacia. El periódico advierte de que la autoría y el método del documento no se han verificado de forma independiente y de que el Gobierno central no ha validado la cifra.",
+     "url": "https://www.elespanol.com/espana/politica/20261018/ceuta-entraron-invasores-datos-oficiales-gobierno-poblacion/1003744423485_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Un vídeo muestra la discusión entre mandos durante la entrada en Ceuta",
-     "resumen": "El Español publica un vídeo de la discusión entre los máximos responsables de la Policía Nacional y la Guardia Civil durante la entrada masiva en Ceuta del 30 de julio. Según el diario, la Policía quería hacer retroceder a los migrantes y devolverlos en caliente. La Guardia Civil ordenó abrir la cancela para evitar aplastamientos y entró una gran masa de personas. Distintas fuentes aseguran al medio que la orden vino del Gobierno, aunque no hay confirmación oficial. Los antidisturbios desplegados eran solo doce agentes. La asociación AUGC de la Guardia Civil habla de un riesgo real de aplastamiento y pide protocolos claros. Un exjefe de gabinete de la Delegación del Gobierno declaró ante la jueza que transmitió los avisos del CNI. El ministro Marlaska anunció que se prolongará el espigón del Tarajal cien metros.",
-     "url": "https://www.elespanol.com/espana/politica/20261017/video-verguenza-policia-intento-evitar-asalto-ceuta-guardia-civil-abrio-verja-orden-gobierno/1003744423431_0.html"
+     "titular": "La Policía desaloja Los Rosales y el último gran asentamiento de Ceuta",
+     "resumen": "El domingo dieciocho de octubre, la Policía Nacional desalojó el barrio de Los Rosales y el último gran asentamiento de migrantes, en las naves de El Tarajal, en Ceuta. Según El Español, participaron unos trescientos cincuenta agentes. El delegado del Gobierno, Javier David de la Encina, habló de unas quinientas personas retiradas: en torno a doscientos menores y doscientos adultos. Los adultos fueron llevados al centro de identificación de El Tarajal, y los menores quedan a cargo de la Ciudad Autónoma. En Los Rosales dormían en la calle unos doscientos treinta migrantes desde hacía meses. El operativo fue pacífico: salieron en fila y subieron a autobuses con la ropa que llevaban. En El Tarajal, algunos intentaron huir al ver a los antidisturbios, al parecer para evitar ser identificados. Los vecinos valoraron bien la operación y calculan que unos trescientos menores siguen en el barrio de El Príncipe.",
+     "url": "https://www.elespanol.com/reportajes/20261018/policia-desaloja-barriada-rosales-ultimo-asentamiento-naves-tarajal-ceuta/1003744425171_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Trump suspende un paquete de sanciones contra Rusia",
-     "resumen": "El presidente de Estados Unidos, Donald Trump, ha suspendido un amplio paquete de sanciones contra Rusia, alegando el interés nacional. Según El Español, la decisión se tomó el viernes y afecta a una ley que buscaba endurecer las sanciones y limitar los recursos que financian la guerra en Ucrania. La orden exime a personas y entidades ligadas al Gobierno ruso y suspende restricciones financieras y comerciales. Otras sanciones estadounidenses siguen en pie. Antes, Trump había autorizado el diésel ruso hasta el siete de abril de dos mil veintisiete, con el argumento de aliviar los precios. Dos días después anunció una tregua sobre infraestructuras energéticas que no duró. Críticos republicanos y demócratas advierten de que Moscú podría financiar así la guerra. La Casa Blanca lo defiende para contener los costes de la energía.",
-     "url": "https://www.elespanol.com/mundo/america/eeuu/20261017/trump-levanta-varias-sanciones-rusia-guerra-ucrania-nombre-interes-nacional-estadounidense/1003744423930_0.html"
+     "titular": "Un almirante retirado dice que el Gobierno ocultó la intrusión naval en Ceuta",
+     "resumen": "El almirante retirado Juan Rodríguez Garat, en una entrevista con El Español, sostiene que el Gobierno ocultó con fines electorales la entrada de buques marroquíes en aguas de Ceuta. Según él, ocurrió durante la entrada masiva del treinta y treinta y uno de julio, en la que calcula unas cien mil personas. Menciona la fragata Mohammed Sexto y varios patrulleros, y lo califica de guerra híbrida. Según el periódico, el Gobierno niega que un patrullero marroquí estuviera en esas aguas y presenta lo ocurrido como una crisis migratoria. Marruecos sostiene que los barcos estaban allí por casualidad. Garat propone mantener un buque de guerra en Ceuta, llamar a consultas al embajador y pedir consultas en la OTAN. Son opiniones del entrevistado, críticas con el Ejecutivo, y el texto no las verifica.",
+     "url": "https://www.elespanol.com/espana/20261018/almirante-garat-gobierno-oculto-intrusion-naval-ceuta-fines-electorales-debe-barco-guerra/1003744423239_0.html"
     }
    ]
   },
@@ -67,21 +75,15 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El voto exterior podría dar diez escaños más al PSOE",
-     "resumen": "Un análisis de El Debate sostiene que el PSOE podría ganar hasta diez escaños en las elecciones del 29 de noviembre por el fuerte aumento del censo de españoles residentes en el extranjero tras la ley de nietos. Según el cálculo del propio diario, el PSOE pasaría de ciento veintiuno a ciento treinta y uno. El Partido Popular perdería siete escaños, Junts dos y el BNG uno. Diez provincias tendrían posibilidades reales, entre ellas Madrid, Málaga y Las Palmas. En Madrid, en las elecciones de dos mil veintitrés, el PSOE quedó a menos de cuatro mil votos del escaño. El Supremo ha suspendido de forma cautelar el voto de parte de los nacionalizados. La Abogacía del Estado calcula que unos ciento sesenta y tres mil votantes quedarían excluidos. El Gobierno sostiene que el efecto es marginal. Son proyecciones, no resultados.",
-     "url": "https://www.eldebate.com/espana/20261017/psoe-tendria-alcance-arrebatar-diez-escanos-aumento-censo-ley-nietos_470387.html"
+     "titular": "El Defensor del Pueblo recurre al Constitucional por la ley de nietos",
+     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, presentó el viernes dieciséis de octubre un recurso de amparo ante el Tribunal Constitucional en favor de presuntos descendientes de exiliados españoles. Según El Debate, el Tribunal Supremo había suspendido por precaución el derecho de voto de extranjeros nacionalizados con la ley de nietos, y también la concesión de nuevas nacionalidades por sospechas de irregularidades. El recurso pide dejar sin efecto esas decisiones, y está ligado a las elecciones del veintinueve de noviembre. El periódico recoge que la mayoría de juristas lo ve inviable. Señala tres defectos: no sigue el modelo del tribunal, recurre decisiones provisionales y los afectados aún no son españoles. Según fuentes citadas, la Fiscalía y la Abogacía del Estado se opusieron. El Constitucional iba a activar el caso este lunes. El diario mantiene una línea crítica con el Gobierno.",
+     "url": "https://www.eldebate.com/espana/20261018/triple-tirabuzon-gabilondo-contra-supremo-recurso-insolito-defectos-forma-fuera-competencias_470823.html"
     },
     {
      "id": "ed2",
-     "titular": "El CNI dice que Marruecos sabía de la entrada masiva en Ceuta",
-     "resumen": "Según El Debate, que cita a Europa Press, el Centro Nacional de Inteligencia ha enviado un informe a la jueza de la Audiencia Nacional María Tardón. El documento sostiene que las fuerzas de seguridad marroquíes actuaron con pasividad y que eso contribuyó al desbordamiento. Afirma que las autoridades de Marruecos conocían con detalle las convocatorias en redes sociales que pedían una entrada masiva en Ceuta, coincidiendo con la Fiesta del Trono. Días antes detectaron una situación anómala y reforzaron el dispositivo. Según el informe, cuando aumentó mucho el número de personas, el despliegue marroquí fue insuficiente y no hubo reacción cuando empezaron a perder el control. La entrada se produjo los días 30 y 31 de julio. Fuentes policiales hablan de más de veinte mil personas, cifra que no figura en el informe. No hay reacciones oficiales.",
-     "url": "https://www.eldebate.com/espana/20261016/cni-traslada-juez-pasividad-marruecos-motivo-desbordamiento-ceuta_470553.html"
-    },
-    {
-     "id": "ed3",
-     "titular": "El PSOE y Frente Amplio irán juntos al Senado",
-     "resumen": "El PSOE y Frente Amplio han acordado presentarse juntos a las elecciones al Senado. Según El Debate, la candidatura se llamará Senado de Progreso e incluirá a Izquierda Unida, Movimiento Sumar, Compromís, Más Madrid y otras formaciones. Podemos queda fuera. El pacto abarca más de cuarenta provincias y excluye Cataluña y Canarias. El objetivo es quitar al Partido Popular la mayoría absoluta en la Cámara. En las elecciones de julio de dos mil veintitrés, el PP logró ciento veinte de los doscientos ocho escaños elegidos en las urnas y el PSOE setenta y dos. Un informe interno del PSOE calcula que la coalición podría llegar a ciento veintinueve senadores electos. El diario advierte de que esa previsión puede ser demasiado optimista. El PSOE acusa al PP y a Vox de querer sepultar el Estado de bienestar.",
-     "url": "https://www.eldebate.com/espana/20261017/psoe-frente-amplio-pactan-concurrir-juntos-senado_470618.html"
+     "titular": "La jueza Biedma dice que se sintió amenazada, sobre todo por sus hijas",
+     "resumen": "El Debate publicó el audio íntegro de la declaración de la jueza Beatriz Biedma, que investigó al hermano del presidente del Gobierno. En casi una hora, relató episodios de hostigamiento. Según ella, desde septiembre de dos mil veinticuatro el exjuez Luis José Sáenz de Tejada difundió vídeos que la señalaban, con falsedades, y que mencionaban el colegio de sus hijas. Dice que alguien preguntó por los horarios de las niñas haciéndose pasar por su hermano o su secretaria. También cuenta que un abogado le habló de planes para quitarla de en medio, y que lamenta no haber recibido medidas de protección. Biedma afirma que nada de esto condicionó sus resoluciones y que nunca habló con Leire Díez. Asegura que no recibió presiones directas de políticos ni de la Fiscalía. El artículo no recoge reacciones de los aludidos.",
+     "url": "https://www.eldebate.com/espana/20261018/audio-integro-declaracion-jueza-biedma-claro-me-he-sentido-amenazada-sobre-todo-mis-hijas_470658.html"
     }
    ]
   },
@@ -91,21 +93,27 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "La fragata insignia de Marruecos dejó de emitir señal antes del asalto a Ceuta",
-     "resumen": "Según The Objective, la fragata Mohammed Sexto, buque insignia de la Marina marroquí, dejó de emitir su posición por el sistema de identificación automática horas antes de la entrada masiva en Ceuta. Los registros que dice haber consultado muestran su última señal el veintinueve de julio, a las dos y treinta y tres de la tarde, fondeada junto a Casablanca. El medio asegura que otras unidades de la zona, como una corbeta y otra fragata, también dejaron de emitir hasta el catorce de agosto. Las señala como principales sospechosas de haber entrado en aguas de Ceuta. El diario reconoce que apagar esa señal no prueba por sí solo que participaran. Según el medio, el Gobierno ocultó la movilización naval durante más de dos meses y ahora la llama hecho puntual. No hay respuesta oficial de Marruecos. El texto tiene algunas incoherencias en las horas.",
-     "url": "https://theobjective.com/espana/2026-10-17/buque-marruecos-radar-ceuta/"
+     "titular": "Un empresario buscó ayuda de dos exdirigentes socialistas, según The Objective",
+     "resumen": "Según The Objective, el presidente de la energética Hafesa, Alejandro Hamlyn, se reunió a principios de febrero de dos mil veintitrés con dos antiguos dirigentes del Partido Socialista de Euskadi, Dimas Sañudo y Javier Cruz. Fue en un hotel de Getxo. Buscaba beneficios judiciales y acceso a fondos europeos. Hamlyn está encausado por un presunto fraude de hidrocarburos de ciento cincuenta y cuatro millones de euros. Según el periódico, los dos dijeron tener acceso al entonces secretario de Estado de Justicia. La reunión no habría tenido efecto. Dos años después, Hamlyn huyó a Dubái, y la Audiencia Nacional impuso a la empresa una multa de ciento cincuenta y nueve millones. En agosto de este año fue detenido por Interpol, aunque semanas después quedó libre. Sañudo y Cruz no quisieron hacer comentarios. El artículo no atribuye implicación al PSOE ni a Patxi López, y The Objective no ha verificado los hechos de forma independiente.",
+     "url": "https://theobjective.com/espana/politica/2026-10-19/hamlyn-excargos-psoe-judiciales-fondos-ue"
     },
     {
      "id": "to2",
-     "titular": "Rebeca Torró sustituye a Montse Mínguez como portavoz del PSOE",
-     "resumen": "La Ejecutiva Federal del PSOE ha nombrado a Rebeca Torró nueva portavoz del partido, en lugar de Montse Mínguez. Mínguez dimitió el viernes de la portavocía y de la secretaría de Estudios y Programas, y renunció a encabezar la lista por Lleida. Según The Objective, la causa son los negocios inmobiliarios de su pareja, Sergi Vélez, cuyo holding gestiona treinta inmuebles y declaró un millón trescientos mil euros de ingresos. El diario recuerda que en dos mil veinticinco informó de que el Ayuntamiento de Lleida le perdonó una deuda de trescientos mil euros cuando ella era concejal. Cristina Narbona asume Estudios y Programas. Pedro Sánchez dijo que le pidió que no dimitiera y la calificó de gran activo. Torró le agradeció que antepusiera el interés colectivo.",
-     "url": "https://theobjective.com/espana/politica/2026-10-17/rebeca-torro-montse-minguez-psoe-dimision"
+     "titular": "The Objective denuncia nacionalidades concedidas sin pruebas por la ley de nietos",
+     "resumen": "The Objective sostiene en una exclusiva que el Gobierno concede la nacionalidad por la ley de memoria democrática a personas que no cumplen los requisitos. Según el diario, el origen está en una instrucción del Ministerio de Justicia, impulsada por Sofía Puente, que presumía exiliado a quien salió de España entre mil novecientos treinta y seis y mil novecientos cincuenta y cinco. El Gobierno informó al Supremo de unos dos millones cuatrocientos mil expedientes y admite más de ciento sesenta y tres mil nacionalidades concedidas con esa instrucción. El periódico cita el caso de un mexicano de ochenta y dos años que obtuvo la nacionalidad sin documentos, seis semanas antes de las elecciones de dos mil veintitrés. El Supremo suspendió la instrucción de forma cautelar. El texto no incluye respuesta del Ministerio ni del Gobierno, y sus fuentes son mayoritariamente anónimas.",
+     "url": "https://theobjective.com/espana/2026-10-18/gobierno-nacionalizo-padres-mexico-1920/"
     },
     {
      "id": "to3",
-     "titular": "Una patrullera marroquí vuelve a aguas de Ceuta",
-     "resumen": "Una patrullera de la Marina marroquí volvió a entrar en aguas españolas frente a Ceuta, un día después de que los Reyes terminaran su visita a Ceuta y Melilla. Según The Objective, que cita a ABC y a fuentes policiales, entró el jueves a las nueve y media de la mañana. Estuvo unas siete horas en la bahía sur, hasta que salió una patrullera de la Guardia Civil y el barco regresó a Marruecos. No hubo aviso previo y se desconoce el motivo. El Gobierno asegura que no hay constancia de nuevos incidentes desde los días treinta y treinta y uno de julio. Alberto Núñez Feijóo pidió desplegar la Armada, convocar a la embajadora marroquí y exigir explicaciones al máximo nivel. La información procede de fuentes anónimas.",
-     "url": "https://theobjective.com/espana/2026-10-16/marruecos-patrullera-aguas-ceuta-reyes/"
+     "titular": "Fuentes militares hablan de guerra híbrida de Marruecos en Ceuta",
+     "resumen": "The Objective recoge, con fuentes militares anónimas, que la crisis de Ceuta fue una operación de guerra híbrida de Marruecos contra España, disfrazada de crisis migratoria. Según el diario, la fragata Mohammed Sexto desapareció del radar el veintinueve de julio, un día antes del asalto, y un satélite marroquí sobrevoló la ciudad minutos antes de la entrada masiva del treinta de julio. Cifra la entrada entre ochenta mil y cien mil personas. Habla de unos diez incidentes navales y de drones y cazas cerca de Melilla en septiembre. Acusa al Gobierno de ocultar incursiones y de no pedir apoyo a la OTAN. El artículo no incluye respuesta oficial de Marruecos ni del Gobierno español, y varios datos se atribuyen a otros medios.",
+     "url": "https://theobjective.com/espana/2026-10-18/fragatas-cazas-satelites-rabat-espana-crisis-migratoria/"
+    },
+    {
+     "id": "to4",
+     "titular": "El voto por correo del veintinueve de noviembre coincidirá con el Black Friday",
+     "resumen": "Según The Objective, las elecciones generales del veintinueve de noviembre coinciden con el Black Friday, el pico anual de paquetería, lo que complica el voto por correo en Correos. La empresa, presidida por Pedro Saura, no contratará personal de refuerzo, aunque asegura que pondrá todos los recursos necesarios. El sindicato CCOO pide al menos veinte mil contrataciones y prevé cerca de un millón de votos por correo. En dos mil veintitrés Correos gestionó dos millones seiscientos mil votos a distancia. CCOO señala que Correos ha perdido siete mil cuatrocientos trabajadores desde entonces. El sector logístico prevé entre cien y ciento treinta millones de envíos en esas fechas. La patronal Uno minimiza el impacto para los consumidores, aunque admite que habrá que replanificar algunas cosas.",
+     "url": "https://theobjective.com/espana/2026-10-18/black-friday-voto-correo-29-n-carteros/"
     }
    ]
   },
@@ -115,21 +123,27 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Un informe de Exteriores da cifras de los nacionalizados por la ley de nietos",
-     "resumen": "Según OKDiario, un informe del Ministerio de Asuntos Exteriores, con datos a treinta y uno de agosto, desglosa los expedientes de la ley de nietos. Suman trescientas sesenta y nueve mil diecisiete nacionalidades concedidas. De ellas, ciento sesenta y ocho mil ochocientas noventa y seis corresponden a quienes deben acreditar el exilio de sus familiares. Quedan más de seiscientos cuarenta y cuatro mil expedientes por resolver. El diario sostiene que esto prueba que el Gobierno puede identificar a los nacionalizados, como exige el Supremo. Vox usa el documento en un recurso ante el tribunal y pide que se obligue a explicar qué se hace para excluirlos del censo. No consta respuesta del Gobierno. Es una interpretación del medio y de Vox, y el diario no publica el informe completo.",
-     "url": "https://okdiario.com/espana/este-informe-exteriores-prueba-que-gobierno-puede-identificar-falsos-nietos-como-exige-supremo-20568300"
+     "titular": "El PSOE proclama a Sánchez candidato y aprueba sus listas",
+     "resumen": "El PSOE proclamó oficialmente el sábado diecisiete de octubre a Pedro Sánchez como candidato a la presidencia del Gobierno, según OKDIARIO. El partido dice que fue por unanimidad. El mismo día, un Comité Federal en Fuenlabrada ratificó las listas para las elecciones generales del veintinueve de noviembre. Según el partido, por primera vez habrá más mujeres que hombres encabezando listas, con un cincuenta y dos por ciento. Sánchez acudió con su esposa, Begoña Gómez, y se besaron ante la militancia. El periódico recuerda que ella está imputada por tráfico de influencias y malversación. El socialista Emiliano García-Page no acudió al Comité. Horas antes, la portavoz en el Congreso, Montse Mínguez, había dimitido tras conocerse los negocios inmobiliarios de su pareja. El tono del titular y de algunas descripciones es editorial.",
+     "url": "https://okdiario.com/espana/psoe-proclama-oficialmente-sanchez-como-candidato-socialista-presidencia-del-gobierno-20570855"
     },
     {
      "id": "ok2",
-     "titular": "El Supremo ordena apartar del voto a unos 163.000 nacionalizados",
-     "resumen": "Según OKDiario, el Tribunal Supremo ordenó suspender el voto de unos ciento sesenta y tres mil españoles residentes en el extranjero, nacionalizados por la ley de nietos, y sacarlos del censo electoral. No afecta a quienes acrediten ser descendientes de exiliados. Fuentes del Supremo, sin identificar, aseguran al diario que el Gobierno no quiere cumplirlo. El Ejecutivo dice que es muy complejo por el poco margen antes de las elecciones del 29 de noviembre. La portavoz, Elma Saiz, lo calificó de extrema gravedad. El tribunal dio cinco días a los afectados para personarse. Baltasar Garzón ofrece gratis su despacho a quienes quieran recurrir. Según el diario, ya no habría tiempo de llegar al Constitucional antes de las elecciones.",
-     "url": "https://okdiario.com/espana/supremo-cree-que-gobierno-resiste-sacar-del-censo-falsos-nietos-pero-avisa-tendra-que-hacerlo-20560059"
+     "titular": "Feijóo llama coalición de desesperados al pacto de Sánchez y Colau",
+     "resumen": "El líder del PP, Alberto Núñez Feijóo, criticó el sábado el acuerdo entre el PSOE y el Frente Amplio para presentarse juntos al Senado, que según OKDIARIO incluye a Ada Colau. Lo calificó de coalición de desesperados y dijo que da cuenta de la situación del PSOE, que habría diluido sus siglas con veinte formaciones. Habló en el congreso de la ONCE, en Pozuelo de Alarcón. Sobre la dimisión de Montse Mínguez, dijo que ni se ha ido ni la han expulsado. Recordó que el Supremo confirmó las condenas a Ábalos y Koldo. Se comprometió a que las personas ciegas puedan votar de forma accesible y secreta. El artículo no incluye respuesta del PSOE ni de Colau, y varias afirmaciones son valoraciones de Feijóo o del propio medio.",
+     "url": "https://okdiario.com/espana/feijoo-tacha-coalicion-desesperados-pacto-sanchez-colau-senado-da-cuenta-situacion-del-psoe-20570963"
     },
     {
      "id": "ok3",
-     "titular": "El Papa llama a Putin desde el hospital",
-     "resumen": "El papa León catorce llamó por teléfono al presidente ruso, Vladímir Putin, el viernes dieciséis de octubre, según la Oficina de Prensa de la Santa Sede. Lo hizo desde el hospital Gemelli de Roma, tres días después de ser operado de un nódulo en el pulmón. Expresó su profunda preocupación por la situación humanitaria en Oleshki, en la provincia de Jersón. Pidió un alto el fuego que permita enviar alimentos y asistencia médica, y la evacuación voluntaria y segura de civiles. El Kremlin dijo que Putin apoyó la iniciativa del Vaticano. Según medios estatales rusos, Putin culpó a Ucrania de bloquear los suministros, algo que el artículo no verifica. No hay respuesta de Kiev. Sigue hospitalizado para su recuperación.",
-     "url": "https://okdiario.com/espana/papa-leon-xiv-llama-telefono-putin-desde-hospital-pedirle-alto-fuego-ucrania-20568288"
+     "titular": "Bruselas advierte de riesgos en los papeles falsos de la regularización",
+     "resumen": "La Comisión Europea advirtió de que la falsificación de documentos en procesos de regularización supone un riesgo para la seguridad del espacio Schengen, según OKDIARIO. El comisario de Interior y Migración, Magnus Brunner, respondió por escrito a una pregunta de cuatro eurodiputados del PP. Recordó que los permisos de residencia se rigen sobre todo por el derecho nacional. El periódico habla de un millón doscientos mil beneficiarios de la regularización masiva, aunque el Gobierno había hablado de menos de quinientos mil. También cita la detención en Zaragoza de sesenta y un miembros de una red que daba papeles falsos. Menciona críticas del primer ministro checo, Andrej Babiš, y de la danesa, Mette Frederiksen. El texto no recoge respuesta del Gobierno, y las cifras varían según la fuente.",
+     "url": "https://okdiario.com/espana/bruselas-alerta-sobre-falsificacion-documentos-regularizacion-riesgo-seguridad-del-espacio-schengen-20569988"
+    },
+    {
+     "id": "ok4",
+     "titular": "Abascal anuncia que Vox actuará con altura de miras tras el pacto de izquierdas al Senado",
+     "resumen": "El presidente de Vox, Santiago Abascal, anunció en la red X que su partido actuará con altura de miras tras la coalición de la izquierda para el Senado. Según OKDIARIO, el PSOE, Izquierda Unida, Movimiento Sumar, Más Madrid y Ceuta Ya concurrirán juntos en cuarenta y siete circunscripciones, bajo la marca Senado de Progreso. Abascal no detalló qué hará. El periódico interpreta que Vox podría no presentarse al Senado en algunas provincias para evitar una mayoría de izquierdas, pero eso no ha sido anunciado. Una coalición con el PP ya no es posible, porque el plazo de candidaturas expiró el viernes. El PP dijo que respetará cualquier decisión de Vox. El secretario general de Vox, Ignacio Garriga, pidió movilización para las elecciones del veintinueve de noviembre.",
+     "url": "https://okdiario.com/espana/abascal-anuncia-que-vox-actuara-altura-miras-coalicion-del-psoe-toda-izquierda-senado-20572829"
     }
    ]
   },
@@ -139,21 +153,27 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Sánchez dedica su mitin a Begoña Gómez",
-     "resumen": "Pedro Sánchez abrió este sábado su mitin de precampaña en Fuenlabrada dedicando el discurso a su pareja, Begoña Gómez, investigada y enviada a juicio. Según elDiario.es, entró con ella de la mano, la besó y le dijo que la quería. Aseguró que intentaron romper al matrimonio y que han logrado lo contrario. Acusó a las derechas de poner en riesgo con un Gobierno del Partido Popular y Vox las conquistas sociales de los últimos cuarenta años. Defendió las pensiones como una conquista y criticó a Alberto Núñez Feijóo. Pidió una movilización histórica el 29 de noviembre. Ese mismo día, el Comité Federal lo proclamó candidato por unanimidad y Rebeca Torró fue nombrada nueva portavoz. El diario no recoge reacciones del PP ni de Vox.",
-     "url": "https://www.eldiario.es/politica/sanchez-mete-campana-begona-gomez-hoy-unidos-fuertes-quiero_1_13593802.html"
+     "titular": "Francia vive una jornada de protestas con más de dos mil detenidos",
+     "resumen": "El sábado diecisiete de octubre, las protestas por el coste de la vida en Francia se volvieron violentas, según elDiario.es. En París, la Policía usó gases lacrimógenos y hubo decenas de comercios saqueados. En Limoges, manifestantes incendiaron el ayuntamiento, que quedó prácticamente destruido. En Marsella, un grupo entró brevemente en el ayuntamiento. Una persona murió en París por una parada cardiorrespiratoria. El ministro del Interior, Laurent Nuñez, elevó a dos mil las detenciones y habló de más de seiscientos heridos entre policías, gendarmes y bomberos. El Gobierno calcula quinientos cincuenta mil manifestantes, y el sindicato CGT, ochocientos mil. Las protestas empezaron en institutos de barrios pobres del norte de París. Se extendieron después a Italia y Portugal. Nuñez dijo que no se declarará el estado de emergencia.",
+     "url": "https://www.eldiario.es/internacional/francia-arde-jornada-protestas-1-200-detenidos_1_13594798.html"
     },
     {
      "id": "edi2",
-     "titular": "El PP elige a Albiol para competir con Vox en Barcelona",
-     "resumen": "El Partido Popular ha elegido al alcalde de Badalona, Xavier García Albiol, como candidato por Barcelona en las elecciones del 29 de noviembre. Según elDiario.es, la decisión busca competir con Vox en Cataluña. El PP lo confirmó este sábado en redes sociales. Albiol había dicho que daría el paso si podía conservar la alcaldía, y asegura que seguirá siendo alcalde. Alberto Núñez Feijóo oficializará la candidatura el domingo en el Palau de Congresos de Cataluña. Albiol dice que quiere atajar desde el Congreso las ocupaciones ilegales, la multirreincidencia y la inmigración irregular. El diario recuerda que lleva más de diez años con un discurso que une inmigración e inseguridad. También se anunciaron candidatos en Lérida, Gerona y Tarragona.",
-     "url": "https://www.eldiario.es/catalunya/pp-elige-albiol-competir-vox-barcelona_1_13594147.html"
+     "titular": "Sánchez abre su mitin con una declaración de amor a Begoña Gómez",
+     "resumen": "El sábado diecisiete de octubre, Pedro Sánchez y su esposa, Begoña Gómez, acudieron juntos a un mitin del PSOE en Fuenlabrada. Según elDiario.es, Sánchez empezó con una declaración pública de amor y entraron de la mano; la imagen del beso se hizo viral. Dijo que han intentado quebrarlos de todas las maneras y que el partido está más unido. También ironizó sobre Feijóo. El PP difundió un montaje con Ábalos en lugar de Begoña Gómez. Vox sugirió que podría retirar candidaturas al Senado. El artículo cita encuestas internas del PSOE que sitúan la fuga de votos del PP hacia Vox en torno al veinte por ciento. Recuerda la dimisión de la portavoz Montse Mínguez. La crónica es favorable al PSOE y las expresiones como persecución son el encuadre de los socialistas.",
+     "url": "https://www.eldiario.es/politica/sanchez-pone-psoe-bailar-ritmo-begona-gomez-voltear-campana_1_13594220.html"
     },
     {
      "id": "edi3",
-     "titular": "Detenidos dos jóvenes en Irún por posible terrorismo",
-     "resumen": "La Ertzaintza y la Audiencia Nacional investigan a dos jóvenes de nacionalidad española por posibles delitos de terrorismo. Son un hombre de treinta y cuatro años y una mujer de veintidós. Según elDiario.es, el veintiséis de septiembre, en un control en Eskoriatza, en Guipúzcoa, se identificó a tres personas con material muy sensible. El sábado diecisiete de octubre los dos investigados se presentaron en la comisaría de Irún con su abogado y quedaron detenidos. Entre lo incautado había información sobre fuerzas de seguridad y la posible ubicación de un lugar con material, presumiblemente armas y explosivos. Serán puestos a disposición de la Audiencia Nacional. Fuentes consultadas dicen que no es yihadismo. El PNV expresó su absoluta preocupación y pidió respetar la investigación.",
-     "url": "https://www.eldiario.es/euskadi/ertzaintza-audiencia-nacional-investigan-jovenes-nacionalidad-espanola-delitos-graves-terrorismo_1_13594556.html"
+     "titular": "Reconstruyen una paliza de militares a migrantes en Ceuta",
+     "resumen": "Una investigación de elDiario.es reconstruye una paliza de militares a migrantes marroquíes en Ceuta, grabada en vídeo. Ocurrió hacia las ocho de la mañana en un solar del barrio de Los Rosales. Una decena de soldados llegó a dos vehículos donde dormían jóvenes. Según el periódico, un chico de diecisiete años huyó y cayó por un terraplén, y otro de diecinueve recibió al menos nueve golpes en pocos segundos. Los testigos dicen que los soldados se fueron sin ayudar al herido. El Ministerio de Defensa no respondió a las preguntas del medio. La Moncloa expresó preocupación y prometió una investigación interna, sin dar detalles. Amnistía Internacional advierte de que estas prácticas podrían ser tortura o trato degradante. Defensa envió las denuncias a los tribunales el treinta de septiembre.",
+     "url": "https://www.eldiario.es/desalambre/reconstruccion-videos-palizas-militares-migrantes-ceuta-dormiamos-despertaron-golpes_1_13594408.html"
+    },
+    {
+     "id": "edi4",
+     "titular": "Un grave incendio en una base militar de Canadá causa muertos y heridos",
+     "resumen": "Un grave incendio se propagó el sábado dieciocho de octubre en la base militar canadiense de Wainwright, en la provincia de Alberta, a unas dos horas al este de Edmonton. Según elDiario.es, hay muertos y heridos, pero aún no se conoce el balance. El ministro de Defensa, David McGuinty, confirmó víctimas mortales sin precisar cifras. Un diputado conservador habló de una explosión seguida de fuego, algo no confirmado. Según la cadena CBC, el fuerte viento hizo que las llamas se extendieran con rapidez. El primer ministro, Mark Carney, habló de un grave incidente y expresó su apoyo a los militares. La primera ministra de Alberta, Danielle Smith, lo calificó de importante y trágico. El suceso ocurrió dos días antes del referéndum del diecinueve de octubre sobre la permanencia de Alberta en Canadá.",
+     "url": "https://www.eldiario.es/internacional/grave-incendio-base-militar-canadiense-alberta-causa-muertos-heridos_1_13594811.html"
     }
    ]
   }
