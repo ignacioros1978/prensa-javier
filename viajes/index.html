@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Viajes · Ofertas de la semana</title>
-<meta name="description" content="La mejor escapada en pareja, el mejor viaje en familia y un crucero para los cinco.">
+<meta name="description" content="La mejor escapada en pareja y el mejor viaje en familia, saliendo de Sevilla, Málaga o Jerez.">
 <meta name="theme-color" content="#102a33">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icono.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
   --bg:#eef2f4; --surface:#ffffff; --surface-2:#f5f8fa; --line:#dbe2e8;
   --fg:#14202b; --label:#2f3d48; --muted:#4a5864;
   --accent:#0e5a6b; --accent-soft:#e0eef1; --on-accent:#ffffff;
-  --pareja:#8c2f39; --pareja-2:#b4424d; --familia:#1d4f91; --familia-2:#2c6bc0; --crucero:#0b5d63; --crucero-2:#12858c;
+  --pareja:#8c2f39; --pareja-2:#b4424d; --familia:#1d4f91; --familia-2:#2c6bc0;
   --ok:#1f7a3c; --warn:#9a5b00;
   --shadow:0 1px 2px rgba(16,42,51,.06),0 8px 22px rgba(16,42,51,.08);
   --r:18px;
@@ -30,7 +30,7 @@
   --bg:#0c1318; --surface:#141e25; --surface-2:#19252d; --line:#2a3944;
   --fg:#f1f5f8; --label:#c4ced6; --muted:#b4c0c9;
   --accent:#5cc0d4; --accent-soft:#163139; --on-accent:#06191e;
-  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91; --crucero:#0a4a4f; --crucero-2:#0b5d63;
+  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91;
   --ok:#6fd08f; --warn:#f0b05a;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.3); color-scheme:dark}}
 :root[data-theme="dark"]{
@@ -38,7 +38,7 @@
   --bg:#0c1318; --surface:#141e25; --surface-2:#19252d; --line:#2a3944;
   --fg:#f1f5f8; --label:#c4ced6; --muted:#b4c0c9;
   --accent:#5cc0d4; --accent-soft:#163139; --on-accent:#06191e;
-  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91; --crucero:#0a4a4f; --crucero-2:#0b5d63;
+  --pareja:#6e2430; --pareja-2:#8c2f39; --familia:#183f73; --familia-2:#1d4f91;
   --ok:#6fd08f; --warn:#f0b05a; color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -70,9 +70,6 @@ main{margin-top:-14px;position:relative}
 .ob{position:relative;color:#fff;padding:18px 18px 20px;overflow:hidden}
 .offer.pareja .ob{background:linear-gradient(135deg,var(--pareja),var(--pareja-2))}
 .offer.familia .ob{background:linear-gradient(135deg,var(--familia),var(--familia-2))}
-.offer.crucero .ob{background:linear-gradient(135deg,var(--crucero),var(--crucero-2))}
-.route{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0;padding:0;list-style:none}
-.route li{font-size:.9rem;font-weight:700;background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
 .ob svg.bg{position:absolute;right:-16px;bottom:-26px;width:150px;height:150px;opacity:.16;pointer-events:none}
 .ob .who{display:flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:800;font-size:.92rem;letter-spacing:.07em;text-transform:uppercase}
 .ob .who svg{width:20px;height:20px}
@@ -150,13 +147,6 @@ main{margin-top:-14px;position:relative}
 .bub.none .bk,.bub.none .bd{color:var(--fg)}
 .bub.none p{margin:6px 0 0;font-weight:600;font-size:.9rem;color:var(--muted)}
 .sheet .cta{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0));z-index:2;box-shadow:0 8px 22px rgba(14,90,107,.35)}
-.bub.crucero{grid-column:1/-1;min-height:0;border-radius:30px 30px 30px 30px;background:radial-gradient(130% 120% at 15% 0%,#2bb3b0 0%,var(--crucero) 70%);animation-delay:-1.2s;padding-bottom:20px}
-.bub.crucero .wave{position:absolute;right:-10px;bottom:-8px;width:200px;height:120px;opacity:.2;pointer-events:none}
-.bub.crucero .bd{font-size:clamp(1.35rem,5.6vw,1.9rem)}
-.bub.crucero .bp{margin-top:10px}
-.bub.crucero.none{grid-column:1/-1;background:var(--surface)}
-@media (min-width:820px){.bub.crucero{min-height:0;display:grid;grid-template-columns:1.4fr 1fr;column-gap:24px;align-items:end}.bub.crucero .cl,.bub.crucero .cr{display:flex;flex-direction:column;gap:6px}}
-.bub.crucero .cl,.bub.crucero .cr{display:flex;flex-direction:column;gap:6px;position:relative}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 @media (min-width:820px){.bub{min-height:280px;padding:22px 22px 24px}}
 /* Hoja de detalle */
@@ -179,7 +169,7 @@ main{margin-top:-14px;position:relative}
   <div class="wrap">
     <div class="vbar"><a class="vback" id="vback" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa" title="Volver al Portal de Casa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 9.6 10.4 3v4.1c6.3.2 10.4 4.4 10.4 10.1 0 1.4-.3 2.7-.8 3.8-.4-4.6-3.9-7.6-9.6-7.8v4.2z" fill="#fff"/></svg></a><div class="kicker">Viajes · lunes y jueves</div></div>
     <h1>Ofertas de la semana</h1>
-    <p>La mejor escapada en pareja, el mejor viaje en familia y un crucero para los cinco.</p>
+    <p>La mejor escapada en pareja y el mejor viaje en familia, saliendo de Sevilla, Málaga o Jerez.</p>
     <div class="upd" id="upd"><i></i><span>Cargando…</span></div>
   </div>
 </header>
@@ -202,7 +192,6 @@ main{margin-top:-14px;position:relative}
     <div class="card"><div class="how">
       <p>Cada <b>lunes y jueves por la mañana</b>, Claude revisa paquetes de vuelo + hotel, vuelos y alojamientos en varias webs de viajes, y elige la oferta más barata que cumple lo que buscamos.</p>
       <p><b>Pareja:</b> 2 adultos, 3 o 4 noches. <b>Familia:</b> 2 adultos y 3 hijos, en fin de semana, puente o vacaciones del colegio. Salidas en las próximas 8 semanas, ciudades europeas, alojamiento céntrico y bien valorado.</p>
-      <p><b>Crucero:</b> para los cinco, en vacaciones del colegio o puentes de los próximos meses, saliendo de un puerto de España o Lisboa. El precio es «desde» por persona en camarote doble; el viaje hasta el puerto va aparte.</p>
       <p>Los precios son los del día del barrido y <b>cambian rápido</b>: comprueba siempre el precio final antes de reservar.</p>
     </div></div>
   </section>
@@ -265,54 +254,6 @@ function offer(kind,o){
     (o.fuente?'<div class="src">Encontrada en '+esc(o.fuente)+'</div>':'')+
     alts+'</div></article>';
 }
-function cruiseOffer(o){
-  const title='Crucero en familia';
-  if(!o||!o.barco){
-    return '<article class="offer crucero"><div class="ob"><div class="who">'+svg('ship')+title+'</div>'+svg('ship','bg')+'</div><div class="empty"><b>Sin crucero esta semana</b>'+esc((o&&o.motivo)||'No ha salido ningún crucero que cumpla los criterios.')+'</div></article>';
-  }
-  const url=safe(o.url);
-  const chips=[o.noches?o.noches+' noches':'',o.cancelable===true?'Cancelación gratis':''].filter(Boolean);
-  const precio=o.precioTotal?'<b>'+eur(o.precioTotal)+'</b><span>en total'+(o.precioPersona?' · '+eur(o.precioPersona)+' por persona':'')+'</span>':'<b>'+(o.precioPersona?'desde '+eur(o.precioPersona):'')+'</b><span>'+esc(o.precioTexto||'por persona')+'</span>';
-  const ruta=Array.isArray(o.itinerario)&&o.itinerario.length?'<div class="fact">'+svg('pin')+'<div><dt>Ruta</dt><dd><ul class="route">'+o.itinerario.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></dd></div></div>':'';
-  let alts='';
-  if(Array.isArray(o.alternativas)&&o.alternativas.length){
-    alts='<div class="alts"><h3>Otros cruceros</h3>'+o.alternativas.slice(0,3).map(a=>{
-      const au=safe(a.url),tag=au?'a':'div';
-      const pr=a.precioTotal?eur(a.precioTotal):(a.precioPersona?eur(a.precioPersona)+'/p':'');
-      return '<'+tag+' class="alt"'+(au?' href="'+esc(au)+'" target="_blank" rel="noopener"':'')+'><div class="an"><b>'+esc(a.destino)+'</b><small>'+esc([a.fechasTexto,a.origen?'desde '+a.origen:'',a.fuente].filter(Boolean).join(' · '))+'</small></div><span class="ap">'+pr+'</span>'+(au?svg('chev'):'')+'</'+tag+'>';
-    }).join('')+'</div>';
-  }
-  return '<article class="offer crucero"><div class="ob">'+svg('ship','bg')+
-    '<div class="who">'+svg('ship')+title+'</div>'+
-    '<h2 class="dest">'+esc(o.nombre||o.barco)+'</h2><div class="country">'+esc([o.barco,o.naviera].filter(Boolean).join(' · '))+'</div>'+
-    '<div class="price">'+precio+'</div>'+
-    (chips.length?'<div class="chips">'+chips.map(c=>'<span class="chip">'+esc(c)+'</span>').join('')+'</div>':'')+
-    '</div><div class="obody"><dl class="facts">'+
-      fact('cal','Fechas',o.fechasTexto,o.viajeros)+
-      fact('ship','Sale de',o.puerto,o.llegar)+
-      ruta+
-      fact('kid','Niños',o.ninos)+
-      fact('bag','Incluye',o.incluye,o.noIncluye?'No incluye: '+o.noIncluye:'')+
-    '</dl>'+
-    (o.porQue?'<p class="why"><b>Por qué este</b>'+esc(o.porQue)+'</p>':'')+
-    (url?'<a class="cta" href="'+esc(url)+'" target="_blank" rel="noopener">Ver el crucero'+svg('ext')+'</a>':'')+
-    (o.fuente?'<div class="src">Encontrado en '+esc(o.fuente)+'</div>':'')+
-    alts+'</div></article>';
-}
-function cruiseBubble(o){
-  if(o===undefined)return '';
-  if(!o||!o.barco)return '<div class="bub none crucero"><div class="bk">'+svg('ship')+'Crucero en familia</div><div class="bd">Sin crucero</div><p>'+esc((o&&o.motivo)||'Esta semana no ha salido ningún crucero que cumpla los criterios.')+'</p></div>';
-  const f=corto(o.fechaIda,o.fechaVuelta)||o.fechasTexto||'';
-  const pr=o.precioTotal?eur(o.precioTotal):(o.precioPersona?'desde '+eur(o.precioPersona):'');
-  const prs=o.precioTotal?'en total para los 5':(o.precioTexto||'por persona');
-  return '<button type="button" class="bub crucero" data-open="crucero" aria-label="'+esc('Crucero en familia: '+(o.nombre||o.barco)+', '+pr+'. Ver detalles')+'">'+
-    '<svg class="wave" viewBox="0 0 200 120" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" aria-hidden="true"><path d="M40 70h120l-14 30H54z"/><path d="M62 70V48h76v22M84 48V30h32v18"/><path d="M0 112c17 0 17-8 33-8s17 8 33 8 17-8 34-8 17 8 33 8 17-8 34-8 16 8 33 8"/></svg>'+
-    '<span class="cl"><span class="bk">'+svg('ship')+'Crucero en familia</span>'+
-    '<span class="bd">'+esc(o.nombre||o.barco)+'</span><span class="bc">'+esc([o.barco,o.naviera].filter(Boolean).join(' · '))+'</span>'+
-    (f?'<span class="bf">'+esc(f)+(o.noches?' · '+o.noches+' noches':'')+(o.puerto?' · desde '+esc(o.puerto):'')+'</span>':'')+'</span>'+
-    '<span class="cr"><span class="bp">'+pr+'</span><span class="bpp">'+esc(prs)+'</span>'+
-    '<span class="bgo">Ver detalles'+svg('chev')+'</span></span></button>';
-}
 let DATA=null;
 const MES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 function corto(a,b){
@@ -334,7 +275,7 @@ function bubble(kind,o){
 function openSheet(kind){
   if(!DATA)return;
   const r=document.createElement('div');r.className='scrim';r.id='scrim';
-  r.innerHTML='<div class="sheet" role="dialog" aria-modal="true"><button type="button" class="sx" id="sx" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>'+(kind==='crucero'?cruiseOffer(DATA.crucero):offer(kind,DATA[kind]))+'</div>';
+  r.innerHTML='<div class="sheet" role="dialog" aria-modal="true"><button type="button" class="sx" id="sx" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>'+offer(kind,DATA[kind])+'</div>';
   document.body.appendChild(r);document.body.style.overflow='hidden';
   try{history.pushState({sheet:1},'');}catch(e){}
   r.addEventListener('click',e=>{if(e.target===r||e.target.closest('#sx'))closeSheet(true);});
@@ -356,7 +297,7 @@ function render(d){
   }else{
     DATA=d;
     $('#offers').className='bubbles';
-    $('#offers').innerHTML=bubble('pareja',d.pareja)+bubble('familia',d.familia)+cruiseBubble(d.crucero);
+    $('#offers').innerHTML=bubble('pareja',d.pareja)+bubble('familia',d.familia);
   }
   const H=Array.isArray(d.anteriores)?d.anteriores.slice(0,8):[];
   $('#histSec').hidden=!H.length;

@@ -122,53 +122,5 @@
    "estado": "ok"
   }
  ],
- "nota": "Desde Málaga no salió nada más barato (Milán, Budapest, Malta, Praga, Bruselas y Nápoles quedaron por encima o con hoteles fuera de la ciudad). Para la familia no hubo paquetes a Oporto ni París el puente de Todos los Santos, y el puente de diciembre coincide con el viaje a Londres. Los precios cambian rápido: compruébalos antes de reservar.",
- "crucero": {
-  "nombre": "Mediterráneo sorprendente",
-  "barco": "MSC Euribia",
-  "naviera": "MSC Cruceros",
-  "puerto": "Barcelona",
-  "llegar": "El viaje hasta Barcelona va aparte",
-  "fechaIda": "2027-03-20",
-  "fechaVuelta": "2027-03-27",
-  "fechasTexto": "sábado 20 al sábado 27 de marzo de 2027 (Semana Santa)",
-  "noches": 7,
-  "viajeros": "2 adultos y 3 hijos",
-  "itinerario": [
-   "Barcelona",
-   "Marsella",
-   "Génova",
-   "Nápoles",
-   "Palermo",
-   "La Goulette (Túnez)",
-   "Navegación",
-   "Barcelona"
-  ],
-  "precioPersona": 933,
-  "precioTexto": "por persona en camarote doble, tasas y propinas incluidas",
-  "ninos": "En MSC los menores de 12 que comparten camarote con 2 adultos pagan solo tasas, cuota de servicio y seguro (de 3 a 11 años, según disponibilidad). Lucía (14) paga como adulta.",
-  "incluye": "Pensión completa, tasas portuarias, propinas, espectáculos y club infantil (1 a 17 años)",
-  "noIncluye": "bebidas, excursiones, restaurantes de especialidad e internet",
-  "porQue": "Es el más barato que encaja entero en las vacaciones de Semana Santa: sale el sábado y vuelve el sábado, sin perder colegio. El Costa Pacifica sale más barato (625 €), pero zarpa el viernes 19, que hay clase. El precio de la tabla del barco (933 €) es más bajo que el «desde 1.083 €» de la selección de Semana Santa de la misma web; confírmalo al reservar. Para 5 hacen falta dos camarotes y el precio final depende de cómo os repartáis.",
-  "fuente": "logitravel.com",
-  "url": "https://www.logitravel.com/cruceros/crucero/mediterraneo-occidental/desde-barcelona/msc-euribia/mediterraneo-sorprendente-821798/",
-  "alternativas": [
-   {
-    "destino": "MSC Sinfonia · Sinfonía mediterránea",
-    "fechasTexto": "20–27 mar 2027",
-    "origen": "Valencia",
-    "fuente": "logitravel.com",
-    "precioPersona": 1023,
-    "url": "https://www.logitravel.com/cruceros/crucero/mediterraneo-occidental/desde-valencia/msc-sinfonia/sinfonia-mediterranea-881389/"
-   },
-   {
-    "destino": "Costa Toscana · La música del mar",
-    "fechasTexto": "28 dic – 4 ene",
-    "origen": "Barcelona",
-    "fuente": "logitravel.com",
-    "precioPersona": 1199,
-    "url": "https://www.logitravel.com/cruceros/crucero/mediterraneo-occidental/desde-barcelona/costa-toscana/la-musica-del-mar-931917/"
-   }
-  ]
- }
+ "nota": "Desde Málaga no salió nada más barato (Milán, Budapest, Malta, Praga, Bruselas y Nápoles quedaron por encima o con hoteles fuera de la ciudad). Para la familia no hubo paquetes a Oporto ni París el puente de Todos los Santos, y el puente de diciembre coincide con el viaje a Londres. Los precios cambian rápido: compruébalos antes de reservar."
 }

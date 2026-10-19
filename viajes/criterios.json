@@ -90,19 +90,5 @@
     "VCE",
     "BOD",
     "MLA"
-  ],
-  "crucero": {
-    "viajeros": "2 adultos y 3 hijos de 14, 11 y 4 años (los 5 juntos; normalmente hacen falta 2 camarotes o un camarote familiar)",
-    "ventanaSalida": "entre 14 días y 10 meses después del día del barrido",
-    "fechas": "solo dentro de festivosEscolaresAndalucia o de vacacionesVerano, de forma que ni la salida ni la vuelta (contando el viaje hasta el puerto) caigan en día de colegio; nunca solapado con fechasOcupadas",
-    "vacacionesVerano": {
-      "desde": "2027-06-24",
-      "hasta": "2027-09-07"
-    },
-    "duracion": "de 3 a 8 noches",
-    "puertos": "puertos de España peninsular o Lisboa; mejor cerca de casa (Cádiz, Málaga, Lisboa, Valencia), luego Barcelona",
-    "navieras": "cualquiera con actividades o club para niños (MSC, Costa, Royal Caribbean, NCL, Celebrity…)",
-    "precio": "comparar por precio por persona en camarote doble (el más barato), con tasas incluidas; si la página da el precio para los 5, usar ese",
-    "presupuestoOrientativo": "hasta 1.200 € por persona"
-  }
+  ]
 }
