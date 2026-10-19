@@ -1,50 +1,50 @@
 {
- "actualizado": "2026-10-18T15:22:18+02:00",
- "semanaTexto": "domingo 18 de octubre",
+ "actualizado": "2026-10-19T07:49:01+02:00",
+ "semanaTexto": "lunes 19 de octubre",
  "estado": "ok",
  "pareja": {
-  "destino": "Roma",
-  "pais": "Italia",
+  "destino": "Lisboa",
+  "pais": "Portugal",
   "origen": "Sevilla",
   "fechaIda": "2026-11-30",
   "fechaVuelta": "2026-12-03",
   "fechasTexto": "lunes 30 de noviembre al jueves 3 de diciembre",
   "noches": 3,
   "viajeros": "2 adultos",
-  "precioTotal": 308.48,
-  "precioPersona": 154,
+  "precioTotal": 269.01,
+  "precioPersona": 135,
   "tipo": "Vuelo + hotel",
   "vuelo": {
-   "compania": "Wizz Air (ida) y Ryanair (vuelta)",
+   "compania": "Ryanair",
    "directo": true,
-   "detalle": "Ida lun 30 nov 22:05 (llega 00:50) · vuelta jue 3 dic 06:25"
+   "detalle": "Ida lun 30 nov 21:25 (llega 21:35 hora de Lisboa) · vuelta jue 3 dic 22:20 (llega 00:25)"
   },
   "alojamiento": {
-   "nombre": "Hotel Villa San Lorenzo Maria",
-   "estrellas": 3,
+   "nombre": "WC by The Beautique Hotels",
+   "estrellas": 4,
    "nota": "8,4",
-   "zona": "a 2,9 km del centro (barrio de San Lorenzo)"
+   "zona": "a 1,8 km del centro (Avenida Almirante Reis)"
   },
-  "incluye": "Vuelos directos y 3 noches en habitación doble, sin desayuno",
-  "porQue": "Es la opción más barata que cumple todo: vuelos directos y hotel con 8,4 de nota y casi 1.400 opiniones, con cancelación gratis hasta el 7 de noviembre. Ojo: se llega pasada la medianoche y se vuelve a primera hora, así que son dos días completos en Roma. Por separado (eDreams + Booking) salía más caro.",
+  "incluye": "Vuelos directos y 3 noches en habitación doble superior, sin desayuno",
+  "porQue": "Es lo más barato que cumple todo esta semana: hotel de 4 estrellas con 8,4 de nota y 264 opiniones, y vuelos directos. Hay un Ibis Styles 8 € más barato pero con 7,5 de nota, así que compensa este. Por separado (eDreams 134 € + hotel en Booking) sale más caro. Tarifa no reembolsable (con cancelación gratis hasta el 27 de noviembre cuesta 308 €). Ojo: se llega de noche el lunes y se vuelve el jueves por la noche.",
   "fuente": "lastminute.com",
-  "url": "https://www.lastminute.com/s/tsx/2492780?pageType=review&destination=ROM&dateFrom=2026-11-30&dateTo=2026-12-03&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261130-20261203&roomId=2492780DOUBLE-1&mealPlanId=163820116&mealPlanCode=BORF20261107&searchMode=DP&origin=SVQ&transportId=831156204132112384SCHv01-143883836&vcSearchId=739389066",
-  "cancelable": true,
+  "url": "https://www.lastminute.com/s/tsx/167224?pageType=review&destination=LIS&dateFrom=2026-11-30&dateTo=2026-12-03&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261130-20261203&roomId=167224DOUBLE_SUPERIOR-1&mealPlanId=1311082755&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=831406202095101952SCHv01851449466&vcSearchId=741773670",
+  "cancelable": false,
   "alternativas": [
+   {
+    "destino": "Roma",
+    "fechasTexto": "30 nov–3 dic",
+    "origen": "Sevilla",
+    "fuente": "lastminute.com",
+    "precioTotal": 306.08,
+    "url": "https://www.lastminute.com/"
+   },
    {
     "destino": "Oporto",
     "fechasTexto": "26–29 oct",
     "origen": "Sevilla",
     "fuente": "lastminute.com",
-    "precioTotal": 376.17,
-    "url": "https://www.lastminute.com/"
-   },
-   {
-    "destino": "Budapest",
-    "fechasTexto": "26–29 nov",
-    "origen": "Málaga",
-    "fuente": "lastminute.com",
-    "precioTotal": 497.58,
+    "precioTotal": 344.05,
     "url": "https://www.lastminute.com/"
    }
   ]
@@ -53,62 +53,59 @@
   "destino": "Oporto",
   "pais": "Portugal",
   "origen": "Sevilla",
-  "fechaIda": "2026-11-27",
-  "fechaVuelta": "2026-11-29",
-  "fechasTexto": "viernes 27 al domingo 29 de noviembre",
+  "fechaIda": "2026-12-11",
+  "fechaVuelta": "2026-12-13",
+  "fechasTexto": "viernes 11 al domingo 13 de diciembre",
   "noches": 2,
   "viajeros": "2 adultos y 3 hijos",
-  "precioTotal": 681.92,
+  "precioTotal": 682.25,
   "precioPersona": 136,
   "tipo": "Vuelo + hotel",
   "vuelo": {
    "compania": "Ryanair",
    "directo": true,
-   "detalle": "Ida vie 27 nov 14:55 · vuelta dom 29 nov 13:10 (hora de Oporto)"
+   "detalle": "Ida vie 11 dic 14:55 (llega 15:10 hora de Oporto) · vuelta dom 13 dic 20:15 (llega 22:30)"
   },
   "alojamiento": {
    "nombre": "Cosme Apartments by Olala Homes",
    "nota": "9,1",
    "zona": "a 1,1 km del centro"
   },
-  "incluye": "Vuelos directos y 2 noches en 2 suites estudio, sin desayuno",
-  "porQue": "Apartamentos con 9,1 de nota y 225 opiniones a un paseo del centro, vuelos directos a buena hora. Roma por separado (eDreams + apartamento en Booking) sale unos 50 € menos, pero con vuelta el domingo a las 6:00 y el alojamiento casi en el límite de 4 km. Tarifa no reembolsable (con cancelación gratis cuesta 700 €).",
+  "incluye": "Vuelos directos y 2 noches en suite estudio, sin desayuno",
+  "porQue": "Apartamentos con 9,1 de nota y 225 opiniones a un paseo del centro, y la vuelta el domingo por la tarde, así que se aprovechan dos días enteros. Por separado (Ryanair por eDreams 475 € + ApartmentsPorto Bombarda 451 en Booking, 8,9 de nota, 171 €) sale unos 36 € menos, pero con peor nota. Tarifa no reembolsable (con cancelación gratis hasta el 9 de diciembre cuesta 699 €). Ojo: el viernes hay que salir del cole antes de tiempo, y comprueba al reservar que la suite tiene camas para los cinco.",
   "fuente": "lastminute.com",
-  "url": "https://www.lastminute.com/s/tsx/403208?pageType=review&destination=OPO&dateFrom=2026-11-27&dateTo=2026-11-29&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2%3B1&departureIntervals=20261127-20261129&roomId=-1144210455-1&mealPlanId=-1528665151&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=831155610780514304SCHv012011846209&vcSearchId=739338608&ages=11%2C4%3B",
+  "url": "https://www.lastminute.com/s/tsx/403208?pageType=review&destination=OPO&dateFrom=2026-12-11&dateTo=2026-12-13&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=3&departureIntervals=20261211-20261213&roomId=-1144210455-1&mealPlanId=-1452236164&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=831405956363397120SCHv01571707199&vcSearchId=741773649&ages=11%2C4",
   "cancelable": false,
   "alternativas": [
    {
     "destino": "Roma",
-    "fechasTexto": "27–29 nov",
+    "fechasTexto": "11–13 dic",
     "origen": "Sevilla",
-    "fuente": "eDreams + Booking.com",
-    "precioTotal": 633.77,
-    "url": "https://www.booking.com/hotel/it/appartamento-per-le-tue-vacanze-a-villa-pamphili-roma.html?aid=8132308&checkin=2026-11-27&checkout=2026-11-29&no_rooms=1&group_adults=3&group_children=2&age=11&age=4&selected_currency=EUR"
+    "fuente": "lastminute.com",
+    "precioTotal": 711.51,
+    "url": "https://www.lastminute.com/"
    },
    {
     "destino": "Lisboa",
-    "fechasTexto": "30 oct–1 nov",
+    "fechasTexto": "27–29 nov",
     "origen": "Sevilla",
     "fuente": "lastminute.com",
-    "precioTotal": 1280.65,
+    "precioTotal": 922.18,
     "url": "https://www.lastminute.com/"
    }
   ]
  },
- "anteriores": [],
- "fuentes": [
+ "anteriores": [
   {
-   "nombre": "lastminute.com",
-   "estado": "ok"
-  },
-  {
-   "nombre": "eDreams",
-   "estado": "ok"
-  },
-  {
-   "nombre": "Booking.com",
-   "estado": "ok"
+   "semanaTexto": "18 de octubre",
+   "pareja": {"destino": "Roma", "precioTotal": 308.48},
+   "familia": {"destino": "Oporto", "precioTotal": 681.92}
   }
  ],
- "nota": "Ejecución de prueba repetida el mismo día: los precios de las ofertas elegidas no han cambiado. Desde Málaga no salió nada más barato; desde Jerez solo salen paquetes a Londres con hoteles fuera de la ciudad (Luton, Milton Keynes, Clacton), así que no valen. Los precios cambian rápido: compruébalos antes de reservar."
+ "fuentes": [
+  {"nombre": "lastminute.com", "estado": "ok"},
+  {"nombre": "eDreams", "estado": "ok"},
+  {"nombre": "Booking.com", "estado": "ok"}
+ ],
+ "nota": "Desde Málaga no salió nada más barato (Milán, Budapest, Malta, Praga, Bruselas y Nápoles quedaron por encima o con hoteles fuera de la ciudad). Para la familia no hubo paquetes a Oporto ni París el puente de Todos los Santos, y el puente de diciembre coincide con el viaje a Londres. Los precios cambian rápido: compruébalos antes de reservar."
 }
