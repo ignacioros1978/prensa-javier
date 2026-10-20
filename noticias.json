@@ -1,18 +1,18 @@
 {
- "fecha": "2026-10-19",
- "fechaTexto": "lunes 19 de octubre",
- "actualizado": "2026-10-19T16:07:11+02:00",
+ "fecha": "2026-10-20",
+ "fechaTexto": "martes 20 de octubre",
+ "actualizado": "2026-10-20T06:58:34+02:00",
  "portada": [
-  "edi1",
+  "ld4",
   "ee2",
-  "ld3",
-  "ee3",
-  "ld1",
-  "ed2",
-  "ee4",
+  "ld2",
   "edi2",
+  "ed1",
   "ee1",
-  "ed1"
+  "edi3",
+  "to1",
+  "ld1",
+  "ed3"
  ],
  "diarios": [
   {
@@ -21,27 +21,27 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Un audio filtrado apunta a presiones sobre jueces desde el entorno del PSOE",
-     "resumen": "Libertad Digital publica este lunes, 19 de octubre, un audio que asegura haber obtenido de un grupo de mensajería. Según el periódico, es una grabación del exjuez Luis José Sáenz de Tejada, fechada el 15 de octubre de 2024. En ella hablaría de policías, fiscales y tribunales, y diría que sin el Consejo General del Poder Judicial los implicados no tendrían margen de actuación. Una de sus frases es que, si no los tumban, no sabe qué va a pasar. Según el medio, en la conversación también participan Leire Díez, a quien describe como la fontanera del PSOE, y el empresario Javier Pérez Dolset. El grupo se habría creado en agosto de 2024, poco después de que se investigara a la esposa del presidente del Gobierno. El caso lo instruye el juez Santiago Pedraz, de la Audiencia Nacional. El periódico no recoge respuesta de los citados ni del PSOE, y es el único medio que sostiene esta versión.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-19/el-audio-de-la-cloaca-del-psoe-conspirando-contra-el-poder-judicial-como-no-los-tumbeis-no-se-que-va-a-pasar-7469339/"
+     "titular": "El Tribunal de Cuentas archiva la causa del referéndum ilegal sin dictar sentencia",
+     "resumen": "Según Libertad Digital, el Tribunal de Cuentas ha archivado la causa contra Carles Puigdemont y unos treinta encausados por el gasto público en el referéndum ilegal del uno de octubre de 2017 y en la acción exterior de la Generalitat. El archivo se acordó la semana pasada, después de siete años sin sentencia, y se apoya en la ley de amnistía. El periódico recuerda que un informe de 2019 cifraba en 417 millones de euros el dinero destinado a la acción exterior, aunque solo se reclamaron 3,4 millones. Fuentes internas del tribunal, que no dan su nombre, expresan indignación. Dicen que la consejera responsable, Elena Hernáez, decidió no dictar sentencia y plantear antes una consulta al Tribunal de Justicia de la Unión Europea. El artículo no recoge declaraciones oficiales de la presidenta del tribunal, Enriqueta Chicano, ni de las defensas.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-20/indignacion-en-el-tribunal-de-cuentas-la-causa-del-1-o-se-ha-archivado-sin-que-se-dictara-sentencia-en-7-anos-7475896/"
     },
     {
      "id": "ld2",
-     "titular": "Macron promete mano dura tras los disturbios en Francia",
-     "resumen": "El presidente francés, Emmanuel Macron, habló a la nación el domingo 18 de octubre tras un fin de semana de graves disturbios. Según Libertad Digital, las protestas contra el encarecimiento de la vida acabaron en incendios, saqueos y choques con la policía en París, Marsella, Lyon, Burdeos y Limoges, donde ardió el ayuntamiento. Macron culpó a extremistas de ultraizquierda y a delincuentes, y dijo que nada justifica esa violencia. Anunció que los prefectos y los alcaldes podrán prohibir concentraciones cuando haga falta. Pidió que los saqueadores devuelvan lo robado y que los responsables respondan ante la justicia. Según el Gobierno, hubo casi dos mil cuatrocientos detenidos y cerca de mil agentes heridos. Marine Le Pen dijo que el país está tomado como rehén. Macron reconoció que los servicios de información no previeron la magnitud de lo ocurrido, y prometió trabajar con parlamentarios y alcaldes en propuestas para los jóvenes.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-18/macron-lanza-un-mensaje-de-maxima-firmeza-a-francia-tras-los-disturbios-quienes-han-destruido-deben-pagar-7478032/"
+     "titular": "El servicio de inteligencia avisó a la Delegación del Gobierno en Ceuta antes de la entrada masiva",
+     "resumen": "Libertad Digital publica el contenido de una llamada de once minutos entre un agente del Centro Nacional de Inteligencia y el jefe de Gabinete del delegado del Gobierno en Ceuta. Consta en un informe enviado a la jueza María Tardón, de la Audiencia Nacional. Dos días antes de la entrada masiva, el servicio había avisado de que los mensajes que incitaban a entrar en Ceuta habían llegado a 180.000 personas. Según el informe, el jefe de Gabinete habló de un acuerdo con Marruecos para devolver a los migrantes y dijo que Protección Civil declararía el nivel tres de contingencia. El agente le advirtió de que la crisis podía superar a la de 2021. El delegado, que dimitió el 28 de septiembre, asegura no conocer el contenido de la llamada. Su jefe de Gabinete dimitió el 11 de septiembre.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-20/el-cni-detalla-a-tardon-la-llamada-con-delegacion-de-gobierno-antes-de-la-invasion-hablo-de-un-acuerdo-con-marruecos-7478584/"
     },
     {
      "id": "ld3",
-     "titular": "Trump suspende las sanciones a Rusia y Moscú lo celebra",
-     "resumen": "Según Libertad Digital, el presidente de Estados Unidos, Donald Trump, ha suspendido de forma temporal un amplio paquete de sanciones contra Rusia. Tomó la decisión el pasado viernes, a pesar de que el Congreso había aprobado esas medidas. La Casa Blanca la justifica por el interés nacional del país. El paquete se conoce como Ley Graham, por el senador Lindsey Graham. Desde Rusia, Kiril Dimitriev, negociador y jefe de un fondo de inversión, la calificó de momento histórico y pidió diálogo en lugar de sanciones. El Kremlin también aplaudió la medida. Dimitriev defendió que la cooperación económica entre ambos países favorece la estabilidad mundial y puede sentar las bases de una paz duradera. El medio considera que la decisión cae como un jarro de agua fría para Ucrania, que sufre la presión de Trump en plena guerra. El artículo no detalla cuánto durará la suspensión ni recoge la reacción de Kiev o de la Unión Europea.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-18/rusia-celebra-que-trump-haya-suspendido-las-sanciones-es-un-momento-historico-7477851/"
+     "titular": "El Gobierno confía en que Sánchez remonte en las elecciones del 29 de noviembre",
+     "resumen": "Según Libertad Digital, el Gobierno y el PSOE apuestan por una campaña de movilización emocional y confían en repetir la remontada de 2023. Pedro Sánchez fue proclamado candidato el fin de semana y participó el lunes en un acto de precampaña en Valladolid. Fuentes del Ejecutivo, que no se identifican, hablan de una campaña en cuatro actos y consideran superado el primero, que era recuperar a la militancia. Moncloa quiere que nadie se quede en casa el día de las elecciones y contrapone un Gobierno progresista a uno del PP y Vox. El periódico añade que se anunciaron 45 millones de euros para residencias universitarias y que el ministro Óscar Puente cerró su intervención con un viva al amor. El texto es crítico con el Gobierno y se apoya en fuentes anónimas del propio Ejecutivo.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-20/el-gobierno-fantasea-con-otra-remontada-milagrosa-de-sanchez-7478683/"
     },
     {
      "id": "ld4",
-     "titular": "Feijóo encarga a Albiol una ley para echar a los okupas en cuarenta y ocho horas",
-     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, anunció el domingo 18 de octubre, en un acto de precampaña en Barcelona, que impulsará una ley antiokupación si llega al Gobierno. Según Libertad Digital, se la ha encargado a Xavier García Albiol, alcalde de Badalona y cabeza de lista del PP por Barcelona. Feijóo resumió la idea con la frase: fuera en cuarenta y ocho horas, sí o sí. Habló de tolerancia cero con la okupación y con la reincidencia. El artículo no explica cómo funcionaría la ley. Albiol aceptó el encargo y dijo que servirá para echar a los okupas en dos días. Feijóo planteó las elecciones del 29 de noviembre como una elección entre sumisión y firmeza, y acusó al Partido Socialista de estar acostumbrado a la corrupción. Añadió que, si gobierna, todo se va a saber. El periódico solo recoge declaraciones del propio Partido Popular.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-18/feijoo-encarga-a-albiol-una-ley-para-echar-a-los-okupas-fuera-en-48-horas-si-o-si-7477947/"
+     "titular": "La dana Adam deja ya cuatro muertos y cientos de rescates en la zona de Oliva",
+     "resumen": "Según Libertad Digital, la dana Adam ha golpeado con fuerza las comarcas valencianas de la Marina Alta y la Safor. Oliva es el municipio más afectado, con calles anegadas y personas atrapadas en pisos altos. Se registraron unos 450 litros por metro cuadrado en veinticuatro horas, y Pego llegó a 490. La Guardia Civil confirma hasta 2.000 evacuados y ha montado un puesto de mando avanzado en Oliva. Un helicóptero de Salvamento Marítimo rescató a una decena de personas, entre ellas un bebé, que estaban en los tejados. El balance es de cuatro fallecidos: una mujer arrastrada por una riera en Cabrera de Mar, un hombre que se bañaba en Sagunto y dos personas en Oliva. La Generalitat Valenciana ordenó a los vecinos de Oliva confinarse en las plantas altas de sus casas.",
+     "url": "https://www.libertaddigital.com/valencia/2026-10-19/la-dana-adan-se-cobra-ya-cuatro-victimas-mortales-7478525/"
     }
    ]
   },
@@ -51,27 +51,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Feijóo acusa a Sánchez de defender los intereses de Marruecos",
-     "resumen": "El domingo 18 de octubre, Alberto Núñez Feijóo acusó a Pedro Sánchez de defender los intereses de Marruecos. Según El Español, lo dijo en un acto del Partido Popular en Barcelona, al arrancar la campaña de las elecciones generales del 29 de noviembre. Feijóo citó mensajes de redes sociales marroquíes que piden votar al PSOE, entre ellos el de una cuenta con unos ciento diecisiete mil seguidores. También habló del espionaje con Pegasus al teléfono de Sánchez, sin que el texto aporte pruebas. Sobre la entrada masiva en Ceuta a finales de julio usó la palabra invasión, y prometió que, si gobierna, las fronteras de Ceuta y Melilla serán una prioridad y se reformará la ley de extranjería. Pidió además a Xavier García Albiol que lidere una ley antiokupación. El artículo no recoge respuesta del PSOE ni del Gobierno, y las acusaciones son declaraciones de Feijóo.",
-     "url": "https://www.elespanol.com/espana/politica/20261018/feijoo-acusa-sanchez-defender-intereses-marruecos-creeis-prefieren/1003744425162_0.html"
+     "titular": "Un estudio da casi por imposible que la izquierda evite la mayoría absoluta de la derecha",
+     "resumen": "El Español publica un análisis de su encuestadora, SocioMétrica, basado en 6.000 simulaciones de las elecciones del 29 de noviembre. Según ese estudio, Pedro Sánchez tiene solo un 0,1 por ciento de opciones de impedir que PP, Vox y UPN sumen la mayoría absoluta. En un 19 por ciento de los escenarios, además, llegarían a los 210 escaños necesarios para reformar la Constitución. La estimación actual da al PSOE 107 escaños, catorce menos que en 2023, y deja al PP 25 por delante. PSOE y Sumar suman un 33,6 por ciento de los votos, frente al 51,3 por ciento de PP y Vox. El artículo critica el barómetro del Centro de Investigaciones Sociológicas, que da al PSOE un 34 por ciento. Conviene recordar que la cifra procede de una encuestadora que trabaja para el propio periódico.",
+     "url": "https://www.elespanol.com/espana/20261020/simulaciones-sanchez-solo-opciones-derecha-no-consiga-mayoria-absoluta/1003744426927_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Macron culpa a la extrema izquierda de la violencia en Francia",
-     "resumen": "Francia ha vivido, según El Español, el fin de semana de disturbios más grave del mandato de Emmanuel Macron. Las marchas contra el coste de la vida empezaron con estudiantes de instituto, y después se sumaron los chalecos amarillos y sindicatos como la CGT. Pero las protestas pacíficas fueron desbordadas por grupos violentos que saquearon comercios y quemaron edificios en París, Marsella, Lyon y Limoges, donde el histórico ayuntamiento sufrió graves daños. Los datos provisionales hablan de casi dos mil cuatrocientos detenidos, cerca de mil agentes heridos y más de mil quinientos comercios vandalizados. En un discurso el domingo, Macron culpó a grupos de extrema izquierda y dijo que quienes quisieron hacer caer la República deben pagar. Marine Le Pen lo llamó presidente sin autoridad, y Jordan Bardella calificó su mensaje de lamentable. Faltan seis meses para las elecciones presidenciales.",
-     "url": "https://www.elespanol.com/mundo/europa/20261019/francia-llamas-macron-culpa-extrema-izquierda-buscar-caida-republica-ola-violencia/1003744425483_0.html"
+     "titular": "Ceuta lleva al Gobierno ante el Supremo por no ejecutar expulsiones",
+     "resumen": "Según El Español, el Gobierno de Ceuta aprobará este martes un recurso ante el Tribunal Supremo contra lo que considera inacción del Gobierno central tras la entrada masiva de los días 30 y 31 de julio. Pide medidas cautelares urgentes y que el Estado dote de personal y medios la tramitación de expulsiones, devoluciones y asilo de los adultos que siguen en la ciudad. El escrito no reclama devoluciones automáticas y reconoce los procedimientos individuales y el derecho de asilo. Ceuta cifra en unas 25.000 las personas que se quedaron y atiende a 3.019 menores, cuando su capacidad ordinaria es de 29. Calcula un perjuicio de 822 millones de euros. El artículo no recoge respuesta del Gobierno central al recurso.",
+     "url": "https://www.elespanol.com/espana/politica/20261020/ceuta-lleva-gobierno-supremo-no-hacer-sola-expulsion-pide-fuerce-devolver-invasores/1003744425948_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Ucrania lanza uno de sus mayores ataques con drones contra Rusia",
-     "resumen": "En la noche del sábado al domingo, Ucrania lanzó uno de los mayores ataques con drones desde el inicio de la guerra, según El Español, que se apoya en autoridades rusas y en canales de mensajería. San Petersburgo fue el principal objetivo. El gobernador de la región informó de ciento cuarenta y cuatro drones derribados, un muerto y cinco heridos. Se incendiaron dos terminales petroleras, y una subestación eléctrica dejó sin luz a unas veinte mil personas. El alcalde de Moscú dijo que más de quinientos drones fueron abatidos camino de la capital, y el Ministerio de Defensa ruso cifró en mil quince los derribados sobre quince regiones. Ese mismo día, ataques rusos mataron a dos personas en Poltava y en Zaporiyia. El diario recuerda que el golpe llega tras la suspensión de sanciones a Rusia decidida por Donald Trump, que sentó mal a Zelenski y a la Unión Europea. Algunas cifras pueden cambiar.",
-     "url": "https://www.elespanol.com/mundo/20261018/ucrania-siembra-caos-san-petersburgo-mayores-ataques-drones-inicio-guerra/1003744424861_0.html"
-    },
-    {
-     "id": "ee4",
-     "titular": "La Policía desaloja a unos quinientos migrantes en Ceuta",
-     "resumen": "El domingo 18 de octubre, unos trescientos cincuenta policías llevaron a cabo el primer gran desalojo de migrantes en barrios y chabolas de Ceuta, según El Español. Se actuó sobre todo en El Tarajal, en el poblado de Regulares y en Los Rosales. Fueron retiradas unas quinientas personas, unas doscientas de ellas menores. Se despejó el mayor asentamiento, en las naves del polígono del Tarajal. Algunos huyeron a los montes o a las playas con sus pertenencias. El delegado del Gobierno, David de la Encina, elogió la actuación ejemplar de los agentes. Según los datos oficiales citados, al menos noventa y seis mil personas entraron en Ceuta a finales de julio, y más de doce mil han regresado por su cuenta a Marruecos. El Gobierno ha habilitado espacios con capacidad para siete mil plazas. Un vecino de Regulares denunció malos modos durante el desalojo. En un autobús alguien usó gas pimienta, y la policía investiga de dónde salió el espray.",
-     "url": "https://www.elespanol.com/reportajes/20261019/policia-despliega-primer-gran-dispositivo-barrios-ceuta-desalojar-migrantes-calles-ciudad/1003744425397_0.html"
+     "titular": "Ceuta cifra en más de 96.000 las personas que entraron en la ciudad",
+     "resumen": "El Español, con un documento interno del Gobierno de Ceuta fechado el 14 de octubre, sostiene que entraron al menos 96.058 personas los días 30 y 31 de julio. Eso equivale a más que la población de la ciudad. Las cifras del Gobierno central han ido cambiando: el ministro del Interior habló al principio de unas 50.000, después de unas 72.000, y Pedro Sánchez ha llegado a mencionar más de 80.000. Según el informe ceutí, unas 73.000 personas salieron de forma colectiva entre el uno y el ocho de agosto, y quedaban 11.302 en recursos oficiales a mediados de octubre, además de otras en asentamientos. Fuentes de Ceuta califican la cifra de muy conservadora. El artículo no incluye respuesta del Gobierno central a estos cálculos.",
+     "url": "https://www.elespanol.com/espana/politica/20261018/ceuta-entraron-invasores-datos-oficiales-gobierno-poblacion/1003744423485_0.html"
     }
    ]
   },
@@ -81,27 +75,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Una encuestadora privada rebaja en cuarenta y un escaños la previsión del CIS para el PSOE",
-     "resumen": "El Debate publica una revisión de la encuesta del Centro de Investigaciones Sociológicas, el CIS, que el 14 de octubre daba al PSOE ciento cincuenta y cuatro diputados en las elecciones del 29 de noviembre. La revisión la firma la empresa privada Target Point, que resta cuarenta y un escaños al PSOE, lo que lo dejaría en torno a ciento trece. Su socio fundador, José Miguel Silva, sostiene que el CIS no corrige las respuestas según el recuerdo de voto real, así que la izquierda pesaría unos doce puntos de más y la derecha unos cinco de menos. Afirma que eso vicia todo el informe. El periódico añade que, desde 2018, el CIS dirigido por Tezanos habría sobrestimado al PSOE en tres de cada cuatro elecciones. Target Point no pudo comprobar el cálculo original porque los datos del CIS no están disponibles. El artículo no incluye respuesta del CIS ni de los partidos.",
-     "url": "https://www.eldebate.com/espana/20261016/revision-independiente-cis-resta-41-escanos-psoe-todo-informe-tezanos-esta-viciado_468114.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "Un testigo vincula las joyas de Zapatero con una comisión por el AVE a Arabia Saudí",
-     "resumen": "Según una exclusiva de El Debate, la Fiscalía Anticorrupción ha recibido el testimonio de una mujer que afirma que las joyas halladas en la caja fuerte del despacho del expresidente José Luis Rodríguez Zapatero fueron una comisión ilegal por el tren de alta velocidad a Arabia Saudí. La testigo, que trabajaba en contratación pública en una empresa española en ese país, dice que la comisión fue del dos y medio por ciento del contrato de mantenimiento, y que el valor de las joyas supera los cuatro millones de euros. Una primera tasación las valoró en más de un millón trescientos mil euros. Zapatero sostiene que doce piezas fueron un regalo del rey saudí en 2007. La defensa intentó apartar al tasador, pero el juez Calama lo rechazó. Las acusaciones de la testigo no están verificadas, y el artículo es la única fuente de su relato.",
+     "titular": "Anticorrupción tiene una testigo que vincula las joyas de Zapatero con el AVE a Arabia Saudí",
+     "resumen": "Según El Debate, la Fiscalía Anticorrupción cuenta con la declaración de una testigo sobre el origen de las joyas halladas en la caja fuerte del despacho de José Luis Rodríguez Zapatero. La mujer, que ocupó un cargo de contratación en una empresa española en Yeda, sostiene que las joyas fueron un pago en especie por una comisión ilegal del 2,5 por ciento en un contrato de mantenimiento del tren de alta velocidad a Arabia Saudí. El contrato se firmó en enero de 2012. Ella valora las piezas en más de cuatro millones de euros, y una primera tasación hablaba de más de 1,3 millones. Zapatero sostiene que el rey saudí le regaló varias piezas en 2007. El periódico advierte de que son afirmaciones de una testigo anónima y que no recoge reacciones de Zapatero ni del PSOE.",
      "url": "https://www.eldebate.com/espana/20261019/anticorrupcion-tiene-testigo-sostiene-joyas-zapatero-fueron-mordida-llevar-ave-arabia-saudi_470033.html"
     },
     {
-     "id": "ed3",
-     "titular": "Francia anuncia toques de queda parciales para frenar los saqueos",
-     "resumen": "El primer ministro francés, Sébastien Lecornu, anunció este lunes toques de queda parciales en varios puntos del país para frenar los disturbios y saqueos, según El Debate. Descartó declarar el estado de emergencia. Marsella ha prohibido las manifestaciones de doce del mediodía a ocho de la tarde, y la localidad de Denain ha decretado un toque de queda nocturno hasta el domingo. Las autoridades hablan de más de dos mil quinientos detenidos, unos mil agentes heridos y al menos tres mil comercios afectados. Habrá ayudas para los comerciantes. Macron admitió fallos en la gestión policial, y el ministro del Interior, Laurent Núñez, reconoció una pérdida de control en algunas ciudades. Los chalecos amarillos han convocado nuevas protestas para el próximo sábado. La Comisión Europea calificó de inaceptables los incendios y los saqueos. Jordan Bardella dijo que el poder desertó por completo.",
-     "url": "https://www.eldebate.com/internacional/20261019/francia-anuncia-toques-queda-frenar-saqueos-disturbios_471290.html"
+     "id": "ed2",
+     "titular": "Feijóo promete un paquete de normas de regeneración en su primer mes de gobierno",
+     "resumen": "El Debate entrevista a Alberto Núñez Feijóo tras diez días de precampaña. El líder del PP asegura que, si gobierna, aprobará en el primer mes un paquete de normas de regeneración democrática y que no ocupará las instituciones del Estado. Entre sus prioridades cita la defensa de las fronteras, una auditoría de las cuentas públicas, y medidas de vivienda e inmigración. Propone un millón de viviendas y un paquete fiscal para menores de cuarenta años. Se compromete a no indultar a políticos condenados por malversación y a derogar la ley de memoria democrática. Afirma que probablemente habrá que pactar con Vox. El periódico no recoge reacciones de otros partidos a la entrevista.",
+     "url": "https://www.eldebate.com/espana/20261019/aprobare-paquete-normas-regeneracion-primer-mes-mi-gobierno-no-ocupar-instituciones-estado_470603.html"
     },
     {
-     "id": "ed4",
-     "titular": "La dana Adam obliga a confinar ciento cuarenta y cinco municipios de Valencia y Alicante",
-     "resumen": "La Generalitat Valenciana publicó este lunes 19 de octubre una orden que confina a la población de ciento cuarenta y cinco municipios afectados por la dana Adam, según El Debate. Se prohíben los desplazamientos en el litoral sur de Valencia y el norte de Alicante, con localidades como Gandía, Sueca, Cullera, Alzira, Oliva, Dénia y Jávea. El objetivo es que la Unidad Militar de Emergencias, la Guardia Civil y las policías locales puedan rescatar a las personas atrapadas. El conseller de Emergencias, Juan Carlos Valderrama, confirmó que la medida seguirá en vigor hasta nueva orden. Hay carreteras cortadas, se han suspendido las clases en muchos municipios y el río Girona se desbordó en Els Poblets. En Oliva cayeron seiscientos cuarenta litros por metro cuadrado. Cruz Roja ha abierto refugios para los evacuados. El artículo no ofrece cifras de víctimas.",
-     "url": "https://www.eldebate.com/espana/comunidad-valenciana/20261019/dogv-confirma-145-municipios-confinados-valencia-alicante-inundaciones-dana-adam_471156.html"
+     "id": "ed3",
+     "titular": "La jueza Tardón cita a testigos y pide documentación por la entrada masiva en Ceuta",
+     "resumen": "Según El Debate, que tuvo acceso al auto, la jueza María Tardón, de la Audiencia Nacional, ordena siete nuevas diligencias en la causa por la entrada masiva en Ceuta de los días 30 y 31 de julio. Pide actas y correos de las reuniones celebradas los días 27, 28 y 30 de julio, además de grabaciones de videovigilancia y drones. Reclama al Ejército de Tierra informes de inteligencia y al Centro de Inteligencia de las Fuerzas Armadas imágenes de satélite de la frontera. También exige al Ministerio del Interior las cifras oficiales de entradas, retornos y menores atendidos. Ha citado como testigos a tres consejeros ceutíes el 27 de octubre y a varios policías nacionales al día siguiente. El artículo no recoge reacciones del Gobierno.",
+     "url": "https://www.eldebate.com/espana/20261019/juez-tardon-cita-tres-consejeros-ceuties-tres-policias-nacionales-como-testigos-invasion-marruecos_471259.html"
     }
    ]
   },
@@ -111,27 +99,27 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Un empresario con causa judicial se reunió con dos exdirigentes socialistas vascos",
-     "resumen": "The Objective cuenta que el empresario Alejandro Hamlyn, presidente de la energética Hafesa, se reunió a principios de febrero de 2023 en un hotel de Getxo con dos antiguos cargos del Partido Socialista de Euskadi, Dimas Sañudo y Javier Cruz. Según el medio, buscaba beneficios judiciales en una causa por un fraude de hidrocarburos de ciento cincuenta y cuatro millones de euros, y acceso a fondos europeos. Los dos le habrían dicho que tenían acceso al entonces secretario de Estado de Justicia, Antonio Rodríguez. La reunión no tuvo ningún efecto, según la información. Hamlyn no regresó a España tras un permiso para estar en Emiratos, y en agosto de este año fue detenido por Interpol, aunque quedó libre semanas después. Sañudo y Cruz no quisieron hacer comentarios. El artículo no cita documentos ni fuentes identificadas.",
-     "url": "https://theobjective.com/espana/politica/2026-10-19/hamlyn-excargos-psoe-judiciales-fondos-ue/"
+     "titular": "Los letrados del Constitucional ven prematuro el recurso del Defensor del Pueblo sobre la ley de nietos",
+     "resumen": "Según The Objective, los letrados del Tribunal Constitucional han redactado un informe en el que consideran prematuro admitir el recurso del Defensor del Pueblo. Ese recurso se dirige contra la suspensión del voto de las personas nacionalizadas con la ley de memoria democrática, conocida como ley de nietos. El Defensor recurrió el 16 de octubre. Los letrados explican que se hizo cuando el Tribunal Supremo aún tenía abierta la vía para pronunciarse y que el amparo solo procede cuando se han agotado las vías judiciales ordinarias. El informe se elaboró a petición del magistrado Enrique Arnaldo. Este lunes, la sección cuarta decidió que sea el Pleno quien resuelva sobre la admisión, y se espera que lo haga el miércoles. El artículo no recoge declaraciones del Defensor ni del Gobierno.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-19/constitucional-prematuro-recurso-defensor-ley-nietos"
     },
     {
      "id": "to2",
-     "titular": "El PSOE rescató a la Fundación Pablo Iglesias antes de las elecciones de 2023",
-     "resumen": "Según The Objective, que analiza un informe del Tribunal de Cuentas, el PSOE rescató económicamente a la Fundación Pablo Iglesias poco antes de las elecciones del 23 de julio de 2023, cuando estaba al borde de la quiebra. El acuerdo es del 14 de junio de 2023 y se elevó a escritura pública el 2 de abril de 2024. Se reestructuraron los créditos de la fundación, y su patrimonio neto pasó de números negativos a positivos. En 2023 recibió unos trescientos sesenta y ocho mil euros en subvenciones públicas, y el partido aportó unos doscientos sesenta mil. El Tribunal de Cuentas no ve deficiencias en esa aportación, pero señala una pequeña donación en especie que no figura en la contabilidad. El tribunal pide además liquidar otras dos fundaciones sin actividad, una del PSOE en Navarra y otra vinculada al Partido Comunista en Asturias. El artículo no recoge respuesta del PSOE.",
+     "titular": "El PSOE salvó de la quiebra a la Fundación Pablo Iglesias antes de las elecciones de 2023",
+     "resumen": "The Objective, a partir de un informe del Tribunal de Cuentas sobre las fundaciones de los partidos, cuenta que el PSOE salvó de la quiebra a la Fundación Pablo Iglesias poco antes de las elecciones del 23 de julio de 2023. El 14 de junio de ese año firmaron un acuerdo para renegociar préstamos, que se formalizó ante notario en abril de 2024. La operación fue de 2,554 millones de euros y convirtió un patrimonio negativo de unos 2,2 millones en uno positivo de 257.277 euros. En 2023 la fundación recibió 368.562 euros en subvenciones públicas y 259.940 euros del PSOE. El Tribunal de Cuentas no ve deficiencias en esos fondos. Recomienda liquidar dos fundaciones inactivas. El artículo no recoge respuesta del PSOE.",
      "url": "https://theobjective.com/espana/politica/2026-10-18/psoe-quiebra-fundacion-pablo-iglesias/"
     },
     {
      "id": "to3",
-     "titular": "Militares denuncian una presunta guerra híbrida de Marruecos contra España",
-     "resumen": "The Objective publica que fuentes militares, que piden el anonimato, hablan de una presunta operación de guerra híbrida de Marruecos contra España. Según ellas, la entrada masiva en Ceuta del 30 y 31 de julio, con entre ochenta mil y cien mil personas según el artículo, fue solo la parte visible. Aseguran que Marruecos puso a prueba la reacción militar española con satélites que sobrevolaron Ceuta, buques de guerra con el sistema de localización apagado, drones sobre Melilla y cazas volando a baja altura. Hablan de unos diez incidentes navales en dos meses y medio. También se investiga si militares marroquíes participaron en emboscadas a soldados españoles en Ceuta. Según el diario, el Gobierno no ha pedido apoyo a la OTAN y habría ocultado las incursiones. El artículo no incluye respuesta de Rabat ni de La Moncloa.",
+     "titular": "Fuentes militares ven en la entrada en Ceuta un pulso de Marruecos a España",
+     "resumen": "The Objective, citando fuentes militares que no identifica, sostiene que la entrada masiva en Ceuta del 30 y 31 de julio formó parte de una operación de guerra híbrida de Marruecos para medir la reacción de España. Según el periódico, se usaron medios de tierra, mar, aire y espacio. Habla de entre 80.000 y 100.000 personas, de buques de guerra marroquíes en aguas de Ceuta que el Gobierno habría ocultado, y de al menos once pasadas de dos satélites militares marroquíes sobre la ciudad. Dice también que el Gobierno de Pedro Sánchez descartó pedir apoyo a la OTAN. Gran parte de lo publicado procede de fuentes anónimas y de otros medios, y no consta una respuesta oficial de Marruecos.",
      "url": "https://theobjective.com/espana/2026-10-18/fragatas-cazas-satelites-rabat-espana-crisis-migratoria/"
     },
     {
      "id": "to4",
-     "titular": "El Gobierno dice que no teme que la violencia de Francia llegue a España",
-     "resumen": "El ministro de Exteriores, José Manuel Albares, aseguró este lunes que el Gobierno no tiene ningún temor a que la violencia de las protestas en Francia se contagie a España, según The Objective, que cita sus declaraciones en Telecinco recogidas por Europa Press. Albares calificó esa violencia de insoportable y totalmente condenable. Distinguió entre la violencia sin sentido de unos pocos y el derecho a manifestarse y a la huelga de la inmensa mayoría de los franceses. Defendió que en España las reformas se han hecho dialogando con los agentes sociales, y mencionó subidas de pensiones y del salario mínimo, más becas y refuerzo de la sanidad y la educación públicas. Dijo que España tiene uno de los mayores crecimientos de Europa, sin dar cifras. Recordó que las manifestaciones recientes en España por la educación y la vivienda fueron pacíficas. El texto no recoge réplica de la oposición ni de los sindicatos.",
-     "url": "https://theobjective.com/espana/politica/2026-10-19/gobierno-violencia-francia-espana"
+     "titular": "El Black Friday y la falta de refuerzos en Correos pueden complicar el voto por correo",
+     "resumen": "Según The Objective, las elecciones del 29 de noviembre coinciden con la campaña del Black Friday, que cae el viernes 27, y con una plantilla reducida en Correos. El sector logístico calcula entre 100 y 130 millones de envíos en esas fechas. Correos debe además gestionar el voto por correo, que en 2023 supuso 2,6 millones de votos a distancia. Según el periódico, la dirección no contratará personal de refuerzo por su mala situación financiera. El sindicato Comisiones Obreras pide al menos 20.000 contratos y recuerda que la plantilla es 7.400 trabajadores menor que en 2023. Correos respondió que pondrá todos los recursos necesarios. La patronal logística no prevé incidencias visibles para los consumidores.",
+     "url": "https://theobjective.com/espana/2026-10-18/black-friday-voto-correo-29-n-carteros/"
     }
    ]
   },
@@ -141,27 +129,15 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Una jueza investiga a eldiario.es y a su director por la querella de Julio Iglesias",
-     "resumen": "Según OKDIARIO, el Juzgado de Instrucción número veinticinco de Madrid ha admitido a trámite la querella del cantante Julio Iglesias contra eldiario.es, su director Ignacio Escolar y cuatro periodistas. Se les investiga por presuntos delitos de injurias, calumnias y contra la integridad moral, por informaciones sobre supuestos abusos en la casa del artista. Son investigaciones en curso, no condenas. La jueza, Raquel Robles, ha citado a los investigados a declarar el 16 de diciembre. También quiere oír a las dos extrabajadoras que testimoniaron en el medio, y ha pedido pruebas sobre el alcance de las noticias. La Fiscalía apoya la querella, aunque recuerda que los delitos contra el honor solo se persiguen a instancia del ofendido. OKDIARIO no recoge la versión de eldiario.es, y solo menciona que el medio pidió ayuda económica a sus lectores.",
-     "url": "https://okdiario.com/espana/juez-imputa-eldiario-director-ignacio-escolar-injurias-calumnias-julio-iglesias-20579110"
+     "titular": "Increpan al delegado del Gobierno en Madrid en un concurso hípico",
+     "resumen": "Según OKDiario, el delegado del Gobierno en Madrid, Francisco Martín Aguirre, fue increpado el domingo en un concurso hípico en San Agustín del Guadalix. Varios asistentes le habrían gritado que se fuera a desalojar la Puerta del Sol, donde hay una acampada desde hace más de tres semanas. El delegado había ido a acompañar a su mujer, que actuaba como jurado, y no quiso hacer declaraciones. La Comunidad de Madrid le envió un requerimiento para que despeje la plaza en cuarenta y ocho horas, y el alcalde le acusó de desistimiento de funciones. La Delegación del Gobierno asegura que actúa conforme a la ley. El periódico se basa en una fotografía que obtuvo y no confirma de forma independiente las palabras exactas.",
+     "url": "https://okdiario.com/espana/increpan-delegado-del-gobierno-madrid-concurso-hipico-largate-vete-desalojar-sol-20576386"
     },
     {
      "id": "ok2",
-     "titular": "La Policía despliega un gran operativo en Ceuta para desalojar a inmigrantes",
-     "resumen": "El domingo 18 de octubre, desde las siete de la mañana, más de trescientos agentes de la Policía Nacional desalojaron a inmigrantes de Los Rosales y del polígono del Tarajal, en Ceuta, según OKDIARIO. El delegado del Gobierno, David de la Encina, habló de trescientos cincuenta efectivos y de unas quinientas diez personas, entre adultos y menores. Fueron trasladadas en autobuses, de diez en diez, al centro de atención temporal de extranjeros, donde se las identifica. Después pasan a campamentos del Gobierno, y se les ofrece el regreso voluntario, sobre todo a Marruecos. Algunos huyeron por los montes cercanos. Dentro de un autobús, alguien usó un espray de gas pimienta; el vehículo fue evacuado y la policía investiga quién lo facilitó. El diario dice que el dispositivo transcurrió sin incidentes graves, y recuerda que el 15 de octubre fueron detenidos cuarenta inmigrantes con documentos falsos que querían embarcar hacia Algeciras.",
-     "url": "https://okdiario.com/espana/policia-despliega-operativo-ceuta-desalojar-inmigrantes-rosales-poligono-del-tarajal-20575518"
-    },
-    {
-     "id": "ok3",
-     "titular": "El Defensor del Pueblo recurre para que los nacionalizados por la ley de nietos puedan votar",
-     "resumen": "El Defensor del Pueblo, Ángel Gabilondo, presentó el viernes 16 de octubre un recurso de amparo ante el Tribunal Constitucional, según OKDIARIO. Quiere que puedan votar el 29 de noviembre las personas nacionalizadas por la ley de nietos, a las que el Tribunal Supremo suspendió de forma cautelar el derecho de voto. Pide medidas urgentísimas. El Supremo mantuvo esa suspensión el 12 de octubre, pese al recurso de la Abogacía del Estado, apoyado por la Fiscalía. Según el diario, unas ciento sesenta y tres mil personas no podrán votar salvo que los consulados acrediten que descienden de exiliados. Gabilondo defiende que quien es español tiene derecho al voto. El diario usa expresiones críticas, como falsos nietos, que son valoraciones propias del medio. El artículo no recoge la respuesta del Constitucional ni de los partidos.",
-     "url": "https://okdiario.com/espana/defensor-del-pueblo-sale-rescate-sanchez-recurre-constitucional-suspension-del-derecho-voto-nietos-20569840"
-    },
-    {
-     "id": "ok4",
-     "titular": "Vox pide al Constitucional que rechace el recurso del Defensor del Pueblo sobre la ley de nietos",
-     "resumen": "Según OKDIARIO, Vox pidió el sábado 17 de octubre al Tribunal Constitucional que no admita el recurso del Defensor del Pueblo contra la decisión del Tribunal Supremo sobre la llamada ley de nietos. El Supremo suspendió los efectos electorales de ciertas inscripciones en el censo de residentes en el extranjero, a petición de Vox y de otra asociación. Vox sostiene que el recurso es prematuro, porque el Supremo mantiene abierto hasta el 22 de octubre el plazo para que los afectados se personen. Argumenta que no se ha probado un daño constitucional actual y que las medidas protegen la objetividad y la transparencia del censo, sin anular la nacionalidad de nadie. El viernes pidió además a la Junta Electoral Central y al Supremo que garanticen los medios para cumplir las órdenes. El artículo refleja la posición de Vox y no incluye respuesta del Gobierno.",
-     "url": "https://okdiario.com/espana/vox-pide-constitucional-que-impida-sanchez-dar-pucherazo-ley-nietos-20574678"
+     "titular": "Un sindicato policial dice que más de la mitad de los acampados de Sol duerme fuera",
+     "resumen": "Según OKDiario, el sindicato Jupol afirma que más de la mitad de las personas acampadas en la Puerta del Sol se marchan a dormir a otro sitio cada noche. La acampada cumple tres semanas. El sindicato lo atribuye a lo que observan los agentes de la Unidad de Prevención y Reacción y habla de una deriva peligrosa. El periódico recoge incidentes como una amenaza con una navaja a una coordinadora, la detención de esa persona, y agresiones a agentes, con hasta cuatro policías heridos. También cita ataques a periodistas. Las cifras proceden del sindicato, no de datos oficiales. El periódico, muy crítico con la acampada, no incluye respuesta del delegado del Gobierno ni de los acampados.",
+     "url": "https://okdiario.com/espana/farsa-acampada-sol-policia-confirma-que-mas-mitad-van-dormir-sus-casas-20572633"
     }
    ]
   },
@@ -171,27 +147,27 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "La dana Adam deja al menos cuatro muertos y lluvias históricas en Valencia y Alicante",
-     "resumen": "Según el directo de elDiario.es, la dana Adam ha dejado al menos cuatro muertos y lluvias históricas en el sur de Valencia, el norte de Alicante y Baleares. En La Safor y la Marina Alta se superaron los quinientos litros por metro cuadrado en cuarenta y ocho horas, y en Pego cayeron seiscientos treinta y ocho en un solo día. Se desbordaron ríos y barrancos, y hay más de veinte carreteras cortadas. Siete helicópteros participan en los rescates, y unas dos mil personas fueron desalojadas de campings en Oliva. La Generalitat ordenó confinar el litoral hasta nueva orden, y más de cien mil alumnos se quedaron sin clase. Pedro Sánchez pidió a la población afectada que no se desplace y que permanezca en las plantas altas. En Baleares hubo alerta roja y teletrabajo para los empleados públicos. Las cifras cambian con frecuencia.",
+     "titular": "La dana Adam deja lluvias históricas en Valencia, Alicante y Baleares",
+     "resumen": "Según el directo de elDiario.es, la dana Adam dejó el lunes más de 500 litros por metro cuadrado en dos días en algunas zonas del sur de Valencia y el norte de Alicante. Pego registró 638 litros en veinticuatro horas. Se cuentan cuatro fallecidos y más de mil rescates. Hubo alerta roja en Mallorca, Ibiza y Formentera. Más de 102.000 alumnos se quedaron sin clase en la Comunidad Valenciana, y se cortaron más de veinte carreteras. La Generalitat levantó el confinamiento en casi todos los municipios, aunque siguen confinados Oliva, Pego, Xàbia y otros cinco. Pedro Sánchez asistió a la reunión del comité de crisis en Madrid. El presidente valenciano pidió a los vecinos que no se desplazaran. El directo contiene algunas contradicciones en datos como la edad de una fallecida.",
      "url": "https://www.eldiario.es/sociedad/ultima-hora-temporal-alertas-inundacion-despliegue-ume-clases-suspendidas_133_13595902.html"
     },
     {
      "id": "edi2",
-     "titular": "Llarena confirma que Puigdemont puede volver a España sin ser detenido",
-     "resumen": "El magistrado del Tribunal Supremo Pablo Llarena ha confirmado que la orden de detención contra Carles Puigdemont está levantada, así que el expresidente catalán puede volver a España sin ser arrestado, según elDiario.es. La orden se había dictado en 2017. Llarena la dejó sin efecto de forma cautelar nada más conocer la decisión del Tribunal Constitucional, que considera que la malversación del proceso independentista también debe amnistiarse, en contra del criterio del Supremo. A la vez, Llarena critica al Constitucional, presidido por Cándido Conde-Pumpido, por falta de mesura en sus calificativos. Sostiene que su doctrina debe aplicarse aunque no se compartan las razones, y defiende que el criterio del Supremo estaba jurídicamente fundado. Rechaza además el recurso de Vox. Falta que resuelva el fondo sobre el delito de malversación. El artículo no recoge reacción de Puigdemont ni del Constitucional.",
+     "titular": "El juez Llarena confirma que Puigdemont puede volver a España sin ser detenido",
+     "resumen": "Según elDiario.es, el magistrado del Tribunal Supremo Pablo Llarena confirmó que la orden de detención contra Carles Puigdemont está levantada, por lo que puede volver a España sin riesgo de ser arrestado. Llarena la dejó sin efecto de forma cautelar al conocer la decisión del Tribunal Constitucional, que sostuvo que la malversación del procés también debe amnistiarse, contra el criterio del Supremo. A la vez, criticó el tono del Constitucional, diciendo que los adjetivos no vuelven indiscutible lo que ha dividido al propio tribunal. Defiende que la interpretación del Supremo sobre la amnistía estaba bien fundada y rechaza el recurso de Vox. Añade que la doctrina del Constitucional debe aplicarse aunque no se compartan sus razones. El artículo no recoge reacciones de Puigdemont ni del Constitucional.",
      "url": "https://www.eldiario.es/catalunya/juez-llarena-critica-constitucional-confirma-puigdemont-volver-espana-detenido_1_13596182.html"
     },
     {
      "id": "edi3",
-     "titular": "Sánchez suspende un acto en Toledo tras los cambios en las listas del PSOE de Castilla-La Mancha",
-     "resumen": "Según elDiario.es, el PSOE ha suspendido un acto de precampaña de Pedro Sánchez en Toledo, previsto para el miércoles 21 de octubre a las seis de la tarde. La suspensión llega después de que la dirección federal del partido, Ferraz, tumbara candidaturas impulsadas por el presidente de Castilla-La Mancha, Emiliano García-Page. El Comité Federal cambió a los cabezas de lista de dos candidaturas provinciales para las elecciones del 29 de noviembre. Page, el mayor crítico de Sánchez dentro del partido, no acudió a la reunión del sábado en Ferraz y tenía un viaje oficial a Italia. Fuentes cercanas a Sánchez atribuyen la cancelación a su agenda internacional. El diario habla de un ambiente enrarecido en la región. El texto no identifica a los candidatos afectados ni recoge declaraciones directas de Sánchez ni de Page.",
-     "url": "https://www.eldiario.es/castilla-la-mancha/politica/pedro-sanchez-suspende-acto-toledo-ferraz-haya-tumbado-candidatos-psoe-page_1_13596147.html"
+     "titular": "Feijóo firma un contrato con España sin anunciar ninguna medida nueva",
+     "resumen": "Según elDiario.es, Alberto Núñez Feijóo firmó el lunes en Madrid un contrato con España, un manifiesto de doce puntos con compromisos si gana las elecciones del 29 de noviembre. El periódico señala que no reveló ninguna medida nueva y que repitió anuncios previos. Incluye reforzar la frontera, construir al menos un millón de viviendas, reducir la inmigración irregular, un Estado con menos ministerios y actualizar las pensiones con el índice de precios. Habla también de un Tribunal Constitucional y una Fiscalía con dirigentes independientes. El artículo apunta contradicciones con la posición pasada del PP, por ejemplo en pensiones, y que sanidad y educación son competencias autonómicas. Solo recoge declaraciones de Feijóo, sin respuesta de otros partidos.",
+     "url": "https://www.eldiario.es/politica/feijoo-firma-contrato-espana-si-gobierna-elecciones-29-noviembre-revelar-sola-medida-nueva_1_13596902.html"
     },
     {
      "id": "edi4",
-     "titular": "Francia arde en protestas con más de dos mil detenidos",
-     "resumen": "Según elDiario.es, las manifestaciones del sábado 17 de octubre en apoyo a los estudiantes de instituto franceses acabaron en choques con la policía, incendios y saqueos, y siguieron el domingo en varias ciudades. El ministro del Interior, Laurent Núñez, habló de más de dos mil detenidos y más de seiscientos policías, gendarmes y bomberos heridos, mientras que el primer ministro elevó los agentes heridos a más de novecientos. El Ministerio cifra en quinientas cincuenta mil las personas que marcharon, y el sindicato CGT, en ochocientas mil. En Limoges, un incendio dañó gravemente el histórico ayuntamiento. Una persona murió en París por una parada cardiaca. Todo nació por la falta de profesores y el mal estado de los centros, y se amplió al coste de la vida. Núñez descartó el estado de emergencia. Donald Trump escribió que Francia está en llamas y culpó a la inmigración.",
-     "url": "https://eldiario.es/internacional/francia-arde-jornada-protestas-1-200-detenidos_1_13594798.html"
+     "titular": "Sánchez suspende un acto en Toledo tras el choque de Ferraz con Page por las listas",
+     "resumen": "Según elDiario.es, Pedro Sánchez iba a asistir el miércoles 21 de octubre a un acto de precampaña en Toledo, pero la dirección federal del PSOE, desde su sede de Ferraz, informó de que se suspendía, al menos de momento. El acto lo había anunciado un día antes el PSOE de Toledo, muy cercano a Sánchez. Llega después de que el Comité Federal impusiera su criterio en dos listas provinciales de Castilla-La Mancha, cambiando a sus cabezas de lista, frente a los candidatos que apoyaba el presidente regional, Emiliano García-Page. La relación entre ambos es mala. Fuentes cercanas atribuyen la cancelación a la agenda internacional de Sánchez. El artículo no recoge declaraciones de Sánchez, Page ni Ferraz.",
+     "url": "https://www.eldiario.es/castilla-la-mancha/politica/pedro-sanchez-suspende-acto-toledo-ferraz-haya-tumbado-candidatos-psoe-page_1_13596147.html"
     }
    ]
   }
