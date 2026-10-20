@@ -1,18 +1,18 @@
 {
  "fecha": "2026-10-20",
  "fechaTexto": "martes 20 de octubre",
- "actualizado": "2026-10-20T06:58:34+02:00",
+ "actualizado": "2026-10-20T16:01:09+02:00",
  "portada": [
-  "ld4",
-  "ee2",
-  "ld2",
-  "edi2",
+  "edi1",
   "ed1",
   "ee1",
-  "edi3",
-  "to1",
+  "ee2",
+  "ld2",
+  "ed2",
+  "ld4",
   "ld1",
-  "ed3"
+  "ee3",
+  "to4"
  ],
  "diarios": [
   {
@@ -21,27 +21,27 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "El Tribunal de Cuentas archiva la causa del referéndum ilegal sin dictar sentencia",
-     "resumen": "Según Libertad Digital, el Tribunal de Cuentas ha archivado la causa contra Carles Puigdemont y unos treinta encausados por el gasto público en el referéndum ilegal del uno de octubre de 2017 y en la acción exterior de la Generalitat. El archivo se acordó la semana pasada, después de siete años sin sentencia, y se apoya en la ley de amnistía. El periódico recuerda que un informe de 2019 cifraba en 417 millones de euros el dinero destinado a la acción exterior, aunque solo se reclamaron 3,4 millones. Fuentes internas del tribunal, que no dan su nombre, expresan indignación. Dicen que la consejera responsable, Elena Hernáez, decidió no dictar sentencia y plantear antes una consulta al Tribunal de Justicia de la Unión Europea. El artículo no recoge declaraciones oficiales de la presidenta del tribunal, Enriqueta Chicano, ni de las defensas.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-20/indignacion-en-el-tribunal-de-cuentas-la-causa-del-1-o-se-ha-archivado-sin-que-se-dictara-sentencia-en-7-anos-7475896/"
+     "titular": "Zelenski acusa a Trump de presionar a Ucrania para que se rinda",
+     "resumen": "Según Libertad Digital, el presidente ucraniano, Volodímir Zelenski, ha dicho en una entrevista con la agencia Bloomberg que Estados Unidos está tomando medidas para empujar a su país a capitular. Denuncia que Washington retrasa la autorización de misiles antibalísticos Patriot que ya pagaron socios europeos. Ucrania recibe unos doce al mes, mientras Rusia puede lanzar decenas de misiles en un solo ataque. Zelenski cuenta que la tensión empezó hace unos diez días, cuando Trump cerró un acuerdo con Putin que permite a Rusia volver a exportar petróleo. También critica restricciones a la conexión de internet de SpaceX que usa su ejército. Zelenski cree que la dureza de Washington se debe a la campaña de las elecciones legislativas del 3 de noviembre y confía en que las relaciones mejoren después. El artículo no recoge respuesta de la Casa Blanca ni del Kremlin.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-19/zelenski-revela-presiones-de-trump-con-las-armas-para-forzar-una-rendicion-ante-rusia-7478165/"
     },
     {
      "id": "ld2",
-     "titular": "El servicio de inteligencia avisó a la Delegación del Gobierno en Ceuta antes de la entrada masiva",
-     "resumen": "Libertad Digital publica el contenido de una llamada de once minutos entre un agente del Centro Nacional de Inteligencia y el jefe de Gabinete del delegado del Gobierno en Ceuta. Consta en un informe enviado a la jueza María Tardón, de la Audiencia Nacional. Dos días antes de la entrada masiva, el servicio había avisado de que los mensajes que incitaban a entrar en Ceuta habían llegado a 180.000 personas. Según el informe, el jefe de Gabinete habló de un acuerdo con Marruecos para devolver a los migrantes y dijo que Protección Civil declararía el nivel tres de contingencia. El agente le advirtió de que la crisis podía superar a la de 2021. El delegado, que dimitió el 28 de septiembre, asegura no conocer el contenido de la llamada. Su jefe de Gabinete dimitió el 11 de septiembre.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-20/el-cni-detalla-a-tardon-la-llamada-con-delegacion-de-gobierno-antes-de-la-invasion-hablo-de-un-acuerdo-con-marruecos-7478584/"
+     "titular": "La dana Adán deja ya cuatro muertos, con Oliva como zona más golpeada",
+     "resumen": "Libertad Digital informa de que la dana Adán ha causado al menos cuatro muertos en España. El temporal golpea sobre todo las comarcas valencianas de la Marina Alta y la Safor, y el municipio más afectado es Oliva. Allí cayeron unos cuatrocientos cincuenta litros por metro cuadrado en veinticuatro horas. Solo Pego registró más, con cuatrocientos noventa. Las otras víctimas se encontraron en Cabrera de Mar, en Barcelona, y en la playa de Almardà, en Sagunto. La Guardia Civil habla de hasta dos mil evacuados. Un helicóptero rescató a una decena de personas, entre ellas un bebé. La Generalitat pidió a los vecinos de Oliva que se confinaran en casa y subieran a pisos altos. Hay un puesto de mando avanzado con más de cuarenta patrullas, y el centro polivalente de Oliva acoge a los rescatados.",
+     "url": "https://www.libertaddigital.com/valencia/2026-10-19/la-dana-adan-se-cobra-ya-cuatro-victimas-mortales-7478525/"
     },
     {
      "id": "ld3",
-     "titular": "El Gobierno confía en que Sánchez remonte en las elecciones del 29 de noviembre",
-     "resumen": "Según Libertad Digital, el Gobierno y el PSOE apuestan por una campaña de movilización emocional y confían en repetir la remontada de 2023. Pedro Sánchez fue proclamado candidato el fin de semana y participó el lunes en un acto de precampaña en Valladolid. Fuentes del Ejecutivo, que no se identifican, hablan de una campaña en cuatro actos y consideran superado el primero, que era recuperar a la militancia. Moncloa quiere que nadie se quede en casa el día de las elecciones y contrapone un Gobierno progresista a uno del PP y Vox. El periódico añade que se anunciaron 45 millones de euros para residencias universitarias y que el ministro Óscar Puente cerró su intervención con un viva al amor. El texto es crítico con el Gobierno y se apoya en fuentes anónimas del propio Ejecutivo.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-20/el-gobierno-fantasea-con-otra-remontada-milagrosa-de-sanchez-7478683/"
+     "titular": "El alcalde de Algeciras dimite para evitar una moción de censura",
+     "resumen": "Según Libertad Digital, el alcalde de Algeciras, José Ignacio Landaluce, dejará su cargo el domingo veinticinco de octubre. Con ello evita la moción de censura que el Partido Popular y Vox habían presentado juntos. Landaluce es también senador del Partido Popular por Cádiz. El diario sitúa el origen de la crisis en denuncias internas por presuntas agresiones a dos compañeras de partido. Landaluce lo niega todo. En un mensaje en vídeo habla de un intento de linchamiento y dice que acudirá a los tribunales para defender su honor. Además pide que se depuren responsabilidades de quienes, según él, montaron la operación. El artículo recoge sobre todo su versión, y las acusaciones no están verificadas. Ahora se abre un periodo de transición hasta el relevo en la alcaldía, y los partidos tendrán que recomponer sus acuerdos en el Ayuntamiento.",
+     "url": "https://www.libertaddigital.com/andalucia/2026-10-19/landaluce-dimite-como-alcalde-de-algeciras-para-evitar-la-mocion-de-censura-de-pp-y-vox-7478331/"
     },
     {
      "id": "ld4",
-     "titular": "La dana Adam deja ya cuatro muertos y cientos de rescates en la zona de Oliva",
-     "resumen": "Según Libertad Digital, la dana Adam ha golpeado con fuerza las comarcas valencianas de la Marina Alta y la Safor. Oliva es el municipio más afectado, con calles anegadas y personas atrapadas en pisos altos. Se registraron unos 450 litros por metro cuadrado en veinticuatro horas, y Pego llegó a 490. La Guardia Civil confirma hasta 2.000 evacuados y ha montado un puesto de mando avanzado en Oliva. Un helicóptero de Salvamento Marítimo rescató a una decena de personas, entre ellas un bebé, que estaban en los tejados. El balance es de cuatro fallecidos: una mujer arrastrada por una riera en Cabrera de Mar, un hombre que se bañaba en Sagunto y dos personas en Oliva. La Generalitat Valenciana ordenó a los vecinos de Oliva confinarse en las plantas altas de sus casas.",
-     "url": "https://www.libertaddigital.com/valencia/2026-10-19/la-dana-adan-se-cobra-ya-cuatro-victimas-mortales-7478525/"
+     "titular": "Florida ordena arrestar a Raúl Castro por el derribo de dos avionetas",
+     "resumen": "Según Libertad Digital, el fiscal general de Florida, James Uthmeier, ha anunciado una orden de arresto estatal contra el expresidente cubano Raúl Castro. Se le acusa de conspirar para cometer asesinato en primer grado por el derribo de dos avionetas de la organización Hermanos al Rescate. Ocurrió el veinticuatro de febrero de mil novecientos noventa y seis, cuando cazas cubanos abatieron dos aparatos que habían salido de Miami. Murieron cuatro personas. La fiscalía sostiene que Castro, entonces ministro de las Fuerzas Armadas, tomó la decisión final. En mayo, la justicia federal ya lo había acusado de homicidio. El presidente cubano, Miguel Díaz-Canel, calificó la orden de circo con trasfondo electoral. Por su parte, el congresista republicano Mario Díaz-Balart dijo que Castro lleva décadas eludiendo la justicia.",
+     "url": "https://www.libertaddigital.com/internacional/estados-unidos/2026-10-19/la-justicia-de-eeuu-emite-una-orden-de-arresto-contra-raul-castro-7478691/"
     }
    ]
   },
@@ -51,21 +51,27 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Un estudio da casi por imposible que la izquierda evite la mayoría absoluta de la derecha",
-     "resumen": "El Español publica un análisis de su encuestadora, SocioMétrica, basado en 6.000 simulaciones de las elecciones del 29 de noviembre. Según ese estudio, Pedro Sánchez tiene solo un 0,1 por ciento de opciones de impedir que PP, Vox y UPN sumen la mayoría absoluta. En un 19 por ciento de los escenarios, además, llegarían a los 210 escaños necesarios para reformar la Constitución. La estimación actual da al PSOE 107 escaños, catorce menos que en 2023, y deja al PP 25 por delante. PSOE y Sumar suman un 33,6 por ciento de los votos, frente al 51,3 por ciento de PP y Vox. El artículo critica el barómetro del Centro de Investigaciones Sociológicas, que da al PSOE un 34 por ciento. Conviene recordar que la cifra procede de una encuestadora que trabaja para el propio periódico.",
+     "titular": "Un sondeo da solo un 0,1 por ciento de opciones a que la derecha no logre mayoría absoluta",
+     "resumen": "Según un análisis publicado por El Español y firmado por el director de la empresa de encuestas SocioMétrica, que trabaja para el propio periódico, Pedro Sánchez tiene muy pocas opciones de evitar una mayoría absoluta de la derecha el veintinueve de noviembre. Tras seis mil simulaciones, solo en el cero coma uno por ciento de los casos no se alcanzaría. Calcula que el Partido Socialista y el espacio de Sumar bajarían de ciento cincuenta y dos escaños a ciento diecisiete. El Partido Popular sacaría unos veinticinco diputados más que el Partido Socialista. En una de cada cinco simulaciones, aproximadamente, Partido Popular, Vox y UPN llegarían a los doscientos diez escaños necesarios para reformar la Constitución. El autor admite que una remontada socialista no es imposible, pero exigiría un regreso masivo de votantes. Critica además al barómetro del CIS de octubre.",
      "url": "https://www.elespanol.com/espana/20261020/simulaciones-sanchez-solo-opciones-derecha-no-consiga-mayoria-absoluta/1003744426927_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Ceuta lleva al Gobierno ante el Supremo por no ejecutar expulsiones",
-     "resumen": "Según El Español, el Gobierno de Ceuta aprobará este martes un recurso ante el Tribunal Supremo contra lo que considera inacción del Gobierno central tras la entrada masiva de los días 30 y 31 de julio. Pide medidas cautelares urgentes y que el Estado dote de personal y medios la tramitación de expulsiones, devoluciones y asilo de los adultos que siguen en la ciudad. El escrito no reclama devoluciones automáticas y reconoce los procedimientos individuales y el derecho de asilo. Ceuta cifra en unas 25.000 las personas que se quedaron y atiende a 3.019 menores, cuando su capacidad ordinaria es de 29. Calcula un perjuicio de 822 millones de euros. El artículo no recoge respuesta del Gobierno central al recurso.",
-     "url": "https://www.elespanol.com/espana/politica/20261020/ceuta-lleva-gobierno-supremo-no-hacer-sola-expulsion-pide-fuerce-devolver-invasores/1003744425948_0.html"
+     "titular": "El PP escucharía una oferta de Vox para frenar al PSOE en el Senado",
+     "resumen": "Según El Español, el líder de Vox, Santiago Abascal, se ha abierto a pactar con el Partido Popular en el Senado para frenar la alianza entre el Partido Socialista y el Frente Amplio. El Partido Popular dice estar dispuesto a escuchar una oferta, aunque ninguno confirma negociaciones. El plazo para formar coaliciones ya terminó, así que no pueden presentarse con una marca común. Las candidaturas se registran del veintiuno al veintiséis de octubre. Lo que se estudia es que Vox no presente listas en provincias donde la fragmentación podría favorecer a la izquierda. A cambio, algunos de sus candidatos irían como independientes en listas del Partido Popular. Está en juego el Senado, que decide la renovación de parte del Tribunal Constitucional y del Consejo General del Poder Judicial. Vox asegura que ya ha hecho su parte y que ahora le toca mover ficha a Feijóo.",
+     "url": "https://www.elespanol.com/espana/politica/20261020/pp-dispuesto-escuchar-oferta-vox-neutralizar-pacto-psoe-frente-amplio-senado-dias-plazo/1003744426921_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Ceuta cifra en más de 96.000 las personas que entraron en la ciudad",
-     "resumen": "El Español, con un documento interno del Gobierno de Ceuta fechado el 14 de octubre, sostiene que entraron al menos 96.058 personas los días 30 y 31 de julio. Eso equivale a más que la población de la ciudad. Las cifras del Gobierno central han ido cambiando: el ministro del Interior habló al principio de unas 50.000, después de unas 72.000, y Pedro Sánchez ha llegado a mencionar más de 80.000. Según el informe ceutí, unas 73.000 personas salieron de forma colectiva entre el uno y el ocho de agosto, y quedaban 11.302 en recursos oficiales a mediados de octubre, además de otras en asentamientos. Fuentes de Ceuta califican la cifra de muy conservadora. El artículo no incluye respuesta del Gobierno central a estos cálculos.",
-     "url": "https://www.elespanol.com/espana/politica/20261018/ceuta-entraron-invasores-datos-oficiales-gobierno-poblacion/1003744423485_0.html"
+     "titular": "Ceuta lleva al Gobierno ante el Tribunal Supremo por las expulsiones paradas",
+     "resumen": "Según El Español, el gobierno de Ceuta, que preside Juan Jesús Vivas, presenta un recurso ante el Tribunal Supremo contra el Gobierno central. Le acusa de inacción tras la entrada masiva de migrantes de los días treinta y treinta y uno de julio. Pide medidas urgentes para que el Estado aporte medios y tramite los expedientes de expulsión, devolución y asilo. La ciudad aclara que no pide devoluciones automáticas y que acepta los procedimientos individuales. Según sus cifras, tres mil diecinueve menores están bajo tutela, cuando la capacidad ordinaria es de veintinueve. El gasto extraordinario ronda los cuarenta y cinco millones de euros en servicios públicos, más ochenta y uno para menores. El Gobierno no había respondido a un requerimiento anterior. El artículo recoge solo la versión de la ciudad, y el término invasores es el que ella usa.",
+     "url": "https://www.elespanol.com/espana/politica/20261020/ceuta-lleva-gobierno-supremo-no-hacer-sola-expulsion-pide-fuerce-devolver-invasores/1003744425948_0.html"
+    },
+    {
+     "id": "ee4",
+     "titular": "Un candidato socialista intentó influir en las listas del PSOE de Madrid, según mensajes",
+     "resumen": "Según El Español, Vicente Montávez, hoy número once de la lista del Partido Socialista de Madrid, trató en dos mil veintiuno de influir en las candidaturas de las elecciones madrileñas y en la gestora posterior. Lo habría hecho a través de Koldo García y José Luis Ábalos. El diario se basa en mensajes de los móviles de Koldo que la Guardia Civil intervino en febrero de dos mil veinticuatro. Montávez envió fichas con unos cincuenta nombres y valoraciones personales, y junto a diecisiete escribió que no valían. De las veintiuna personas señaladas, quince quedaron fuera o en peor puesto. También pidió mando en la futura gestora, pero no entró en ella. El artículo no incluye respuesta de Montávez ni del partido, y se presenta como información periodística, no como una decisión judicial.",
+     "url": "https://www.elespanol.com/espana/20261020/montavez-intento-manipular-via-abalos-listas-electorales-gestora-psoe-madrid-quiero-mando/1003744426573_0.html"
     }
    ]
   },
@@ -75,21 +81,27 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Anticorrupción tiene una testigo que vincula las joyas de Zapatero con el AVE a Arabia Saudí",
-     "resumen": "Según El Debate, la Fiscalía Anticorrupción cuenta con la declaración de una testigo sobre el origen de las joyas halladas en la caja fuerte del despacho de José Luis Rodríguez Zapatero. La mujer, que ocupó un cargo de contratación en una empresa española en Yeda, sostiene que las joyas fueron un pago en especie por una comisión ilegal del 2,5 por ciento en un contrato de mantenimiento del tren de alta velocidad a Arabia Saudí. El contrato se firmó en enero de 2012. Ella valora las piezas en más de cuatro millones de euros, y una primera tasación hablaba de más de 1,3 millones. Zapatero sostiene que el rey saudí le regaló varias piezas en 2007. El periódico advierte de que son afirmaciones de una testigo anónima y que no recoge reacciones de Zapatero ni del PSOE.",
+     "titular": "Un testigo dice que las joyas de Zapatero fueron una comisión por el tren a Arabia Saudí",
+     "resumen": "Según una exclusiva de El Debate, un testigo declarado ante la Fiscalía Anticorrupción sostiene que las joyas halladas en el despacho de José Luis Rodríguez Zapatero fueron una comisión en especie por el tren de alta velocidad a Arabia Saudí. Zapatero afirma que doce piezas se las regaló en dos mil siete el rey saudí. El testigo, una mujer que trabajó en una empresa española en Yeda, sitúa la entrega en dos mil diecinueve. Eso desmontaría, según el diario, que el posible delito haya prescrito. Calcula que las joyas valen más de cuatro millones de euros, y una primera tasación las valoró en más de un millón trescientos mil. El diario advierte de que son afirmaciones de una sola testigo, sin comprobar, y no recoge reacciones de Zapatero ni del Partido Socialista.",
      "url": "https://www.eldebate.com/espana/20261019/anticorrupcion-tiene-testigo-sostiene-joyas-zapatero-fueron-mordida-llevar-ave-arabia-saudi_470033.html"
     },
     {
      "id": "ed2",
-     "titular": "Feijóo promete un paquete de normas de regeneración en su primer mes de gobierno",
-     "resumen": "El Debate entrevista a Alberto Núñez Feijóo tras diez días de precampaña. El líder del PP asegura que, si gobierna, aprobará en el primer mes un paquete de normas de regeneración democrática y que no ocupará las instituciones del Estado. Entre sus prioridades cita la defensa de las fronteras, una auditoría de las cuentas públicas, y medidas de vivienda e inmigración. Propone un millón de viviendas y un paquete fiscal para menores de cuarenta años. Se compromete a no indultar a políticos condenados por malversación y a derogar la ley de memoria democrática. Afirma que probablemente habrá que pactar con Vox. El periódico no recoge reacciones de otros partidos a la entrevista.",
-     "url": "https://www.eldebate.com/espana/20261019/aprobare-paquete-normas-regeneracion-primer-mes-mi-gobierno-no-ocupar-instituciones-estado_470603.html"
+     "titular": "Francia impone toques de queda en varias ciudades tras los disturbios",
+     "resumen": "Según El Debate, las autoridades francesas han impuesto toques de queda en zonas de París, Lyon, Lille y Niza tras un fin de semana de disturbios y saqueos. El ministro de Justicia, Gérald Darmanin, dijo que hay dos mil quinientos trece detenidos y sesenta y siete encarcelados. En París se prohíbe estar en la calle de once de la noche a seis de la mañana en ciertas zonas, como la plaza de la República. En Niza, el alcalde, Eric Ciotti, ordenó un toque de queda para menores. Darmanin pidió a los fiscales que califiquen los hechos como crimen organizado, lo que permitiría alargar la detención hasta setenta y dos horas. Según el diario, el presidente Macron rechazó la dimisión del ministro del Interior. El texto no explica el origen de las protestas.",
+     "url": "https://www.eldebate.com/internacional/20261019/francia-impone-toque-queda-paris-lyon-lille-niza-cataloga-actos-violencia-crimen-organizado_471480.html"
     },
     {
      "id": "ed3",
-     "titular": "La jueza Tardón cita a testigos y pide documentación por la entrada masiva en Ceuta",
-     "resumen": "Según El Debate, que tuvo acceso al auto, la jueza María Tardón, de la Audiencia Nacional, ordena siete nuevas diligencias en la causa por la entrada masiva en Ceuta de los días 30 y 31 de julio. Pide actas y correos de las reuniones celebradas los días 27, 28 y 30 de julio, además de grabaciones de videovigilancia y drones. Reclama al Ejército de Tierra informes de inteligencia y al Centro de Inteligencia de las Fuerzas Armadas imágenes de satélite de la frontera. También exige al Ministerio del Interior las cifras oficiales de entradas, retornos y menores atendidos. Ha citado como testigos a tres consejeros ceutíes el 27 de octubre y a varios policías nacionales al día siguiente. El artículo no recoge reacciones del Gobierno.",
-     "url": "https://www.eldebate.com/espana/20261019/juez-tardon-cita-tres-consejeros-ceuties-tres-policias-nacionales-como-testigos-invasion-marruecos_471259.html"
+     "titular": "Exteriores asegura que envió por telegrama las resoluciones del Supremo sobre el voto de los nietos",
+     "resumen": "Según El Debate, el Ministerio de Asuntos Exteriores, que dirige José Manuel Albares, afirma que envió a los consulados las resoluciones del Tribunal Supremo sobre la suspensión del voto de parte de los nacionalizados por la ley de nietos. Responde así al líder del Partido Popular, Alberto Núñez Feijóo, que en una entrevista con el periódico acusó al Gobierno de bordear la insumisión. Feijóo dijo que el Ejecutivo no traslada esas resoluciones a la administración consular. Exteriores lo llama falso y asegura que las mandó de inmediato por telegrama y que están en los tablones de los consulados. El Debate pidió una copia del telegrama y le contestaron que son documentos reservados. Por eso, la versión del ministerio no se ha podido comprobar.",
+     "url": "https://www.eldebate.com/espana/20261020/exteriores-afirma-envio-resoluciones-supremo-consulados-telegrama_471523.html"
+    },
+    {
+     "id": "ed4",
+     "titular": "El PP catalán lleva la ley de memoria democrática al Consejo de Garantías Estatutarias",
+     "resumen": "Según El Debate, el Partido Popular de Cataluña llevará al Consejo de Garantías Estatutarias el proyecto de ley de memoria democrática que el Parlamento catalán debate esta semana. Lo impulsa su portavoz, Lorena Roldán. La ley, pactada por el PSC, Junts, Esquerra, los Comunes y la CUP, tenía la aprobación asegurada. Con este paso, la votación prevista para el miércoles no podrá celebrarse. El Partido Popular cuestiona que algunos artículos permitan acceder a datos de terceros y que puedan invadir competencias del Estado en materia de justicia. También critica que se dé solo un año para retirar la simbología franquista del monumento de Tortosa. La ley prevé multas de hasta ciento cincuenta mil euros y convertiría la comisaría de Via Laietana en un centro de interpretación de la represión.",
+     "url": "https://www.eldebate.com/espana/cataluna/20261020/pp-lleva-consejo-garantias-estaturarias-ley-memoria-democratica-illa-invasion-competencias_471664.html"
     }
    ]
   },
@@ -99,27 +111,27 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Los letrados del Constitucional ven prematuro el recurso del Defensor del Pueblo sobre la ley de nietos",
-     "resumen": "Según The Objective, los letrados del Tribunal Constitucional han redactado un informe en el que consideran prematuro admitir el recurso del Defensor del Pueblo. Ese recurso se dirige contra la suspensión del voto de las personas nacionalizadas con la ley de memoria democrática, conocida como ley de nietos. El Defensor recurrió el 16 de octubre. Los letrados explican que se hizo cuando el Tribunal Supremo aún tenía abierta la vía para pronunciarse y que el amparo solo procede cuando se han agotado las vías judiciales ordinarias. El informe se elaboró a petición del magistrado Enrique Arnaldo. Este lunes, la sección cuarta decidió que sea el Pleno quien resuelva sobre la admisión, y se espera que lo haga el miércoles. El artículo no recoge declaraciones del Defensor ni del Gobierno.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-19/constitucional-prematuro-recurso-defensor-ley-nietos"
+     "titular": "Una exsenadora mexicana del PRI logró la nacionalidad española por la ley de nietos",
+     "resumen": "Según The Objective, el Gobierno concedió el cinco de diciembre de dos mil veintitrés la nacionalidad española a Nancy de la Sierra, entonces senadora mexicana del PRI, y a tres familiares, al amparo de la ley de memoria democrática. El diario afirma que ningún antepasado de la familia estuvo en España durante la Guerra Civil ni la dictadura. Su padre, nacido en México en mil novecientos treinta y nueve, la obtuvo alegando ser nieto de un español. Fuentes del consulado en México, citadas por el medio, aseguran que la familia recibió trato de favor y que se pidió atenderla como una persona muy importante. El artículo no incluye respuesta del Gobierno ni de la exsenadora. Recoge además otros casos de concesiones cuestionadas.",
+     "url": "https://theobjective.com/espana/2026-10-20/gobierno-nacionalizo-senadora-pri/"
     },
     {
      "id": "to2",
-     "titular": "El PSOE salvó de la quiebra a la Fundación Pablo Iglesias antes de las elecciones de 2023",
-     "resumen": "The Objective, a partir de un informe del Tribunal de Cuentas sobre las fundaciones de los partidos, cuenta que el PSOE salvó de la quiebra a la Fundación Pablo Iglesias poco antes de las elecciones del 23 de julio de 2023. El 14 de junio de ese año firmaron un acuerdo para renegociar préstamos, que se formalizó ante notario en abril de 2024. La operación fue de 2,554 millones de euros y convirtió un patrimonio negativo de unos 2,2 millones en uno positivo de 257.277 euros. En 2023 la fundación recibió 368.562 euros en subvenciones públicas y 259.940 euros del PSOE. El Tribunal de Cuentas no ve deficiencias en esos fondos. Recomienda liquidar dos fundaciones inactivas. El artículo no recoge respuesta del PSOE.",
-     "url": "https://theobjective.com/espana/politica/2026-10-18/psoe-quiebra-fundacion-pablo-iglesias/"
+     "titular": "Exteriores cerrará más de un mes las valijas diplomáticas por las elecciones",
+     "resumen": "Según The Objective, que dice haber visto un correo interno, el Ministerio de Asuntos Exteriores cerrará el servicio de valijas diplomáticas entre el veintiséis de octubre y el cuatro de diciembre. Solo seguirá enviándose documentación urgente o prioritaria. Las elecciones generales son el veintinueve de noviembre. En convocatorias anteriores el cierre duraba una semana de media. Fuentes del diario lo interpretan como señal de que el Gobierno espera mucha participación del voto exterior. Algunos embajadores y cónsules matizan que afecta solo a envíos de gran volumen. El contrato con la empresa de mensajería DHL cuesta cinco coma tres millones de euros, casi el doble que en dos mil veintitrés. El artículo no recoge una explicación oficial más allá del propio correo.",
+     "url": "https://theobjective.com/espana/politica/2026-10-20/albares-valijas-voto-exterior-exteriores/"
     },
     {
      "id": "to3",
-     "titular": "Fuentes militares ven en la entrada en Ceuta un pulso de Marruecos a España",
-     "resumen": "The Objective, citando fuentes militares que no identifica, sostiene que la entrada masiva en Ceuta del 30 y 31 de julio formó parte de una operación de guerra híbrida de Marruecos para medir la reacción de España. Según el periódico, se usaron medios de tierra, mar, aire y espacio. Habla de entre 80.000 y 100.000 personas, de buques de guerra marroquíes en aguas de Ceuta que el Gobierno habría ocultado, y de al menos once pasadas de dos satélites militares marroquíes sobre la ciudad. Dice también que el Gobierno de Pedro Sánchez descartó pedir apoyo a la OTAN. Gran parte de lo publicado procede de fuentes anónimas y de otros medios, y no consta una respuesta oficial de Marruecos.",
-     "url": "https://theobjective.com/espana/2026-10-18/fragatas-cazas-satelites-rabat-espana-crisis-migratoria/"
+     "titular": "Unicaja ofrece entre 300 y 400 millones de euros por Wizink",
+     "resumen": "Según fuentes citadas por The Objective, Unicaja ha ofrecido entre trescientos y cuatrocientos millones de euros por los activos buenos de Wizink, el banco de tarjetas que controla el fondo Värde Partners. El precio final dependerá de la cartera que se incluya, y en cualquier caso quedaría por debajo del valor en libros de junio, de unos cuatrocientos veinte millones. Wizink sufre por la alta morosidad de sus tarjetas revolving y por sentencias que las consideran usurarias. Su consejero delegado dimitió en septiembre. Según las fuentes, Unicaja se ha quedado sola en la puja. El Banco de España exigiría dejar los activos tóxicos fuera del balance y separar el crédito al consumo en una filial independiente. Unicaja declinó comentar.",
+     "url": "https://theobjective.com/economia/banca/2026-10-20/unicaja-300-400-millones-wizink-escriva/"
     },
     {
      "id": "to4",
-     "titular": "El Black Friday y la falta de refuerzos en Correos pueden complicar el voto por correo",
-     "resumen": "Según The Objective, las elecciones del 29 de noviembre coinciden con la campaña del Black Friday, que cae el viernes 27, y con una plantilla reducida en Correos. El sector logístico calcula entre 100 y 130 millones de envíos en esas fechas. Correos debe además gestionar el voto por correo, que en 2023 supuso 2,6 millones de votos a distancia. Según el periódico, la dirección no contratará personal de refuerzo por su mala situación financiera. El sindicato Comisiones Obreras pide al menos 20.000 contratos y recuerda que la plantilla es 7.400 trabajadores menor que en 2023. Correos respondió que pondrá todos los recursos necesarios. La patronal logística no prevé incidencias visibles para los consumidores.",
-     "url": "https://theobjective.com/espana/2026-10-18/black-friday-voto-correo-29-n-carteros/"
+     "titular": "La Ertzaintza acusa de terrorismo a dos radicales por primera vez desde el fin de ETA",
+     "resumen": "Según The Objective, la Ertzaintza acusa de terrorismo a Aritz Bilbao, de treinta y cuatro años, y a Malen Grünig, de veintidós. Sería la primera vez desde que ETA dejó las armas que la policía vasca imputa ese delito a dos radicales. Pasan hoy a disposición de la Audiencia Nacional. Fueron parados en un control en Escoriaza, en Guipúzcoa, el veintiséis de septiembre, junto a un irlandés vinculado a grupos disidentes del IRA, cuyo paradero se desconoce. La policía halló una lista de guardias civiles destinados en el País Vasco, dos zulos, uno con armas, y memorias informáticas cifradas. El diario dice que ambos pertenecen a un grupo de la izquierda abertzale que rechaza dejar la violencia. Las imputaciones están pendientes de valoración judicial.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-20/ertzaintza-terrorismo-radicales-eta/"
     }
    ]
   },
@@ -129,15 +141,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Increpan al delegado del Gobierno en Madrid en un concurso hípico",
-     "resumen": "Según OKDiario, el delegado del Gobierno en Madrid, Francisco Martín Aguirre, fue increpado el domingo en un concurso hípico en San Agustín del Guadalix. Varios asistentes le habrían gritado que se fuera a desalojar la Puerta del Sol, donde hay una acampada desde hace más de tres semanas. El delegado había ido a acompañar a su mujer, que actuaba como jurado, y no quiso hacer declaraciones. La Comunidad de Madrid le envió un requerimiento para que despeje la plaza en cuarenta y ocho horas, y el alcalde le acusó de desistimiento de funciones. La Delegación del Gobierno asegura que actúa conforme a la ley. El periódico se basa en una fotografía que obtuvo y no confirma de forma independiente las palabras exactas.",
-     "url": "https://okdiario.com/espana/increpan-delegado-del-gobierno-madrid-concurso-hipico-largate-vete-desalojar-sol-20576386"
+     "titular": "Sánchez ataca a Inda por pedir al PP que no hable de pensiones",
+     "resumen": "Según OKDiario, el presidente del Gobierno, Pedro Sánchez, atacó en un mitin en Valladolid al director del periódico, Eduardo Inda. Lo llamó caradura por pedir al Partido Popular que no hable de pensiones en campaña. Inda había dicho en televisión que el partido debería esperar a las elecciones y hablar del asunto solo con un plan concreto. Sánchez citó solo en parte sus palabras y sostuvo que la derecha quiere desmovilizar a la gente hasta el veintinueve de noviembre para luego recortar. El periódico sostiene que Inda nunca propuso recortes y que Sánchez lo dedujo por su cuenta. El ministro Óscar Puente también criticó a Inda en redes. El diario califica el episodio de manipulación, algo que es su propia valoración y no una comprobación independiente.",
+     "url": "https://okdiario.com/espana/sanchez-obsesionado-inda-manipula-sus-palabras-sobre-pensiones-pide-que-no-hable-ellas-seran-caraduras-20584611"
     },
     {
      "id": "ok2",
-     "titular": "Un sindicato policial dice que más de la mitad de los acampados de Sol duerme fuera",
-     "resumen": "Según OKDiario, el sindicato Jupol afirma que más de la mitad de las personas acampadas en la Puerta del Sol se marchan a dormir a otro sitio cada noche. La acampada cumple tres semanas. El sindicato lo atribuye a lo que observan los agentes de la Unidad de Prevención y Reacción y habla de una deriva peligrosa. El periódico recoge incidentes como una amenaza con una navaja a una coordinadora, la detención de esa persona, y agresiones a agentes, con hasta cuatro policías heridos. También cita ataques a periodistas. Las cifras proceden del sindicato, no de datos oficiales. El periódico, muy crítico con la acampada, no incluye respuesta del delegado del Gobierno ni de los acampados.",
-     "url": "https://okdiario.com/espana/farsa-acampada-sol-policia-confirma-que-mas-mitad-van-dormir-sus-casas-20572633"
+     "titular": "Los nietos del exilio con el voto suspendido siguen en el censo electoral",
+     "resumen": "Según OKDiario, el plazo para reclamar errores en el censo de las elecciones del veintinueve de noviembre terminó el lunes. Las ciento sesenta y tres mil veinte personas a las que el Tribunal Supremo suspendió el voto por la ley de nietos siguen inscritas. Pueden votar si el consulado certifica que sus antepasados fueron exiliados. La Oficina del Censo dice que no ha recibido información de los consulados, y el Gobierno admite que identificar a los afectados es una tarea complejísima. Fuentes diplomáticas denuncian falta de medios. El Defensor del Pueblo presentó un recurso de amparo ante el Tribunal Constitucional. El diario, crítico con el Gobierno, avisa de que sin un listado fiable se podrían impugnar los resultados del voto exterior.",
+     "url": "https://okdiario.com/espana/cierra-censo-del-29-n-163-020-nietos-del-exilio-que-tienen-voto-suspendido-siguen-inscritos-20585553"
+    },
+    {
+     "id": "ok3",
+     "titular": "El PSOE ofrece abogados gratis a los nietos del exilio para recurrir al Constitucional",
+     "resumen": "Según OKDiario, el Partido Socialista ofrece asistencia jurídica gratuita a los nacionalizados por la ley de nietos cuyo voto suspendió el Tribunal Supremo. La idea es animarles a recurrir ante el Tribunal Constitucional. Según el artículo, la iniciativa se canaliza con un formulario de interés habilitado por el Partido Socialista de Uruguay. Quienes lo rellenan indican si quieren personarse en el procedimiento del Supremo. El diario recuerda que una instrucción del Ministerio de Justicia presumía la condición de exiliado para descendientes de quienes salieron entre mil novecientos treinta y seis y mil novecientos cincuenta y cinco. Sostiene que eso abrió la puerta a nacionalizaciones dudosas. El Defensor del Pueblo, Ángel Gabilondo, pide levantar la suspensión. OKDiario mantiene una línea crítica con el Gobierno.",
+     "url": "https://okdiario.com/espana/psoe-ofrece-asesoria-juridica-gratis-nietos-del-exilio-que-recurran-constitucional-20582751"
     }
    ]
   },
@@ -147,27 +165,27 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "La dana Adam deja lluvias históricas en Valencia, Alicante y Baleares",
-     "resumen": "Según el directo de elDiario.es, la dana Adam dejó el lunes más de 500 litros por metro cuadrado en dos días en algunas zonas del sur de Valencia y el norte de Alicante. Pego registró 638 litros en veinticuatro horas. Se cuentan cuatro fallecidos y más de mil rescates. Hubo alerta roja en Mallorca, Ibiza y Formentera. Más de 102.000 alumnos se quedaron sin clase en la Comunidad Valenciana, y se cortaron más de veinte carreteras. La Generalitat levantó el confinamiento en casi todos los municipios, aunque siguen confinados Oliva, Pego, Xàbia y otros cinco. Pedro Sánchez asistió a la reunión del comité de crisis en Madrid. El presidente valenciano pidió a los vecinos que no se desplazaran. El directo contiene algunas contradicciones en datos como la edad de una fallecida.",
-     "url": "https://www.eldiario.es/sociedad/ultima-hora-temporal-alertas-inundacion-despliegue-ume-clases-suspendidas_133_13595902.html"
+     "titular": "El Supremo aplica la amnistía a la malversación de los líderes del procés",
+     "resumen": "Según elDiario.es, la Sala de lo Penal del Tribunal Supremo ha aplicado la ley de amnistía a la malversación por la que fueron condenados Oriol Junqueras, Raül Romeva, Jordi Turull y Dolors Bassa. Declara extinguida su responsabilidad penal. Hasta ahora se había negado a hacerlo, pero cambió tras una sentencia del Tribunal Constitucional. El Supremo critica con dureza al Constitucional por injerencia y por lo que llama innecesaria grandilocuencia. Las penas por malversación eran el último obstáculo para su vuelta a la política. El juez Pablo Llarena levantó además la orden de detención nacional contra Carles Puigdemont, aunque aún debe decidir si aplica el mismo criterio a la malversación que se le imputa.",
+     "url": "https://www.eldiario.es/catalunya/supremo-amnistia-malversacion-lideres-proces-carga-grandilocuencia-constitucional_1_13599766.html"
     },
     {
      "id": "edi2",
-     "titular": "El juez Llarena confirma que Puigdemont puede volver a España sin ser detenido",
-     "resumen": "Según elDiario.es, el magistrado del Tribunal Supremo Pablo Llarena confirmó que la orden de detención contra Carles Puigdemont está levantada, por lo que puede volver a España sin riesgo de ser arrestado. Llarena la dejó sin efecto de forma cautelar al conocer la decisión del Tribunal Constitucional, que sostuvo que la malversación del procés también debe amnistiarse, contra el criterio del Supremo. A la vez, criticó el tono del Constitucional, diciendo que los adjetivos no vuelven indiscutible lo que ha dividido al propio tribunal. Defiende que la interpretación del Supremo sobre la amnistía estaba bien fundada y rechaza el recurso de Vox. Añade que la doctrina del Constitucional debe aplicarse aunque no se compartan sus razones. El artículo no recoge reacciones de Puigdemont ni del Constitucional.",
-     "url": "https://www.eldiario.es/catalunya/juez-llarena-critica-constitucional-confirma-puigdemont-volver-espana-detenido_1_13596182.html"
+     "titular": "La Audiencia de Madrid permite a la UCO ver todos los datos financieros de la pareja de Ayuso",
+     "resumen": "Según elDiario.es, la Audiencia Provincial de Madrid ha corregido al juez instructor y autoriza a la Unidad Central Operativa de la Guardia Civil a obtener todos los datos financieros de Alberto González Amador, pareja de la presidenta madrileña, Isabel Díaz Ayuso. Incluye datos fiscales y de la Seguridad Social, no solo bancarios. El juez solo había permitido los bancarios, seis meses después de pedirlo la Guardia Civil. La Fiscalía recurrió, y la defensa de González Amador no se opuso. En esta causa se investiga un presunto soborno de quinientos mil euros. Aparte, él está acusado de defraudar trescientos cincuenta mil euros con facturas falsas, y ese caso espera fecha de juicio.",
+     "url": "https://www.eldiario.es/politica/audiencia-provincial-corrige-juez-autoriza-uco-obtener-datos-financieros-pareja-ayuso_1_13600506.html"
     },
     {
      "id": "edi3",
-     "titular": "Feijóo firma un contrato con España sin anunciar ninguna medida nueva",
-     "resumen": "Según elDiario.es, Alberto Núñez Feijóo firmó el lunes en Madrid un contrato con España, un manifiesto de doce puntos con compromisos si gana las elecciones del 29 de noviembre. El periódico señala que no reveló ninguna medida nueva y que repitió anuncios previos. Incluye reforzar la frontera, construir al menos un millón de viviendas, reducir la inmigración irregular, un Estado con menos ministerios y actualizar las pensiones con el índice de precios. Habla también de un Tribunal Constitucional y una Fiscalía con dirigentes independientes. El artículo apunta contradicciones con la posición pasada del PP, por ejemplo en pensiones, y que sanidad y educación son competencias autonómicas. Solo recoge declaraciones de Feijóo, sin respuesta de otros partidos.",
-     "url": "https://www.eldiario.es/politica/feijoo-firma-contrato-espana-si-gobierna-elecciones-29-noviembre-revelar-sola-medida-nueva_1_13596902.html"
+     "titular": "El Gobierno amplía ayudas a padres de hijos enfermos y a víctimas de violencia machista",
+     "resumen": "Según elDiario.es, el Consejo de Ministros ha aprobado un decreto que amplía prestaciones de la Seguridad Social. Las parejas no casadas con hijos podrán cobrar la pensión de viudedad si prueban dos años de convivencia. La pensión de orfandad para víctimas de violencia de género subirá a unos mil doscientos veintiún euros al mes. Se crean bajas especiales para mujeres con menopausia incapacitante y para trabajadoras víctimas de violencia machista. El anticipo del fondo de pensiones alimenticias impagadas sube de cien a trescientos euros al mes. Los padres de hijos con enfermedad grave podrán seguir cobrando la prestación más allá de los veintiséis años en ciertos casos. Los afectados por catástrofes, como la dana de Valencia, se tratarán como accidentados laborales. El texto completo aún no se había publicado.",
+     "url": "https://www.eldiario.es/economia/gobierno-amplia-prestaciones-padres-hijos-enfermos-victimas-violencia-genero-catastrofes_1_13599382.html"
     },
     {
      "id": "edi4",
-     "titular": "Sánchez suspende un acto en Toledo tras el choque de Ferraz con Page por las listas",
-     "resumen": "Según elDiario.es, Pedro Sánchez iba a asistir el miércoles 21 de octubre a un acto de precampaña en Toledo, pero la dirección federal del PSOE, desde su sede de Ferraz, informó de que se suspendía, al menos de momento. El acto lo había anunciado un día antes el PSOE de Toledo, muy cercano a Sánchez. Llega después de que el Comité Federal impusiera su criterio en dos listas provinciales de Castilla-La Mancha, cambiando a sus cabezas de lista, frente a los candidatos que apoyaba el presidente regional, Emiliano García-Page. La relación entre ambos es mala. Fuentes cercanas atribuyen la cancelación a la agenda internacional de Sánchez. El artículo no recoge declaraciones de Sánchez, Page ni Ferraz.",
-     "url": "https://www.eldiario.es/castilla-la-mancha/politica/pedro-sanchez-suspende-acto-toledo-ferraz-haya-tumbado-candidatos-psoe-page_1_13596147.html"
+     "titular": "La justicia concluye que Espinosa de los Monteros engañó a Hacienda en una operación inmobiliaria",
+     "resumen": "Según elDiario.es, el Tribunal Superior de Justicia de Madrid rechazó cuatro de los cinco recursos de Iván Espinosa de los Monteros y Rocío Monasterio contra sanciones de la Agencia Tributaria. Las sentencias son firmes. Inspectores hallaron que la empresa de arquitectura de Monasterio emitió una factura de ciento sesenta y nueve mil euros por trabajos no realizados, vinculada a la venta de un edificio de lujo en la calle General Castaños. Además, unos seiscientos veinticinco mil euros se declararon a través de dos sociedades en vez de como renta personal. Los jueces hablan de una ventaja fiscal ilícita. Espinosa respondió que las sentencias no son muy importantes y que los mismos hechos se juzgan en la Audiencia Nacional.",
+     "url": "https://www.eldiario.es/politica/justicia-concluye-espinosa-monteros-engano-hacienda-operacion-inmobiliaria-lujo_1_13596663.html"
     }
    ]
   }
