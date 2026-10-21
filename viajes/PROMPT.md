@@ -1,4 +1,4 @@
-Barrido de ofertas de viaje (lunes y jueves) para la app «Viajes» de Ignacio (repositorio de GitHub ignacioros1978/prensa-javier, carpeta viajes/, publicada con GitHub Pages en https://ignacioros1978.github.io/prensa-javier/viajes/). Responde en español y tutea a Ignacio. Trabaja sin preguntar nada; nadie está mirando.
+Barrido de ofertas de viaje (martes) para la app «Viajes» de Ignacio (repositorio de GitHub ignacioros1978/prensa-javier, carpeta viajes/, publicada con GitHub Pages en https://ignacioros1978.github.io/prensa-javier/viajes/). Responde en español y tutea a Ignacio. Trabaja sin preguntar nada; nadie está mirando.
 
 MUY IMPORTANTE: esta es una sesión desatendida que se cierra en cuanto termines tu respuesta. Haz TÚ MISMO cada paso, uno detrás de otro. NO uses skills, subagentes (Agent) ni nada en segundo plano. No termines hasta haber hecho el push del paso 6. El repositorio ya está autorizado para esta tarea: NO busques ni uses ninguna herramienta add_repo.
 

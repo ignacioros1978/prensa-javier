@@ -1,5 +1,5 @@
 {
-  "_nota": "Criterios del barrido semanal de la app Viajes. La tarea programada de los lunes y jueves lee este archivo. Para cambiar lo que busca, cambia este archivo (no hace falta tocar la tarea).",
+  "_nota": "Criterios del barrido semanal de la app Viajes. La tarea programada de los martes lee este archivo. Para cambiar lo que busca, cambia este archivo (no hace falta tocar la tarea).",
   "origenes": [
     {
       "iata": "SVQ",
