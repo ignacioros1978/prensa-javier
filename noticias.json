@@ -1,18 +1,18 @@
 {
- "fecha": "2026-10-20",
- "fechaTexto": "martes 20 de octubre",
- "actualizado": "2026-10-20T16:01:09+02:00",
+ "fecha": "2026-10-21",
+ "fechaTexto": "miércoles 21 de octubre",
+ "actualizado": "2026-10-21T07:09:56+02:00",
  "portada": [
-  "edi1",
-  "ed1",
-  "ee1",
-  "ee2",
   "ld2",
-  "ed2",
-  "ld4",
-  "ld1",
   "ee3",
-  "to4"
+  "ld3",
+  "edi2",
+  "to2",
+  "ed1",
+  "ld1",
+  "ee2",
+  "to1",
+  "ed2"
  ],
  "diarios": [
   {
@@ -21,27 +21,27 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Zelenski acusa a Trump de presionar a Ucrania para que se rinda",
-     "resumen": "Según Libertad Digital, el presidente ucraniano, Volodímir Zelenski, ha dicho en una entrevista con la agencia Bloomberg que Estados Unidos está tomando medidas para empujar a su país a capitular. Denuncia que Washington retrasa la autorización de misiles antibalísticos Patriot que ya pagaron socios europeos. Ucrania recibe unos doce al mes, mientras Rusia puede lanzar decenas de misiles en un solo ataque. Zelenski cuenta que la tensión empezó hace unos diez días, cuando Trump cerró un acuerdo con Putin que permite a Rusia volver a exportar petróleo. También critica restricciones a la conexión de internet de SpaceX que usa su ejército. Zelenski cree que la dureza de Washington se debe a la campaña de las elecciones legislativas del 3 de noviembre y confía en que las relaciones mejoren después. El artículo no recoge respuesta de la Casa Blanca ni del Kremlin.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-19/zelenski-revela-presiones-de-trump-con-las-armas-para-forzar-una-rendicion-ante-rusia-7478165/"
+     "titular": "El Gobierno vendió pisos públicos a empresas del arquitecto condenado por la sede del PP",
+     "resumen": "Según Libertad Digital, la Tesorería General de la Seguridad Social, que depende del ministerio de Elma Saiz, vendió al menos diecisiete pisos a sociedades vinculadas a Gonzalo Urquijo. Es el arquitecto condenado por cobrar en negro parte de la reforma de la sede nacional del Partido Popular. Las operaciones se hicieron entre noviembre de dos mil veintitrés y marzo de este año, en Madrid, y suman más de ocho millones de euros. El diario recuerda que el Gobierno llamó pyme buitre a una empresa implicada en el caso de Maricarmen, la mujer desahuciada. Y pregunta cómo reaccionaría la ministra de Vivienda si lo hubiera hecho un Gobierno del Partido Popular. El propio artículo reconoce que, que se sepa, no hay ninguna ilegalidad. El ministerio no quiso hacer declaraciones.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-21/el-ministerio-de-elma-saiz-adjudico-17-pisos-a-la-pyme-buitre-del-arquitecto-condenado-por-la-sede-del-pp-7478154/"
     },
     {
      "id": "ld2",
-     "titular": "La dana Adán deja ya cuatro muertos, con Oliva como zona más golpeada",
-     "resumen": "Libertad Digital informa de que la dana Adán ha causado al menos cuatro muertos en España. El temporal golpea sobre todo las comarcas valencianas de la Marina Alta y la Safor, y el municipio más afectado es Oliva. Allí cayeron unos cuatrocientos cincuenta litros por metro cuadrado en veinticuatro horas. Solo Pego registró más, con cuatrocientos noventa. Las otras víctimas se encontraron en Cabrera de Mar, en Barcelona, y en la playa de Almardà, en Sagunto. La Guardia Civil habla de hasta dos mil evacuados. Un helicóptero rescató a una decena de personas, entre ellas un bebé. La Generalitat pidió a los vecinos de Oliva que se confinaran en casa y subieran a pisos altos. Hay un puesto de mando avanzado con más de cuarenta patrullas, y el centro polivalente de Oliva acoge a los rescatados.",
-     "url": "https://www.libertaddigital.com/valencia/2026-10-19/la-dana-adan-se-cobra-ya-cuatro-victimas-mortales-7478525/"
+     "titular": "El Supremo amnistía a Junqueras y Turull y irrita al Constitucional",
+     "resumen": "Según Libertad Digital, el Tribunal Supremo dictó el martes un auto que concede la amnistía a Oriol Junqueras, Jordi Turull, Dolors Bassa y Raül Romeva. El ponente fue el magistrado Manuel Marchena. El diario cuenta que el escrito llegó a los móviles de los magistrados del Tribunal Constitucional cuando celebraban un pleno. Según fuentes anónimas del tribunal, el presidente, Cándido Conde-Pumpido, intentó disimular su enfado, y otros magistrados de la parte progresista se mostraron indignados. El auto acusa al Constitucional de actuar como una última instancia que revisa al Supremo. Y critica el tono de una sentencia anterior sobre Bassa. El miércoles, el Constitucional debe decidir sobre la ley de nietos, a petición del Defensor del Pueblo.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-21/marchena-irrita-a-pumpido-y-al-resto-de-magistrados-izquierdistas-del-tc-en-mitad-del-pleno-con-su-auto-de-la-amnistia-7479160/"
     },
     {
      "id": "ld3",
-     "titular": "El alcalde de Algeciras dimite para evitar una moción de censura",
-     "resumen": "Según Libertad Digital, el alcalde de Algeciras, José Ignacio Landaluce, dejará su cargo el domingo veinticinco de octubre. Con ello evita la moción de censura que el Partido Popular y Vox habían presentado juntos. Landaluce es también senador del Partido Popular por Cádiz. El diario sitúa el origen de la crisis en denuncias internas por presuntas agresiones a dos compañeras de partido. Landaluce lo niega todo. En un mensaje en vídeo habla de un intento de linchamiento y dice que acudirá a los tribunales para defender su honor. Además pide que se depuren responsabilidades de quienes, según él, montaron la operación. El artículo recoge sobre todo su versión, y las acusaciones no están verificadas. Ahora se abre un periodo de transición hasta el relevo en la alcaldía, y los partidos tendrán que recomponer sus acuerdos en el Ayuntamiento.",
-     "url": "https://www.libertaddigital.com/andalucia/2026-10-19/landaluce-dimite-como-alcalde-de-algeciras-para-evitar-la-mocion-de-censura-de-pp-y-vox-7478331/"
+     "titular": "La dana Adam deja al menos seis muertos en Valencia y Alicante",
+     "resumen": "La dana Adam empieza a perder fuerza tras un fin de semana de lluvias torrenciales, según Libertad Digital. El temporal ha dejado al menos seis muertos. La Guardia Civil ha evacuado a más de dos mil personas y ha rescatado a casi quinientas desde que empezó. Las zonas más castigadas son el sur de Valencia y el norte de Alicante. En Pego cayeron seiscientos treinta y dos litros por metro cuadrado en treinta y seis horas. Se han levantado los últimos confinamientos preventivos, y la Generalitat ha rebajado el nivel de emergencia. Sigue cortada la autopista AP-7 en Alicante. La Generalitat recomienda a los vecinos fotografiar los daños antes de limpiar y guardar las facturas de los gastos urgentes. Pedro Sánchez fue abucheado en Oliva y prometió nuevas ayudas.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-20/la-dana-adam-deja-al-menos-seis-muertos-y-mas-de-2-000-evacuados-en-la-comunidad-valenciana-7479233/"
     },
     {
      "id": "ld4",
-     "titular": "Florida ordena arrestar a Raúl Castro por el derribo de dos avionetas",
-     "resumen": "Según Libertad Digital, el fiscal general de Florida, James Uthmeier, ha anunciado una orden de arresto estatal contra el expresidente cubano Raúl Castro. Se le acusa de conspirar para cometer asesinato en primer grado por el derribo de dos avionetas de la organización Hermanos al Rescate. Ocurrió el veinticuatro de febrero de mil novecientos noventa y seis, cuando cazas cubanos abatieron dos aparatos que habían salido de Miami. Murieron cuatro personas. La fiscalía sostiene que Castro, entonces ministro de las Fuerzas Armadas, tomó la decisión final. En mayo, la justicia federal ya lo había acusado de homicidio. El presidente cubano, Miguel Díaz-Canel, calificó la orden de circo con trasfondo electoral. Por su parte, el congresista republicano Mario Díaz-Balart dijo que Castro lleva décadas eludiendo la justicia.",
-     "url": "https://www.libertaddigital.com/internacional/estados-unidos/2026-10-19/la-justicia-de-eeuu-emite-una-orden-de-arresto-contra-raul-castro-7478691/"
+     "titular": "El Gobierno confirma una subida del cuatro y medio por ciento a los funcionarios",
+     "resumen": "Según Libertad Digital, el Gobierno ha confirmado a los sindicatos que subirá el sueldo de los funcionarios un cuatro coma cinco por ciento en dos mil veintisiete. Lo ha comunicado el sindicato UGT tras una reunión de seguimiento del acuerdo del empleo público, el martes. Ese acuerdo se firmó en noviembre de dos mil veinticinco y prevé una subida acumulada del once por ciento hasta dos mil veintiocho para más de tres millones de empleados públicos. UGT pide que la subida se apruebe antes del veinticuatro de noviembre, fecha del último Consejo de Ministros antes de las elecciones del veintinueve. El diario sostiene que el Gobierno puede usarlo con fines electorales. El artículo no recoge declaraciones directas del Ejecutivo.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-10-20/el-gobierno-se-compromete-en-plena-campana-electoral-a-subir-un-4-5-por-ciento-el-sueldo-a-los-funcionarios-7479266/"
     }
    ]
   },
@@ -51,27 +51,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Un sondeo da solo un 0,1 por ciento de opciones a que la derecha no logre mayoría absoluta",
-     "resumen": "Según un análisis publicado por El Español y firmado por el director de la empresa de encuestas SocioMétrica, que trabaja para el propio periódico, Pedro Sánchez tiene muy pocas opciones de evitar una mayoría absoluta de la derecha el veintinueve de noviembre. Tras seis mil simulaciones, solo en el cero coma uno por ciento de los casos no se alcanzaría. Calcula que el Partido Socialista y el espacio de Sumar bajarían de ciento cincuenta y dos escaños a ciento diecisiete. El Partido Popular sacaría unos veinticinco diputados más que el Partido Socialista. En una de cada cinco simulaciones, aproximadamente, Partido Popular, Vox y UPN llegarían a los doscientos diez escaños necesarios para reformar la Constitución. El autor admite que una remontada socialista no es imposible, pero exigiría un regreso masivo de votantes. Critica además al barómetro del CIS de octubre.",
-     "url": "https://www.elespanol.com/espana/20261020/simulaciones-sanchez-solo-opciones-derecha-no-consiga-mayoria-absoluta/1003744426927_0.html"
+     "titular": "Marruecos negocia comprar un escudo antimisiles israelí de largo alcance",
+     "resumen": "Según El Español, Marruecos e Israel negocian la compra del sistema antiaéreo Honda de David, que intercepta misiles y drones a distancias de hasta trescientos kilómetros. Lo cuenta la prensa local de ambos países. Como la tecnología es israelí y estadounidense, la venta necesitaría el visto bueno de Washington, que el diario da por descontado, aunque no está confirmado. En abril, Rabat e Israel firmaron una hoja de ruta de cooperación militar hasta dos mil treinta y seis. Cada misil costaría un millón de euros. Grecia y Finlandia ya lo han comprado. El diario advierte de que el sistema complicaría cualquier ataque español, y recuerda que el artículo cinco de la OTAN no es una garantía automática para Ceuta y Melilla. Ningún gobierno ha hecho declaraciones.",
+     "url": "https://www.elespanol.com/observatorio-defensa/20261021/marruecos-ultima-compra-honda-david-cupula-israeli-km-alcance-destruir-misiles-drones/1003744421115_0.html"
     },
     {
      "id": "ee2",
-     "titular": "El PP escucharía una oferta de Vox para frenar al PSOE en el Senado",
-     "resumen": "Según El Español, el líder de Vox, Santiago Abascal, se ha abierto a pactar con el Partido Popular en el Senado para frenar la alianza entre el Partido Socialista y el Frente Amplio. El Partido Popular dice estar dispuesto a escuchar una oferta, aunque ninguno confirma negociaciones. El plazo para formar coaliciones ya terminó, así que no pueden presentarse con una marca común. Las candidaturas se registran del veintiuno al veintiséis de octubre. Lo que se estudia es que Vox no presente listas en provincias donde la fragmentación podría favorecer a la izquierda. A cambio, algunos de sus candidatos irían como independientes en listas del Partido Popular. Está en juego el Senado, que decide la renovación de parte del Tribunal Constitucional y del Consejo General del Poder Judicial. Vox asegura que ya ha hecho su parte y que ahora le toca mover ficha a Feijóo.",
-     "url": "https://www.elespanol.com/espana/politica/20261020/pp-dispuesto-escuchar-oferta-vox-neutralizar-pacto-psoe-frente-amplio-senado-dias-plazo/1003744426921_0.html"
+     "titular": "Ceuta acusa a Moncloa de responder fuera de plazo y sin calendario de expulsiones",
+     "resumen": "El Gobierno respondió el martes al requerimiento de Ceuta sobre los expedientes de expulsión de migrantes, pero lo hizo fuera de plazo, según el Ejecutivo ceutí y El Español. La respuesta no fija ningún calendario. El presidente de la ciudad, Juan Jesús Vivas, exige fechas y advierte de que acudirá a los tribunales. El Gobierno central asegura que las actuaciones ya están en marcha y recoge más de doce mil salidas voluntarias a Marruecos desde agosto, y quinientas sesenta y tres expulsiones. Ceuta afirma que siguen en la ciudad más de quince mil migrantes y que no ha recibido ninguna devolución ordinaria. El texto admite que ningún menor ha podido reunirse con su familia en Marruecos.",
+     "url": "https://www.elespanol.com/espana/politica/20261021/moncloa-responde-plazo-ceuta-sin-poner-fecha-expulsiones-vivas-exige-calendario-ira-supremo/1003744428412_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Ceuta lleva al Gobierno ante el Tribunal Supremo por las expulsiones paradas",
-     "resumen": "Según El Español, el gobierno de Ceuta, que preside Juan Jesús Vivas, presenta un recurso ante el Tribunal Supremo contra el Gobierno central. Le acusa de inacción tras la entrada masiva de migrantes de los días treinta y treinta y uno de julio. Pide medidas urgentes para que el Estado aporte medios y tramite los expedientes de expulsión, devolución y asilo. La ciudad aclara que no pide devoluciones automáticas y que acepta los procedimientos individuales. Según sus cifras, tres mil diecinueve menores están bajo tutela, cuando la capacidad ordinaria es de veintinueve. El gasto extraordinario ronda los cuarenta y cinco millones de euros en servicios públicos, más ochenta y uno para menores. El Gobierno no había respondido a un requerimiento anterior. El artículo recoge solo la versión de la ciudad, y el término invasores es el que ella usa.",
-     "url": "https://www.elespanol.com/espana/politica/20261020/ceuta-lleva-gobierno-supremo-no-hacer-sola-expulsion-pide-fuerce-devolver-invasores/1003744425948_0.html"
-    },
-    {
-     "id": "ee4",
-     "titular": "Un candidato socialista intentó influir en las listas del PSOE de Madrid, según mensajes",
-     "resumen": "Según El Español, Vicente Montávez, hoy número once de la lista del Partido Socialista de Madrid, trató en dos mil veintiuno de influir en las candidaturas de las elecciones madrileñas y en la gestora posterior. Lo habría hecho a través de Koldo García y José Luis Ábalos. El diario se basa en mensajes de los móviles de Koldo que la Guardia Civil intervino en febrero de dos mil veinticuatro. Montávez envió fichas con unos cincuenta nombres y valoraciones personales, y junto a diecisiete escribió que no valían. De las veintiuna personas señaladas, quince quedaron fuera o en peor puesto. También pidió mando en la futura gestora, pero no entró en ella. El artículo no incluye respuesta de Montávez ni del partido, y se presenta como información periodística, no como una decisión judicial.",
-     "url": "https://www.elespanol.com/espana/20261020/montavez-intento-manipular-via-abalos-listas-electorales-gestora-psoe-madrid-quiero-mando/1003744426573_0.html"
+     "titular": "PP y Vox negocian cuatro fórmulas para lograr tres quintos del Senado",
+     "resumen": "Según El Español, el Partido Popular y Vox negocian en secreto cómo llegar a los ciento sesenta y un escaños, tres quintos del Senado, antes de las elecciones del veintinueve de noviembre. Con esa mayoría podrían renovar sin el PSOE a cuatro magistrados del Constitucional. No pueden presentarse juntos porque el plazo para registrar coaliciones ya venció. Sobre la mesa hay cuatro vías. Vox se retiraría en diecinueve provincias. O iría en listas del PP con un candidato propio. O cedería senadores autonómicos. O recibiría compensaciones políticas. Feijóo confirmó la negociación el martes. Ambos partidos piden discreción. Las listas se registran el lunes veintiséis de octubre.",
+     "url": "https://www.elespanol.com/espana/politica/20261021/importante-pp-vox-negocian-formulas-pacto-senado/1003744428617_0.html"
     }
    ]
   },
@@ -81,27 +75,27 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Un testigo dice que las joyas de Zapatero fueron una comisión por el tren a Arabia Saudí",
-     "resumen": "Según una exclusiva de El Debate, un testigo declarado ante la Fiscalía Anticorrupción sostiene que las joyas halladas en el despacho de José Luis Rodríguez Zapatero fueron una comisión en especie por el tren de alta velocidad a Arabia Saudí. Zapatero afirma que doce piezas se las regaló en dos mil siete el rey saudí. El testigo, una mujer que trabajó en una empresa española en Yeda, sitúa la entrega en dos mil diecinueve. Eso desmontaría, según el diario, que el posible delito haya prescrito. Calcula que las joyas valen más de cuatro millones de euros, y una primera tasación las valoró en más de un millón trescientos mil. El diario advierte de que son afirmaciones de una sola testigo, sin comprobar, y no recoge reacciones de Zapatero ni del Partido Socialista.",
-     "url": "https://www.eldebate.com/espana/20261019/anticorrupcion-tiene-testigo-sostiene-joyas-zapatero-fueron-mordida-llevar-ave-arabia-saudi_470033.html"
+     "titular": "Valencia aprueba un primer paquete de ayudas de 23 millones por la dana Adam",
+     "resumen": "El presidente de la Generalitat Valenciana, Juanfran Pérez Llorca, anunció el martes un primer paquete de ayudas inmediatas de veintitrés millones y medio de euros, según El Debate. Los afectados recibirán seis mil euros para enseres y daños en su vivienda habitual, o tres mil si es segunda residencia. Quienes pierdan su casa cobrarán ochocientos euros al mes durante un año. Los ayuntamientos podrán pedir hasta doscientos mil euros para gastos urgentes. Habrá una sola solicitud, online o en los ayuntamientos. En los próximos días llegará otro paquete para vehículos, agricultura y comercio. Los colegios reabren el miércoles, salvo los de Oliva, que vuelven el jueves. La dana ha causado, según el diario, cuatro víctimas mortales en la Comunidad Valenciana.",
+     "url": "https://eldebate.com/espana/comunidad-valenciana/20261020/perez-llorca-anuncia-primer-paquete-ayudas-inmediatas-235-millones-euros-afectados-dana-adam_471926.html"
     },
     {
      "id": "ed2",
-     "titular": "Francia impone toques de queda en varias ciudades tras los disturbios",
-     "resumen": "Según El Debate, las autoridades francesas han impuesto toques de queda en zonas de París, Lyon, Lille y Niza tras un fin de semana de disturbios y saqueos. El ministro de Justicia, Gérald Darmanin, dijo que hay dos mil quinientos trece detenidos y sesenta y siete encarcelados. En París se prohíbe estar en la calle de once de la noche a seis de la mañana en ciertas zonas, como la plaza de la República. En Niza, el alcalde, Eric Ciotti, ordenó un toque de queda para menores. Darmanin pidió a los fiscales que califiquen los hechos como crimen organizado, lo que permitiría alargar la detención hasta setenta y dos horas. Según el diario, el presidente Macron rechazó la dimisión del ministro del Interior. El texto no explica el origen de las protestas.",
-     "url": "https://www.eldebate.com/internacional/20261019/francia-impone-toque-queda-paris-lyon-lille-niza-cataloga-actos-violencia-crimen-organizado_471480.html"
+     "titular": "Corea del Norte publica fotos de Kim Jong Un tras rumores de su muerte",
+     "resumen": "Corea del Norte difundió el martes fotos de su líder, Kim Jong Un, con buen aspecto, tras unos rumores sobre su muerte, según El Debate. El rumor lo lanzó Wanjun Xie, un disidente chino que vive en Estados Unidos. Afirmó, sin pruebas, que Kim sufrió una hemorragia cerebral y murió en un hospital de Pekín. El diario estatal Rodong Sinmun publicó imágenes del dirigente visitando una exposición de ropa y calzado junto a su hija. No se puede saber cuándo se tomaron. La BBC señaló que, si fuese verdad, habría señales fuera del país. No hay confirmación independiente. Los servicios surcoreanos creen que Kim prepara a su hija como sucesora.",
+     "url": "https://eldebate.com/internacional/20261020/ante-rumores-muerte-kim-jong-corea-norte-publica-fotos-gran-lider_471920.html"
     },
     {
      "id": "ed3",
-     "titular": "Exteriores asegura que envió por telegrama las resoluciones del Supremo sobre el voto de los nietos",
-     "resumen": "Según El Debate, el Ministerio de Asuntos Exteriores, que dirige José Manuel Albares, afirma que envió a los consulados las resoluciones del Tribunal Supremo sobre la suspensión del voto de parte de los nacionalizados por la ley de nietos. Responde así al líder del Partido Popular, Alberto Núñez Feijóo, que en una entrevista con el periódico acusó al Gobierno de bordear la insumisión. Feijóo dijo que el Ejecutivo no traslada esas resoluciones a la administración consular. Exteriores lo llama falso y asegura que las mandó de inmediato por telegrama y que están en los tablones de los consulados. El Debate pidió una copia del telegrama y le contestaron que son documentos reservados. Por eso, la versión del ministerio no se ha podido comprobar.",
-     "url": "https://www.eldebate.com/espana/20261020/exteriores-afirma-envio-resoluciones-supremo-consulados-telegrama_471523.html"
+     "titular": "Detienen a cuatro personas por los primeros saqueos tras la dana en Oliva",
+     "resumen": "La Guardia Civil detuvo el lunes por la tarde a cuatro personas por robar en viviendas afectadas por la dana Adam en Oliva, Valencia, según El Debate. Son los primeros saqueos registrados tras la inundación. El diario no detalla qué se llevaron. Oliva acumuló unos seiscientos litros por metro cuadrado en veinticuatro horas. La Guardia Civil ha rescatado a cuatrocientas noventa y seis personas y ha evacuado a más de dos mil. Algunos vecinos aún no han podido volver a sus casas. El presidente del Gobierno, Pedro Sánchez, visitó el martes el puesto de mando de Oliva. Las prioridades son atender a las víctimas y proteger los hogares vacíos.",
+     "url": "https://eldebate.com/espana/comunidad-valenciana/20261020/primeros-saqueos-viviendas-afectadas-dana-adam-oliva_471606.html"
     },
     {
      "id": "ed4",
-     "titular": "El PP catalán lleva la ley de memoria democrática al Consejo de Garantías Estatutarias",
-     "resumen": "Según El Debate, el Partido Popular de Cataluña llevará al Consejo de Garantías Estatutarias el proyecto de ley de memoria democrática que el Parlamento catalán debate esta semana. Lo impulsa su portavoz, Lorena Roldán. La ley, pactada por el PSC, Junts, Esquerra, los Comunes y la CUP, tenía la aprobación asegurada. Con este paso, la votación prevista para el miércoles no podrá celebrarse. El Partido Popular cuestiona que algunos artículos permitan acceder a datos de terceros y que puedan invadir competencias del Estado en materia de justicia. También critica que se dé solo un año para retirar la simbología franquista del monumento de Tortosa. La ley prevé multas de hasta ciento cincuenta mil euros y convertiría la comisaría de Via Laietana en un centro de interpretación de la represión.",
-     "url": "https://www.eldebate.com/espana/cataluna/20261020/pp-lleva-consejo-garantias-estaturarias-ley-memoria-democratica-illa-invasion-competencias_471664.html"
+     "titular": "Baleares prepara eliminar el impuesto de compra de vivienda a menores de 36 años",
+     "resumen": "Según El Debate, que cita al periódico Última Hora, el Gobierno balear prepara una nueva rebaja de impuestos para quienes compren su primera vivienda. Hoy hay exención total en el impuesto de transmisiones para menores de treinta años y una reducción de la mitad para menores de treinta y seis. La presidenta, Marga Prohens, podría extender la exención total hasta los treinta y seis, o incluso los cuarenta años. Lo anunciaría en el debate de política general de este martes, el último antes de las elecciones. La medida iría en los presupuestos de dos mil veintisiete, con un techo de gasto cercano a siete mil millones de euros, y necesitaría el apoyo de Vox. No es una decisión confirmada.",
+     "url": "https://eldebate.com/espana/baleares/20261020/baleares-dara-exencion-total-impuestos-compra-vivienda-menores-36-anos-como-broche-final-legislatura_471392.html"
     }
    ]
   },
@@ -111,27 +105,27 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Una exsenadora mexicana del PRI logró la nacionalidad española por la ley de nietos",
-     "resumen": "Según The Objective, el Gobierno concedió el cinco de diciembre de dos mil veintitrés la nacionalidad española a Nancy de la Sierra, entonces senadora mexicana del PRI, y a tres familiares, al amparo de la ley de memoria democrática. El diario afirma que ningún antepasado de la familia estuvo en España durante la Guerra Civil ni la dictadura. Su padre, nacido en México en mil novecientos treinta y nueve, la obtuvo alegando ser nieto de un español. Fuentes del consulado en México, citadas por el medio, aseguran que la familia recibió trato de favor y que se pidió atenderla como una persona muy importante. El artículo no incluye respuesta del Gobierno ni de la exsenadora. Recoge además otros casos de concesiones cuestionadas.",
-     "url": "https://theobjective.com/espana/2026-10-20/gobierno-nacionalizo-senadora-pri/"
+     "titular": "Las agendas de Cerdán recogen reuniones con fiscales antes del caso Miguel Ángel Blanco",
+     "resumen": "Según The Objective, las agendas de Santos Cerdán, exsecretario de Organización del PSOE, recogen reuniones con el fiscal de la Audiencia Nacional Carlos García Berro, alrededor de dos mil veinticuatro. Ese fiscal respaldó que el asesinato de Miguel Ángel Blanco había prescrito. Eso cerró la vía para juzgar a tres jefes de ETA. El diario sitúa los encuentros cerca de la negociación con EH Bildu. La asociación Dignidad y Justicia denuncia que se salvó a jefes de ETA para no molestar a Bildu. La Guardia Civil analiza las agendas. El artículo no demuestra que las reuniones influyeran en la decisión, y no recoge respuestas de Cerdán ni de los fiscales. Son indicios periodísticos, no hechos probados.",
+     "url": "https://theobjective.com/espana/2026-10-21/cerdan-fiscales-via-otegi-miguel-angel-blanco/"
     },
     {
      "id": "to2",
-     "titular": "Exteriores cerrará más de un mes las valijas diplomáticas por las elecciones",
-     "resumen": "Según The Objective, que dice haber visto un correo interno, el Ministerio de Asuntos Exteriores cerrará el servicio de valijas diplomáticas entre el veintiséis de octubre y el cuatro de diciembre. Solo seguirá enviándose documentación urgente o prioritaria. Las elecciones generales son el veintinueve de noviembre. En convocatorias anteriores el cierre duraba una semana de media. Fuentes del diario lo interpretan como señal de que el Gobierno espera mucha participación del voto exterior. Algunos embajadores y cónsules matizan que afecta solo a envíos de gran volumen. El contrato con la empresa de mensajería DHL cuesta cinco coma tres millones de euros, casi el doble que en dos mil veintitrés. El artículo no recoge una explicación oficial más allá del propio correo.",
-     "url": "https://theobjective.com/espana/politica/2026-10-20/albares-valijas-voto-exterior-exteriores/"
+     "titular": "El Gobierno ha destinado 158 millones de euros a Marruecos desde 2019",
+     "resumen": "Según The Objective, el Gobierno de Pedro Sánchez ha anunciado o identificado ayudas a Marruecos por ciento cincuenta y ocho millones de euros desde dos mil diecinueve. Noventa y dos millones corresponden a tres ayudas de cooperación policial del Ministerio del Interior. Otros sesenta y seis millones son nueve proyectos financiados por la Comisión Europea. El diario aclara que son cifras de autorizaciones y presupuestos, no necesariamente de pagos ya realizados. El texto recuerda la entrada masiva en Ceuta de finales de julio. Según The Objective, un informe de la Policía Nacional apunta a una planificación previa, y el CNI dice que Rabat conocía el riesgo. La Audiencia Nacional investiga los hechos. El artículo no recoge reacciones del Gobierno.",
+     "url": "https://theobjective.com/espana/2026-10-21/sanchez-158-millones-marruecos-ayudas-ceuta/"
     },
     {
      "id": "to3",
-     "titular": "Unicaja ofrece entre 300 y 400 millones de euros por Wizink",
-     "resumen": "Según fuentes citadas por The Objective, Unicaja ha ofrecido entre trescientos y cuatrocientos millones de euros por los activos buenos de Wizink, el banco de tarjetas que controla el fondo Värde Partners. El precio final dependerá de la cartera que se incluya, y en cualquier caso quedaría por debajo del valor en libros de junio, de unos cuatrocientos veinte millones. Wizink sufre por la alta morosidad de sus tarjetas revolving y por sentencias que las consideran usurarias. Su consejero delegado dimitió en septiembre. Según las fuentes, Unicaja se ha quedado sola en la puja. El Banco de España exigiría dejar los activos tóxicos fuera del balance y separar el crédito al consumo en una filial independiente. Unicaja declinó comentar.",
-     "url": "https://theobjective.com/economia/banca/2026-10-20/unicaja-300-400-millones-wizink-escriva/"
+     "titular": "Detenido en Francia por quemar el Ayuntamiento de Limoges, con vínculos familiares con ETA",
+     "resumen": "La policía francesa detuvo el martes a Hodei Ciarra, de treinta y cuatro años, principal sospechoso del incendio que destruyó parte del Ayuntamiento de Limoges, según The Objective. El fuego se produjo el sábado diecisiete durante protestas por el coste de la vida. Cayó el campanario de un edificio inaugurado en mil ochocientos ochenta y tres. La policía lo describe como un activista de ultraizquierda ya fichado. El diario destaca que su padre fue independentista vasco y que su tío fue detenido en mil novecientos setenta y nueve, acusado de pertenecer a ETA. No se le atribuye pertenencia directa a la banda. La Fiscalía investiga, y los servicios antiterroristas franceses se han sumado.",
+     "url": "https://theobjective.com/internacional/2026-10-21/detenido-ayuntamiento-limoges-eta/"
     },
     {
      "id": "to4",
-     "titular": "La Ertzaintza acusa de terrorismo a dos radicales por primera vez desde el fin de ETA",
-     "resumen": "Según The Objective, la Ertzaintza acusa de terrorismo a Aritz Bilbao, de treinta y cuatro años, y a Malen Grünig, de veintidós. Sería la primera vez desde que ETA dejó las armas que la policía vasca imputa ese delito a dos radicales. Pasan hoy a disposición de la Audiencia Nacional. Fueron parados en un control en Escoriaza, en Guipúzcoa, el veintiséis de septiembre, junto a un irlandés vinculado a grupos disidentes del IRA, cuyo paradero se desconoce. La policía halló una lista de guardias civiles destinados en el País Vasco, dos zulos, uno con armas, y memorias informáticas cifradas. El diario dice que ambos pertenecen a un grupo de la izquierda abertzale que rechaza dejar la violencia. Las imputaciones están pendientes de valoración judicial.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-20/ertzaintza-terrorismo-radicales-eta/"
+     "titular": "La SEPI exige a Plus Ultra una reestructuración para que entren nuevos inversores",
+     "resumen": "Según The Objective, la SEPI, la sociedad estatal que rescató a Plus Ultra con cincuenta y tres millones de euros, acepta un inversor estratégico, pero exige antes una reestructuración de la aerolínea. La compañía negocia con Iberojet, del grupo Barceló, y con otras empresas turísticas. Plus Ultra ha cancelado la ruta Madrid, Bogotá y Cartagena, y ha reducido de cinco a dos los vuelos semanales a Buenos Aires. Para tener liquidez vende billetes con descuento. La empresa está bajo investigación judicial. El diario añade que su fundador y su exdirector ejecutivo han dimitido. La SEPI no dio detalles, Plus Ultra no comentó y Barceló no respondió. El diario cita documentos internos.",
+     "url": "https://theobjective.com/economia/2026-10-21/sepi-exige-reestructuracion-plus-ultra-inversores/"
     }
    ]
   },
@@ -141,21 +135,27 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Sánchez ataca a Inda por pedir al PP que no hable de pensiones",
-     "resumen": "Según OKDiario, el presidente del Gobierno, Pedro Sánchez, atacó en un mitin en Valladolid al director del periódico, Eduardo Inda. Lo llamó caradura por pedir al Partido Popular que no hable de pensiones en campaña. Inda había dicho en televisión que el partido debería esperar a las elecciones y hablar del asunto solo con un plan concreto. Sánchez citó solo en parte sus palabras y sostuvo que la derecha quiere desmovilizar a la gente hasta el veintinueve de noviembre para luego recortar. El periódico sostiene que Inda nunca propuso recortes y que Sánchez lo dedujo por su cuenta. El ministro Óscar Puente también criticó a Inda en redes. El diario califica el episodio de manipulación, algo que es su propia valoración y no una comprobación independiente.",
-     "url": "https://okdiario.com/espana/sanchez-obsesionado-inda-manipula-sus-palabras-sobre-pensiones-pide-que-no-hable-ellas-seran-caraduras-20584611"
+     "titular": "Mónica García renuncia a ir en la lista de Frente Amplio a las generales",
+     "resumen": "La ministra de Sanidad, Mónica García, no irá en la candidatura de Frente Amplio a las elecciones generales del veintinueve de noviembre, según OKDiario. Seguirá como candidata de Más Madrid a las elecciones autonómicas de mayo de dos mil veintisiete. Explicó su decisión tras una profunda reflexión y dijo que antepone el bien común al interés personal. Emilio Delgado encabezará la lista por Madrid y Tesh Sidi será la número dos. Delgado dijo que apoyará a García en cada paso que dé. La noticia se publicó en el seguimiento en directo que el diario dedica a las huelgas, las elecciones y la actualidad política.",
+     "url": "https://okdiario.com/espana/ultima-hora-huelgas-elecciones-generales-del-29-n-actualidad-politica-hoy-monica-garcia-renuncia-lista-frente-amplio-20586824"
     },
     {
      "id": "ok2",
-     "titular": "Los nietos del exilio con el voto suspendido siguen en el censo electoral",
-     "resumen": "Según OKDiario, el plazo para reclamar errores en el censo de las elecciones del veintinueve de noviembre terminó el lunes. Las ciento sesenta y tres mil veinte personas a las que el Tribunal Supremo suspendió el voto por la ley de nietos siguen inscritas. Pueden votar si el consulado certifica que sus antepasados fueron exiliados. La Oficina del Censo dice que no ha recibido información de los consulados, y el Gobierno admite que identificar a los afectados es una tarea complejísima. Fuentes diplomáticas denuncian falta de medios. El Defensor del Pueblo presentó un recurso de amparo ante el Tribunal Constitucional. El diario, crítico con el Gobierno, avisa de que sin un listado fiable se podrían impugnar los resultados del voto exterior.",
-     "url": "https://okdiario.com/espana/cierra-censo-del-29-n-163-020-nietos-del-exilio-que-tienen-voto-suspendido-siguen-inscritos-20585553"
+     "titular": "Interior abre la web de las elecciones y fija la campaña del 13 al 27 de noviembre",
+     "resumen": "El Ministerio del Interior ha puesto en marcha la web oficial de las elecciones generales del veintinueve de noviembre, según OKDiario. Incluye el logotipo, información sobre las formas de votar y el calendario. La campaña electoral durará quince días. Empezará a las cero horas del viernes trece de noviembre y terminará a medianoche del viernes veintisiete. La información procede del seguimiento en directo que OKDiario hace de la actualidad política. En esas mismas jornadas, el diario también recoge las huelgas convocadas y las novedades de las listas de los distintos partidos. El día de las votaciones será el domingo veintinueve de noviembre.",
+     "url": "https://okdiario.com/espana/ultima-hora-huelgas-elecciones-generales-del-29-n-actualidad-politica-hoy-monica-garcia-renuncia-lista-frente-amplio-20586824"
     },
     {
      "id": "ok3",
-     "titular": "El PSOE ofrece abogados gratis a los nietos del exilio para recurrir al Constitucional",
-     "resumen": "Según OKDiario, el Partido Socialista ofrece asistencia jurídica gratuita a los nacionalizados por la ley de nietos cuyo voto suspendió el Tribunal Supremo. La idea es animarles a recurrir ante el Tribunal Constitucional. Según el artículo, la iniciativa se canaliza con un formulario de interés habilitado por el Partido Socialista de Uruguay. Quienes lo rellenan indican si quieren personarse en el procedimiento del Supremo. El diario recuerda que una instrucción del Ministerio de Justicia presumía la condición de exiliado para descendientes de quienes salieron entre mil novecientos treinta y seis y mil novecientos cincuenta y cinco. Sostiene que eso abrió la puerta a nacionalizaciones dudosas. El Defensor del Pueblo, Ángel Gabilondo, pide levantar la suspensión. OKDiario mantiene una línea crítica con el Gobierno.",
-     "url": "https://okdiario.com/espana/psoe-ofrece-asesoria-juridica-gratis-nietos-del-exilio-que-recurran-constitucional-20582751"
+     "titular": "Más de 12.700 personas han vuelto de Ceuta a Marruecos desde agosto",
+     "resumen": "Según la portavoz del Gobierno, Elma Saiz, citada por OKDiario, 12.705 personas han regresado de Ceuta a Marruecos desde el diez de agosto. De ellas, 12.142 lo hicieron de forma voluntaria y 536 mediante expulsión. Hay 7.477 plazas habilitadas en recursos temporales y 3.331 menores atendidos en el sistema de protección autonómico. Por separado, el Gobierno de Ceuta ha decidido acudir al Tribunal Supremo contra lo que llama inactividad del Estado en la tramitación de los expedientes de adultos llegados en la entrada masiva de finales de julio. El diario lo cuenta en su seguimiento en directo de la actualidad política.",
+     "url": "https://okdiario.com/espana/ultima-hora-huelgas-elecciones-generales-del-29-n-actualidad-politica-hoy-monica-garcia-renuncia-lista-frente-amplio-20586824"
+    },
+    {
+     "id": "ok4",
+     "titular": "Feijóo admite que busca un acuerdo con Vox en el Senado",
+     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, admitió que busca un acuerdo con Vox en el Senado, según OKDiario. Dijo que sería un error facilitar al sanchismo el control de la Cámara Alta. Vox cuenta ahora con cinco senadores autonómicos, designados en comunidades del Partido Popular tras pactos con ese partido. El dirigente popular Xavier García Albiol respaldó esa fórmula, aunque advirtió de que los elementos de identidad propia del Partido Popular no deben negociarse con Vox. El diario añade que, según informaciones publicadas, la dirección popular querría que Vox no se presentase al Senado, mientras que Abascal pide que Feijóo acepte candidatos suyos.",
+     "url": "https://okdiario.com/espana/ultima-hora-huelgas-elecciones-generales-del-29-n-actualidad-politica-hoy-monica-garcia-renuncia-lista-frente-amplio-20586824"
     }
    ]
   },
@@ -165,27 +165,27 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El Supremo aplica la amnistía a la malversación de los líderes del procés",
-     "resumen": "Según elDiario.es, la Sala de lo Penal del Tribunal Supremo ha aplicado la ley de amnistía a la malversación por la que fueron condenados Oriol Junqueras, Raül Romeva, Jordi Turull y Dolors Bassa. Declara extinguida su responsabilidad penal. Hasta ahora se había negado a hacerlo, pero cambió tras una sentencia del Tribunal Constitucional. El Supremo critica con dureza al Constitucional por injerencia y por lo que llama innecesaria grandilocuencia. Las penas por malversación eran el último obstáculo para su vuelta a la política. El juez Pablo Llarena levantó además la orden de detención nacional contra Carles Puigdemont, aunque aún debe decidir si aplica el mismo criterio a la malversación que se le imputa.",
+     "titular": "El Supremo amnistía la malversación de los líderes del procés y critica al Constitucional",
+     "resumen": "La Sala de lo Penal del Tribunal Supremo aplicó el martes la amnistía a las condenas por malversación de Oriol Junqueras, Raül Romeva, Jordi Turull y Dolors Bassa, según elDiario.es. Declaró extinguida su responsabilidad penal. El ponente fue Manuel Marchena. El Supremo se ve obligado a hacerlo tras una sentencia del Tribunal Constitucional que extendió la amnistía a la malversación. Pero reprocha al Constitucional una injerencia y una innecesaria grandilocuencia. Dice que algunas de sus consideraciones son prescindibles. Las condenas originales, de hasta trece años, se dictaron en dos mil diecinueve. El juez Pablo Llarena debe decidir ahora si aplica el mismo criterio a la malversación atribuida a Carles Puigdemont.",
      "url": "https://www.eldiario.es/catalunya/supremo-amnistia-malversacion-lideres-proces-carga-grandilocuencia-constitucional_1_13599766.html"
     },
     {
      "id": "edi2",
-     "titular": "La Audiencia de Madrid permite a la UCO ver todos los datos financieros de la pareja de Ayuso",
-     "resumen": "Según elDiario.es, la Audiencia Provincial de Madrid ha corregido al juez instructor y autoriza a la Unidad Central Operativa de la Guardia Civil a obtener todos los datos financieros de Alberto González Amador, pareja de la presidenta madrileña, Isabel Díaz Ayuso. Incluye datos fiscales y de la Seguridad Social, no solo bancarios. El juez solo había permitido los bancarios, seis meses después de pedirlo la Guardia Civil. La Fiscalía recurrió, y la defensa de González Amador no se opuso. En esta causa se investiga un presunto soborno de quinientos mil euros. Aparte, él está acusado de defraudar trescientos cincuenta mil euros con facturas falsas, y ese caso espera fecha de juicio.",
+     "titular": "La Audiencia de Madrid autoriza a la UCO a revisar los datos financieros de la pareja de Ayuso",
+     "resumen": "Según elDiario.es, la Audiencia Provincial de Madrid ha estimado un recurso de la Fiscalía y permite a la UCO acceder a toda la información financiera de Alberto González Amador, pareja de Isabel Díaz Ayuso. Incluye datos tributarios y de la Seguridad Social, y no solo los bancarios, como había autorizado el juez. Hay dos causas. En una, se le acusa de eludir trescientos cincuenta mil euros en impuestos. En otra, la Fiscalía sospecha que pagó medio millón de euros a una empresa de la esposa de un directivo de Quirón, como soborno. Ese directivo declarará a principios de diciembre. La defensa no se opuso al recurso. Es una decisión sobre acceso a datos, no sobre culpabilidad.",
      "url": "https://www.eldiario.es/politica/audiencia-provincial-corrige-juez-autoriza-uco-obtener-datos-financieros-pareja-ayuso_1_13600506.html"
     },
     {
      "id": "edi3",
-     "titular": "El Gobierno amplía ayudas a padres de hijos enfermos y a víctimas de violencia machista",
-     "resumen": "Según elDiario.es, el Consejo de Ministros ha aprobado un decreto que amplía prestaciones de la Seguridad Social. Las parejas no casadas con hijos podrán cobrar la pensión de viudedad si prueban dos años de convivencia. La pensión de orfandad para víctimas de violencia de género subirá a unos mil doscientos veintiún euros al mes. Se crean bajas especiales para mujeres con menopausia incapacitante y para trabajadoras víctimas de violencia machista. El anticipo del fondo de pensiones alimenticias impagadas sube de cien a trescientos euros al mes. Los padres de hijos con enfermedad grave podrán seguir cobrando la prestación más allá de los veintiséis años en ciertos casos. Los afectados por catástrofes, como la dana de Valencia, se tratarán como accidentados laborales. El texto completo aún no se había publicado.",
-     "url": "https://www.eldiario.es/economia/gobierno-amplia-prestaciones-padres-hijos-enfermos-victimas-violencia-genero-catastrofes_1_13599382.html"
+     "titular": "Feijóo confirma negociaciones con Vox para lograr tres quintos del Senado",
+     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, confirmó el martes en la cadena COPE que negocia con Vox para conseguir tres quintos del Senado, según elDiario.es. Esa mayoría, ciento sesenta senadores, daría a la derecha el control del Tribunal Constitucional durante una década. Feijóo dijo que ya tienen un marco de entendimiento con Vox en cuatro comunidades. El plazo para formar coaliciones ya pasó, así que solo quedan dos fórmulas: que Vox entre en listas del Partido Popular o que se retire en algunas provincias. Feijóo no dijo cuál elegirá. El diario recuerda que el Partido Popular lleva un año bloqueando la renovación del Constitucional.",
+     "url": "https://www.eldiario.es/politica/feijoo-confirma-negociaciones-vox-buscar-mayoria-senado-les-permita-controlar-constitucional_1_13598996.html"
     },
     {
      "id": "edi4",
-     "titular": "La justicia concluye que Espinosa de los Monteros engañó a Hacienda en una operación inmobiliaria",
-     "resumen": "Según elDiario.es, el Tribunal Superior de Justicia de Madrid rechazó cuatro de los cinco recursos de Iván Espinosa de los Monteros y Rocío Monasterio contra sanciones de la Agencia Tributaria. Las sentencias son firmes. Inspectores hallaron que la empresa de arquitectura de Monasterio emitió una factura de ciento sesenta y nueve mil euros por trabajos no realizados, vinculada a la venta de un edificio de lujo en la calle General Castaños. Además, unos seiscientos veinticinco mil euros se declararon a través de dos sociedades en vez de como renta personal. Los jueces hablan de una ventaja fiscal ilícita. Espinosa respondió que las sentencias no son muy importantes y que los mismos hechos se juzgan en la Audiencia Nacional.",
-     "url": "https://www.eldiario.es/politica/justicia-concluye-espinosa-monteros-engano-hacienda-operacion-inmobiliaria-lujo_1_13596663.html"
+     "titular": "Llarena confirma que Puigdemont puede volver a España sin ser detenido",
+     "resumen": "El juez del Supremo Pablo Llarena confirmó que la orden de detención contra Carles Puigdemont, vigente desde dos mil diecisiete, sigue levantada, según elDiario.es. El expresidente catalán puede volver a España sin riesgo de ser detenido. Llarena rechazó el recurso de Vox, que ejerce la acusación popular. Aplicó la doctrina del Constitucional, aunque no comparta sus razones. Y criticó el tono del tribunal, apoyándose en el voto particular de los magistrados conservadores. Defendió que el criterio del Supremo sobre la amnistía estaba jurídicamente fundado. Está pendiente que decida sobre el delito que aún se atribuye a Puigdemont. El artículo es del lunes diecinueve de octubre.",
+     "url": "https://eldiario.es/catalunya/juez-llarena-critica-constitucional-confirma-puigdemont-volver-espana-detenido_1_13596182.html"
     }
    ]
   }
