@@ -1,18 +1,17 @@
 {
- "fecha": "2026-10-21",
- "fechaTexto": "miércoles 21 de octubre",
- "actualizado": "2026-10-21T16:01:11+02:00",
+ "fecha": "2026-10-22",
+ "fechaTexto": "jueves 22 de octubre",
+ "actualizado": "2026-10-22T07:04:20+02:00",
  "portada": [
-  "ee2",
-  "ld4",
-  "ee3",
-  "ok3",
   "ee1",
-  "ed2",
-  "edi3",
-  "edi2",
-  "to1",
-  "ld1"
+  "ee2",
+  "ld1",
+  "edi1",
+  "ld2",
+  "ok1",
+  "to2",
+  "ee3",
+  "to3"
  ],
  "diarios": [
   {
@@ -21,27 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "España enviará personal militar a la misión de la OTAN en el Ártico",
-     "resumen": "El Ministerio de Defensa ha confirmado que España participará en la misión de la OTAN para reforzar la protección del Ártico frente a la amenaza rusa. Según Libertad Digital, el anuncio se hizo en las últimas horas del martes 20 de octubre, a través de la red social X. La aportación inicial será de personal para el cuartel general aliado que dirige la operación, situado en Mons, en Bélgica. Las operaciones se desarrollarán en Finlandia. El presidente Pedro Sánchez ya había adelantado este compromiso en julio, durante la cumbre de la OTAN en Ankara, aunque entonces hablaba de desplegar militares en Finlandia. Todavía no se sabe cuántos militares irán ni cuándo se incorporarán. La misión busca reforzar el flanco norte de la Alianza, con ejercicios, entrenamientos y mejor coordinación entre los países aliados. Defensa asegura que España actúa como socio fiable y responsable.",
-     "url": "https://www.libertaddigital.com/defensa/2026-10-21/defensa-confirma-que-los-militares-espanoles-se-desplegaran-en-la-mision-otan-para-proteger-el-artico-de-la-amenaza-rusa-7479284/"
+     "titular": "El Supremo aplica la amnistía a Junqueras y otros y critica al Constitucional",
+     "resumen": "El magistrado Manuel Marchena firmó un auto del Tribunal Supremo que aplica la amnistía a Oriol Junqueras, Dolors Bassa, Jordi Turull y Raül Romeva. Lo hizo después de una sentencia previa del Tribunal Constitucional. Según Libertad Digital, el texto reprocha al presidente del Constitucional, Cándido Conde-Pumpido, sus descalificaciones contra el Supremo. También habla de una drástica contradicción con la jurisdicción ordinaria, porque el Constitucional acaba revisando cualquier interpretación de las leyes. El medio cuenta, citando fuentes anónimas del propio tribunal, que el auto llegó a los magistrados en pleno debate del martes y que los progresistas se mostraron muy molestos. Esas informaciones no se han podido comprobar por otras vías. Este miércoles, el Constitucional debía decidir sobre la petición del Defensor del Pueblo contra la suspensión cautelar de la ley de nietos, otro asunto que enfrenta a los dos tribunales.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-21/marchena-irrita-a-pumpido-y-al-resto-de-magistrados-izquierdistas-del-tc-en-mitad-del-pleno-con-su-auto-de-la-amnistia-7479160/"
     },
     {
      "id": "ld2",
-     "titular": "Trump critica a España por la crisis migratoria de Ceuta",
-     "resumen": "El presidente de Estados Unidos, Donald Trump, ha criticado al Gobierno de Pedro Sánchez por su gestión de la crisis migratoria de Ceuta. Según Libertad Digital, lo dijo en una rueda de prensa en la Casa Blanca. Trump afirmó que los inmigrantes irregulares llegaron por decenas de miles, que inundaron España y que el país no ha hecho nada al respecto. Describió que miles de personas procedentes de Marruecos se abalanzaron sobre el territorio. También defendió su propia política migratoria y dijo que los flujos descontrolados acaban causando problemas graves en los países que los reciben. Concluyó que Europa tiene que cambiar su forma de actuar. El periódico recuerda que la crisis de Ceuta comenzó este verano y que la Justicia investiga lo ocurrido. El texto no recoge todavía ninguna respuesta del Gobierno español, ni datos oficiales que confirmen las cifras que citó Trump.",
-     "url": "https://www.libertaddigital.com/internacional/estados-unidos/2026-10-21/trump-critica-la-pasividad-de-espana-frente-a-la-crisis-migratoria-de-ceuta-no-ha-hecho-nada-7479465/"
+     "titular": "Julito admite que siguió pagando a una empresa de las hijas de Zapatero",
+     "resumen": "Según Libertad Digital, el empresario Julio Martínez, conocido como Julito, declaró ante el juez José Luis Calama, de la Audiencia Nacional, en el caso Plus Ultra. Reconoció que siguió pagando una cuota a la sociedad What the Fav aunque ya no trabajaba para su empresa. Según su versión, lo hizo porque las dueñas eran las hijas de Zapatero. Contó que What the Fav preparaba informes genéricos de geoestrategia, con textos redactados por el expresidente, y que ese trabajo duró más o menos hasta dos mil veintidós. Después, el pago continuó sin ningún servicio a cambio. También explicó gestiones ante Delcy Rodríguez, entonces número dos del régimen venezolano, para una empresa eléctrica de Venezuela. El artículo no recoge las cantidades pagadas ni la respuesta de Zapatero.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-21/julito-confeso-que-pago-a-what-the-fav-sin-que-realizara-trabajos-porque-las-duenas-eran-las-hijas-de-zapatero-7479186/"
     },
     {
      "id": "ld3",
-     "titular": "Polémica por pisos de la Seguridad Social vendidos a empresas de un arquitecto condenado",
-     "resumen": "Un artículo de Libertad Digital sostiene que la Tesorería General de la Seguridad Social, que depende del ministerio de Elma Saiz, vendió al menos diecisiete pisos a empresas ligadas al arquitecto Gonzalo Urquijo. Urquijo fue condenado por cobrar en negro parte de la reforma de la sede del Partido Popular en la calle Génova. Según el texto, entre dos mil veintitrés y dos mil veintiséis una de sus sociedades compró doce pisos en Madrid por más de cinco millones y medio de euros, y otra sociedad vinculada se quedó cinco más, en la calle Narciso Serra, por algo más de tres millones. El periódico recuerda que el Gobierno criticó duramente a otra pequeña empresa inmobiliaria, a la que llamó buitre. El propio artículo reconoce que, que se sepa, ninguna de estas operaciones es ilegal. Ni el ministerio ni la empresa quisieron hacer declaraciones.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-21/el-ministerio-de-elma-saiz-adjudico-17-pisos-a-la-pyme-buitre-del-arquitecto-condenado-por-la-sede-del-pp-7478154/"
-    },
-    {
-     "id": "ld4",
-     "titular": "La dana Adam deja al menos seis muertos y más de dos mil evacuados",
-     "resumen": "La dana Adam empieza a perder fuerza tras un fin de semana de lluvias torrenciales en el Mediterráneo. Según Libertad Digital, el temporal deja al menos seis fallecidos y más de dos mil evacuados en la Comunidad Valenciana. Un balance de la Guardia Civil habla de dos mil ciento cuarenta y un evacuados y cuatrocientos noventa y seis rescatados. En la localidad alicantina de Pego cayeron seiscientos treinta y dos litros por metro cuadrado en treinta y seis horas, según la Agencia Estatal de Meteorología. Se han levantado los últimos confinamientos preventivos y el Gobierno valenciano ha rebajado el nivel de emergencia. Sigue habiendo carreteras cortadas, entre ellas un tramo de la autopista del Mediterráneo. El presidente Pedro Sánchez fue abucheado en Oliva y volvió a prometer ayudas. Además, la Guardia Civil investiga si la muerte de un agricultor hallado en Pego tiene relación con las inundaciones.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-20/la-dana-adam-deja-al-menos-seis-muertos-y-mas-de-2-000-evacuados-en-la-comunidad-valenciana-7479233/"
+     "titular": "El Supremo obliga a Hacienda a visitar las viviendas que tasa",
+     "resumen": "Según Libre Mercado, medio de Libertad Digital, el Tribunal Supremo ha dicho que la Agencia Tributaria no puede valorar una vivienda solo con los datos del catastro, fotografías aéreas o imágenes de Google Maps. La sentencia exige que el perito visite la casa y la vea por dentro y por fuera. Solo se podría evitar la visita en casos muy excepcionales, y siempre que Hacienda lo justifique con datos concretos en el expediente. El tribunal considera la imagen de Google claramente insuficiente. Añade que obligar al contribuyente a pedir una segunda tasación, costosa y de resultado incierto, le dejaría indefenso. El caso llegó al Supremo en marzo de dos mil veinticinco. Los peritos del propietario describían un mal estado interior que exigía una reforma completa. El artículo no recoge la opinión de Hacienda.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-10-21/golpe-del-supremo-a-hacienda-le-obliga-a-visitar-las-viviendas-que-va-a-tasar-y-no-usar-solo-google-maps-o-el-catastro-7479219/"
     }
    ]
   },
@@ -51,27 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "El Gobierno garantiza a los funcionarios una subida del cuatro y medio por ciento",
-     "resumen": "El Gobierno ha asegurado a los sindicatos que garantiza una subida salarial del cuatro y medio por ciento para los funcionarios en dos mil veintisiete. Según El Español, sería el mayor aumento para este colectivo en treinta y cinco años. El anuncio se produjo el martes 20 de octubre, en una reunión del ministerio de Función Pública con UGT, Comisiones Obreras y el sindicato CSIF. La subida beneficiaría a más de tres millones de empleados públicos y forma parte del acuerdo firmado en noviembre de dos mil veinticinco, que prevé un once por ciento acumulado hasta dos mil veintiocho. El Gobierno no ha dicho cuándo la aprobará, y para ello necesita un real decreto ley. Los sindicatos piden que se apruebe antes de las elecciones del 29 de noviembre. El periódico interpreta la medida como un intento de captar el voto de los funcionarios y avisa de que el coste recaerá también sobre comunidades y ayuntamientos.",
-     "url": "https://www.elespanol.com/invertia/economia/empleo/20261020/gobierno-garantiza-salario-funcionarios-subira-no-concreta-aprobara/1003744428029_0.html"
-    },
-    {
-     "id": "ee2",
-     "titular": "El Constitucional rechaza el recurso del Defensor del Pueblo sobre el voto de los nietos",
-     "resumen": "El Tribunal Constitucional ha rechazado, por diez votos contra dos, el recurso del Defensor del Pueblo contra la suspensión del voto de los llamados nietos. Según El Español, el tribunal lo considera prematuro, porque el asunto sigue abierto en el Supremo. El Supremo suspendió de forma cautelar el derecho de voto de unas ciento sesenta mil personas nacionalizadas con la ley de nietos, el 10 de septiembre, y mantuvo la medida el 12 de octubre. El Defensor del Pueblo, Ángel Gabilondo, había presentado el recurso el viernes anterior. El ponente fue el magistrado Enrique Arnaldo, y el presidente, Cándido Conde-Pumpido, apoyó la decisión. Los magistrados Ramón Sáez y Juan Carlos Campo votaron en contra. El Supremo ha pedido ya a los afectados que presenten sus alegaciones, y después podrá confirmar, levantar o cambiar la suspensión. Las elecciones generales son el 29 de noviembre.",
+     "titular": "El Constitucional rechaza el recurso del Defensor del Pueblo sobre la ley de nietos",
+     "resumen": "El Tribunal Constitucional ha rechazado por diez votos contra dos el recurso del Defensor del Pueblo, Ángel Gabilondo. Pedía frenar la suspensión del voto de unas ciento sesenta mil personas nacionalizadas con la llamada ley de nietos. Según El Español, el tribunal considera el recurso prematuro, porque el asunto sigue abierto en el Supremo. El ponente, Enrique Arnaldo, defendió ese criterio, y el presidente Cándido Conde-Pumpido fue decisivo. Votaron a favor de admitirlo Ramón Sáez y Juan Carlos Campo. El Supremo suspendió ese voto el diez de septiembre y lo mantuvo el doce de octubre, porque dio prioridad a la corrección del censo. Ahora el Supremo ha pedido alegaciones a los afectados y podrá confirmar, levantar o cambiar la suspensión. Las elecciones generales son el veintinueve de noviembre.",
      "url": "https://www.elespanol.com/espana/tribunales/20261021/constitucional-rechaza-votos-recurso-defensor-pueblo-suspension-voto-nietos/1003744429017_0.html"
     },
     {
-     "id": "ee3",
-     "titular": "Moncloa responde a Ceuta sin fijar fecha para las expulsiones",
-     "resumen": "El Gobierno central ha respondido a la ciudad de Ceuta, un día después del plazo según los ceutíes, sin fijar fecha para las expulsiones de migrantes. Según El Español, la respuesta es un documento de sesenta y tres páginas que rechaza el requerimiento aprobado por el gobierno ceutí el 16 de septiembre. El ministro Ángel Víctor Torres sostiene que el plazo de un mes no puede estar por encima de la ley de extranjería y asilo. El Ejecutivo defiende que ha actuado y cita más de doce mil devoluciones voluntarias a Marruecos desde el 10 de agosto, además de quinientas sesenta y tres expulsiones. No hay calendario ni lista de expedientes. El portavoz ceutí, Alejandro Ramírez, calificó de lamentable que todo dependa de que los migrantes quieran volver. El presidente, Juan Jesús Vivas, estudia acudir al Tribunal Supremo si considera insuficiente la respuesta.",
-     "url": "https://www.elespanol.com/espana/politica/20261021/moncloa-responde-plazo-ceuta-sin-poner-fecha-expulsiones-vivas-exige-calendario-ira-supremo/1003744428412_0.html"
+     "id": "ee2",
+     "titular": "Milei llama dictador a Sánchez y pide echar a los socialistas",
+     "resumen": "El presidente argentino, Javier Milei, visitó Madrid el miércoles, en plena precampaña electoral. Según El Español, en un desayuno informativo llamó a Pedro Sánchez impresentable dictador y pidió a los españoles sacar a los socialistas a patadas en las elecciones del veintinueve de noviembre. También habló de invasión al referirse a la crisis migratoria de Ceuta. El PSOE colgó en su sede de Ferraz una lona de bienvenida con el lema Zurdos y orgullosos, y Sánchez respondió con un vídeo en el que se declara zurdo. Milei se dijo amigo de Santiago Abascal y de Isabel Díaz Ayuso, pero ninguno de los dos acudió al acto. Es su séptima visita a España como presidente. En dos mil veinticuatro, sus palabras sobre Begoña Gómez provocaron que el Gobierno retirase a su embajadora.",
+     "url": "https://www.elespanol.com/espana/politica/20261021/milei-llama-impresentable-dictador-sanchez-pide-espana-sacar-socialistas-patadas-proximo/1003744428922_0.html"
     },
     {
-     "id": "ee4",
-     "titular": "El París Saint-Germain gana al Barcelona por cuatro a dos en la Liga de Campeones",
-     "resumen": "El París Saint-Germain ha vencido por cuatro goles a dos al Barcelona en la tercera jornada de la Liga de Campeones. Según El Español, es la primera derrota del equipo azulgrana esta temporada. El partido se jugó el martes 20 de octubre en el Parque de los Príncipes, ante unos cuarenta y siete mil espectadores. Doué abrió el marcador en el minuto treinta y ocho. Espart empató en el cincuenta y cinco y Lucas Hernández volvió a poner por delante a los franceses, de cabeza, en el setenta y cuatro. Lamine Yamal empató de nuevo en el setenta y nueve, pero Vitinha, con un disparo desde fuera del área, y Fabián Ruiz, en el minuto ochenta y seis, sentenciaron el partido. El portero Joan García fue el mejor del Barça. El periódico añade que Dani Olmo se lesionó, lo que preocupa cinco días antes del clásico contra el Real Madrid. El París sigue invicto en esta competición.",
-     "url": "https://www.elespanol.com/deportes/futbol/20261020/psg-impone-hegemonia-barca-vulnerable-sufre-primera-derrota-temporada-champions/1003744428390_0.html"
+     "id": "ee3",
+     "titular": "El Real Madrid golea por cuatro a uno al Leipzig en la Liga de Campeones",
+     "resumen": "El Real Madrid ganó cuatro a uno al Leipzig en el Bernabéu y suma tres victorias en la Liga de Campeones. Según El Español, fue un partido irregular, pero eficaz en las áreas. Bernardo Silva abrió el marcador al final de la primera parte, aprovechando un rechace de un disparo de Güler. El propio Güler amplió la ventaja poco después del descanso. Mbappé marcó el tercero en el minuto ochenta y cuatro, y un minuto más tarde descontó Gomis para el Leipzig. Yan Diomande, que antes jugó en el Leipzig, cerró el marcador y no celebró su gol por respeto. Courtois hizo dos paradas decisivas en la primera parte. Vinicius, que volvía tras una sanción, fue silbado y sustituido en el minuto setenta. El domingo, el Madrid visita al Barcelona en el Clásico.",
+     "url": "https://www.elespanol.com/deportes/futbol/20261021/real-madrid-mantiene-pleno-champions-golear-bernabeu-leipzig-llega-confianza-clasico/1003744430291_0.html"
     }
    ]
   },
@@ -81,27 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El Constitucional rechaza el recurso sobre la suspensión de la ley de nietos",
-     "resumen": "El Tribunal Constitucional ha rechazado el recurso del Defensor del Pueblo contra la suspensión que el Supremo decretó sobre la ley de nietos, la norma que da la nacionalidad a descendientes de exiliados. Según El Debate, que dice haberlo adelantado, la mayoría del tribunal lo ve prematuro, porque el asunto todavía está abierto y los afectados no han sido oídos. Entrar en el fondo sería, a juicio de esa mayoría, conceder un amparo anticipado por la puerta de atrás. El periódico cuenta diez votos a favor de rechazarlo, entre ellos el del presidente, Cándido Conde-Pumpido, y dos votos en contra, los de Ramón Sáez y Juan Carlos Campo. El Debate sostiene que el Gobierno se queda sin vías legales para mantener el aumento de votantes con el que contaba en las elecciones del 29 de noviembre. La decisión se notificará formalmente más adelante, mediante un auto motivado, porque hay votos discrepantes.",
+     "titular": "El Constitucional inadmite el recurso del Defensor del Pueblo sobre el censo",
+     "resumen": "Según El Debate, el Tribunal Constitucional ha inadmitido el recurso del Defensor del Pueblo, Ángel Gabilondo. Pretendía deshacer la suspensión que decidió la Sala Tercera del Supremo sobre los efectos electorales de personas nacionalizadas con la ley de nietos. Una mayoría de diez magistrados, con Cándido Conde-Pumpido al frente, apoyó al ponente, Enrique Arnaldo, que lo veía prematuro porque la causa sigue en manos del Supremo. Ramón Sáez y Juan Carlos Campo anunciaron votos en contra. El Supremo mantiene así sus medidas y la suspensión de los censos afectados. El medio añade que el Gobierno pierde vías legales para aumentar el número de votantes en las elecciones del veintinueve de noviembre. Señala también que su línea editorial es crítica con el Gobierno. La decisión se notificará con un auto razonado.",
      "url": "https://www.eldebate.com/espana/20261021/mayoria-tc-rechaza-prematuro-recurso-defensor-contra-suspension-censo-ley-nietos_472012.html"
     },
     {
      "id": "ed2",
-     "titular": "Un testigo dice que las joyas de Zapatero fueron una comisión por el AVE a Arabia Saudí",
-     "resumen": "El diario El Debate publica que un testigo ha declarado ante la Fiscalía Anticorrupción que las joyas halladas en el despacho del expresidente José Luis Rodríguez Zapatero no fueron un regalo. Según ese testigo, serían una comisión ilegal disfrazada de pago en especie por gestionar la llegada del AVE a Arabia Saudí. El periódico afirma que el testigo lo respalda con pruebas, pero no las detalla ni lo identifica. Otra información del diario, del 20 de octubre, añade que el testigo sitúa la entrega de las joyas en dos mil diecinueve y no en dos mil siete, como sostiene Zapatero, que alega que los hechos han prescrito. El texto de hoy lo firma el jefe de Investigación de El Debate, Alejandro Entrambasaguas. No recoge declaraciones de Zapatero, de la Fiscalía ni de la Policía, y las afirmaciones no están verificadas de forma independiente.",
-     "url": "https://www.eldebate.com/espana/20261021/entrambasaguas-explica-declaracion-anticorrupcion-sostiene-joyas-zapatero-fueron-mordida-ave_471855.html"
+     "titular": "La Junta Electoral vigila a Sánchez y a los miembros del Gobierno",
+     "resumen": "Según El Debate, la Junta Electoral Central abrió un expediente a Pedro Sánchez poco después de anunciarse el adelanto electoral. El motivo fue su rueda de prensa en Moncloa para explicar dos decretos de vivienda. El PP lo había denunciado. El medio recuerda que Sánchez acumula cinco sanciones firmes desde dos mil diecinueve por incumplir la neutralidad institucional, con multas que superan los seis mil seiscientos euros. Desde entonces, los ministros se muestran más cautelosos. Aun así, el Consejo de Ministros aprobó mejoras de pensiones, ciento ochenta millones para comunidades con zonas tensionadas y cuarenta y cinco millones para residencias universitarias. Fuentes del Gobierno aseguran que solo actúan con informes favorables de la Abogacía del Estado y del Consejo de Estado.",
+     "url": "https://www.eldebate.com/espana/20261021/junta-electoral-central-amansa-miembros-gobierno_471916.html"
     },
     {
      "id": "ed3",
-     "titular": "Leire Díez niega estar vinculada al plan contra la jueza Biedma",
-     "resumen": "Leire Díez, a quien El Debate llama la fontanera del PSOE, ha negado en televisión cualquier relación con un plan para acabar con la jueza Biedma, de Badajoz. Lo dijo el martes 20 de octubre en el programa Código Diez. Díez acusó a la UCO, la unidad de la Guardia Civil que investiga el caso, de incluir información falsa en su informe. Justificó sus reuniones con un exjuez imputado como trabajo periodístico, porque los periodistas se reúnen con sus fuentes. Sobre una anotación de su agenda que menciona a una jueza de Badajoz, dijo que no se refiere a Biedma y que venía de una charla con una periodista. Añadió que, si los hechos son ciertos, condena las amenazas que ha denunciado la jueza. Después abandonó el programa alegando dolor de garganta. El periódico recoge sobre todo la versión de Díez y no la contrasta con el informe de la UCO.",
-     "url": "https://www.eldebate.com/espana/20261021/leire-diez-niega-vinculacion-plan-acabar-biedma-acusa-uco-incluir-informacion-falsa_471952.html"
-    },
-    {
-     "id": "ed4",
-     "titular": "La alcaldesa de Parauta, en Málaga, deja el PSOE",
-     "resumen": "Katrin Ortega, alcaldesa de Parauta, un pequeño pueblo de la Serranía de Ronda, en Málaga, ha dejado el PSOE. Según El Debate, lo confirmó en la cadena Cope y explicó que no se siente identificada con las siglas, en referencia a lo que llama la deriva del sanchismo. En las elecciones municipales de dos mil veintitrés logró el ochenta y ocho por ciento de los votos y los siete concejales, sin oposición. Dos concejales de su equipo, Juan Jesús Sánchez y Adelaida Becerra, también han pedido la baja. Pasan a un nuevo partido local, llamado Unidos Parauta Avanza. El periódico señala que la salida llega pocas semanas antes de las elecciones generales del 29 de noviembre y que en el PSOE hay temor a que se produzcan más bajas. Fuentes socialistas citadas por el diario dicen que la relación con la dirección provincial se había deteriorado, algo que Ortega no ha confirmado.",
-     "url": "https://www.eldebate.com/espana/andalucia/malaga/20261021/katrin-ortega-alcaldesa-votada-malaga-deja-psoe-no-me-siento-identificada-siglas_471760.html"
+     "titular": "Acusan a Leire Díez de quitar días libres a trabajadores de Correos",
+     "resumen": "El Debate publica que Leire Díez, conocida como la fontanera del PSOE, quitó un día de descanso al personal de Correos cuando dirigía un área de la empresa y le obligó a trabajar los domingos. Según fuentes internas citadas por el medio, había amenazas para evitar protestas. Esas acusaciones no se han verificado por otras vías. Díez entró en Correos en noviembre de dos mil veintiuno, por decisión del entonces presidente, Juan Manuel Serrano. Un informe de la UCO, enviado al juez Santiago Pedraz, describe su contratación como estratégica dentro de presuntas irregularidades en contratos de la SEPI. Correos asegura que ella nunca fue responsable del voto por correo en las elecciones de dos mil veintitrés. El artículo no recoge una respuesta de Díez.",
+     "url": "https://www.eldebate.com/espana/20261021/leire-diez-quito-personal-correos-dia-libranza-obligaba-trabajar-domingos-bajo-amenazas_471700.html"
     }
    ]
   },
@@ -111,27 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "El PP suprimirá el impuesto a la banca si gobierna",
-     "resumen": "El Partido Popular suprimirá el impuesto a la banca si gobierna tras las elecciones del 29 de noviembre. Lo asegura The Objective, que cita fuentes internas del partido sin dar nombres. Según el diario, el PP comparte la tesis del Banco Central Europeo de que el impuesto lo acaban pagando los clientes, con menos crédito, peores condiciones en los préstamos y menos remuneración del ahorro. El tributo se creó en dos mil veintidós y el Gobierno lo hizo permanente en dos mil veinticuatro. Ha recaudado más de cuatro mil millones de euros, unos mil cuatrocientos millones al año, y CaixaBank es la entidad que más paga. El sector propone sustituirlo en parte por un fondo de ayuda a hipotecados vulnerables, idea que el PP ve interesante, aunque su posición es decir adiós al impuesto. Los bancos han recurrido el tributo ante la Audiencia Nacional, sin medidas cautelares. El artículo no recoge respuesta del PSOE ni del Gobierno.",
-     "url": "https://theobjective.com/espana/politica/2026-10-21/pp-suprimira-impuesto-a-la-banca-paga-cliente/"
+     "titular": "La UDEF halla pagos de Caracas al entorno de Zapatero antes de las elecciones venezolanas",
+     "resumen": "Según The Objective, la UDEF detectó pagos desde Venezuela al entorno del expresidente Zapatero, relacionados con Julio Martínez, presunto testaferro suyo. Un abono de ciento ochenta y un mil euros a la sociedad Análisis Relevante fue atribuido por Martínez a Turboven, una empresa venezolana controlada por el Gobierno de Maduro. Él lo describió como asesoramiento. El pago se hizo el veinticuatro de abril de dos mil veinticuatro, cuando Zapatero ya había sido invitado como observador a las elecciones venezolanas de julio. Ante la Audiencia Nacional, el lunes diecinueve, Martínez no supo explicar qué trabajo hizo, y la fiscal preguntó por qué una empresa venezolana acudiría a un intermediario español. Zapatero defendió que su discreción protegía su capacidad de mediación.",
+     "url": "https://theobjective.com/espana/2026-10-22/udef-pagos-caracas-zapatero-pucherazo-maduro/"
     },
     {
      "id": "to2",
-     "titular": "Detenido por quemar el Ayuntamiento de Limoges, en Francia",
-     "resumen": "La policía francesa ha detenido al principal sospechoso de incendiar el Ayuntamiento de Limoges, en Francia. Según The Objective, el fuego se produjo el sábado 17 de octubre durante protestas contra el encarecimiento de la vida, y provocó el derrumbe del campanario de un edificio inaugurado en mil ochocientos ochenta y tres. El martes 20 de octubre fue arrestado Hodei Ciarra Docampo, de treinta y cuatro años, descrito por la policía como activista de ultraizquierda. El periódico titula que tiene vínculos con la banda terrorista ETA, pero el texto solo apunta a lazos familiares: su padre es un antiguo independentista vasco condenado en abril a tres años de cárcel por incendios, y su tío fue detenido en mil novecientos setenta y nueve por presunta pertenencia a ETA. No se ha probado una relación directa del detenido con la banda. La Fiscalía de Limoges investiga los hechos y también participa la subdirección antiterrorista francesa.",
-     "url": "https://theobjective.com/internacional/2026-10-21/detenido-ayuntamiento-limoges-eta/"
+     "titular": "Feijóo promete leyes contra la okupación y un millón de viviendas",
+     "resumen": "Según The Objective, Alberto Núñez Feijóo presentó en Sevilla, junto a Juanma Moreno, su plan de vivienda. Prometió que, en los primeros cien días de gobierno, el Consejo de Ministros aprobaría una Ley del Suelo, una ley contra la okupación y una reforma de la propiedad horizontal. Dijo que los okupas estarán fuera en cuarenta y ocho horas. Planteó construir un millón de viviendas en la próxima legislatura y dar deducciones fiscales a quienes prorroguen alquileres hasta tres años con subidas inferiores al IPC. Para los jóvenes anunció la mayor ayuda a la compra de la historia. Acusó a Sánchez de usar el drama de una mujer desahuciada, y criticó la dimisión de la portavoz socialista Montse Mínguez por las propiedades de su pareja.",
+     "url": "https://theobjective.com/espana/politica/2026-10-21/feijoo-okupas-ley-del-suelo/"
     },
     {
      "id": "to3",
-     "titular": "La Fiscalía investiga un chat de unos trescientos policías con datos privados",
-     "resumen": "La Fiscalía de Vigo investiga un grupo de Telegram en el que cerca de trescientos policías habrían compartido datos privados de cientos de personas. Según The Objective, el chat se llamaría Alerta Policial Pontevedra y reuniría a agentes de la Policía Nacional, la Guardia Civil y policías locales de Vigo y Pontevedra. Habría funcionado desde noviembre de dos mil veinte hasta este año. Se habrían compartido antecedentes penales, datos de vehículos y fotografías de detenidos, obtenidos de bases de datos policiales de acceso restringido. Todo parte de la denuncia de un inspector de la Policía Nacional de Vigo, que dice haber avisado a sus superiores en dos mil veinticuatro sin que se actuara. La denuncia señala como administrador al jefe de la Policía Local de O Porriño. La Fiscalía investiga posibles delitos de revelación de secretos. Las acusaciones proceden de la denuncia y no están probadas.",
-     "url": "https://theobjective.com/espana/2026-10-21/fiscalia-investiga-chat-300-policias-datos-privados-cientos-personas/"
-    },
-    {
-     "id": "to4",
-     "titular": "Estados Unidos impide a Ada Colau viajar a Puerto Rico",
-     "resumen": "El Gobierno de Estados Unidos ha impedido a la exalcaldesa de Barcelona Ada Colau viajar a Puerto Rico. Según The Objective, que recoge su versión, le rechazaron la autorización electrónica de viaje cuando iba a participar en un encuentro sobre municipalismo. Colau es hoy candidata del Frente Amplio a las elecciones del 29 de noviembre. Cuenta que en la embajada estadounidense en España le preguntaron por sus viajes a Israel y por su participación, en octubre de dos mil veinticinco, en la flotilla que intentó llevar ayuda a Gaza. La embajada alegó, según ella, que tenía intención de emigrar a Estados Unidos, algo que niega. Colau habla de una decisión arbitraria, autoritaria y antidemocrática, y dice que ya había visitado la isla hace dos años sin problemas. El texto no incluye ninguna declaración directa del Gobierno estadounidense.",
-     "url": "https://theobjective.com/espana/politica/2026-10-21/trump-veta-colau-autoritaria-antidemocratica/"
+     "titular": "Feijóo confirma conversaciones con Vox para el Senado",
+     "resumen": "Según The Objective, Alberto Núñez Feijóo confirmó el martes, en la COPE, que el PP negocia con Vox para evitar que la izquierda controle el Senado tras las elecciones del veintinueve de noviembre. Dijo que sería un error facilitar ese control al sanchismo y que las conversaciones seguirán con discreción. El PP estudia ceder a Vox senadores de designación autonómica, sin presentarse juntos. Por su parte, PSOE y Frente Amplio anunciaron una coalición para el Senado en casi todas las provincias, salvo Cataluña y Canarias. Las candidaturas deben registrarse antes del veintiséis de octubre. El Senado participará en la elección de cuatro magistrados del Constitucional y diez vocales del Poder Judicial. El artículo no recoge respuestas de PSOE, Frente Amplio ni Vox.",
+     "url": "https://theobjective.com/espana/politica/2026-10-20/feijoo-negociaciones-vox-senado-shanchismo/"
     }
    ]
   },
@@ -141,26 +116,20 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "La segunda tasación de las joyas de Zapatero será algo inferior a la primera",
-     "resumen": "Según OKDIARIO, la joyería Yanes ultima la segunda tasación de las joyas del expresidente José Luis Rodríguez Zapatero y fijará un valor algo inferior al millón trescientos mil euros calculado por la casa Ansorena. El diario añade que las piezas no tienen numeración, así que el perito no puede precisar el año exacto en que se montaron, y habla de una horquilla de varios años. Eso importa porque Zapatero dice que las recibió de un rey saudí en dos mil siete, y si fue hace más de diez años, algunos delitos podrían haber prescrito. Zapatero ha pedido que el juez José Luis Calama solicite ayuda judicial a Arabia Saudí, y el juez ha consultado a la Fiscalía Anticorrupción. Fuentes judiciales anónimas dicen que Arabia Saudí rara vez colabora y que la petición carece de sentido. Todo procede de fuentes sin identificar.",
-     "url": "https://okdiario.com/espana/yanes-revelara-que-joyas-zapatero-no-tienen-numeracion-situara-valor-poco-debajo-13-millones-ansorena-20592410"
+     "titular": "Ceuta recurrirá al Supremo la inactividad del Estado tras la entrada masiva de julio",
+     "resumen": "Según OKDiario, el Gobierno de Ceuta presentará un recurso ante el Tribunal Supremo contra la inactividad del Estado tras la entrada masiva de inmigrantes de los días treinta y treinta y uno de julio. La decisión se tomó el martes. La ciudad sostiene que el Estado no puso los medios para tramitar a tiempo expulsiones, devoluciones y casos de protección internacional. Su presidente, Juan Jesús Vivas, dijo tener plena confianza en la justicia y afirmó que en tres meses no ha habido ni una sola devolución. Añadió que el Gobierno tenía información previa y no actuó. La ministra Elma Saiz defendió el trabajo constante en Ceuta y la colaboración entre administraciones. El artículo se apoya sobre todo en la parte que recurre.",
+     "url": "https://okdiario.com/espana/ceuta-planta-cara-gobierno-sanchez-presentara-recurso-supremo-inactividad-20594631"
     },
     {
      "id": "ok2",
-     "titular": "Iván Redondo defiende la compra de su piso a la Seguridad Social",
-     "resumen": "Iván Redondo, exjefe de gabinete de Pedro Sánchez, defendió en televisión la compra de un piso de la Seguridad Social en la calle Diego de León, en Madrid. Según OKDIARIO, que lleva días investigando el caso, las cifras de subastas que usó para justificarse no son correctas. Redondo calificó de bulo la información publicada y dijo que para él la vivienda no es un bien de mercado, sino su hogar. El diario sostiene que presentó como precio final de un ático del mismo edificio los novecientos veinte mil euros de salida, cuando se adjudicó por un millón quinientos diez mil. Redondo pagó un millón ciento veinte mil euros, según la tasación de la Seguridad Social, y firmó una hipoteca de setecientos sesenta y nueve mil. Vivía allí de alquiler desde dos mil once. El artículo solo recoge la versión de Redondo y la del propio medio.",
-     "url": "https://okdiario.com/espana/redondo-justifica-piso-chollo-escudandose-precios-salida-subastas-ese-edificio-hace-12-anos-20593385"
+     "titular": "La segunda tasación de las joyas de Zapatero será algo inferior a la primera",
+     "resumen": "Según OKDiario, la segunda tasación de las joyas de Zapatero, encargada por el juez a la joyería Yanes, dará un valor algo inferior al millón trescientos mil euros que fijó Ansorena. El informe está en su fase final. Según fuentes citadas por el medio, los peritos no podrán precisar el año en que se montaron las piezas, porque no tienen numeración, y solo podrán dar una horquilla de varios años. Esto importa porque el delito fiscal podría haber prescrito si las recibió hace más de diez años. Zapatero sostiene que un rey saudí se las regaló en dos mil siete, pero no ha aportado pruebas. Ha pedido al juez una comisión rogatoria a Arabia Saudí, y algunas fuentes judiciales la ven poco útil.",
+     "url": "https://okdiario.com/espana/yanes-revelara-que-joyas-zapatero-no-tienen-numeracion-situara-valor-poco-debajo-13-millones-ansorena-20592410"
     },
     {
      "id": "ok3",
-     "titular": "El Supremo aplica la amnistía total al proceso catalán y reprocha al Constitucional que invade sus funciones",
-     "resumen": "El Tribunal Supremo ha aplicado la amnistía total a los dirigentes independentistas condenados por el proceso catalán, pero ha reprochado al Tribunal Constitucional que invade sus funciones. Según OKDIARIO, el auto se dictó el martes 20 de octubre por la Sala de lo Penal, con el magistrado Manuel Marchena como ponente. Afecta a Oriol Junqueras, Dolors Bassa, Jordi Turull y Raül Romeva, condenados en dos mil diecinueve por malversación. El auto sigue lo ordenado por el Constitucional el 6 de octubre, pero considera prescindibles muchos de sus argumentos y critica su innecesaria grandilocuencia. Archiva la ejecución de la condena y ordena borrar los antecedentes penales, lo que beneficia también a otros condenados. El diario añade que Carles Puigdemont puede volver a España sin riesgo de detención inmediata, después de que el juez Pablo Llarena levantara el lunes las órdenes de busca y captura. El artículo no recoge reacciones de partidos.",
-     "url": "https://okdiario.com/espana/supremo-acusa-constitucional-invadir-sus-funciones-auto-del-cerrojazo-judicial-proces-amnistia-total-20593445"
-    },
-    {
-     "id": "ok4",
      "titular": "Barcelona corta la luz a los acampados de la plaza de Cataluña",
-     "resumen": "El Ayuntamiento de Barcelona, que gobierna el socialista Jaume Collboni, ha cortado la luz a la acampada por el derecho a la vivienda instalada en la plaza de Cataluña. Según OKDIARIO, la medida se tomó el martes 20 de octubre, cuando la protesta llevaba unas tres semanas, con más de seiscientas tiendas de campaña. El Ayuntamiento dice que los Bomberos alertaron de un riesgo inminente, porque los acampados estaban enganchados, de forma precaria y sin garantías, a la red eléctrica de la plaza. Los acampados lo niegan. Su portavoz, Kiara Monrroy, asegura que nadie les informó de ningún riesgo y que se busca forzar el fin del campamento. Otro portavoz, León, cuenta que la plaza se quedó sin iluminación. Ese mismo día, dos trabajadores municipales pidieron entrar para arreglar una cosa del agua, y los acampados se lo impidieron por miedo a que también les cortaran el agua.",
+     "resumen": "Según OKDiario, el Ayuntamiento de Barcelona, gobernado por el socialista Jaume Collboni, cortó la luz a la acampada de la plaza de Cataluña, una protesta por el derecho a la vivienda. La acampada empezó el veintinueve de septiembre y reúne más de seiscientas tiendas. El Ayuntamiento alega un informe de los Bomberos que advertía de un riesgo inminente, porque los acampados estaban enganchados a la red de forma ilegal y precaria. Los acampados lo niegan. Su portavoz, Kiara Monrroy, dice que nunca les avisaron de ese riesgo y que se busca forzar el fin del campamento. Tras reunirse con el consistorio no hubo acuerdo. También se quedaron sin alumbrado, porque se retiraron las farolas.",
      "url": "https://okdiario.com/espana/ayuntamiento-barcelona-del-socialista-collboni-corta-luz-acampados-plaza-cataluna-20594356"
     }
    ]
@@ -171,27 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Un juzgado abre causa contra la autora de la instrucción de la ley de nietos",
-     "resumen": "Un juzgado de Madrid ha abierto una causa contra Sofía Puente, la funcionaria que firmó la instrucción del Gobierno sobre la ley de nietos. Según elDiario.es, el Juzgado de Instrucción número treinta y cinco admitió la querella presentada por la asociación HazteOír. La jueza, Inmaculada Lova, escribe que los hechos presentan características que hacen presumir un posible delito de prevaricación administrativa. Puente es hoy secretaria general de Innovación y Calidad del Servicio Público de Justicia. La jueza sigue adelante pese a que la Fiscalía pidió rechazar la querella, por considerar que había cosa juzgada: en dos mil veinticuatro otro juzgado ya había archivado una querella parecida, y la Audiencia Provincial lo confirmó en dos mil veinticinco. HazteOír podrá personarse como acusación, con una fianza de mil euros. El artículo no recoge declaraciones de Puente ni del Ministerio de Justicia.",
-     "url": "https://www.eldiario.es/politica/juzgado-abre-causa-creadora-instruccion-ley-nietos-denuncia-hazteoir_1_13602700.html"
-    },
-    {
-     "id": "edi2",
      "titular": "La Fiscalía ve muy probable que la pareja de Ayuso pagara un favor a un directivo de Quirón",
-     "resumen": "La Fiscalía ve muy probable que Alberto González Amador, pareja de la presidenta madrileña Isabel Díaz Ayuso, comprara una empresa por unos quinientos mil euros para pagar un favor a un directivo de Quirón. Según elDiario.es, que accedió a un escrito de la fiscal, el favor sería de Fernando Camino, presidente de Quirón Prevención, que habría intermediado en una comisión de unos dos millones de euros por la venta de mascarillas durante la pandemia. La empresa comprada, a Gloria Carrasco, esposa de Camino, carecía de actividad, según la Fiscalía. Después aumentó la facturación de las empresas de González Amador a Quirón Prevención. El martes 20 de octubre la Audiencia Provincial autorizó a la UCO, la unidad de la Guardia Civil que investiga, a acceder a todos los datos financieros de la pareja. Camino está citado a declarar como investigado el 3 de diciembre. Son tesis de la Fiscalía, no conclusiones del tribunal.",
+     "resumen": "Según elDiario.es, la Fiscalía sostiene en un escrito al juzgado que es muy alta la probabilidad de que Alberto González Amador, pareja de Isabel Díaz Ayuso, comprara una empresa para devolver un favor. Pagó unos quinientos mil euros por una sociedad sin actividad que era de la mujer de Fernando Camino, presidente de Quirón Prevención. El favor habría sido la mediación de Camino en un gran negocio de mascarillas, que dejó a González Amador una comisión cercana a dos millones. El juez Antonio Viejo ha citado a Camino como imputado el tres de diciembre. Se trata de la posición de la Fiscalía, no de una resolución judicial, y el artículo no recoge la respuesta de la defensa.",
      "url": "https://www.eldiario.es/politica/fiscalia-ve-probable-pareja-ayuso-camuflara-pago-favor-directivo-quiron_1_13602945.html"
     },
     {
-     "id": "edi3",
-     "titular": "Milei llama impresentable dictador a Sánchez en su primer acto en España",
-     "resumen": "El presidente argentino, Javier Milei, ha llamado impresentable dictador a Pedro Sánchez en su primer acto en España. Según elDiario.es, lo dijo el miércoles 21 de octubre en un desayuno del Foro Nueva Economía. Milei dijo que los españoles deben sacar a los socialistas a patadas y que los socialistas fomentan la invasión que se ve en Ceuta. Afirmó, sin aportar pruebas, que en julio entraron más de ochenta mil personas en la ciudad. Se declaró amigo de Isabel Díaz Ayuso y de Santiago Abascal. Es su séptima visita a España y nunca se ha reunido con Sánchez ni con ministros. En mayo de dos mil veinticuatro llamó corrupta a la esposa de Sánchez, lo que provocó que España retirara a a su embajador en Buenos Aires. El PSOE colgó una pancarta de bienvenida en su sede de la calle Ferraz, y la universidad Rey Juan Carlos lo recibió entre protestas.",
-     "url": "https://www.eldiario.es/politica/milei-llama-impresentable-dictador-pedro-sanchez-primer-acto-espana_1_13602219.html"
+     "id": "edi2",
+     "titular": "Choque entre el Supremo y el Constitucional por la amnistía",
+     "resumen": "Según elDiario.es, el Tribunal Supremo y el Tribunal Constitucional se han enfrentado públicamente por la amnistía a la malversación en el proceso catalán. El Constitucional, con siete magistrados progresistas a favor y cinco conservadores en contra, dictó una sentencia sobre la exconsellera Dolors Bassa que ordena aplicar la amnistía. Después, la Sala Penal del Supremo, con Manuel Marchena como ponente, la aplicó en un auto con una docena de reproches al Constitucional. Habla de injerencia y de grandilocuencia, y dice que actúa como instancia que revisa al Supremo. Antes, el Constitucional había acusado al Supremo de interpretar la ley de forma expansiva. La magistrada Ana Ferrer y el juez Pablo Llarena también criticaron al Constitucional.",
+     "url": "https://www.eldiario.es/politica/navajazos-judiciales-supremo-constitucional-amnistia-injerencias-grandilocuencia-sobrantes-epitetos_1_13600129.html"
     },
     {
-     "id": "edi4",
-     "titular": "Estados Unidos deniega a Ada Colau la entrada a Puerto Rico",
-     "resumen": "El Gobierno de Estados Unidos ha negado a Ada Colau, exalcaldesa de Barcelona y candidata del Frente Amplio, el permiso para entrar en Puerto Rico. Según elDiario.es, iba a participar en un acto sobre municipalismo, donde debía conversar con el alcalde de Nueva York, Zohran Mamdani, que acabó delegando en alguien de su equipo. Su solicitud de autorización de viaje fue rechazada, y fue la única de su equipo. En la embajada de Estados Unidos en España le preguntaron si había sido detenida y por sus viajes a Israel. La decisión definitiva llegó el domingo anterior. La embajada alegó, según Colau, que tenía intención de inmigrar. Ella dice que son motivos políticos y lo califica de gravísimo. Participó en octubre de dos mil veinticinco en la flotilla hacia Gaza, interceptada por Israel. El texto no recoge ninguna declaración pública de las autoridades estadounidenses.",
-     "url": "https://www.eldiario.es/politica/gobierno-trump-deniega-ada-colau-entrada-puerto-rico-acto-sido-motivos-politicos_1_13597972.html"
+     "id": "edi3",
+     "titular": "Urtasun recurrirá el veto de Vox a películas en las ayudas al cine de Castilla y León",
+     "resumen": "Según elDiario.es, el ministro de Cultura, Ernest Urtasun, anunció que recurrirá ante los tribunales una cláusula de las ayudas al cine de Castilla y León. La Consejería de Cultura, que dirige Vox dentro del gobierno autonómico con el PP, excluye películas y series que impliquen adoctrinamiento ideológico, propaganda partidista o apoyo a opciones políticas concretas. El texto no explica con qué criterios se valoraría eso. Urtasun lo anunció el miércoles en Barcelona. Calificó las informaciones de gravísimas y dijo que no tolerará que una administración condicione ideológicamente la creación mediante ayudas. Lo resumió como una forma de censura intolerable. La orden deja claro que quienes reciban ayudas deben actuar con respeto a la objetividad, la neutralidad institucional y el pluralismo. El ministro sostiene que esta medida es un ataque a la libertad de expresión. Según elDiario.es, el asunto se suma al debate sobre la influencia de Vox en la política cultural de Castilla y León.",
+     "url": "https://www.eldiario.es/cultura/cine/urtasun-recurrira-tribunales-veto-vox-cine-forma-censura-intolerable_1_13603277.html"
     }
    ]
   }
