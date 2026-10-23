@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-22",
- "fechaTexto": "jueves 22 de octubre",
- "actualizado": "2026-10-22T16:03:25+02:00",
+ "fecha": "2026-10-23",
+ "fechaTexto": "viernes 23 de octubre",
+ "actualizado": "2026-10-23T07:03:24+02:00",
  "portada": [
   "ee1",
-  "ed4",
-  "ld4",
-  "ld5",
-  "edi4",
+  "ed1",
   "ee2",
-  "ld1",
-  "edi1",
-  "to2"
+  "edi2",
+  "ee3",
+  "ok2",
+  "ld2",
+  "to3",
+  "ld1"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld4",
-     "titular": "El Supremo obliga a UGT de Andalucía a devolver más de dieciocho millones",
-     "resumen": "El Tribunal Supremo ha dejado firme que la UGT de Andalucía debe devolver a la Junta dieciocho millones trescientos mil euros. De esa cantidad, trece millones cien mil son el dinero concedido y más de cinco millones corresponden a intereses de demora. Según Libertad Digital, la subvención se dio a comienzos de los años dos mil para cursos de formación para el empleo. En dos mil quince la Junta vio irregularidades y reclamó el dinero. El sindicato recurrió y el Tribunal Superior andaluz le dio la razón solo en parte, en dos mil veintitrés. Después llegó al Supremo, que ahora rechaza su recurso. La discusión giraba en torno a los pluses que el sindicato pagó a los formadores por encima del convenio. El Supremo recuerda que esas mejoras voluntarias deben salir de fondos propios y no de la subvención. La consejera de Hacienda andaluza, Carolina España, afirmó que el sindicato tendrá que encontrar la manera de pagar.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-10-22/condena-en-firme-a-ugt-el-supremo-le-obliga-a-devolver-18-3-millones-a-la-junta-de-andalucia-7479261/"
-    },
-    {
-     "id": "ld5",
-     "titular": "Según Libre Mercado, el Gobierno quiere que los caseros paguen más impuestos si suben el alquiler",
-     "resumen": "El Gobierno plantea reducir las ventajas fiscales de los propietarios que alquilan pisos, según el diario Libre Mercado, de Libertad Digital. Hoy, en los contratos nuevos, quien mantiene la renta puede restar la mitad del beneficio en la declaración de la renta. El plan fija una rebaja menor a medida que el casero sube el precio, hasta quedarse en quince por ciento si el aumento es grande. El Gobierno lo presenta como un incentivo para que los propietarios bajen los alquileres. El medio calcula, con datos de asesores fiscales, el caso de un casero con sueldo medio que alquila un piso por mil euros al mes. Si lo sube a mil doscientos cincuenta, ganaría tres mil euros más al año, pero pagaría más de mil seiscientos de impuestos adicionales. El periódico critica la medida y la califica de subida de impuestos por la puerta de atrás. El texto no recoge respuesta del Gobierno.",
+     "id": "ld1",
+     "titular": "El Gobierno subiría el IRPF a los caseros que suban el alquiler",
+     "resumen": "Según Libertad Digital, el Gobierno prepara un cambio en el impuesto sobre la renta que afectaría a quienes alquilan una vivienda. No tocaría los tipos, sino la rebaja que los propietarios aplican a sus ingresos por alquiler. Hoy esa rebaja es del cincuenta por ciento. Si el casero mantiene la renta, la conservaría. Pero si la sube, la rebaja iría bajando por tramos, hasta quedarse en un quince por ciento cuando el aumento supere el veinte por ciento. El Ejecutivo lo presenta como un incentivo para abaratar los alquileres. El periódico cita simulaciones de un colectivo de asesores fiscales. Con un sueldo medio y un alquiler que pasa de mil a mil doscientos cincuenta euros al mes, Hacienda se llevaría más de la mitad del aumento. Es una crítica del propio medio, y el artículo no recoge la respuesta del Gobierno.",
      "url": "https://www.libertaddigital.com/libremercado/2026-10-22/sanchez-planea-subir-el-irpf-por-la-puerta-de-atras-en-mas-de-1-600-euros-para-caseros-que-cobren-el-salario-medio-7480076/"
     },
     {
-     "id": "ld1",
-     "titular": "El Supremo aplica la amnistía a Junqueras y otros y critica al Constitucional",
-     "resumen": "El magistrado Manuel Marchena firmó un auto del Tribunal Supremo que aplica la amnistía a Oriol Junqueras, Dolors Bassa, Jordi Turull y Raül Romeva. Lo hizo después de una sentencia previa del Tribunal Constitucional. Según Libertad Digital, el texto reprocha al presidente del Constitucional, Cándido Conde-Pumpido, sus descalificaciones contra el Supremo. También habla de una drástica contradicción con la jurisdicción ordinaria, porque el Constitucional acaba revisando cualquier interpretación de las leyes. El medio cuenta, citando fuentes anónimas del propio tribunal, que el auto llegó a los magistrados en pleno debate del martes y que los progresistas se mostraron muy molestos. Esas informaciones no se han podido comprobar por otras vías. Este miércoles, el Constitucional debía decidir sobre la petición del Defensor del Pueblo contra la suspensión cautelar de la ley de nietos, otro asunto que enfrenta a los dos tribunales.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-21/marchena-irrita-a-pumpido-y-al-resto-de-magistrados-izquierdistas-del-tc-en-mitad-del-pleno-con-su-auto-de-la-amnistia-7479160/"
+     "id": "ld2",
+     "titular": "El PSOE se niega a dar al juez Pedraz los pagos a abogados",
+     "resumen": "Según Libertad Digital, el PSOE no entregará al juez Santiago Pedraz, de la Audiencia Nacional, toda la documentación que este le pidió sobre pagos a abogados, despachos y consultoras entre los años dos mil veintiuno y dos mil veinticinco. El juez la reclamó el seis de octubre y, al no recibir respuesta, dio un plazo de cuarenta y ocho horas. El partido lo ha dejado pasar. Lo confirmó Rebeca Torró, secretaria de Organización, en una entrevista en la Cadena SER. Alegó el secreto profesional entre abogados y clientes, y comparó el caso con pedir a un centro de salud el historial de sus pacientes. Torró negó que el partido sepa de dinero desviado y restó valor a los informes de la Guardia Civil. El caso investiga presuntas maniobras para entorpecer causas judiciales. El texto es muy crítico con el PSOE.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-22/el-psoe-se-planta-ante-el-ultimatum-de-pedraz-y-se-niega-a-arrojar-luz-sobre-las-cloacas-7480196/"
+    },
+    {
+     "id": "ld3",
+     "titular": "Acusan al Gobierno de posible desobediencia por la Ley de Nietos",
+     "resumen": "Según Libertad Digital, el Gobierno podría incurrir en un presunto delito de desobediencia por no haber identificado ante el Tribunal Supremo a las personas nacionalizadas con la Ley de Nietos. Hace unos diez días, el Supremo mantuvo medidas cautelares que suspenden la inscripción en el censo de residentes en el extranjero y el voto de esos nacionalizados. Fuentes jurídicas citadas por el medio señalan al ministro de Exteriores, José Manuel Albares, de quien dependen los consulados. Dicen que Exteriores lleva cinco semanas sin responder y que faltan datos de unas ciento sesenta y tres mil personas. La desobediencia reiterada podría castigarse con inhabilitación de hasta tres años. La asociación Iustitia Europa avisa de que podrían votar el veintinueve de noviembre. El texto no recoge la respuesta del Gobierno y se apoya en fuentes sin nombre.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-22/el-gobierno-se-enfrenta-a-un-delito-de-desobediencia-por-no-identificar-a-los-nacionalizados-con-la-ley-de-nietos-7479768/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "El Constitucional rechaza el recurso del Defensor del Pueblo sobre la ley de nietos",
-     "resumen": "El Tribunal Constitucional ha rechazado por diez votos contra dos el recurso del Defensor del Pueblo, Ángel Gabilondo. Pedía frenar la suspensión del voto de unas ciento sesenta mil personas nacionalizadas con la llamada ley de nietos. Según El Español, el tribunal considera el recurso prematuro, porque el asunto sigue abierto en el Supremo. El ponente, Enrique Arnaldo, defendió ese criterio, y el presidente Cándido Conde-Pumpido fue decisivo. Votaron a favor de admitirlo Ramón Sáez y Juan Carlos Campo. El Supremo suspendió ese voto el diez de septiembre y lo mantuvo el doce de octubre, porque dio prioridad a la corrección del censo. Ahora el Supremo ha pedido alegaciones a los afectados y podrá confirmar, levantar o cambiar la suspensión. Las elecciones generales son el veintinueve de noviembre.",
-     "url": "https://www.elespanol.com/espana/tribunales/20261021/constitucional-rechaza-votos-recurso-defensor-pueblo-suspension-voto-nietos/1003744429017_0.html"
+     "titular": "Sánchez acepta un cara a cara con Feijóo el dieciséis de noviembre",
+     "resumen": "Según El Español, Pedro Sánchez ha aceptado un debate cara a cara con Alberto Núñez Feijóo el lunes dieciséis de noviembre en una cadena privada. El Partido Popular ya había aceptado esa fecha. El PSOE también aceptó la invitación de Televisión Española a un debate entre los cuatro principales candidatos el jueves veintiséis de noviembre. El PP rechaza ese formato público. Acusa al PSOE de querer boicotear a Atresmedia y pide que el debate a cuatro sea en esa cadena, donde Sánchez y Feijóo debatieron en dos mil veintitrés. El PSOE responde que no vetará ninguna cadena privada, pero que no admitirá vetos a la televisión pública. Recuerda que en dos mil veintitrés Sánchez fue a ambos debates y Feijóo dejó su atril vacío en el de la televisión pública. Las elecciones generales son el veintinueve de noviembre.",
+     "url": "https://www.elespanol.com/espana/politica/20261022/sanchez-acepta-cara-feijoo-noviembre-cadena-privada-pide-debate-rtve/1003744431470_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Milei llama dictador a Sánchez y pide echar a los socialistas",
-     "resumen": "El presidente argentino, Javier Milei, visitó Madrid el miércoles, en plena precampaña electoral. Según El Español, en un desayuno informativo llamó a Pedro Sánchez impresentable dictador y pidió a los españoles sacar a los socialistas a patadas en las elecciones del veintinueve de noviembre. También habló de invasión al referirse a la crisis migratoria de Ceuta. El PSOE colgó en su sede de Ferraz una lona de bienvenida con el lema Zurdos y orgullosos, y Sánchez respondió con un vídeo en el que se declara zurdo. Milei se dijo amigo de Santiago Abascal y de Isabel Díaz Ayuso, pero ninguno de los dos acudió al acto. Es su séptima visita a España como presidente. En dos mil veinticuatro, sus palabras sobre Begoña Gómez provocaron que el Gobierno retirase a su embajadora.",
-     "url": "https://www.elespanol.com/espana/politica/20261021/milei-llama-impresentable-dictador-sanchez-pide-espana-sacar-socialistas-patadas-proximo/1003744428922_0.html"
+     "titular": "Felipe González votará en blanco el veintinueve de noviembre",
+     "resumen": "Según El Español, el expresidente del Gobierno Felipe González anunció el jueves que votará en blanco en las elecciones generales. Lo dijo en un acto del Círculo Empresarial de Málaga, ante más de doscientas personas. Explicó que no se siente representado por ningún partido y que el voto en blanco expresa lo que siente. Sobre un posible pacto entre el PP y Vox, dijo que no le gusta y que le parece inevitable, pero que le resulta menos grave que las alianzas de Sánchez con los independentistas catalanes y con Bildu. Criticó la amnistía y dijo sentirse abochornado por la situación. También apoyó la propuesta de Feijóo de construir un millón de viviendas. Sobre Ceuta, habló de invasión y dijo que España debe defender su frontera. El artículo no recoge reacciones de los partidos.",
+     "url": "https://www.elespanol.com/espana/politica/20261022/felipe-gonzalez-votara-blanco-pacto-pp-vox-no-gusta-pactar-bildu-pedir-perdon-puigdemont/1003744431301_0.html"
     },
     {
      "id": "ee3",
-     "titular": "El Real Madrid golea por cuatro a uno al Leipzig en la Liga de Campeones",
-     "resumen": "El Real Madrid ganó cuatro a uno al Leipzig en el Bernabéu y suma tres victorias en la Liga de Campeones. Según El Español, fue un partido irregular, pero eficaz en las áreas. Bernardo Silva abrió el marcador al final de la primera parte, aprovechando un rechace de un disparo de Güler. El propio Güler amplió la ventaja poco después del descanso. Mbappé marcó el tercero en el minuto ochenta y cuatro, y un minuto más tarde descontó Gomis para el Leipzig. Yan Diomande, que antes jugó en el Leipzig, cerró el marcador y no celebró su gol por respeto. Courtois hizo dos paradas decisivas en la primera parte. Vinicius, que volvía tras una sanción, fue silbado y sustituido en el minuto setenta. El domingo, el Madrid visita al Barcelona en el Clásico.",
-     "url": "https://www.elespanol.com/deportes/futbol/20261021/real-madrid-mantiene-pleno-champions-golear-bernabeu-leipzig-llega-confianza-clasico/1003744430291_0.html"
+     "titular": "Un terremoto de magnitud siete sacude el Tíbet",
+     "resumen": "Según El Español, un terremoto de magnitud siete ha sacudido el Tíbet, en China, y ha dejado varios muertos y centenares de heridos. El periódico aclara que todavía no se ha confirmado el número de fallecidos. El sismo ocurrió a las cuatro y treinta y tres de la tarde, hora peninsular española, según la agencia oficial china Xinhua. El epicentro estuvo en la ciudad de Nagqu, en el condado de Baqing. También se sintió con fuerza en pueblos fronterizos de la provincia vecina de Qinghai. Las autoridades tibetanas activaron una respuesta de emergencia de nivel dos, que permite movilizar equipos de rescate, suministros y fondos, y preparar evacuaciones. La foto principal muestra tiendas de campaña en el patio de una escuela. El medio indica que la información se está actualizando y que se ampliarán los datos.",
+     "url": "https://www.elespanol.com/mundo/20261022/varios-muertos-centenares-heridos-terremoto-magnitud-sacudio-tibet/1003744431751_0.html"
     }
    ]
   },
@@ -67,22 +67,22 @@
    "nombre": "El Debate",
    "noticias": [
     {
-     "id": "ed4",
-     "titular": "El apoyo a la independencia en Cataluña baja al treinta y uno por ciento",
-     "resumen": "El apoyo a la independencia de Cataluña ha caído hasta el treinta y uno por ciento, el nivel más bajo en diez años, según El Debate. El dato procede del Informe Autogobierno dos mil veinticinco, publicado esta semana por la Generalitat. En dos mil diecisiete, año del referéndum, ese apoyo rondaba el cuarenta y ocho por ciento. Un treinta y tres por ciento prefiere mantener el modelo autonómico actual y un veintitrés por ciento quiere una España federal. Por edades, los jóvenes son los menos partidarios de la secesión, con un veinticinco por ciento. Los que tienen entre cincuenta y sesenta y cuatro años son los más favorables, con un treinta y cuatro por ciento. Entre los votantes de partidos independentistas, el apoyo llega al setenta y cinco por ciento en Junts, al setenta en la CUP y al cincuenta y cinco en Esquerra. El artículo no explica cómo se hizo la encuesta ni recoge reacciones de los partidos.",
-     "url": "https://www.eldebate.com/espana/cataluna/20261022/independentismo-cae-cataluna-hasta-31-segun-estudio-generalitat_472281.html"
-    },
-    {
      "id": "ed1",
-     "titular": "El Constitucional inadmite el recurso del Defensor del Pueblo sobre el censo",
-     "resumen": "Según El Debate, el Tribunal Constitucional ha inadmitido el recurso del Defensor del Pueblo, Ángel Gabilondo. Pretendía deshacer la suspensión que decidió la Sala Tercera del Supremo sobre los efectos electorales de personas nacionalizadas con la ley de nietos. Una mayoría de diez magistrados, con Cándido Conde-Pumpido al frente, apoyó al ponente, Enrique Arnaldo, que lo veía prematuro porque la causa sigue en manos del Supremo. Ramón Sáez y Juan Carlos Campo anunciaron votos en contra. El Supremo mantiene así sus medidas y la suspensión de los censos afectados. El medio añade que el Gobierno pierde vías legales para aumentar el número de votantes en las elecciones del veintinueve de noviembre. Señala también que su línea editorial es crítica con el Gobierno. La decisión se notificará con un auto razonado.",
-     "url": "https://www.eldebate.com/espana/20261021/mayoria-tc-rechaza-prematuro-recurso-defensor-contra-suspension-censo-ley-nietos_472012.html"
+     "titular": "El Constitucional rechaza el recurso del Defensor del Pueblo sobre la Ley de Nietos",
+     "resumen": "Según El Debate, el Tribunal Constitucional rechazó el miércoles, por diez votos contra dos, admitir el recurso del Defensor del Pueblo, Ángel Gabilondo, contra las medidas cautelares del Supremo sobre la Ley de Nietos. Consideró el recurso prematuro, porque el proceso en el Supremo sigue abierto. Esas medidas suspenden el voto de unos ciento sesenta y cinco mil extranjeros nacionalizados con esa norma, aunque el artículo da cifras distintas. Los magistrados Ramón Sáez y Juan Carlos Campo votaron en contra de la mayoría. El periódico recuerda que una instrucción administrativa amplió quién podía recuperar la nacionalidad sin respaldo del Parlamento. El mismo día, un juzgado de Madrid admitió una querella de Hazte Oír contra la exresponsable de Justicia Sofía Puente. El texto es muy crítico con el Gobierno, y cerca de treinta y ocho millones de españoles están llamados a votar el veintinueve de noviembre.",
+     "url": "https://www.eldebate.com/espana/20261022/constitucional-abandona-sanchez-garantiza-derecho-38-millones-espanoles-votar-censo-legal_472193.html"
     },
     {
      "id": "ed2",
-     "titular": "La Junta Electoral vigila a Sánchez y a los miembros del Gobierno",
-     "resumen": "Según El Debate, la Junta Electoral Central abrió un expediente a Pedro Sánchez poco después de anunciarse el adelanto electoral. El motivo fue su rueda de prensa en Moncloa para explicar dos decretos de vivienda. El PP lo había denunciado. El medio recuerda que Sánchez acumula cinco sanciones firmes desde dos mil diecinueve por incumplir la neutralidad institucional, con multas que superan los seis mil seiscientos euros. Desde entonces, los ministros se muestran más cautelosos. Aun así, el Consejo de Ministros aprobó mejoras de pensiones, ciento ochenta millones para comunidades con zonas tensionadas y cuarenta y cinco millones para residencias universitarias. Fuentes del Gobierno aseguran que solo actúan con informes favorables de la Abogacía del Estado y del Consejo de Estado.",
-     "url": "https://www.eldebate.com/espana/20261021/junta-electoral-central-amansa-miembros-gobierno_471916.html"
+     "titular": "Tusk y Sánchez chocan por la regularización de inmigrantes",
+     "resumen": "Según El Debate, que cita a una emisora polaca y a fuentes diplomáticas, el primer ministro de Polonia, Donald Tusk, y Pedro Sánchez tuvieron un duro cruce de palabras en el último Consejo Europeo. Discutieron a puerta cerrada por la regularización extraordinaria de cientos de miles de inmigrantes que impulsa España. Tusk dijo que ese no es el camino, porque puede atraer nuevas entradas irregulares. Sánchez defendió que la medida saca a esas personas de la economía sumergida y facilita su integración. Polonia, Italia y Dinamarca pidieron incluir en las conclusiones referencias a políticas nacionales que incentiven la inmigración irregular. España, Francia y Luxemburgo se opusieron. La cumbre no obligó a España a retirar la medida. Sí respaldó trabajar en un nuevo marco europeo para emergencias migratorias, que aún no está en vigor.",
+     "url": "https://www.eldebate.com/internacional/20261022/donald-tusk-carga-contra-pedro-sanchez-politica-migratoria-no-camino_472177.html"
+    },
+    {
+     "id": "ed3",
+     "titular": "El Papa León catorce no necesitará más tratamiento tras su operación",
+     "resumen": "Según El Debate, el Papa León catorce no necesitará tratamiento complementario tras la operación en la que se le extirpó un cáncer de pulmón. Lo comunicó la Santa Sede el miércoles por la noche. Los análisis confirman que la intervención fue suficiente. Se trataba de un adenocarcinoma localizado. El Pontífice, de setenta y un años, fue operado el trece de octubre en el hospital Gemelli de Roma, donde le quitaron el lóbulo inferior del pulmón derecho. Recibió el alta el sábado siguiente y reapareció al día siguiente en el Ángelus. Dijo que retomaría su actividad poco a poco. Ahora se reanudan las audiencias generales de los miércoles. Está previsto un viaje a Uruguay, Argentina y Perú del seis al diecisiete de noviembre. Sería la primera gira del pontificado por Latinoamérica.",
+     "url": "https://www.eldebate.com/religion/20261021/papa-leon-xiv-no-necesitara-tratamiento-extirparle-cancer-pulmon_472413.html"
     }
    ]
   },
@@ -92,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "La UDEF halla pagos de Caracas al entorno de Zapatero antes de las elecciones venezolanas",
-     "resumen": "Según The Objective, la UDEF detectó pagos desde Venezuela al entorno del expresidente Zapatero, relacionados con Julio Martínez, presunto testaferro suyo. Un abono de ciento ochenta y un mil euros a la sociedad Análisis Relevante fue atribuido por Martínez a Turboven, una empresa venezolana controlada por el Gobierno de Maduro. Él lo describió como asesoramiento. El pago se hizo el veinticuatro de abril de dos mil veinticuatro, cuando Zapatero ya había sido invitado como observador a las elecciones venezolanas de julio. Ante la Audiencia Nacional, el lunes diecinueve, Martínez no supo explicar qué trabajo hizo, y la fiscal preguntó por qué una empresa venezolana acudiría a un intermediario español. Zapatero defendió que su discreción protegía su capacidad de mediación.",
-     "url": "https://theobjective.com/espana/2026-10-22/udef-pagos-caracas-zapatero-pucherazo-maduro/"
+     "titular": "Sánchez dice en La Revuelta que no lee The Objective",
+     "resumen": "Según The Objective, Pedro Sánchez dijo en el programa La Revuelta, de Televisión Española, que no lee este periódico. Contó que se informa en las cabeceras más tradicionales y que prefiere el papel. Añadió que deja este diario a la secretaria de Estado de Comunicación, que le cuenta lo que publica. Cerró el asunto con una frase: para qué se va a amargar la vida. Es la tercera vez que se refiere al medio. Su director, Álvaro Nieto, respondió en la red social X que el periodismo consiste en amargar la vida a los políticos. En la entrevista con David Broncano, Sánchez restó importancia al supuesto espionaje a su móvil por parte de Marruecos. Dijo que se afilió al PSOE por Felipe González y que Aznar no está para dar lecciones. El periódico advierte de que es parte afectada.",
+     "url": "https://theobjective.com/espana/politica/2026-10-22/sanchez-revuelta-pulla-the-objective/"
     },
     {
      "id": "to2",
-     "titular": "Feijóo promete leyes contra la okupación y un millón de viviendas",
-     "resumen": "Según The Objective, Alberto Núñez Feijóo presentó en Sevilla, junto a Juanma Moreno, su plan de vivienda. Prometió que, en los primeros cien días de gobierno, el Consejo de Ministros aprobaría una Ley del Suelo, una ley contra la okupación y una reforma de la propiedad horizontal. Dijo que los okupas estarán fuera en cuarenta y ocho horas. Planteó construir un millón de viviendas en la próxima legislatura y dar deducciones fiscales a quienes prorroguen alquileres hasta tres años con subidas inferiores al IPC. Para los jóvenes anunció la mayor ayuda a la compra de la historia. Acusó a Sánchez de usar el drama de una mujer desahuciada, y criticó la dimisión de la portavoz socialista Montse Mínguez por las propiedades de su pareja.",
-     "url": "https://theobjective.com/espana/politica/2026-10-21/feijoo-okupas-ley-del-suelo/"
+     "titular": "Correos vuelve a controlar uno a uno los votos del extranjero",
+     "resumen": "Según The Objective, que dice haber tenido acceso a una instrucción interna, Correos ha rectificado y volverá a controlar uno por uno los envíos de voto desde el extranjero para las elecciones del veintinueve de noviembre. Desde dos mil veintitrés se certificaban bloques de votos registrando solo el primer y el último sobre. El siete de octubre, la presidencia de Correos mantuvo ese sistema, pero ahora se ha anulado. El censo de residentes en el extranjero ronda los dos millones setecientos mil inscritos. Como los programas informáticos no están adaptados, el registro individual se hará a mano, y fuentes internas temen retrasos importantes, también por la campaña de Black Friday. Las delegaciones entregarán las certificaciones a Correos entre el veinticuatro y el treinta de octubre. Correos no ha hecho declaraciones.",
+     "url": "https://theobjective.com/espana/2026-10-23/voto-exterior-correos-control-sobre-sobre/"
     },
     {
      "id": "to3",
-     "titular": "Feijóo confirma conversaciones con Vox para el Senado",
-     "resumen": "Según The Objective, Alberto Núñez Feijóo confirmó el martes, en la COPE, que el PP negocia con Vox para evitar que la izquierda controle el Senado tras las elecciones del veintinueve de noviembre. Dijo que sería un error facilitar ese control al sanchismo y que las conversaciones seguirán con discreción. El PP estudia ceder a Vox senadores de designación autonómica, sin presentarse juntos. Por su parte, PSOE y Frente Amplio anunciaron una coalición para el Senado en casi todas las provincias, salvo Cataluña y Canarias. Las candidaturas deben registrarse antes del veintiséis de octubre. El Senado participará en la elección de cuatro magistrados del Constitucional y diez vocales del Poder Judicial. El artículo no recoge respuestas de PSOE, Frente Amplio ni Vox.",
-     "url": "https://theobjective.com/espana/politica/2026-10-20/feijoo-negociaciones-vox-senado-shanchismo/"
+     "titular": "Marruecos no responde a los primeros cincuenta retornos de menores de Ceuta",
+     "resumen": "Según The Objective, Marruecos no ha contestado a los primeros cincuenta expedientes de menores no acompañados de Ceuta que estaban listos para volver con sus familias. Fuentes policiales dicen que algunos se enviaron hace un mes. La entrada masiva de migrantes fue en julio, y han pasado tres meses sin ninguna devolución. En la ciudad hay unos tres mil menores extranjeros. El Gobierno admite en privado que la mayoría se quedará en España y prevé trasladarlos a otras comunidades. El presidente de Ceuta, Juan Jesús Vivas, critica la lentitud y amenaza con acudir al Tribunal Supremo. El ministro Ángel Víctor Torres defiende que los expedientes se pueden resolver en un mes. El periódico advierte de que sus cifras son dispares y en parte salen de fuentes policiales anónimas.",
+     "url": "https://theobjective.com/espana/2026-10-22/marruecos-bloquea-regreso-menores-ceuta/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Ceuta recurrirá al Supremo la inactividad del Estado tras la entrada masiva de julio",
-     "resumen": "Según OKDiario, el Gobierno de Ceuta presentará un recurso ante el Tribunal Supremo contra la inactividad del Estado tras la entrada masiva de inmigrantes de los días treinta y treinta y uno de julio. La decisión se tomó el martes. La ciudad sostiene que el Estado no puso los medios para tramitar a tiempo expulsiones, devoluciones y casos de protección internacional. Su presidente, Juan Jesús Vivas, dijo tener plena confianza en la justicia y afirmó que en tres meses no ha habido ni una sola devolución. Añadió que el Gobierno tenía información previa y no actuó. La ministra Elma Saiz defendió el trabajo constante en Ceuta y la colaboración entre administraciones. El artículo se apoya sobre todo en la parte que recurre.",
-     "url": "https://okdiario.com/espana/ceuta-planta-cara-gobierno-sanchez-presentara-recurso-supremo-inactividad-20594631"
+     "titular": "OKDiario afirma que Maricarmen fue administradora de empresas inmobiliarias",
+     "resumen": "Según OKDiario, la mujer conocida como Maricarmen, símbolo de la lucha contra los desahucios, tuvo cargos en empresas de inversión inmobiliaria. El periódico dice haber revisado registros mercantiles y su documento de identidad. Afirma que fue consejera de la sociedad Jinur desde el uno de julio de mil novecientos noventa y cuatro, y que antes fue administradora única de Fieba. Ambas compartían domicilio en la calle Pradillo de Madrid, y Fieba acabó fusionada con Jinur. Dejó el consejo en mil novecientos noventa y cinco. Perdió un piso de Retiro en el que vivía hacía veinte años. OKDiario recuerda que se dijo que había sido funcionaria o secretaria de una farmacéutica. Asegura que ninguna de sus empresas tenía ese negocio. Sostiene que no era el mejor ejemplo para el Gobierno. No incluye respuestas del Gobierno ni de familiares.",
+     "url": "https://okdiario.com/espana/maricarmen-fue-administradora-unica-luego-consejera-empresa-dedicada-inversion-inmuebles-explotacion-alquileres-20602568"
     },
     {
      "id": "ok2",
-     "titular": "La segunda tasación de las joyas de Zapatero será algo inferior a la primera",
-     "resumen": "Según OKDiario, la segunda tasación de las joyas de Zapatero, encargada por el juez a la joyería Yanes, dará un valor algo inferior al millón trescientos mil euros que fijó Ansorena. El informe está en su fase final. Según fuentes citadas por el medio, los peritos no podrán precisar el año en que se montaron las piezas, porque no tienen numeración, y solo podrán dar una horquilla de varios años. Esto importa porque el delito fiscal podría haber prescrito si las recibió hace más de diez años. Zapatero sostiene que un rey saudí se las regaló en dos mil siete, pero no ha aportado pruebas. Ha pedido al juez una comisión rogatoria a Arabia Saudí, y algunas fuentes judiciales la ven poco útil.",
-     "url": "https://okdiario.com/espana/yanes-revelara-que-joyas-zapatero-no-tienen-numeracion-situara-valor-poco-debajo-13-millones-ansorena-20592410"
+     "titular": "El PP ofrece a Vox ceder senadores autonómicos antes de las elecciones",
+     "resumen": "Según OKDiario, que cita a fuentes del Partido Popular, el PP estaría dispuesto a que algunos de sus senadores de cupo autonómico dimitan ya, para ceder esos escaños a Vox sin esperar a las autonómicas de dos mil veintisiete. A cambio, Vox no presentaría candidatos propios al Senado en las circunscripciones más disputadas. Así se evitaría incluir candidatos de Vox en las listas del PP, una fórmula que genera dudas legales. Vox tiene ahora cinco senadores, todos por pactos autonómicos. Para formar grupo propio necesita diez. Tres escaños de Andalucía y dos de Castilla y León se lo permitirían. Las candidaturas se presentan hasta el lunes veintiséis de octubre. Feijóo dijo en la COPE que ya hay una fórmula y pidió discreción. El artículo no recoge la respuesta de Vox ni del PSOE.",
+     "url": "https://okdiario.com/espana/pp-ofrece-vox-renuncia-inmediata-senadores-del-cupo-autonomico-cederselos-sin-esperar-elecciones-2027-20601691"
     },
     {
      "id": "ok3",
-     "titular": "Barcelona corta la luz a los acampados de la plaza de Cataluña",
-     "resumen": "Según OKDiario, el Ayuntamiento de Barcelona, gobernado por el socialista Jaume Collboni, cortó la luz a la acampada de la plaza de Cataluña, una protesta por el derecho a la vivienda. La acampada empezó el veintinueve de septiembre y reúne más de seiscientas tiendas. El Ayuntamiento alega un informe de los Bomberos que advertía de un riesgo inminente, porque los acampados estaban enganchados a la red de forma ilegal y precaria. Los acampados lo niegan. Su portavoz, Kiara Monrroy, dice que nunca les avisaron de ese riesgo y que se busca forzar el fin del campamento. Tras reunirse con el consistorio no hubo acuerdo. También se quedaron sin alumbrado, porque se retiraron las farolas.",
-     "url": "https://okdiario.com/espana/ayuntamiento-barcelona-del-socialista-collboni-corta-luz-acampados-plaza-cataluna-20594356"
+     "titular": "Abascal culpa a Sánchez y a Marlaska de la violencia contra Vox",
+     "resumen": "Según OKDiario, el líder de Vox, Santiago Abascal, denunció en el programa Horizonte la violencia contra su partido tras los incidentes en sus actos de La Coruña y Avilés, el miércoles veintiuno de octubre. Culpó al presidente Pedro Sánchez y al ministro del Interior, Fernando Grande-Marlaska. Dijo que el Gobierno no toleraría algo así si lo sufriera el PSOE. Según el periódico, en La Coruña los manifestantes lanzaron piedras, sillas y otros objetos contra la Policía Nacional, y hubo daños en negocios y mobiliario. Abascal habló de una docena de policías heridos y de una campaña electoral sucia. Relacionó a los manifestantes con las milicias de Sánchez, sin aportar pruebas. La crónica no incluye la versión de la Delegación del Gobierno ni del Ministerio del Interior. Las elecciones son el veintinueve de noviembre.",
+     "url": "https://okdiario.com/espana/abascal-denuncia-horizonte-violencia-contra-vox-esto-no-lo-permitiria-sanchez-psoe-20603365"
     }
    ]
   },
@@ -139,22 +139,22 @@
    "nombre": "elDiario.es",
    "noticias": [
     {
-     "id": "edi4",
-     "titular": "Vox elige como cabeza de lista por Tarragona a un candidato que será juzgado por un delito de odio",
-     "resumen": "Vox ha designado a Jordi de la Fuente como número uno por Tarragona para las elecciones generales del veintinueve de noviembre. Según elDiario.es, es un veterano de la extrema derecha catalana, que pasó antes por otros partidos de ese espacio. Es concejal en Sant Adrià del Besòs y diputado provincial en Barcelona. El periódico recuerda que será juzgado por un ataque racista contra un centro de menores en El Masnou, en dos mil diecinueve. La Fiscalía pide para él dos años y dos meses de cárcel, una multa y cinco años de inhabilitación para trabajos educativos. Según la acusación, acudió con un megáfono y coreó gritos contra los menores. La fecha del juicio no queda clara en el texto. Vox solo ha emitido un comunicado en el que destaca el arraigo del candidato en Tarragona. En dos mil veintitrés, Vox se quedó cerca de lograr un escaño en esa provincia.",
-     "url": "https://www.eldiario.es/catalunya/vox-elige-cabeza-lista-tarragona-neonazi-acusado-ataque-racista-centro-menores_1_13605312.html"
-    },
-    {
      "id": "edi1",
-     "titular": "La Fiscalía ve muy probable que la pareja de Ayuso pagara un favor a un directivo de Quirón",
-     "resumen": "Según elDiario.es, la Fiscalía sostiene en un escrito al juzgado que es muy alta la probabilidad de que Alberto González Amador, pareja de Isabel Díaz Ayuso, comprara una empresa para devolver un favor. Pagó unos quinientos mil euros por una sociedad sin actividad que era de la mujer de Fernando Camino, presidente de Quirón Prevención. El favor habría sido la mediación de Camino en un gran negocio de mascarillas, que dejó a González Amador una comisión cercana a dos millones. El juez Antonio Viejo ha citado a Camino como imputado el tres de diciembre. Se trata de la posición de la Fiscalía, no de una resolución judicial, y el artículo no recoge la respuesta de la defensa.",
-     "url": "https://www.eldiario.es/politica/fiscalia-ve-probable-pareja-ayuso-camuflara-pago-favor-directivo-quiron_1_13602945.html"
+     "titular": "Los Comuns dejan a Aina Vidal fuera de sus listas",
+     "resumen": "Según elDiario.es, el consejo nacional de los Comuns aprobó con un sesenta y seis por ciento de votos a favor y un treinta y cuatro en contra las listas para las elecciones del veintinueve de noviembre, dentro del Frente Amplio. La novedad es que Aina Vidal, hasta ahora portavoz del grupo en el Congreso, no aparece en ellas. Ada Colau encabezará la lista de Barcelona y será la candidata a la presidencia del Gobierno. Ernest Urtasun será el número dos. Las cuatro listas catalanas las encabezan mujeres. Solo repiten dos de los siete diputados actuales. El partido asegura que Vidal seguirá como portavoz y participará en la campaña. El periódico no explica los motivos de su salida ni recoge declaraciones de ella. Los ejes de campaña serán la vivienda, los salarios y los servicios públicos.",
+     "url": "https://www.eldiario.es/catalunya/portavoz-comuns-congreso-aina-vidal-sale-listas-29n_1_13606003.html"
     },
     {
      "id": "edi2",
-     "titular": "Choque entre el Supremo y el Constitucional por la amnistía",
-     "resumen": "Según elDiario.es, el Tribunal Supremo y el Tribunal Constitucional se han enfrentado públicamente por la amnistía a la malversación en el proceso catalán. El Constitucional, con siete magistrados progresistas a favor y cinco conservadores en contra, dictó una sentencia sobre la exconsellera Dolors Bassa que ordena aplicar la amnistía. Después, la Sala Penal del Supremo, con Manuel Marchena como ponente, la aplicó en un auto con una docena de reproches al Constitucional. Habla de injerencia y de grandilocuencia, y dice que actúa como instancia que revisa al Supremo. Antes, el Constitucional había acusado al Supremo de interpretar la ley de forma expansiva. La magistrada Ana Ferrer y el juez Pablo Llarena también criticaron al Constitucional.",
-     "url": "https://www.eldiario.es/politica/navajazos-judiciales-supremo-constitucional-amnistia-injerencias-grandilocuencia-sobrantes-epitetos_1_13600129.html"
+     "titular": "Macron prohibirá las manifestaciones no convocadas por sindicatos",
+     "resumen": "Según elDiario.es, el presidente francés, Emmanuel Macron, anunció el jueves que se restringirán las manifestaciones para restablecer el orden. Los prefectos podrán prohibir las concentraciones que no convoquen los sindicatos si hay riesgo para el orden público. Las marchas sindicales autorizadas se harán por recorridos alternativos, para proteger comercios y edificios públicos. Los disturbios que lo motivaron ocurrieron el sábado diecisiete de octubre en varias ciudades, junto a protestas masivas contra el encarecimiento de la vida. Macron culpó a grupos organizados de ultraizquierda y dijo que hay miles de detenidos y cientos de encarcelados. El viernes se reunirá el Consejo de Defensa. La eurodiputada Manon Aubry, de Francia Insumisa, dijo que el Gobierno ya no garantiza el derecho a manifestarse, aunque pidió sensatez.",
+     "url": "https://www.eldiario.es/internacional/macron-anuncia-prohibicion-manifestaciones-no-organizadas-sindicatos-francia_1_13606510.html"
+    },
+    {
+     "id": "edi3",
+     "titular": "Operativo de la Guardia Civil contra dos ONG que ayudan a migrantes en Ceuta",
+     "resumen": "Según elDiario.es, la Guardia Civil registró el jueves, con orden judicial, las sedes de las ONG No Name Kitchen y Brigadas de Apoyo Mutuo en Ceuta. La investigación busca saber si incitaron a migrantes a actuar con violencia contra las fuerzas de seguridad, algo que las organizaciones niegan. Horas después detuvieron a dos activistas, un hombre en Ceuta y una mujer en Valencia, por incitación a la violencia y desórdenes públicos. No Name Kitchen afirma que no se encontró ningún arma ni gas pimienta. Denuncia que no se explicaron los motivos, que no entregaron acta firmada de lo incautado y que los voluntarios fueron tumbados y maniatados. Habla de campaña de criminalización. Fuentes de la Guardia Civil confirmaron el operativo sin dar más detalles. El texto no recoge declaraciones de los detenidos.",
+     "url": "https://www.eldiario.es/desalambre/guardia-civil-registra-sedes-ong-reparten-comida-migrantes-ceuta-han-destrozado-casa_1_13606710.html"
     }
    ]
   }
