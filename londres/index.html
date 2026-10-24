@@ -1672,10 +1672,24 @@
             return;
         }
         gMap = L.map('map', { zoomControl: true, attributionControl: true }).setView([51.505, -0.13], 13);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-            maxZoom: 19, subdomains: 'abcd',
-            attribution: '&copy; OpenStreetMap &copy; CARTO'
-        }).addTo(gMap);
+        // Capas de mapa sin clave: OpenStreetMap y, si falla, Esri como respaldo
+        const TILE_SOURCES = [
+            { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', opts: { maxZoom: 19, attribution: '&copy; OpenStreetMap' } },
+            { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', opts: { maxZoom: 19, attribution: 'Tiles &copy; Esri' } }
+        ];
+        let tileIdx = 0, tileErrors = 0, tileLoads = 0, tileLayer = null;
+        function useTiles(i) {
+            if (tileLayer) gMap.removeLayer(tileLayer);
+            tileErrors = 0; tileLoads = 0;
+            tileLayer = L.tileLayer(TILE_SOURCES[i].url, TILE_SOURCES[i].opts);
+            tileLayer.on('tileload', () => { tileLoads++; });
+            tileLayer.on('tileerror', () => {
+                tileErrors++;
+                if (tileErrors >= 3 && tileLoads === 0 && tileIdx < TILE_SOURCES.length - 1) useTiles(++tileIdx);
+            });
+            tileLayer.addTo(gMap);
+        }
+        useTiles(0);
         renderMarkers();
         // Recalcular tamaño cuando cambia el panel
         window.addEventListener('resize', () => gMap.invalidateSize());
