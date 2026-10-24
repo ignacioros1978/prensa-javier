@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-23",
- "fechaTexto": "viernes 23 de octubre",
- "actualizado": "2026-10-23T07:03:24+02:00",
+ "fecha": "2026-10-24",
+ "fechaTexto": "sábado 24 de octubre",
+ "actualizado": "2026-10-24T07:13:38+02:00",
  "portada": [
-  "ee1",
-  "ed1",
+  "ok1",
+  "ed2",
   "ee2",
-  "edi2",
   "ee3",
+  "to2",
+  "edi2",
   "ok2",
-  "ld2",
   "to3",
-  "ld1"
+  "ld2"
  ],
  "diarios": [
   {
@@ -20,21 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "El Gobierno subiría el IRPF a los caseros que suban el alquiler",
-     "resumen": "Según Libertad Digital, el Gobierno prepara un cambio en el impuesto sobre la renta que afectaría a quienes alquilan una vivienda. No tocaría los tipos, sino la rebaja que los propietarios aplican a sus ingresos por alquiler. Hoy esa rebaja es del cincuenta por ciento. Si el casero mantiene la renta, la conservaría. Pero si la sube, la rebaja iría bajando por tramos, hasta quedarse en un quince por ciento cuando el aumento supere el veinte por ciento. El Ejecutivo lo presenta como un incentivo para abaratar los alquileres. El periódico cita simulaciones de un colectivo de asesores fiscales. Con un sueldo medio y un alquiler que pasa de mil a mil doscientos cincuenta euros al mes, Hacienda se llevaría más de la mitad del aumento. Es una crítica del propio medio, y el artículo no recoge la respuesta del Gobierno.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-10-22/sanchez-planea-subir-el-irpf-por-la-puerta-de-atras-en-mas-de-1-600-euros-para-caseros-que-cobren-el-salario-medio-7480076/"
+     "titular": "El Supremo da cinco días al Gobierno para entregar la lista de los nietos",
+     "resumen": "Según Libertad Digital, el Tribunal Supremo exige a los ministros Félix Bolaños y José Manuel Albares que entreguen la lista con los nombres de las ciento sesenta y tres mil veinte personas afectadas por la Ley de Nietos. El tribunal les da cinco días, a través del Abogado del Estado, y envía copia a la Junta Electoral Central y a la Oficina del Censo Electoral. Si no cumplen, advierte de una multa de mil euros para cada ministro. También menciona la posibilidad de pedir responsabilidad penal. El diario cuenta que hasta ahora la Administración solo había dado la cifra total. Según documentos del 21 de octubre, solo se habían revisado treinta y un mil trescientos noventa expedientes. El Supremo sostiene que el Gobierno conoce la identidad de esas personas, porque tramitó sus expedientes, y ve difícil explicar que no la entregue con las elecciones convocadas. Solo podrán votar quienes tengan un certificado consular.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-23/ultimatum-del-supremo-a-bolanos-y-albares-para-que-entreguen-la-lista-de-los-163-020-afectados-de-la-ley-de-nietos-7480925/"
     },
     {
      "id": "ld2",
-     "titular": "El PSOE se niega a dar al juez Pedraz los pagos a abogados",
-     "resumen": "Según Libertad Digital, el PSOE no entregará al juez Santiago Pedraz, de la Audiencia Nacional, toda la documentación que este le pidió sobre pagos a abogados, despachos y consultoras entre los años dos mil veintiuno y dos mil veinticinco. El juez la reclamó el seis de octubre y, al no recibir respuesta, dio un plazo de cuarenta y ocho horas. El partido lo ha dejado pasar. Lo confirmó Rebeca Torró, secretaria de Organización, en una entrevista en la Cadena SER. Alegó el secreto profesional entre abogados y clientes, y comparó el caso con pedir a un centro de salud el historial de sus pacientes. Torró negó que el partido sepa de dinero desviado y restó valor a los informes de la Guardia Civil. El caso investiga presuntas maniobras para entorpecer causas judiciales. El texto es muy crítico con el PSOE.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-22/el-psoe-se-planta-ante-el-ultimatum-de-pedraz-y-se-niega-a-arrojar-luz-sobre-las-cloacas-7480196/"
+     "titular": "Partidos marroquíes reclaman Ceuta y Melilla en su Parlamento",
+     "resumen": "Según Libertad Digital, varios partidos del Parlamento de Marruecos reclamaron Ceuta, Melilla y las islas Chafarinas durante el debate del programa del nuevo Gobierno. Fue el jueves veintidós de octubre. Adil El Bitar, vicepresidente de la Cámara y miembro del partido de la primera ministra, habló de derechos legítimos sobre esos territorios y dijo que deben lograrse por el diálogo y por medios pacíficos. El Istiqlal, socio de la coalición, afirmó que la soberanía es innegociable. La oposición de izquierdas también defendió la unidad territorial del país. El diario recuerda que el mes de julio hubo una entrada masiva de inmigrantes en Ceuta y que ministros marroquíes han hablado de este asunto en los últimos meses. Libertad Digital opina que la respuesta del Gobierno de Pedro Sánchez ha sido tibia. El periódico usa un enfoque muy crítico con el Ejecutivo y algunas cifras que da no están atribuidas.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-23/marruecos-tensa-la-cuerda-los-partidos-se-unen-para-reclamar-ceuta-melilla-y-las-islas-ocupadas-en-el-parlamento-7480752/"
     },
     {
      "id": "ld3",
-     "titular": "Acusan al Gobierno de posible desobediencia por la Ley de Nietos",
-     "resumen": "Según Libertad Digital, el Gobierno podría incurrir en un presunto delito de desobediencia por no haber identificado ante el Tribunal Supremo a las personas nacionalizadas con la Ley de Nietos. Hace unos diez días, el Supremo mantuvo medidas cautelares que suspenden la inscripción en el censo de residentes en el extranjero y el voto de esos nacionalizados. Fuentes jurídicas citadas por el medio señalan al ministro de Exteriores, José Manuel Albares, de quien dependen los consulados. Dicen que Exteriores lleva cinco semanas sin responder y que faltan datos de unas ciento sesenta y tres mil personas. La desobediencia reiterada podría castigarse con inhabilitación de hasta tres años. La asociación Iustitia Europa avisa de que podrían votar el veintinueve de noviembre. El texto no recoge la respuesta del Gobierno y se apoya en fuentes sin nombre.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-22/el-gobierno-se-enfrenta-a-un-delito-de-desobediencia-por-no-identificar-a-los-nacionalizados-con-la-ley-de-nietos-7479768/"
+     "titular": "Un juez de Ceuta ordena registrar naves de ONG por posibles armas",
+     "resumen": "Según Libertad Digital, un juzgado de Ceuta ha ordenado registrar dos naves industriales que usan varias organizaciones no gubernamentales como base. Quiere averiguar si entregaron armas a inmigrantes irregulares. El juez Miguel Ángel Fernández autorizó el registro y permite usar la fuerza mínima imprescindible si hace falta. La investigación nace de una querella de Hazte Oír por emboscadas contra militares y policías. Esa asociación afirma que la organización No Name Kitchen habría entregado explosivos caseros. El diario no recoge respuesta de la organización. La Fiscalía defiende el registro y cita a varios testigos que dicen haber visto sprays de pimienta y armas blancas en esas naves. Uno entregó a la Policía un cuchillo grande. Las naves están en la calle Argentina y en el polígono de Alborán. Todo son indicios en fase de investigación, no hechos probados.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-23/un-juzgado-de-ceuta-ordena-registrar-las-naves-de-las-ongs-para-indagar-si-entregaron-armas-a-los-inmigrantes-7480902/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Sánchez acepta un cara a cara con Feijóo el dieciséis de noviembre",
-     "resumen": "Según El Español, Pedro Sánchez ha aceptado un debate cara a cara con Alberto Núñez Feijóo el lunes dieciséis de noviembre en una cadena privada. El Partido Popular ya había aceptado esa fecha. El PSOE también aceptó la invitación de Televisión Española a un debate entre los cuatro principales candidatos el jueves veintiséis de noviembre. El PP rechaza ese formato público. Acusa al PSOE de querer boicotear a Atresmedia y pide que el debate a cuatro sea en esa cadena, donde Sánchez y Feijóo debatieron en dos mil veintitrés. El PSOE responde que no vetará ninguna cadena privada, pero que no admitirá vetos a la televisión pública. Recuerda que en dos mil veintitrés Sánchez fue a ambos debates y Feijóo dejó su atril vacío en el de la televisión pública. Las elecciones generales son el veintinueve de noviembre.",
-     "url": "https://www.elespanol.com/espana/politica/20261022/sanchez-acepta-cara-feijoo-noviembre-cadena-privada-pide-debate-rtve/1003744431470_0.html"
+     "titular": "La fiscal y el juez aprietan a Zapatero por las joyas",
+     "resumen": "Según El Español, el juez de la Audiencia Nacional José Luis Calama ha dado cuarenta y ocho horas a Patrimonio del Estado para enviar las actas de los regalos oficiales que Zapatero aceptó como presidente. Quiere comprobar si las joyas halladas en su despacho figuran entre ellos. La fiscal Anticorrupción María Elena Lorente estudia acusarle de malversación. Zapatero sostiene que fueron un regalo personal del rey saudí en dos mil siete. Las joyas se valoran en más de un millón trescientos mil euros. El diario recuerda que la lista oficial incluye tres regalos saudíes, pero no las joyas. También señala que otros regalos sí se entregaron a Patrimonio al acabar su mandato. Pedro Sánchez restó importancia al asunto en televisión y dijo que los presidentes no siempre saben qué regalos reciben.",
+     "url": "https://www.elespanol.com/espana/politica/20261024/juez-fiscal-acorralan-zapatero-joyas-alega-no-sabia-regalaban/1003744433317_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Felipe González votará en blanco el veintinueve de noviembre",
-     "resumen": "Según El Español, el expresidente del Gobierno Felipe González anunció el jueves que votará en blanco en las elecciones generales. Lo dijo en un acto del Círculo Empresarial de Málaga, ante más de doscientas personas. Explicó que no se siente representado por ningún partido y que el voto en blanco expresa lo que siente. Sobre un posible pacto entre el PP y Vox, dijo que no le gusta y que le parece inevitable, pero que le resulta menos grave que las alianzas de Sánchez con los independentistas catalanes y con Bildu. Criticó la amnistía y dijo sentirse abochornado por la situación. También apoyó la propuesta de Feijóo de construir un millón de viviendas. Sobre Ceuta, habló de invasión y dijo que España debe defender su frontera. El artículo no recoge reacciones de los partidos.",
-     "url": "https://www.elespanol.com/espana/politica/20261022/felipe-gonzalez-votara-blanco-pacto-pp-vox-no-gusta-pactar-bildu-pedir-perdon-puigdemont/1003744431301_0.html"
+     "titular": "La Audiencia Nacional amnistía a doce acusados de los CDR",
+     "resumen": "Según El Español, la Audiencia Nacional ha aplicado la Ley de Amnistía a doce miembros de los Comités de Defensa de la República procesados por terrorismo y ha cerrado la causa. La Sección Tercera de la Sala de lo Penal acordó un sobreseimiento libre, que cierra el caso de forma definitiva. Los tres magistrados lo decidieron por unanimidad. La resolución es del viernes veintitrés de octubre. Antes de que entrase en vigor la ley, la Fiscalía pedía penas de entre ocho y veintisiete años de cárcel. Después, el fiscal solicitó archivar el caso. El tribunal recuerda que el Tribunal de Justicia de la Unión Europea ya consideró que la ley no choca con el derecho europeo, incluida la directiva antiterrorista. Los acusados habían sido investigados por manejar precursores de explosivos, según imágenes de la Guardia Civil.",
+     "url": "https://www.elespanol.com/espana/tribunales/20261023/audiencia-nacional-aplica-amnistia-cdr-procesados-delitos-terrorismo-archiva-causa/1003744432407_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Un terremoto de magnitud siete sacude el Tíbet",
-     "resumen": "Según El Español, un terremoto de magnitud siete ha sacudido el Tíbet, en China, y ha dejado varios muertos y centenares de heridos. El periódico aclara que todavía no se ha confirmado el número de fallecidos. El sismo ocurrió a las cuatro y treinta y tres de la tarde, hora peninsular española, según la agencia oficial china Xinhua. El epicentro estuvo en la ciudad de Nagqu, en el condado de Baqing. También se sintió con fuerza en pueblos fronterizos de la provincia vecina de Qinghai. Las autoridades tibetanas activaron una respuesta de emergencia de nivel dos, que permite movilizar equipos de rescate, suministros y fondos, y preparar evacuaciones. La foto principal muestra tiendas de campaña en el patio de una escuela. El medio indica que la información se está actualizando y que se ampliarán los datos.",
-     "url": "https://www.elespanol.com/mundo/20261022/varios-muertos-centenares-heridos-terremoto-magnitud-sacudio-tibet/1003744431751_0.html"
+     "titular": "El juez Pedraz exige al PSOE los contratos con abogados",
+     "resumen": "Según El Español, el juez de la Audiencia Nacional Santiago Pedraz exige al PSOE que entregue, sin más demora y en un máximo de quince días, la lista de abogados y consultores contratados entre dos mil veintiuno y dos mil veinticinco. El juez dice que necesita esos datos para comprobar si el partido cumple la normativa, algo de lo que depende una posible imputación. Se investiga si se usaron letrados para canalizar dinero del partido hacia Leire Díez. El PSOE había consultado al Consejo General de la Abogacía sobre el secreto profesional. Pedraz responde que esa consulta no frena una orden judicial y que invocar el secreto de forma genérica no vale. También rechaza como excusas la dispersión de los documentos y el trabajo del partido. El periódico no recoge respuesta del PSOE.",
+     "url": "https://www.elespanol.com/espana/tribunales/20261023/juez-pedraz-pone-firme-psoe-exige-sin-demora-contratos-abogados-caso-cloacas/1003744432616_0.html"
     }
    ]
   },
@@ -68,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El Constitucional rechaza el recurso del Defensor del Pueblo sobre la Ley de Nietos",
-     "resumen": "Según El Debate, el Tribunal Constitucional rechazó el miércoles, por diez votos contra dos, admitir el recurso del Defensor del Pueblo, Ángel Gabilondo, contra las medidas cautelares del Supremo sobre la Ley de Nietos. Consideró el recurso prematuro, porque el proceso en el Supremo sigue abierto. Esas medidas suspenden el voto de unos ciento sesenta y cinco mil extranjeros nacionalizados con esa norma, aunque el artículo da cifras distintas. Los magistrados Ramón Sáez y Juan Carlos Campo votaron en contra de la mayoría. El periódico recuerda que una instrucción administrativa amplió quién podía recuperar la nacionalidad sin respaldo del Parlamento. El mismo día, un juzgado de Madrid admitió una querella de Hazte Oír contra la exresponsable de Justicia Sofía Puente. El texto es muy crítico con el Gobierno, y cerca de treinta y ocho millones de españoles están llamados a votar el veintinueve de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261022/constitucional-abandona-sanchez-garantiza-derecho-38-millones-espanoles-votar-censo-legal_472193.html"
+     "titular": "El Censo solo ha comprobado a 1.278 votantes de la Ley de Nietos",
+     "resumen": "Según El Debate, a treinta y seis días de las elecciones del veintinueve de noviembre, la Oficina del Censo Electoral solo ha podido comprobar a mil doscientos setenta y ocho votantes nacionalizados por la Ley de Nietos. Es el cero coma ocho por ciento de las ciento sesenta y tres mil veinte personas que identifica el Tribunal Supremo. De los comprobados, solo sesenta y cuatro constan con el exilio de un antepasado acreditado. Exteriores dice haber revisado treinta y un mil trescientos noventa expedientes y haber emitido noventa y un certificados. El diario cuenta que un fichero de casi dieciocho mil registros fue descartado por numerosos errores. Los datos están en un informe del veintiuno de octubre. El Supremo da hasta el miércoles veintiocho a los ministros para entregar la lista con nombres. Una magistrada discrepó y habló de inseguridad jurídica.",
+     "url": "https://www.eldebate.com/espana/20261024/36-dias-elecciones-censo-solo-podido-comprobar-1278-163020-votantes-ley-nietos-senala-supremo_473253.html"
     },
     {
      "id": "ed2",
-     "titular": "Tusk y Sánchez chocan por la regularización de inmigrantes",
-     "resumen": "Según El Debate, que cita a una emisora polaca y a fuentes diplomáticas, el primer ministro de Polonia, Donald Tusk, y Pedro Sánchez tuvieron un duro cruce de palabras en el último Consejo Europeo. Discutieron a puerta cerrada por la regularización extraordinaria de cientos de miles de inmigrantes que impulsa España. Tusk dijo que ese no es el camino, porque puede atraer nuevas entradas irregulares. Sánchez defendió que la medida saca a esas personas de la economía sumergida y facilita su integración. Polonia, Italia y Dinamarca pidieron incluir en las conclusiones referencias a políticas nacionales que incentiven la inmigración irregular. España, Francia y Luxemburgo se opusieron. La cumbre no obligó a España a retirar la medida. Sí respaldó trabajar en un nuevo marco europeo para emergencias migratorias, que aún no está en vigor.",
-     "url": "https://www.eldebate.com/internacional/20261022/donald-tusk-carga-contra-pedro-sanchez-politica-migratoria-no-camino_472177.html"
+     "titular": "Anticorrupción pide imputar a Zapatero por malversación",
+     "resumen": "Según El Debate, la Fiscalía Anticorrupción pide imputar a Zapatero por un nuevo delito de malversación agravada, por unas joyas valoradas en cerca de un millón trescientos mil euros. La fiscal sostiene que no pudieron ser un simple obsequio institucional. Zapatero defiende que fueron un regalo personal del rey de Arabia Saudí durante su visita a España en junio de dos mil siete. La Fiscalía considera poco creíble su explicación, porque no hay acuses de recibo de las cartas que dice haber enviado. También critica que la defensa pida ayuda judicial a Arabia Saudí. El delito pedido puede suponer entre cuatro y ocho años de cárcel. El juez Calama también ve insuficiente la versión del expresidente. Todo son acusaciones pendientes de que decida el juez, y Zapatero mantiene su versión.",
+     "url": "https://www.eldebate.com/espana/20261024/fiscalia-juez-cuestionan-version-zapatero-oculto-joyas-actuacion-consciente-desviada-normas_473322.html"
     },
     {
      "id": "ed3",
-     "titular": "El Papa León catorce no necesitará más tratamiento tras su operación",
-     "resumen": "Según El Debate, el Papa León catorce no necesitará tratamiento complementario tras la operación en la que se le extirpó un cáncer de pulmón. Lo comunicó la Santa Sede el miércoles por la noche. Los análisis confirman que la intervención fue suficiente. Se trataba de un adenocarcinoma localizado. El Pontífice, de setenta y un años, fue operado el trece de octubre en el hospital Gemelli de Roma, donde le quitaron el lóbulo inferior del pulmón derecho. Recibió el alta el sábado siguiente y reapareció al día siguiente en el Ángelus. Dijo que retomaría su actividad poco a poco. Ahora se reanudan las audiencias generales de los miércoles. Está previsto un viaje a Uruguay, Argentina y Perú del seis al diecisiete de noviembre. Sería la primera gira del pontificado por Latinoamérica.",
-     "url": "https://www.eldebate.com/religion/20261021/papa-leon-xiv-no-necesitara-tratamiento-extirparle-cancer-pulmon_472413.html"
+     "titular": "El PSOE pide más tiempo al juez Pedraz",
+     "resumen": "Según El Debate, el PSOE ha pedido más plazo al juez Santiago Pedraz para entregar la lista de abogados y consultoras que contrató entre dos mil veintiuno y dos mil veinticinco. Alega que la campaña electoral del veintinueve de noviembre le dificulta reunir los documentos. Los investigadores sospechan que el partido pagó a Leire Díez mediante abogados y consultoras. Según fuentes del caso, la UCO encontró huecos entre los movimientos del sumario y las cuentas presentadas al Tribunal de Cuentas. Se citan cuarenta y tres mil euros pagados a Leire Díez y al menos ciento veinticinco mil euros en facturas del abogado Jacobo Teijelo. La gerente del partido está imputada. La portavoz, Rebeca Torró, dijo que el PSOE colabora con la Justicia y que son servicios jurídicos ordinarios. El diario describe las sospechas como no probadas.",
+     "url": "https://www.eldebate.com/espana/20261023/psoe-resiste-entregar-juez-pedraz-documentacion-pagos-huecos-cloacas_472836.html"
     }
    ]
   },
@@ -92,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Sánchez dice en La Revuelta que no lee The Objective",
-     "resumen": "Según The Objective, Pedro Sánchez dijo en el programa La Revuelta, de Televisión Española, que no lee este periódico. Contó que se informa en las cabeceras más tradicionales y que prefiere el papel. Añadió que deja este diario a la secretaria de Estado de Comunicación, que le cuenta lo que publica. Cerró el asunto con una frase: para qué se va a amargar la vida. Es la tercera vez que se refiere al medio. Su director, Álvaro Nieto, respondió en la red social X que el periodismo consiste en amargar la vida a los políticos. En la entrevista con David Broncano, Sánchez restó importancia al supuesto espionaje a su móvil por parte de Marruecos. Dijo que se afilió al PSOE por Felipe González y que Aznar no está para dar lecciones. El periódico advierte de que es parte afectada.",
-     "url": "https://theobjective.com/espana/politica/2026-10-22/sanchez-revuelta-pulla-the-objective/"
+     "titular": "El PP pierde apoyo y Vox sube en el votómetro de The Objective",
+     "resumen": "Según el votómetro semanal de The Objective, elaborado con Redlines, el Partido Popular pierde un punto y Vox capitaliza ese desgaste. El PP tendría ciento treinta y nueve escaños y el treinta y dos por ciento de los votos. Vox tendría sesenta y ocho. El PSOE subiría medio punto y obtendría ciento cinco escaños. El Frente Amplio, liderado por Ada Colau, lograría diez. Sumando PP y Vox se mantendría la mayoría absoluta, con doscientos siete diputados. El bloque de izquierdas quedaría en ciento cuarenta, treinta y seis por debajo de la mayoría. La probabilidad de que Feijóo sea investido con Abascal baja del noventa y ocho al noventa y tres por ciento. El diario explica que son proyecciones basadas en sondeos publicados y no resultados electorales. Las elecciones son el veintinueve de noviembre.",
+     "url": "https://theobjective.com/espana/politica/2026-10-24/psoe-vox-crece-pp-pierde-votometro/"
     },
     {
      "id": "to2",
-     "titular": "Correos vuelve a controlar uno a uno los votos del extranjero",
-     "resumen": "Según The Objective, que dice haber tenido acceso a una instrucción interna, Correos ha rectificado y volverá a controlar uno por uno los envíos de voto desde el extranjero para las elecciones del veintinueve de noviembre. Desde dos mil veintitrés se certificaban bloques de votos registrando solo el primer y el último sobre. El siete de octubre, la presidencia de Correos mantuvo ese sistema, pero ahora se ha anulado. El censo de residentes en el extranjero ronda los dos millones setecientos mil inscritos. Como los programas informáticos no están adaptados, el registro individual se hará a mano, y fuentes internas temen retrasos importantes, también por la campaña de Black Friday. Las delegaciones entregarán las certificaciones a Correos entre el veinticuatro y el treinta de octubre. Correos no ha hecho declaraciones.",
-     "url": "https://theobjective.com/espana/2026-10-23/voto-exterior-correos-control-sobre-sobre/"
+     "titular": "Vox se queja de la indiscreción de Feijóo sobre el Senado",
+     "resumen": "Según The Objective, hay malestar en Vox por unas declaraciones de Feijóo sobre la negociación de las listas del Senado. En una entrevista en la Cadena SER el viernes, el líder del PP dijo que sería lógico que Vox no se presentara en las provincias donde no puede conseguir senador. Añadió que habló con Abascal el miércoles. Fuentes de Vox temen que busque dinamitar las conversaciones, que se llevaban con discreción. El plazo para retirar o cambiar las listas termina a medianoche del lunes veintiséis de octubre. Hoy el PP tiene mayoría absoluta en el Senado, con ciento cuarenta y un senadores. Según el diario, si Vox se retira en algunas provincias, el PP podría llegar a ciento sesenta y uno, lo que facilitaría renovar el Constitucional o el Poder Judicial sin depender del PSOE.",
+     "url": "https://theobjective.com/espana/politica/2026-10-24/malestar-vox-filtraciones-feijoo-negociacion-listas-senado/"
     },
     {
      "id": "to3",
-     "titular": "Marruecos no responde a los primeros cincuenta retornos de menores de Ceuta",
-     "resumen": "Según The Objective, Marruecos no ha contestado a los primeros cincuenta expedientes de menores no acompañados de Ceuta que estaban listos para volver con sus familias. Fuentes policiales dicen que algunos se enviaron hace un mes. La entrada masiva de migrantes fue en julio, y han pasado tres meses sin ninguna devolución. En la ciudad hay unos tres mil menores extranjeros. El Gobierno admite en privado que la mayoría se quedará en España y prevé trasladarlos a otras comunidades. El presidente de Ceuta, Juan Jesús Vivas, critica la lentitud y amenaza con acudir al Tribunal Supremo. El ministro Ángel Víctor Torres defiende que los expedientes se pueden resolver en un mes. El periódico advierte de que sus cifras son dispares y en parte salen de fuentes policiales anónimas.",
-     "url": "https://theobjective.com/espana/2026-10-22/marruecos-bloquea-regreso-menores-ceuta/"
+     "titular": "Interior retira unos doscientos antidisturbios de Ceuta",
+     "resumen": "Según The Objective, que cita fuentes policiales, el Ministerio del Interior retira de Ceuta a unos doscientos antidisturbios de la Policía Nacional y la Guardia Civil. También repliega una de las dos unidades que tenía en Melilla. El motivo sería el previsible aumento de altercados durante la campaña electoral. Se marchan dos grupos de la Policía y tres de la Guardia Civil, en las próximas horas. Se quedan unos cien guardias civiles y doscientos policías hasta final de año. El diario cuenta que hay unos seis mil inmigrantes en campamentos de acogida, tres mil trescientos de ellos menores. Interior también detectó un llamamiento yihadista a atacar a policías y manifestantes. Ni el ministerio ni el mando único han anunciado la retirada, y el periódico no recoge declaraciones oficiales.",
+     "url": "https://theobjective.com/espana/2026-10-24/interior-retira-200-antidisturbios-ceuta-aumento-disturbios-peninsula/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "OKDiario afirma que Maricarmen fue administradora de empresas inmobiliarias",
-     "resumen": "Según OKDiario, la mujer conocida como Maricarmen, símbolo de la lucha contra los desahucios, tuvo cargos en empresas de inversión inmobiliaria. El periódico dice haber revisado registros mercantiles y su documento de identidad. Afirma que fue consejera de la sociedad Jinur desde el uno de julio de mil novecientos noventa y cuatro, y que antes fue administradora única de Fieba. Ambas compartían domicilio en la calle Pradillo de Madrid, y Fieba acabó fusionada con Jinur. Dejó el consejo en mil novecientos noventa y cinco. Perdió un piso de Retiro en el que vivía hacía veinte años. OKDiario recuerda que se dijo que había sido funcionaria o secretaria de una farmacéutica. Asegura que ninguna de sus empresas tenía ese negocio. Sostiene que no era el mejor ejemplo para el Gobierno. No incluye respuestas del Gobierno ni de familiares.",
-     "url": "https://okdiario.com/espana/maricarmen-fue-administradora-unica-luego-consejera-empresa-dedicada-inversion-inmuebles-explotacion-alquileres-20602568"
+     "titular": "El Supremo da cinco días a Bolaños y Albares por la lista de nietos",
+     "resumen": "Según OKDiario, el Tribunal Supremo ha dado cinco días a los ministros Félix Bolaños y José Manuel Albares para entregar la relación con nombres de las ciento sesenta y tres mil veinte personas afectadas por la Ley de Nietos. El plazo termina a las tres de la tarde del miércoles veintiocho de octubre. Dos autos de la Sección Cuarta, con el voto en contra de una de las seis magistradas, lo ordenan. La lista debe ir al tribunal, a la Junta Electoral Central y a la Oficina del Censo Electoral. Si no cumplen, habrá una multa de mil euros por ministro, repetible. El tribunal también se reserva pedir responsabilidad penal. Solo podrán votar quienes tengan certificado consular de exilio. Las elecciones generales son el veintinueve de noviembre. El diario no recoge respuesta de los ministros.",
+     "url": "https://okdiario.com/espana/supremo-amenaza-albares-bolanos-imputarles-desobediencia-si-no-identifican-5-dias-afectados-ley-nietos-20615554"
     },
     {
      "id": "ok2",
-     "titular": "El PP ofrece a Vox ceder senadores autonómicos antes de las elecciones",
-     "resumen": "Según OKDiario, que cita a fuentes del Partido Popular, el PP estaría dispuesto a que algunos de sus senadores de cupo autonómico dimitan ya, para ceder esos escaños a Vox sin esperar a las autonómicas de dos mil veintisiete. A cambio, Vox no presentaría candidatos propios al Senado en las circunscripciones más disputadas. Así se evitaría incluir candidatos de Vox en las listas del PP, una fórmula que genera dudas legales. Vox tiene ahora cinco senadores, todos por pactos autonómicos. Para formar grupo propio necesita diez. Tres escaños de Andalucía y dos de Castilla y León se lo permitirían. Las candidaturas se presentan hasta el lunes veintiséis de octubre. Feijóo dijo en la COPE que ya hay una fórmula y pidió discreción. El artículo no recoge la respuesta de Vox ni del PSOE.",
-     "url": "https://okdiario.com/espana/pp-ofrece-vox-renuncia-inmediata-senadores-del-cupo-autonomico-cederselos-sin-esperar-elecciones-2027-20601691"
+     "titular": "Leonor pide mantener el entusiasmo en tiempos de desencanto",
+     "resumen": "Según OKDiario, la princesa Leonor habló el viernes veintitrés de octubre en la ceremonia de los premios Princesa de Asturias, en Oviedo. Pidió mantener el entusiasmo en un tiempo de desencanto social profundo. Dijo ver indignación y escepticismo en la sociedad. Citó entre las causas la desconfianza, la desigualdad, los conflictos, el extremismo y el coste de la vida. Planteó cómo vivir con la falta de expectativas de muchos jóvenes, por ejemplo para tener un buen trabajo o una vivienda. Se preguntó si estos tiempos son más oscuros y si aún tiene sentido premiar a personas cada año, y respondió que sí. Recordó la ceremonia de mil novecientos ochenta y uno, cuando ella tenía trece años. Entre los premiados están Patti Smith, Studio Ghibli, Leo Messi y Julian Barnes.",
+     "url": "https://okdiario.com/espana/leonor-apela-mantener-entusiasmo-tiempos-desencanto-social-profundo-discurso-princesa-asturias-20619821"
     },
     {
      "id": "ok3",
-     "titular": "Abascal culpa a Sánchez y a Marlaska de la violencia contra Vox",
-     "resumen": "Según OKDiario, el líder de Vox, Santiago Abascal, denunció en el programa Horizonte la violencia contra su partido tras los incidentes en sus actos de La Coruña y Avilés, el miércoles veintiuno de octubre. Culpó al presidente Pedro Sánchez y al ministro del Interior, Fernando Grande-Marlaska. Dijo que el Gobierno no toleraría algo así si lo sufriera el PSOE. Según el periódico, en La Coruña los manifestantes lanzaron piedras, sillas y otros objetos contra la Policía Nacional, y hubo daños en negocios y mobiliario. Abascal habló de una docena de policías heridos y de una campaña electoral sucia. Relacionó a los manifestantes con las milicias de Sánchez, sin aportar pruebas. La crónica no incluye la versión de la Delegación del Gobierno ni del Ministerio del Interior. Las elecciones son el veintinueve de noviembre.",
-     "url": "https://okdiario.com/espana/abascal-denuncia-horizonte-violencia-contra-vox-esto-no-lo-permitiria-sanchez-psoe-20603365"
+     "titular": "El consulado de Buenos Aires no halla pruebas de exilio en 10.500 casos",
+     "resumen": "Según OKDiario, el consulado de España en Buenos Aires ha revisado diez mil quinientos expedientes de nacionalidad por la Ley de Nietos y no encontró pruebas del exilio de los antepasados. La mayoría de los solicitantes no presentó documentos, y los pocos que lo hicieron no eran concluyentes. El diario recuerda que una instrucción de Sofía Puente presumía exiliado a quien salió de España entre mil novecientos treinta y seis y mil novecientos cincuenta y cinco. Según OKDiario, eso cambió el criterio de la ley. Exteriores respondió que los consulados hacen los esfuerzos necesarios y los redoblarán si hace falta. El Gobierno admitió que será imposible identificar a todos los afectados antes de las elecciones. El periódico advierte de posibles impugnaciones del voto desde el extranjero. Es un medio muy crítico con el Gobierno, y usa expresiones como falsos nietos.",
+     "url": "https://okdiario.com/espana/consulado-buenos-aires-revisado-ya-10-500-expedientes-nietos-no-encuentra-pruebas-exilio-20616436"
     }
    ]
   },
@@ -140,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Los Comuns dejan a Aina Vidal fuera de sus listas",
-     "resumen": "Según elDiario.es, el consejo nacional de los Comuns aprobó con un sesenta y seis por ciento de votos a favor y un treinta y cuatro en contra las listas para las elecciones del veintinueve de noviembre, dentro del Frente Amplio. La novedad es que Aina Vidal, hasta ahora portavoz del grupo en el Congreso, no aparece en ellas. Ada Colau encabezará la lista de Barcelona y será la candidata a la presidencia del Gobierno. Ernest Urtasun será el número dos. Las cuatro listas catalanas las encabezan mujeres. Solo repiten dos de los siete diputados actuales. El partido asegura que Vidal seguirá como portavoz y participará en la campaña. El periódico no explica los motivos de su salida ni recoge declaraciones de ella. Los ejes de campaña serán la vivienda, los salarios y los servicios públicos.",
-     "url": "https://www.eldiario.es/catalunya/portavoz-comuns-congreso-aina-vidal-sale-listas-29n_1_13606003.html"
+     "titular": "El Frente Amplio tendrá el treinta por ciento de las listas al Senado con el PSOE",
+     "resumen": "Según elDiario.es, el Frente Amplio tendrá el treinta por ciento de los puestos en las listas conjuntas con el PSOE para el Senado, en cuarenta y cuatro circunscripciones. El PSOE se queda con el setenta por ciento y la izquierda alternativa no encabezará ninguna lista. Compromís, Chunta y Més también forman parte de la alianza en sus territorios. Compromís tendrá el segundo puesto en Valencia, y en Navarra será para un candidato del Frente Amplio aún por elegir. Según estimaciones internas del PSOE, la alianza podría ganar hasta cuarenta senadores más y la mayoría absoluta si repite los votos de dos mil veintitrés. En once provincias donde ganó el PP, la lista conjunta podría quedar primera. El diario señala que PP y Vox negocian retiradas de Vox en algunas zonas, lo que podría reducir esa ganancia.",
+     "url": "https://www.eldiario.es/politica/frente-amplio-tendra-30-puestos-listas-conjuntas-psoe-senado_1_13611215.html"
     },
     {
      "id": "edi2",
-     "titular": "Macron prohibirá las manifestaciones no convocadas por sindicatos",
-     "resumen": "Según elDiario.es, el presidente francés, Emmanuel Macron, anunció el jueves que se restringirán las manifestaciones para restablecer el orden. Los prefectos podrán prohibir las concentraciones que no convoquen los sindicatos si hay riesgo para el orden público. Las marchas sindicales autorizadas se harán por recorridos alternativos, para proteger comercios y edificios públicos. Los disturbios que lo motivaron ocurrieron el sábado diecisiete de octubre en varias ciudades, junto a protestas masivas contra el encarecimiento de la vida. Macron culpó a grupos organizados de ultraizquierda y dijo que hay miles de detenidos y cientos de encarcelados. El viernes se reunirá el Consejo de Defensa. La eurodiputada Manon Aubry, de Francia Insumisa, dijo que el Gobierno ya no garantiza el derecho a manifestarse, aunque pidió sensatez.",
-     "url": "https://www.eldiario.es/internacional/macron-anuncia-prohibicion-manifestaciones-no-organizadas-sindicatos-francia_1_13606510.html"
+     "titular": "Feijóo promete eliminar Igualdad y reabre el debate del aborto",
+     "resumen": "Según elDiario.es, Alberto Núñez Feijóo hizo varios compromisos en una entrevista en la Cadena SER el veintitrés de octubre. Dijo que eliminaría el Ministerio de Igualdad y repartiría sus funciones. Sobre el aborto, afirmó que las mujeres podrían acceder según la ley actual, pero que no se obligaría a los médicos. Opinó que las menores de dieciséis y diecisiete años deberían decidir con sus padres. En pensiones, prometió subidas ligadas al IPC y reactivar el Pacto de Toledo, sin concretar mecanismos. Reformaría la ley de eutanasia, daría su visto bueno a subir el salario mínimo solo si hay acuerdo con los empresarios, y derogaría la Ley de Memoria Democrática. No descartó gobernar con Vox. El diario afirma que su dato sobre un fondo de reserva de pensiones es falso. Las elecciones son el veintinueve de noviembre.",
+     "url": "https://www.eldiario.es/politica/feijoo-reabre-debate-aborto-eliminara-ministerio-igualdad-estudiara-viabilidad-pensiones_1_13608554.html"
     },
     {
      "id": "edi3",
-     "titular": "Operativo de la Guardia Civil contra dos ONG que ayudan a migrantes en Ceuta",
-     "resumen": "Según elDiario.es, la Guardia Civil registró el jueves, con orden judicial, las sedes de las ONG No Name Kitchen y Brigadas de Apoyo Mutuo en Ceuta. La investigación busca saber si incitaron a migrantes a actuar con violencia contra las fuerzas de seguridad, algo que las organizaciones niegan. Horas después detuvieron a dos activistas, un hombre en Ceuta y una mujer en Valencia, por incitación a la violencia y desórdenes públicos. No Name Kitchen afirma que no se encontró ningún arma ni gas pimienta. Denuncia que no se explicaron los motivos, que no entregaron acta firmada de lo incautado y que los voluntarios fueron tumbados y maniatados. Habla de campaña de criminalización. Fuentes de la Guardia Civil confirmaron el operativo sin dar más detalles. El texto no recoge declaraciones de los detenidos.",
-     "url": "https://www.eldiario.es/desalambre/guardia-civil-registra-sedes-ong-reparten-comida-migrantes-ceuta-han-destrozado-casa_1_13606710.html"
+     "titular": "Una jueza frena el desahucio de una familia en Leganés",
+     "resumen": "Según elDiario.es, una jueza de Madrid ha frenado el desahucio de una familia con cinco hijos y pocos recursos de un piso de la Agencia de Vivienda Social de la Comunidad de Madrid, en Leganés. La magistrada Raquel Catalá, del Juzgado de lo Contencioso número veintinueve, habló de la quiebra del mercado de la vivienda. Explicó que antes bastaba con probar la ocupación para recuperar el piso y que ese criterio debe cambiar. La jueza consideró que la Comunidad nunca probó que el piso estuviera asignado a otra familia, por lo que la orden no tenía causa legítima ni interés público. La agencia sostiene que el procedimiento está regulado y que la vulnerabilidad no basta para quedarse. La sentencia no es firme y puede recurrirse en quince días. Un portavoz regional dijo no conocerla.",
+     "url": "https://www.eldiario.es/politica/jueza-abre-via-rechazar-desahucios-quiebra-mercado-vivienda_1_13608137.html"
     }
    ]
   }
