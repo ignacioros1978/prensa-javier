@@ -136,7 +136,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v5</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v6</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -296,37 +296,59 @@ const OVERPASS=['https://overpass-api.de/api/interpreter','https://overpass.priv
 function fetchTO(url,ms){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);return fetch(url,{signal:c.signal}).finally(()=>clearTimeout(t));}
 async function tryOne(u,q,ms){const r=await fetchTO(u+'?data='+encodeURIComponent(q),ms);if(!r.ok)throw new Error('HTTP '+r.status);const j=await r.json();if(!j||!Array.isArray(j.elements))throw new Error('respuesta rara');return j;}
 async function overpass(q){
-  /* Primero dos servidores a la vez (gana el más rápido); si fallan, los otros dos. */
+  /* Pregunta a todos los servidores a la vez y se queda con el primero que conteste bien */
   const errs=[];
-  for(const pair of [OVERPASS.slice(0,2),OVERPASS.slice(2)]){
-    try{return await Promise.any(pair.map(u=>tryOne(u,q,14000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}catch(e){}
-  }
-  const err=new Error(errs.join(' · ')||'sin respuesta');throw err;
+  try{return await Promise.any(OVERPASS.map(u=>tryOne(u,q,9000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}
+  catch(e){throw new Error('Mapa libre: '+(errs.join(', ')||'sin respuesta'));}
+}
+const NM={rest:'restaurant',rapida:'fast_food',cafe:'cafe',super:'supermarket',farm:'pharmacy',cajero:'atm',taxi:'taxi',gas:'fuel',parking:'parking',parque:'playground',helado:'ice_cream',urg:'hospital',banos:'toilets'};
+async function nomin(c,pos){
+  const t=NM[c.id]; if(!t) throw new Error('sin respaldo');
+  const max=(c.r||[2000,5000]).slice(-1)[0], dLa=max/111000, dLo=max/(111000*Math.cos(pos.lat*Math.PI/180));
+  const u='https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=es&limit=40&bounded=1&amenity='+t+'&viewbox='+(pos.lon-dLo)+','+(pos.lat+dLa)+','+(pos.lon+dLo)+','+(pos.lat-dLa);
+  const r=await fetchTO(u,9000); if(!r.ok) throw new Error('Nominatim HTTP '+r.status);
+  const j=await r.json();
+  const items=(j||[]).map(x=>{const lat=+x.lat,lon=+x.lon;const nm=x.name||String(x.display_name||'').split(',')[0]||c.t;
+    return {id:(x.osm_type||'x')+'/'+(x.osm_id||lat+','+lon),name:nm,addr:String(x.display_name||'').split(',').slice(1,3).join(',').trim(),hours:'',lat,lon,d:dist(pos,{lat,lon})};})
+    .filter(x=>x.d<=max).sort((a,b)=>a.d-b.d);
+  return {items,radius:max,src:'Nominatim'};
 }
 function addr(t){
   const s=[t['addr:street'],t['addr:housenumber']].filter(Boolean).join(', ');
   return s||t['addr:place']||t['addr:city']||'';
 }
+function mergeItems(a,b){
+  const out=a.slice();
+  for(const x of b){ if(!out.some(y=>dist(x,y)<15||(dist(x,y)<80&&x.name.toLowerCase()===y.name.toLowerCase()))) out.push(x); }
+  return out.sort((p,q)=>p.d-q.d);
+}
 async function photon(c,pos){
   const ph=PH[c.id]; if(!ph) throw new Error('sin respaldo');
   const u='https://photon.komoot.io/api/?limit=50&lat='+pos.lat+'&lon='+pos.lon+'&q='+encodeURIComponent(ph[0])+'&osm_tag='+encodeURIComponent(ph[1]);
-  const r=await fetchTO(u,12000); if(!r.ok) throw new Error('Photon HTTP '+r.status);
+  const r=await fetchTO(u,8000); if(!r.ok) throw new Error('Photon HTTP '+r.status);
   const j=await r.json(); const max=(c.r||[1500,5000]).slice(-1)[0];
   const items=(j.features||[]).map(f=>{const g=f.geometry&&f.geometry.coordinates;if(!g)return null;const pr=f.properties||{};const lat=g[1],lon=g[0];
     return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name:pr.name||c.t,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon})};})
     .filter(x=>x&&x.d<=max).sort((a,b)=>a.d-b.d);
   return {items,radius:max,src:'Photon'};
 }
-async function fetchCat(c,pos){
-  try{return await fetchCatOv(c,pos);}catch(e){
-    S.lastErr=String(e&&e.message||e);
-    try{return await photon(c,pos);}catch(e2){throw new Error(S.lastErr+' · '+String(e2&&e2.message||e2));}
-  }
+async function fetchCat(c,pos,onUpdate){
+  /* Tres fuentes a la vez: enseña la primera que traiga sitios y va sumando las demás cuando llegan */
+  const jobs=[fetchCatOv(c,pos)];
+  if(PH[c.id]) jobs.push(photon(c,pos));
+  if(NM[c.id]) jobs.push(nomin(c,pos));
+  return new Promise((resolve,reject)=>{
+    let best=null,pending=jobs.length,done=false;const errs=[];
+    jobs.forEach(j=>j.then(res=>{
+      best=best?{items:mergeItems(best.items,res.items),radius:Math.max(best.radius,res.radius),src:best.src+' + '+res.src}:res;
+      if(!done&&best.items.length){done=true;resolve(best);}else if(done&&onUpdate)onUpdate(best);
+    }).catch(e=>errs.push(String(e&&e.message||e))).finally(()=>{pending--;if(!pending&&!done){done=true;best?resolve(best):reject(new Error(errs.join(' · ')||'sin respuesta'));}}));
+  });
 }
 async function fetchCatOv(c,pos){
-  const radii=c.r||[1500,5000];
+  const radii=c.r||[2000,5000];
   for(const r of radii){
-    const q='[out:json][timeout:20];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 80;';
+    const q='[out:json][timeout:10];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 60;';
     const j=await overpass(q);
     const seen=new Set();
     const items=(j.elements||[]).map(e=>{
@@ -336,7 +358,7 @@ async function fetchCatOv(c,pos){
       return {id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon})};
     }).filter(Boolean).filter(x=>{const k=x.name+'|'+Math.round(x.lat*2000)+'|'+Math.round(x.lon*2000);if(seen.has(k))return false;seen.add(k);return true;})
       .sort((a,b)=>a.d-b.d);
-    if(items.length>=5||r===radii[radii.length-1]) return {items,radius:r,src:'OpenStreetMap'};
+    if(items.length>=3||r===radii[radii.length-1]) return {items,radius:r,src:'OpenStreetMap'};
   }
 }
 
@@ -384,6 +406,7 @@ function mapOne(k){
   $('#mAll').hidden=false; $('#mAll').textContent='Ver todos';
   openMap();
 }
+function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
 async function loadList(id){
   const c=CAT[id];
   $('#more').hidden=true; $('#lNote').textContent='';
@@ -400,17 +423,23 @@ async function loadList(id){
   }
   $('#lSub').textContent='Desde '+S.pos.label+' · de más cerca a más lejos';$('#lDot').className='dot ok';
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
-  const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> El mapa libre va lento ahora mismo. Si no quieres esperar, toca «Verlos todos en el mapa».';},6000);
-  const key=id+'|'+S.pos.lat.toFixed(4)+'|'+S.pos.lon.toFixed(4);
+  const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
+  const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
+  const saved=store.get('cerca.c6.'+key,null);
+  if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
+  const keep=res=>{store.set('cerca.c6.'+key,{ts:Date.now(),res});};
+  const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=res.items;S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
-    let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos));}finally{clearTimeout(slow);}
+    let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
+    keep(res);
     if(S.cat!==id) return;
     S.items=res.items; S.shown=0;
     if(!S.items.length){
       $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> Puede que no estén registrados en el mapa libre que uso. Mira en Google Maps, que tiene más datos.<a class="btn-gold" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener" style="width:100%">Buscar en Google Maps</a></div>';
       return;
     }
-    $('#list').innerHTML=''; renderMore();
+    $('#list').innerHTML=''; renderMore(); setNote(c,res);
+    return;
     $('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
   }catch(e){
     if(S.cat!==id) return;
