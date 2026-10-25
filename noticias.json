@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-24",
- "fechaTexto": "sábado 24 de octubre",
- "actualizado": "2026-10-24T07:13:38+02:00",
+ "fecha": "2026-10-25",
+ "fechaTexto": "domingo 25 de octubre",
+ "actualizado": "2026-10-25T07:03:25+01:00",
  "portada": [
-  "ok1",
-  "ed2",
+  "to1",
+  "ld1",
+  "ed1",
   "ee2",
-  "ee3",
-  "to2",
-  "edi2",
-  "ok2",
-  "to3",
-  "ld2"
+  "ed2",
+  "ld2",
+  "edi3",
+  "ed3",
+  "ee3"
  ],
  "diarios": [
   {
@@ -20,21 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "El Supremo da cinco días al Gobierno para entregar la lista de los nietos",
-     "resumen": "Según Libertad Digital, el Tribunal Supremo exige a los ministros Félix Bolaños y José Manuel Albares que entreguen la lista con los nombres de las ciento sesenta y tres mil veinte personas afectadas por la Ley de Nietos. El tribunal les da cinco días, a través del Abogado del Estado, y envía copia a la Junta Electoral Central y a la Oficina del Censo Electoral. Si no cumplen, advierte de una multa de mil euros para cada ministro. También menciona la posibilidad de pedir responsabilidad penal. El diario cuenta que hasta ahora la Administración solo había dado la cifra total. Según documentos del 21 de octubre, solo se habían revisado treinta y un mil trescientos noventa expedientes. El Supremo sostiene que el Gobierno conoce la identidad de esas personas, porque tramitó sus expedientes, y ve difícil explicar que no la entregue con las elecciones convocadas. Solo podrán votar quienes tengan un certificado consular.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-23/ultimatum-del-supremo-a-bolanos-y-albares-para-que-entreguen-la-lista-de-los-163-020-afectados-de-la-ley-de-nietos-7480925/"
+     "titular": "El Supremo exige la lista de los nuevos votantes de la Ley de Nietos",
+     "resumen": "Según Libertad Digital, que dice haber visto el auto, el Tribunal Supremo ha dado un ultimátum al Gobierno. La Abogacía del Estado le informó de que se han revisado 31.390 expedientes afectados por la Ley de Nietos. Solo 91 personas han acreditado que descienden de exiliados. El tribunal reclama la lista con los nombres de las 163.020 personas que obtuvieron la nacionalidad por esta vía y constan en el censo de españoles en el exterior. Considera absolutamente necesario ese listado e incomprensible que no se haya entregado mes y medio después del primer auto. Advierte de una multa de mil euros a cada ministro, a Bolaños y a Albares, si no cumplen. El Supremo teme que, con las elecciones ya convocadas, los afectados se queden sin poder votar por la inacción de la Administración. El artículo no recoge la respuesta del Gobierno.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-24/el-supremo-retrata-la-ley-de-nietos-solo-91-personas-han-acreditado-el-exilio-de-sus-ascendientes-7481025/"
     },
     {
      "id": "ld2",
-     "titular": "Partidos marroquíes reclaman Ceuta y Melilla en su Parlamento",
-     "resumen": "Según Libertad Digital, varios partidos del Parlamento de Marruecos reclamaron Ceuta, Melilla y las islas Chafarinas durante el debate del programa del nuevo Gobierno. Fue el jueves veintidós de octubre. Adil El Bitar, vicepresidente de la Cámara y miembro del partido de la primera ministra, habló de derechos legítimos sobre esos territorios y dijo que deben lograrse por el diálogo y por medios pacíficos. El Istiqlal, socio de la coalición, afirmó que la soberanía es innegociable. La oposición de izquierdas también defendió la unidad territorial del país. El diario recuerda que el mes de julio hubo una entrada masiva de inmigrantes en Ceuta y que ministros marroquíes han hablado de este asunto en los últimos meses. Libertad Digital opina que la respuesta del Gobierno de Pedro Sánchez ha sido tibia. El periódico usa un enfoque muy crítico con el Ejecutivo y algunas cifras que da no están atribuidas.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-23/marruecos-tensa-la-cuerda-los-partidos-se-unen-para-reclamar-ceuta-melilla-y-las-islas-ocupadas-en-el-parlamento-7480752/"
+     "titular": "Sánchez graba un vídeo electoral con el Guernica de fondo",
+     "resumen": "Pedro Sánchez difundió el sábado en su cuenta de X un vídeo grabado en el Museo Reina Sofía, de Madrid, con el Guernica de Picasso a su espalda. En él defiende su lema de no a la guerra. Dice que España ha sostenido que ninguna guerra es inevitable y que ninguna vida vale menos que otra. Asegura que su Gobierno aplica los mismos principios en todos los conflictos y que se negó a recortar un solo céntimo del Estado del bienestar para subir el gasto militar. Según Libertad Digital, que es muy crítico con el Gobierno, el vídeo ha provocado quejas por usar un museo público en precampaña. Miguel Tellado, del Partido Popular, acusó a Sánchez de apropiarse del Guernica para un anuncio electoral. El artículo no recoge respuesta del Gobierno ni del museo. Las elecciones son el 29 de noviembre.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-24/pedro-sanchez-se-cuela-en-el-reina-sofia-para-dar-un-sermon-electoral-junto-al-guernica-7481371/"
     },
     {
      "id": "ld3",
-     "titular": "Un juez de Ceuta ordena registrar naves de ONG por posibles armas",
-     "resumen": "Según Libertad Digital, un juzgado de Ceuta ha ordenado registrar dos naves industriales que usan varias organizaciones no gubernamentales como base. Quiere averiguar si entregaron armas a inmigrantes irregulares. El juez Miguel Ángel Fernández autorizó el registro y permite usar la fuerza mínima imprescindible si hace falta. La investigación nace de una querella de Hazte Oír por emboscadas contra militares y policías. Esa asociación afirma que la organización No Name Kitchen habría entregado explosivos caseros. El diario no recoge respuesta de la organización. La Fiscalía defiende el registro y cita a varios testigos que dicen haber visto sprays de pimienta y armas blancas en esas naves. Uno entregó a la Policía un cuchillo grande. Las naves están en la calle Argentina y en el polígono de Alborán. Todo son indicios en fase de investigación, no hechos probados.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-23/un-juzgado-de-ceuta-ordena-registrar-las-naves-de-las-ongs-para-indagar-si-entregaron-armas-a-los-inmigrantes-7480902/"
+     "titular": "Plus Ultra envió millones al extranjero tras recibir el rescate, según Libertad Digital",
+     "resumen": "Libertad Digital asegura que la documentación entregada por el ex consejero delegado de Plus Ultra, Roberto Roselli, muestra transferencias millonarias a Venezuela y Puerto Rico justo después de recibir el primer pago del rescate público. La aerolínea obtuvo un rescate de 53 millones de euros, y el primer desembolso fue de 34 millones. Entre las operaciones señaladas hay cinco millones de dólares enviados a un banco de Puerto Rico en septiembre de 2021, que el departamento de cumplimiento del banco bloqueó. En enero de 2023 se habrían enviado más de cuatro millones de dólares a una cuenta en Venezuela, justificados como alquileres. El periódico cita informes de la Policía y reconoce que no ha podido verificar los datos. El artículo no recoge la versión de Plus Ultra, de la SEPI, del Gobierno ni de Zapatero.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-24/plus-ultra-disparo-sus-transferencias-a-venezuela-y-puerto-rico-nada-mas-recibir-el-primer-tramo-del-rescate-7480851/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "La fiscal y el juez aprietan a Zapatero por las joyas",
-     "resumen": "Según El Español, el juez de la Audiencia Nacional José Luis Calama ha dado cuarenta y ocho horas a Patrimonio del Estado para enviar las actas de los regalos oficiales que Zapatero aceptó como presidente. Quiere comprobar si las joyas halladas en su despacho figuran entre ellos. La fiscal Anticorrupción María Elena Lorente estudia acusarle de malversación. Zapatero sostiene que fueron un regalo personal del rey saudí en dos mil siete. Las joyas se valoran en más de un millón trescientos mil euros. El diario recuerda que la lista oficial incluye tres regalos saudíes, pero no las joyas. También señala que otros regalos sí se entregaron a Patrimonio al acabar su mandato. Pedro Sánchez restó importancia al asunto en televisión y dijo que los presidentes no siempre saben qué regalos reciben.",
-     "url": "https://www.elespanol.com/espana/politica/20261024/juez-fiscal-acorralan-zapatero-joyas-alega-no-sabia-regalaban/1003744433317_0.html"
+     "titular": "Disturbios en Barcelona: cien detenidos y comercios saqueados",
+     "resumen": "El sábado por la tarde hubo graves disturbios en la plaza de Cataluña, en Barcelona. Según los Mossos de Esquadra, unos 500 jóvenes, convocados por redes sociales y en su mayoría encapuchados, lanzaron piedras a la policía, quemaron contenedores y mobiliario urbano y saquearon comercios. Se desplegaron más de 220 agentes de los Mossos y la Guardia Urbana. Hubo al menos 100 detenidos, una cuarta parte menores de edad. La consejera de Interior, Núria Parlon, habló de 14 comercios vandalizados o saqueados y dijo que eran grupos no organizados que no defendían ningún derecho. El presidente Salvador Illa recordó que protestar es un derecho, pero que agredir y destrozar no lo es. El alcalde, Jaume Collboni, anunció consecuencias para los mayores de edad y para los responsables de los menores. Según El Español, los jóvenes intentaron entrar en una acampada por la vivienda cercana, pero sus participantes se lo impidieron.",
+     "url": "https://www.elespanol.com/espana/20261024/saqueos-vandalismo-barcelona-concentracion-jovenes-antisistema-acaba-detenidos/1003744433857_0.html"
     },
     {
      "id": "ee2",
-     "titular": "La Audiencia Nacional amnistía a doce acusados de los CDR",
-     "resumen": "Según El Español, la Audiencia Nacional ha aplicado la Ley de Amnistía a doce miembros de los Comités de Defensa de la República procesados por terrorismo y ha cerrado la causa. La Sección Tercera de la Sala de lo Penal acordó un sobreseimiento libre, que cierra el caso de forma definitiva. Los tres magistrados lo decidieron por unanimidad. La resolución es del viernes veintitrés de octubre. Antes de que entrase en vigor la ley, la Fiscalía pedía penas de entre ocho y veintisiete años de cárcel. Después, el fiscal solicitó archivar el caso. El tribunal recuerda que el Tribunal de Justicia de la Unión Europea ya consideró que la ley no choca con el derecho europeo, incluida la directiva antiterrorista. Los acusados habían sido investigados por manejar precursores de explosivos, según imágenes de la Guardia Civil.",
-     "url": "https://www.elespanol.com/espana/tribunales/20261023/audiencia-nacional-aplica-amnistia-cdr-procesados-delitos-terrorismo-archiva-causa/1003744432407_0.html"
+     "titular": "Feijóo promete que los corruptos pagarán y no habrá indultos",
+     "resumen": "En un acto de precampaña en Vigo, ante unas dos mil personas, el líder del Partido Popular, Alberto Núñez Feijóo, prometió que los implicados en casos de corrupción del PSOE pagarán por sus actos y que su Gobierno no los indultará. Citó a Sánchez, a Zapatero, a Leire Díez y a Ábalos. Según sus cifras, que el periódico no verifica, el Gobierno tiene 17 sumarios abiertos y 131 imputados. Prometió quitar el IVA a los alimentos básicos y a la electricidad mientras dure la inflación, bajar impuestos a rentas bajas y jóvenes, y eximir del IRPF a autónomos que facturen menos de 85.000 euros. También anunció el desalojo de okupas en 48 horas y un millón de viviendas. Acusó a Sánchez de agitar la calle y preguntó si queremos los disturbios de Francia. Pidió el voto el 29 de noviembre. El artículo no recoge respuesta del PSOE.",
+     "url": "https://www.elespanol.com/espana/politica/20261024/feijoo-promete-sanchez-zp-leire-abalos-pagaran-actos-sabra-no-vamos-indultar-corruptos/1003744433542_0.html"
     },
     {
      "id": "ee3",
-     "titular": "El juez Pedraz exige al PSOE los contratos con abogados",
-     "resumen": "Según El Español, el juez de la Audiencia Nacional Santiago Pedraz exige al PSOE que entregue, sin más demora y en un máximo de quince días, la lista de abogados y consultores contratados entre dos mil veintiuno y dos mil veinticinco. El juez dice que necesita esos datos para comprobar si el partido cumple la normativa, algo de lo que depende una posible imputación. Se investiga si se usaron letrados para canalizar dinero del partido hacia Leire Díez. El PSOE había consultado al Consejo General de la Abogacía sobre el secreto profesional. Pedraz responde que esa consulta no frena una orden judicial y que invocar el secreto de forma genérica no vale. También rechaza como excusas la dispersión de los documentos y el trabajo del partido. El periódico no recoge respuesta del PSOE.",
-     "url": "https://www.elespanol.com/espana/tribunales/20261023/juez-pedraz-pone-firme-psoe-exige-sin-demora-contratos-abogados-caso-cloacas/1003744432616_0.html"
+     "titular": "El Rey Felipe sexto se opera de cataratas en Oviedo",
+     "resumen": "El rey Felipe sexto fue operado de cataratas en el ojo izquierdo el sábado por la noche, en torno a las nueve y media, en el Instituto Oftalmológico Fernández-Vega de Oviedo. Fuentes de la Zarzuela confirmaron la operación a El Español. Según el periódico, fue un procedimiento rutinario, duró unos treinta minutos y se hizo sin complicaciones. El Rey pasará la noche en el centro para su seguimiento. La intervención llegó justo después de terminar los actos de los Premios Princesa de Asturias, que había seguido varios días en Oviedo. El sábado visitó la Cofradía de Santa Ana de Llanes, premiada como Pueblo Ejemplar. Se espera que regrese a Madrid este domingo. Por ahora mantiene su agenda del lunes, la apertura del curso de las Reales Academias del Instituto de España, en la Real Academia de Jurisprudencia y Legislación.",
+     "url": "https://www.elespanol.com/espana/20261024/rey-felipe-vi-operado-cataratas-ojo-izquierdo-pasara-noche-hospital-oviedo/1003744433843_0.html"
     }
    ]
   },
@@ -68,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "El Censo solo ha comprobado a 1.278 votantes de la Ley de Nietos",
-     "resumen": "Según El Debate, a treinta y seis días de las elecciones del veintinueve de noviembre, la Oficina del Censo Electoral solo ha podido comprobar a mil doscientos setenta y ocho votantes nacionalizados por la Ley de Nietos. Es el cero coma ocho por ciento de las ciento sesenta y tres mil veinte personas que identifica el Tribunal Supremo. De los comprobados, solo sesenta y cuatro constan con el exilio de un antepasado acreditado. Exteriores dice haber revisado treinta y un mil trescientos noventa expedientes y haber emitido noventa y un certificados. El diario cuenta que un fichero de casi dieciocho mil registros fue descartado por numerosos errores. Los datos están en un informe del veintiuno de octubre. El Supremo da hasta el miércoles veintiocho a los ministros para entregar la lista con nombres. Una magistrada discrepó y habló de inseguridad jurídica.",
-     "url": "https://www.eldebate.com/espana/20261024/36-dias-elecciones-censo-solo-podido-comprobar-1278-163020-votantes-ley-nietos-senala-supremo_473253.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "Anticorrupción pide imputar a Zapatero por malversación",
-     "resumen": "Según El Debate, la Fiscalía Anticorrupción pide imputar a Zapatero por un nuevo delito de malversación agravada, por unas joyas valoradas en cerca de un millón trescientos mil euros. La fiscal sostiene que no pudieron ser un simple obsequio institucional. Zapatero defiende que fueron un regalo personal del rey de Arabia Saudí durante su visita a España en junio de dos mil siete. La Fiscalía considera poco creíble su explicación, porque no hay acuses de recibo de las cartas que dice haber enviado. También critica que la defensa pida ayuda judicial a Arabia Saudí. El delito pedido puede suponer entre cuatro y ocho años de cárcel. El juez Calama también ve insuficiente la versión del expresidente. Todo son acusaciones pendientes de que decida el juez, y Zapatero mantiene su versión.",
+     "titular": "La Fiscalía pide imputar a Zapatero por malversación por las joyas",
+     "resumen": "Según El Debate, la Fiscalía Anticorrupción pide imputar al expresidente Rodríguez Zapatero por un nuevo delito de malversación agravada, que puede conllevar de cuatro a ocho años de cárcel. Las joyas, valoradas en cerca de 1,3 millones de euros, fueron halladas en su despacho. Zapatero sostiene que se las regaló el rey de Arabia Saudí en 2007 por deferencia. La Fiscalía responde que, por recibirlas siendo presidente, serían bienes públicos. Recuerda que en 2012 entregó otros regalos al Patrimonio del Estado, pero no estas joyas, lo que, a su juicio, muestra que era consciente de su obligación. También cuestiona las cartas a la Casa Real saudí que aporta la defensa, por no llevar sello. El juez José Luis Calama investiga el caso Plus Ultra. Todo son alegaciones de las partes: nada está probado.",
      "url": "https://www.eldebate.com/espana/20261024/fiscalia-juez-cuestionan-version-zapatero-oculto-joyas-actuacion-consciente-desviada-normas_473322.html"
     },
     {
+     "id": "ed2",
+     "titular": "Ábalos responde a Sánchez desde la cárcel",
+     "resumen": "El exministro José Luis Ábalos, preso en Soto del Real, respondió en sus redes sociales a Pedro Sánchez. El jueves, en el programa La Revuelta de Televisión Española, Sánchez había dicho que Ábalos fue una decepción. Según El Debate, Ábalos contestó que, si se habla de decepciones, la lista es larga y compartida. Criticó a quienes se suman ahora a un linchamiento cómodo y olvidan que la lealtad que hoy desprecian les permitió llegar adonde están. Acusó a Sánchez de defender la presunción de inocencia de otros, mientras que con él se vulneró desde el primer día. Anunció que recurrirá al Tribunal Constitucional. Dijo también que el verdadero fracaso del Gobierno es no atreverse con el llamado Estado profundo. El artículo solo recoge la reacción de Ábalos, sin respuesta del PSOE.",
+     "url": "https://www.eldebate.com/espana/20261024/abalos-responde-sanchez-desde-carcel-verlo-revuelta-hablamos-decepciones_473338.html"
+    },
+    {
      "id": "ed3",
-     "titular": "El PSOE pide más tiempo al juez Pedraz",
-     "resumen": "Según El Debate, el PSOE ha pedido más plazo al juez Santiago Pedraz para entregar la lista de abogados y consultoras que contrató entre dos mil veintiuno y dos mil veinticinco. Alega que la campaña electoral del veintinueve de noviembre le dificulta reunir los documentos. Los investigadores sospechan que el partido pagó a Leire Díez mediante abogados y consultoras. Según fuentes del caso, la UCO encontró huecos entre los movimientos del sumario y las cuentas presentadas al Tribunal de Cuentas. Se citan cuarenta y tres mil euros pagados a Leire Díez y al menos ciento veinticinco mil euros en facturas del abogado Jacobo Teijelo. La gerente del partido está imputada. La portavoz, Rebeca Torró, dijo que el PSOE colabora con la Justicia y que son servicios jurídicos ordinarios. El diario describe las sospechas como no probadas.",
-     "url": "https://www.eldebate.com/espana/20261023/psoe-resiste-entregar-juez-pedraz-documentacion-pagos-huecos-cloacas_472836.html"
+     "titular": "Abascal pide alerta máxima hasta las elecciones del 29 de noviembre",
+     "resumen": "El líder de Vox, Santiago Abascal, celebró el sábado un mitin en Palma ante unas 1.500 personas, según la Delegación del Gobierno, con seguridad reforzada. Un día antes, su acto en Mahón, en Menorca, terminó con incidentes que El Debate atribuye a la ultraizquierda. Abascal lanzó una alerta máxima hasta el 29 de noviembre y pidió a sus seguidores no caer en provocaciones. Dijo que la violencia está orquestada y permitida desde las instituciones. Acusó a Sánchez de traición y de liderar un gobierno criminal. Afirmó que no se presenta a la vicepresidencia del Gobierno, frase que el periódico interpreta como disposición a pactar con el Partido Popular. Habló de inmigración, de repatriaciones y de seguridad. Después viajó a Ibiza para otro mitin. El artículo recoge casi solo sus palabras, sin respuesta de otros partidos.",
+     "url": "https://www.eldebate.com/espana/baleares/20261024/abascal-lanza-alerta-maxima-hasta-29n-estan-desesperados-usar-violencia-trampas_473425.html"
     }
    ]
   },
@@ -92,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "El PP pierde apoyo y Vox sube en el votómetro de The Objective",
-     "resumen": "Según el votómetro semanal de The Objective, elaborado con Redlines, el Partido Popular pierde un punto y Vox capitaliza ese desgaste. El PP tendría ciento treinta y nueve escaños y el treinta y dos por ciento de los votos. Vox tendría sesenta y ocho. El PSOE subiría medio punto y obtendría ciento cinco escaños. El Frente Amplio, liderado por Ada Colau, lograría diez. Sumando PP y Vox se mantendría la mayoría absoluta, con doscientos siete diputados. El bloque de izquierdas quedaría en ciento cuarenta, treinta y seis por debajo de la mayoría. La probabilidad de que Feijóo sea investido con Abascal baja del noventa y ocho al noventa y tres por ciento. El diario explica que son proyecciones basadas en sondeos publicados y no resultados electorales. Las elecciones son el veintinueve de noviembre.",
-     "url": "https://theobjective.com/espana/politica/2026-10-24/psoe-vox-crece-pp-pierde-votometro/"
+     "titular": "Los disturbios de Barcelona dejan un centenar de detenidos",
+     "resumen": "Según The Objective, una protesta juvenil no comunicada reunió el sábado a cientos de jóvenes en la plaza de Cataluña, en Barcelona, con el lema institutos indignados, tomado de las movilizaciones de estudiantes en Francia. Los incidentes empezaron hacia las seis de la tarde. En el momento de más gente había unos 600 jóvenes, según la consejera de Interior, Núria Parlon. Los Mossos cargaron y detuvieron a un centenar, una cuarta parte menores. Encapuchados destrozaron escaparates, saquearon tiendas y quemaron mobiliario y toldos, y levantaron barricadas. Parlon cifró en 14 los comercios saqueados o vandalizados. Se cerraron dos estaciones de tren de la plaza. Illa condenó la violencia, Collboni avisó de consecuencias también para los padres de menores implicados, y Feijóo dijo que España necesita un cambio. El artículo no informa de heridos.",
+     "url": "https://theobjective.com/espana/cataluna/2026-10-25/protestas-barcelona-centenar-detenidos-menores/"
     },
     {
      "id": "to2",
-     "titular": "Vox se queja de la indiscreción de Feijóo sobre el Senado",
-     "resumen": "Según The Objective, hay malestar en Vox por unas declaraciones de Feijóo sobre la negociación de las listas del Senado. En una entrevista en la Cadena SER el viernes, el líder del PP dijo que sería lógico que Vox no se presentara en las provincias donde no puede conseguir senador. Añadió que habló con Abascal el miércoles. Fuentes de Vox temen que busque dinamitar las conversaciones, que se llevaban con discreción. El plazo para retirar o cambiar las listas termina a medianoche del lunes veintiséis de octubre. Hoy el PP tiene mayoría absoluta en el Senado, con ciento cuarenta y un senadores. Según el diario, si Vox se retira en algunas provincias, el PP podría llegar a ciento sesenta y uno, lo que facilitaría renovar el Constitucional o el Poder Judicial sin depender del PSOE.",
-     "url": "https://theobjective.com/espana/politica/2026-10-24/malestar-vox-filtraciones-feijoo-negociacion-listas-senado/"
+     "titular": "Las hijas de Zapatero preparan su defensa en el caso Plus Ultra",
+     "resumen": "Según The Objective, que cita fuentes del caso y el entorno de las hermanas, Laura y Alba Rodríguez Espinosa, hijas de Zapatero e imputadas en el caso Plus Ultra, preparan con su abogado un dosier para demostrar que su agencia, Whathefav, hizo trabajos reales. Argumentarán que cobraban una cuota mensual, como una suscripción, por asesoría de comunicación. Algunos antiguos clientes han recibido peticiones para aportar documentos. La Policía sostiene que la agencia canalizaba pagos. Una consultora vinculada a Zapatero le pagó 239.755 euros entre 2020 y 2025. Otra empresa transfirió 561.440 euros, y el periódico califica de fuera de mercado el medio millón cobrado por una web y un vídeo. Las hermanas declararán en la Audiencia Nacional el 30 de noviembre, un día después de las elecciones. El artículo no incluye declaraciones directas de ellas ni de sus abogados.",
+     "url": "https://theobjective.com/espana/2026-10-25/hijas-zapatero-antiguos-clientes/"
     },
     {
      "id": "to3",
-     "titular": "Interior retira unos doscientos antidisturbios de Ceuta",
-     "resumen": "Según The Objective, que cita fuentes policiales, el Ministerio del Interior retira de Ceuta a unos doscientos antidisturbios de la Policía Nacional y la Guardia Civil. También repliega una de las dos unidades que tenía en Melilla. El motivo sería el previsible aumento de altercados durante la campaña electoral. Se marchan dos grupos de la Policía y tres de la Guardia Civil, en las próximas horas. Se quedan unos cien guardias civiles y doscientos policías hasta final de año. El diario cuenta que hay unos seis mil inmigrantes en campamentos de acogida, tres mil trescientos de ellos menores. Interior también detectó un llamamiento yihadista a atacar a policías y manifestantes. Ni el ministerio ni el mando único han anunciado la retirada, y el periódico no recoge declaraciones oficiales.",
-     "url": "https://theobjective.com/espana/2026-10-24/interior-retira-200-antidisturbios-ceuta-aumento-disturbios-peninsula/"
+     "titular": "El Gobierno tiene sin ejecutar casi tres de cada cuatro euros de inversión",
+     "resumen": "Según The Objective, con datos de la Intervención General del Estado, la Administración central cerró agosto con 14.446 millones de euros de inversión pública sin ejecutar. De 19.811 millones de crédito disponible, solo se habían reconocido 5.365 millones, una ejecución del 27,1 por ciento. España sigue con los presupuestos prorrogados de 2023, ampliados con modificaciones de crédito. El artículo da posibles explicaciones, como los proyectos de varios años, sobre todo en defensa, y las licitaciones. Aclara que la cifra no significa que el dinero se haya perdido ni que las obras estén paradas, y que el desfase aún puede corregirse antes de fin de año. Tampoco corresponde a fondos europeos pendientes. El autor opina que es un indicador de bajo ritmo, pero que los datos no prueban retener gasto por motivos electorales. No hay respuesta oficial.",
+     "url": "https://theobjective.com/economia/2026-10-25/gobierno-euros-inversion-publica/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "El Supremo da cinco días a Bolaños y Albares por la lista de nietos",
-     "resumen": "Según OKDiario, el Tribunal Supremo ha dado cinco días a los ministros Félix Bolaños y José Manuel Albares para entregar la relación con nombres de las ciento sesenta y tres mil veinte personas afectadas por la Ley de Nietos. El plazo termina a las tres de la tarde del miércoles veintiocho de octubre. Dos autos de la Sección Cuarta, con el voto en contra de una de las seis magistradas, lo ordenan. La lista debe ir al tribunal, a la Junta Electoral Central y a la Oficina del Censo Electoral. Si no cumplen, habrá una multa de mil euros por ministro, repetible. El tribunal también se reserva pedir responsabilidad penal. Solo podrán votar quienes tengan certificado consular de exilio. Las elecciones generales son el veintinueve de noviembre. El diario no recoge respuesta de los ministros.",
-     "url": "https://okdiario.com/espana/supremo-amenaza-albares-bolanos-imputarles-desobediencia-si-no-identifican-5-dias-afectados-ley-nietos-20615554"
+     "titular": "OKDiario confronta a la consejera vasca que acercó a 46 presos de ETA",
+     "resumen": "OKDiario cuenta que abordó en San Sebastián a María Jesús San José, consejera de Justicia del Gobierno vasco, socialista, por la semilibertad concedida a 46 presos de ETA. La periodista le preguntó si no traicionaba a los socialistas asesinados por la banda. Ella respondió brevemente, sin contestar a la pregunta de fondo, y su escolta cortó la conversación. Según el periódico, hay 34 terceros grados y 12 regímenes flexibles. Entre los beneficiados cita a condenados por el asesinato de Fernando Buesa y de otros políticos y periodistas. La asociación de víctimas Covite exige su dimisión. La Fiscalía recurrió y la Audiencia Nacional revocó varios beneficios por prematuros. El Gobierno vasco lo forman el PNV y el PSE. El reportaje, de tono muy crítico, no recoge una respuesta oficial del Gobierno vasco ni del PSE.",
+     "url": "https://okdiario.com/espana/okdiario-sorprende-consejera-vasca-que-liberado-46-etarras-no-cree-usted-que-traiciona-socialistas-asesinados-eta-20619771"
     },
     {
      "id": "ok2",
      "titular": "Leonor pide mantener el entusiasmo en tiempos de desencanto",
-     "resumen": "Según OKDiario, la princesa Leonor habló el viernes veintitrés de octubre en la ceremonia de los premios Princesa de Asturias, en Oviedo. Pidió mantener el entusiasmo en un tiempo de desencanto social profundo. Dijo ver indignación y escepticismo en la sociedad. Citó entre las causas la desconfianza, la desigualdad, los conflictos, el extremismo y el coste de la vida. Planteó cómo vivir con la falta de expectativas de muchos jóvenes, por ejemplo para tener un buen trabajo o una vivienda. Se preguntó si estos tiempos son más oscuros y si aún tiene sentido premiar a personas cada año, y respondió que sí. Recordó la ceremonia de mil novecientos ochenta y uno, cuando ella tenía trece años. Entre los premiados están Patti Smith, Studio Ghibli, Leo Messi y Julian Barnes.",
+     "resumen": "La princesa Leonor pronunció el viernes en Oviedo su discurso en la entrega de los Premios Princesa de Asturias. Pidió mantener el entusiasmo en estos tiempos de desencanto social profundo. Señaló la indignación y el escepticismo de la sociedad y enumeró causas de malestar, como las desigualdades, los conflictos, los extremismos, la incertidumbre y el coste de la vida. Habló de la dificultad de planear una vida con buen trabajo y vivienda. Destacó que los premiados ayudan a mantener la confianza, y defendió la autenticidad frente a lo virtual y la imperfección humana frente a la perfección de la máquina. Recordó el discurso sobre la esperanza de María Zambrano en 1981. Entre los galardonados de este año están Patti Smith, Studio Ghibli, Leo Messi y Julian Barnes. El artículo no recoge reacciones.",
      "url": "https://okdiario.com/espana/leonor-apela-mantener-entusiasmo-tiempos-desencanto-social-profundo-discurso-princesa-asturias-20619821"
     },
     {
      "id": "ok3",
-     "titular": "El consulado de Buenos Aires no halla pruebas de exilio en 10.500 casos",
-     "resumen": "Según OKDiario, el consulado de España en Buenos Aires ha revisado diez mil quinientos expedientes de nacionalidad por la Ley de Nietos y no encontró pruebas del exilio de los antepasados. La mayoría de los solicitantes no presentó documentos, y los pocos que lo hicieron no eran concluyentes. El diario recuerda que una instrucción de Sofía Puente presumía exiliado a quien salió de España entre mil novecientos treinta y seis y mil novecientos cincuenta y cinco. Según OKDiario, eso cambió el criterio de la ley. Exteriores respondió que los consulados hacen los esfuerzos necesarios y los redoblarán si hace falta. El Gobierno admitió que será imposible identificar a todos los afectados antes de las elecciones. El periódico advierte de posibles impugnaciones del voto desde el extranjero. Es un medio muy crítico con el Gobierno, y usa expresiones como falsos nietos.",
-     "url": "https://okdiario.com/espana/consulado-buenos-aires-revisado-ya-10-500-expedientes-nietos-no-encuentra-pruebas-exilio-20616436"
+     "titular": "OKDiario: Óscar López colocó a un amigo en Paradores",
+     "resumen": "Según OKDiario, el ministro Óscar López colocó a su amigo Alfredo Ruiz Mate en un puesto directivo de Paradores mientras él presidía la empresa pública, entre 2018 y 2021. Ruiz Mate, aparejador de Riaza, en Segovia, fue director de Infraestructura Hotelera, Mantenimiento y Decoración. Según el periódico, aparece en pliegos de contratación y firma expedientes. Mientras tanto siguió como administrador único de su pequeña inmobiliaria. Ambos son amigos desde jóvenes y miembros de una peña festiva de Riaza. El diario compara el caso con el del amigo de Pedro Sánchez, Iñaqui Carnicero. Las fuentes del artículo no están identificadas, y los datos de la empresa proceden del Registro Mercantil. El texto no incluye respuesta de López, de Paradores ni de Ruiz Mate. Según las fuentes del periódico, Ruiz Mate ya no está en Paradores.",
+     "url": "https://okdiario.com/espana/oscar-lopez-coloco-amigo-intimo-del-pueblo-puesto-directivo-paradores-20602663"
     }
    ]
   },
@@ -140,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El Frente Amplio tendrá el treinta por ciento de las listas al Senado con el PSOE",
-     "resumen": "Según elDiario.es, el Frente Amplio tendrá el treinta por ciento de los puestos en las listas conjuntas con el PSOE para el Senado, en cuarenta y cuatro circunscripciones. El PSOE se queda con el setenta por ciento y la izquierda alternativa no encabezará ninguna lista. Compromís, Chunta y Més también forman parte de la alianza en sus territorios. Compromís tendrá el segundo puesto en Valencia, y en Navarra será para un candidato del Frente Amplio aún por elegir. Según estimaciones internas del PSOE, la alianza podría ganar hasta cuarenta senadores más y la mayoría absoluta si repite los votos de dos mil veintitrés. En once provincias donde ganó el PP, la lista conjunta podría quedar primera. El diario señala que PP y Vox negocian retiradas de Vox en algunas zonas, lo que podría reducir esa ganancia.",
-     "url": "https://www.eldiario.es/politica/frente-amplio-tendra-30-puestos-listas-conjuntas-psoe-senado_1_13611215.html"
+     "titular": "Feijóo apuesta por candidatos duros para competir con Vox",
+     "resumen": "Según elDiario.es, el líder del Partido Popular, Alberto Núñez Feijóo, ha elegido perfiles de línea dura en sus listas para las elecciones del 29 de noviembre, para competir con Vox, que según el periódico podría lograr un resultado récord. Cayetana Álvarez de Toledo irá de número dos por Madrid, detrás de Feijóo, y Borja Sémper de tres. Xavier García Albiol, alcalde de Badalona, encabezará la lista de Barcelona. Ester Muñoz irá de número uno por León y Alma Ezcurra se encarga del programa. Un joven de unos veinte años, Jon Echeverría, se presenta por Guipúzcoa. Feijóo dijo en la Cadena SER que Álvarez de Toledo ha trabajado con él de forma leal durante cuatro años. El periódico señala que la distancia con el PSOE en las encuestas se ha reducido a unos cinco puntos.",
+     "url": "https://www.eldiario.es/politica/feijoo-apuesta-perfiles-duros-competir-vox_1_13610039.html"
     },
     {
      "id": "edi2",
-     "titular": "Feijóo promete eliminar Igualdad y reabre el debate del aborto",
-     "resumen": "Según elDiario.es, Alberto Núñez Feijóo hizo varios compromisos en una entrevista en la Cadena SER el veintitrés de octubre. Dijo que eliminaría el Ministerio de Igualdad y repartiría sus funciones. Sobre el aborto, afirmó que las mujeres podrían acceder según la ley actual, pero que no se obligaría a los médicos. Opinó que las menores de dieciséis y diecisiete años deberían decidir con sus padres. En pensiones, prometió subidas ligadas al IPC y reactivar el Pacto de Toledo, sin concretar mecanismos. Reformaría la ley de eutanasia, daría su visto bueno a subir el salario mínimo solo si hay acuerdo con los empresarios, y derogaría la Ley de Memoria Democrática. No descartó gobernar con Vox. El diario afirma que su dato sobre un fondo de reserva de pensiones es falso. Las elecciones son el veintinueve de noviembre.",
-     "url": "https://www.eldiario.es/politica/feijoo-reabre-debate-aborto-eliminara-ministerio-igualdad-estudiara-viabilidad-pensiones_1_13608554.html"
+     "titular": "PSOE y Frente Amplio pactan listas conjuntas para el Senado",
+     "resumen": "El PSOE y el Frente Amplio, que agrupa a Sumar y sus aliados regionales, han acordado listas conjuntas para el Senado en 44 circunscripciones. El PSOE tendrá el 70 por ciento de los puestos y el Frente Amplio el 30 por ciento. Según elDiario.es, la izquierda alternativa no encabezará la lista en ninguna provincia. Compromís tendrá el número dos en Valencia. En 2023 el PSOE obtuvo 72 senadores y Sumar ninguno. Un informe interno del PSOE calcula que la alianza podría ganar unos 40 escaños más si mantiene todos los votos de 2023. Cree que podría arrebatar la primera plaza al PP en 11 provincias, entre ellas Madrid, Málaga, Córdoba y Valladolid. El periódico advierte de que estos cálculos son estimaciones y de que el PP y Vox negocian que Vox retire listas en algunas provincias, lo que podría reducir esas ganancias.",
+     "url": "https://www.eldiario.es/politica/frente-amplio-tendra-30-puestos-listas-conjuntas-psoe-senado_1_13611215.html"
     },
     {
      "id": "edi3",
-     "titular": "Una jueza frena el desahucio de una familia en Leganés",
-     "resumen": "Según elDiario.es, una jueza de Madrid ha frenado el desahucio de una familia con cinco hijos y pocos recursos de un piso de la Agencia de Vivienda Social de la Comunidad de Madrid, en Leganés. La magistrada Raquel Catalá, del Juzgado de lo Contencioso número veintinueve, habló de la quiebra del mercado de la vivienda. Explicó que antes bastaba con probar la ocupación para recuperar el piso y que ese criterio debe cambiar. La jueza consideró que la Comunidad nunca probó que el piso estuviera asignado a otra familia, por lo que la orden no tenía causa legítima ni interés público. La agencia sostiene que el procedimiento está regulado y que la vulnerabilidad no basta para quedarse. La sentencia no es firme y puede recurrirse en quince días. Un portavoz regional dijo no conocerla.",
-     "url": "https://www.eldiario.es/politica/jueza-abre-via-rechazar-desahucios-quiebra-mercado-vivienda_1_13608137.html"
+     "titular": "Sánchez acepta la entrevista con Jordi Wild",
+     "resumen": "Según elDiario.es, Pedro Sánchez ha aceptado ser entrevistado por el youtuber Jordi Wild en su canal The Wild Project. Es el último de los cuatro candidatos en confirmar, después de Feijóo, Abascal y Ada Colau. Las entrevistas se emitirán el 13 de noviembre, con una hora de diferencia entre cada una. Durarán entre 50 y 90 minutos, según el candidato. Serán más relajadas que las habituales, pero con preguntas comunes a todos. No habrá edición del vídeo ni se retirará ningún fragmento. Dos periodistas independientes, fuera de cámara, comprobarán los datos que se mencionen. Wild anunció que serán entrevistas duras e inquisitivas, aunque con respeto y sin gritos. Dijo que también recibió peticiones de Podemos, Esquerra, Junts y otros partidos, pero que por falta de tiempo cree que será difícil atenderlas. El artículo no recoge más reacciones.",
+     "url": "https://www.eldiario.es/politica/pedro-sanchez-acepta-entrevista-jordi-wild_1_13611264.html"
     }
    ]
   }
