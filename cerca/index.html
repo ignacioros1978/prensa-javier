@@ -103,6 +103,22 @@ body.scroll #app{height:auto}
 .favs .hint{font-size:14px;line-height:1.2}
 @media (max-height:600px){.grp h2{display:none}}
 @media (max-height:640px){.tile svg{width:22px;height:22px}.tile{gap:2px;padding:4px 3px}h1{font-size:23px}.switch{min-height:44px}}
+
+/* Lista con mapa: el mapa arriba (Google Maps dentro de la app) y la lista desplazable debajo */
+#vList{height:100%;min-height:0!important}
+#vList>.top,.maprow{flex:none}
+.mapbox{position:relative;flex:none;height:36vh;min-height:180px;border-radius:16px;overflow:hidden;border:1.5px solid var(--line-2);background:#1d1a14}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapcap{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);padding:6px 10px;border-radius:10px;background:rgba(13,11,8,.88);color:var(--ink);font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+.mapcap:empty{display:none}
+#vList.big .mapbox{flex:1;height:auto}
+#vList.big .listwrap{display:none}
+.maprow{display:flex;gap:8px}
+.maprow .btn-gold{flex:1;min-height:48px}
+#bigMap[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
+.listwrap{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.it.sel{border-color:var(--gold);background:var(--card-2)}
+.diag{font-size:13px;color:#9d927a;margin-top:6px}
 </style>
 </head>
 <body>
@@ -141,10 +157,16 @@ body.scroll #app{height:auto}
       <div class="where"><span class="dot ok" id="lDot" aria-hidden="true"></span><span class="t" id="lSub">de más cerca a más lejos</span></div>
     </div>
   </div>
-  <a class="btn-gold" id="allMap" href="#" target="_blank" rel="noopener" style="min-height:52px;font-size:17px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></svg>Verlos todos en el mapa</a>
-  <div class="list" id="list" aria-live="polite"></div>
-  <button class="btn-line" id="more" type="button" hidden>Ver más sitios</button>
-  <p class="note" id="lNote"></p>
+  <div class="mapbox" id="mapBox"><iframe id="map" title="Mapa de los sitios cercanos" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><div class="mapcap" id="mapCap"></div></div>
+  <div class="maprow">
+    <button class="btn-gold" id="allMap" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></svg>Verlos todos en el mapa</button>
+    <button class="round" id="bigMap" type="button" aria-pressed="false" aria-label="Mapa a pantalla completa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+  </div>
+  <div class="listwrap" id="listWrap">
+    <div class="list" id="list" aria-live="polite"></div>
+    <button class="btn-line" id="more" type="button" hidden style="margin-top:8px">Ver más sitios</button>
+    <p class="note" id="lNote"></p>
+  </div>
 </section>
 
 </div>
@@ -196,6 +218,8 @@ const GROUPS=[
   {id:'banos',n:'Baños',t:'Baños públicos',osm:['["amenity"="toilets"]'],g:'baños públicos'}]]
 ];
 const CAT={};GROUPS.forEach(g=>g[1].forEach(c=>CAT[c.id]=c));
+/* Respaldo (Photon, también con datos de OpenStreetMap) por si los servidores principales no responden */
+const PH={rest:['restaurante','amenity:restaurant'],rapida:['comida rápida','amenity:fast_food'],cafe:['cafetería','amenity:cafe'],super:['supermercado','shop:supermarket'],farm:['farmacia','amenity:pharmacy'],cajero:['cajero','amenity:atm'],taxi:['taxi','amenity:taxi'],gas:['gasolinera','amenity:fuel'],parking:['parking','amenity:parking'],parque:['parque infantil','leisure:playground'],helado:['heladería','amenity:ice_cream'],urg:['hospital','amenity:hospital'],banos:['aseo','amenity:toilets']};
 
 /* ---------- utilidades ---------- */
 const $=s=>document.querySelector(s);
@@ -206,6 +230,7 @@ function dist(a,b){const R=6371000,r=Math.PI/180,dLa=(b.lat-a.lat)*r,dLo=(b.lon-
 const fmtD=m=>m<1000?Math.round(m/10)*10+' m':(m<10000?(m/1000).toFixed(1).replace('.',','):Math.round(m/1000))+' km';
 const fmtT=(m,drive)=>{const min=Math.max(1,Math.round(drive?m/1000*60/30+2:m/80));return min<60?min+' min '+(drive?'en coche':'andando'):Math.floor(min/60)+' h '+(min%60)+' min '+(drive?'en coche':'andando');};
 const gSearch=(what)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(what+(S.open?' abiertos ahora':'')+(S.pos&&!S.pos.manual?' cerca de mí':S.pos?' cerca de '+S.pos.label:' cerca de mí'));
+const embed=(q,lat,lon,z)=>'https://maps.google.com/maps?hl=es&z='+(z||15)+'&output=embed&q='+encodeURIComponent(q)+(lat!=null?'&ll='+lat+','+lon:'');
 const gPlace=(p)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.lat+','+p.lon);
 const gRoute=(p,drive)=>'https://www.google.com/maps/dir/?api=1'+(S.pos?'&origin='+S.pos.lat+','+S.pos.lon:'')+'&destination='+p.lat+','+p.lon+'&travelmode='+(drive?'driving':'walking');
 
@@ -223,7 +248,7 @@ function locate(){
     S.cache={};
     setWhere('Ubicación encontrada','ok');
     reverse(S.pos);
-    if(S.cat) loadList(S.cat);
+    if(S.cat){mapAll();loadList(S.cat);}
   },err=>{
     if(done)return;done=true;clearTimeout(wd);
     S.pos=null;
@@ -263,7 +288,23 @@ function addr(t){
   const s=[t['addr:street'],t['addr:housenumber']].filter(Boolean).join(', ');
   return s||t['addr:place']||t['addr:city']||'';
 }
+async function photon(c,pos){
+  const ph=PH[c.id]; if(!ph) throw new Error('sin respaldo');
+  const u='https://photon.komoot.io/api/?limit=50&lat='+pos.lat+'&lon='+pos.lon+'&q='+encodeURIComponent(ph[0])+'&osm_tag='+encodeURIComponent(ph[1]);
+  const r=await fetchTO(u,12000); if(!r.ok) throw new Error('Photon HTTP '+r.status);
+  const j=await r.json(); const max=(c.r||[1500,5000]).slice(-1)[0];
+  const items=(j.features||[]).map(f=>{const g=f.geometry&&f.geometry.coordinates;if(!g)return null;const pr=f.properties||{};const lat=g[1],lon=g[0];
+    return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name:pr.name||c.t,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon})};})
+    .filter(x=>x&&x.d<=max).sort((a,b)=>a.d-b.d);
+  return {items,radius:max,src:'Photon'};
+}
 async function fetchCat(c,pos){
+  try{return await fetchCatOv(c,pos);}catch(e){
+    S.lastErr=String(e&&e.message||e);
+    try{return await photon(c,pos);}catch(e2){throw new Error(S.lastErr+' · '+String(e2&&e2.message||e2));}
+  }
+}
+async function fetchCatOv(c,pos){
   const radii=c.r||[1500,5000];
   for(const r of radii){
     const q='[out:json][timeout:20];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 80;';
@@ -276,7 +317,7 @@ async function fetchCat(c,pos){
       return {id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon})};
     }).filter(Boolean).filter(x=>{const k=x.name+'|'+Math.round(x.lat*2000)+'|'+Math.round(x.lon*2000);if(seen.has(k))return false;seen.add(k);return true;})
       .sort((a,b)=>a.d-b.d);
-    if(items.length>=5||r===radii[radii.length-1]) return {items,radius:r};
+    if(items.length>=5||r===radii[radii.length-1]) return {items,radius:r,src:'OpenStreetMap'};
   }
 }
 
@@ -294,19 +335,32 @@ function setOpen(v){S.open=v;store.set('cerca.open',v);$('#openNow').setAttribut
 
 /* ---------- lista ---------- */
 function show(view){
-  $('#vHome').hidden=view!=='home';$('#vList').hidden=view!=='list';document.body.classList.toggle('scroll',view==='list');window.scrollTo(0,0);
+  $('#vHome').hidden=view!=='home';$('#vList').hidden=view!=='list';window.scrollTo(0,0);
 }
 function openCat(id){
   const c=CAT[id]; if(!c) return;
   if(c.google){window.open(gSearch(c.g),'_blank','noopener');return;}
   S.cat=id; history.pushState({cerca:'list',cat:id},'');
   $('#lTitle').textContent=c.t;
-  $('#allMap').href=gSearch(c.g);
-  show('list'); loadList(id);
+  $('#vList').classList.remove('big');$('#bigMap').setAttribute('aria-pressed','false');
+  show('list'); mapAll(); loadList(id);
+}
+function mapAll(){
+  const c=CAT[S.cat]; if(!c) return;
+  const p=S.pos;
+  $('#map').src=embed(c.g+(p&&!p.manual?'':''),p?p.lat:null,p?p.lon:null,p?15:13);
+  $('#mapCap').textContent=c.t+(p?' cerca de '+(p.label||'ti'):'');
+  document.querySelectorAll('.it.sel').forEach(e=>e.classList.remove('sel'));
+}
+function mapOne(k){
+  const x=S.items[k]; if(!x) return;
+  $('#map').src=embed(x.lat+','+x.lon,x.lat,x.lon,17);
+  $('#mapCap').textContent=x.name+' · '+fmtD(x.d);
+  document.querySelectorAll('.it.sel').forEach(e=>e.classList.remove('sel'));
+  const el=document.querySelector('.it[data-k="'+k+'"]'); if(el) el.classList.add('sel');
 }
 async function loadList(id){
   const c=CAT[id];
-  $('#allMap').href=gSearch(c.g);
   $('#more').hidden=true; $('#lNote').textContent='';
   if(!S.pos&&$('#whereDot').classList.contains('wait')){
     $('#lSub').textContent='Buscando tu ubicación…';$('#lDot').className='dot wait';
@@ -332,7 +386,7 @@ async function loadList(id){
       return;
     }
     $('#list').innerHTML=''; renderMore();
-    $('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos del mapa libre OpenStreetMap.';
+    $('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
   }catch(e){
     if(S.cat!==id) return;
     S.cache[key]=null;
@@ -342,10 +396,10 @@ async function loadList(id){
 function isFav(x){return S.favs.some(f=>f.id===x.id);}
 function renderMore(){
   const c=CAT[S.cat], drive=!!c.drive, next=S.items.slice(S.shown,S.shown+10);
-  $('#list').insertAdjacentHTML('beforeend',next.map((x,i)=>{const k=S.shown+i;return '<div class="it"><div class="r1"><div class="nm">'+esc(x.name)+'</div><div class="ds">'+fmtD(x.d)+'</div></div>'+
+  $('#list').insertAdjacentHTML('beforeend',next.map((x,i)=>{const k=S.shown+i;return '<div class="it" data-k="'+k+'"><div class="r1"><div class="nm">'+esc(x.name)+'</div><div class="ds">'+fmtD(x.d)+'</div></div>'+
     '<div class="inf">'+(x.addr?'<div>'+esc(x.addr)+'</div>':'')+'<div class="h">'+fmtT(x.d,drive)+(x.hours?' · <span style="font-weight:600">'+esc(x.hours)+'</span>':'')+'</div></div><div class="r2">'+
     '<button type="button" class="sq" data-fav="'+k+'" aria-pressed="'+isFav(x)+'" aria-label="Guardar en tus sitios">'+svg('<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" stroke="#e6c27a" stroke-width="1.8" stroke-linejoin="round"/>')+'</button>'+
-    '<a class="sq" href="'+esc(gPlace(x))+'" target="_blank" rel="noopener" aria-label="Ver '+esc(x.name)+' en el mapa">'+svg('<path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="#e6c27a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="#e6c27a" stroke-width="2"/>')+'</a>'+
+    '<button type="button" class="sq" data-pin="'+k+'" aria-label="Ver '+esc(x.name)+' en el mapa">'+svg('<path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="#e6c27a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="#e6c27a" stroke-width="2"/>')+'</button>'+
     '<a class="go" href="'+esc(gRoute(x,drive))+'" target="_blank" rel="noopener">'+svg('<path d="M3 11 21 3l-8 18-2-8z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')+'Cómo llegar</a></div></div>';}).join(''));
   S.shown+=next.length;
   $('#more').hidden=S.shown>=S.items.length;
@@ -361,6 +415,7 @@ function toggleFav(k,btn){
 document.addEventListener('click',e=>{
   const t=e.target.closest('[data-cat]'); if(t){openCat(t.dataset.cat);return;}
   const f=e.target.closest('[data-fav]'); if(f){toggleFav(+f.dataset.fav,f);return;}
+  const pn=e.target.closest('[data-pin]'); if(pn){mapOne(+pn.dataset.pin);return;}
   const a=e.target.closest('[data-act]');
   if(a&&a.dataset.act==='relocate'){locate();return;}
   if(a&&a.dataset.act==='retry'){loadList(S.cat);return;}
@@ -369,12 +424,14 @@ document.addEventListener('submit',async e=>{
   const f=e.target;
   if(f.id==='freeForm'){e.preventDefault();const q=$('#q').value.trim();window.open(gSearch(q||'sitios de interés'),'_blank','noopener');return;}
   if(f.dataset.act==='manual'){e.preventDefault();const v=f.querySelector('input').value.trim();if(!v)return;
-    try{S.pos=await geocode(v);S.cache={};setWhere('Desde '+v,'ok');loadList(S.cat);}catch(err){f.querySelector('input').value='';f.querySelector('input').placeholder='No encuentro ese sitio. Prueba con calle y ciudad';}}
+    try{S.pos=await geocode(v);S.cache={};setWhere('Desde '+v,'ok');mapAll();loadList(S.cat);}catch(err){f.querySelector('input').value='';f.querySelector('input').placeholder='No encuentro ese sitio. Prueba con calle y ciudad';}}
 });
 $('#openNow').onclick=()=>{setOpen(!S.open);};
 $('#relocate').onclick=locate;
 $('#backHome').onclick=()=>history.back();
 $('#more').onclick=renderMore;
+$('#allMap').onclick=()=>{mapAll();};
+$('#bigMap').onclick=()=>{const v=$('#vList').classList.toggle('big');$('#bigMap').setAttribute('aria-pressed',String(v));};
 window.addEventListener('popstate',()=>{S.cat=null;show('home');});
 
 renderGroups(); renderFavs(); setOpen(S.open); locate();
