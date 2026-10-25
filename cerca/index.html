@@ -141,7 +141,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v14</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v15</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -322,7 +322,7 @@ async function tryOne(u,q,ms){const r=await fetchTO(u+'?data='+encodeURIComponen
 async function overpass(q){
   /* Pregunta a todos los servidores a la vez y se queda con el primero que conteste bien */
   const errs=[];
-  try{return await Promise.any(OVERPASS.map(u=>tryOne(u,q,9000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}
+  try{return await Promise.any(OVERPASS.slice(0,q.includes('timeout:25')?2:4).map(u=>tryOne(u,q,q.includes('timeout:25')?20000:9000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}
   catch(e){throw new Error('Mapa libre: '+(errs.join(', ')||'sin respuesta'));}
 }
 const NM={rest:'restaurant',rapida:'fast_food',cafe:'cafe',super:'supermarket',farm:'pharmacy',cajero:'atm',taxi:'taxi',gas:'fuel',parking:'parking',parque:'playground',helado:'ice_cream',urg:'hospital',banos:'toilets'};
@@ -343,9 +343,7 @@ function addr(t){
 }
 function sgNote(t,name){
   const txt=(t.brand||'')+' '+name+' '+(t.description||'')+' '+(t.cuisine||'');
-  const shop=t.shop||'';
-  if(/^(yes|only|limited)$/.test(t['diet:gluten_free']||'')||/sin gluten|gluten.?free|cel[ií]ac|sin tacc/i.test(txt)||new RegExp(SG_CHAINS,'i').test(txt)) return {k:'ok',t:shop?'Productos sin gluten':'Opciones sin gluten'};
-  if(shop==='health_food'||(!shop||/^(supermarket|convenience|department_store|grocery|discount)$/.test(shop))&&new RegExp('(^|[^a-z])('+SG_SUPER+')([^a-z]|$)','i').test(txt)) return {k:'ok',t:'Productos sin gluten'};
+  if(/^(yes|only|limited)$/.test(t['diet:gluten_free']||'')||/sin gluten|gluten.?free|cel[ií]ac|sin tacc/i.test(txt)||new RegExp(SG_CHAINS,'i').test(txt)) return {k:'ok',t:'Opciones sin gluten'};
   return '';
 }
 const rank=x=>x.note&&x.note.k==='ok'?0:x.note&&x.note.k==='mid'?1:2;
@@ -383,26 +381,49 @@ async function photon(c,pos){
     .filter(x=>x&&x.d<=max&&!seen.has(x.id)&&seen.add(x.id)).sort((a,b)=>a.d-b.d);
   return {items,radius:max,src:'Photon'};
 }
-/* Sin gluten: reutiliza las búsquedas que ya funcionan (súper, comida rápida, restaurantes, cafeterías)
-   y se queda con los sitios que tienen opciones o productos sin gluten, más los marcados expresamente */
-async function fetchGluten(c,pos,onUpdate){
-  const subs=[['super',CAT.super],['rapida',CAT.rapida],['rest',CAT.rest],['cafe',CAT.cafe],['gluten',Object.assign({},c,{_raw:true})]];
-  const parts={};
-  const build=()=>{let items=[];
-    for(const [id,r] of Object.entries(parts)){
-      items=items.concat(r.items.map(x=>{const t=Object.assign({},x.t||{});if(id==='super'&&!t.shop)t.shop='supermarket';const note=x.note&&x.note.t?x.note:sgNote(t,x.name);return note?Object.assign({},x,{note}):null;}).filter(Boolean));
-    }
-    return {items:mergeItems([],items),radius:5000,src:'OpenStreetMap'};};
-  return new Promise(resolve=>{
-    let pending=subs.length,done=false;
-    subs.forEach(([id,cc])=>fetchCat(cc,pos,r=>{parts[id]=r;if(done&&onUpdate)onUpdate(build());})
-      .then(r=>{parts[id]=r;const b=build();if(!done&&b.items.length){done=true;resolve(b);}else if(done&&onUpdate)onUpdate(b);})
-      .catch(()=>{})
-      .finally(()=>{pending--;if(!pending&&!done){done=true;resolve(build());}}));
+/* Sin gluten: UNA sola búsqueda de sitios de comer (como «Restaurantes») y aquí se filtran los que tienen opciones sin gluten.
+   Pocas peticiones a la vez: los servidores del mapa rechazan a quien pide muchas simultáneas. */
+const FOOD='["amenity"~"^(restaurant|fast_food|cafe|bar|pub|ice_cream|biergarten)$"]';
+async function glutenOv(pos){
+  let last=null;
+  for(const r of [3000,8000]){
+    const j=await overpass('[out:json][timeout:25];nwr'+FOOD+'(around:'+r+','+pos.lat+','+pos.lon+');out center tags;');
+    const items=(j.elements||[]).map(e=>{const lat=e.lat??e.center?.lat,lon=e.lon??e.center?.lon;if(lat==null)return null;const t=e.tags||{};const name=t.name||t.brand||'';if(!name)return null;
+      const note=sgNote(t,name);return note?{id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon}),note}:null;}).filter(Boolean);
+    last={items:mergeItems([],items),radius:r,src:'OpenStreetMap'};
+    if(items.length>=5) return last;
+  }
+  return last;
+}
+const PH_CHAINS=["McDonald's",'Burger King','Telepizza',"Domino's",'Goiko','100 Montaditos',"Foster's Hollywood",'VIPS','Ginos','Tagliatella','sin gluten'];
+async function glutenPh(pos){
+  /* De dos en dos, para no saturar */
+  const feats=[];
+  for(let i=0;i<PH_CHAINS.length;i+=2){
+    const rs=await Promise.allSettled(PH_CHAINS.slice(i,i+2).map(q=>photon1(q,'amenity',pos)));
+    rs.forEach(x=>{if(x.status==='fulfilled')feats.push(...x.value);});
+  }
+  const seen=new Set();
+  const items=feats.map(f=>{const g=f.geometry&&f.geometry.coordinates;if(!g)return null;const pr=f.properties||{};const lat=g[1],lon=g[0];const name=pr.name||'';
+    if(!/^(restaurant|fast_food|cafe|bar|pub|ice_cream)$/.test(pr.osm_value||''))return null;const note=sgNote({},name);if(!note)return null;
+    return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon}),note};})
+    .filter(x=>x&&x.d<=10000&&!seen.has(x.id)&&seen.add(x.id));
+  return {items:mergeItems([],items),radius:10000,src:'Photon'};
+}
+async function fetchGluten(pos,onUpdate){
+  S.diag.src={};
+  const timed=(name,pr)=>{const t=performance.now();S.diag.src[name]='…';showDiag();return pr.then(r=>{S.diag.src[name]=((performance.now()-t)/1000).toFixed(1).replace('.',',')+' s ('+r.items.length+')';showDiag();return r;},e=>{S.diag.src[name]='falla: '+String(e&&e.message||e).slice(0,50);showDiag();throw e;});};
+  const jobs=[timed('Mapa libre',glutenOv(pos)),timed('Photon',glutenPh(pos))];
+  return new Promise((resolve,reject)=>{
+    let best=null,pending=jobs.length,done=false;const errs=[];
+    jobs.forEach(j=>j.then(res=>{
+      best=best?{items:mergeItems(best.items,res.items),radius:Math.max(best.radius,res.radius),src:best.src+' + '+res.src}:res;
+      if(!done&&best.items.length){done=true;resolve(best);}else if(done&&onUpdate)onUpdate(best);
+    }).catch(e=>errs.push(String(e&&e.message||e))).finally(()=>{pending--;if(!pending&&!done){done=true;best?resolve(best):reject(new Error(errs.join(' · ')||'sin respuesta'));}}));
   });
 }
 async function fetchCat(c,pos,onUpdate){
-  if(c.id==='gluten'&&!c._raw) return fetchGluten(c,pos,onUpdate);
+  if(c.id==='gluten') return fetchGluten(pos,onUpdate);
   /* Tres fuentes a la vez: enseña la primera que traiga sitios y va sumando las demás cuando llegan */
   S.diag.src={};
   const timed=(name,pr)=>{const t=performance.now();S.diag.src[name]='…';return pr.then(r=>{S.diag.src[name]=((performance.now()-t)/1000).toFixed(1).replace('.',',')+' s ('+r.items.length+')';showDiag();return r;},e=>{S.diag.src[name]='falla: '+String(e&&e.message||e).slice(0,40);showDiag();throw e;});};
@@ -480,7 +501,7 @@ function mapOne(k){
   openMap();
 }
 function showDiag(){const d=$('#diag');if(!d)return;const s=S.diag.src||{};d.textContent='Ubicación: '+(S.diag.loc?S.diag.loc.toFixed(1).replace('.',',')+' s':'—')+(S.pos&&S.pos.acc?' (±'+Math.round(S.pos.acc)+' m)':'')+' · '+Object.entries(s).map(([k,v])=>k+': '+v).join(' · ');}
-function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Restaurantes, cafeterías, cadenas y tiendas con opciones o productos sin gluten. Para celíacos, confirma siempre en el local. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
+function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Restaurantes, cafeterías, bares y comida rápida con opciones sin gluten. Para celíacos, confirma siempre en el local. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
 async function loadList(id){
   const c=CAT[id];
   $('#more').hidden=true; $('#lNote').textContent='';
@@ -500,9 +521,9 @@ async function loadList(id){
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c14.'+key,null);
+  const saved=store.get('cerca.c15.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{if(!res||!res.items||!res.items.length)return;store.set('cerca.c14.'+key,{ts:Date.now(),res});};
+  const keep=res=>{if(!res||!res.items||!res.items.length)return;store.set('cerca.c15.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=withExtras(res.items,id);S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
@@ -510,12 +531,12 @@ async function loadList(id){
     if(S.cat!==id) return;
     S.items=withExtras(res.items,id); S.shown=0;
     if(!S.items.length){
-      $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> '+(c.id==='gluten'?'':'Puede que no estén registrados en el mapa libre que uso. ')+'En el mapa de Google, que tiene muchos más datos, seguro que aparecen.<button class="btn-gold" type="button" data-act="gmap" style="width:100%">Verlos en el mapa de Google</button></div>';
+      $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> '+(c.id==='gluten'?'Los bares y restaurantes pequeños con opciones sin gluten casi nunca están marcados en el mapa libre; añade los que conozcas con «＋ ¿Falta un sitio?». ':'Puede que no estén registrados en el mapa libre que uso. ')+'En el mapa de Google, que tiene muchos más datos, seguro que aparecen.<button class="btn-gold" type="button" data-act="gmap" style="width:100%">Verlos en el mapa de Google</button></div>';
       return;
     }
     $('#list').innerHTML=''; renderMore(); setNote(c,res);
     return;
-    $('#lNote').textContent=(c.id==='gluten'?'Restaurantes, cafeterías, cadenas y tiendas con opciones o productos sin gluten. Para celíacos, confirma siempre en el local. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
+    $('#lNote').textContent=(c.id==='gluten'?'Restaurantes, cafeterías, bares y comida rápida con opciones sin gluten. Para celíacos, confirma siempre en el local. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
   }catch(e){
     if(S.cat!==id) return;
     S.cache[key]=null;
@@ -524,9 +545,9 @@ async function loadList(id){
 }
 function sgShop(n){return new RegExp(SG_SUPER,'i').test(n);}
 function withExtras(items,id){
-  const ex=store.get('cerca.extra',[]).filter(x=>x.cat===id||(id==='gluten'&&(x.cat==='super'&&sgShop(x.name)||x.cat==='gluten')));
+  const ex=store.get('cerca.extra',[]).filter(x=>x.cat===id);
   if(!ex.length||!S.pos) return items;
-  const mine=ex.map(x=>({id:x.id,name:x.name,addr:x.addr||'',hours:'',lat:x.lat,lon:x.lon,d:dist(S.pos,x),mine:true,note:id==='gluten'?{k:'ok',t:x.cat==='super'?'Productos sin gluten':'Opciones sin gluten'}:''}));
+  const mine=ex.map(x=>({id:x.id,name:x.name,addr:x.addr||'',hours:'',lat:x.lat,lon:x.lon,d:dist(S.pos,x),mine:true,note:id==='gluten'?{k:'ok',t:'Opciones sin gluten'}:''}));
   const rest=items.filter(y=>!mine.some(m=>dist(m,y)<40&&m.name.toLowerCase().slice(0,4)===y.name.toLowerCase().slice(0,4)));
   return mine.concat(rest).sort((p,q)=>p.d-q.d);
 }
