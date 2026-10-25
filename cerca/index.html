@@ -141,7 +141,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v12</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v13</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -240,7 +240,7 @@ const GROUPS=[
  ['Comer',[
   {id:'rest',n:'Restau­rantes',t:'Restaurantes',osm:['["amenity"="restaurant"]'],g:'restaurantes'},
   {id:'rapida',n:'Comida rápida',t:'Comida rápida',osm:['["amenity"="fast_food"]','["amenity"~"^(restaurant|cafe)$"]["brand"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"~"^(restaurant|cafe)$"]["name"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"="restaurant"]["cuisine"~"burger|kebab|chicken|hot_dog|fried_chicken",i]'],g:'comida rápida'},
-  {id:'gluten',n:'Sin gluten',t:'Sitios sin gluten',osm:['["diet:gluten_free"~"^(yes|only|limited)$"]','["name"~"sin gluten|gluten.?free|cel[ií]ac|sin tacc",i]','["description"~"sin gluten|gluten.?free|cel[ií]ac",i]','["cuisine"~"gluten",i]','["shop"="health_food"]','["amenity"~"^(restaurant|fast_food|cafe)$"]["brand"~"'+SG_CHAINS+'",i]','["amenity"~"^(restaurant|fast_food|cafe)$"]["name"~"'+SG_CHAINS+'",i]','["shop"~"^(supermarket|convenience|department_store)$"]["brand"~"'+SG_SUPER+'",i]','["shop"~"^(supermarket|convenience|department_store)$"]["name"~"(^|[^a-z])('+SG_SUPER.toLowerCase()+')",i]'],g:'sin gluten',cls:'gold',r:[2500,6000,15000]},
+  {id:'gluten',n:'Sin gluten',t:'Sitios sin gluten',osm:['["amenity"~"^(restaurant|fast_food|cafe|bar|ice_cream)$"]["diet:gluten_free"~"^(yes|only|limited)$"]','["shop"]["diet:gluten_free"~"^(yes|only|limited)$"]','["shop"="health_food"]','["amenity"~"^(restaurant|fast_food|cafe)$"]["brand"~"'+SG_CHAINS+'",i]','["amenity"~"^(restaurant|fast_food|cafe)$"]["name"~"'+SG_CHAINS+'|sin gluten|gluten.?free|cel[ií]ac",i]','["shop"~"^(supermarket|convenience|department_store|bakery|pastry)$"]["name"~"(^|[^a-z])('+SG_SUPER.toLowerCase()+')|sin gluten|gluten.?free|cel[ií]ac",i]','["shop"~"^(supermarket|convenience|department_store)$"]["brand"~"'+SG_SUPER+'",i]'],g:'sin gluten',cls:'gold',r:[3000,8000]},
   {id:'cafe',n:'Cafete­rías',t:'Cafeterías',osm:['["amenity"="cafe"]'],g:'cafeterías'}]],
  ['Comprar y servicios',[
   {id:'super',n:'Súper',t:'Supermercados',osm:['["shop"~"^(supermarket|convenience|grocery|discount|wholesale|department_store)$"]','["shop"]["brand"~'+SUPER_RX+',i]','["shop"]["name"~'+SUPER_RX+',i]'],g:'supermercados',r:[1200,3000,6000]},
@@ -345,7 +345,7 @@ function sgNote(t,name){
   const txt=(t.brand||'')+' '+name+' '+(t.description||'')+' '+(t.cuisine||'');
   const shop=t.shop||'';
   if(/^(yes|only|limited)$/.test(t['diet:gluten_free']||'')||/sin gluten|gluten.?free|cel[ií]ac|sin tacc/i.test(txt)||new RegExp(SG_CHAINS,'i').test(txt)) return {k:'ok',t:shop?'Productos sin gluten':'Opciones sin gluten'};
-  if(shop==='health_food'||new RegExp(SG_SUPER,'i').test(txt)) return {k:'ok',t:'Productos sin gluten'};
+  if(shop==='health_food'||(!shop||/^(supermarket|convenience|department_store|grocery|discount)$/.test(shop))&&new RegExp('(^|[^a-z])('+SG_SUPER+')([^a-z]|$)','i').test(txt)) return {k:'ok',t:'Productos sin gluten'};
   return '';
 }
 const rank=x=>x.note&&x.note.k==='ok'?0:x.note&&x.note.k==='mid'?1:2;
@@ -360,6 +360,7 @@ async function photon1(q,tag,pos){
   const r=await fetchTO(u,8000); if(!r.ok) throw new Error('Photon HTTP '+r.status);
   const j=await r.json(); return j.features||[];
 }
+const PH_GLUTEN=[['sin gluten',null],['McDonald\'s','amenity'],['Burger King','amenity'],['Telepizza','amenity'],['Domino\'s','amenity'],['Goiko','amenity'],['100 Montaditos','amenity'],['Foster\'s Hollywood','amenity'],['VIPS','amenity'],['Ginos','amenity'],['Mercadona','shop'],['Aldi','shop'],['Dia','shop'],['Lidl','shop'],['Carrefour','shop'],['herbolario','shop']];
 const PH_SUPER=['supermercado','aldi','dia','mercadona','lidl','carrefour','supersol','coviran','spar','el jamon'];
 async function photon(c,pos){
   const ph=PH[c.id]; if(!ph) throw new Error('sin respaldo');
@@ -368,11 +369,15 @@ async function photon(c,pos){
     const all=await Promise.allSettled(PH_SUPER.map(q=>photon1(q,q==='supermercado'?ph[1]:'shop',pos)));
     feats=all.flatMap(x=>x.status==='fulfilled'?x.value:[]);
     if(!feats.length&&all.every(x=>x.status==='rejected')) throw all[0].reason;
+  } else if(c.id==='gluten'){
+    const all=await Promise.allSettled(PH_GLUTEN.map(([q,t])=>photon1(q,t,pos)));
+    feats=all.flatMap(x=>x.status==='fulfilled'?x.value:[]);
+    if(!feats.length&&all.every(x=>x.status==='rejected')) throw all[0].reason;
   } else feats=await photon1(ph[0],ph[1],pos);
   const max=(c.r||[1500,5000]).slice(-1)[0], seen=new Set();
   const items=feats.map(f=>{const g=f.geometry&&f.geometry.coordinates;if(!g)return null;const pr=f.properties||{};const lat=g[1],lon=g[0];
     if(c.id==='super'&&!/^(supermarket|convenience|grocery|discount|department_store|wholesale)$/.test(pr.osm_value||''))return null;
-    const name=pr.name||c.t, note=c.id==='gluten'?sgNote({},name):'';
+    const name=pr.name||c.t, note=c.id==='gluten'?sgNote(pr.osm_key==='shop'?{shop:pr.osm_value}:{},name):'';
     if(c.id==='gluten'&&!note) return null;
     return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon}),note};})
     .filter(x=>x&&x.d<=max&&!seen.has(x.id)&&seen.add(x.id)).sort((a,b)=>a.d-b.d);
@@ -476,13 +481,13 @@ async function loadList(id){
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c11.'+key,null);
+  const saved=store.get('cerca.c13.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{store.set('cerca.c11.'+key,{ts:Date.now(),res});};
+  const keep=res=>{if(!res||!res.items||!res.items.length)return;store.set('cerca.c13.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=withExtras(res.items,id);S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
-    keep(res);
+    keep(res); if(!res.items.length) S.cache[key]=null;
     if(S.cat!==id) return;
     S.items=withExtras(res.items,id); S.shown=0;
     if(!S.items.length){
