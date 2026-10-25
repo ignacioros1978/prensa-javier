@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d0b08">
+<title>Cerca de ti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<style>
+/* Una sola pantalla de móvil: cabecera, interruptor, favoritos, 4 filas de 4 iconos y buscador. La lista sustituye a la cuadrícula. */
+:root{
+  --bg:#0d0b08; --card:#17140f; --card-2:#2a2316; --line:#2e281e; --line-2:#3a3226;
+  --ink:#f5ecd9; --muted:#cfc3a8; --gold:#e6c27a; --gold-ink:#17120a; --ok:#7fe0a0; --bad:#ff9a8c; --bad-bg:#2a1715;
+  --f:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+.app>*{min-width:0} #vHome,#vList{width:100%} .list,.it{min-width:0}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);-webkit-tap-highlight-color:transparent}
+body{min-height:100dvh;padding:calc(12px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(14px,env(safe-area-inset-left,0px))}
+a{color:var(--gold)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.app{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:10px;min-height:calc(100dvh - 26px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}
+.top{display:flex;align-items:center;gap:10px}
+.round{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line-2);background:var(--card);display:grid;place-items:center;text-decoration:none;color:var(--gold);cursor:pointer}
+.round svg{width:20px;height:20px}
+.ttl{flex:1;min-width:0}
+h1{margin:0;font-size:26px;line-height:1.05;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.where{display:flex;align-items:center;gap:5px;margin-top:3px;font-size:14px;font-weight:600;color:var(--muted);min-width:0}
+.where span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.dot.ok{background:var(--ok)} .dot.wait{background:var(--gold);animation:pulse 1.2s infinite} .dot.bad{background:var(--bad)}
+@keyframes pulse{50%{opacity:.3}}
+.switch{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:46px;padding:0 12px;border-radius:14px;border:1.5px solid var(--line-2);background:var(--card);font-size:15px;font-weight:700;cursor:pointer;text-align:left;width:100%}
+.trk{position:relative;flex:none;width:50px;height:28px;border-radius:99px;background:var(--line-2);transition:background .2s}
+.trk i{position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--muted);transition:left .2s,background .2s}
+.switch[aria-pressed="true"] .trk{background:var(--gold)} .switch[aria-pressed="true"] .trk i{left:25px;background:var(--gold-ink)}
+.favs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;min-height:44px}
+.favs::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border-radius:12px;background:var(--card-2);border:1.5px solid #5a4a2c;color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;max-width:220px}
+.chip span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chip svg{flex:none;width:16px;height:16px}
+.favs .hint{display:flex;align-items:center;font-size:14px;font-weight:600;color:var(--muted)}
+.grp{display:flex;flex-direction:column;gap:7px}
+.grp h2{margin:0;font-size:14px;font-weight:800;color:var(--gold);letter-spacing:.02em}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;height:80px;padding:6px 3px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);color:var(--ink);text-align:center;cursor:pointer}
+.tile svg{width:27px;height:27px;stroke:var(--gold);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tile b{font-size:14px;line-height:1.12;font-weight:800;hyphens:manual}
+.tile.gold{background:var(--card-2);border-color:#7a6235}
+.tile.red{background:var(--bad-bg);border-color:#7a352d} .tile.red svg{stroke:var(--bad)}
+.tile:active{transform:scale(.97)}
+.search{display:flex;gap:8px;margin-top:auto}
+.search input{flex:1;min-width:0;height:48px;padding:0 14px;border-radius:14px;border:1.5px solid var(--line-2);background:var(--card);font-size:16px}
+.btn-gold{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 16px;border-radius:14px;border:0;background:var(--gold);color:var(--gold-ink);text-decoration:none;font-weight:800;font-size:16px;cursor:pointer}
+.btn-gold svg{width:20px;height:20px}
+.btn-line{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:14px;border:1.5px solid var(--line-2);background:transparent;color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;cursor:pointer;width:100%}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* Lista */
+.list{display:flex;flex-direction:column;gap:8px}
+.it{display:flex;flex-direction:column;gap:6px;padding:10px 10px 10px 12px;border-radius:16px;background:var(--card);border:1.5px solid var(--line)}
+.it .r1{display:flex;align-items:baseline;gap:10px}
+.it .nm{flex:1;min-width:0;font-size:16px;font-weight:800;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.it .ds{flex:none;font-size:16px;font-weight:800;color:var(--gold);white-space:nowrap;font-variant-numeric:tabular-nums}
+.it .r2{display:flex;align-items:center;gap:8px}
+.it .inf{flex:1;min-width:0;font-size:14px;font-weight:600;color:var(--muted)}
+.it .inf div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.it .inf .h{font-weight:700}
+.sq{flex:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line-2);background:transparent;display:grid;place-items:center;text-decoration:none;color:var(--gold);cursor:pointer}
+.sq svg{width:20px;height:20px}
+.sq[aria-pressed="true"] svg{fill:var(--gold)}
+.go{flex:1;justify-content:center;display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 12px;border-radius:12px;background:var(--gold);color:var(--gold-ink);text-decoration:none;font-weight:800;font-size:14px}
+.go svg{width:18px;height:18px}
+.msg{padding:16px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);font-size:15px;font-weight:600;line-height:1.45;color:var(--muted)}
+.msg b{color:var(--ink)}
+.msg .btn-gold,.msg .btn-line{margin-top:10px}
+.skel{height:86px;border-radius:16px;background:linear-gradient(90deg,var(--card) 0%,#201b14 50%,var(--card) 100%);background-size:200% 100%;animation:sh 1.2s infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.note{font-size:14px;font-weight:600;color:var(--muted);line-height:1.4}
+.manual{display:flex;gap:8px;margin-top:10px}
+.manual input{flex:1;min-width:0;height:48px;padding:0 12px;border-radius:12px;border:1.5px solid var(--line-2);background:var(--bg);font-size:16px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+<!-- ============ PANTALLA PRINCIPAL ============ -->
+<section id="vHome" class="app" style="min-height:0;gap:10px;flex:1">
+  <div class="top">
+    <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
+    <div class="ttl">
+      <h1>Cerca de ti</h1>
+      <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
+    </div>
+    <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
+  </div>
+
+  <button class="switch" id="openNow" type="button" aria-pressed="false"><span>Solo abiertos ahora</span><span class="trk" aria-hidden="true"><i></i></span></button>
+
+  <div class="favs" id="favs" aria-label="Tus sitios"></div>
+
+  <div id="groups" style="display:flex;flex-direction:column;gap:10px"></div>
+
+  <form class="search" id="freeForm">
+    <label for="q" class="sr">Buscar otra cosa cerca</label>
+    <input id="q" type="search" placeholder="Buscar otra cosa cerca…" autocomplete="off" enterkeyhint="search">
+    <button class="btn-gold" type="submit">Buscar</button>
+  </form>
+</section>
+
+<!-- ============ LISTA ============ -->
+<section id="vList" class="app" style="min-height:0;gap:10px;flex:1" hidden>
+  <div class="top">
+    <button class="round" id="backHome" type="button" aria-label="Volver a Cerca de ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div class="ttl">
+      <h1 id="lTitle" style="font-size:24px">—</h1>
+      <div class="where"><span class="dot ok" id="lDot" aria-hidden="true"></span><span class="t" id="lSub">de más cerca a más lejos</span></div>
+    </div>
+  </div>
+  <a class="btn-gold" id="allMap" href="#" target="_blank" rel="noopener" style="min-height:52px;font-size:17px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></svg>Verlos todos en el mapa</a>
+  <div class="list" id="list" aria-live="polite"></div>
+  <button class="btn-line" id="more" type="button" hidden>Ver más sitios</button>
+  <p class="note" id="lNote"></p>
+</section>
+
+</div>
+
+<script>
+(function(){
+'use strict';
+/* ---------- categorías ----------
+   osm: filtros de OpenStreetMap para la lista; g: lo que se busca en Google Maps («Verlos todos»).
+   google:true = no hay datos fiables en OpenStreetMap: se abre Google Maps directamente. */
+const I={
+ rest:'<path d="M7 3v18M5 3v5a2 2 0 0 0 4 0V3M17 21V3c-2 1.5-3 4-3 7h3"/>',
+ rapida:'<path d="M4 11a8 6 0 0 1 16 0zM3.5 14.5h17M5 17.5h14a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 17.5z"/>',
+ gluten:'<path d="M12 21V8M12 8C10 7 9 5 9 3c2 1 3 3 3 5zm0 0c2-1 3-3 3-5-2 1-3 3-3 5zM12 13.5c-2-1-3-3-3-5M12 13.5c2-1 3-3 3-5M4 4l16 16"/>',
+ cafe:'<path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5zM16 10h2a2 2 0 0 1 0 4h-2M8 3v3M12 3v3"/>',
+ super:'<path d="M3 4h2l2.5 11h10L20 7H6.4"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="16.5" cy="19.5" r="1.3"/>',
+ farm:'<path d="M9 4h6v5h5v6h-5v5H9v-5H4V9h5z"/>',
+ guardia:'<path d="M8 7h4v4h4v4h-4v4H8v-4H4v-4h4zM19 3.5a3.2 3.2 0 1 0 2 5.6 4 4 0 0 1-2-5.6z"/>',
+ cajero:'<path d="M3 6h18v12H3zM3 10h18M7 15h3"/>',
+ taxi:'<path d="M9 3.5h6V6H9zM5 16v-5l2-5h10l2 5v5M4 16h16v3h-3v-2H7v2H4zM7.5 13.5h.01M16.5 13.5h.01"/>',
+ gas:'<path d="M5 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M3.5 21h13M7 9h6M15 8l3 3v7a1.5 1.5 0 0 0 3 0v-8l-3-3"/>',
+ parking:'<path d="M4 4h16v16H4zM9.5 17V7h3.5a3 3 0 0 1 0 6H9.5"/>',
+ pmr:'<circle cx="11" cy="4.5" r="1.5"/><path d="M11 8v6h5l2 5M11 11h4.5M8 11.5a5.2 5.2 0 1 0 6.5 7"/>',
+ parque:'<path d="M4 21 8 3h8l4 18M8 3h8M10 3v10M14 3v10M9 13h6"/>',
+ helado:'<path d="M7.5 10a4.5 4.5 0 0 1 9 0zM7.5 10 12 21l4.5-11"/>',
+ urg:'<path d="M4 21V7l8-4 8 4v14M10 21v-4h4v4M12 8v6M9 11h6"/>',
+ banos:'<circle cx="7" cy="4.5" r="1.5"/><circle cx="17" cy="4.5" r="1.5"/><path d="M5 8h4v7H8v6H6v-6H5zM15 8h4l1 7h-2v6h-2v-6h-2zM12 3v18"/>'
+};
+const GROUPS=[
+ ['Comer',[
+  {id:'rest',n:'Restau­rantes',t:'Restaurantes',osm:['["amenity"="restaurant"]'],g:'restaurantes'},
+  {id:'rapida',n:'Comida rápida',t:'Comida rápida',osm:['["amenity"="fast_food"]'],g:'comida rápida'},
+  {id:'gluten',n:'Sin gluten',t:'Sin gluten',osm:['["diet:gluten_free"~"^(yes|only)$"]'],g:'restaurantes sin gluten',cls:'gold',r:[3000,8000]},
+  {id:'cafe',n:'Cafete­rías',t:'Cafeterías',osm:['["amenity"="cafe"]'],g:'cafeterías'}]],
+ ['Comprar y servicios',[
+  {id:'super',n:'Súper',t:'Supermercados',osm:['["shop"="supermarket"]'],g:'supermercados'},
+  {id:'farm',n:'Farmacias',t:'Farmacias',osm:['["amenity"="pharmacy"]'],g:'farmacias'},
+  {id:'guardia',n:'De guardia',t:'Farmacia de guardia',google:true,g:'farmacia de guardia'},
+  {id:'cajero',n:'Cajeros',t:'Cajeros',osm:['["amenity"="atm"]','["amenity"="bank"]["atm"="yes"]'],g:'cajeros automáticos'}]],
+ ['Moverse',[
+  {id:'taxi',n:'Taxi',t:'Paradas de taxi',osm:['["amenity"="taxi"]'],g:'parada de taxi',drive:false},
+  {id:'gas',n:'Gasolina',t:'Gasolineras',osm:['["amenity"="fuel"]'],g:'gasolineras',drive:true,r:[3000,10000]},
+  {id:'parking',n:'Parking',t:'Aparcamientos',osm:['["amenity"="parking"]'],g:'aparcamiento',drive:true},
+  {id:'pmr',n:'Parking accesible',t:'Parking accesible',osm:['["amenity"="parking_space"]["parking_space"="disabled"]','["amenity"="parking"]["capacity:disabled"]'],g:'aparcamiento para personas con movilidad reducida',drive:true}]],
+ ['Niños y urgencias',[
+  {id:'parque',n:'Parques',t:'Parques infantiles',osm:['["leisure"="playground"]'],g:'parque infantil'},
+  {id:'helado',n:'Helados',t:'Heladerías',osm:['["amenity"="ice_cream"]','["shop"="ice_cream"]'],g:'heladerías'},
+  {id:'urg',n:'Urgencias',t:'Urgencias',osm:['["amenity"="hospital"]','["healthcare"="hospital"]'],g:'urgencias hospital',cls:'red',drive:true,r:[8000,25000]},
+  {id:'banos',n:'Baños',t:'Baños públicos',osm:['["amenity"="toilets"]'],g:'baños públicos'}]]
+];
+const CAT={};GROUPS.forEach(g=>g[1].forEach(c=>CAT[c.id]=c));
+
+/* ---------- utilidades ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const svg=(p,c)=>'<svg viewBox="0 0 24 24" aria-hidden="true"'+(c?' class="'+c+'"':'')+'>'+p+'</svg>';
+function dist(a,b){const R=6371000,r=Math.PI/180,dLa=(b.lat-a.lat)*r,dLo=(b.lon-a.lon)*r;const x=Math.sin(dLa/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dLo/2)**2;return 2*R*Math.asin(Math.sqrt(x));}
+const fmtD=m=>m<1000?Math.round(m/10)*10+' m':(m<10000?(m/1000).toFixed(1).replace('.',','):Math.round(m/1000))+' km';
+const fmtT=(m,drive)=>{const min=Math.max(1,Math.round(drive?m/1000*60/30+2:m/80));return min<60?min+' min '+(drive?'en coche':'andando'):Math.floor(min/60)+' h '+(min%60)+' min '+(drive?'en coche':'andando');};
+const gSearch=(what)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(what+(S.open?' abiertos ahora':'')+(S.pos&&!S.pos.manual?' cerca de mí':S.pos?' cerca de '+S.pos.label:' cerca de mí'));
+const gPlace=(p)=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(p.lat+','+p.lon);
+const gRoute=(p,drive)=>'https://www.google.com/maps/dir/?api=1'+(S.pos?'&origin='+S.pos.lat+','+S.pos.lon:'')+'&destination='+p.lat+','+p.lon+'&travelmode='+(drive?'driving':'walking');
+
+/* ---------- estado ---------- */
+const S={pos:null,open:store.get('cerca.open',false),cat:null,items:[],shown:0,favs:store.get('cerca.favs',[]),cache:{}};
+
+/* ---------- ubicación ---------- */
+function setWhere(t,state){$('#whereTxt').textContent=t;$('#whereDot').className='dot '+state;}
+function locate(){
+  if(!('geolocation' in navigator)){setWhere('Este navegador no da la ubicación','bad');return;}
+  setWhere('Buscando tu ubicación…','wait');
+  navigator.geolocation.getCurrentPosition(p=>{
+    S.pos={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy,manual:false,label:'tu ubicación'};
+    S.cache={};
+    setWhere('Ubicación encontrada','ok');
+    reverse(S.pos);
+    if(S.cat) loadList(S.cat);
+  },err=>{
+    S.pos=null;
+    setWhere(err.code===1?'Sin permiso de ubicación':'No se pudo localizar','bad');
+    if(S.cat) loadList(S.cat);
+  },{enableHighAccuracy:true,timeout:12000,maximumAge:60000});
+}
+async function reverse(pos){
+  try{
+    const r=await fetch('https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=17&accept-language=es&lat='+pos.lat+'&lon='+pos.lon);
+    if(!r.ok) return; const j=await r.json(); const a=j.address||{};
+    const street=a.road||a.pedestrian||a.square||a.neighbourhood||a.suburb||'';
+    const town=a.city||a.town||a.village||a.municipality||'';
+    const label=[street,town].filter(Boolean).join(', ');
+    if(label&&S.pos===pos){pos.label=street||town;setWhere('Estás en '+label,'ok');if(S.cat&&!$('#vList').hidden)$('#lSub').textContent='Desde '+pos.label+' · de más cerca a más lejos';}
+  }catch(e){}
+}
+async function geocode(text){
+  const r=await fetch('https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&accept-language=es&q='+encodeURIComponent(text));
+  const j=await r.json(); if(!j||!j[0]) throw new Error('none');
+  return {lat:+j[0].lat,lon:+j[0].lon,manual:true,label:text};
+}
+
+/* ---------- datos (OpenStreetMap) ---------- */
+const OVERPASS=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+async function overpass(q){
+  let last;
+  for(const u of OVERPASS){
+    try{const r=await fetch(u,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)});
+      if(r.ok) return await r.json(); last=new Error('http '+r.status);}catch(e){last=e}
+  }
+  throw last;
+}
+function addr(t){
+  const s=[t['addr:street'],t['addr:housenumber']].filter(Boolean).join(', ');
+  return s||t['addr:place']||t['addr:city']||'';
+}
+async function fetchCat(c,pos){
+  const radii=c.r||[1500,5000];
+  for(const r of radii){
+    const q='[out:json][timeout:20];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 120;';
+    const j=await overpass(q);
+    const seen=new Set();
+    const items=(j.elements||[]).map(e=>{
+      const lat=e.lat??e.center?.lat, lon=e.lon??e.center?.lon; if(lat==null) return null;
+      const t=e.tags||{};
+      const name=t.name||t.brand||t.operator||(c.id==='banos'?'Aseo público':c.id==='cajero'?'Cajero':c.id==='parque'?'Parque infantil':c.id==='taxi'?'Parada de taxi':c.id==='pmr'?'Plaza para personas con movilidad reducida':c.id==='parking'?'Aparcamiento':'Sin nombre');
+      return {id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon})};
+    }).filter(Boolean).filter(x=>{const k=x.name+'|'+Math.round(x.lat*2000)+'|'+Math.round(x.lon*2000);if(seen.has(k))return false;seen.add(k);return true;})
+      .sort((a,b)=>a.d-b.d);
+    if(items.length>=5||r===radii[radii.length-1]) return {items,radius:r};
+  }
+}
+
+/* ---------- pantalla principal ---------- */
+function renderGroups(){
+  $('#groups').innerHTML=GROUPS.map(([g,cs])=>'<div class="grp"><h2>'+g+'</h2><div class="grid">'+cs.map(c=>
+    '<button type="button" class="tile '+(c.cls||'')+'" data-cat="'+c.id+'">'+svg(I[c.id])+'<b>'+c.n+'</b></button>').join('')+'</div></div>').join('');
+}
+function renderFavs(){
+  const f=S.favs;
+  $('#favs').innerHTML=f.length?f.map((x,i)=>'<a class="chip" href="'+esc(gRoute(x,!!x.drive))+'" target="_blank" rel="noopener" title="Cómo llegar a '+esc(x.name)+'">'+svg('<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="#e6c27a" stroke="none"/>')+'<span>'+esc(x.name)+'</span></a>').join('')
+    :'<span class="hint">Toca la estrella de un sitio de la lista para tenerlo aquí.</span>';
+}
+function setOpen(v){S.open=v;store.set('cerca.open',v);$('#openNow').setAttribute('aria-pressed',String(v));}
+
+/* ---------- lista ---------- */
+function show(view){
+  $('#vHome').hidden=view!=='home';$('#vList').hidden=view!=='list';window.scrollTo(0,0);
+}
+function openCat(id){
+  const c=CAT[id]; if(!c) return;
+  if(c.google){window.open(gSearch(c.g),'_blank','noopener');return;}
+  S.cat=id; history.pushState({cerca:'list',cat:id},'');
+  $('#lTitle').textContent=c.t;
+  $('#allMap').href=gSearch(c.g);
+  show('list'); loadList(id);
+}
+async function loadList(id){
+  const c=CAT[id];
+  $('#allMap').href=gSearch(c.g);
+  $('#more').hidden=true; $('#lNote').textContent='';
+  if(!S.pos){
+    $('#lSub').textContent='Necesito saber dónde estás';$('#lDot').className='dot bad';
+    $('#list').innerHTML='<div class="msg"><b>No tengo tu ubicación.</b> Si el navegador te la ha pedido, acepta. Si dijiste que no, actívala en los ajustes del sitio (el candado junto a la dirección) y vuelve a intentarlo.<button class="btn-gold" type="button" data-act="relocate" style="width:100%">Volver a intentarlo</button>'+
+      '<form class="manual" data-act="manual"><label for="mq" class="sr">Escribe dónde estás</label><input id="mq" placeholder="O escribe dónde estás (calle, ciudad)" autocomplete="off"><button class="btn-gold" type="submit">Usar</button></form></div>';
+    return;
+  }
+  $('#lSub').textContent='Desde '+S.pos.label+' · de más cerca a más lejos';$('#lDot').className='dot ok';
+  $('#list').innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+  const key=id+'|'+S.pos.lat.toFixed(4)+'|'+S.pos.lon.toFixed(4);
+  try{
+    const res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos));
+    if(S.cat!==id) return;
+    S.items=res.items; S.shown=0;
+    if(!S.items.length){
+      $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> Puede que no estén registrados en el mapa libre que uso. Mira en Google Maps, que tiene más datos.<a class="btn-gold" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener" style="width:100%">Buscar en Google Maps</a></div>';
+      return;
+    }
+    $('#list').innerHTML=''; renderMore();
+    $('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos del mapa libre OpenStreetMap.';
+  }catch(e){
+    if(S.cat!==id) return;
+    S.cache[key]=null;
+    $('#list').innerHTML='<div class="msg"><b>No se pudo cargar la lista ahora mismo.</b> Comprueba la conexión y vuelve a intentarlo, o ábrelo en Google Maps.<button class="btn-gold" type="button" data-act="retry" style="width:100%">Volver a intentarlo</button><a class="btn-line" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener">Abrir en Google Maps</a></div>';
+  }
+}
+function isFav(x){return S.favs.some(f=>f.id===x.id);}
+function renderMore(){
+  const c=CAT[S.cat], drive=!!c.drive, next=S.items.slice(S.shown,S.shown+10);
+  $('#list').insertAdjacentHTML('beforeend',next.map((x,i)=>{const k=S.shown+i;return '<div class="it"><div class="r1"><div class="nm">'+esc(x.name)+'</div><div class="ds">'+fmtD(x.d)+'</div></div>'+
+    '<div class="inf">'+(x.addr?'<div>'+esc(x.addr)+'</div>':'')+'<div class="h">'+fmtT(x.d,drive)+(x.hours?' · <span style="font-weight:600">'+esc(x.hours)+'</span>':'')+'</div></div><div class="r2">'+
+    '<button type="button" class="sq" data-fav="'+k+'" aria-pressed="'+isFav(x)+'" aria-label="Guardar en tus sitios">'+svg('<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" stroke="#e6c27a" stroke-width="1.8" stroke-linejoin="round"/>')+'</button>'+
+    '<a class="sq" href="'+esc(gPlace(x))+'" target="_blank" rel="noopener" aria-label="Ver '+esc(x.name)+' en el mapa">'+svg('<path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="#e6c27a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="#e6c27a" stroke-width="2"/>')+'</a>'+
+    '<a class="go" href="'+esc(gRoute(x,drive))+'" target="_blank" rel="noopener">'+svg('<path d="M3 11 21 3l-8 18-2-8z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')+'Cómo llegar</a></div></div>';}).join(''));
+  S.shown+=next.length;
+  $('#more').hidden=S.shown>=S.items.length;
+}
+function toggleFav(k,btn){
+  const x=S.items[k]; if(!x) return;
+  if(isFav(x)) S.favs=S.favs.filter(f=>f.id!==x.id);
+  else S.favs=[{id:x.id,name:x.name,lat:x.lat,lon:x.lon,drive:!!CAT[S.cat].drive},...S.favs].slice(0,12);
+  store.set('cerca.favs',S.favs); btn.setAttribute('aria-pressed',String(isFav(x))); renderFavs();
+}
+
+/* ---------- eventos ---------- */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-cat]'); if(t){openCat(t.dataset.cat);return;}
+  const f=e.target.closest('[data-fav]'); if(f){toggleFav(+f.dataset.fav,f);return;}
+  const a=e.target.closest('[data-act]');
+  if(a&&a.dataset.act==='relocate'){locate();return;}
+  if(a&&a.dataset.act==='retry'){loadList(S.cat);return;}
+});
+document.addEventListener('submit',async e=>{
+  const f=e.target;
+  if(f.id==='freeForm'){e.preventDefault();const q=$('#q').value.trim();window.open(gSearch(q||'sitios de interés'),'_blank','noopener');return;}
+  if(f.dataset.act==='manual'){e.preventDefault();const v=f.querySelector('input').value.trim();if(!v)return;
+    try{S.pos=await geocode(v);S.cache={};setWhere('Desde '+v,'ok');loadList(S.cat);}catch(err){f.querySelector('input').value='';f.querySelector('input').placeholder='No encuentro ese sitio. Prueba con calle y ciudad';}}
+});
+$('#openNow').onclick=()=>{setOpen(!S.open);};
+$('#relocate').onclick=locate;
+$('#backHome').onclick=()=>history.back();
+$('#more').onclick=renderMore;
+window.addEventListener('popstate',()=>{S.cat=null;show('home');});
+
+renderGroups(); renderFavs(); setOpen(S.open); locate();
+})();
+</script>
+</body>
+</html>
