@@ -84,6 +84,8 @@ label.lb{font-size:15px;font-weight:800}
 .opt h3{margin:0 0 6px;font-size:17px;color:#7dd3fc}
 .opt p{margin:6px 0 0;font-size:16px;font-weight:700;line-height:1.45}
 .opt .or{margin-top:10px;font-size:14px;font-weight:800;color:#94a3b8;text-align:center}
+#acc h3{margin:0 0 4px;font-size:17px;color:#c4b5fd}
+#acc li{font-size:15px;line-height:1.4}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 </style>
 </head>
@@ -228,6 +230,7 @@ const ROUTES={
 const LNAME={district:'District',jubilee:'Jubilee',piccadilly:'Piccadilly',circle:'Circle'};
 function renderFixed(r){
   let h='<div id="live" class="check warn" style="border-color:#334155;background:#111a2e"><h3 style="color:#cbd5e1">⏳ Comprobando con TfL…</h3>Mirando que hoy siga siendo la mejor ruta y que no haya incidencias.</div>';
+  h+='<div id="acc" class="msg" style="border-color:#7c3aed"><h3 style="margin:0">♿ Ascensores para el carrito</h3>Consultando a TfL…</div>';
   h+='<div class="sum"><div class="t">'+esc(r.min)+'</div><div class="s">'+(r.changes?r.changes+(r.changes>1?' trasbordos':' trasbordo'):'Directo, sin trasbordos')+'</div></div>';
   let n=0;
   r.steps.forEach(st=>{
@@ -274,7 +277,53 @@ async function verifyFixed(r){
     box().innerHTML='<h3 style="color:#cbd5e1">No he podido comprobarlo ahora</h3>'+(navigator.onLine?'TfL no ha respondido bien.':'No hay conexión.')+' La ruta de abajo es la de siempre y vale igual. Lo vuelvo a intentar al abrirla de nuevo.';
   }
 }
-function openFixed(key){const r=ROUTES[key];openRoute(r.a,r.b);renderFixed(r);verifyFixed(r);}
+/* ===== Ascensores: dato oficial de TfL, en directo (nada escrito a mano) ===== */
+function routeStations(r){const out=[];r.steps.forEach(st=>{if(st.t==='ride'){[st.board,st.alight].forEach(n=>{if(out.indexOf(n)<0)out.push(n);});}});return out;}
+const yesv=v=>/^(yes|true|y)$/i.test(String(v).trim())||(+v>0);
+const nov=v=>/^(no|false|n|0)$/i.test(String(v).trim());
+async function accessOf(name){
+  const id=KNOWN[norm(name)]; if(!id) return {state:'unknown'};
+  const key='metro.acc.'+id, c=store.get(key,null);
+  if(c&&Date.now()-c.ts<7*864e5) return c.v;
+  const r=await tfl('/StopPoint/'+id,12000);
+  if(!r.ok||!r.j) throw new Error('HTTP '+r.status);
+  const all=[];const walk=sp=>{(sp.additionalProperties||[]).forEach(p=>all.push(p));(sp.children||[]).forEach(walk);};walk(r.j);
+  const acc=all.filter(p=>/access/i.test(p.category||'')||/lift|step.?free/i.test(p.key||''));
+  const lift=acc.filter(p=>/lift/i.test(p.key||''));
+  const sf=acc.filter(p=>/step.?free/i.test(p.key||''));
+  let state='unknown',detail='';
+  if(lift.some(p=>yesv(p.value))||sf.some(p=>/yes|full|platform|train/i.test(p.value||''))) state='yes';
+  else if(lift.some(p=>/partial/i.test(p.value||''))||sf.some(p=>/partial/i.test(p.value||''))) state='partial';
+  else if(lift.length&&lift.every(p=>nov(p.value))) state='no';
+  const sfv=sf.find(p=>p.value&&!yesv(p.value)&&!nov(p.value));
+  if(sfv) detail=String(sfv.value).slice(0,120);
+  const v={state,detail};
+  store.set(key,{ts:Date.now(),v}); return v;
+}
+async function liftOutages(){
+  try{const r=await tfl('/Disruptions/Lifts/v2/',12000);return r.ok&&Array.isArray(r.j)?r.j:[];}catch(e){return [];}
+}
+async function showAccess(r){
+  const box=$('#acc'); if(!box) return;
+  const names=routeStations(r);
+  const [res,outs]=await Promise.all([Promise.all(names.map(n=>accessOf(n).then(v=>({n,v}),e=>({n,v:null})))),liftOutages()]);
+  if(!$('#acc')) return;
+  const offline=res.every(x=>!x.v);
+  if(offline){box.innerHTML='<h3>♿ Ascensores</h3>Sin conexión con TfL ahora mismo: no puedo confirmarlo. Vuelve a abrir la ruta con cobertura.';return;}
+  const row=x=>{
+    const id=KNOWN[norm(x.n)];
+    const broken=outs.filter(o=>String(o.stationUniqueId||'').indexOf(id||'@@')>=0||norm(o.stationName||'')===norm(x.n));
+    let ic,tx;
+    if(!x.v){ic='❔';tx='no he podido consultarlo';}
+    else if(x.v.state==='yes'){ic='✅';tx='tiene ascensor (dato oficial TfL)';}
+    else if(x.v.state==='partial'){ic='⚠️';tx='acceso solo en parte sin escaleras'+(x.v.detail?': '+x.v.detail:'');}
+    else if(x.v.state==='no'){ic='❌';tx='sin ascensor: hay escaleras';}
+    else {ic='❔';tx='TfL no da el dato: no lo puedo asegurar';}
+    return '<li><b>'+ic+' '+esc(x.n)+'</b> — '+esc(tx)+(broken.length?'<div class="dis" style="margin-top:4px">🚧 Hoy hay ascensores averiados aquí: '+esc(String(broken[0].message||'').slice(0,200))+'</div>':'')+'</li>';
+  };
+  box.innerHTML='<h3>♿ Ascensores para el carrito</h3><ul style="list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:8px">'+res.map(row).join('')+'</ul><p style="margin:8px 0 0;font-size:14px;color:#cbd5e1">Datos de TfL consultados ahora. Los ascensores pueden averiarse: si TfL avisa de alguno, sale aquí.</p>';
+}
+function openFixed(key){const r=ROUTES[key];openRoute(r.a,r.b);renderFixed(r);verifyFixed(r);showAccess(r);}
 
 /* Estaciones que salen en la guía del viaje */
 const QUICK=['Hammersmith','Westminster','Waterloo','London Bridge','Notting Hill Gate','Victoria','Green Park','Oxford Circus','Piccadilly Circus','Leicester Square','Covent Garden','Tower Hill','South Kensington','Knightsbridge','Bond Street','Battersea Power Station','King\'s Cross St. Pancras'];
