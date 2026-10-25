@@ -136,7 +136,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v8</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v9</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -219,7 +219,7 @@ const GROUPS=[
  ['Comer',[
   {id:'rest',n:'Restau­rantes',t:'Restaurantes',osm:['["amenity"="restaurant"]'],g:'restaurantes'},
   {id:'rapida',n:'Comida rápida',t:'Comida rápida',osm:['["amenity"="fast_food"]','["amenity"~"^(restaurant|cafe)$"]["brand"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"~"^(restaurant|cafe)$"]["name"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"="restaurant"]["cuisine"~"burger|kebab|chicken|hot_dog|fried_chicken",i]'],g:'comida rápida'},
-  {id:'gluten',n:'Sin gluten',t:'Sin gluten',osm:['["diet:gluten_free"~"^(yes|only)$"]'],g:'restaurantes sin gluten',cls:'gold',r:[3000,8000]},
+  {id:'gluten',n:'Sin gluten',t:'Sitios sin gluten',osm:['["diet:gluten_free"~"^(yes|only|limited)$"]','["name"~"sin gluten|gluten.?free|cel[ií]ac|sin tacc",i]','["description"~"sin gluten|gluten.?free|cel[ií]ac",i]','["cuisine"~"gluten",i]'],g:'restaurantes sin gluten',cls:'gold',r:[3000,8000,15000]},
   {id:'cafe',n:'Cafete­rías',t:'Cafeterías',osm:['["amenity"="cafe"]'],g:'cafeterías'}]],
  ['Comprar y servicios',[
   {id:'super',n:'Súper',t:'Supermercados',osm:['["shop"="supermarket"]'],g:'supermercados'},
@@ -239,7 +239,7 @@ const GROUPS=[
 ];
 const CAT={};GROUPS.forEach(g=>g[1].forEach(c=>CAT[c.id]=c));
 /* Respaldo (Photon, también con datos de OpenStreetMap) por si los servidores principales no responden */
-const PH={rest:['restaurante','amenity:restaurant'],rapida:['comida rápida','amenity:fast_food'],cafe:['cafetería','amenity:cafe'],super:['supermercado','shop:supermarket'],farm:['farmacia','amenity:pharmacy'],cajero:['cajero','amenity:atm'],taxi:['taxi','amenity:taxi'],gas:['gasolinera','amenity:fuel'],parking:['parking','amenity:parking'],parque:['parque infantil','leisure:playground'],helado:['heladería','amenity:ice_cream'],urg:['hospital','amenity:hospital'],banos:['aseo','amenity:toilets']};
+const PH={gluten:['sin gluten',null],rest:['restaurante','amenity:restaurant'],rapida:['comida rápida','amenity:fast_food'],cafe:['cafetería','amenity:cafe'],super:['supermercado','shop:supermarket'],farm:['farmacia','amenity:pharmacy'],cajero:['cajero','amenity:atm'],taxi:['taxi','amenity:taxi'],gas:['gasolinera','amenity:fuel'],parking:['parking','amenity:parking'],parque:['parque infantil','leisure:playground'],helado:['heladería','amenity:ice_cream'],urg:['hospital','amenity:hospital'],banos:['aseo','amenity:toilets']};
 
 /* ---------- utilidades ---------- */
 const $=s=>document.querySelector(s);
@@ -327,7 +327,7 @@ function mergeItems(a,b){
 }
 async function photon(c,pos){
   const ph=PH[c.id]; if(!ph) throw new Error('sin respaldo');
-  const u='https://photon.komoot.io/api/?limit=50&lat='+pos.lat+'&lon='+pos.lon+'&q='+encodeURIComponent(ph[0])+'&osm_tag='+encodeURIComponent(ph[1]);
+  const u='https://photon.komoot.io/api/?limit=50&lat='+pos.lat+'&lon='+pos.lon+'&q='+encodeURIComponent(ph[0])+(ph[1]?'&osm_tag='+encodeURIComponent(ph[1]):'');
   const r=await fetchTO(u,8000); if(!r.ok) throw new Error('Photon HTTP '+r.status);
   const j=await r.json(); const max=(c.r||[1500,5000]).slice(-1)[0];
   const items=(j.features||[]).map(f=>{const g=f.geometry&&f.geometry.coordinates;if(!g)return null;const pr=f.properties||{};const lat=g[1],lon=g[0];
@@ -412,7 +412,7 @@ function mapOne(k){
   openMap();
 }
 function showDiag(){const d=$('#diag');if(!d)return;const s=S.diag.src||{};d.textContent='Ubicación: '+(S.diag.loc?S.diag.loc.toFixed(1).replace('.',',')+' s':'—')+(S.pos&&S.pos.acc?' (±'+Math.round(S.pos.acc)+' m)':'')+' · '+Object.entries(s).map(([k,v])=>k+': '+v).join(' · ');}
-function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
+function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Sin gluten: en el mapa libre hay pocos marcados; en «Verlos todos en el mapa» verás los de Google, que son muchos más. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
 async function loadList(id){
   const c=CAT[id];
   $('#more').hidden=true; $('#lNote').textContent='';
@@ -432,9 +432,9 @@ async function loadList(id){
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c8.'+key,null);
+  const saved=store.get('cerca.c9.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{store.set('cerca.c8.'+key,{ts:Date.now(),res});};
+  const keep=res=>{store.set('cerca.c9.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=res.items;S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
@@ -442,12 +442,12 @@ async function loadList(id){
     if(S.cat!==id) return;
     S.items=res.items; S.shown=0;
     if(!S.items.length){
-      $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> Puede que no estén registrados en el mapa libre que uso. Mira en Google Maps, que tiene más datos.<a class="btn-gold" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener" style="width:100%">Buscar en Google Maps</a></div>';
+      $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> '+(c.id==='gluten'?'En el mapa libre casi nadie marca los sitios sin gluten. ':'Puede que no estén registrados en el mapa libre que uso. ')+'En el mapa de Google, que tiene muchos más datos, seguro que aparecen.<button class="btn-gold" type="button" data-act="gmap" style="width:100%">Verlos en el mapa de Google</button></div>';
       return;
     }
     $('#list').innerHTML=''; renderMore(); setNote(c,res);
     return;
-    $('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
+    $('#lNote').textContent=(c.id==='gluten'?'Sin gluten: en el mapa libre hay pocos marcados; en «Verlos todos en el mapa» verás los de Google, que son muchos más. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+'Datos: '+(res.src||'OpenStreetMap')+'.';
   }catch(e){
     if(S.cat!==id) return;
     S.cache[key]=null;
@@ -480,6 +480,7 @@ document.addEventListener('click',e=>{
   const a=e.target.closest('[data-act]');
   if(a&&a.dataset.act==='relocate'){locate();return;}
   if(a&&a.dataset.act==='retry'){loadList(S.cat);return;}
+  if(a&&a.dataset.act==='gmap'){mapAll();return;}
 });
 document.addEventListener('submit',async e=>{
   const f=e.target;
