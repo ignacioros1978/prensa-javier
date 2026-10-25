@@ -72,6 +72,7 @@ h1{margin:0;font-size:26px;line-height:1.05;font-weight:800;letter-spacing:-.02e
 .it .inf div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .it .inf .h{font-weight:700}
 .it .inf .sg{white-space:normal;font-weight:800;color:#e6c27a}.it .inf .sg.ok{color:#7fe0a0}
+.mine{font-weight:800;color:#7fe0a0}.rm{min-height:44px;padding:0 10px;border:0;background:none;color:#e6c27a;font-weight:800;font-size:14px;text-decoration:underline;cursor:pointer}
 .sgh{margin:6px 2px 0;font-size:15px;font-weight:800;color:var(--ink)}
 .sgmap{position:relative;flex:none;height:30vh;min-height:170px;border-radius:16px;overflow:hidden;border:1.5px solid var(--line-2);background:#1d1a14}
 .sgmap iframe{width:100%;height:100%;border:0;display:block}
@@ -140,7 +141,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v11</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v12</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -172,6 +173,17 @@ body.scroll #app{height:auto}
   <div class="listwrap" id="listWrap">
     <div class="list" id="list" aria-live="polite"></div>
     <button class="btn-line" id="more" type="button" hidden style="margin-top:8px">Ver más sitios</button>
+    <button class="btn-line" id="addOpen" type="button" style="margin-top:8px">＋ ¿Falta un sitio? Añádelo</button>
+    <form id="addForm" class="msg" hidden style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
+      <b style="color:var(--ink)">Añadir un sitio que falta</b>
+      <label for="addName" style="font-weight:700">Nombre</label>
+      <input id="addName" required placeholder="Por ejemplo: Aldi" autocomplete="off" style="height:48px;padding:0 12px;border-radius:12px;border:1.5px solid var(--line-2);background:var(--bg);color:var(--ink);font-size:16px">
+      <label for="addAddr" style="font-weight:700">Dirección (si no estás en la puerta)</label>
+      <input id="addAddr" placeholder="Calle y número, ciudad" autocomplete="off" style="height:48px;padding:0 12px;border-radius:12px;border:1.5px solid var(--line-2);background:var(--bg);color:var(--ink);font-size:16px">
+      <button class="btn-gold" type="submit" data-how="addr">Guardar con esa dirección</button>
+      <button class="btn-gold" type="submit" data-how="here">Estoy en la puerta: usar mi ubicación</button>
+      <span id="addMsg" style="font-weight:700"></span>
+    </form>
     <p class="note" id="lNote"></p>
     <p class="diag" id="diag"></p>
   </div>
@@ -416,6 +428,7 @@ function show(view){
 }
 function openCat(id){
   const c=CAT[id]; if(!c) return;
+  $('#addForm').hidden=true;$('#addOpen').hidden=false;
   if(c.google){window.open(gSearch(c.g),'_blank','noopener');return;}
   S.cat=id; history.pushState({cerca:'list',cat:id},'');
   $('#lTitle').textContent=c.t;
@@ -466,12 +479,12 @@ async function loadList(id){
   const saved=store.get('cerca.c11.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
   const keep=res=>{store.set('cerca.c11.'+key,{ts:Date.now(),res});};
-  const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=res.items;S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
+  const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=withExtras(res.items,id);S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
     keep(res);
     if(S.cat!==id) return;
-    S.items=res.items; S.shown=0;
+    S.items=withExtras(res.items,id); S.shown=0;
     if(!S.items.length){
       $('#list').innerHTML='<div class="msg"><b>No he encontrado '+esc(c.t.toLowerCase())+' a menos de '+fmtD(res.radius)+'.</b> '+(c.id==='gluten'?'':'Puede que no estén registrados en el mapa libre que uso. ')+'En el mapa de Google, que tiene muchos más datos, seguro que aparecen.<button class="btn-gold" type="button" data-act="gmap" style="width:100%">Verlos en el mapa de Google</button></div>';
       return;
@@ -485,12 +498,20 @@ async function loadList(id){
     $('#list').innerHTML='<div class="msg"><b>No se pudo cargar la lista ahora mismo.</b> Comprueba la conexión y vuelve a intentarlo, o ábrelo en Google Maps.<div style="font-size:13px;margin-top:6px;opacity:.8">Detalle: '+esc(e&&e.message||e)+'</div><button class="btn-gold" type="button" data-act="retry" style="width:100%">Volver a intentarlo</button><a class="btn-line" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener">Abrir en Google Maps</a></div>';
   }
 }
+function sgShop(n){return new RegExp(SG_SUPER,'i').test(n);}
+function withExtras(items,id){
+  const ex=store.get('cerca.extra',[]).filter(x=>x.cat===id||(id==='gluten'&&(x.cat==='super'&&sgShop(x.name)||x.cat==='gluten')));
+  if(!ex.length||!S.pos) return items;
+  const mine=ex.map(x=>({id:x.id,name:x.name,addr:x.addr||'',hours:'',lat:x.lat,lon:x.lon,d:dist(S.pos,x),mine:true,note:id==='gluten'?{k:'ok',t:x.cat==='super'?'Productos sin gluten':'Opciones sin gluten'}:''}));
+  const rest=items.filter(y=>!mine.some(m=>dist(m,y)<40&&m.name.toLowerCase().slice(0,4)===y.name.toLowerCase().slice(0,4)));
+  return mine.concat(rest).sort((p,q)=>p.d-q.d);
+}
 function isFav(x){return S.favs.some(f=>f.id===x.id);}
 function renderMore(){
   const c=CAT[S.cat], drive=!!c.drive, next=S.items.slice(S.shown,S.shown+10);
   $('#list').insertAdjacentHTML('beforeend',next.map((x,i)=>{const k=S.shown+i;const prev=S.items[k-1];
     return '<div class="it" data-k="'+k+'"><div class="r1"><div class="nm">'+esc(x.name)+'</div><div class="ds">'+fmtD(x.d)+'</div></div>'+
-    '<div class="inf">'+(x.note?'<div class="sg '+x.note.k+'">'+esc(x.note.t)+'</div>':'')+(x.addr?'<div>'+esc(x.addr)+'</div>':'')+'<div class="h">'+fmtT(x.d,drive)+(x.hours?' · <span style="font-weight:600">'+esc(x.hours)+'</span>':'')+'</div></div><div class="r2">'+
+    '<div class="inf">'+(x.mine?'<div class="mine">Añadido por ti <button type="button" class="rm" data-rm="'+esc(x.id)+'">Quitar</button></div>':'')+(x.note?'<div class="sg '+x.note.k+'">'+esc(x.note.t)+'</div>':'')+(x.addr?'<div>'+esc(x.addr)+'</div>':'')+'<div class="h">'+fmtT(x.d,drive)+(x.hours?' · <span style="font-weight:600">'+esc(x.hours)+'</span>':'')+'</div></div><div class="r2">'+
     '<button type="button" class="sq" data-fav="'+k+'" aria-pressed="'+isFav(x)+'" aria-label="Guardar en tus sitios">'+svg('<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" stroke="#e6c27a" stroke-width="1.8" stroke-linejoin="round"/>')+'</button>'+
     '<button type="button" class="pinb" data-pin="'+k+'" aria-label="Ver solo '+esc(x.name)+' en el mapa">'+svg('<path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="#e6c27a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="#e6c27a" stroke-width="2"/>')+'Mapa</button>'+
     '<a class="go" href="'+esc(gRoute(x,drive))+'" target="_blank" rel="noopener">'+svg('<path d="M3 11 21 3l-8 18-2-8z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')+'Cómo llegar</a></div></div>';}).join(''));
@@ -509,6 +530,7 @@ document.addEventListener('click',e=>{
   const t=e.target.closest('[data-cat]'); if(t){openCat(t.dataset.cat);return;}
   const f=e.target.closest('[data-fav]'); if(f){toggleFav(+f.dataset.fav,f);return;}
   const pn=e.target.closest('[data-pin]'); if(pn){mapOne(+pn.dataset.pin);return;}
+  const rm=e.target.closest('[data-rm]'); if(rm){store.set('cerca.extra',store.get('cerca.extra',[]).filter(x=>x.id!==rm.dataset.rm));loadList(S.cat);return;}
   const a=e.target.closest('[data-act]');
   if(a&&a.dataset.act==='relocate'){locate();return;}
   if(a&&a.dataset.act==='retry'){loadList(S.cat);return;}
@@ -517,6 +539,16 @@ document.addEventListener('click',e=>{
 document.addEventListener('submit',async e=>{
   const f=e.target;
   if(f.id==='freeForm'){e.preventDefault();const q=$('#q').value.trim();window.open(gSearch(q||'sitios de interés'),'_blank','noopener');return;}
+  if(f.id==='addForm'){e.preventDefault();
+    const how=(e.submitter&&e.submitter.dataset.how)||'addr',name=$('#addName').value.trim(),ad=$('#addAddr').value.trim(),msg=$('#addMsg');
+    if(!name){msg.textContent='Escribe el nombre.';return;}
+    let p=null;
+    try{
+      if(how==='here'){if(!S.pos||S.pos.manual)throw new Error('Necesito tu ubicación');p={lat:S.pos.lat,lon:S.pos.lon,addr:ad};}
+      else{if(!ad){msg.textContent='Escribe la dirección o toca «Estoy en la puerta».';return;}msg.textContent='Buscando la dirección…';const g=await geocode(ad);p={lat:g.lat,lon:g.lon,addr:ad};}
+    }catch(err){msg.textContent=how==='here'?'No tengo tu ubicación ahora mismo.':'No encuentro esa dirección. Prueba con calle, número y ciudad.';return;}
+    const ex=store.get('cerca.extra',[]);ex.push({id:'mio/'+Date.now(),cat:S.cat,name,addr:p.addr,lat:p.lat,lon:p.lon});store.set('cerca.extra',ex);
+    f.reset();msg.textContent='';f.hidden=true;$('#addOpen').hidden=false;loadList(S.cat);return;}
   if(f.dataset.act==='manual'){e.preventDefault();const v=f.querySelector('input').value.trim();if(!v)return;
     try{S.pos=await geocode(v);S.cache={};setWhere('Desde '+v,'ok');loadList(S.cat);}catch(err){f.querySelector('input').value='';f.querySelector('input').placeholder='No encuentro ese sitio. Prueba con calle y ciudad';}}
 });
@@ -524,6 +556,7 @@ $('#openNow').onclick=()=>{setOpen(!S.open);};
 $('#relocate').onclick=locate;
 $('#backHome').onclick=()=>history.back();
 $('#more').onclick=renderMore;
+$('#addOpen').onclick=()=>{$('#addOpen').hidden=true;$('#addForm').hidden=false;$('#addName').focus();};
 $('#allMap').onclick=()=>{mapAll();};
 $('#mAll').onclick=()=>{const c=CAT[S.cat],p=S.pos;setMap(embed(c.g,p?p.lat:null,p?p.lon:null,p?15:13));$('#mTitle').textContent='Todos: '+c.t.toLowerCase();$('#mSub').textContent=p?'Alrededor de '+(p.label||'ti'):'';$('#mGo').hidden=true;$('#mAll').hidden=true;};
 $('#backList').onclick=()=>history.back();
