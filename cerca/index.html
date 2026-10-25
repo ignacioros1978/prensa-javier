@@ -81,6 +81,8 @@ h1{margin:0;font-size:26px;line-height:1.05;font-weight:800;letter-spacing:-.02e
 .sq[aria-pressed="true"] svg{fill:var(--gold)}
 .go{flex:1;justify-content:center;display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 12px;border-radius:12px;background:var(--gold);color:var(--gold-ink);text-decoration:none;font-weight:800;font-size:14px}
 .go svg{width:18px;height:18px}
+.gtop{margin-bottom:10px;color:var(--ink)}
+.gtop b{display:block;margin-bottom:4px}
 .msg{padding:16px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);font-size:15px;font-weight:600;line-height:1.45;color:var(--muted)}
 .msg b{color:var(--ink)}
 .msg .btn-gold,.msg .btn-line{margin-top:10px}
@@ -171,6 +173,7 @@ body.scroll #app{height:auto}
   </div>
   <button class="btn-gold" id="allMap" type="button" style="min-height:52px;font-size:17px;flex:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></svg>Verlos todos en el mapa</button>
   <div class="listwrap" id="listWrap">
+    <div id="lTop"></div>
     <div class="list" id="list" aria-live="polite"></div>
     <button class="btn-line" id="more" type="button" hidden style="margin-top:8px">Ver más sitios</button>
     <button class="btn-line" id="addOpen" type="button" style="margin-top:8px">＋ ¿Falta un sitio? Añádelo</button>
@@ -245,7 +248,7 @@ const GROUPS=[
  ['Comprar y servicios',[
   {id:'super',n:'Súper',t:'Supermercados',osm:['["shop"~"^(supermarket|convenience|grocery|discount|wholesale|department_store)$"]','["shop"]["brand"~'+SUPER_RX+',i]','["shop"]["name"~'+SUPER_RX+',i]'],g:'supermercados',r:[1200,3000,6000]},
   {id:'farm',n:'Farmacias',t:'Farmacias',osm:['["amenity"="pharmacy"]'],g:'farmacias'},
-  {id:'guardia',n:'De guardia',t:'Farmacia de guardia',google:true,g:'farmacia de guardia'},
+  {id:'guardia',n:'De guardia',t:'Farmacias de guardia',osm:['["amenity"="pharmacy"]'],g:'farmacia de guardia',r:[2000,5000,10000]},
   {id:'cajero',n:'Cajeros',t:'Cajeros',osm:['["amenity"="atm"]','["amenity"="bank"]["atm"="yes"]'],g:'cajeros automáticos'}]],
  ['Moverse',[
   {id:'taxi',n:'Taxi',t:'Paradas de taxi',osm:['["amenity"="taxi"]'],g:'parada de taxi',drive:false},
@@ -260,7 +263,7 @@ const GROUPS=[
 ];
 const CAT={};GROUPS.forEach(g=>g[1].forEach(c=>CAT[c.id]=c));
 /* Respaldo (Photon, también con datos de OpenStreetMap) por si los servidores principales no responden */
-const PH={gluten:['sin gluten',null],rest:['restaurante','amenity:restaurant'],rapida:['comida rápida','amenity:fast_food'],cafe:['cafetería','amenity:cafe'],super:['supermercado','shop:supermarket'],farm:['farmacia','amenity:pharmacy'],cajero:['cajero','amenity:atm'],taxi:['taxi','amenity:taxi'],gas:['gasolinera','amenity:fuel'],parking:['parking','amenity:parking'],parque:['parque infantil','leisure:playground'],helado:['heladería','amenity:ice_cream'],urg:['hospital','amenity:hospital'],banos:['aseo','amenity:toilets']};
+const PH={gluten:['sin gluten',null],rest:['restaurante','amenity:restaurant'],rapida:['comida rápida','amenity:fast_food'],cafe:['cafetería','amenity:cafe'],super:['supermercado','shop:supermarket'],farm:['farmacia','amenity:pharmacy'],guardia:['farmacia','amenity:pharmacy'],cajero:['cajero','amenity:atm'],taxi:['taxi','amenity:taxi'],gas:['gasolinera','amenity:fuel'],parking:['parking','amenity:parking'],parque:['parque infantil','leisure:playground'],helado:['heladería','amenity:ice_cream'],urg:['hospital','amenity:hospital'],banos:['aseo','amenity:toilets']};
 
 /* ---------- utilidades ---------- */
 const $=s=>document.querySelector(s);
@@ -325,7 +328,7 @@ async function overpass(q){
   try{return await Promise.any(OVERPASS.slice(0,q.includes('timeout:25')?2:4).map(u=>tryOne(u,q,q.includes('timeout:25')?20000:9000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}
   catch(e){throw new Error('Mapa libre: '+(errs.join(', ')||'sin respuesta'));}
 }
-const NM={rest:'restaurant',rapida:'fast_food',cafe:'cafe',super:'supermarket',farm:'pharmacy',cajero:'atm',taxi:'taxi',gas:'fuel',parking:'parking',parque:'playground',helado:'ice_cream',urg:'hospital',banos:'toilets'};
+const NM={rest:'restaurant',rapida:'fast_food',cafe:'cafe',super:'supermarket',farm:'pharmacy',guardia:'pharmacy',cajero:'atm',taxi:'taxi',gas:'fuel',parking:'parking',parque:'playground',helado:'ice_cream',urg:'hospital',banos:'toilets'};
 async function nomin(c,pos){
   const t=NM[c.id]; if(!t) throw new Error('sin respaldo');
   const max=(c.r||[2000,5000]).slice(-1)[0], dLa=max/111000, dLo=max/(111000*Math.cos(pos.lat*Math.PI/180));
@@ -477,6 +480,7 @@ function openCat(id){
   if(c.google){window.open(gSearch(c.g),'_blank','noopener');return;}
   S.cat=id; history.pushState({cerca:'list',cat:id},'');
   $('#lTitle').textContent=c.t;
+  $('#lTop').innerHTML=id==='guardia'?'<div class="msg gtop"><b>¿Cuál está de guardia hoy?</b> Las guardias cambian cada día y el mapa libre no las sabe. Abajo tienes las farmacias más cercanas (primero las de 24 horas); para confirmar la de guardia de hoy, toca el botón.<a class="btn-gold" href="'+esc(gSearch('farmacia de guardia'))+'" target="_blank" rel="noopener" style="width:100%;margin-top:10px">Ver la farmacia de guardia de hoy</a></div>':'';
   show('list'); loadList(id);
 }
 /* Cada mapa va en un iframe nuevo: así no se acumula en el historial y «atrás» vuelve a la lista */
@@ -544,7 +548,15 @@ async function loadList(id){
   }
 }
 function sgShop(n){return new RegExp(SG_SUPER,'i').test(n);}
+function guardiaSort(items){
+  const h24=x=>/24\/7|00:00-24:00|24 ?h/i.test(x.hours||'');
+  return items.map(x=>h24(x)&&!x.note?Object.assign({},x,{note:{k:'ok',t:'Abierta 24 horas'}}):x).sort((p,q)=>(h24(q)-h24(p))||(p.d-q.d));
+}
 function withExtras(items,id){
+  if(id==='guardia') return guardiaSort(withExtras0(items,id));
+  return withExtras0(items,id);
+}
+function withExtras0(items,id){
   const ex=store.get('cerca.extra',[]).filter(x=>x.cat===id);
   if(!ex.length||!S.pos) return items;
   const mine=ex.map(x=>({id:x.id,name:x.name,addr:x.addr||'',hours:'',lat:x.lat,lon:x.lon,d:dist(S.pos,x),mine:true,note:id==='gluten'?{k:'ok',t:'Opciones sin gluten'}:''}));
