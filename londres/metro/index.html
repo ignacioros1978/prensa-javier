@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Metro de Londres · Cómo llegar</title>
+<meta name="theme-color" content="#16213e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<style>
+:root{--bg:#0f172a;--card:#1b2540;--card2:#22305a;--line:#33426b;--ink:#f8fafc;--muted:#cbd5e1;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;--accent:#e74c3c;--blue:#60a5fa}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:16px;-webkit-text-size-adjust:100%}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:560px;margin:0 auto;padding:12px 16px calc(24px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;gap:12px;padding:6px 0 12px}
+.back{flex:none;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);display:grid;place-items:center;text-decoration:none;color:var(--ink);font-size:22px;font-weight:800}
+h1{margin:0;font-size:24px;font-weight:800;line-height:1.1}
+.sub{margin:2px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
+.box{background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px}
+label.lb{font-size:15px;font-weight:800}
+.field{position:relative}
+.field input{width:100%;height:54px;padding:0 48px 0 14px;border-radius:14px;border:2px solid var(--line);background:var(--bg);font-size:17px;font-weight:700}
+.field input:focus{outline:none;border-color:var(--blue)}
+.field .clr{position:absolute;right:4px;top:5px;width:44px;height:44px;border:0;background:none;color:var(--muted);font-size:22px;font-weight:800;cursor:pointer}
+.sugg{position:absolute;left:0;right:0;top:58px;z-index:20;background:var(--card2);border:1.5px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.sugg button{display:block;width:100%;min-height:50px;padding:10px 14px;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;font-size:16px;font-weight:700;cursor:pointer}
+.sugg button small{display:block;font-size:13px;font-weight:600;color:var(--muted)}
+.sugg .info{padding:12px 14px;font-size:15px;color:var(--muted);font-weight:600}
+.row{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--card2);font-weight:800;font-size:15px;cursor:pointer;text-decoration:none;color:var(--ink)}
+.btn.main{width:100%;min-height:56px;border:0;background:var(--accent);color:#fff;font-size:18px}
+.btn.main:disabled{opacity:.5}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.chip{flex:none;min-height:44px;padding:0 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+.tog{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:48px;padding:0 4px;font-size:15px;font-weight:700;cursor:pointer;background:none;border:0;width:100%;text-align:left}
+.trk{flex:none;position:relative;width:52px;height:30px;border-radius:99px;background:var(--line)}
+.trk i{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--muted);transition:left .2s}
+.tog[aria-pressed="true"] .trk{background:#166534}.tog[aria-pressed="true"] .trk i{left:25px;background:var(--ok)}
+#out{margin-top:14px;display:flex;flex-direction:column;gap:12px}
+.msg{padding:14px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);font-size:16px;font-weight:600;line-height:1.45}
+.msg b{color:var(--ink)}
+.check{padding:12px 14px;border-radius:16px;font-size:15px;font-weight:700;line-height:1.45;border:2px solid}
+.check.ok{background:#0f2e1b;border-color:#166534}.check.ok h3{color:var(--ok)}
+.check.warn{background:#33270b;border-color:#92400e}.check.warn h3{color:var(--warn)}
+.check h3{margin:0 0 4px;font-size:17px}
+.check ul{margin:4px 0 0;padding-left:20px}
+.sum{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:4px 2px}
+.sum .t{font-size:30px;font-weight:800}
+.sum .s{font-size:15px;font-weight:700;color:var(--muted);text-align:right}
+.leg{display:flex;gap:12px;padding:14px;border-radius:16px;background:var(--card);border:1.5px solid var(--line)}
+.leg .bar{flex:none;width:10px;border-radius:6px}
+.leg .bd{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.pill{align-self:flex-start;display:inline-block;padding:5px 12px;border-radius:999px;font-size:15px;font-weight:800}
+.leg .st{font-size:17px;font-weight:800;line-height:1.3}
+.leg .st span{color:var(--muted);font-weight:700;font-size:15px}
+.leg .dir{font-size:16px;font-weight:700;line-height:1.35}
+.leg .dir em{font-style:normal;color:var(--warn)}
+.leg .n{font-size:15px;font-weight:700;color:var(--muted)}
+.leg details summary{min-height:44px;display:flex;align-items:center;font-size:15px;font-weight:800;color:var(--blue);cursor:pointer}
+.leg ol{margin:0;padding-left:22px;font-size:15px;font-weight:600;line-height:1.6;color:var(--muted)}
+.dis{padding:8px 10px;border-radius:10px;background:#3b1d1d;border:1px solid #7f1d1d;font-size:14px;font-weight:700;color:#fecaca;line-height:1.4}
+.walk{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;border:1.5px dashed var(--line);font-size:15px;font-weight:700;color:var(--muted)}
+.xfer{padding:10px 14px;border-radius:14px;background:#2a1f3d;border:1.5px solid #6d28d9;font-size:16px;font-weight:800;line-height:1.35}
+.alt{font-size:15px;font-weight:600;color:var(--muted);line-height:1.45}
+.foot{margin-top:16px;font-size:13px;font-weight:600;color:#94a3b8;line-height:1.5}
+.spin{width:22px;height:22px;border-radius:50%;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.day{background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:14px;margin-top:10px;display:flex;flex-direction:column;gap:10px}
+.day.today{border-color:var(--ok);box-shadow:0 0 0 2px rgba(74,222,128,.25)}
+.day .dh{display:flex;align-items:center;gap:10px}
+.day .dn{flex:none;min-width:44px;height:44px;padding:0 8px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff}
+.day .dt{font-size:17px;font-weight:800;line-height:1.2}
+.day .dt small{display:block;font-size:14px;font-weight:700;color:var(--muted)}
+.day .hoy{margin-left:auto;padding:4px 10px;border-radius:99px;background:var(--ok);color:#052e16;font-size:13px;font-weight:800}
+.day .trip{font-size:17px;font-weight:800}
+.day .bt{display:flex;gap:8px}
+.day .bt .btn{flex:1;min-height:52px;font-size:16px}
+.day .bt .btn.ida{background:var(--accent);border-color:var(--accent);color:#fff}
+.day .extra{font-size:14px;font-weight:700;color:var(--muted)}
+.base{font-size:15px;font-weight:700;color:var(--muted);line-height:1.45;padding:2px 2px 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="../" aria-label="Volver a la guía de Londres">‹</a>
+    <div>
+      <h1>🚇 Metro de Londres</h1>
+      <p class="sub">Toca el día y te digo cómo ir, comprobado</p>
+    </div>
+  </header>
+
+  <div id="days"></div>
+  <div id="out" aria-live="polite"></div>
+
+  <button type="button" class="btn" id="otherBtn" style="width:100%;margin-top:12px;min-height:54px;font-size:16px">＋ Otro trayecto (otra estación)</button>
+
+  <form class="box" id="f" autocomplete="off" hidden style="margin-top:12px">
+    <div class="row" style="justify-content:space-between"><b style="font-size:18px">Otro trayecto</b><button type="button" class="btn" id="otherClose" style="min-height:44px">Cerrar</button></div>
+    <label class="lb" for="from">Desde</label>
+    <div class="field">
+      <input id="from" placeholder="Estación de salida" enterkeyhint="next">
+      <button type="button" class="clr" data-clr="from" aria-label="Borrar salida">×</button>
+      <div class="sugg" id="sg-from" hidden></div>
+    </div>
+    <div class="row">
+      <button type="button" class="btn" id="here" style="flex:1">📍 Estación más cercana</button>
+      <button type="button" class="btn" id="swap" aria-label="Intercambiar salida y llegada">⇅ Cambiar</button>
+    </div>
+    <label class="lb" for="to">Hasta</label>
+    <div class="field">
+      <input id="to" placeholder="Estación de llegada" enterkeyhint="go">
+      <button type="button" class="clr" data-clr="to" aria-label="Borrar llegada">×</button>
+      <div class="sugg" id="sg-to" hidden></div>
+    </div>
+    <div>
+      <div class="lb" style="font-size:14px;margin-bottom:6px">Estaciones del viaje (toca para ponerla)</div>
+      <div class="chips" id="quick"></div>
+    </div>
+    <button type="button" class="tog" id="stepfree" aria-pressed="false"><span>♿ Sin escaleras (ascensor o rampa hasta el andén)</span><span class="trk"><i></i></span></button>
+    <button class="btn main" type="submit" id="go">Buscar ruta</button>
+  </form>
+
+  <p class="foot">Rutas e incidencias en tiempo real del planificador oficial de Transport for London (TfL). Cada ruta se pide dos veces y se comprueba línea por línea antes de enseñártela. La última ruta queda guardada para verla sin cobertura.</p>
+</div>
+
+<script>
+(function(){
+'use strict';
+const API='https://api.tfl.gov.uk';
+const MODES='tube,dlr,overground,elizabeth-line';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* Colores oficiales de las líneas */
+const COL={bakerloo:'#B36305',central:'#E32017',circle:'#FFD300',district:'#00782A','hammersmith-city':'#F3A9BB',jubilee:'#A0A5A9',metropolitan:'#9B0056',northern:'#000000',piccadilly:'#003688',victoria:'#0098D4','waterloo-city':'#95CDBA',elizabeth:'#6950A1',dlr:'#00A4A7',liberty:'#61686B',lioness:'#FAA61A',mildmay:'#0071FD',suffragette:'#5BBD72',weaver:'#823A62',windrush:'#ED1B00','london-overground':'#EE7C0E'};
+const DARK_TXT={circle:1,'hammersmith-city':1,'waterloo-city':1,jubilee:1,lioness:1};
+const LINE_ES=id=>({'hammersmith-city':'Hammersmith & City','waterloo-city':'Waterloo & City',dlr:'DLR (tren ligero)',elizabeth:'Elizabeth'}[id]);
+
+/* Trayectos de metro de cada día, sacados de la guía del viaje */
+const HOME={name:'Hammersmith',hint:/dist|picc/i};
+const DAYS=[
+ {n:'D1',date:'2026-12-05',label:'Sábado 5 dic',zone:'South Bank · Covent Garden',col:'#e74c3c',to:{name:'Waterloo'}},
+ {n:'D2',date:'2026-12-06',label:'Domingo 6 dic',zone:'Borough Market · Tower Bridge',col:'#3498db',to:{name:'London Bridge'}},
+ {n:'D3',date:'2026-12-07',label:'Lunes 7 dic',zone:'Westminster · Buckingham',col:'#2ecc71',to:{name:'Westminster'},extra:{label:'Tramo opcional: Green Park → Hyde Park Corner',a:{name:'Green Park'},b:{name:'Hyde Park Corner'}}},
+ {n:'D4',date:'2026-12-08',label:'Martes 8 dic',zone:'Notting Hill · Kensington',col:'#9b59b6',to:{name:'Notting Hill Gate'}}
+];
+/* Estaciones que salen en la guía del viaje */
+const QUICK=['Hammersmith','Westminster','Waterloo','London Bridge','Notting Hill Gate','Victoria','Green Park','Oxford Circus','Piccadilly Circus','Leicester Square','Covent Garden','Tower Hill','South Kensington','Knightsbridge','Bond Street','Battersea Power Station','King\'s Cross St. Pancras'];
+
+const S={from:null,to:null,stepfree:store.get('metro.stepfree',false)};
+
+function clean(n){return String(n||'').replace(/ (Underground|DLR|Rail|Overground|Elizabeth line) Station$/i,'').replace(/ Underground Station$/i,'').replace(/ Station$/i,'').replace(/\s*\(London\)/,'').trim();}
+function norm(n){return clean(n).toLowerCase().replace(/&/g,'and').replace(/st\.? /g,'st ').replace(/[^a-z0-9]/g,'');}
+
+async function tfl(path,ms){
+  const c=new AbortController();const t=setTimeout(()=>c.abort(),ms||15000);
+  try{const r=await fetch(API+path,{signal:c.signal});const j=await r.json().catch(()=>null);return {status:r.status,ok:r.ok,j};}
+  finally{clearTimeout(t);}
+}
+
+/* ---------- búsqueda de estaciones ---------- */
+let sgTimer=null,sgSeq=0;
+async function searchStations(q){
+  const r=await tfl('/StopPoint/Search/'+encodeURIComponent(q)+'?modes='+MODES+'&maxResults=8',10000);
+  if(!r.ok||!r.j) throw new Error('HTTP '+r.status);
+  return (r.j.matches||[]).map(m=>({id:m.id,name:clean(m.name),modes:m.modes||[]}));
+}
+function modesEs(ms){return ms.map(m=>({tube:'Metro',dlr:'DLR',overground:'Overground','elizabeth-line':'Elizabeth line'}[m])).filter(Boolean).join(' · ');}
+function showSugg(which,html){const el=$('#sg-'+which);el.innerHTML=html;el.hidden=!html;}
+function onType(which){
+  const v=$('#'+which).value.trim();S[which]=null;
+  clearTimeout(sgTimer);
+  if(v.length<2){showSugg(which,'');return;}
+  showSugg(which,'<div class="info">Buscando…</div>');
+  sgTimer=setTimeout(async()=>{
+    const my=++sgSeq;
+    try{const res=await searchStations(v);if(my!==sgSeq)return;
+      showSugg(which,res.length?res.map(m=>'<button type="button" data-pick="'+which+'" data-id="'+esc(m.id)+'" data-name="'+esc(m.name)+'">'+esc(m.name)+'<small>'+esc(modesEs(m.modes))+'</small></button>').join(''):'<div class="info">No encuentro esa estación. Prueba a escribirla en inglés.</div>');
+    }catch(e){if(my===sgSeq)showSugg(which,'<div class="info">Sin conexión con TfL. Revisa los datos móviles.</div>');}
+  },300);
+}
+function pick(which,id,name){S[which]={id,name};$('#'+which).value=name;showSugg(which,'');}
+async function quickPick(name){
+  const which=!S.from?'from':(!S.to?'to':'to');
+  $('#'+which).value=name;
+  try{const res=await searchStations(name);
+    const best=res.find(m=>norm(m.name)===norm(name))||res.find(m=>norm(m.name).startsWith(norm(name)))||res[0];
+    if(best&&res.filter(m=>norm(m.name).startsWith(norm(name))).length>1){showSugg(which,res.filter(m=>norm(m.name).startsWith(norm(name))).map(m=>'<button type="button" data-pick="'+which+'" data-id="'+esc(m.id)+'" data-name="'+esc(m.name)+'">'+esc(m.name)+'<small>'+esc(modesEs(m.modes))+'</small></button>').join(''));$('#'+which).focus();return;}
+    if(best)pick(which,best.id,best.name);
+  }catch(e){showSugg(which,'<div class="info">Sin conexión con TfL. Revisa los datos móviles.</div>');}
+}
+
+/* Busca la estación por nombre en TfL (y la recuerda para no repetir) */
+async function resolveSt(st){
+  const key='metro.st.'+norm(st.name)+(st.hint?'.h':'');
+  const saved=store.get(key,null); if(saved) return saved;
+  const res=(await searchStations(st.name)).filter(m=>m.modes.indexOf('tube')>=0||m.modes.length);
+  let best=null;
+  if(st.hint) best=res.find(m=>norm(m.name).startsWith(norm(st.name))&&st.hint.test(m.name));
+  best=best||res.find(m=>norm(m.name)===norm(st.name))||res.find(m=>norm(m.name).startsWith(norm(st.name)))||res[0];
+  if(!best) throw new Error('No encuentro la estación '+st.name);
+  const out={id:best.id,name:st.hint?st.name:best.name};
+  store.set(key,out); return out;
+}
+async function planPair(a,b){
+  const out=$('#out');
+  out.innerHTML='<div class="msg">Pidiendo la ruta a TfL y comprobándola dos veces…</div>';
+  out.scrollIntoView({behavior:'smooth',block:'start'});
+  try{const [x,y]=await Promise.all([resolveSt(a),resolveSt(b)]);S.from=x;S.to=y;$('#from').value=x.name;$('#to').value=y.name;}
+  catch(e){
+    const last=store.get('metro.last',null);
+    if(last&&norm(last.from)===norm(a.name)&&norm(last.to)===norm(b.name)){render(last,true);return;}
+    out.innerHTML='<div class="msg"><b>No he podido conectar con TfL.</b> '+(navigator.onLine?esc(e.message):'Parece que no hay conexión (en el metro suele pasar).')+' Vuelve a intentarlo con cobertura o wifi.</div>';return;}
+  plan();
+}
+function renderDays(){
+  const today=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/London'});
+  $('#days').innerHTML='<p class="base">🏠 Salís de <b style="color:#f8fafc">Hammersmith</b> (líneas District y Piccadilly, a 5 min del apartamento).</p>'+
+  DAYS.map((d,i)=>'<div class="day'+(d.date===today?' today':'')+'"><div class="dh"><span class="dn" style="background:'+d.col+'">'+d.n+'</span><div class="dt">'+esc(d.label)+'<small>'+esc(d.zone)+'</small></div>'+(d.date===today?'<span class="hoy">HOY</span>':'')+'</div>'+
+    '<div class="trip">Hammersmith → '+esc(d.to.name)+'</div>'+
+    '<div class="bt"><button type="button" class="btn ida" data-day="'+i+'" data-way="ida">Ida</button><button type="button" class="btn" data-day="'+i+'" data-way="vuelta">Vuelta</button></div>'+
+    (d.extra?'<button type="button" class="btn" data-day="'+i+'" data-way="extra" style="min-height:48px">'+esc(d.extra.label)+'</button>':'')+
+    '</div>').join('');
+}
+function nearest(){
+  const b=$('#here');
+  if(!navigator.geolocation){b.textContent='Este móvil no da la ubicación';return;}
+  b.innerHTML='<span class="spin"></span> Buscando…';
+  navigator.geolocation.getCurrentPosition(async p=>{
+    try{
+      const r=await tfl('/StopPoint?lat='+p.coords.latitude+'&lon='+p.coords.longitude+'&stopTypes=NaptanMetroStation,NaptanRailStation&radius=1500&modes='+MODES,12000);
+      const sp=(r.j&&r.j.stopPoints||[]).sort((a,b)=>a.distance-b.distance)[0];
+      if(!sp){b.textContent='📍 No hay estaciones a menos de 1,5 km';return;}
+      pick('from',sp.naptanId||sp.id,clean(sp.commonName));
+      b.textContent='📍 '+clean(sp.commonName)+' · a '+Math.round(sp.distance)+' m';
+    }catch(e){b.textContent='📍 Sin conexión con TfL';}
+  },()=>{b.textContent='📍 Sin permiso de ubicación';},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+}
+
+/* ---------- planificar ---------- */
+async function journey(from,to,pref){
+  let f=from,t=to;
+  for(let i=0;i<2;i++){
+    const q='/Journey/JourneyResults/'+encodeURIComponent(f)+'/to/'+encodeURIComponent(t)+'?mode='+MODES+',walking&journeyPreference='+pref+'&timeIs=Departing&alternativeWalking=false'+(S.stepfree?'&accessibilityPreference=StepFreeToPlatform':'');
+    const r=await tfl(q,20000);
+    if(r.status===300&&r.j){ /* TfL pide aclarar la estación: cogemos su primera propuesta */
+      const fo=r.j.fromLocationDisambiguation, to2=r.j.toLocationDisambiguation;
+      if(fo&&fo.matchStatus!=='identified'&&fo.disambiguationOptions&&fo.disambiguationOptions[0]) f=fo.disambiguationOptions[0].parameterValue;
+      if(to2&&to2.matchStatus!=='identified'&&to2.disambiguationOptions&&to2.disambiguationOptions[0]) t=to2.disambiguationOptions[0].parameterValue;
+      continue;
+    }
+    if(!r.ok||!r.j) throw new Error(r.status===404?'TfL no encuentra ruta entre esas estaciones':'TfL respondió con un error ('+r.status+')');
+    return r.j.journeys||[];
+  }
+  throw new Error('TfL no ha sabido identificar las estaciones');
+}
+const isTransit=l=>l.mode&&l.mode.id!=='walking';
+const lineOf=l=>{const ro=(l.routeOptions||[])[0]||{};return (ro.lineIdentifier&&ro.lineIdentifier.id)||(ro.name||'').toLowerCase().replace(/ & /g,'-').replace(/\s+/g,'-')||l.mode.id;};
+const lineName=l=>{const ro=(l.routeOptions||[])[0]||{};return (ro.lineIdentifier&&ro.lineIdentifier.name)||ro.name||l.mode.name;};
+const sig=j=>(j.legs||[]).filter(isTransit).map(l=>lineOf(l)+':'+norm(l.departurePoint.commonName)+'>'+norm(l.arrivalPoint.commonName)).join('|');
+function choose(js){
+  /* la de menos trasbordos y, a igualdad, la más corta */
+  return js.slice().sort((a,b)=>(a.legs.filter(isTransit).length-b.legs.filter(isTransit).length)||(a.duration-b.duration))[0];
+}
+const lineCache={};
+async function lineStops(id){
+  if(lineCache[id]) return lineCache[id];
+  const r=await tfl('/Line/'+encodeURIComponent(id)+'/StopPoints',15000);
+  if(!r.ok||!Array.isArray(r.j)) throw new Error('no se pudo leer la línea '+id);
+  const ids=new Set(),names=new Set();
+  r.j.forEach(s=>{[s.naptanId,s.id,s.stationNaptan,s.hubNaptanCode].forEach(x=>x&&ids.add(x));names.add(norm(s.commonName));(s.children||[]).forEach(c=>c.naptanId&&ids.add(c.naptanId));});
+  return lineCache[id]={ids,names};
+}
+async function verifyLegs(j){
+  const problems=[];
+  for(const l of j.legs.filter(isTransit)){
+    const id=lineOf(l);
+    try{
+      const st=await lineStops(id);
+      for(const p of [l.departurePoint,l.arrivalPoint]){
+        const okId=[p.naptanId,p.stationNaptan,p.icsCode].some(x=>x&&st.ids.has(x));
+        if(!okId&&!st.names.has(norm(p.commonName))) problems.push('La línea '+lineName(l)+' no aparece parando en '+clean(p.commonName)+'.');
+      }
+      const path=(l.path&&l.path.stopPoints)||[];
+      if(path.length&&norm(path[path.length-1].name)!==norm(l.arrivalPoint.commonName)&&!path.some(x=>norm(x.name)===norm(l.arrivalPoint.commonName))) problems.push('En la línea '+lineName(l)+' la parada de bajada no cuadra con el recorrido.');
+    }catch(e){problems.push('No he podido comprobar la línea '+lineName(l)+' ('+e.message+').');}
+  }
+  return problems;
+}
+
+function towards(l){
+  const d=(l.instruction&&l.instruction.detailed)||'';
+  const m=d.match(/towards (.+)$/i);
+  if(m) return clean(m[1]);
+  const ro=(l.routeOptions||[])[0]||{};
+  return (ro.directions||[])[0]?clean(ro.directions[0]):'';
+}
+function hhmm(s){const m=String(s||'').match(/T(\d{2}:\d{2})/);return m?m[1]+' (hora de Londres)':'';}
+
+function render(data,fromCache){
+  const {j,checks,from,to,when,alt}=data;
+  const legs=j.legs||[];
+  const transit=legs.filter(isTransit);
+  const xfers=Math.max(0,transit.length-1);
+  let h='';
+  if(fromCache) h+='<div class="msg"><b>Sin conexión:</b> te enseño la última ruta guardada ('+esc(new Date(when).toLocaleString('es-ES',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}))+').</div>';
+  h+=checks.ok
+    ?'<div class="check ok"><h3>✓ Ruta comprobada dos veces</h3><ul><li>Una segunda consulta a TfL da la misma ruta.</li><li>Cada línea para de verdad donde subes y donde bajas.</li></ul></div>'
+    :'<div class="check warn"><h3>⚠ Revisa esta ruta</h3><ul>'+checks.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul></div>';
+  h+='<div class="sum"><div class="t">'+j.duration+' min</div><div class="s">'+esc(from)+' → '+esc(to)+'<br>'+(xfers?xfers+(xfers>1?' trasbordos':' trasbordo'):'Sin trasbordos')+' · llegada '+esc(hhmm(j.arrivalDateTime))+'</div></div>';
+  let prevTransit=null;
+  legs.forEach((l,i)=>{
+    if(!isTransit(l)){
+      const s=(l.instruction&&l.instruction.summary)||'Camina';
+      if(l.duration>=1) h+='<div class="walk">🚶 Camina '+l.duration+' min'+(prevTransit&&legs.slice(i+1).some(isTransit)?' para el trasbordo':'')+'<span class="sr"> '+esc(s)+'</span></div>';
+      return;
+    }
+    const id=lineOf(l),col=COL[id]||'#64748b',name=LINE_ES(id)||lineName(l).replace(/ line$/i,'');
+    if(prevTransit) h+='<div class="xfer">🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prevTransit)===id?'cambia de tren, sigues en la línea '+esc(name)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(name))+'</div>';
+    const stops=((l.path&&l.path.stopPoints)||[]).map(p=>clean(p.name));
+    const n=stops.length;
+    const tw=towards(l);
+    const label=l.mode.id==='tube'?'Línea '+name:(l.mode.id==='dlr'?name:(l.mode.id==='elizabeth-line'?'Elizabeth line':name+' (Overground)'));
+    h+='<div class="leg"><div class="bar" style="background:'+col+'"></div><div class="bd">'+
+      '<span class="pill" style="background:'+col+';color:'+(DARK_TXT[id]?'#111':'#fff')+'">'+esc(label)+'</span>'+
+      '<div class="st"><span>Sube en</span> '+esc(clean(l.departurePoint.commonName))+'</div>'+
+      (tw?'<div class="dir">Tren en dirección <em>'+esc(tw)+'</em></div>':'')+
+      '<div class="st"><span>Bájate en</span> '+esc(clean(l.arrivalPoint.commonName))+'</div>'+
+      '<div class="n">'+(n?n+(n>1?' paradas':' parada'):'')+(l.duration?' · unos '+l.duration+' min':'')+'</div>'+
+      ((l.disruptions||[]).length?'<div class="dis">⚠ Incidencia: '+esc(String(l.disruptions[0].description||'').slice(0,240))+'</div>':'')+
+      (n?'<details><summary>Ver las paradas</summary><ol>'+stops.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol></details>':'')+
+      '</div></div>';
+    prevTransit=l;
+  });
+  if(alt) h+='<p class="alt">'+esc(alt)+'</p>';
+  h+='<a class="btn" style="width:100%" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(from+' station London')+'&destination='+encodeURIComponent(to+' station London')+'&travelmode=transit">Verla también en Google Maps</a>';
+  $('#out').innerHTML=h;
+  $('#out').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+async function plan(){
+  const out=$('#out');
+  if(!S.from||!S.to){
+    const miss=!S.from?'from':'to';
+    out.innerHTML='<div class="msg"><b>Elige la estación de '+(miss==='from'?'salida':'llegada')+' de la lista.</b> Escribe su nombre y toca la que es.</div>';
+    $('#'+miss).focus();return;
+  }
+  if(S.from.id===S.to.id){out.innerHTML='<div class="msg"><b>La salida y la llegada son la misma estación.</b></div>';return;}
+  const go=$('#go');go.disabled=true;go.innerHTML='<span class="spin"></span> Buscando y comprobando…';
+  out.innerHTML='<div class="msg">Pidiendo la ruta a TfL y comprobándola dos veces…</div>';
+  try{
+    const [a,b]=await Promise.all([journey(S.from.id,S.to.id,'leastinterchange'),journey(S.from.id,S.to.id,'leasttime').catch(()=>null)]);
+    if(!a.length) throw new Error('TfL no ha devuelto ninguna ruta');
+    const j=choose(a);
+    const notes=[];
+    /* Comprobación 1: segunda consulta independiente */
+    let alt='';
+    if(!b||!b.length) notes.push('No he podido hacer la segunda consulta a TfL; la ruta solo está comprobada una vez.');
+    else{
+      const sj=sig(j);
+      const same=b.some(x=>sig(x)===sj);
+      if(!same){
+        const fb=b.slice().sort((x,y)=>x.duration-y.duration)[0];
+        if(fb.duration<j.duration-4) alt='Hay otra ruta unos '+(j.duration-fb.duration)+' min más rápida pero con más trasbordos ('+fb.legs.filter(isTransit).map(lineName).join(' → ')+'). Te enseño la de menos trasbordos, que es más cómoda.';
+        else alt='';
+        const anyEq=a.some(x=>sig(x)===sig(fb))||b.some(x=>x.legs.filter(isTransit).length===j.legs.filter(isTransit).length&&x.legs.filter(isTransit).map(lineOf).join()===j.legs.filter(isTransit).map(lineOf).join());
+        if(!anyEq&&!alt) notes.push('Las dos consultas a TfL no dan exactamente la misma ruta; las dos son válidas, esta tiene menos trasbordos.');
+      }
+    }
+    /* Comprobación 2: cada línea para donde subes y bajas */
+    notes.push(...await verifyLegs(j));
+    const data={j,checks:{ok:!notes.length,notes},from:S.from.name,to:S.to.name,when:Date.now(),alt};
+    store.set('metro.last',data);
+    const rec=[{from:S.from,to:S.to},...store.get('metro.recent',[]).filter(r=>!(r.from.id===S.from.id&&r.to.id===S.to.id))].slice(0,4);
+    store.set('metro.recent',rec);
+    render(data,false);
+  }catch(e){
+    const last=store.get('metro.last',null);
+    const offline=!navigator.onLine||e.name==='AbortError'||/fetch|network|Failed/i.test(String(e.message));
+    if(offline&&last&&last.from===S.from.name&&last.to===S.to.name){render(last,true);}
+    else out.innerHTML='<div class="msg"><b>No he podido sacar la ruta.</b> '+(offline?'Parece que no hay conexión (en el metro suele pasar). Vuelve a intentarlo cuando tengas cobertura o wifi.':esc(e.message)+'.')+'</div>'+
+      '<button class="btn" type="button" onclick="document.getElementById(\'go\').click()" style="width:100%">Volver a intentarlo</button>';
+  }finally{go.disabled=false;go.textContent='Buscar ruta';}
+}
+
+/* ---------- arranque ---------- */
+renderDays();
+$('#quick').innerHTML=QUICK.map(n=>'<button type="button" class="chip" data-q="'+esc(n)+'">'+esc(n)+'</button>').join('');
+const rec=store.get('metro.recent',[]);
+if(rec.length) $('#quick').insertAdjacentHTML('afterbegin',rec.map((r,i)=>'<button type="button" class="chip" data-rec="'+i+'" style="border-color:#60a5fa">↺ '+esc(r.from.name)+' → '+esc(r.to.name)+'</button>').join(''));
+const sf=$('#stepfree');sf.setAttribute('aria-pressed',String(!!S.stepfree));
+sf.onclick=()=>{S.stepfree=!S.stepfree;store.set('metro.stepfree',S.stepfree);sf.setAttribute('aria-pressed',String(S.stepfree));};
+['from','to'].forEach(w=>{const i=$('#'+w);i.addEventListener('input',()=>onType(w));i.addEventListener('focus',()=>{if(i.value.length>=2&&!S[w])onType(w);});});
+document.addEventListener('click',e=>{
+  const p=e.target.closest('[data-pick]');if(p){pick(p.dataset.pick,p.dataset.id,p.dataset.name);return;}
+  const dy=e.target.closest('[data-day]');if(dy){const d=DAYS[+dy.dataset.day],w=dy.dataset.way;
+    if(w==='ida')planPair(HOME,d.to);else if(w==='vuelta')planPair(d.to,HOME);else planPair(d.extra.a,d.extra.b);return;}
+  const q=e.target.closest('[data-q]');if(q){quickPick(q.dataset.q);return;}
+  const r=e.target.closest('[data-rec]');if(r){const x=rec[+r.dataset.rec];pick('from',x.from.id,x.from.name);pick('to',x.to.id,x.to.name);plan();return;}
+  const c=e.target.closest('[data-clr]');if(c){const w=c.dataset.clr;$('#'+w).value='';S[w]=null;showSugg(w,'');$('#'+w).focus();return;}
+  if(!e.target.closest('.field')){showSugg('from','');showSugg('to','');}
+});
+$('#swap').onclick=()=>{const a=S.from,b=S.to;S.from=b;S.to=a;$('#from').value=b?b.name:'';$('#to').value=a?a.name:'';};
+$('#here').onclick=nearest;
+$('#otherBtn').onclick=()=>{$('#f').hidden=false;$('#otherBtn').hidden=true;$('#from').focus();};
+$('#otherClose').onclick=()=>{$('#f').hidden=true;$('#otherBtn').hidden=false;};
+$('#f').addEventListener('submit',e=>{e.preventDefault();showSugg('from','');showSugg('to','');plan();});
+const last=store.get('metro.last',null);
+if(last&&Date.now()-last.when<12*3600e3){$('#out').innerHTML='<div class="msg">Última ruta buscada: <b>'+esc(last.from)+' → '+esc(last.to)+'</b><button class="btn" type="button" id="showLast" style="width:100%;margin-top:8px">Verla</button></div>';$('#showLast').onclick=()=>render(last,!navigator.onLine);}
+})();
+</script>
+</body>
+</html>
