@@ -136,7 +136,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v6</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v7</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -169,6 +169,7 @@ body.scroll #app{height:auto}
     <div class="list" id="list" aria-live="polite"></div>
     <button class="btn-line" id="more" type="button" hidden style="margin-top:8px">Ver más sitios</button>
     <p class="note" id="lNote"></p>
+    <p class="diag" id="diag"></p>
   </div>
 </section>
 
@@ -254,26 +255,28 @@ const gPlace=(p)=>'https://www.google.com/maps/search/?api=1&query='+encodeURICo
 const gRoute=(p,drive)=>'https://www.google.com/maps/dir/?api=1'+(S.pos?'&origin='+S.pos.lat+','+S.pos.lon:'')+'&destination='+p.lat+','+p.lon+'&travelmode='+(drive?'driving':'walking');
 
 /* ---------- estado ---------- */
-const S={pos:null,open:store.get('cerca.open',false),cat:null,items:[],shown:0,favs:store.get('cerca.favs',[]),cache:{}};
+const S={diag:{},t0:0,pos:null,open:store.get('cerca.open',false),cat:null,items:[],shown:0,favs:store.get('cerca.favs',[]),cache:{}};
 
 /* ---------- ubicación ---------- */
 function setWhere(t,state){$('#whereTxt').textContent=t;$('#whereDot').className='dot '+state;}
+function setPos(p,precise){
+  const np={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy,manual:false,label:(S.pos&&S.pos.label)||'tu ubicación'};
+  const moved=!S.pos||S.pos.manual||dist(S.pos,np)>150;
+  if(!moved){S.pos.acc=np.acc;return;}
+  S.pos=np; S.cache={}; S.diag.loc=S.diag.loc||((performance.now()-S.t0)/1000);
+  setWhere('Ubicación encontrada','ok'); reverse(S.pos);
+  if(S.cat&&S.view!=='home') loadList(S.cat);
+}
 function locate(){
   if(!('geolocation' in navigator)){setWhere('Este navegador no da la ubicación','bad');return;}
-  setWhere('Buscando tu ubicación…','wait');
-  let done=false;const wd=setTimeout(()=>{if(done)return;done=true;S.pos=null;setWhere('No se pudo localizar','bad');if(S.cat)loadList(S.cat);},15000);
-  navigator.geolocation.getCurrentPosition(p=>{if(done&&S.pos)return;done=true;clearTimeout(wd);
-    S.pos={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy,manual:false,label:'tu ubicación'};
-    S.cache={};
-    setWhere('Ubicación encontrada','ok');
-    reverse(S.pos);
-    if(S.cat) loadList(S.cat);
-  },err=>{
-    if(done)return;done=true;clearTimeout(wd);
-    S.pos=null;
-    setWhere(err.code===1?'Sin permiso de ubicación':'No se pudo localizar','bad');
-    if(S.cat) loadList(S.cat);
-  },{enableHighAccuracy:true,timeout:12000,maximumAge:60000});
+  setWhere('Buscando tu ubicación…','wait'); S.t0=performance.now(); S.diag.loc=0;
+  let got=false;
+  const wd=setTimeout(()=>{if(got)return;S.pos=null;setWhere('No se pudo localizar','bad');if(S.cat)loadList(S.cat);},20000);
+  const ok=p=>{got=true;clearTimeout(wd);setPos(p);};
+  const ko=err=>{if(got)return;if(err.code===1){clearTimeout(wd);got=true;S.pos=null;setWhere('Sin permiso de ubicación','bad');if(S.cat)loadList(S.cat);}};
+  /* Primero una ubicación rápida (wifi o antenas, al momento) y después la del GPS, más precisa */
+  navigator.geolocation.getCurrentPosition(ok,ko,{enableHighAccuracy:false,timeout:6000,maximumAge:300000});
+  navigator.geolocation.getCurrentPosition(ok,ko,{enableHighAccuracy:true,timeout:20000,maximumAge:30000});
 }
 async function reverse(pos){
   try{
@@ -334,9 +337,11 @@ async function photon(c,pos){
 }
 async function fetchCat(c,pos,onUpdate){
   /* Tres fuentes a la vez: enseña la primera que traiga sitios y va sumando las demás cuando llegan */
-  const jobs=[fetchCatOv(c,pos)];
-  if(PH[c.id]) jobs.push(photon(c,pos));
-  if(NM[c.id]) jobs.push(nomin(c,pos));
+  S.diag.src={};
+  const timed=(name,pr)=>{const t=performance.now();S.diag.src[name]='…';return pr.then(r=>{S.diag.src[name]=((performance.now()-t)/1000).toFixed(1).replace('.',',')+' s ('+r.items.length+')';showDiag();return r;},e=>{S.diag.src[name]='falla: '+String(e&&e.message||e).slice(0,40);showDiag();throw e;});};
+  const jobs=[timed('Mapa libre',fetchCatOv(c,pos))];
+  if(PH[c.id]) jobs.push(timed('Photon',photon(c,pos)));
+  if(NM[c.id]) jobs.push(timed('Nominatim',nomin(c,pos)));
   return new Promise((resolve,reject)=>{
     let best=null,pending=jobs.length,done=false;const errs=[];
     jobs.forEach(j=>j.then(res=>{
@@ -406,6 +411,7 @@ function mapOne(k){
   $('#mAll').hidden=false; $('#mAll').textContent='Ver todos';
   openMap();
 }
+function showDiag(){const d=$('#diag');if(!d)return;const s=S.diag.src||{};d.textContent='Ubicación: '+(S.diag.loc?S.diag.loc.toFixed(1).replace('.',',')+' s':'—')+(S.pos&&S.pos.acc?' (±'+Math.round(S.pos.acc)+' m)':'')+' · '+Object.entries(s).map(([k,v])=>k+': '+v).join(' · ');}
 function setNote(c,res){$('#lNote').textContent=(c.id==='gluten'?'Los sitios sin gluten dependen de que alguien lo haya indicado en el mapa: puede haber más en Google Maps. ':'')+(S.open?'El filtro «solo abiertos» se aplica en «Verlos todos en el mapa»; aquí verás el horario cuando se conozca. ':'')+S.items.length+' sitios · Datos: '+(res.src||'OpenStreetMap')+'.';}
 async function loadList(id){
   const c=CAT[id];
@@ -422,12 +428,13 @@ async function loadList(id){
     return;
   }
   $('#lSub').textContent='Desde '+S.pos.label+' · de más cerca a más lejos';$('#lDot').className='dot ok';
+  showDiag();
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c6.'+key,null);
+  const saved=store.get('cerca.c7.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{store.set('cerca.c6.'+key,{ts:Date.now(),res});};
+  const keep=res=>{store.set('cerca.c7.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=res.items;S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
