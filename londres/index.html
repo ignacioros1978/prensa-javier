@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,10 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Londres 2026">
-    <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#1a1a2e">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiTG9uZHJlcyBOYXZpZGFkIDIwMjYiLCJzaG9ydF9uYW1lIjoiTG9uZHJlczIwMjYiLCJzdGFydF91cmwiOiIuIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmLWZmLZmYiLCJ0aGVtZV9jb2xvciI6IiNlNzRjM2MifQ==">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -348,9 +346,6 @@
             transition: transform 0.15s;
         }
         .map-marker:hover { transform: scale(1.15); }
-        .pin-icon { background: none; border: none; }
-        #map { z-index: 0; }
-        .leaflet-popup-content { margin: 12px 14px; }
 
         /* Desktop */
         @media (min-width: 768px) {
@@ -978,7 +973,7 @@
                 <!-- Barra inferior con FAB y exportar -->
                 <div class="album-bottom-bar">
                     <div style="display:flex;flex-direction:column;gap:5px;flex:1;margin-right:10px;">
-                        <button class="export-btn" id="export-btn" onclick="exportStandaloneHTML()">📤 Exportar recuerdo</button>
+                        <button class="export-btn" onclick="exportStandaloneHTML()">📤 Exportar recuerdo</button>
                         <button onclick="importFromHTML()" style="padding:7px 14px;background:#f1f5f9;border:1.5px solid #cbd5e1;border-radius:10px;font-size:0.75rem;font-weight:700;color:#475569;cursor:pointer;">📥 Importar fotos</button>
                     </div>
                     <button class="album-fab" id="album-fab" title="Añadir foto">+</button>
@@ -1185,20 +1180,8 @@
 
 
         // DÍA 1 — Sábado 5 dic
-        // Orden: Eye(1) → Southbank(2) → Kingdom of Sweets(3) → Fortnum & Mason(4) → Chinatown(5) → Regent St(6) → Hamleys(7) → SugarSin/Covent Garden(8) → Trafalgar(9)
-        // Bonus de paso: M&M's Store (Leicester Square, entre Strand y Piccadilly)
-
-        {
-            id: 'mms_store',
-            name: 'M&M\'s Store London',
-            address: '1 Swiss Court, Leicester Square, WC2H 7BA',
-            lat: 51.5107,
-            lng: -0.1297,
-            day: 'd1',
-            category: 'bonus',
-            emoji: '🍫',
-            desc: 'Tienda oficial de M&M\'s · 4 plantas · de paso entre el Strand y Piccadilly Circus · sin desvío.'
-        },
+        // Orden geográfico: Southbank(1) → Eye(2) → Covent Garden(3) → Trafalgar(4) → Chinatown(5) → 🍫 M&M's (bonus) → Kingdom of Sweets(6) → Fortnum & Mason(7) → Regent St(8) → Hamleys(9)
+        // Bonus de paso: M&M's Store (Leicester Square, entre Chinatown y Piccadilly)
 
         {
             id: 'waterloo_station',
@@ -1211,19 +1194,6 @@
             emoji: '🚇',
             desc: 'Destino desde Hammersmith (District/Jubilee).',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Waterloo_station_main_entrance.jpg/640px-Waterloo_station_main_entrance.jpg'
-        },
-
-        {
-            id: 'londoneye',
-            name: 'London Eye',
-            address: 'Riverside Building, County Hall, SE1 7PB',
-            lat: 51.5033,
-            lng: -0.1195,
-            day: 'd1',
-            category: 'interes',
-            emoji: '🎡',
-            desc: '135 m de altura · cápsula 30 min · Imprescindible reservar online.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/London_Eye_Twilight_2006.jpg/640px-London_Eye_Twilight_2006.jpg'
         },
 
         {
@@ -1240,68 +1210,16 @@
         },
 
         {
-            id: 'kingdom_sweets',
-            name: 'Kingdom of Sweets',
-            address: 'Piccadilly Circus, W1D 7ET',
-            lat: 51.5101,
-            lng: -0.1340,
-            day: 'd1',
-            category: 'tiendas',
-            emoji: '🍬',
-            desc: 'La tienda de chuches más famosa de Piccadilly con caramelos de todo el mundo.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/M%26M%27s_World_London_-_geograph.org.uk_-_1739502.jpg/640px-M%26M%27s_World_London_-_geograph.org.uk_-_1739502.jpg'
-        },
-
-        {
-            id: 'fortnum_mason',
-            name: 'Fortnum & Mason',
-            address: '181 Piccadilly, W1A 1ER',
-            lat: 51.5074,
-            lng: -0.1389,
-            day: 'd1',
-            category: 'tiendas',
-            emoji: '🍰',
-            desc: 'Desde 1707 · té, chocolates y mermeladas en latas de colores pastel · el regalo típico de Londres.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Fortnum_%26_Mason%2C_London.jpg/640px-Fortnum_%26_Mason%2C_London.jpg'
-        },
-
-        {
-            id: 'chinatown',
-            name: 'Chinatown',
-            address: 'Gerrard St, W1D 5PT',
-            lat: 51.5115,
-            lng: -0.1305,
+            id: 'londoneye',
+            name: 'London Eye',
+            address: 'Riverside Building, County Hall, SE1 7PB',
+            lat: 51.5033,
+            lng: -0.1195,
             day: 'd1',
             category: 'interes',
-            emoji: '🍜',
-            desc: 'Almuerzo familiar: dim sum o ramen de gran calidad/precio.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chinatown%2C_London_-_20080717.jpg/640px-Chinatown%2C_London_-_20080717.jpg'
-        },
-
-        {
-            id: 'regent_street',
-            name: 'Regent Street & Carnaby',
-            address: 'Regent St, W1B 5AH',
-            lat: 51.5125,
-            lng: -0.1390,
-            day: 'd1',
-            category: 'interes',
-            emoji: '✨',
-            desc: 'Los famosos ángeles dorados sobre fachadas georgianas y decoración en Carnaby.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Regent_Street_Christmas_Lights_2016.jpg/640px-Regent_Street_Christmas_Lights_2016.jpg'
-        },
-
-        {
-            id: 'hamleys',
-            name: 'Hamleys',
-            address: '188-196 Regent St, W1B 5BT',
-            lat: 51.5127,
-            lng: -0.1412,
-            day: 'd1',
-            category: 'tiendas',
-            emoji: '🧸',
-            desc: '7 plantas de juguetes. La juguetería más antigua del mundo (desde 1760).',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Hamleys_Regent_Street_London.jpg/640px-Hamleys_Regent_Street_London.jpg'
+            emoji: '🎡',
+            desc: '135 m de altura · cápsula 30 min · Imprescindible reservar online.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/London_Eye_Twilight_2006.jpg/640px-London_Eye_Twilight_2006.jpg'
         },
 
         {
@@ -1331,6 +1249,83 @@
         },
 
         {
+            id: 'chinatown',
+            name: 'Chinatown',
+            address: 'Gerrard St, W1D 5PT',
+            lat: 51.5115,
+            lng: -0.1305,
+            day: 'd1',
+            category: 'interes',
+            emoji: '🍜',
+            desc: 'Almuerzo familiar: dim sum o ramen de gran calidad/precio.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Chinatown%2C_London_-_20080717.jpg/640px-Chinatown%2C_London_-_20080717.jpg'
+        },
+
+        {
+            id: 'mms_store',
+            name: 'M&M\'s Store London',
+            address: '1 Swiss Court, Leicester Square, WC2H 7BA',
+            lat: 51.5107,
+            lng: -0.1297,
+            day: 'd1',
+            category: 'bonus',
+            emoji: '🍫',
+            desc: 'Tienda oficial de M&M\'s · 4 plantas · de paso entre el Strand y Piccadilly Circus · sin desvío.'
+        },
+
+        {
+            id: 'kingdom_sweets',
+            name: 'Kingdom of Sweets',
+            address: 'Piccadilly Circus, W1D 7ET',
+            lat: 51.5101,
+            lng: -0.1340,
+            day: 'd1',
+            category: 'tiendas',
+            emoji: '🍬',
+            desc: 'La tienda de chuches más famosa de Piccadilly con caramelos de todo el mundo.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/M%26M%27s_World_London_-_geograph.org.uk_-_1739502.jpg/640px-M%26M%27s_World_London_-_geograph.org.uk_-_1739502.jpg'
+        },
+
+        {
+            id: 'fortnum_mason',
+            name: 'Fortnum & Mason',
+            address: '181 Piccadilly, W1A 1ER',
+            lat: 51.5074,
+            lng: -0.1389,
+            day: 'd1',
+            category: 'tiendas',
+            emoji: '🍰',
+            desc: 'Desde 1707 · té, chocolates y mermeladas en latas de colores pastel · el regalo típico de Londres.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Fortnum_%26_Mason%2C_London.jpg/640px-Fortnum_%26_Mason%2C_London.jpg'
+        },
+
+        {
+            id: 'regent_street',
+            name: 'Regent Street & Carnaby',
+            address: 'Regent St, W1B 5AH',
+            lat: 51.5125,
+            lng: -0.1390,
+            day: 'd1',
+            category: 'interes',
+            emoji: '✨',
+            desc: 'Los famosos ángeles dorados sobre fachadas georgianas y decoración en Carnaby.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Regent_Street_Christmas_Lights_2016.jpg/640px-Regent_Street_Christmas_Lights_2016.jpg'
+        },
+
+        {
+            id: 'hamleys',
+            name: 'Hamleys',
+            address: '188-196 Regent St, W1B 5BT',
+            lat: 51.5127,
+            lng: -0.1412,
+            day: 'd1',
+            category: 'tiendas',
+            emoji: '🧸',
+            desc: '7 plantas de juguetes. La juguetería más antigua del mundo (desde 1760).',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Hamleys_Regent_Street_London.jpg/640px-Hamleys_Regent_Street_London.jpg'
+        },
+
+        {
             id: 'sg_d1',
             name: 'Bancone (Covent Garden)',
             address: '39 William IV St, WC2N 4DD',
@@ -1343,7 +1338,8 @@
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Fresh_pasta_parat.jpg/640px-Fresh_pasta_parat.jpg'
         },
 
-        // DÍA 2 (Viernes 5 dic)
+        // DÍA 2 — Domingo 6 dic
+        // Orden geográfico: Borough Market(1) → Winter by the River(2) → Tower Bridge(3) → Southbank al atardecer(4)
 
         {
             id: 'metro_londonbridge',
@@ -1423,7 +1419,8 @@
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Gluten-free_bakery_display.jpg/640px-Gluten-free_bakery_display.jpg'
         },
 
-        // DÍA 3 (Sábado 6 dic)
+        // DÍA 3 — Lunes 7 dic
+        // Orden geográfico: Big Ben(1) → Buckingham Palace(2) → Almuerzo Victoria(3) → Harrods(4) → Hyde Park Winter Wonderland(5)
 
         {
             id: 'metro_westminster',
@@ -1478,19 +1475,6 @@
         },
 
         {
-            id: 'hyde_park',
-            name: 'Hyde Park Winter Wonderland',
-            address: 'Hyde Park, W2 2UH',
-            lat: 51.5073,
-            lng: -0.1657,
-            day: 'd3',
-            category: 'mercadillos',
-            emoji: '🎡',
-            desc: 'La mayor feria navideña con noria gigante y pista de hielo.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Hyde_Park_Winter_Wonderland_2011.jpg/640px-Hyde_Park_Winter_Wonderland_2011.jpg'
-        },
-
-        {
             id: 'harrods',
             name: 'Harrods (Fachada iluminada)',
             address: '87-135 Brompton Rd, SW1X 7XL',
@@ -1501,6 +1485,19 @@
             emoji: '🏬',
             desc: 'Fachada con 11.500 bombillas encendidas y escaparates mágicos.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harrods_London_at_Christmas.jpg/640px-Harrods_London_at_Christmas.jpg'
+        },
+
+        {
+            id: 'hyde_park',
+            name: 'Hyde Park Winter Wonderland',
+            address: 'Hyde Park, W2 2UH',
+            lat: 51.5073,
+            lng: -0.1657,
+            day: 'd3',
+            category: 'mercadillos',
+            emoji: '🎡',
+            desc: 'La mayor feria navideña con noria gigante y pista de hielo.',
+            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Hyde_Park_Winter_Wonderland_2011.jpg/640px-Hyde_Park_Winter_Wonderland_2011.jpg'
         },
 
         {
@@ -1516,7 +1513,8 @@
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Italian_Restaurant_Interior.jpg/640px-Italian_Restaurant_Interior.jpg'
         },
 
-        // DÍA 4 (Domingo 7 dic)
+        // DÍA 4 — Martes 8 dic
+        // Orden geográfico: Portobello(1) → Kensington Gardens(2) → Royal Albert Hall(3) → Almuerzo South Kensington(4) → Harrods Toy Kingdom(5) → Battersea(6)
 
         {
             id: 'metro_nottinghill',
@@ -1569,6 +1567,7 @@
             desc: 'Icónica sala de conciertos victoriana con frisos dorados.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Royal_Albert_Hall_from_Kensington_Gardens.jpg/640px-Royal_Albert_Hall_from_Kensington_Gardens.jpg'
         },
+
         {
             id: 'almuerzo_skensington',
             name: 'Almuerzo South Kensington',
@@ -1642,12 +1641,29 @@
         return colors[day] || '#7f8c8d';
     }
 
-    // ── MAPA (Leaflet + OpenStreetMap, sin clave) ─────────────────────────
+    // ── GOOGLE MAPS ──────────────────────────────────────────────────────────
+
     let gMap = null;
     let gMarkers = [];
     let gPolylines = [];
+    let activeInfoWindow = null;
+    let popupEl = null;
 
-    // ---- Visitados ----
+    function initMap() {
+        gMap = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 51.505, lng: -0.13 },
+            zoom: 13,
+            disableDefaultUI: true,
+            zoomControl: true,
+            gestureHandling: 'greedy',
+            styles: [{ featureType:'poi', elementType:'labels', stylers:[{visibility:'off'}] }]
+        });
+        renderMarkers();
+        renderDynamicContent('all');
+        setupFilters();
+    }
+
+    // ---- Visitados: deben estar ANTES de renderMarkers ----
     var visitedKey = 'lcn26_visited';
     function getVisited() {
         try { return JSON.parse(localStorage.getItem(visitedKey) || '{}'); } catch(e) { return {}; }
@@ -1656,52 +1672,20 @@
         try { localStorage.setItem(visitedKey, JSON.stringify(v)); } catch(e) {}
     }
 
-    function makePinIcon(color, label, isNum) {
-        const html = '<div style="width:32px;height:32px;border-radius:50%;background:' + color + ';border:2.5px solid #fff;'
-            + 'display:flex;align-items:center;justify-content:center;color:#fff;font:' + (isNum ? '700 14px' : '400 15px') + ' Arial,sans-serif;'
-            + 'box-shadow:0 2px 5px rgba(0,0,0,.4);">' + label + '</div>';
-        return L.divIcon({ html: html, className: 'pin-icon', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -16] });
-    }
-
-    function initMap() {
-        if (typeof L === 'undefined') {
-            document.getElementById('map').innerHTML =
-                '<div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column;gap:12px;padding:24px;text-align:center;background:#dde5ec;color:#2c3e50">'
-                + '<div style="font-size:3rem">🗺️</div><div style="font-size:1rem;font-weight:700">Mapa no disponible sin conexión</div>'
-                + '<div style="font-size:.82rem;color:#475569;max-width:300px;line-height:1.6">El itinerario sigue funcionando. Vuelve a abrir con internet para ver el mapa.</div></div>';
-            return;
-        }
-        gMap = L.map('map', { zoomControl: true, attributionControl: true }).setView([51.505, -0.13], 13);
-        // Capas de mapa sin clave: OpenStreetMap y, si falla, Esri como respaldo
-        const TILE_SOURCES = [
-            { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', opts: { maxZoom: 19, attribution: '&copy; OpenStreetMap' } },
-            { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', opts: { maxZoom: 19, attribution: 'Tiles &copy; Esri' } }
-        ];
-        let tileIdx = 0, tileErrors = 0, tileLoads = 0, tileLayer = null;
-        function useTiles(i) {
-            if (tileLayer) gMap.removeLayer(tileLayer);
-            tileErrors = 0; tileLoads = 0;
-            tileLayer = L.tileLayer(TILE_SOURCES[i].url, TILE_SOURCES[i].opts);
-            tileLayer.on('tileload', () => { tileLoads++; });
-            tileLayer.on('tileerror', () => {
-                tileErrors++;
-                if (tileErrors >= 3 && tileLoads === 0 && tileIdx < TILE_SOURCES.length - 1) useTiles(++tileIdx);
-            });
-            tileLayer.addTo(gMap);
-        }
-        useTiles(0);
-        renderMarkers();
-        // Recalcular tamaño cuando cambia el panel
-        window.addEventListener('resize', () => gMap.invalidateSize());
+    function makePinSvgUrl(color, label, isNum) {
+        const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">'
+            + '<circle cx="18" cy="18" r="16" fill="' + color + '" stroke="#ffffff" stroke-width="2.5"/>'
+            + '<text x="18" y="' + (isNum ? 23 : 24) + '" font-size="' + (isNum ? 14 : 13) + '" font-weight="' + (isNum ? 'bold' : 'normal') + '" text-anchor="middle" fill="white" font-family="Arial,sans-serif">' + label + '</text>'
+            + '</svg>';
+        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
     }
 
     function renderMarkers() {
-        if (!gMap) return;
-        gMarkers.forEach(m => gMap.removeLayer(m));
+        gMarkers.forEach(m => m.setMap(null));
         gMarkers = [];
-        gPolylines.forEach(p => gMap.removeLayer(p));
+        gPolylines.forEach(p => p.setMap(null));
         gPolylines = [];
-        gMap.closePopup();
+        if (activeInfoWindow) { activeInfoWindow.close(); activeInfoWindow = null; }
 
         locations.forEach(loc => {
             const matchesDay = (activeDayFilter === 'all' || loc.day === activeDayFilter || loc.day === 'all' || loc.id === 'base');
@@ -1711,13 +1695,19 @@
             const color = getColor(loc.day);
             const showNum = loc.order > 0;
             const label = showNum ? String(loc.order) : loc.emoji;
-            const isVisited = showNum && !!getVisited()[loc.id];
 
-            const marker = L.marker([loc.lat, loc.lng], {
-                icon: makePinIcon(isVisited ? '#9ca3af' : color, label, showNum),
+            const visitedOnCreate = showNum && !!getVisited()[loc.id];
+            const marker = new google.maps.Marker({
+                position: { lat: loc.lat, lng: loc.lng },
+                map: gMap,
                 title: loc.name,
-                zIndexOffset: loc.id === 'base' ? 1000 : showNum ? 100 + loc.order : 0,
-                opacity: isVisited ? 0.55 : 1
+                icon: {
+                    url: visitedOnCreate ? makePinSvgUrl('#9ca3af', label, showNum) : makePinSvgUrl(color, label, showNum),
+                    scaledSize: new google.maps.Size(36, 36),
+                    anchor: new google.maps.Point(18, 18)
+                },
+                zIndex: loc.id === 'base' ? 999 : showNum ? loc.order : 1,
+                opacity: visitedOnCreate ? 0.5 : 1.0
             });
             marker._locId = loc.id;
             marker._origColor = color;
@@ -1728,60 +1718,85 @@
             const numBadge = showNum
                 ? '<span style="background:' + color + ';color:white;font-size:11px;font-weight:800;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">' + loc.order + '</span>'
                 : '';
+
+            const isVisited = !!getVisited()[loc.id];
             const checkboxHtml = showNum
                 ? '<label style="display:flex;align-items:center;gap:7px;margin-top:10px;cursor:pointer;user-select:none;">'
-                  + '<input type="checkbox" id="vc_' + loc.id + '" ' + (isVisited ? 'checked' : '') + ' onchange="toggleVisitedMarker(\'' + loc.id + '\',this.checked)" style="width:18px;height:18px;accent-color:#22c55e;cursor:pointer;">'
-                  + '<span id="vl_' + loc.id + '" style="font-size:0.78rem;font-weight:600;color:' + (isVisited ? '#16a34a' : '#475569') + ';">' + (isVisited ? '✓ Ya visitado' : 'Marcar como visitado') + '</span>'
+                  + '<input type="checkbox" id="vc_' + loc.id + '" ' + (isVisited ? 'checked' : '') + ' onchange="toggleVisitedMarker(\'' + loc.id + '\',this.checked)" style="width:16px;height:16px;accent-color:#22c55e;cursor:pointer;">'
+                  + '<span id="vl_' + loc.id + '" style="font-size:0.75rem;font-weight:600;color:' + (isVisited ? '#16a34a' : '#64748b') + ';">' + (isVisited ? '✓ Ya visitado' : 'Marcar como visitado') + '</span>'
                   + '</label>'
                 : '';
-            const mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.lat + ',' + loc.lng) + '&travelmode=walking';
-            const directionsBtn = '<a href="' + mapsUrl + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding:8px 10px;background:#1d4ed8;color:white;border-radius:8px;font-size:0.78rem;font-weight:700;text-decoration:none;">🗺️ Cómo llegar</a>';
-            const photosBtn = showNum
-                ? '<button onclick="renderLocationPhotos(\'' + loc.id + '\',' + JSON.stringify(loc.emoji + ' ' + loc.name).replace(/"/g,'&quot;') + ',\'' + loc.day + '\')" style="width:100%;margin-top:6px;padding:7px 10px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;font-size:0.76rem;font-weight:700;color:#334155;cursor:pointer;">📷 Fotos de este lugar</button>'
-                : '';
 
-            const infoContent = '<div style="max-width:230px;font-family:\'Plus Jakarta Sans\',sans-serif;">'
+            const mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.lat + ',' + loc.lng) + '&travelmode=walking';
+            const directionsBtn = '<a href="' + mapsUrl + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding:8px 10px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:white;border-radius:8px;font-size:0.78rem;font-weight:700;text-decoration:none;">🗺️ Cómo llegar</a>';
+
+            const infoContent = '<div style="max-width:220px;font-family:\'Plus Jakarta Sans\',sans-serif;padding:4px 2px;">'
                 + '<div style="display:flex;align-items:center;gap:5px;margin-bottom:6px;">'
                 + numBadge
                 + '<span style="background:' + color + ';color:white;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600;">' + dayLabel + '</span>'
                 + '<span style="background:#e2e8f0;color:#334155;font-size:10px;padding:2px 6px;border-radius:4px;">' + loc.category + '</span>'
                 + '</div>'
                 + '<div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px;">' + loc.emoji + ' ' + loc.name + '</div>'
-                + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
+                + '<div style="font-size:11px;color:#64748b;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
-                + directionsBtn + photosBtn + checkboxHtml
+                + directionsBtn
+                + checkboxHtml
                 + '</div>';
 
-            marker.bindPopup(infoContent, { maxWidth: 250 });
-            marker.addTo(gMap);
+            const iw = new google.maps.InfoWindow({ content: infoContent });
+            marker.addListener('click', () => {
+                if (activeInfoWindow) activeInfoWindow.close();
+                iw.open(gMap, marker);
+                activeInfoWindow = iw;
+                // Mostrar fotos de este lugar en el panel
+                if (typeof renderLocationPhotos === 'function' && loc.order > 0) {
+                    renderLocationPhotos(loc.id, loc.emoji + ' ' + loc.name, loc.day);
+                }
+            });
+
             gMarkers.push(marker);
         });
 
-        // Recorrido del día
+        // Dibujar polyline de recorrido por día
         if (activeDayFilter !== 'all' && activeDayFilter !== 'base') {
             const dayLocs = locations
                 .filter(loc => loc.day === activeDayFilter && loc.order > 0)
                 .sort((a, b) => a.order - b.order);
             if (dayLocs.length > 1) {
-                const line = L.polyline(dayLocs.map(l => [l.lat, l.lng]), {
-                    color: getColor(activeDayFilter), weight: 4, opacity: 0.75, dashArray: '8 6'
-                }).addTo(gMap);
-                gPolylines.push(line);
+                const path = dayLocs.map(loc => ({ lat: loc.lat, lng: loc.lng }));
+                const color = getColor(activeDayFilter);
+                const polyline = new google.maps.Polyline({
+                    path: path,
+                    geodesic: true,
+                    strokeColor: color,
+                    strokeOpacity: 0.7,
+                    strokeWeight: 3,
+                    icons: [{
+                        icon: { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 3, strokeColor: color },
+                        offset: '50%'
+                    }],
+                    map: gMap
+                });
+                gPolylines.push(polyline);
             }
         }
-        if (typeof refreshPhotoBadgeOverlays === 'function') refreshPhotoBadgeOverlays();
     }
 
     function centerMapOnDay(dayFilter) {
         if (!gMap) return;
         if (dayFilter === 'all' || dayFilter === 'base') {
-            gMap.setView([51.505, -0.13], 13);
+            gMap.setCenter({ lat: 51.505, lng: -0.13 });
+            gMap.setZoom(13);
             return;
         }
         const dayLocs = locations.filter(loc => loc.day === dayFilter);
         if (dayLocs.length === 0) return;
-        gMap.fitBounds(L.latLngBounds(dayLocs.map(l => [l.lat, l.lng])), { padding: [40, 40] });
+        const bounds = new google.maps.LatLngBounds();
+        dayLocs.forEach(loc => bounds.extend({ lat: loc.lat, lng: loc.lng }));
+        gMap.fitBounds(bounds, 60);
     }
+
+    // initMap() is called by Google Maps API callback
 
     function setupFilters() {
         document.querySelectorAll('#day-filters .chip').forEach(chip => {
@@ -1844,28 +1859,28 @@
                     <h2>📅 Día 1 · Sábado 5 Dic</h2>
                     <span class="taxi-badge">🚕 Vuelta £22–26</span>
                 </div>
-                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">South Bank · West End · Regent St · Covent Garden · Trafalgar</p>
+                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">South Bank · Covent Garden · Trafalgar · Chinatown · Piccadilly · Regent St</p>
                 <div class="itinerary-item"><span class="itinerary-time">09:15</span><span class="itinerary-icon">🚇</span><div class="itinerary-details"><h4>Metro Hammersmith → Waterloo</h4><p>Línea District/Jubilee · 20 min · único metro del día · reservar London Eye online antes del viaje.</p></div></div>
                 <div class="walk-connector"><span>🚶 5 min andando hasta el río</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">09:45</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>① London Eye ⭐</h4><p>135 m de altura · cápsula 30 min · £35 adulto / £25 niño · bebé gratis · Reservar online.</p></div></div>
+                <div class="itinerary-item"><span class="itinerary-time">09:30</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>① Southbank Centre Winter Market ⭐</h4><p>Chalets alpinos junto al Támesis · el más fotogénico de Londres · ideal antes de que se llene.</p></div></div>
                 <div class="walk-connector"><span>🚶 2 min · misma ribera</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">10:30</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>② Southbank Centre Winter Market ⭐</h4><p>A 2 min del London Eye · chalets alpinos junto al Támesis · el más fotogénico de Londres.</p></div></div>
-                <div class="walk-connector"><span>🚶 Waterloo Bridge → Strand → Piccadilly Circus · 25 min andando</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">10:15</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>② London Eye ⭐</h4><p>135 m de altura · cápsula 30 min · £35 adulto / £25 niño · bebé gratis · Reservar online con hora.</p></div></div>
+                <div class="walk-connector"><span>🚶 Waterloo Bridge → Strand → Covent Garden · 20 min andando</span></div>
                 <div class="itinerary-item"><span class="itinerary-time">11:30</span><span class="itinerary-icon">🚶</span><div class="itinerary-details"><h4>Paseo: Waterloo Bridge → Strand → Piccadilly Circus</h4><p>Vistas al Támesis en ambas direcciones · decoración navideña por el Strand · 25 min andando.<br><small style="color:#7c3aed;">🍫 De camino pasáis por <strong>M&amp;M's Store</strong> en Leicester Square — 4 plantas, tienda oficial, sin desvío.</small></p></div></div>
-                <div class="walk-connector"><span>🚶 1 min desde Piccadilly Circus</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:00</span><span class="itinerary-icon">🍬</span><div class="itinerary-details"><h4>③ Kingdom of Sweets — Piccadilly Circus</h4><p>La tienda de chuches más famosa de Londres · caramelos del mundo · pick'n'mix · chucherías británicas.</p></div></div>
+                <div class="itinerary-item"><span class="itinerary-time">11:30</span><span class="itinerary-icon">🍭</span><div class="itinerary-details"><h4>③ SugarSin → Covent Garden Christmas Market</h4><p>La tienda de chuches más bonita del mundo (Architectural Digest) · pick'n'mix gigante · mercadillo navideño.</p></div></div>
+                <div class="walk-connector"><span>🚶 10 min hacia Trafalgar Square</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">12:30</span><span class="itinerary-icon">🌲</span><div class="itinerary-details"><h4>④ Trafalgar Square ⭐</h4><p>Árbol noruego iluminado · fotos icónicas · Royal Mile de paso hacia Chinatown.</p></div></div>
+                <div class="walk-connector"><span>🚶 5 min · Chinatown junto a Leicester Square</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">13:00</span><span class="itinerary-icon">🍜</span><div class="itinerary-details"><h4>⑤ Almuerzo en Chinatown</h4><p>Mejor calidad/precio de la zona · dim sum o ramen para toda la familia · justo al lado de Leicester Square.</p></div></div>
+                <div class="walk-connector"><span>🚶 2 min · Leicester Square (🍫 M&M's de paso)</span></div>
+                <div class="walk-connector"><span>🚶 5 min hasta Piccadilly Circus</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">14:15</span><span class="itinerary-icon">🍬</span><div class="itinerary-details"><h4>⑥ Kingdom of Sweets — Piccadilly Circus</h4><p>La tienda de chuches más famosa de Londres · caramelos del mundo · pick'n'mix · chucherías británicas.</p></div></div>
                 <div class="walk-connector"><span>🚶 3 min desde Piccadilly</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:15</span><span class="itinerary-icon">🍰</span><div class="itinerary-details"><h4>④ Fortnum & Mason</h4><p>Desde 1707 · té, chocolates y mermeladas en latas de colores pastel · el regalo típico de Londres.</p></div></div>
-                <div class="walk-connector"><span>🚶 3 min por Piccadilly</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">13:00</span><span class="itinerary-icon">🍜</span><div class="itinerary-details"><h4>⑤ Almuerzo en Chinatown</h4><p>3 min a pie de Piccadilly · mejor calidad/precio de la zona · dim sum o ramen para toda la familia.</p></div></div>
-                <div class="walk-connector"><span>🚶 5 min por Regent St</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">13:45</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>⑥ Regent Street — ángeles dorados → Carnaby Street</h4><p>Los ángeles dorados sobre fachadas georgianas: icono visual de la Navidad londinense · Carnaby: decoración temática.</p></div></div>
+                <div class="itinerary-item"><span class="itinerary-time">14:45</span><span class="itinerary-icon">🍰</span><div class="itinerary-details"><h4>⑦ Fortnum & Mason</h4><p>Desde 1707 · té, chocolates y mermeladas en latas de colores pastel · el regalo típico de Londres.</p></div></div>
+                <div class="walk-connector"><span>🚶 3 min por Piccadilly → Regent St</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">15:30</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>⑧ Regent Street — ángeles dorados → Carnaby Street</h4><p>Los ángeles dorados sobre fachadas georgianas: icono visual de la Navidad londinense · Carnaby: decoración temática.</p></div></div>
                 <div class="walk-connector"><span>🚶 2 min por Regent St</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:30</span><span class="itinerary-icon">🧸</span><div class="itinerary-details"><h4>⑦ Hamleys ⭐ — 7 plantas, la juguetería más antigua del mundo</h4><p>Desde 1760 · Harry Potter (sótano) · Build-a-Bear (3ª) · LEGO (5ª) · demostraciones en vivo · 45–60 min mínimo.</p></div></div>
-                <div class="walk-connector"><span>🚶 5 min hacia Covent Garden</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">15:45</span><span class="itinerary-icon">🍭</span><div class="itinerary-details"><h4>⑧ SugarSin → Covent Garden Christmas Market</h4><p>La tienda de chuches más bonita del mundo (Architectural Digest) · pick'n'mix gigante · mercadillo navideño.</p></div></div>
-                <div class="walk-connector"><span>🚶 10 min hacia Trafalgar</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">17:00</span><span class="itinerary-icon">🌲</span><div class="itinerary-details"><h4>⑨ Trafalgar Square — árbol noruego iluminado al anochecer ⭐</h4><p>Regalo de Noruega desde 1947 · árbol recién encendido al caer la noche · el mejor momento para verlo.</p></div></div>
+                <div class="itinerary-item"><span class="itinerary-time">16:00</span><span class="itinerary-icon">🧸</span><div class="itinerary-details"><h4>⑨ Hamleys ⭐ — 7 plantas, la juguetería más antigua del mundo</h4><p>Desde 1760 · Harry Potter (sótano) · Build-a-Bear (3ª) · LEGO (5ª) · demostraciones en vivo · 45–60 min mínimo.</p></div></div>
                 <div class="walk-connector"><span>🚕 Taxi desde Trafalgar Square · ~25 min · £22–26</span></div>
                 <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Oka – Kingly Court (Carnaby St)</h5><p>Thai con amplia carta GF · al lado de Hamleys · muy valorado para familias.</p></div><div class="mini-card"><h5>Bancone (Covent Garden)</h5><p>Pasta artesanal · menú GF disponible en todos sus platos.</p></div></div></div>
             `;
@@ -1914,9 +1929,9 @@
                 <div class="walk-connector"><span>🍽️ Almuerzo en Victoria o Pimlico</span></div>
                 <div class="itinerary-item"><span class="itinerary-time">12:30</span><span class="itinerary-icon">🍽️</span><div class="itinerary-details"><h4>③ Almuerzo en Victoria o Pimlico</h4><p>A 10 min de Buckingham · zona tranquila · precios razonables sin aglomeraciones turísticas.</p></div></div>
                 <div class="walk-connector"><span>🚶 Paseo 25 min por Green Park · o metro 1 parada hasta Hyde Park Corner</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:00</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>④ Hyde Park Winter Wonderland ⭐⭐</h4><p>+100 puestos · noria gigante · pista de hielo (reservar online) · atracciones · recinto gratis · atracciones de pago.</p></div></div>
-                <div class="walk-connector"><span>🚶 10 min a pie del Wonderland</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">17:30</span><span class="itinerary-icon">🏬</span><div class="itinerary-details"><h4>⑤ Harrods de noche — fachada con 11.500 bombillas ⭐</h4><p>Los escaparates iluminados de noche son uno de los espectáculos más famosos de Londres · ver fachada desde Brompton Road.</p></div></div>
+                <div class="itinerary-item"><span class="itinerary-time">14:00</span><span class="itinerary-icon">🏬</span><div class="itinerary-details"><h4>④ Harrods — fachada con 11.500 bombillas ⭐</h4><p>De camino desde Victoria hacia Hyde Park · escaparates mágicos y fachada iluminada · ver desde Brompton Road.</p></div></div>
+                <div class="walk-connector"><span>🚶 15 min a pie hasta Hyde Park Corner</span></div>
+                <div class="itinerary-item"><span class="itinerary-time">15:00</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>⑤ Hyde Park Winter Wonderland ⭐⭐</h4><p>+100 puestos · noria gigante · pista de hielo (reservar online) · atracciones · recinto gratis · atracciones de pago.</p></div></div>
                 <div class="walk-connector"><span>🚕 Taxi desde Harrods/Knightsbridge · ~15 min · £13–17</span></div>
                 <div class="itinerary-item"><span class="itinerary-time">18:15</span><span class="itinerary-icon">🏠</span><div class="itinerary-details"><h4>Vuelta a Hammersmith</h4><p>Taxi £13–17 · ~15 min · solo 3 km desde Knightsbridge.</p></div></div>
                 <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Al Duca (Willow Place, Victoria)</h5><p>Italiano muy valorado · menú GF amplio · excelente conocimiento de alérgenos.</p></div><div class="mini-card"><h5>Casa do Frango Victoria</h5><p>Portuguesa · muchas opciones naturalmente GF · personal bien formado en alergias.</p></div></div></div>
@@ -2542,18 +2557,12 @@
 
         setTimeout(function() {
             try {
-                const clone = document.documentElement.cloneNode(true);
-                const mapEl = clone.querySelector('#map');
-                if (mapEl) { mapEl.innerHTML = ''; mapEl.removeAttribute('class'); mapEl.removeAttribute('tabindex'); mapEl.removeAttribute('style'); }
-                ['#album-panel', '#share-panel', '#album-lightbox', '#revivir-overlay'].forEach(sel => { const el = clone.querySelector(sel); if (el) el.setAttribute('hidden', ''); });
-                const dc = clone.querySelector('#dynamic-content'); if (dc) dc.innerHTML = '';
-                const htmlSrc = '<!DOCTYPE html>\n' + clone.outerHTML;
+                const htmlSrc = document.documentElement.outerHTML;
                 // Crear script de inyección de fotos para el archivo exportado
                 const photosJSON = JSON.stringify(photos);
                 const injectionScript = '<scr'+'ipt>\nvar exportedPhotos = ' + photosJSON + ';\n(function(){\n    try {\n        var existingIds = new Set(JSON.parse(localStorage.getItem(\'lcn26_album\')||\'[]\').map(function(p){return p.id;}));\n        var merged = JSON.parse(localStorage.getItem(\'lcn26_album\')||\'[]\').concat(exportedPhotos.filter(function(p){return !existingIds.has(p.id);}));\n        localStorage.setItem(\'lcn26_album\', JSON.stringify(merged));\n    } catch(e) {}\n})();\n</'+'script>';
                 // Insertar el script justo antes del cierre de body
-                const cut = htmlSrc.lastIndexOf('</' + 'body>');
-                const exportHtml = cut >= 0 ? htmlSrc.slice(0, cut) + injectionScript + htmlSrc.slice(cut) : htmlSrc + injectionScript;
+                const exportHtml = htmlSrc.replace('</body>', injectionScript + '</body>');
                 const blob = new Blob([exportHtml], { type: 'text/html;charset=utf-8' });
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
@@ -2580,26 +2589,81 @@
     };
 
     // ---- Badge de fotos en pins del mapa ----
+    window.updateMapPhotoBadges = function() {
+        if (typeof gMarkers === 'undefined') return;
+        // Los marcadores de Google Maps no soportan HTML overlay fácilmente,
+        // usamos un overlay SVG personalizado sobre el mapa
+        // Implementamos via MarkerLabel con contador
+        if (typeof google === 'undefined' || !gMap) return;
+        gMarkers.forEach(function(marker) {
+            const locId = marker._locId;
+            if (!locId) return;
+            const count = photos.filter(p => p.locationId === locId).length;
+            if (count > 0) {
+                const existingLabel = marker.getLabel();
+                const baseLabel = (typeof existingLabel === 'object' && existingLabel) ? existingLabel.text : (existingLabel || '');
+                // Actualizar etiqueta del marcador para mostrar el contador
+                // Lo hacemos mediante un div overlay propio
+            }
+        });
+        // Usar overlays HTML personalizados para los badges
+        refreshPhotoBadgeOverlays();
+    };
+
     let photoBadgeOverlays = [];
     function refreshPhotoBadgeOverlays() {
-        if (typeof gMap === 'undefined' || !gMap || typeof L === 'undefined') return;
-        photoBadgeOverlays.forEach(o => gMap.removeLayer(o));
+        // Limpiar overlays anteriores
+        photoBadgeOverlays.forEach(o => o.setMap(null));
         photoBadgeOverlays = [];
-        const shown = new Set((gMarkers || []).map(m => m._locId));
+        if (typeof google === 'undefined' || !gMap || typeof locations === 'undefined') return;
+
         locations.forEach(function(loc) {
-            if (!loc.order || !shown.has(loc.id)) return;
+            if (!loc.order || loc.order === 0) return;
             const count = photos.filter(p => p.locationId === loc.id).length;
             if (count === 0) return;
-            const html = '<div style="background:' + getColor(loc.day) + ';color:white;font-size:10px;font-weight:800;padding:1px 5px;border-radius:99px;border:1.5px solid white;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.3);">📷' + count + '</div>';
-            const badge = L.marker([loc.lat, loc.lng], {
-                icon: L.divIcon({ html: html, className: 'pin-icon', iconSize: null, iconAnchor: [-8, 26] }),
-                interactive: false, zIndexOffset: 2000
-            }).addTo(gMap);
-            photoBadgeOverlays.push(badge);
+
+            // Crear overlay HTML personalizado
+            class PhotoBadgeOverlay extends google.maps.OverlayView {
+                constructor(position, count, color) {
+                    super();
+                    this.position = position;
+                    this.count = count;
+                    this.color = color;
+                    this.div = null;
+                }
+                onAdd() {
+                    this.div = document.createElement('div');
+                    this.div.style.cssText = 'position:absolute;pointer-events:none;';
+                    this.div.innerHTML = `<div style="background:${this.color};color:white;font-size:9px;font-weight:800;padding:1px 4px;border-radius:99px;border:1.5px solid white;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.3);margin-left:10px;margin-top:-18px;">📷${this.count}</div>`;
+                    const panes = this.getPanes();
+                    panes.floatPane.appendChild(this.div);
+                }
+                draw() {
+                    const overlayProjection = this.getProjection();
+                    const point = overlayProjection.fromLatLngToDivPixel(this.position);
+                    if (point && this.div) {
+                        this.div.style.left = point.x + 'px';
+                        this.div.style.top = point.y + 'px';
+                    }
+                }
+                onRemove() {
+                    if (this.div && this.div.parentNode) {
+                        this.div.parentNode.removeChild(this.div);
+                        this.div = null;
+                    }
+                }
+            }
+
+            const color = getColor ? getColor(loc.day) : '#e74c3c';
+            const overlay = new PhotoBadgeOverlay(
+                new google.maps.LatLng(loc.lat, loc.lng),
+                count,
+                color
+            );
+            overlay.setMap(gMap);
+            photoBadgeOverlays.push(overlay);
         });
     }
-    window.refreshPhotoBadgeOverlays = refreshPhotoBadgeOverlays;
-    window.updateMapPhotoBadges = refreshPhotoBadgeOverlays;
 
     // Actualizar badges cada vez que cambian las fotos
     const _origSavePhotos = savePhotos;
@@ -2840,19 +2904,9 @@
     // ---- Checklist de lugares visitados (toggleVisited para itinerario) ----
     window.toggleVisited = function(id, btn) {
         var v = getVisited();
-        var nowVisited = !v[id];
-        if (nowVisited) { v[id] = true; } else { delete v[id]; }
+        if (v[id]) { delete v[id]; } else { v[id] = true; }
         saveVisited(v);
         applyVisitedToItem(id, btn, v);
-        // Sincronizar con el pin del mapa
-        if (typeof gMarkers !== 'undefined') {
-            gMarkers.forEach(function(m) {
-                if (m._locId === id) {
-                    m.setIcon(makePinIcon(nowVisited ? '#9ca3af' : m._origColor, m._label, m._showNum));
-                    m.setOpacity(nowVisited ? 0.55 : 1);
-                }
-            });
-        }
     };
 
     // Toggles desde el InfoWindow del mapa
@@ -2876,10 +2930,22 @@
             }
         }
         if (marker) {
-            marker.setIcon(makePinIcon(checked ? '#9ca3af' : marker._origColor, marker._label, marker._showNum));
-            marker.setOpacity(checked ? 0.55 : 1);
+            if (checked) {
+                marker.setIcon({
+                    url: makePinSvgUrl('#9ca3af', marker._label, marker._showNum),
+                    scaledSize: new google.maps.Size(36, 36),
+                    anchor: new google.maps.Point(18, 18)
+                });
+                marker.setOpacity(0.5);
+            } else {
+                marker.setIcon({
+                    url: makePinSvgUrl(marker._origColor, marker._label, marker._showNum),
+                    scaledSize: new google.maps.Size(36, 36),
+                    anchor: new google.maps.Point(18, 18)
+                });
+                marker.setOpacity(1.0);
+            }
         }
-        applyVisitedState();
     };
     function applyVisitedToItem(id, btn, v) {
         var item = btn ? btn.closest('.itinerary-item') : null;
@@ -2914,10 +2980,7 @@
             var text = h4.textContent;
             var found = null;
             circledNums.forEach(function(c, i) {
-                if (text.indexOf(c) !== -1) {
-                    var match = locations.find(function(l) { return l.day === activeDayFilter && l.order === i + 1; });
-                    found = match ? match.id : (activeDayFilter + '_' + (i+1));
-                }
+                if (text.indexOf(c) !== -1) found = 'loc_' + (i+1);
             });
             if (!found) return; // solo lugares numerados
             var btn = document.createElement('button');
@@ -2934,11 +2997,11 @@
     var _dcObs = new MutationObserver(function() {
         setTimeout(injectVisitedButtons, 60);
     });
-    (function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var dc = document.getElementById('dynamic-content');
         if (dc) _dcObs.observe(dc, { childList: true, subtree: false });
         setTimeout(injectVisitedButtons, 200);
-    })();
+    });
 
     // Inicializar checkeo de espacio al cargar
     setTimeout(checkStorageSpace, 300);
@@ -2979,12 +3042,25 @@
     <button id="revivir-close-btn" class="rv-btn" onclick="stopRevivir()">✕</button>
 </div>
 
+<!-- Google Maps API -->
 <script>
-    // Arranque: el itinerario y los filtros funcionan aunque el mapa no cargue
-    renderDynamicContent('all');
-    setupFilters();
-    try { initMap(); } catch (e) { console.error(e); }
+(function(){
+    window.initMap = window.initMap;
+    const s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async';
+    s.async = true; s.defer = true;
+    s.onerror = function(){
+        document.getElementById('map').innerHTML =
+            '<div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column;gap:12px;padding:24px;text-align:center;background:#dde5ec;color:#2c3e50">'
+            + '<div style="font-size:3rem">🗺️</div>'
+            + '<div style="font-size:1rem;font-weight:700">Mapa no disponible sin conexión</div>'
+            + '<div style="font-size:.82rem;color:#64748b;max-width:300px;line-height:1.6">Abre este archivo en Chrome o Safari con conexión a internet para ver el mapa completo de Londres.</div>'
+            + '</div>';
+    };
+    document.head.appendChild(s);
+})();
 </script>
 
 </body>
 </html>
+</body></html>
