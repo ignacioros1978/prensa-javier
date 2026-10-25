@@ -141,7 +141,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v13</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v14</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -379,11 +379,30 @@ async function photon(c,pos){
     if(c.id==='super'&&!/^(supermarket|convenience|grocery|discount|department_store|wholesale)$/.test(pr.osm_value||''))return null;
     const name=pr.name||c.t, note=c.id==='gluten'?sgNote(pr.osm_key==='shop'?{shop:pr.osm_value}:{},name):'';
     if(c.id==='gluten'&&!note) return null;
-    return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon}),note};})
+    return {id:(pr.osm_type||'x')+'/'+(pr.osm_id||lat+','+lon),name,addr:[pr.street,pr.housenumber].filter(Boolean).join(', '),hours:'',lat,lon,d:dist(pos,{lat,lon}),note,t:{shop:pr.osm_key==='shop'?pr.osm_value:''}};})
     .filter(x=>x&&x.d<=max&&!seen.has(x.id)&&seen.add(x.id)).sort((a,b)=>a.d-b.d);
   return {items,radius:max,src:'Photon'};
 }
+/* Sin gluten: reutiliza las búsquedas que ya funcionan (súper, comida rápida, restaurantes, cafeterías)
+   y se queda con los sitios que tienen opciones o productos sin gluten, más los marcados expresamente */
+async function fetchGluten(c,pos,onUpdate){
+  const subs=[['super',CAT.super],['rapida',CAT.rapida],['rest',CAT.rest],['cafe',CAT.cafe],['gluten',Object.assign({},c,{_raw:true})]];
+  const parts={};
+  const build=()=>{let items=[];
+    for(const [id,r] of Object.entries(parts)){
+      items=items.concat(r.items.map(x=>{const t=Object.assign({},x.t||{});if(id==='super'&&!t.shop)t.shop='supermarket';const note=x.note&&x.note.t?x.note:sgNote(t,x.name);return note?Object.assign({},x,{note}):null;}).filter(Boolean));
+    }
+    return {items:mergeItems([],items),radius:5000,src:'OpenStreetMap'};};
+  return new Promise(resolve=>{
+    let pending=subs.length,done=false;
+    subs.forEach(([id,cc])=>fetchCat(cc,pos,r=>{parts[id]=r;if(done&&onUpdate)onUpdate(build());})
+      .then(r=>{parts[id]=r;const b=build();if(!done&&b.items.length){done=true;resolve(b);}else if(done&&onUpdate)onUpdate(b);})
+      .catch(()=>{})
+      .finally(()=>{pending--;if(!pending&&!done){done=true;resolve(build());}}));
+  });
+}
 async function fetchCat(c,pos,onUpdate){
+  if(c.id==='gluten'&&!c._raw) return fetchGluten(c,pos,onUpdate);
   /* Tres fuentes a la vez: enseña la primera que traiga sitios y va sumando las demás cuando llegan */
   S.diag.src={};
   const timed=(name,pr)=>{const t=performance.now();S.diag.src[name]='…';return pr.then(r=>{S.diag.src[name]=((performance.now()-t)/1000).toFixed(1).replace('.',',')+' s ('+r.items.length+')';showDiag();return r;},e=>{S.diag.src[name]='falla: '+String(e&&e.message||e).slice(0,40);showDiag();throw e;});};
@@ -408,7 +427,7 @@ async function fetchCatOv(c,pos){
       const lat=e.lat??e.center?.lat, lon=e.lon??e.center?.lon; if(lat==null) return null;
       const t=e.tags||{};
       const name=t.name||t.brand||t.operator||(c.id==='banos'?'Aseo público':c.id==='cajero'?'Cajero':c.id==='parque'?'Parque infantil':c.id==='taxi'?'Parada de taxi':c.id==='pmr'?'Plaza para personas con movilidad reducida':c.id==='parking'?'Aparcamiento':'Sin nombre');
-      return {id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon}),note:c.id==='gluten'?sgNote(t,name):''};
+      return {id:e.type+'/'+e.id,name,addr:addr(t),hours:t.opening_hours||'',lat,lon,d:dist(pos,{lat,lon}),note:c.id==='gluten'?sgNote(t,name):'',t:{brand:t.brand||'',shop:t.shop||'','diet:gluten_free':t['diet:gluten_free']||'',cuisine:t.cuisine||'',description:t.description||''}};
     }).filter(Boolean).filter(x=>{const k=x.name+'|'+Math.round(x.lat*2000)+'|'+Math.round(x.lon*2000);if(seen.has(k))return false;seen.add(k);return true;});
     sortItems(items);
     if(items.length>=3||r===radii[radii.length-1]) return {items,radius:r,src:'OpenStreetMap'};
@@ -481,9 +500,9 @@ async function loadList(id){
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c13.'+key,null);
+  const saved=store.get('cerca.c14.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{if(!res||!res.items||!res.items.length)return;store.set('cerca.c13.'+key,{ts:Date.now(),res});};
+  const keep=res=>{if(!res||!res.items||!res.items.length)return;store.set('cerca.c14.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=withExtras(res.items,id);S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
