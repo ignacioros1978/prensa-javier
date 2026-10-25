@@ -84,6 +84,25 @@ h1{margin:0;font-size:26px;line-height:1.05;font-weight:800;letter-spacing:-.02e
 .manual{display:flex;gap:8px;margin-top:10px}
 .manual input{flex:1;min-width:0;height:48px;padding:0 12px;border-radius:12px;border:1.5px solid var(--line-2);background:var(--bg);font-size:16px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* Pantalla principal fija: ocupa exactamente la pantalla y los iconos se reparten el alto que quede */
+html,body{height:100%}
+body{height:100dvh;min-height:0;overflow:hidden;overscroll-behavior:none}
+body.scroll{height:auto;min-height:100dvh;overflow:auto}
+#app{height:100%;min-height:0}
+body.scroll #app{height:auto}
+#vHome{flex:1;min-height:0!important;height:100%}
+#vHome>.top,#vHome>.switch,#vHome>.favs,#vHome>.search{flex:none}
+#groups{flex:1;min-height:0;gap:8px!important}
+.grp{flex:1;min-height:0;gap:5px}
+.grp h2{flex:none}
+.grid{flex:1;min-height:0;grid-template-rows:minmax(0,1fr)}
+.tile{height:auto;min-height:0;max-height:96px;overflow:hidden}
+.tile svg{flex:none}
+.search{margin-top:0}
+.favs .hint{font-size:14px;line-height:1.2}
+@media (max-height:600px){.grp h2{display:none}}
+@media (max-height:640px){.tile svg{width:22px;height:22px}.tile{gap:2px;padding:4px 3px}h1{font-size:23px}.switch{min-height:44px}}
 </style>
 </head>
 <body>
@@ -198,13 +217,15 @@ function setWhere(t,state){$('#whereTxt').textContent=t;$('#whereDot').className
 function locate(){
   if(!('geolocation' in navigator)){setWhere('Este navegador no da la ubicación','bad');return;}
   setWhere('Buscando tu ubicación…','wait');
-  navigator.geolocation.getCurrentPosition(p=>{
+  let done=false;const wd=setTimeout(()=>{if(done)return;done=true;S.pos=null;setWhere('No se pudo localizar','bad');if(S.cat)loadList(S.cat);},15000);
+  navigator.geolocation.getCurrentPosition(p=>{if(done&&S.pos)return;done=true;clearTimeout(wd);
     S.pos={lat:p.coords.latitude,lon:p.coords.longitude,acc:p.coords.accuracy,manual:false,label:'tu ubicación'};
     S.cache={};
     setWhere('Ubicación encontrada','ok');
     reverse(S.pos);
     if(S.cat) loadList(S.cat);
   },err=>{
+    if(done)return;done=true;clearTimeout(wd);
     S.pos=null;
     setWhere(err.code===1?'Sin permiso de ubicación':'No se pudo localizar','bad');
     if(S.cat) loadList(S.cat);
@@ -227,14 +248,16 @@ async function geocode(text){
 }
 
 /* ---------- datos (OpenStreetMap) ---------- */
-const OVERPASS=['https://overpass-api.de/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+const OVERPASS=['https://overpass-api.de/api/interpreter','https://overpass.private.coffee/api/interpreter','https://maps.mail.ru/osm/tools/overpass/api/interpreter','https://overpass.kumi.systems/api/interpreter'];
+function fetchTO(url,ms){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);return fetch(url,{signal:c.signal}).finally(()=>clearTimeout(t));}
+async function tryOne(u,q,ms){const r=await fetchTO(u+'?data='+encodeURIComponent(q),ms);if(!r.ok)throw new Error('HTTP '+r.status);const j=await r.json();if(!j||!Array.isArray(j.elements))throw new Error('respuesta rara');return j;}
 async function overpass(q){
-  let last;
-  for(const u of OVERPASS){
-    try{const r=await fetch(u,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'data='+encodeURIComponent(q)});
-      if(r.ok) return await r.json(); last=new Error('http '+r.status);}catch(e){last=e}
+  /* Primero dos servidores a la vez (gana el más rápido); si fallan, los otros dos. */
+  const errs=[];
+  for(const pair of [OVERPASS.slice(0,2),OVERPASS.slice(2)]){
+    try{return await Promise.any(pair.map(u=>tryOne(u,q,14000).catch(e=>{errs.push(e&&e.name==='AbortError'?'tiempo agotado':String(e&&e.message||e));throw e;})));}catch(e){}
   }
-  throw last;
+  const err=new Error(errs.join(' · ')||'sin respuesta');throw err;
 }
 function addr(t){
   const s=[t['addr:street'],t['addr:housenumber']].filter(Boolean).join(', ');
@@ -243,7 +266,7 @@ function addr(t){
 async function fetchCat(c,pos){
   const radii=c.r||[1500,5000];
   for(const r of radii){
-    const q='[out:json][timeout:20];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 120;';
+    const q='[out:json][timeout:20];('+c.osm.map(f=>'nwr'+f+'(around:'+r+','+pos.lat+','+pos.lon+');').join('')+');out center tags 80;';
     const j=await overpass(q);
     const seen=new Set();
     const items=(j.elements||[]).map(e=>{
@@ -265,13 +288,13 @@ function renderGroups(){
 function renderFavs(){
   const f=S.favs;
   $('#favs').innerHTML=f.length?f.map((x,i)=>'<a class="chip" href="'+esc(gRoute(x,!!x.drive))+'" target="_blank" rel="noopener" title="Cómo llegar a '+esc(x.name)+'">'+svg('<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="#e6c27a" stroke="none"/>')+'<span>'+esc(x.name)+'</span></a>').join('')
-    :'<span class="hint">Toca la estrella de un sitio de la lista para tenerlo aquí.</span>';
+    :'<span class="hint">Guarda aquí tus sitios con la estrella ☆</span>';
 }
 function setOpen(v){S.open=v;store.set('cerca.open',v);$('#openNow').setAttribute('aria-pressed',String(v));}
 
 /* ---------- lista ---------- */
 function show(view){
-  $('#vHome').hidden=view!=='home';$('#vList').hidden=view!=='list';window.scrollTo(0,0);
+  $('#vHome').hidden=view!=='home';$('#vList').hidden=view!=='list';document.body.classList.toggle('scroll',view==='list');window.scrollTo(0,0);
 }
 function openCat(id){
   const c=CAT[id]; if(!c) return;
@@ -285,6 +308,11 @@ async function loadList(id){
   const c=CAT[id];
   $('#allMap').href=gSearch(c.g);
   $('#more').hidden=true; $('#lNote').textContent='';
+  if(!S.pos&&$('#whereDot').classList.contains('wait')){
+    $('#lSub').textContent='Buscando tu ubicación…';$('#lDot').className='dot wait';
+    $('#list').innerHTML='<div class="msg"><b>Buscando dónde estás…</b> En cuanto lo sepa, aparece la lista.</div><div class="skel"></div><div class="skel"></div>';
+    return;
+  }
   if(!S.pos){
     $('#lSub').textContent='Necesito saber dónde estás';$('#lDot').className='dot bad';
     $('#list').innerHTML='<div class="msg"><b>No tengo tu ubicación.</b> Si el navegador te la ha pedido, acepta. Si dijiste que no, actívala en los ajustes del sitio (el candado junto a la dirección) y vuelve a intentarlo.<button class="btn-gold" type="button" data-act="relocate" style="width:100%">Volver a intentarlo</button>'+
@@ -292,10 +320,11 @@ async function loadList(id){
     return;
   }
   $('#lSub').textContent='Desde '+S.pos.label+' · de más cerca a más lejos';$('#lDot').className='dot ok';
-  $('#list').innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+  $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+  const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> El mapa libre va lento ahora mismo. Si no quieres esperar, toca «Verlos todos en el mapa».';},6000);
   const key=id+'|'+S.pos.lat.toFixed(4)+'|'+S.pos.lon.toFixed(4);
   try{
-    const res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos));
+    let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos));}finally{clearTimeout(slow);}
     if(S.cat!==id) return;
     S.items=res.items; S.shown=0;
     if(!S.items.length){
@@ -307,7 +336,7 @@ async function loadList(id){
   }catch(e){
     if(S.cat!==id) return;
     S.cache[key]=null;
-    $('#list').innerHTML='<div class="msg"><b>No se pudo cargar la lista ahora mismo.</b> Comprueba la conexión y vuelve a intentarlo, o ábrelo en Google Maps.<button class="btn-gold" type="button" data-act="retry" style="width:100%">Volver a intentarlo</button><a class="btn-line" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener">Abrir en Google Maps</a></div>';
+    $('#list').innerHTML='<div class="msg"><b>No se pudo cargar la lista ahora mismo.</b> Comprueba la conexión y vuelve a intentarlo, o ábrelo en Google Maps.<div style="font-size:13px;margin-top:6px;opacity:.8">Detalle: '+esc(e&&e.message||e)+'</div><button class="btn-gold" type="button" data-act="retry" style="width:100%">Volver a intentarlo</button><a class="btn-line" href="'+esc(gSearch(c.g))+'" target="_blank" rel="noopener">Abrir en Google Maps</a></div>';
   }
 }
 function isFav(x){return S.favs.some(f=>f.id===x.id);}
