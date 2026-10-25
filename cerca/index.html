@@ -480,7 +480,13 @@ function openCat(id){
   if(c.google){window.open(gSearch(c.g),'_blank','noopener');return;}
   S.cat=id; history.pushState({cerca:'list',cat:id},'');
   $('#lTitle').textContent=c.t;
-  $('#lTop').innerHTML=id==='guardia'?'<div class="msg gtop"><b>¿Cuál está de guardia hoy?</b> Las guardias cambian cada día y el mapa libre no las sabe. Abajo tienes las farmacias más cercanas (primero las de 24 horas); para confirmar la de guardia de hoy, toca el botón.<a class="btn-gold" href="'+esc(gSearch('farmacia de guardia'))+'" target="_blank" rel="noopener" style="width:100%;margin-top:10px">Ver la farmacia de guardia de hoy</a></div>':'';
+  const G=id==='guardia';$('#allMap').hidden=G;$('#addOpen').hidden=G;$('#more').hidden=true;$('#lNote').textContent='';$('#lTop').innerHTML='';
+  if(G){
+    $('#lSub').textContent='Solo las que están de guardia';$('#lDot').className='dot ok';
+    $('#list').innerHTML='<div class="msg gtop"><b>Farmacias de guardia en la provincia de Cádiz</b>El buscador oficial del Colegio de Farmacéuticos de Cádiz muestra solo las que están de guardia y abiertas ahora mismo, con su dirección y teléfono.<a class="btn-gold" href="https://www.cofcadiz.es/farmacias-de-guardia-abiertas/" target="_blank" rel="noopener" style="width:100%;margin-top:10px">Ver las de guardia ahora (oficial)</a><a class="btn-line" href="https://www.cofcadiz.es/farmacias-de-guardia/" target="_blank" rel="noopener" style="margin-top:8px">Listado completo de guardias de hoy</a></div>'+
+      '<div class="msg gtop"><b>¿Estás fuera de la provincia de Cádiz?</b>Búscala en Google Maps.<a class="btn-line" href="'+esc(gSearch('farmacia de guardia'))+'" target="_blank" rel="noopener" style="margin-top:10px">Buscar en Google Maps</a></div>';
+    show('list');return;
+  }
   show('list'); loadList(id);
 }
 /* Cada mapa va en un iframe nuevo: así no se acumula en el historial y «atrás» vuelve a la lista */
