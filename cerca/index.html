@@ -136,7 +136,7 @@ body.scroll #app{height:auto}
   <div class="top">
     <a class="round" id="backPortal" href="https://claude.ai/artifact/W8amFgBBMMe2gPNubcCSNb" aria-label="Volver al Portal de Casa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></a>
     <div class="ttl">
-      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v7</span></h1>
+      <h1>Cerca de ti <span style="font-size:12px;font-weight:700;color:#9d927a;letter-spacing:0;vertical-align:middle">v8</span></h1>
       <div class="where"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e6c27a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="t" id="whereTxt">Buscando tu ubicación…</span><span class="dot wait" id="whereDot" aria-hidden="true"></span></div>
     </div>
     <button class="round" id="relocate" type="button" aria-label="Volver a localizarme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7.5"/></svg></button>
@@ -218,7 +218,7 @@ const I={
 const GROUPS=[
  ['Comer',[
   {id:'rest',n:'Restau­rantes',t:'Restaurantes',osm:['["amenity"="restaurant"]'],g:'restaurantes'},
-  {id:'rapida',n:'Comida rápida',t:'Comida rápida',osm:['["amenity"="fast_food"]'],g:'comida rápida'},
+  {id:'rapida',n:'Comida rápida',t:'Comida rápida',osm:['["amenity"="fast_food"]','["amenity"~"^(restaurant|cafe)$"]["brand"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"~"^(restaurant|cafe)$"]["name"~"McDonald|Burger King|Domino|KFC|Kentucky|Telepizza|Papa John|Pizza Hut|Five Guys|Taco Bell|Subway|Popeyes|Wendy|Carl.s Jr|Tim Hortons|Pans & Company|Rodilla|Goiko|TGB|The Good Burger|100 Montaditos|Little Caesars",i]','["amenity"="restaurant"]["cuisine"~"burger|kebab|chicken|hot_dog|fried_chicken",i]'],g:'comida rápida'},
   {id:'gluten',n:'Sin gluten',t:'Sin gluten',osm:['["diet:gluten_free"~"^(yes|only)$"]'],g:'restaurantes sin gluten',cls:'gold',r:[3000,8000]},
   {id:'cafe',n:'Cafete­rías',t:'Cafeterías',osm:['["amenity"="cafe"]'],g:'cafeterías'}]],
  ['Comprar y servicios',[
@@ -432,9 +432,9 @@ async function loadList(id){
   $('#list').innerHTML='<div class="msg" id="loadMsg"><b>Buscando '+esc(c.t.toLowerCase())+' cerca de ti…</b></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   const slow=setTimeout(()=>{const m=$('#loadMsg');if(m)m.innerHTML='<b>Está tardando más de lo normal…</b> Los servidores del mapa van lentos. Si no quieres esperar, toca «Verlos todos en el mapa».';},4000);
   const key=id+'|'+S.pos.lat.toFixed(3)+'|'+S.pos.lon.toFixed(3);
-  const saved=store.get('cerca.c7.'+key,null);
+  const saved=store.get('cerca.c8.'+key,null);
   if(!S.cache[key]&&saved&&Date.now()-saved.ts<30*60000){S.cache[key]=saved.res;}
-  const keep=res=>{store.set('cerca.c7.'+key,{ts:Date.now(),res});};
+  const keep=res=>{store.set('cerca.c8.'+key,{ts:Date.now(),res});};
   const onUpdate=res=>{S.cache[key]=res;keep(res);if(S.cat!==id||S.view!=='list')return;const n=Math.max(S.shown,10);S.items=res.items;S.shown=0;$('#list').innerHTML='';while(S.shown<Math.min(n,S.items.length))renderMore();setNote(c,res);};
   try{
     let res;try{res=S.cache[key]||(S.cache[key]=await fetchCat(c,S.pos,onUpdate));}finally{clearTimeout(slow);}
