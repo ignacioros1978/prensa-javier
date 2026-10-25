@@ -84,7 +84,7 @@ label.lb{font-size:15px;font-weight:800}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="home">
   <header>
     <a class="back" href="../" aria-label="Volver a la guía de Londres">‹</a>
     <div>
@@ -93,8 +93,8 @@ label.lb{font-size:15px;font-weight:800}
     </div>
   </header>
 
+  <div id="lastBox"></div>
   <div id="days"></div>
-  <div id="out" aria-live="polite"></div>
 
   <button type="button" class="btn" id="otherBtn" style="width:100%;margin-top:12px;min-height:54px;font-size:16px">＋ Otro trayecto (otra estación)</button>
 
@@ -121,10 +121,23 @@ label.lb{font-size:15px;font-weight:800}
       <div class="chips" id="quick"></div>
     </div>
     <button type="button" class="tog" id="stepfree" aria-pressed="false"><span>♿ Sin escaleras (ascensor o rampa hasta el andén)</span><span class="trk"><i></i></span></button>
+    <div id="fmsg" class="msg" hidden></div>
     <button class="btn main" type="submit" id="go">Buscar ruta</button>
   </form>
 
   <p class="foot">Rutas e incidencias en tiempo real del planificador oficial de Transport for London (TfL). Cada ruta se pide dos veces y se comprueba línea por línea antes de enseñártela. La última ruta queda guardada para verla sin cobertura.</p>
+</div>
+
+<div class="wrap" id="route" hidden>
+  <header>
+    <button type="button" class="back" id="routeBack" aria-label="Volver a los días">‹</button>
+    <div style="min-width:0">
+      <h1 id="rTitle" style="font-size:22px">Ruta</h1>
+      <p class="sub" id="rSub">Metro de Londres</p>
+    </div>
+  </header>
+  <div id="out" aria-live="polite"></div>
+  <button type="button" class="btn" id="routeBack2" style="width:100%;margin-top:14px;min-height:54px;font-size:16px">‹ Volver a los días</button>
 </div>
 
 <script>
@@ -195,6 +208,15 @@ async function quickPick(name){
   }catch(e){showSugg(which,'<div class="info">Sin conexión con TfL. Revisa los datos móviles.</div>');}
 }
 
+/* Pantalla de la ruta, aparte de la de los días */
+function openRoute(a,b){
+  $('#rTitle').textContent=a+' → '+b; $('#rSub').textContent='Cómo ir en metro';
+  $('#out').innerHTML='<div class="msg">Pidiendo la ruta a TfL y comprobándola dos veces…</div>';
+  if($('#route').hidden){history.pushState({metro:'route'},'');}
+  $('#home').hidden=true; $('#route').hidden=false; window.scrollTo(0,0);
+}
+function closeRoute(){ $('#route').hidden=true; $('#home').hidden=false; showLast(); window.scrollTo(0,0); }
+window.addEventListener('popstate',()=>{ if(!$('#route').hidden) closeRoute(); });
 /* Busca la estación por nombre en TfL (y la recuerda para no repetir) */
 async function resolveSt(st){
   const key='metro.st.'+norm(st.name)+(st.hint?'.h':'');
@@ -209,8 +231,7 @@ async function resolveSt(st){
 }
 async function planPair(a,b){
   const out=$('#out');
-  out.innerHTML='<div class="msg">Pidiendo la ruta a TfL y comprobándola dos veces…</div>';
-  out.scrollIntoView({behavior:'smooth',block:'start'});
+  openRoute(a.name,b.name);
   try{const [x,y]=await Promise.all([resolveSt(a),resolveSt(b)]);S.from=x;S.to=y;$('#from').value=x.name;$('#to').value=y.name;}
   catch(e){
     const last=store.get('metro.last',null);
@@ -313,15 +334,20 @@ function render(data,fromCache){
     ?'<div class="check ok"><h3>✓ Ruta comprobada dos veces</h3><ul><li>Una segunda consulta a TfL da la misma ruta.</li><li>Cada línea para de verdad donde subes y donde bajas.</li></ul></div>'
     :'<div class="check warn"><h3>⚠ Revisa esta ruta</h3><ul>'+checks.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul></div>';
   h+='<div class="sum"><div class="t">'+j.duration+' min</div><div class="s">'+esc(from)+' → '+esc(to)+'<br>'+(xfers?xfers+(xfers>1?' trasbordos':' trasbordo'):'Sin trasbordos')+' · llegada '+esc(hhmm(j.arrivalDateTime))+'</div></div>';
-  let prevTransit=null;
+  let prevTransit=null,xferDone=false;
+  const xferTxt=(prev,l)=>{const id=lineOf(l),nm=LINE_ES(id)||lineName(l).replace(/ line$/i,'');return '<div class="xfer">🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prev)===id?'cambia de tren, sigues en la línea '+esc(nm)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(nm))+'</div>';};
   legs.forEach((l,i)=>{
     if(!isTransit(l)){
       const s=(l.instruction&&l.instruction.summary)||'Camina';
-      if(l.duration>=1) h+='<div class="walk">🚶 Camina '+l.duration+' min'+(prevTransit&&legs.slice(i+1).some(isTransit)?' para el trasbordo':'')+'<span class="sr"> '+esc(s)+'</span></div>';
+      const nxt=legs.slice(i+1).find(isTransit);
+      const inside=prevTransit&&nxt&&norm(prevTransit.arrivalPoint.commonName)===norm(nxt.departurePoint.commonName);
+      if(inside){h+=xferTxt(prevTransit,nxt);xferDone=true;}
+      if(l.duration>=1) h+='<div class="walk">🚶 '+(inside?l.duration+' min por dentro de la estación para cambiar de andén (pasillos y escaleras, sin salir a la calle)':(prevTransit&&nxt?'Camina '+l.duration+' min por la calle hasta la otra estación':'Camina '+l.duration+' min'))+'<span class="sr"> '+esc(s)+'</span></div>';
       return;
     }
     const id=lineOf(l),col=COL[id]||'#64748b',name=LINE_ES(id)||lineName(l).replace(/ line$/i,'');
-    if(prevTransit) h+='<div class="xfer">🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prevTransit)===id?'cambia de tren, sigues en la línea '+esc(name)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(name))+'</div>';
+    if(prevTransit&&!xferDone) h+=xferTxt(prevTransit,l);
+    xferDone=false;
     const stops=((l.path&&l.path.stopPoints)||[]).map(p=>clean(p.name));
     const n=stops.length;
     const tw=towards(l);
@@ -340,19 +366,19 @@ function render(data,fromCache){
   if(alt) h+='<p class="alt">'+esc(alt)+'</p>';
   h+='<a class="btn" style="width:100%" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(from+' station London')+'&destination='+encodeURIComponent(to+' station London')+'&travelmode=transit">Verla también en Google Maps</a>';
   $('#out').innerHTML=h;
-  $('#out').scrollIntoView({behavior:'smooth',block:'start'});
+  window.scrollTo(0,0);
 }
 
 async function plan(){
-  const out=$('#out');
+  const out=$('#out'),fm=$('#fmsg');fm.hidden=true;
   if(!S.from||!S.to){
     const miss=!S.from?'from':'to';
-    out.innerHTML='<div class="msg"><b>Elige la estación de '+(miss==='from'?'salida':'llegada')+' de la lista.</b> Escribe su nombre y toca la que es.</div>';
+    fm.innerHTML='<b>Elige la estación de '+(miss==='from'?'salida':'llegada')+' de la lista.</b> Escribe su nombre y toca la que es.';fm.hidden=false;
     $('#'+miss).focus();return;
   }
-  if(S.from.id===S.to.id){out.innerHTML='<div class="msg"><b>La salida y la llegada son la misma estación.</b></div>';return;}
+  if(S.from.id===S.to.id){fm.innerHTML='<b>La salida y la llegada son la misma estación.</b>';fm.hidden=false;return;}
+  if($('#route').hidden) openRoute(S.from.name,S.to.name);
   const go=$('#go');go.disabled=true;go.innerHTML='<span class="spin"></span> Buscando y comprobando…';
-  out.innerHTML='<div class="msg">Pidiendo la ruta a TfL y comprobándola dos veces…</div>';
   try{
     const [a,b]=await Promise.all([journey(S.from.id,S.to.id,'leastinterchange'),journey(S.from.id,S.to.id,'leasttime').catch(()=>null)]);
     if(!a.length) throw new Error('TfL no ha devuelto ninguna ruta');
@@ -410,8 +436,15 @@ $('#here').onclick=nearest;
 $('#otherBtn').onclick=()=>{$('#f').hidden=false;$('#otherBtn').hidden=true;$('#from').focus();};
 $('#otherClose').onclick=()=>{$('#f').hidden=true;$('#otherBtn').hidden=false;};
 $('#f').addEventListener('submit',e=>{e.preventDefault();showSugg('from','');showSugg('to','');plan();});
-const last=store.get('metro.last',null);
-if(last&&Date.now()-last.when<12*3600e3){$('#out').innerHTML='<div class="msg">Última ruta buscada: <b>'+esc(last.from)+' → '+esc(last.to)+'</b><button class="btn" type="button" id="showLast" style="width:100%;margin-top:8px">Verla</button></div>';$('#showLast').onclick=()=>render(last,!navigator.onLine);}
+function showLast(){
+  const last=store.get('metro.last',null);
+  if(!last||Date.now()-last.when>12*3600e3){$('#lastBox').innerHTML='';return;}
+  $('#lastBox').innerHTML='<div class="msg" style="margin-bottom:6px">Última ruta: <b>'+esc(last.from)+' → '+esc(last.to)+'</b><button class="btn" type="button" id="showLast" style="width:100%;margin-top:8px">Verla otra vez (también sin cobertura)</button></div>';
+  $('#showLast').onclick=()=>{openRoute(last.from,last.to);render(last,!navigator.onLine);};
+}
+showLast();
+$('#routeBack').onclick=()=>history.back();
+$('#routeBack2').onclick=()=>history.back();
 })();
 </script>
 </body>
