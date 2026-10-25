@@ -162,6 +162,114 @@ const DAYS=[
  {n:'D3',date:'2026-12-07',label:'Lunes 7 dic',zone:'Westminster · Buckingham',col:'#2ecc71',to:{name:'Westminster'},extra:{label:'Tramo opcional: Green Park → Hyde Park Corner',a:{name:'Green Park'},b:{name:'Hyde Park Corner'}}},
  {n:'D4',date:'2026-12-08',label:'Martes 8 dic',zone:'Notting Hill · Kensington',col:'#9b59b6',to:{name:'Notting Hill Gate'}}
 ];
+/* ===== RUTAS FIJAS DE CADA DÍA (escritas a mano; TfL las confirma en segundo plano) ===== */
+const D_EAST={line:'district',platform:'Eastbound (dirección este)',trains:'Sirve cualquier tren de la District que pare aquí (pondrá Upminster, Barking o Tower Hill).'};
+const D_WEST={line:'district',platform:'Westbound (dirección oeste)',trains:'Coge SOLO el tren que ponga Richmond o Ealing Broadway. Los que ponen Wimbledon o Edgware Road NO van a Hammersmith.'};
+const D_HAM_WM=['Barons Court','West Kensington',"Earl's Court",'Gloucester Road','South Kensington','Sloane Square','Victoria',"St. James's Park",'Westminster'];
+const D_WM_HAM=["St. James's Park",'Victoria','Sloane Square','South Kensington','Gloucester Road',"Earl's Court",'West Kensington','Barons Court','Hammersmith'];
+const ENTER_HAM='Entra en la estación de Hammersmith de las líneas District y Piccadilly (la de Hammersmith Broadway, a 5 min del apartamento). No es la de la acera de enfrente (Hammersmith & City y Circle).';
+const CH_WM_JUB='Sigue los carteles grises de la línea Jubilee. Son pasillos y escaleras mecánicas largas, unos 4–5 min, sin salir a la calle.';
+const CH_WM_DIS='Sigue los carteles verdes de la línea District, andén Westbound. Escaleras mecánicas y pasillos, unos 4–5 min, sin salir a la calle.';
+const ROUTES={
+ d1i:{a:'Hammersmith',b:'Waterloo',min:'unos 28 min',changes:1,lines:['district','jubilee'],steps:[
+   {t:'enter',x:ENTER_HAM},
+   Object.assign({t:'ride',board:'Hammersmith',alight:'Westminster',stops:D_HAM_WM,min:17},D_EAST),
+   {t:'change',at:'Westminster',to:'jubilee',x:CH_WM_JUB},
+   {t:'ride',line:'jubilee',board:'Westminster',platform:'Eastbound (dirección Stratford)',trains:'Cualquier tren que ponga Stratford o North Greenwich.',alight:'Waterloo',stops:['Waterloo'],min:2},
+   {t:'exit',x:'Al salir, sigue los carteles hacia South Bank / London Eye. El Southbank Centre está a 5 min andando.'}]},
+ d1v:{a:'Waterloo',b:'Hammersmith',min:'unos 28 min',changes:1,lines:['jubilee','district'],steps:[
+   {t:'enter',x:'Entra en la estación de metro de Waterloo y sigue los carteles grises de la línea Jubilee.'},
+   {t:'ride',line:'jubilee',board:'Waterloo',platform:'Westbound (dirección Stanmore)',trains:'Cualquier tren que ponga Stanmore o Wembley Park.',alight:'Westminster',stops:['Westminster'],min:2},
+   {t:'change',at:'Westminster',to:'district',x:CH_WM_DIS},
+   Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+ d2i:{a:'Hammersmith',b:'London Bridge',min:'unos 32 min',changes:1,lines:['district','jubilee'],steps:[
+   {t:'enter',x:ENTER_HAM},
+   Object.assign({t:'ride',board:'Hammersmith',alight:'Westminster',stops:D_HAM_WM,min:17},D_EAST),
+   {t:'change',at:'Westminster',to:'jubilee',x:CH_WM_JUB},
+   {t:'ride',line:'jubilee',board:'Westminster',platform:'Eastbound (dirección Stratford)',trains:'Cualquier tren que ponga Stratford o North Greenwich.',alight:'London Bridge',stops:['Waterloo','Southwark','London Bridge'],min:5},
+   {t:'exit',x:'Al salir, sigue los carteles hacia Borough High Street / Borough Market (3 min andando).'}]},
+ d2v:{a:'London Bridge',b:'Hammersmith',min:'unos 32 min',changes:1,lines:['jubilee','district'],steps:[
+   {t:'enter',x:'Entra en la estación de metro de London Bridge y sigue los carteles grises de la línea Jubilee.'},
+   {t:'ride',line:'jubilee',board:'London Bridge',platform:'Westbound (dirección Stanmore)',trains:'Cualquier tren que ponga Stanmore o Wembley Park.',alight:'Westminster',stops:['Southwark','Waterloo','Westminster'],min:5},
+   {t:'change',at:'Westminster',to:'district',x:CH_WM_DIS},
+   Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+ d3i:{a:'Hammersmith',b:'Westminster',min:'unos 20 min',changes:0,lines:['district'],steps:[
+   {t:'enter',x:ENTER_HAM},
+   Object.assign({t:'ride',board:'Hammersmith',alight:'Westminster',stops:D_HAM_WM,min:17},D_EAST),
+   {t:'exit',x:'Al salir, sigue los carteles hacia Houses of Parliament / Westminster Bridge. El Big Ben está justo enfrente.'}]},
+ d3v:{a:'Westminster',b:'Hammersmith',min:'unos 20 min',changes:0,lines:['district'],steps:[
+   {t:'enter',x:'Entra en la estación de Westminster y sigue los carteles verdes de la línea District.'},
+   Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+ d3x:{a:'Green Park',b:'Hyde Park Corner',min:'unos 5 min',changes:0,lines:['piccadilly'],steps:[
+   {t:'enter',x:'Entra en la estación de Green Park y sigue los carteles azul oscuro de la línea Piccadilly.'},
+   {t:'ride',line:'piccadilly',board:'Green Park',platform:'Westbound (dirección oeste)',trains:'Cualquier tren de la Piccadilly en dirección Heathrow, Uxbridge o Rayners Lane.',alight:'Hyde Park Corner',stops:['Hyde Park Corner'],min:2},
+   {t:'exit',x:'Sal hacia Hyde Park. El Winter Wonderland está a unos 10 min andando por el parque.'}]},
+ d4i:{a:'Hammersmith',b:'Notting Hill Gate',min:'unos 18 min',changes:1,lines:['district','district'],steps:[
+   {t:'enter',x:ENTER_HAM},
+   Object.assign({t:'ride',board:'Hammersmith',alight:"Earl's Court",stops:['Barons Court','West Kensington',"Earl's Court"],min:6},D_EAST),
+   {t:'change',at:"Earl's Court",to:'district',x:'Te quedas en la línea District pero cambias de tren. Mira los paneles del andén y espera el tren que ponga Edgware Road (a veces sale en el andén de al lado).'},
+   {t:'ride',line:'district',board:"Earl's Court",platform:'Hacia Edgware Road',trains:'Coge SOLO el tren que ponga Edgware Road.',alight:'Notting Hill Gate',stops:['High Street Kensington','Notting Hill Gate'],min:4},
+   {t:'exit',x:'Al salir, sigue los carteles hacia Portobello Road (2 min andando).'}]},
+ d4v:{a:'Notting Hill Gate',b:'Hammersmith',min:'unos 18 min',changes:1,lines:['district','district'],steps:[
+   {t:'enter',x:'Entra en Notting Hill Gate y sigue los carteles verdes de las líneas District y Circle.'},
+   {t:'ride',line:'district',board:'Notting Hill Gate',platform:'Hacia High Street Kensington / Earl\'s Court',trains:'Coge el tren de la District que ponga Wimbledon o Earl\'s Court (no el de la Circle).',alight:"Earl's Court",stops:['High Street Kensington',"Earl's Court"],min:4},
+   {t:'change',at:"Earl's Court",to:'district',x:'Te quedas en la línea District pero cambias de tren: ve al andén Westbound.'},
+   Object.assign({t:'ride',board:"Earl's Court",alight:'Hammersmith',stops:['West Kensington','Barons Court','Hammersmith'],min:6},D_WEST),
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]}
+};
+const LNAME={district:'District',jubilee:'Jubilee',piccadilly:'Piccadilly',circle:'Circle'};
+function renderFixed(r){
+  let h='<div id="live" class="check warn" style="border-color:#334155;background:#111a2e"><h3 style="color:#cbd5e1">⏳ Comprobando con TfL…</h3>Mirando que hoy siga siendo la mejor ruta y que no haya incidencias.</div>';
+  h+='<div class="sum"><div class="t">'+esc(r.min)+'</div><div class="s">'+(r.changes?r.changes+(r.changes>1?' trasbordos':' trasbordo'):'Directo, sin trasbordos')+'</div></div>';
+  let n=0;
+  r.steps.forEach(st=>{
+    if(st.t==='enter'||st.t==='exit'){n++;h+='<div class="msg"><b>Paso '+n+' · '+(st.t==='enter'?'Entrar':'Salir')+'</b><br>'+esc(st.x)+'</div>';return;}
+    if(st.t==='change'){n++;h+='<div class="xfer">Paso '+n+' · 🔁 Trasbordo en '+esc(st.at)+'<div style="font-weight:700;font-size:15px;margin-top:4px">'+esc(st.x)+'</div></div>';return;}
+    n++;const col=COL[st.line]||'#64748b';
+    h+='<div class="leg"><div class="bar" style="background:'+col+'"></div><div class="bd">'+
+      '<div style="font-size:14px;font-weight:800;color:var(--muted)">Paso '+n+'</div>'+
+      '<span class="pill" style="background:'+col+';color:'+(DARK_TXT[st.line]?'#111':'#fff')+'">Línea '+esc(LNAME[st.line]||st.line)+'</span>'+
+      '<div class="st"><span>Sube en</span> '+esc(st.board)+'</div>'+
+      '<div class="dir">Andén: <em>'+esc(st.platform)+'</em><br>'+esc(st.trains)+'</div>'+
+      '<div class="st"><span>Bájate en</span> '+esc(st.alight)+'</div>'+
+      '<div class="n">'+st.stops.length+(st.stops.length>1?' paradas':' parada')+' · unos '+st.min+' min</div>'+
+      '<details><summary>Ver las paradas</summary><ol>'+st.stops.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details>'+
+      '</div></div>';
+  });
+  $('#out').innerHTML=h;
+}
+async function verifyFixed(r){
+  const box=()=>$('#live');
+  try{
+    const [x,y]=await Promise.all([resolveSt(r.a==='Hammersmith'?HOME:{name:r.a}),resolveSt(r.b==='Hammersmith'?HOME:{name:r.b})]);
+    const js=await journey(x.id,y.id,'leastinterchange');
+    if(!js.length) throw new Error('sin respuesta');
+    const tfl=js.map(j=>j.legs.filter(isTransit).map(lineOf));
+    const same=tfl.some(seq=>seq.join()===r.lines.join());
+    const dis=[];js.forEach(j=>j.legs.forEach(l=>(l.disruptions||[]).forEach(d=>{if(r.lines.indexOf(lineOf(l))>=0&&d.description&&dis.indexOf(d.description)<0)dis.push(d.description);})));
+    if(!box()) return;
+    if(same&&!dis.length){box().className='check ok';box().innerHTML='<h3>✓ Comprobado ahora con TfL</h3>Esta ruta es correcta y hoy no hay incidencias en estas líneas.';}
+    else if(same){box().className='check warn';box().innerHTML='<h3>⚠ La ruta es correcta, pero hay avisos hoy</h3>'+dis.slice(0,2).map(d=>'<div class="dis" style="margin-top:6px">'+esc(String(d).slice(0,260))+'</div>').join('');}
+    else if(choose(js).duration>=parseInt(r.min.replace(/\D+/g,''),10)-5){
+      box().className='check ok';box().innerHTML='<h3>✓ Comprobado ahora con TfL</h3>Esta ruta vale. TfL también sugiere alternativas parecidas, pero no son más rápidas.';
+    }
+    else{
+      const best=choose(js);
+      box().className='check warn';
+      box().innerHTML='<h3>⚠ Hoy TfL recomienda otra ruta</h3>Puede haber obras o cierres. TfL propone: <b>'+esc(best.legs.filter(isTransit).map(l=>LINE_ES(lineOf(l))||lineName(l)).join(' → '))+'</b> ('+best.duration+' min).<button class="btn" type="button" id="seeTfl" style="width:100%;margin-top:8px">Ver la ruta de TfL de hoy</button>';
+      $('#seeTfl').onclick=()=>{S.from=x;S.to=y;plan();};
+    }
+  }catch(e){
+    if(!box()) return;
+    box().className='check warn';box().style.borderColor='#334155';box().style.background='#111a2e';
+    box().innerHTML='<h3 style="color:#cbd5e1">Sin conexión para comprobar</h3>La ruta de abajo es la de siempre y vale igual. Si hay cobertura, lo compruebo al volver a abrirla.';
+  }
+}
+function openFixed(key){const r=ROUTES[key];openRoute(r.a,r.b);renderFixed(r);verifyFixed(r);}
+
 /* Estaciones que salen en la guía del viaje */
 const QUICK=['Hammersmith','Westminster','Waterloo','London Bridge','Notting Hill Gate','Victoria','Green Park','Oxford Circus','Piccadilly Circus','Leicester Square','Covent Garden','Tower Hill','South Kensington','Knightsbridge','Bond Street','Battersea Power Station','King\'s Cross St. Pancras'];
 
@@ -321,7 +429,7 @@ function towards(l){
   const ro=(l.routeOptions||[])[0]||{};
   return (ro.directions||[])[0]?clean(ro.directions[0]):'';
 }
-function hhmm(s){const m=String(s||'').match(/T(\d{2}:\d{2})/);return m?m[1]+' (hora de Londres)':'';}
+function hhmm(s){const m=String(s||'').match(/T(\d{2}:\d{2})/);return m?m[1]:'';}
 
 function render(data,fromCache){
   const {j,checks,from,to,when,alt}=data;
@@ -333,7 +441,7 @@ function render(data,fromCache){
   h+=checks.ok
     ?'<div class="check ok"><h3>✓ Ruta comprobada dos veces</h3><ul><li>Una segunda consulta a TfL da la misma ruta.</li><li>Cada línea para de verdad donde subes y donde bajas.</li></ul></div>'
     :'<div class="check warn"><h3>⚠ Revisa esta ruta</h3><ul>'+checks.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul></div>';
-  h+='<div class="sum"><div class="t">'+j.duration+' min</div><div class="s">'+esc(from)+' → '+esc(to)+'<br>'+(xfers?xfers+(xfers>1?' trasbordos':' trasbordo'):'Sin trasbordos')+' · llegada '+esc(hhmm(j.arrivalDateTime))+'</div></div>';
+  h+='<div class="sum"><div class="t">unos '+j.duration+' min</div><div class="s">'+esc(from)+' → '+esc(to)+'<br>'+(xfers?xfers+(xfers>1?' trasbordos':' trasbordo'):'Sin trasbordos')+'</div></div>'+(hhmm(j.arrivalDateTime)?'<p class="alt" style="margin:0 2px">Si salís ahora mismo, llegaréis sobre las <b style="color:#f8fafc">'+esc(hhmm(j.arrivalDateTime))+'</b>'+(Intl.DateTimeFormat().resolvedOptions().timeZone==='Europe/London'?'':' (hora de Londres: en España es una hora más)')+'.</p>':'');
   let prevTransit=null,xferDone=false;
   const xferTxt=(prev,l)=>{const id=lineOf(l),nm=LINE_ES(id)||lineName(l).replace(/ line$/i,'');return '<div class="xfer">🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prev)===id?'cambia de tren, sigues en la línea '+esc(nm)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(nm))+'</div>';};
   legs.forEach((l,i)=>{
@@ -425,7 +533,7 @@ sf.onclick=()=>{S.stepfree=!S.stepfree;store.set('metro.stepfree',S.stepfree);sf
 document.addEventListener('click',e=>{
   const p=e.target.closest('[data-pick]');if(p){pick(p.dataset.pick,p.dataset.id,p.dataset.name);return;}
   const dy=e.target.closest('[data-day]');if(dy){const d=DAYS[+dy.dataset.day],w=dy.dataset.way;
-    if(w==='ida')planPair(HOME,d.to);else if(w==='vuelta')planPair(d.to,HOME);else planPair(d.extra.a,d.extra.b);return;}
+    openFixed(d.n.toLowerCase()+(w==='ida'?'i':w==='vuelta'?'v':'x'));return;}
   const q=e.target.closest('[data-q]');if(q){quickPick(q.dataset.q);return;}
   const r=e.target.closest('[data-rec]');if(r){const x=rec[+r.dataset.rec];pick('from',x.from.id,x.from.name);pick('to',x.to.id,x.to.name);plan();return;}
   const c=e.target.closest('[data-clr]');if(c){const w=c.dataset.clr;$('#'+w).value='';S[w]=null;showSugg(w,'');$('#'+w).focus();return;}
