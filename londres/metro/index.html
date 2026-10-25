@@ -89,7 +89,7 @@ label.lb{font-size:15px;font-weight:800}
     <a class="back" href="../" aria-label="Volver a la guía de Londres">‹</a>
     <div>
       <h1>🚇 Metro de Londres</h1>
-      <p class="sub">Toca el día y te digo cómo ir, comprobado</p>
+      <p class="sub">Toca el día y te digo cómo ir · v4</p>
     </div>
   </header>
 
@@ -245,7 +245,7 @@ async function verifyFixed(r){
   const box=()=>$('#live');
   try{
     const [x,y]=await Promise.all([resolveSt(r.a==='Hammersmith'?HOME:{name:r.a}),resolveSt(r.b==='Hammersmith'?HOME:{name:r.b})]);
-    const js=await journey(x.id,y.id,'leastinterchange');
+    const js=(await journey(x.id,y.id,'leastinterchange',r.a,r.b)).filter(j=>endpointsOk(j,r.a,r.b));
     if(!js.length) throw new Error('sin respuesta');
     const tfl=js.map(j=>j.legs.filter(isTransit).map(lineOf));
     const same=tfl.some(seq=>seq.join()===r.lines.join());
@@ -265,7 +265,7 @@ async function verifyFixed(r){
   }catch(e){
     if(!box()) return;
     box().className='check warn';box().style.borderColor='#334155';box().style.background='#111a2e';
-    box().innerHTML='<h3 style="color:#cbd5e1">Sin conexión para comprobar</h3>La ruta de abajo es la de siempre y vale igual. Si hay cobertura, lo compruebo al volver a abrirla.';
+    box().innerHTML='<h3 style="color:#cbd5e1">No he podido comprobarlo ahora</h3>'+(navigator.onLine?'TfL no ha respondido bien.':'No hay conexión.')+' La ruta de abajo es la de siempre y vale igual. Lo vuelvo a intentar al abrirla de nuevo.';
   }
 }
 function openFixed(key){const r=ROUTES[key];openRoute(r.a,r.b);renderFixed(r);verifyFixed(r);}
@@ -326,8 +326,11 @@ function openRoute(a,b){
 function closeRoute(){ $('#route').hidden=true; $('#home').hidden=false; showLast(); window.scrollTo(0,0); }
 window.addEventListener('popstate',()=>{ if(!$('#route').hidden) closeRoute(); });
 /* Busca la estación por nombre en TfL (y la recuerda para no repetir) */
+/* Códigos oficiales (NaPTAN) de las estaciones del viaje: no dependen de ninguna búsqueda */
+const KNOWN={hammersmith:'940GZZLUHSD',waterloo:'940GZZLUWLO',londonbridge:'940GZZLULNB',westminster:'940GZZLUWSM',nottinghillgate:'940GZZLUNHG',earlscourt:'940GZZLUECT',greenpark:'940GZZLUGPK',hydeparkcorner:'940GZZLUHPC'};
 async function resolveSt(st){
-  const key='metro.st.'+norm(st.name)+(st.hint?'.h':'');
+  if(KNOWN[norm(st.name)]) return {id:KNOWN[norm(st.name)],name:st.name};
+  const key='metro.st2.'+norm(st.name)+(st.hint?'.h':'');
   const saved=store.get(key,null); if(saved) return saved;
   const res=(await searchStations(st.name)).filter(m=>m.modes.indexOf('tube')>=0||m.modes.length);
   let best=null;
@@ -372,15 +375,23 @@ function nearest(){
 }
 
 /* ---------- planificar ---------- */
-async function journey(from,to,pref){
+const base=n=>norm(String(n||'').replace(/\(.*?\)/g,''));
+function pickOpt(d,want){
+  const ops=(d&&d.disambiguationOptions)||[];
+  const w=base(want);
+  const ok=ops.filter(o=>{const n=base(o.place&&o.place.commonName);return n&&(n===w||n.startsWith(w)||w.startsWith(n));})
+    .sort((a,b)=>(b.matchQuality||0)-(a.matchQuality||0));
+  return ok[0]?ok[0].parameterValue:null;
+}
+async function journey(from,to,pref,fromName,toName){
   let f=from,t=to;
   for(let i=0;i<2;i++){
     const q='/Journey/JourneyResults/'+encodeURIComponent(f)+'/to/'+encodeURIComponent(t)+'?mode='+MODES+',walking&journeyPreference='+pref+'&timeIs=Departing&alternativeWalking=false'+(S.stepfree?'&accessibilityPreference=StepFreeToPlatform':'');
     const r=await tfl(q,20000);
-    if(r.status===300&&r.j){ /* TfL pide aclarar la estación: cogemos su primera propuesta */
+    if(r.status===300&&r.j){ /* TfL pide aclarar: solo aceptamos una opción con el MISMO nombre de estación, nunca otra cualquiera */
       const fo=r.j.fromLocationDisambiguation, to2=r.j.toLocationDisambiguation;
-      if(fo&&fo.matchStatus!=='identified'&&fo.disambiguationOptions&&fo.disambiguationOptions[0]) f=fo.disambiguationOptions[0].parameterValue;
-      if(to2&&to2.matchStatus!=='identified'&&to2.disambiguationOptions&&to2.disambiguationOptions[0]) t=to2.disambiguationOptions[0].parameterValue;
+      if(fo&&fo.matchStatus!=='identified'){const v=pickOpt(fo,fromName);if(!v)throw new Error('TfL no reconoce bien la estación '+fromName);f=v;}
+      if(to2&&to2.matchStatus!=='identified'){const v=pickOpt(to2,toName);if(!v)throw new Error('TfL no reconoce bien la estación '+toName);t=v;}
       continue;
     }
     if(!r.ok||!r.j) throw new Error(r.status===404?'TfL no encuentra ruta entre esas estaciones':'TfL respondió con un error ('+r.status+')');
@@ -392,6 +403,15 @@ const isTransit=l=>l.mode&&l.mode.id!=='walking';
 const lineOf=l=>{const ro=(l.routeOptions||[])[0]||{};return (ro.lineIdentifier&&ro.lineIdentifier.id)||(ro.name||'').toLowerCase().replace(/ & /g,'-').replace(/\s+/g,'-')||l.mode.id;};
 const lineName=l=>{const ro=(l.routeOptions||[])[0]||{};return (ro.lineIdentifier&&ro.lineIdentifier.name)||ro.name||l.mode.name;};
 const sig=j=>(j.legs||[]).filter(isTransit).map(l=>lineOf(l)+':'+norm(l.departurePoint.commonName)+'>'+norm(l.arrivalPoint.commonName)).join('|');
+/* La ruta tiene que empezar y acabar en las estaciones pedidas (como mucho unos minutos andando) */
+function endpointsOk(j,fromName,toName){
+  const L=j.legs||[],T=L.filter(isTransit);if(!T.length)return false;
+  const i0=L.indexOf(T[0]),i1=L.indexOf(T[T.length-1]);
+  const walkBefore=L.slice(0,i0).reduce((a,l)=>a+(l.duration||0),0),walkAfter=L.slice(i1+1).reduce((a,l)=>a+(l.duration||0),0);
+  const fOk=base(T[0].departurePoint.commonName).startsWith(base(fromName))||base(fromName).startsWith(base(T[0].departurePoint.commonName));
+  const tOk=base(T[T.length-1].arrivalPoint.commonName).startsWith(base(toName))||base(toName).startsWith(base(T[T.length-1].arrivalPoint.commonName));
+  return fOk&&tOk&&walkBefore<=6&&walkAfter<=6;
+}
 function choose(js){
   /* la de menos trasbordos y, a igualdad, la más corta */
   return js.slice().sort((a,b)=>(a.legs.filter(isTransit).length-b.legs.filter(isTransit).length)||(a.duration-b.duration))[0];
@@ -442,15 +462,15 @@ function render(data,fromCache){
     ?'<div class="check ok"><h3>✓ Ruta comprobada dos veces</h3><ul><li>Una segunda consulta a TfL da la misma ruta.</li><li>Cada línea para de verdad donde subes y donde bajas.</li></ul></div>'
     :'<div class="check warn"><h3>⚠ Revisa esta ruta</h3><ul>'+checks.notes.map(n=>'<li>'+esc(n)+'</li>').join('')+'</ul></div>';
   h+='<div class="sum"><div class="t">unos '+j.duration+' min</div><div class="s">'+esc(from)+' → '+esc(to)+'<br>'+(xfers?xfers+(xfers>1?' trasbordos':' trasbordo'):'Sin trasbordos')+'</div></div>'+(hhmm(j.arrivalDateTime)?'<p class="alt" style="margin:0 2px">Si salís ahora mismo, llegaréis sobre las <b style="color:#f8fafc">'+esc(hhmm(j.arrivalDateTime))+'</b>'+(Intl.DateTimeFormat().resolvedOptions().timeZone==='Europe/London'?'':' (hora de Londres: en España es una hora más)')+'.</p>':'');
-  let prevTransit=null,xferDone=false;
-  const xferTxt=(prev,l)=>{const id=lineOf(l),nm=LINE_ES(id)||lineName(l).replace(/ line$/i,'');return '<div class="xfer">🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prev)===id?'cambia de tren, sigues en la línea '+esc(nm)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(nm))+'</div>';};
+  let prevTransit=null,xferDone=false,step=0;
+  const xferTxt=(prev,l)=>{const id=lineOf(l),nm=LINE_ES(id)||lineName(l).replace(/ line$/i,'');step++;return '<div class="xfer">Paso '+step+' · 🔁 Trasbordo en '+esc(clean(l.departurePoint.commonName))+': '+(lineOf(prev)===id?'cambia de tren, sigues en la línea '+esc(nm)+' pero en otro tren (mira el letrero de dirección)':'cambia a la línea '+esc(nm))+'</div>';};
   legs.forEach((l,i)=>{
     if(!isTransit(l)){
       const s=(l.instruction&&l.instruction.summary)||'Camina';
       const nxt=legs.slice(i+1).find(isTransit);
       const inside=prevTransit&&nxt&&norm(prevTransit.arrivalPoint.commonName)===norm(nxt.departurePoint.commonName);
       if(inside){h+=xferTxt(prevTransit,nxt);xferDone=true;}
-      if(l.duration>=1) h+='<div class="walk">🚶 '+(inside?l.duration+' min por dentro de la estación para cambiar de andén (pasillos y escaleras, sin salir a la calle)':(prevTransit&&nxt?'Camina '+l.duration+' min por la calle hasta la otra estación':'Camina '+l.duration+' min'))+'<span class="sr"> '+esc(s)+'</span></div>';
+      if(l.duration>=1){step++;h+='<div class="walk">Paso '+step+' · 🚶 '+(!prevTransit&&nxt?'Camina '+l.duration+' min hasta la estación de '+esc(clean(nxt.departurePoint.commonName)):prevTransit&&!nxt?'Camina '+l.duration+' min desde la estación hasta tu destino':'')+(!prevTransit&&nxt||prevTransit&&!nxt?'':(inside?l.duration+' min por dentro de la estación para cambiar de andén (pasillos y escaleras, sin salir a la calle)':(prevTransit&&nxt?'Camina '+l.duration+' min por la calle hasta la otra estación':'Camina '+l.duration+' min')))+'<span class="sr"> '+esc(s)+'</span></div>';}
       return;
     }
     const id=lineOf(l),col=COL[id]||'#64748b',name=LINE_ES(id)||lineName(l).replace(/ line$/i,'');
@@ -460,7 +480,9 @@ function render(data,fromCache){
     const n=stops.length;
     const tw=towards(l);
     const label=l.mode.id==='tube'?'Línea '+name:(l.mode.id==='dlr'?name:(l.mode.id==='elizabeth-line'?'Elizabeth line':name+' (Overground)'));
+    step++;
     h+='<div class="leg"><div class="bar" style="background:'+col+'"></div><div class="bd">'+
+      '<div style="font-size:14px;font-weight:800;color:var(--muted)">Paso '+step+'</div>'+
       '<span class="pill" style="background:'+col+';color:'+(DARK_TXT[id]?'#111':'#fff')+'">'+esc(label)+'</span>'+
       '<div class="st"><span>Sube en</span> '+esc(clean(l.departurePoint.commonName))+'</div>'+
       (tw?'<div class="dir">Tren en dirección <em>'+esc(tw)+'</em></div>':'')+
@@ -488,8 +510,9 @@ async function plan(){
   if($('#route').hidden) openRoute(S.from.name,S.to.name);
   const go=$('#go');go.disabled=true;go.innerHTML='<span class="spin"></span> Buscando y comprobando…';
   try{
-    const [a,b]=await Promise.all([journey(S.from.id,S.to.id,'leastinterchange'),journey(S.from.id,S.to.id,'leasttime').catch(()=>null)]);
-    if(!a.length) throw new Error('TfL no ha devuelto ninguna ruta');
+    let [a,b]=await Promise.all([journey(S.from.id,S.to.id,'leastinterchange',S.from.name,S.to.name),journey(S.from.id,S.to.id,'leasttime',S.from.name,S.to.name).catch(()=>null)]);
+    a=a.filter(x=>endpointsOk(x,S.from.name,S.to.name)); if(b) b=b.filter(x=>endpointsOk(x,S.from.name,S.to.name));
+    if(!a.length) throw new Error('TfL no ha dado ninguna ruta que salga de '+S.from.name+' y llegue a '+S.to.name+'. No te enseño nada para no confundirte');
     const j=choose(a);
     const notes=[];
     /* Comprobación 1: segunda consulta independiente */
@@ -523,6 +546,7 @@ async function plan(){
 }
 
 /* ---------- arranque ---------- */
+if(!store.get('metro.v4',false)){try{Object.keys(localStorage).filter(k=>k.indexOf('metro.st.')===0||k==='metro.last'||k==='metro.recent').forEach(k=>localStorage.removeItem(k));}catch(e){}store.set('metro.v4',true);}
 renderDays();
 $('#quick').innerHTML=QUICK.map(n=>'<button type="button" class="chip" data-q="'+esc(n)+'">'+esc(n)+'</button>').join('');
 const rec=store.get('metro.recent',[]);
