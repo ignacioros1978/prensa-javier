@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,7 +8,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Londres 2026">
-    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiTG9uZHJlcyBOYXZpZGFkIDIwMjYiLCJzaG9ydF9uYW1lIjoiTG9uZHJlczIwMjYiLCJzdGFydF91cmwiOiIuIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmLWZmLZmYiLCJ0aGVtZV9jb2xvciI6IiNlNzRjM2MifQ==">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -346,6 +348,9 @@
             transition: transform 0.15s;
         }
         .map-marker:hover { transform: scale(1.15); }
+        .pin-icon { background: none; border: none; }
+        #map { z-index: 0; }
+        .leaflet-popup-content { margin: 12px 14px; }
 
         /* Desktop */
         @media (min-width: 768px) {
@@ -1642,29 +1647,12 @@
         return colors[day] || '#7f8c8d';
     }
 
-    // ── GOOGLE MAPS ──────────────────────────────────────────────────────────
-
+    // ── MAPA (Leaflet + OpenStreetMap, sin clave) ─────────────────────────
     let gMap = null;
     let gMarkers = [];
     let gPolylines = [];
-    let activeInfoWindow = null;
-    let popupEl = null;
 
-    function initMap() {
-        gMap = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 51.505, lng: -0.13 },
-            zoom: 13,
-            disableDefaultUI: true,
-            zoomControl: true,
-            gestureHandling: 'greedy',
-            styles: [{ featureType:'poi', elementType:'labels', stylers:[{visibility:'off'}] }]
-        });
-        renderMarkers();
-        renderDynamicContent('all');
-        setupFilters();
-    }
-
-    // ---- Visitados: deben estar ANTES de renderMarkers ----
+    // ---- Visitados ----
     var visitedKey = 'lcn26_visited';
     function getVisited() {
         try { return JSON.parse(localStorage.getItem(visitedKey) || '{}'); } catch(e) { return {}; }
@@ -1673,20 +1661,52 @@
         try { localStorage.setItem(visitedKey, JSON.stringify(v)); } catch(e) {}
     }
 
-    function makePinSvgUrl(color, label, isNum) {
-        const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">'
-            + '<circle cx="18" cy="18" r="16" fill="' + color + '" stroke="#ffffff" stroke-width="2.5"/>'
-            + '<text x="18" y="' + (isNum ? 23 : 24) + '" font-size="' + (isNum ? 14 : 13) + '" font-weight="' + (isNum ? 'bold' : 'normal') + '" text-anchor="middle" fill="white" font-family="Arial,sans-serif">' + label + '</text>'
-            + '</svg>';
-        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+    function makePinIcon(color, label, isNum) {
+        const html = '<div style="width:32px;height:32px;border-radius:50%;background:' + color + ';border:2.5px solid #fff;'
+            + 'display:flex;align-items:center;justify-content:center;color:#fff;font:' + (isNum ? '700 14px' : '400 15px') + ' Arial,sans-serif;'
+            + 'box-shadow:0 2px 5px rgba(0,0,0,.4);">' + label + '</div>';
+        return L.divIcon({ html: html, className: 'pin-icon', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -16] });
+    }
+
+    function initMap() {
+        if (typeof L === 'undefined') {
+            document.getElementById('map').innerHTML =
+                '<div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column;gap:12px;padding:24px;text-align:center;background:#dde5ec;color:#2c3e50">'
+                + '<div style="font-size:3rem">🗺️</div><div style="font-size:1rem;font-weight:700">Mapa no disponible sin conexión</div>'
+                + '<div style="font-size:.82rem;color:#475569;max-width:300px;line-height:1.6">El itinerario sigue funcionando. Vuelve a abrir con internet para ver el mapa.</div></div>';
+            return;
+        }
+        gMap = L.map('map', { zoomControl: true, attributionControl: true }).setView([51.505, -0.13], 13);
+        // Capas de mapa sin clave: OpenStreetMap y, si falla, Esri como respaldo
+        const TILE_SOURCES = [
+            { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', opts: { maxZoom: 19, attribution: '&copy; OpenStreetMap' } },
+            { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', opts: { maxZoom: 19, attribution: 'Tiles &copy; Esri' } }
+        ];
+        let tileIdx = 0, tileErrors = 0, tileLoads = 0, tileLayer = null;
+        function useTiles(i) {
+            if (tileLayer) gMap.removeLayer(tileLayer);
+            tileErrors = 0; tileLoads = 0;
+            tileLayer = L.tileLayer(TILE_SOURCES[i].url, TILE_SOURCES[i].opts);
+            tileLayer.on('tileload', () => { tileLoads++; });
+            tileLayer.on('tileerror', () => {
+                tileErrors++;
+                if (tileErrors >= 3 && tileLoads === 0 && tileIdx < TILE_SOURCES.length - 1) useTiles(++tileIdx);
+            });
+            tileLayer.addTo(gMap);
+        }
+        useTiles(0);
+        renderMarkers();
+        // Recalcular tamaño cuando cambia el panel
+        window.addEventListener('resize', () => gMap.invalidateSize());
     }
 
     function renderMarkers() {
-        gMarkers.forEach(m => m.setMap(null));
+        if (!gMap) return;
+        gMarkers.forEach(m => gMap.removeLayer(m));
         gMarkers = [];
-        gPolylines.forEach(p => p.setMap(null));
+        gPolylines.forEach(p => gMap.removeLayer(p));
         gPolylines = [];
-        if (activeInfoWindow) { activeInfoWindow.close(); activeInfoWindow = null; }
+        gMap.closePopup();
 
         locations.forEach(loc => {
             const matchesDay = (activeDayFilter === 'all' || loc.day === activeDayFilter || loc.day === 'all' || loc.id === 'base');
@@ -1696,19 +1716,13 @@
             const color = getColor(loc.day);
             const showNum = loc.order > 0;
             const label = showNum ? String(loc.order) : loc.emoji;
+            const isVisited = showNum && !!getVisited()[loc.id];
 
-            const visitedOnCreate = showNum && !!getVisited()[loc.id];
-            const marker = new google.maps.Marker({
-                position: { lat: loc.lat, lng: loc.lng },
-                map: gMap,
+            const marker = L.marker([loc.lat, loc.lng], {
+                icon: makePinIcon(isVisited ? '#9ca3af' : color, label, showNum),
                 title: loc.name,
-                icon: {
-                    url: visitedOnCreate ? makePinSvgUrl('#9ca3af', label, showNum) : makePinSvgUrl(color, label, showNum),
-                    scaledSize: new google.maps.Size(36, 36),
-                    anchor: new google.maps.Point(18, 18)
-                },
-                zIndex: loc.id === 'base' ? 999 : showNum ? loc.order : 1,
-                opacity: visitedOnCreate ? 0.5 : 1.0
+                zIndexOffset: loc.id === 'base' ? 1000 : showNum ? 100 + loc.order : 0,
+                opacity: isVisited ? 0.55 : 1
             });
             marker._locId = loc.id;
             marker._origColor = color;
@@ -1719,82 +1733,59 @@
             const numBadge = showNum
                 ? '<span style="background:' + color + ';color:white;font-size:11px;font-weight:800;width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;">' + loc.order + '</span>'
                 : '';
-
-            const isVisited = !!getVisited()[loc.id];
             const checkboxHtml = showNum
                 ? '<label style="display:flex;align-items:center;gap:7px;margin-top:10px;cursor:pointer;user-select:none;">'
-                  + '<input type="checkbox" id="vc_' + loc.id + '" ' + (isVisited ? 'checked' : '') + ' onchange="toggleVisitedMarker(\'' + loc.id + '\',this.checked)" style="width:16px;height:16px;accent-color:#22c55e;cursor:pointer;">'
-                  + '<span id="vl_' + loc.id + '" style="font-size:0.75rem;font-weight:600;color:' + (isVisited ? '#16a34a' : '#64748b') + ';">' + (isVisited ? '✓ Ya visitado' : 'Marcar como visitado') + '</span>'
+                  + '<input type="checkbox" id="vc_' + loc.id + '" ' + (isVisited ? 'checked' : '') + ' onchange="toggleVisitedMarker(\'' + loc.id + '\',this.checked)" style="width:18px;height:18px;accent-color:#22c55e;cursor:pointer;">'
+                  + '<span id="vl_' + loc.id + '" style="font-size:0.78rem;font-weight:600;color:' + (isVisited ? '#16a34a' : '#475569') + ';">' + (isVisited ? '✓ Ya visitado' : 'Marcar como visitado') + '</span>'
                   + '</label>'
                 : '';
-
             const mapsUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(loc.lat + ',' + loc.lng) + '&travelmode=walking';
-            const directionsBtn = '<a href="' + mapsUrl + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding:8px 10px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:white;border-radius:8px;font-size:0.78rem;font-weight:700;text-decoration:none;">🗺️ Cómo llegar</a>';
+            const directionsBtn = '<a href="' + mapsUrl + '" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding:8px 10px;background:#1d4ed8;color:white;border-radius:8px;font-size:0.78rem;font-weight:700;text-decoration:none;">🗺️ Cómo llegar</a>';
+            const photosBtn = showNum
+                ? '<button onclick="renderLocationPhotos(\'' + loc.id + '\',' + JSON.stringify(loc.emoji + ' ' + loc.name).replace(/"/g,'&quot;') + ',\'' + loc.day + '\')" style="width:100%;margin-top:6px;padding:7px 10px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;font-size:0.76rem;font-weight:700;color:#334155;cursor:pointer;">📷 Fotos de este lugar</button>'
+                : '';
 
-            const infoContent = '<div style="max-width:220px;font-family:\'Plus Jakarta Sans\',sans-serif;padding:4px 2px;">'
+            const infoContent = '<div style="max-width:230px;font-family:\'Plus Jakarta Sans\',sans-serif;">'
                 + '<div style="display:flex;align-items:center;gap:5px;margin-bottom:6px;">'
                 + numBadge
                 + '<span style="background:' + color + ';color:white;font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600;">' + dayLabel + '</span>'
                 + '<span style="background:#e2e8f0;color:#334155;font-size:10px;padding:2px 6px;border-radius:4px;">' + loc.category + '</span>'
                 + '</div>'
                 + '<div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px;">' + loc.emoji + ' ' + loc.name + '</div>'
-                + '<div style="font-size:11px;color:#64748b;margin-bottom:3px;">📍 ' + loc.address + '</div>'
+                + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
-                + directionsBtn
-                + checkboxHtml
+                + directionsBtn + photosBtn + checkboxHtml
                 + '</div>';
 
-            const iw = new google.maps.InfoWindow({ content: infoContent });
-            marker.addListener('click', () => {
-                if (activeInfoWindow) activeInfoWindow.close();
-                iw.open(gMap, marker);
-                activeInfoWindow = iw;
-                // Mostrar fotos de este lugar en el panel
-                if (typeof renderLocationPhotos === 'function' && loc.order > 0) {
-                    renderLocationPhotos(loc.id, loc.emoji + ' ' + loc.name, loc.day);
-                }
-            });
-
+            marker.bindPopup(infoContent, { maxWidth: 250 });
+            marker.addTo(gMap);
             gMarkers.push(marker);
         });
 
-        // Dibujar polyline de recorrido por día
+        // Recorrido del día
         if (activeDayFilter !== 'all' && activeDayFilter !== 'base') {
             const dayLocs = locations
                 .filter(loc => loc.day === activeDayFilter && loc.order > 0)
                 .sort((a, b) => a.order - b.order);
             if (dayLocs.length > 1) {
-                const path = dayLocs.map(loc => ({ lat: loc.lat, lng: loc.lng }));
-                const color = getColor(activeDayFilter);
-                const polyline = new google.maps.Polyline({
-                    path: path,
-                    geodesic: true,
-                    strokeColor: color,
-                    strokeOpacity: 0.7,
-                    strokeWeight: 3,
-                    icons: [{
-                        icon: { path: google.maps.SymbolPath.FORWARD_OPEN_ARROW, scale: 3, strokeColor: color },
-                        offset: '50%'
-                    }],
-                    map: gMap
-                });
-                gPolylines.push(polyline);
+                const line = L.polyline(dayLocs.map(l => [l.lat, l.lng]), {
+                    color: getColor(activeDayFilter), weight: 4, opacity: 0.75, dashArray: '8 6'
+                }).addTo(gMap);
+                gPolylines.push(line);
             }
         }
+        if (typeof refreshPhotoBadgeOverlays === 'function') refreshPhotoBadgeOverlays();
     }
 
     function centerMapOnDay(dayFilter) {
         if (!gMap) return;
         if (dayFilter === 'all' || dayFilter === 'base') {
-            gMap.setCenter({ lat: 51.505, lng: -0.13 });
-            gMap.setZoom(13);
+            gMap.setView([51.505, -0.13], 13);
             return;
         }
         const dayLocs = locations.filter(loc => loc.day === dayFilter);
         if (dayLocs.length === 0) return;
-        const bounds = new google.maps.LatLngBounds();
-        dayLocs.forEach(loc => bounds.extend({ lat: loc.lat, lng: loc.lng }));
-        gMap.fitBounds(bounds, 60);
+        gMap.fitBounds(L.latLngBounds(dayLocs.map(l => [l.lat, l.lng])), { padding: [40, 40] });
     }
 
     // initMap() is called by Google Maps API callback
@@ -2590,81 +2581,26 @@
     };
 
     // ---- Badge de fotos en pins del mapa ----
-    window.updateMapPhotoBadges = function() {
-        if (typeof gMarkers === 'undefined') return;
-        // Los marcadores de Google Maps no soportan HTML overlay fácilmente,
-        // usamos un overlay SVG personalizado sobre el mapa
-        // Implementamos via MarkerLabel con contador
-        if (typeof google === 'undefined' || !gMap) return;
-        gMarkers.forEach(function(marker) {
-            const locId = marker._locId;
-            if (!locId) return;
-            const count = photos.filter(p => p.locationId === locId).length;
-            if (count > 0) {
-                const existingLabel = marker.getLabel();
-                const baseLabel = (typeof existingLabel === 'object' && existingLabel) ? existingLabel.text : (existingLabel || '');
-                // Actualizar etiqueta del marcador para mostrar el contador
-                // Lo hacemos mediante un div overlay propio
-            }
-        });
-        // Usar overlays HTML personalizados para los badges
-        refreshPhotoBadgeOverlays();
-    };
-
     let photoBadgeOverlays = [];
     function refreshPhotoBadgeOverlays() {
-        // Limpiar overlays anteriores
-        photoBadgeOverlays.forEach(o => o.setMap(null));
+        if (typeof gMap === 'undefined' || !gMap || typeof L === 'undefined') return;
+        photoBadgeOverlays.forEach(o => gMap.removeLayer(o));
         photoBadgeOverlays = [];
-        if (typeof google === 'undefined' || !gMap || typeof locations === 'undefined') return;
-
+        const shown = new Set((gMarkers || []).map(m => m._locId));
         locations.forEach(function(loc) {
-            if (!loc.order || loc.order === 0) return;
+            if (!loc.order || !shown.has(loc.id)) return;
             const count = photos.filter(p => p.locationId === loc.id).length;
             if (count === 0) return;
-
-            // Crear overlay HTML personalizado
-            class PhotoBadgeOverlay extends google.maps.OverlayView {
-                constructor(position, count, color) {
-                    super();
-                    this.position = position;
-                    this.count = count;
-                    this.color = color;
-                    this.div = null;
-                }
-                onAdd() {
-                    this.div = document.createElement('div');
-                    this.div.style.cssText = 'position:absolute;pointer-events:none;';
-                    this.div.innerHTML = `<div style="background:${this.color};color:white;font-size:9px;font-weight:800;padding:1px 4px;border-radius:99px;border:1.5px solid white;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.3);margin-left:10px;margin-top:-18px;">📷${this.count}</div>`;
-                    const panes = this.getPanes();
-                    panes.floatPane.appendChild(this.div);
-                }
-                draw() {
-                    const overlayProjection = this.getProjection();
-                    const point = overlayProjection.fromLatLngToDivPixel(this.position);
-                    if (point && this.div) {
-                        this.div.style.left = point.x + 'px';
-                        this.div.style.top = point.y + 'px';
-                    }
-                }
-                onRemove() {
-                    if (this.div && this.div.parentNode) {
-                        this.div.parentNode.removeChild(this.div);
-                        this.div = null;
-                    }
-                }
-            }
-
-            const color = getColor ? getColor(loc.day) : '#e74c3c';
-            const overlay = new PhotoBadgeOverlay(
-                new google.maps.LatLng(loc.lat, loc.lng),
-                count,
-                color
-            );
-            overlay.setMap(gMap);
-            photoBadgeOverlays.push(overlay);
+            const html = '<div style="background:' + getColor(loc.day) + ';color:white;font-size:10px;font-weight:800;padding:1px 5px;border-radius:99px;border:1.5px solid white;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,0.3);">📷' + count + '</div>';
+            const badge = L.marker([loc.lat, loc.lng], {
+                icon: L.divIcon({ html: html, className: 'pin-icon', iconSize: null, iconAnchor: [-8, 26] }),
+                interactive: false, zIndexOffset: 2000
+            }).addTo(gMap);
+            photoBadgeOverlays.push(badge);
         });
     }
+    window.refreshPhotoBadgeOverlays = refreshPhotoBadgeOverlays;
+    window.updateMapPhotoBadges = refreshPhotoBadgeOverlays;
 
     // Actualizar badges cada vez que cambian las fotos
     const _origSavePhotos = savePhotos;
@@ -2931,21 +2867,8 @@
             }
         }
         if (marker) {
-            if (checked) {
-                marker.setIcon({
-                    url: makePinSvgUrl('#9ca3af', marker._label, marker._showNum),
-                    scaledSize: new google.maps.Size(36, 36),
-                    anchor: new google.maps.Point(18, 18)
-                });
-                marker.setOpacity(0.5);
-            } else {
-                marker.setIcon({
-                    url: makePinSvgUrl(marker._origColor, marker._label, marker._showNum),
-                    scaledSize: new google.maps.Size(36, 36),
-                    anchor: new google.maps.Point(18, 18)
-                });
-                marker.setOpacity(1.0);
-            }
+            marker.setIcon(makePinIcon(checked ? '#9ca3af' : marker._origColor, marker._label, marker._showNum));
+            marker.setOpacity(checked ? 0.55 : 1);
         }
     };
     function applyVisitedToItem(id, btn, v) {
@@ -3043,25 +2966,12 @@
     <button id="revivir-close-btn" class="rv-btn" onclick="stopRevivir()">✕</button>
 </div>
 
-<!-- Google Maps API -->
 <script>
-(function(){
-    window.initMap = window.initMap;
-    const s = document.createElement('script');
-    s.src = 'https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async';
-    s.async = true; s.defer = true;
-    s.onerror = function(){
-        document.getElementById('map').innerHTML =
-            '<div style="display:flex;align-items:center;justify-content:center;height:100%;flex-direction:column;gap:12px;padding:24px;text-align:center;background:#dde5ec;color:#2c3e50">'
-            + '<div style="font-size:3rem">🗺️</div>'
-            + '<div style="font-size:1rem;font-weight:700">Mapa no disponible sin conexión</div>'
-            + '<div style="font-size:.82rem;color:#64748b;max-width:300px;line-height:1.6">Abre este archivo en Chrome o Safari con conexión a internet para ver el mapa completo de Londres.</div>'
-            + '</div>';
-    };
-    document.head.appendChild(s);
-})();
+    // Arranque: el itinerario y los filtros funcionan aunque el mapa no cargue
+    renderDynamicContent('all');
+    setupFilters();
+    try { initMap(); } catch (e) { console.error(e); }
 </script>
 
 </body>
 </html>
-</body></html>
