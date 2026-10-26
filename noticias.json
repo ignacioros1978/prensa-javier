@@ -1,17 +1,17 @@
 {
  "fecha": "2026-10-26",
  "fechaTexto": "lunes 26 de octubre",
- "actualizado": "2026-10-26T07:13:03+01:00",
+ "actualizado": "2026-10-26T15:58:24+01:00",
  "portada": [
+  "ld4",
+  "ee5",
+  "ee4",
   "ld1",
   "ee2",
-  "ok1",
   "ed1",
-  "ee3",
-  "ld3",
-  "edi1",
-  "ld2",
-  "to1"
+  "ok1",
+  "ld5",
+  "to3"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
+     "id": "ld4",
+     "titular": "PP y Vox pactan sus candidaturas al Senado para el veintinueve de noviembre",
+     "resumen": "Según Libertad Digital, el Partido Popular y Vox han cerrado un acuerdo para repartirse las candidaturas al Senado en las elecciones del veintinueve de noviembre. El objetivo es reunir tres quintos de la Cámara y evitar que la izquierda bloquee la renovación de órganos como el Tribunal Constitucional. Vox no presentará lista propia en seis provincias, entre ellas Cádiz, Valencia y Baleares, donde el PP incluirá a un independiente elegido por Vox. En catorce provincias, como Sevilla, Zaragoza o Alicante, el PP presentará tres candidatos y Vox uno. En las demás concurrirán por separado. Miguel Tellado, del PP, aseguró que ninguno de los dos partidos diluye sus siglas. El Senado debe proponer a cuatro miembros del Constitucional con el mandato caducado desde hace un año. Hasta ahora era necesario un acuerdo con el PSOE.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-26/feijoo-y-abascal-pactan-en-el-senado-para-lograr-los-tres-quintos-que-impidan-el-bloqueo-de-la-izquierda-7481905/"
+    },
+    {
+     "id": "ld5",
+     "titular": "El Real Madrid gana al Barça en el Camp Nou con dos goles de Mbappé",
+     "resumen": "El Real Madrid ganó uno a dos al Barcelona en el Camp Nou, en el clásico de Liga disputado el domingo veinticinco de octubre. Mbappé adelantó a los blancos en el minuto cuarenta y uno. Raphinha empató para el Barça en el sesenta y uno. Y en el ochenta y siete Mbappé marcó el gol definitivo, tras un contraataque con pase de Camavinga. Según Libertad Digital, el resultado rompe una igualdad histórica de ciento veinticuatro años entre los dos clubes. Tras doscientos sesenta y cuatro clásicos, el Madrid suma ahora ciento siete victorias, el Barcelona ciento seis, y hay cincuenta y dos empates. La derrota puso fin a la racha del Barça, que llegaba con veintitrés victorias seguidas como local en Liga y nueve triunfos consecutivos en la competición.",
+     "url": "https://www.libertaddigital.com/deportes/futbol/2026-10-26/el-real-madrid-rompe-un-empate-historico-de-124-anos-con-el-barca-el-clasico-que-cambio-las-estadisticas-7482026/"
+    },
+    {
      "id": "ld1",
      "titular": "Disturbios en Barcelona: unos 128 detenidos y más de veinte comercios dañados",
      "resumen": "La noche del sábado veinticuatro de octubre hubo graves disturbios en el centro de Barcelona. Una concentración no autorizada, convocada por redes sociales, empezó hacia las seis de la tarde en la plaza de Cataluña y acabó en saqueos e incendios de mobiliario urbano. Según Libertad Digital, participaron unas quinientas personas. La policía catalana detuvo a unas ciento veintiocho, y más de setenta eran menores. Resultaron heridos quince agentes, cuatro de ellos de gravedad, y unos veintitrés comercios sufrieron daños. Los bomberos atendieron treinta y tres incendios de contenedores y papeleras. El alcalde, Jaume Collboni, aseguró que no quedará impune y que el Ayuntamiento reclamará responsabilidades, también a los padres de los menores. La consejera de Interior, Núria Parlon, defendió la actuación policial, y el presidente catalán, Salvador Illa, condenó la violencia.",
      "url": "https://www.libertaddigital.com/cataluna/2026-10-25/disturbios-en-barcelona-100-detenidos-14-comercios-vandalizados-y-una-noche-de-incendios-y-saqueos-7481493/"
-    },
-    {
-     "id": "ld2",
-     "titular": "Ceuta pierde un millón de euros al día por la crisis migratoria, según su presidente",
-     "resumen": "Libertad Digital cuenta cómo la crisis migratoria golpea a los negocios de Ceuta. La entrada masiva de personas desde Marruecos comenzó a finales de julio. Según el presidente de la ciudad, Juan Jesús Vivas, Ceuta pierde cerca de un millón de euros al día. La Cámara de Comercio calcula unas pérdidas de unos setenta y cinco millones hasta el treinta de septiembre, alrededor del cuatro por ciento de la riqueza anual de la ciudad. Algunas tiendas de calzado y deporte hablan de caídas de ventas de hasta la mitad. Los hosteleros dan por perdida la campaña de verano y algún local ha cerrado. Varios comerciantes han creado una asociación para recuperar la actividad y critican que el Gobierno central los tiene abandonados. El artículo no recoge la versión del Gobierno.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-10-25/el-terrible-impacto-de-la-invasion-en-los-negocios-y-empresarios-de-ceuta-estamos-paralizados-7480157/"
-    },
-    {
-     "id": "ld3",
-     "titular": "Sánchez evita explicar por qué el PSOE no se querella contra Leire Díez",
-     "resumen": "Según Libertad Digital, el presidente Pedro Sánchez eludió hasta tres veces una pregunta de El País, en una entrevista publicada el domingo veinticinco de octubre. La pregunta era por qué el PSOE no ha presentado una querella contra Leire Díez, antigua militante socialista investigada por presuntas maniobras contra jueces y fiscales. Sánchez respondió que el partido la dio de baja en pocos días, que se trata de estrategias judiciales y que el PSOE es ajeno a esas actuaciones. El juez Santiago Pedraz ha pedido al partido información sobre pagos a abogados y consultoras entre dos mil veintiuno y dos mil veinticinco, con un plazo de quince días. Sánchez dijo que lo de Ábalos fue su mayor error y que ha pedido perdón. Las elecciones generales son el veintinueve de noviembre.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-25/sanchez-evita-hasta-tres-veces-explicar-a-el-pais-por-que-el-psoe-no-se-querella-contra-leire-diez-7481509/"
     }
    ]
   },
@@ -43,22 +43,22 @@
    "nombre": "El Español",
    "noticias": [
     {
-     "id": "ee1",
-     "titular": "Unos seiscientos jóvenes convocados por redes arrasan el centro de Barcelona",
-     "resumen": "El sábado veinticuatro de octubre por la tarde, unos seiscientos jóvenes, la mayoría encapuchados, se concentraron en la plaza de Cataluña de Barcelona tras una convocatoria en redes sociales. Lanzaron piedras, quemaron contenedores y saquearon comercios sin una reivindicación clara. Según El Español, los Mossos detuvieron al menos a ciento veintiocho personas, más de setenta de ellas menores. Hubo veintitrés comercios afectados y quince agentes heridos, cuatro de gravedad. Se cerraron dos estaciones de tren de la plaza. Desde hacía tres semanas había una acampada por la vivienda en ese lugar, y sus organizadores impidieron que los jóvenes entraran. Interior ve un posible reflejo de protestas en Francia e Italia. Illa condenó la violencia, y Feijóo dijo que España necesita un cambio.",
-     "url": "https://www.elespanol.com/espana/20261024/saqueos-vandalismo-barcelona-concentracion-jovenes-antisistema-acaba-detenidos/1003744433857_0.html"
+     "id": "ee5",
+     "titular": "Justicia entregará al Supremo una lista de 76.600 nacionalizados por la ley de nietos",
+     "resumen": "Según El Español, el Ministerio de Justicia enviará al Tribunal Supremo una lista con los nombres de setenta y seis mil seiscientos de los ciento sesenta y tres mil veinte nacionalizados por la ley de nietos. El Supremo exigió a los ministros Félix Bolaños y José Manuel Albares la lista completa, con cinco días de plazo, y advirtió de multas y posibles responsabilidades penales si no la entregan. Justicia dice que ya hizo su parte y que corresponde a Exteriores identificar el resto de expedientes. Al cruzar los nombres con el censo para las elecciones del veintinueve de noviembre, la Oficina del Censo encontró treinta y ocho mil ciento ochenta y ocho personas con derecho a voto en el extranjero. Mientras tanto, estos nacionalizados no podrán votar, salvo que los consulados certifiquen que cumplen la ley.",
+     "url": "https://www.elespanol.com/espana/tribunales/20261026/bolanos-entregara-supremo-listado-nietos-envio-oficina-censo-nacionalizados/1003744433827_0.html"
+    },
+    {
+     "id": "ee4",
+     "titular": "Lula gana la segunda vuelta en Brasil y Flávio Bolsonaro pide anular las elecciones",
+     "resumen": "Luiz Inácio Lula da Silva ha ganado la segunda vuelta de las elecciones presidenciales de Brasil con el cincuenta y uno coma setenta y nueve por ciento de los votos, frente al cuarenta y ocho coma veintiuno de Flávio Bolsonaro. Según El Español, será su cuarto mandato y supone una remontada histórica, porque en la primera vuelta Bolsonaro iba por delante. Lula dijo que gobernará para todos y reconoció que tendrá que negociar con un Congreso de mayoría conservadora. Bolsonaro no reconoce la derrota y pedirá anular los comicios. Cuestiona que se ampliara el horario de votación en lugares donde faltaron autobuses. El propio periódico señala que, por ahora, esas denuncias no demuestran que el resultado haya cambiado.",
+     "url": "https://www.elespanol.com/mundo/america/20261026/lula-logra-remontada-historica-volvera-presidir-brasil-victoria-derrota-mentira/1003744434369_0.html"
     },
     {
      "id": "ee2",
      "titular": "Un mando de la Guardia Civil abrió la puerta de Ceuta e incitó a entrar, según El Español",
      "resumen": "Una investigación de El Español, basada en testigos y fuentes que no se identifican, sostiene que el teniente coronel Lobo, de la Guardia Civil en Ceuta, ordenó abrir la puerta fronteriza del Tarajal el treinta de julio. Según el diario, él y sus agentes animaron a los migrantes a entrar en la ciudad. Los mandos de la Policía Nacional querían mantener la frontera cerrada, y el inspector jefe llegó a guardar la llave. Lobo habría argumentado que cerrarla podía provocar una avalancha con muertes. El diario cuenta que hubo un enfrentamiento entre ambos. Más de ochenta mil personas entraron, según datos internos que cita el medio. La jueza María Tardón, de la Audiencia Nacional, ha citado a declarar a los dos mandos este lunes. El texto no recoge respuesta oficial.",
      "url": "https://www.elespanol.com/espana/20261025/teniente-coronel-lobo-agentes-jalearon-invasores-abrir-puerta-ceuta-ciudad/1003744433091_0.html"
-    },
-    {
-     "id": "ee3",
-     "titular": "Feijóo presenta a sus candidatos en Salamanca y promete un millón de viviendas públicas",
-     "resumen": "El domingo veinticinco de octubre, Alberto Núñez Feijóo presentó en Salamanca a los cabezas de lista del Partido Popular para las elecciones generales del veintinueve de noviembre. Según El Español, los llamó arquitectos de la reconstrucción y los contrapuso a lo que describió como aforados bajo sospecha en torno a Sánchez. Condenó los disturbios de Barcelona y acusó a Sánchez de jugar con fuego. Anunció que viajará a Barcelona la próxima semana. Prometió construir un millón de viviendas públicas, bajar impuestos a los trabajadores, blindar las pensiones con subidas según el IPC y hacer una auditoría de las cuentas públicas. El público le aplaudió y coreó la palabra presidente. El texto no recoge respuestas del PSOE.",
-     "url": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20261025/feijoo-exhibe-arquitectos-reconstruccion-frente-coleccion-aforados-sospecha-sanchez/1003744434057_0.html"
     }
    ]
   },
@@ -66,6 +66,12 @@
    "id": "ed",
    "nombre": "El Debate",
    "noticias": [
+    {
+     "id": "ed2",
+     "titular": "Barcelona estudia derribar mil ochocientos pisos del Besòs",
+     "resumen": "Según El Debate, el Ayuntamiento de Barcelona incluye por primera vez el derribo en los planes para regenerar el barrio del Besòs y el Maresme. Se plantea tirar mil ochocientas viviendas de unas cuatro mil con graves problemas de construcción. Mil quinientos pisos nuevos serían para los vecinos con derecho a realojo, y otros trescientos propietarios solo recibirían una indemnización. El derribo costaría doscientos setenta millones de euros. La nueva empresa pública prevé gastar cuatrocientos quince millones en doce años. El Ayuntamiento asegura que incluirlo no significa decidirlo y que apuesta por rehabilitar. La plataforma vecinal SOS Besòs dice que la noticia cayó como una bomba, y Barcelona en Comú defiende que rehabilitar es viable. En cuatro años solo se han rehabilitado ciento noventa y dos viviendas.",
+     "url": "https://www.eldebate.com/espana/cataluna/20261025/collboni-contempla-derribar-1800-pisos-besos-abre-puerta-dejar-300-propietarios-realojo_473166.html"
+    },
     {
      "id": "ed1",
      "titular": "María Corina Machado vuelve a Venezuela",
@@ -78,6 +84,18 @@
    "id": "to",
    "nombre": "The Objective",
    "noticias": [
+    {
+     "id": "to2",
+     "titular": "Moeve y Galp ponen fin a su fusión",
+     "resumen": "Las energéticas Moeve, antes llamada Cepsa, y la portuguesa Galp han terminado sus negociaciones para fusionar sus negocios de refino y gasolineras. Según The Objective, ambas dijeron en un comunicado que no lograron unos términos definitivos que cumplieran sus criterios. En enero habían firmado un acuerdo no vinculante para crear un campeón energético ibérico. El plan preveía una sociedad industrial, con las refinerías de Cádiz, Huelva y Sines, donde los accionistas de Moeve tendrían el ochenta por ciento, y otra de venta de combustible repartida a partes iguales. Fuentes del sector citadas por el medio apuntan a la crisis energética provocada por el conflicto en Oriente Próximo. El Gobierno portugués había mostrado su preocupación por perder el control de la refinería de Sines. Moeve seguirá con su estrategia independiente hasta dos mil treinta.",
+     "url": "https://theobjective.com/economia/2026-10-26/moeve-galp-ponen-fin-negociaciones-fusion-campeon-energetico-iberico/"
+    },
+    {
+     "id": "to3",
+     "titular": "Los hutíes dicen haber atacado el aeropuerto de Riad y petroleras saudíes",
+     "resumen": "Los hutíes de Yemen, aliados de Irán, afirman haber lanzado misiles y drones contra Arabia Saudí este lunes. Según The Objective, que cita a Europa Press, un misil habría alcanzado el aeropuerto internacional Rey Jalid de Riad, y varios drones habrían atacado estaciones de bombeo de petróleo. También dicen haber golpeado tropas y depósitos de armas en las provincias yemeníes de Adén y Lahij. Su portavoz militar, Yahya Sari, habla de decenas de bajas. No hay confirmación independiente ni reacción oficial saudí. Los ataques coinciden con una ofensiva de las fuerzas yemeníes, apoyadas por Arabia Saudí, para recuperar la ciudad de Moca. El aeropuerto había anunciado poco antes la reapertura de sus terminales. Estados Unidos pidió hace unos días a su personal no esencial que abandonara el país.",
+     "url": "https://theobjective.com/internacional/2026-10-26/huties-atacado-aeropuerto-riad-instalaciones-petroleras/"
+    },
     {
      "id": "to1",
      "titular": "Un consulado en México tardó un mes en hallar expedientes de exiliados reales para un acto del ministro Torres",
