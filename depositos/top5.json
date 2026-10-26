@@ -1,109 +1,15 @@
-{
- "actualizado": "2026-10-21T12:34:57+02:00",
- "fechaTexto": "miércoles 21 de octubre",
- "estado": "ok",
- "top": [
-  {
-   "banco": "MyInvestor",
-   "producto": "Depósito a 12 meses",
-   "tae": 3.0,
-   "tin": 3.0,
-   "plazoMeses": 12,
-   "plazoTexto": "12 meses",
-   "minimo": 10000,
-   "maximo": 100000,
-   "condiciones": "Sin vinculaciones: 3,00 % TAE. Con una cartera automatizada de al menos 150 € contratada 15 días antes del vencimiento sube al 3,10 %. Con MyInvestor Premium (suscripción de pago) hay un depósito a 12 meses al 3,50 % TAE (1.000–25.000 €). Requiere cuenta MyInvestor; oferta hasta el 31 de octubre de 2026. Se puede cancelar, pero sin cobrar intereses.",
-   "garantia": "Fondo de Garantía de Depósitos de España (100.000 €)",
-   "pais": "España",
-   "url": "https://myinvestor.es/depositos/",
-   "fuente": "web de MyInvestor",
-   "nota": "A 6 meses da un 2,75 % TAE (3,00 % con cartera automatizada)."
-  },
-  {
-   "banco": "WiZink",
-   "producto": "Depósito a 12 meses",
-   "tae": 3.0,
-   "tin": 2.967,
-   "plazoMeses": 12,
-   "plazoTexto": "12 meses",
-   "minimo": 5000,
-   "maximo": 100000,
-   "condiciones": "Solo dinero procedente de otra entidad y residentes en España. Cancelación total posible (desde los 60 días si el dinero vino de fuera), devolviendo los intereses cobrados.",
-   "garantia": "Fondo de Garantía de Depósitos de España (100.000 €)",
-   "pais": "España",
-   "url": "https://www.wizink.es/public/productos-ahorro/deposito-plazo-fijo",
-   "fuente": "web de WiZink",
-   "nota": "Intereses trimestrales. También a 18 meses al 2,85 % TAE y a 36 meses al 2,60 % TAE."
-  },
-  {
-   "banco": "ING",
-   "producto": "Depósito Bienvenida",
-   "tae": 3.0,
-   "tin": 2.967,
-   "plazoMeses": 3,
-   "plazoTexto": "3 meses",
-   "maximo": 50000,
-   "condiciones": "Solo clientes nuevos de ING (un único depósito), con Cuenta NARANJA. Sin aportaciones adicionales; si se cancela antes, rinde un 0,87 % TAE. Oferta hasta el 31 de diciembre.",
-   "garantia": "Fondo de Garantía de Depósitos de Países Bajos (100.000 €), sucursal en España",
-   "pais": "Países Bajos (sucursal en España)",
-   "url": "https://www.ing.es/depositos-naranja",
-   "fuente": "web de ING",
-   "nota": "Sin importe mínimo. Para clientes actuales, los Depósitos NARANJA dan como mucho un 2,00 % TAE a 12 meses hasta 50.000 €."
-  },
-  {
-   "banco": "Banca March (Avantio)",
-   "producto": "Depósito Flexible a 12 meses",
-   "tae": 2.8,
-   "tin": 2.8,
-   "plazoMeses": 12,
-   "plazoTexto": "12 meses",
-   "minimo": 30000,
-   "maximo": 300000,
-   "condiciones": "Solo clientes nuevos residentes en España, con Cuenta Avantio. Si lo cancelas antes, cobras un 1,51 % TAE.",
-   "garantia": "Fondo de Garantía de Depósitos de España (100.000 €)",
-   "pais": "España",
-   "url": "https://www.helpmycash.com/mejores-depositos/",
-   "fuente": "helpmycash.com (21 de octubre) y rankia.com",
-   "nota": "Oferta válida hasta el 31 de octubre de 2026. A 6 meses, 2,26 % TAE."
-  },
-  {
-   "banco": "Self Bank",
-   "producto": "Depósito a 12 meses",
-   "tae": 2.75,
-   "tin": 2.72,
-   "plazoMeses": 12,
-   "plazoTexto": "12 meses",
-   "minimo": 6000,
-   "condiciones": "Solo clientes nuevos, con Cuenta Self; un depósito por titular, promoción limitada a 40 millones de euros. Si se cancela, no se cobran los intereses del trimestre en curso.",
-   "garantia": "Fondo de Garantía de Depósitos de España (100.000 €)",
-   "pais": "España",
-   "url": "https://www.rankia.com/blog/mejores-depositos/5753068-mejores-depositos-espanoles",
-   "fuente": "rankia.com (octubre)",
-   "nota": "Intereses trimestrales. Rankia da como máximo 100.000 € en un sitio y 1.000.000 € en otro, por eso no se indica."
-  }
- ],
- "anteriores": [
-  {
-   "fechaTexto": "lunes 19 de octubre",
-   "mejor": {
-    "banco": "MyInvestor",
-    "tae": 3.0
-   }
-  },
-  {
-   "fechaTexto": "domingo 18 de octubre",
-   "mejor": {
-    "banco": "MyInvestor",
-    "tae": 3.1
-   }
-  }
- ],
- "fuentes": [
-  "web de MyInvestor",
-  "web de WiZink",
-  "web de ING",
-  "helpmycash.com (21 de octubre)",
-  "rankia.com (octubre)"
- ],
- "nota": "Solo bancos con IBAN español. MyInvestor, WiZink e ING empatan al 3,00 % TAE; MyInvestor va primero por su TAE sin vinculaciones y por tener menos condiciones, e ING último de los tres por ser solo para clientes nuevos y a 3 meses. Fuera del ranking: Facto (rankia da un 2,78 % TAE desde 9 meses, pero no se ha podido comprobar en su web ni confirmar su IBAN), Deutsche Bank (2,50 % a 12 meses; hasta 3,50 % con nómina, tarjeta y fondo), Openbank (1,25 % a 6 meses; 2,75 % con nómina) y Banco Mediolanum (hasta 3,00 %, pero exige invertir en fondos). Volkswagen Bank (3,15 % a 12 meses) y Renault Bank (hasta 3,34 % a 36 meses) son sucursales de bancos alemán y francés sin IBAN español confirmado, así que se dejan fuera. Los depósitos con más TAE de bancos extranjeros o vía Raisin (SME Bank, CA Auto Bank, Banca Sistema, BluOr, MiraltaBank…) no tienen IBAN español."
-}
+{"actualizado":"2026-10-26T08:41:46+01:00","fechaTexto":"lunes 26 de octubre","estado":"ok",
+"top":[
+{"banco":"MyInvestor","producto":"Depósito a 12 meses","tae":3.0,"tin":3.0,"plazoMeses":12,"plazoTexto":"12 meses","minimo":10000,"maximo":100000,"condiciones":"Sin vinculaciones: 3,00 % TAE. Con una cartera automatizada de al menos 150 € (contratada 15 días antes del vencimiento) sube al 3,10 % TAE. Con MyInvestor Premium (suscripción de pago) hay un depósito a 12 meses al 3,50 % TAE (1.000–25.000 €). Requiere cuenta MyInvestor; promoción hasta el 31 de octubre de 2026. Se puede cancelar en cualquier momento, pero sin cobrar intereses.","garantia":"Fondo de Garantía de Depósitos de España (100.000 €)","pais":"España","url":"https://myinvestor.es/depositos/","fuente":"web de MyInvestor","nota":"A 6 meses da un 2,75 % TAE (3,00 % con cartera automatizada)."},
+{"banco":"WiZink","producto":"Depósito a 12 meses","tae":3.0,"plazoMeses":12,"plazoTexto":"12 meses","minimo":5000,"condiciones":"Se puede recuperar el dinero cuando se quiera (según HelpMyCash).","garantia":"Fondo de Garantía de Depósitos de España (100.000 €)","pais":"España","url":"https://www.wizink.es/public/productos-ahorro/deposito-plazo-fijo","fuente":"helpmycash.com (26 de octubre)","nota":"La web de WiZink no se pudo abrir hoy; datos de HelpMyCash. También a 36 meses al 2,60 % TAE."},
+{"banco":"ING","producto":"Depósito Bienvenida","tae":3.0,"plazoMeses":3,"plazoTexto":"3 meses","maximo":50000,"condiciones":"Solo clientes nuevos de ING, con Cuenta NARANJA y transferencia desde otro banco. Oferta hasta el 31 de diciembre. La cancelación anticipada tiene penalización (rinde menos).","garantia":"Fondo de Garantía de Depósitos de Países Bajos (100.000 €), sucursal en España","pais":"Países Bajos (sucursal en España)","url":"https://www.ing.es/depositos-naranja","fuente":"web de ING y rankia.com","nota":"Sin importe mínimo según Rankia. La web de ING no indica el TIN."},
+{"banco":"Banca March (Avantio)","producto":"Depósito Flexible Avantio a 12 meses","tae":2.8,"tin":2.8,"plazoMeses":12,"plazoTexto":"12 meses","minimo":30000,"maximo":300000,"condiciones":"Solo clientes nuevos residentes en España que se den de alta online, con Cuenta Digital Avantio (75 € por semestre si no se mantienen 10.000 € invertidos). Oferta hasta el 31 de octubre de 2026. Cancelación total en cualquier momento al 1,51 % TAE. Avantio tiene además un Depósito Bonificado a 12 meses: 2,50 % TAE base, hasta 3,50 % con dinero nuevo o fondos (15.000 €), tarjeta (6.000 €/año) y Bizum; 30.000–150.000 €, hasta el 30 de noviembre.","garantia":"Fondo de Garantía de Depósitos de España (100.000 €)","pais":"España","url":"https://avantio.bancamarch.es/es/cuentas-y-depositos/deposito-12-meses/","fuente":"web de Avantio (Banca March)","nota":"La web indica en sus preguntas frecuentes un mínimo de 10.000 €, pero las condiciones del producto dicen 30.000 €. A 6 meses, 2,26 % TAE (Rankia)."},
+{"banco":"Self Bank","producto":"Depósito a 12 meses","tae":2.75,"tin":2.72,"plazoMeses":12,"plazoTexto":"12 meses","minimo":6000,"condiciones":"Solo clientes nuevos, con Cuenta Self; un depósito por titular, sin renovación automática. Promoción limitada a 40 millones de euros. Si se cancela, no se cobran los intereses del trimestre en curso.","garantia":"Fondo de Garantía de Depósitos de España (100.000 €)","pais":"España","url":"https://www.rankia.com/blog/mejores-depositos/5753068-mejores-depositos-espanoles","fuente":"rankia.com (19 de octubre)","nota":"Intereses trimestrales. Rankia da como máximo 100.000 € en un sitio y 1.000.000 € en otro, por eso no se indica."}
+],
+"anteriores":[
+{"fechaTexto":"miércoles 21 de octubre","mejor":{"banco":"MyInvestor","tae":3.0}},
+{"fechaTexto":"lunes 19 de octubre","mejor":{"banco":"MyInvestor","tae":3.0}},
+{"fechaTexto":"domingo 18 de octubre","mejor":{"banco":"MyInvestor","tae":3.1}}
+],
+"fuentes":["web de MyInvestor","web de ING","web de Avantio (Banca March)","helpmycash.com (26 de octubre)","rankia.com (19 de octubre)"],
+"nota":"Solo bancos con IBAN español. MyInvestor, WiZink e ING empatan al 3,00 % TAE; MyInvestor va primero por estar comprobado en su web y tener menos condiciones, e ING tercero por ser solo para clientes nuevos y a 3 meses. Fuera del ranking: Facto (2,78 % TAE desde 9 meses según Rankia, IBAN español no confirmado), Deutsche Bank (2,50 % a 12 meses; hasta 3,50 % con nómina, tarjeta y fondo), Openbank (1,25 % a 6 meses; 2,75 % con nómina) y Banco Mediolanum (hasta 3,00 %, exige invertir en fondos). Volkswagen Bank (3,15 % a 12 meses) y Renault Bank (hasta 3,34 % a 36 meses) son sucursales de bancos alemán y francés sin IBAN español confirmado. MiraltaBank (hasta 3,25 %) se contrata vía Raisin, y SME Bank, Fjord Bank, CA Auto Bank, Banca Sistema, BluOr y Haitong son extranjeros o vía Raisin."}
