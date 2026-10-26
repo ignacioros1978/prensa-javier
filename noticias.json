@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-25",
- "fechaTexto": "domingo 25 de octubre",
- "actualizado": "2026-10-25T07:03:25+01:00",
+ "fecha": "2026-10-26",
+ "fechaTexto": "lunes 26 de octubre",
+ "actualizado": "2026-10-26T07:13:03+01:00",
  "portada": [
-  "to1",
   "ld1",
-  "ed1",
   "ee2",
-  "ed2",
+  "ok1",
+  "ed1",
+  "ee3",
+  "ld3",
+  "edi1",
   "ld2",
-  "edi3",
-  "ed3",
-  "ee3"
+  "to1"
  ],
  "diarios": [
   {
@@ -20,21 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "El Supremo exige la lista de los nuevos votantes de la Ley de Nietos",
-     "resumen": "Según Libertad Digital, que dice haber visto el auto, el Tribunal Supremo ha dado un ultimátum al Gobierno. La Abogacía del Estado le informó de que se han revisado 31.390 expedientes afectados por la Ley de Nietos. Solo 91 personas han acreditado que descienden de exiliados. El tribunal reclama la lista con los nombres de las 163.020 personas que obtuvieron la nacionalidad por esta vía y constan en el censo de españoles en el exterior. Considera absolutamente necesario ese listado e incomprensible que no se haya entregado mes y medio después del primer auto. Advierte de una multa de mil euros a cada ministro, a Bolaños y a Albares, si no cumplen. El Supremo teme que, con las elecciones ya convocadas, los afectados se queden sin poder votar por la inacción de la Administración. El artículo no recoge la respuesta del Gobierno.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-24/el-supremo-retrata-la-ley-de-nietos-solo-91-personas-han-acreditado-el-exilio-de-sus-ascendientes-7481025/"
+     "titular": "Disturbios en Barcelona: unos 128 detenidos y más de veinte comercios dañados",
+     "resumen": "La noche del sábado veinticuatro de octubre hubo graves disturbios en el centro de Barcelona. Una concentración no autorizada, convocada por redes sociales, empezó hacia las seis de la tarde en la plaza de Cataluña y acabó en saqueos e incendios de mobiliario urbano. Según Libertad Digital, participaron unas quinientas personas. La policía catalana detuvo a unas ciento veintiocho, y más de setenta eran menores. Resultaron heridos quince agentes, cuatro de ellos de gravedad, y unos veintitrés comercios sufrieron daños. Los bomberos atendieron treinta y tres incendios de contenedores y papeleras. El alcalde, Jaume Collboni, aseguró que no quedará impune y que el Ayuntamiento reclamará responsabilidades, también a los padres de los menores. La consejera de Interior, Núria Parlon, defendió la actuación policial, y el presidente catalán, Salvador Illa, condenó la violencia.",
+     "url": "https://www.libertaddigital.com/cataluna/2026-10-25/disturbios-en-barcelona-100-detenidos-14-comercios-vandalizados-y-una-noche-de-incendios-y-saqueos-7481493/"
     },
     {
      "id": "ld2",
-     "titular": "Sánchez graba un vídeo electoral con el Guernica de fondo",
-     "resumen": "Pedro Sánchez difundió el sábado en su cuenta de X un vídeo grabado en el Museo Reina Sofía, de Madrid, con el Guernica de Picasso a su espalda. En él defiende su lema de no a la guerra. Dice que España ha sostenido que ninguna guerra es inevitable y que ninguna vida vale menos que otra. Asegura que su Gobierno aplica los mismos principios en todos los conflictos y que se negó a recortar un solo céntimo del Estado del bienestar para subir el gasto militar. Según Libertad Digital, que es muy crítico con el Gobierno, el vídeo ha provocado quejas por usar un museo público en precampaña. Miguel Tellado, del Partido Popular, acusó a Sánchez de apropiarse del Guernica para un anuncio electoral. El artículo no recoge respuesta del Gobierno ni del museo. Las elecciones son el 29 de noviembre.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-24/pedro-sanchez-se-cuela-en-el-reina-sofia-para-dar-un-sermon-electoral-junto-al-guernica-7481371/"
+     "titular": "Ceuta pierde un millón de euros al día por la crisis migratoria, según su presidente",
+     "resumen": "Libertad Digital cuenta cómo la crisis migratoria golpea a los negocios de Ceuta. La entrada masiva de personas desde Marruecos comenzó a finales de julio. Según el presidente de la ciudad, Juan Jesús Vivas, Ceuta pierde cerca de un millón de euros al día. La Cámara de Comercio calcula unas pérdidas de unos setenta y cinco millones hasta el treinta de septiembre, alrededor del cuatro por ciento de la riqueza anual de la ciudad. Algunas tiendas de calzado y deporte hablan de caídas de ventas de hasta la mitad. Los hosteleros dan por perdida la campaña de verano y algún local ha cerrado. Varios comerciantes han creado una asociación para recuperar la actividad y critican que el Gobierno central los tiene abandonados. El artículo no recoge la versión del Gobierno.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-10-25/el-terrible-impacto-de-la-invasion-en-los-negocios-y-empresarios-de-ceuta-estamos-paralizados-7480157/"
     },
     {
      "id": "ld3",
-     "titular": "Plus Ultra envió millones al extranjero tras recibir el rescate, según Libertad Digital",
-     "resumen": "Libertad Digital asegura que la documentación entregada por el ex consejero delegado de Plus Ultra, Roberto Roselli, muestra transferencias millonarias a Venezuela y Puerto Rico justo después de recibir el primer pago del rescate público. La aerolínea obtuvo un rescate de 53 millones de euros, y el primer desembolso fue de 34 millones. Entre las operaciones señaladas hay cinco millones de dólares enviados a un banco de Puerto Rico en septiembre de 2021, que el departamento de cumplimiento del banco bloqueó. En enero de 2023 se habrían enviado más de cuatro millones de dólares a una cuenta en Venezuela, justificados como alquileres. El periódico cita informes de la Policía y reconoce que no ha podido verificar los datos. El artículo no recoge la versión de Plus Ultra, de la SEPI, del Gobierno ni de Zapatero.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-24/plus-ultra-disparo-sus-transferencias-a-venezuela-y-puerto-rico-nada-mas-recibir-el-primer-tramo-del-rescate-7480851/"
+     "titular": "Sánchez evita explicar por qué el PSOE no se querella contra Leire Díez",
+     "resumen": "Según Libertad Digital, el presidente Pedro Sánchez eludió hasta tres veces una pregunta de El País, en una entrevista publicada el domingo veinticinco de octubre. La pregunta era por qué el PSOE no ha presentado una querella contra Leire Díez, antigua militante socialista investigada por presuntas maniobras contra jueces y fiscales. Sánchez respondió que el partido la dio de baja en pocos días, que se trata de estrategias judiciales y que el PSOE es ajeno a esas actuaciones. El juez Santiago Pedraz ha pedido al partido información sobre pagos a abogados y consultoras entre dos mil veintiuno y dos mil veinticinco, con un plazo de quince días. Sánchez dijo que lo de Ábalos fue su mayor error y que ha pedido perdón. Las elecciones generales son el veintinueve de noviembre.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-25/sanchez-evita-hasta-tres-veces-explicar-a-el-pais-por-que-el-psoe-no-se-querella-contra-leire-diez-7481509/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Disturbios en Barcelona: cien detenidos y comercios saqueados",
-     "resumen": "El sábado por la tarde hubo graves disturbios en la plaza de Cataluña, en Barcelona. Según los Mossos de Esquadra, unos 500 jóvenes, convocados por redes sociales y en su mayoría encapuchados, lanzaron piedras a la policía, quemaron contenedores y mobiliario urbano y saquearon comercios. Se desplegaron más de 220 agentes de los Mossos y la Guardia Urbana. Hubo al menos 100 detenidos, una cuarta parte menores de edad. La consejera de Interior, Núria Parlon, habló de 14 comercios vandalizados o saqueados y dijo que eran grupos no organizados que no defendían ningún derecho. El presidente Salvador Illa recordó que protestar es un derecho, pero que agredir y destrozar no lo es. El alcalde, Jaume Collboni, anunció consecuencias para los mayores de edad y para los responsables de los menores. Según El Español, los jóvenes intentaron entrar en una acampada por la vivienda cercana, pero sus participantes se lo impidieron.",
+     "titular": "Unos seiscientos jóvenes convocados por redes arrasan el centro de Barcelona",
+     "resumen": "El sábado veinticuatro de octubre por la tarde, unos seiscientos jóvenes, la mayoría encapuchados, se concentraron en la plaza de Cataluña de Barcelona tras una convocatoria en redes sociales. Lanzaron piedras, quemaron contenedores y saquearon comercios sin una reivindicación clara. Según El Español, los Mossos detuvieron al menos a ciento veintiocho personas, más de setenta de ellas menores. Hubo veintitrés comercios afectados y quince agentes heridos, cuatro de gravedad. Se cerraron dos estaciones de tren de la plaza. Desde hacía tres semanas había una acampada por la vivienda en ese lugar, y sus organizadores impidieron que los jóvenes entraran. Interior ve un posible reflejo de protestas en Francia e Italia. Illa condenó la violencia, y Feijóo dijo que España necesita un cambio.",
      "url": "https://www.elespanol.com/espana/20261024/saqueos-vandalismo-barcelona-concentracion-jovenes-antisistema-acaba-detenidos/1003744433857_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Feijóo promete que los corruptos pagarán y no habrá indultos",
-     "resumen": "En un acto de precampaña en Vigo, ante unas dos mil personas, el líder del Partido Popular, Alberto Núñez Feijóo, prometió que los implicados en casos de corrupción del PSOE pagarán por sus actos y que su Gobierno no los indultará. Citó a Sánchez, a Zapatero, a Leire Díez y a Ábalos. Según sus cifras, que el periódico no verifica, el Gobierno tiene 17 sumarios abiertos y 131 imputados. Prometió quitar el IVA a los alimentos básicos y a la electricidad mientras dure la inflación, bajar impuestos a rentas bajas y jóvenes, y eximir del IRPF a autónomos que facturen menos de 85.000 euros. También anunció el desalojo de okupas en 48 horas y un millón de viviendas. Acusó a Sánchez de agitar la calle y preguntó si queremos los disturbios de Francia. Pidió el voto el 29 de noviembre. El artículo no recoge respuesta del PSOE.",
-     "url": "https://www.elespanol.com/espana/politica/20261024/feijoo-promete-sanchez-zp-leire-abalos-pagaran-actos-sabra-no-vamos-indultar-corruptos/1003744433542_0.html"
+     "titular": "Un mando de la Guardia Civil abrió la puerta de Ceuta e incitó a entrar, según El Español",
+     "resumen": "Una investigación de El Español, basada en testigos y fuentes que no se identifican, sostiene que el teniente coronel Lobo, de la Guardia Civil en Ceuta, ordenó abrir la puerta fronteriza del Tarajal el treinta de julio. Según el diario, él y sus agentes animaron a los migrantes a entrar en la ciudad. Los mandos de la Policía Nacional querían mantener la frontera cerrada, y el inspector jefe llegó a guardar la llave. Lobo habría argumentado que cerrarla podía provocar una avalancha con muertes. El diario cuenta que hubo un enfrentamiento entre ambos. Más de ochenta mil personas entraron, según datos internos que cita el medio. La jueza María Tardón, de la Audiencia Nacional, ha citado a declarar a los dos mandos este lunes. El texto no recoge respuesta oficial.",
+     "url": "https://www.elespanol.com/espana/20261025/teniente-coronel-lobo-agentes-jalearon-invasores-abrir-puerta-ceuta-ciudad/1003744433091_0.html"
     },
     {
      "id": "ee3",
-     "titular": "El Rey Felipe sexto se opera de cataratas en Oviedo",
-     "resumen": "El rey Felipe sexto fue operado de cataratas en el ojo izquierdo el sábado por la noche, en torno a las nueve y media, en el Instituto Oftalmológico Fernández-Vega de Oviedo. Fuentes de la Zarzuela confirmaron la operación a El Español. Según el periódico, fue un procedimiento rutinario, duró unos treinta minutos y se hizo sin complicaciones. El Rey pasará la noche en el centro para su seguimiento. La intervención llegó justo después de terminar los actos de los Premios Princesa de Asturias, que había seguido varios días en Oviedo. El sábado visitó la Cofradía de Santa Ana de Llanes, premiada como Pueblo Ejemplar. Se espera que regrese a Madrid este domingo. Por ahora mantiene su agenda del lunes, la apertura del curso de las Reales Academias del Instituto de España, en la Real Academia de Jurisprudencia y Legislación.",
-     "url": "https://www.elespanol.com/espana/20261024/rey-felipe-vi-operado-cataratas-ojo-izquierdo-pasara-noche-hospital-oviedo/1003744433843_0.html"
+     "titular": "Feijóo presenta a sus candidatos en Salamanca y promete un millón de viviendas públicas",
+     "resumen": "El domingo veinticinco de octubre, Alberto Núñez Feijóo presentó en Salamanca a los cabezas de lista del Partido Popular para las elecciones generales del veintinueve de noviembre. Según El Español, los llamó arquitectos de la reconstrucción y los contrapuso a lo que describió como aforados bajo sospecha en torno a Sánchez. Condenó los disturbios de Barcelona y acusó a Sánchez de jugar con fuego. Anunció que viajará a Barcelona la próxima semana. Prometió construir un millón de viviendas públicas, bajar impuestos a los trabajadores, blindar las pensiones con subidas según el IPC y hacer una auditoría de las cuentas públicas. El público le aplaudió y coreó la palabra presidente. El texto no recoge respuestas del PSOE.",
+     "url": "https://www.elespanol.com/castilla-y-leon/region/salamanca/20261025/feijoo-exhibe-arquitectos-reconstruccion-frente-coleccion-aforados-sospecha-sanchez/1003744434057_0.html"
     }
    ]
   },
@@ -68,21 +68,9 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "La Fiscalía pide imputar a Zapatero por malversación por las joyas",
-     "resumen": "Según El Debate, la Fiscalía Anticorrupción pide imputar al expresidente Rodríguez Zapatero por un nuevo delito de malversación agravada, que puede conllevar de cuatro a ocho años de cárcel. Las joyas, valoradas en cerca de 1,3 millones de euros, fueron halladas en su despacho. Zapatero sostiene que se las regaló el rey de Arabia Saudí en 2007 por deferencia. La Fiscalía responde que, por recibirlas siendo presidente, serían bienes públicos. Recuerda que en 2012 entregó otros regalos al Patrimonio del Estado, pero no estas joyas, lo que, a su juicio, muestra que era consciente de su obligación. También cuestiona las cartas a la Casa Real saudí que aporta la defensa, por no llevar sello. El juez José Luis Calama investiga el caso Plus Ultra. Todo son alegaciones de las partes: nada está probado.",
-     "url": "https://www.eldebate.com/espana/20261024/fiscalia-juez-cuestionan-version-zapatero-oculto-joyas-actuacion-consciente-desviada-normas_473322.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "Ábalos responde a Sánchez desde la cárcel",
-     "resumen": "El exministro José Luis Ábalos, preso en Soto del Real, respondió en sus redes sociales a Pedro Sánchez. El jueves, en el programa La Revuelta de Televisión Española, Sánchez había dicho que Ábalos fue una decepción. Según El Debate, Ábalos contestó que, si se habla de decepciones, la lista es larga y compartida. Criticó a quienes se suman ahora a un linchamiento cómodo y olvidan que la lealtad que hoy desprecian les permitió llegar adonde están. Acusó a Sánchez de defender la presunción de inocencia de otros, mientras que con él se vulneró desde el primer día. Anunció que recurrirá al Tribunal Constitucional. Dijo también que el verdadero fracaso del Gobierno es no atreverse con el llamado Estado profundo. El artículo solo recoge la reacción de Ábalos, sin respuesta del PSOE.",
-     "url": "https://www.eldebate.com/espana/20261024/abalos-responde-sanchez-desde-carcel-verlo-revuelta-hablamos-decepciones_473338.html"
-    },
-    {
-     "id": "ed3",
-     "titular": "Abascal pide alerta máxima hasta las elecciones del 29 de noviembre",
-     "resumen": "El líder de Vox, Santiago Abascal, celebró el sábado un mitin en Palma ante unas 1.500 personas, según la Delegación del Gobierno, con seguridad reforzada. Un día antes, su acto en Mahón, en Menorca, terminó con incidentes que El Debate atribuye a la ultraizquierda. Abascal lanzó una alerta máxima hasta el 29 de noviembre y pidió a sus seguidores no caer en provocaciones. Dijo que la violencia está orquestada y permitida desde las instituciones. Acusó a Sánchez de traición y de liderar un gobierno criminal. Afirmó que no se presenta a la vicepresidencia del Gobierno, frase que el periódico interpreta como disposición a pactar con el Partido Popular. Habló de inmigración, de repatriaciones y de seguridad. Después viajó a Ibiza para otro mitin. El artículo recoge casi solo sus palabras, sin respuesta de otros partidos.",
-     "url": "https://www.eldebate.com/espana/baleares/20261024/abascal-lanza-alerta-maxima-hasta-29n-estan-desesperados-usar-violencia-trampas_473425.html"
+     "titular": "María Corina Machado vuelve a Venezuela",
+     "resumen": "La líder opositora venezolana y premio Nobel de la Paz, María Corina Machado, ha regresado a Venezuela. Según El Debate, su primera aparición fue el domingo veinticinco de octubre en el santuario de la Divina Pastora, en el estado de Lara, donde la recibieron seguidores con entusiasmo. Ella escribió que estaba allí con ellos. Había intentado volver siete veces sin éxito; en el último intento, desde Panamá, una aerolínea no la dejó embarcar porque Venezuela había cerrado su espacio aéreo. El diario señala que su regreso habría sido muy complicado sin el visto bueno de Washington. Donald Trump dijo que espera que esté a salvo, y el secretario de Estado, Marco Rubio, afirmó que se dieron las condiciones para un regreso seguro. Machado se negó a formar parte de la mesa de negociación con el Gobierno de Delcy Rodríguez.",
+     "url": "https://www.eldebate.com/internacional/20261025/maria-corina-esta-venezuela_473634.html"
     }
    ]
   },
@@ -92,21 +80,9 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Los disturbios de Barcelona dejan un centenar de detenidos",
-     "resumen": "Según The Objective, una protesta juvenil no comunicada reunió el sábado a cientos de jóvenes en la plaza de Cataluña, en Barcelona, con el lema institutos indignados, tomado de las movilizaciones de estudiantes en Francia. Los incidentes empezaron hacia las seis de la tarde. En el momento de más gente había unos 600 jóvenes, según la consejera de Interior, Núria Parlon. Los Mossos cargaron y detuvieron a un centenar, una cuarta parte menores. Encapuchados destrozaron escaparates, saquearon tiendas y quemaron mobiliario y toldos, y levantaron barricadas. Parlon cifró en 14 los comercios saqueados o vandalizados. Se cerraron dos estaciones de tren de la plaza. Illa condenó la violencia, Collboni avisó de consecuencias también para los padres de menores implicados, y Feijóo dijo que España necesita un cambio. El artículo no informa de heridos.",
-     "url": "https://theobjective.com/espana/cataluna/2026-10-25/protestas-barcelona-centenar-detenidos-menores/"
-    },
-    {
-     "id": "to2",
-     "titular": "Las hijas de Zapatero preparan su defensa en el caso Plus Ultra",
-     "resumen": "Según The Objective, que cita fuentes del caso y el entorno de las hermanas, Laura y Alba Rodríguez Espinosa, hijas de Zapatero e imputadas en el caso Plus Ultra, preparan con su abogado un dosier para demostrar que su agencia, Whathefav, hizo trabajos reales. Argumentarán que cobraban una cuota mensual, como una suscripción, por asesoría de comunicación. Algunos antiguos clientes han recibido peticiones para aportar documentos. La Policía sostiene que la agencia canalizaba pagos. Una consultora vinculada a Zapatero le pagó 239.755 euros entre 2020 y 2025. Otra empresa transfirió 561.440 euros, y el periódico califica de fuera de mercado el medio millón cobrado por una web y un vídeo. Las hermanas declararán en la Audiencia Nacional el 30 de noviembre, un día después de las elecciones. El artículo no incluye declaraciones directas de ellas ni de sus abogados.",
-     "url": "https://theobjective.com/espana/2026-10-25/hijas-zapatero-antiguos-clientes/"
-    },
-    {
-     "id": "to3",
-     "titular": "El Gobierno tiene sin ejecutar casi tres de cada cuatro euros de inversión",
-     "resumen": "Según The Objective, con datos de la Intervención General del Estado, la Administración central cerró agosto con 14.446 millones de euros de inversión pública sin ejecutar. De 19.811 millones de crédito disponible, solo se habían reconocido 5.365 millones, una ejecución del 27,1 por ciento. España sigue con los presupuestos prorrogados de 2023, ampliados con modificaciones de crédito. El artículo da posibles explicaciones, como los proyectos de varios años, sobre todo en defensa, y las licitaciones. Aclara que la cifra no significa que el dinero se haya perdido ni que las obras estén paradas, y que el desfase aún puede corregirse antes de fin de año. Tampoco corresponde a fondos europeos pendientes. El autor opina que es un indicador de bajo ritmo, pero que los datos no prueban retener gasto por motivos electorales. No hay respuesta oficial.",
-     "url": "https://theobjective.com/economia/2026-10-25/gobierno-euros-inversion-publica/"
+     "titular": "Un consulado en México tardó un mes en hallar expedientes de exiliados reales para un acto del ministro Torres",
+     "resumen": "Según The Objective, un empleado del Consulado General de España en México cuenta que el personal tardó más de un mes en encontrar expedientes de exiliados reales. Eran para un acto del ministro Ángel Víctor Torres, en la residencia del embajador, por el aniversario del exilio español, en junio de dos mil veinticuatro. Según el medio, en Ciudad de México se han tramitado unas cuarenta mil nacionalidades, y unas sesenta mil en todo el país. Tras la revisión solo se localizaron entre cuarenta y cincuenta expedientes de exiliados de la Guerra Civil o del franquismo. Muchos solicitantes eran descendientes. La información forma parte de una serie de reportajes del diario sobre la concesión de pasaportes en el extranjero y se apoya en testimonios anónimos. El artículo no incluye respuesta del Ministerio.",
+     "url": "https://theobjective.com/espana/2026-10-25/mexico-mes-hallar-nietos-torres/"
     }
    ]
   },
@@ -116,21 +92,9 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "OKDiario confronta a la consejera vasca que acercó a 46 presos de ETA",
-     "resumen": "OKDiario cuenta que abordó en San Sebastián a María Jesús San José, consejera de Justicia del Gobierno vasco, socialista, por la semilibertad concedida a 46 presos de ETA. La periodista le preguntó si no traicionaba a los socialistas asesinados por la banda. Ella respondió brevemente, sin contestar a la pregunta de fondo, y su escolta cortó la conversación. Según el periódico, hay 34 terceros grados y 12 regímenes flexibles. Entre los beneficiados cita a condenados por el asesinato de Fernando Buesa y de otros políticos y periodistas. La asociación de víctimas Covite exige su dimisión. La Fiscalía recurrió y la Audiencia Nacional revocó varios beneficios por prematuros. El Gobierno vasco lo forman el PNV y el PSE. El reportaje, de tono muy crítico, no recoge una respuesta oficial del Gobierno vasco ni del PSE.",
-     "url": "https://okdiario.com/espana/okdiario-sorprende-consejera-vasca-que-liberado-46-etarras-no-cree-usted-que-traiciona-socialistas-asesinados-eta-20619771"
-    },
-    {
-     "id": "ok2",
-     "titular": "Leonor pide mantener el entusiasmo en tiempos de desencanto",
-     "resumen": "La princesa Leonor pronunció el viernes en Oviedo su discurso en la entrega de los Premios Princesa de Asturias. Pidió mantener el entusiasmo en estos tiempos de desencanto social profundo. Señaló la indignación y el escepticismo de la sociedad y enumeró causas de malestar, como las desigualdades, los conflictos, los extremismos, la incertidumbre y el coste de la vida. Habló de la dificultad de planear una vida con buen trabajo y vivienda. Destacó que los premiados ayudan a mantener la confianza, y defendió la autenticidad frente a lo virtual y la imperfección humana frente a la perfección de la máquina. Recordó el discurso sobre la esperanza de María Zambrano en 1981. Entre los galardonados de este año están Patti Smith, Studio Ghibli, Leo Messi y Julian Barnes. El artículo no recoge reacciones.",
-     "url": "https://okdiario.com/espana/leonor-apela-mantener-entusiasmo-tiempos-desencanto-social-profundo-discurso-princesa-asturias-20619821"
-    },
-    {
-     "id": "ok3",
-     "titular": "OKDiario: Óscar López colocó a un amigo en Paradores",
-     "resumen": "Según OKDiario, el ministro Óscar López colocó a su amigo Alfredo Ruiz Mate en un puesto directivo de Paradores mientras él presidía la empresa pública, entre 2018 y 2021. Ruiz Mate, aparejador de Riaza, en Segovia, fue director de Infraestructura Hotelera, Mantenimiento y Decoración. Según el periódico, aparece en pliegos de contratación y firma expedientes. Mientras tanto siguió como administrador único de su pequeña inmobiliaria. Ambos son amigos desde jóvenes y miembros de una peña festiva de Riaza. El diario compara el caso con el del amigo de Pedro Sánchez, Iñaqui Carnicero. Las fuentes del artículo no están identificadas, y los datos de la empresa proceden del Registro Mercantil. El texto no incluye respuesta de López, de Paradores ni de Ruiz Mate. Según las fuentes del periódico, Ruiz Mate ya no está en Paradores.",
-     "url": "https://okdiario.com/espana/oscar-lopez-coloco-amigo-intimo-del-pueblo-puesto-directivo-paradores-20602663"
+     "titular": "La Fiscalía pide investigar a Zapatero por malversación por las joyas",
+     "resumen": "Según OKDiario, la Fiscalía Anticorrupción pidió el veintitrés de octubre al juez José Luis Calama que investigue también a José Luis Rodríguez Zapatero por malversación, por las joyas halladas en una caja fuerte el diecinueve de mayo. Se tasaron de forma preliminar en más de un millón trescientos mil euros. Sería el quinto delito que se le atribuye. La defensa dice que tres conjuntos fueron un regalo del rey de Arabia Saudí en dos mil siete y pide una comisión rogatoria a ese país. La Fiscalía la rechaza. Sostiene que, si eran un obsequio institucional, pertenecían al Estado, y que no figuran en el acta de regalos de dos mil doce. Considera que el delito no habría prescrito. El juez aún no ha decidido.",
+     "url": "https://okdiario.com/espana/fiscalia-suma-quinto-delito-contra-zapatero-malversacion-joyas-13-millones-20616598"
     }
    ]
   },
@@ -140,21 +104,9 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Feijóo apuesta por candidatos duros para competir con Vox",
-     "resumen": "Según elDiario.es, el líder del Partido Popular, Alberto Núñez Feijóo, ha elegido perfiles de línea dura en sus listas para las elecciones del 29 de noviembre, para competir con Vox, que según el periódico podría lograr un resultado récord. Cayetana Álvarez de Toledo irá de número dos por Madrid, detrás de Feijóo, y Borja Sémper de tres. Xavier García Albiol, alcalde de Badalona, encabezará la lista de Barcelona. Ester Muñoz irá de número uno por León y Alma Ezcurra se encarga del programa. Un joven de unos veinte años, Jon Echeverría, se presenta por Guipúzcoa. Feijóo dijo en la Cadena SER que Álvarez de Toledo ha trabajado con él de forma leal durante cuatro años. El periódico señala que la distancia con el PSOE en las encuestas se ha reducido a unos cinco puntos.",
-     "url": "https://www.eldiario.es/politica/feijoo-apuesta-perfiles-duros-competir-vox_1_13610039.html"
-    },
-    {
-     "id": "edi2",
-     "titular": "PSOE y Frente Amplio pactan listas conjuntas para el Senado",
-     "resumen": "El PSOE y el Frente Amplio, que agrupa a Sumar y sus aliados regionales, han acordado listas conjuntas para el Senado en 44 circunscripciones. El PSOE tendrá el 70 por ciento de los puestos y el Frente Amplio el 30 por ciento. Según elDiario.es, la izquierda alternativa no encabezará la lista en ninguna provincia. Compromís tendrá el número dos en Valencia. En 2023 el PSOE obtuvo 72 senadores y Sumar ninguno. Un informe interno del PSOE calcula que la alianza podría ganar unos 40 escaños más si mantiene todos los votos de 2023. Cree que podría arrebatar la primera plaza al PP en 11 provincias, entre ellas Madrid, Málaga, Córdoba y Valladolid. El periódico advierte de que estos cálculos son estimaciones y de que el PP y Vox negocian que Vox retire listas en algunas provincias, lo que podría reducir esas ganancias.",
-     "url": "https://www.eldiario.es/politica/frente-amplio-tendra-30-puestos-listas-conjuntas-psoe-senado_1_13611215.html"
-    },
-    {
-     "id": "edi3",
-     "titular": "Sánchez acepta la entrevista con Jordi Wild",
-     "resumen": "Según elDiario.es, Pedro Sánchez ha aceptado ser entrevistado por el youtuber Jordi Wild en su canal The Wild Project. Es el último de los cuatro candidatos en confirmar, después de Feijóo, Abascal y Ada Colau. Las entrevistas se emitirán el 13 de noviembre, con una hora de diferencia entre cada una. Durarán entre 50 y 90 minutos, según el candidato. Serán más relajadas que las habituales, pero con preguntas comunes a todos. No habrá edición del vídeo ni se retirará ningún fragmento. Dos periodistas independientes, fuera de cámara, comprobarán los datos que se mencionen. Wild anunció que serán entrevistas duras e inquisitivas, aunque con respeto y sin gritos. Dijo que también recibió peticiones de Podemos, Esquerra, Junts y otros partidos, pero que por falta de tiempo cree que será difícil atenderlas. El artículo no recoge más reacciones.",
-     "url": "https://www.eldiario.es/politica/pedro-sanchez-acepta-entrevista-jordi-wild_1_13611264.html"
+     "titular": "Una encuesta muestra a la izquierda recortando distancias, pero PP y Vox mantienen la mayoría",
+     "resumen": "Una encuesta de Ateneo del Dato para elDiario.es, realizada del veinte al veintidós de octubre a dos mil personas por internet, indica que el bloque de izquierdas recorta distancias. Aun así, el Partido Popular y Vox conservan la mayoría absoluta. El PP tendría un treinta y uno por ciento de los votos, el PSOE casi veintiocho y Vox casi veinte. Frente Amplio lograría un siete por ciento y Podemos un tres. Sumados, PP y Vox rondan el cincuenta y uno por ciento, frente al treinta y siete de las tres fuerzas de izquierda. La distancia baja de catorce coma seis a trece coma ocho puntos. El PP pierde dos puntos desde la anterior encuesta, y Vox sube seis décimas. Una de cada cinco personas votaría sobre todo para impedir que gobierne otro partido.",
+     "url": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html"
     }
    ]
   }
