@@ -320,8 +320,12 @@
         #img-view { position:fixed; inset:0; z-index:5200; background:#0b0f19; display:flex; flex-direction:column; }
         #img-view[hidden] { display:none !important; }
         #img-view .iv-x { position:absolute; top:max(12px,env(safe-area-inset-top)); right:12px; z-index:2; width:56px; height:56px; border-radius:50%; border:3px solid #fff; background:#0f172a; color:#fff; font-size:28px; font-weight:800; line-height:1; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.5); }
-        #img-view .iv-body { flex:1; overflow:auto; display:flex; align-items:center; justify-content:center; padding:80px 0 20px; -webkit-overflow-scrolling:touch; touch-action:pan-x pan-y pinch-zoom; }
-        #img-view img { max-width:100%; height:auto; display:block; }
+        #img-view .iv-body { position:absolute; inset:0; overflow:hidden; touch-action:none; }
+        #img-view img { position:absolute; left:0; top:0; transform-origin:0 0; max-width:none; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; }
+        #img-view .iv-bar { position:absolute; left:0; right:0; bottom:max(16px,env(safe-area-inset-bottom)); display:flex; justify-content:center; gap:12px; z-index:2; }
+        #img-view .iv-bar button { min-width:60px; height:56px; padding:0 16px; border-radius:28px; border:3px solid #fff; background:#0f172a; color:#fff; font-size:26px; font-weight:800; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.5); }
+        #img-view .iv-bar .iv-fit { font-size:16px; }
+        #img-view .iv-hint { position:absolute; left:0; right:0; top:max(84px,calc(env(safe-area-inset-top) + 74px)); text-align:center; color:#e2e8f0; font-size:15px; font-weight:700; pointer-events:none; z-index:2; }
         .tk-btn { display:flex; align-items:center; justify-content:center; gap:6px; width:100%; min-height:46px; margin:8px 0; border:2px solid #1d4ed8; border-radius:12px; background:#eff6ff; color:#1e3a8a; font-weight:800; font-size:15px; cursor:pointer; }
         .tk-empty { margin-top:10px; padding:16px; border-radius:14px; background:#fef3c7; border:2px solid #f59e0b; color:#78350f; font-weight:700; }
         .tk-card { margin-top:12px; padding:14px; border-radius:14px; border:2px solid #cbd5e1; background:#f8fafc; }
@@ -951,7 +955,7 @@
 
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
-<div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt=""></div></div>
+<div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt="" draggable="false"></div><div class="iv-bar"><button type="button" data-z="-1" aria-label="Alejar">－</button><button type="button" data-z="0" class="iv-fit">Ajustar</button><button type="button" data-z="1" aria-label="Acercar">＋</button></div><div class="iv-hint">Pellizca con dos dedos o toca dos veces para ampliar</div></div>
 <div id="app-container">
     <header style="position:relative;">
         <h1>🇬🇧 Londres · Dic 2026</h1>
@@ -1890,10 +1894,77 @@
     };
     // Al cerrar con la X se hace history.back(): ese «atrás» no debe cerrar también la pantalla de debajo
     let skipPop = false;
+    // Visor con zoom propio (la página tiene desactivado el zoom del navegador por el mapa)
+    const IV = { s: 1, tx: 0, ty: 0, w: 0, h: 0, pts: new Map(), pinch: null, pan: null, lastTap: 0 };
+    function ivBox() { return document.querySelector('#img-view .iv-body').getBoundingClientRect(); }
+    function ivFit() {
+        const B = ivBox(), img = document.querySelector('#img-view img');
+        if (!img.naturalWidth) return;
+        const r = Math.min(B.width / img.naturalWidth, (B.height - 150) / img.naturalHeight);
+        IV.w = img.naturalWidth * r; IV.h = img.naturalHeight * r;
+        img.style.width = IV.w + 'px'; img.style.height = IV.h + 'px';
+        IV.s = 1; ivClamp(); ivApply();
+    }
+    function ivClamp() {
+        const B = ivBox(), W = IV.w * IV.s, H = IV.h * IV.s;
+        IV.tx = W <= B.width ? (B.width - W) / 2 : Math.min(0, Math.max(B.width - W, IV.tx));
+        IV.ty = H <= B.height ? (B.height - H) / 2 : Math.min(0, Math.max(B.height - H, IV.ty));
+    }
+    function ivApply() { document.querySelector('#img-view img').style.transform = 'translate(' + IV.tx + 'px,' + IV.ty + 'px) scale(' + IV.s + ')'; }
+    function ivZoomAt(ns, px, py) {
+        ns = Math.max(1, Math.min(6, ns));
+        IV.tx = px - (px - IV.tx) * ns / IV.s; IV.ty = py - (py - IV.ty) * ns / IV.s; IV.s = ns;
+        ivClamp(); ivApply();
+    }
+    (function ivInit() {
+        const ov = document.getElementById('img-view'), body = ov.querySelector('.iv-body'), img = ov.querySelector('img');
+        img.addEventListener('load', ivFit);
+        window.addEventListener('resize', () => { if (!ov.hidden) ivFit(); });
+        const rel = e => { const B = ivBox(); return { x: e.clientX - B.left, y: e.clientY - B.top }; };
+        body.addEventListener('pointerdown', e => {
+            body.setPointerCapture && body.setPointerCapture(e.pointerId);
+            IV.pts.set(e.pointerId, rel(e));
+            if (IV.pts.size === 2) {
+                const [a, b] = [...IV.pts.values()];
+                IV.pinch = { d: Math.hypot(a.x - b.x, a.y - b.y) || 1, s: IV.s, mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2, tx: IV.tx, ty: IV.ty }; IV.pan = null;
+            } else if (IV.pts.size === 1) {
+                const p = rel(e), now = Date.now();
+                if (now - IV.lastTap < 300) { ivZoomAt(IV.s > 1.05 ? 1 : 2.5, p.x, p.y); IV.lastTap = 0; }
+                else IV.lastTap = now;
+                IV.pan = { x: p.x, y: p.y, tx: IV.tx, ty: IV.ty };
+            }
+        });
+        body.addEventListener('pointermove', e => {
+            if (!IV.pts.has(e.pointerId)) return;
+            IV.pts.set(e.pointerId, rel(e));
+            if (IV.pinch && IV.pts.size >= 2) {
+                const [a, b] = [...IV.pts.values()], P = IV.pinch;
+                const d = Math.hypot(a.x - b.x, a.y - b.y), mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+                const ns = Math.max(1, Math.min(6, P.s * d / P.d));
+                IV.s = ns; IV.tx = mx - (P.mx - P.tx) * ns / P.s; IV.ty = my - (P.my - P.ty) * ns / P.s;
+                ivClamp(); ivApply();
+            } else if (IV.pan && IV.s > 1) {
+                const p = rel(e); IV.tx = IV.pan.tx + p.x - IV.pan.x; IV.ty = IV.pan.ty + p.y - IV.pan.y; ivClamp(); ivApply();
+            }
+        });
+        const up = e => {
+            IV.pts.delete(e.pointerId);
+            if (IV.pts.size < 2) IV.pinch = null;
+            if (IV.pts.size === 1) { const p = [...IV.pts.values()][0]; IV.pan = { x: p.x, y: p.y, tx: IV.tx, ty: IV.ty }; }
+            if (!IV.pts.size) IV.pan = null;
+        };
+        body.addEventListener('pointerup', up); body.addEventListener('pointercancel', up);
+        body.addEventListener('wheel', e => { e.preventDefault(); const p = rel(e); ivZoomAt(IV.s * (e.deltaY < 0 ? 1.15 : 1 / 1.15), p.x, p.y); }, { passive: false });
+        ov.querySelectorAll('.iv-bar button').forEach(b => b.addEventListener('click', () => {
+            const z = +b.dataset.z, B = ivBox();
+            if (!z) ivFit(); else ivZoomAt(IV.s * (z > 0 ? 1.6 : 1 / 1.6), B.width / 2, B.height / 2);
+        }));
+    })();
     window.viewImg = function(src) {
-        const ov = document.getElementById('img-view');
-        ov.querySelector('img').src = src; ov.hidden = false; document.body.style.overflow = 'hidden';
-        ov.querySelector('.iv-body').scrollTop = 0;
+        const ov = document.getElementById('img-view'), img = ov.querySelector('img');
+        IV.pts.clear(); IV.pinch = IV.pan = null;
+        ov.hidden = false; document.body.style.overflow = 'hidden';
+        if (img.getAttribute('src') === src && img.complete) ivFit(); else img.src = src;
         history.pushState({ img: 1 }, '');
     };
     window.closeImg = function(fromPop) {
