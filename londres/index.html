@@ -310,6 +310,29 @@
         #day-full .df-share:disabled { opacity:.6; }
         #day-full .df-top { display:flex; justify-content:flex-end; align-items:center; padding:max(10px,env(safe-area-inset-top)) 12px 6px; }
         #day-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
+        #info-full { position:fixed; inset:0; z-index:5100; background:#fff; display:flex; flex-direction:column; }
+        #info-full[hidden] { display:none !important; }
+        #info-full .df-top { display:flex; align-items:center; gap:10px; padding:max(10px,env(safe-area-inset-top)) 12px 6px; }
+        #info-full .if-title { flex:1; font-size:20px; font-weight:800; color:#0f172a; }
+        #info-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
+        #info-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; font-size:16px; color:#1e293b; line-height:1.5; }
+        .tk-btn { display:flex; align-items:center; justify-content:center; gap:6px; width:100%; min-height:46px; margin-top:8px; border:2px solid #1d4ed8; border-radius:12px; background:#eff6ff; color:#1e3a8a; font-weight:800; font-size:15px; cursor:pointer; }
+        .tk-empty { margin-top:10px; padding:16px; border-radius:14px; background:#fef3c7; border:2px solid #f59e0b; color:#78350f; font-weight:700; }
+        .tk-card { margin-top:12px; padding:14px; border-radius:14px; border:2px solid #cbd5e1; background:#f8fafc; }
+        .tk-name { font-weight:800; font-size:17px; margin-bottom:8px; }
+        .tk-img { display:block; width:100%; max-width:420px; margin:0 auto 10px; background:#fff; border-radius:10px; }
+        .tk-row { display:flex; gap:10px; }
+        .tk-a { flex:1; display:flex; align-items:center; justify-content:center; min-height:48px; border-radius:12px; background:#1d4ed8; color:#fff; font-weight:800; text-decoration:none; }
+        .tk-tip { margin-top:12px; font-weight:700; color:#334155; }
+        .tv-h { margin:18px 0 8px; font-size:19px; font-weight:800; color:#0f172a; }
+        .tv-img { display:block; width:100%; border-radius:14px; border:1px solid #cbd5e1; }
+        .tv-card { margin-top:10px; padding:14px; border-radius:14px; background:#f8fafc; border:2px solid #cbd5e1; }
+        .tv-card h4 { margin:0 0 8px; font-size:17px; font-weight:800; color:#0f172a; }
+        .tv-leg { display:flex; gap:10px; padding:8px 0; border-top:1px solid #e2e8f0; }
+        .tv-leg:first-of-type { border-top:0; }
+        .tv-t { min-width:58px; font-weight:800; color:#0f172a; }
+        .tv-warn { margin-top:10px; padding:12px; border-radius:12px; background:#fef3c7; border:2px solid #f59e0b; color:#78350f; font-weight:700; }
+        .tv-wa { display:flex; align-items:center; justify-content:center; min-height:50px; margin-top:12px; border-radius:14px; background:#25D366; color:#063; font-weight:800; text-decoration:none; font-size:16px; }
         #day-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; }
 
         .section-block { margin-top: 16px; margin-bottom: 16px; }
@@ -912,6 +935,7 @@
 <body>
 
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
+<div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="app-container">
     <header style="position:relative;">
         <h1>🇬🇧 Londres · Dic 2026</h1>
@@ -926,6 +950,7 @@
             <div class="progress-bar-segment" style="background:#9b59b6;" title="Día 4"></div>
         </div>
         <a href="metro/?v=4" style="display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:10px;border-radius:14px;background:#e74c3c;color:#fff;text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.25)">🚇 Rutas de Metro</a>
+        <button type="button" onclick="openTravel()" style="display:flex;width:100%;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:8px;border:0;border-radius:14px;background:#1d4ed8;color:#fff;font-weight:800;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">✈️ Vuelos y traslados</button>
     </header>
 
     <div class="main-layout">
@@ -1660,7 +1685,7 @@
         winter_river: 'Todos los días 11:00–22:00 (10 nov–3 ene)',
         tower_bridge: 'Cruzar el puente: siempre y gratis · exposición y suelo de cristal 9:30–18:00',
         pier_butlers: 'Barcos a Westminster (diciembre): 12:00, 12:40, 13:20, 14:00, 14:40, 15:20…',
-        westminster_pier: 'Muelle con acceso sin escalones',
+        westminster_pier: 'Abierto siempre · muelle sin escalones (bien con carrito)',
         trafalgar: 'Plaza abierta siempre · árbol de Navidad iluminado al anochecer',
         sugarsin: 'Plaza y mercado cubierto: siempre · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00 · SugarSin: CERRADO temporalmente (reabrirá en un local cercano, sin fecha; mirar sugarsin.co.uk)',
         sg_d1: 'Restaurante · reservar si vais muchos',
@@ -1679,10 +1704,10 @@
     };
     // Puntos nuevos del crucero del día 2
     locations.push(
-        { id: 'pier_butlers', name: 'Crucero · Tower Bridge (Butler\'s Wharf Pier)', address: 'Butler\'s Wharf Pier, Shad Thames, SE1 2YE', lat: 51.5043, lng: -0.0722, day: 'd2', category: 'interes', emoji: '⛴️',
-          desc: 'Thames River Sightseeing hacia Westminster · 30–40 min · pasa por el HMS Belfast, la catedral de St Paul, el Globe y el London Eye.' },
-        { id: 'westminster_pier', name: 'Westminster Pier (llegada del barco)', address: 'Victoria Embankment, SW1A 2JH', lat: 51.5017, lng: -0.1235, day: 'd2', category: 'metro', emoji: '⚓',
-          desc: 'Llegada del crucero, justo al lado del Big Ben.' }
+        { id: 'pier_butlers', name: 'Crucero por el Támesis · salida Butler\'s Wharf Pier (Tower Bridge)', address: 'Butler\'s Wharf Pier, Shad Thames, SE1 2YE', lat: 51.5043, lng: -0.0722, day: 'd2', category: 'interes', emoji: '⛴️',
+          desc: 'Thames River Sightseeing · Tower Bridge → Westminster · billete SOLO IDA · 20–30 min · pasa por el HMS Belfast, St Paul, el Globe y el London Eye. Estar en el muelle a las 13:45.' },
+        { id: 'westminster_pier', name: 'Westminster Pier (llegada del crucero)', address: 'Victoria Embankment, SW1A 2JH', lat: 51.5017, lng: -0.1235, day: 'd2', category: 'interes', emoji: '⚓',
+          desc: 'Llegada del crucero, justo al lado del Big Ben. Muelle sin escalones.' }
     );
     locations.forEach(l => { if (HOURS[l.id]) l.hours = HOURS[l.id]; });
 
@@ -1721,7 +1746,9 @@
             { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla. No hace falta cruzarlo: el barco sale de este mismo lado. La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
             { t: '12:30', icon: '🍽️', title: 'Comida (temprano, con mesa reservada)', text: 'Comer a las 12:30 evita las esperas del domingo y deja tiempo de sobra para el barco. En Shad Thames / Butler’s Wharf (al lado del muelle) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
             { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad a las 13:45.', from: 'tower_bridge', to: 'pier_butlers' },
-            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero a Westminster (Thames River Sightseeing)', text: 'Sale de Butler’s Wharf Pier a las 14:00; si se escapa, hay otro a las 14:40. Unos 35 min por el río con luz de día: HMS Belfast, St Paul’s, el Globe, el London Eye y el Big Ben al llegar. Billete sencillo: adulto £13,50, niño £9,40, familia (2+2) £36,40.', today: 'barcos 13:20 · 14:00 · 14:40' },
+            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero por el Támesis · Tower Bridge → Westminster', text: 'Thames River Sightseeing desde Butler’s Wharf Pier (orilla sur, NO el Tower Pier de enfrente). Billete SOLO IDA. Estad a las 13:45; si se escapa el de las 14:00, hay otro a las 14:40. 20–30 min por el río con luz de día: HMS Belfast, St Paul’s, el Globe y el London Eye.', today: 'barcos 13:20 · 14:00 · 14:40', tickets: 'pier_butlers' },
+            { move: 'boat', min: '20–30', text: 'En barco hasta Westminster Pier. Mirando hacia delante, el London Eye queda a la izquierda y el Big Ben a la derecha al llegar.' },
+            { t: '14:30', n: 'westminster_pier', icon: '⚓', title: 'Llegada a Westminster Pier · Big Ben', text: 'Bajáis del barco al pie del Big Ben: fotos con el Parlamento y el London Eye enfrente.' },
             { move: 'walk', min: 20, text: 'Desembarcas en Westminster Pier, al lado del Big Ben (fotos). Sube a la calle, gira a la derecha y sigue recto por Whitehall: pasarás Downing Street y los guardias a caballo de Horse Guards, y llegas a Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
             { t: '15:30', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square al anochecer ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: es el mejor momento para verlo encenderse.' },
             { move: 'walk', min: 8, text: 'Sal por la esquina de la iglesia de St Martin-in-the-Fields y sube por William IV St y Chandos Place hasta la plaza de Covent Garden.', from: 'trafalgar', to: 'sugarsin' },
@@ -1809,6 +1836,7 @@
               + '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4><p>' + st.text + '</p>'
               + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
               + (st.metro ? '<a class="itin-go" href="metro/?v=6&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
+              + (st.tickets ? ticketBtn(st.tickets) : '')
               + '</div></div>';
         });
         if (D.gf) h += '<div class="itin-gf"><b>🌾 Sin gluten hoy:</b> ' + D.gf + '</div>';
@@ -1827,7 +1855,80 @@
         ov.hidden = true; document.body.style.overflow = '';
         if (!fromPop && history.state && history.state.dayFull) history.back();
     };
-    window.addEventListener('popstate', () => closeDayFull(true));
+    // ── Pantalla de información (entradas / vuelos y traslados) ─────────
+    function openInfo(title, html) {
+        const ov = document.getElementById('info-full');
+        ov.querySelector('.if-title').textContent = title;
+        ov.querySelector('.df-body').innerHTML = html; ov.querySelector('.df-body').scrollTop = 0;
+        ov.hidden = false; document.body.style.overflow = 'hidden';
+        history.pushState({ info: 1 }, '');
+    }
+    window.closeInfo = function(fromPop) {
+        const ov = document.getElementById('info-full');
+        if (ov.hidden) return;
+        ov.hidden = true;
+        if (document.getElementById('day-full').hidden) document.body.style.overflow = '';
+        if (!fromPop && history.state && history.state.info) history.back();
+    };
+    window.addEventListener('popstate', () => {
+        if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
+    });
+
+    // Entradas: cuando lleguen, se suben a londres/entradas/ y se apuntan aquí
+    // { name: 'Familia Ros · crucero', url: 'entradas/crucero-1.png' } (vale imagen o PDF)
+    const TICKETS = {
+        pier_butlers: { title: '🎟️ Entradas del crucero', files: [] }
+    };
+    function ticketBtn(id) {
+        const T = TICKETS[id]; if (!T) return '';
+        const n = T.files.length;
+        return '<button type="button" class="tk-btn" onclick="openTickets(\'' + id + '\')">🎟️ ' + (n ? 'Ver o descargar entradas / QR (' + n + ')' : 'Entradas / QR · pendientes') + '</button>';
+    }
+    window.openTickets = function(id) {
+        const T = TICKETS[id]; if (!T) return;
+        let h;
+        if (!T.files.length) h = '<div class="tk-empty">Todavía no están las entradas. En cuanto las tengamos aparecerán aquí, para verlas o descargarlas.</div>';
+        else h = T.files.map(f => '<div class="tk-card"><div class="tk-name">' + f.name + '</div>'
+            + (/\.pdf($|\?)/i.test(f.url) ? '' : '<img class="tk-img" src="' + f.url + '" alt="' + f.name + '">')
+            + '<div class="tk-row"><a class="tk-a" href="' + f.url + '" target="_blank" rel="noopener">👁️ Ver</a><a class="tk-a" href="' + f.url + '" download>⬇️ Descargar</a></div></div>').join('')
+            + '<p class="tk-tip">En el muelle, sube el brillo del móvil al máximo para que lean bien el código QR.</p>';
+        openInfo(T.title, h);
+    };
+
+    window.openTravel = function() {
+        const leg = (t, txt) => '<div class="tv-leg"><span class="tv-t">' + t + '</span><span>' + txt + '</span></div>';
+        const h = '<h3 class="tv-h">✈️ Vuelos (Vueling)</h3>'
+          + '<a href="img/vuelos.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/vuelos.jpg" alt="Vuelos a Londres: ida 4 de diciembre y vuelta 9 de diciembre"></a>'
+          + '<div class="tv-card"><h4>IDA · Viernes 4 de diciembre</h4>'
+          + leg('14:10', '<b>Sevilla (SVQ)</b> → Barcelona · <b>VY1385</b>. Sevilla tiene una sola terminal.')
+          + leg('15:50', '<b>Llegada a Barcelona, Terminal 1.</b> Vueling usa solo la T1: no hay que cambiar de terminal. Espera de 2 h 55 min.')
+          + leg('18:45', '<b>Barcelona (T1)</b> → Londres Heathrow · <b>VY7642</b>.')
+          + leg('20:05', '<b>Llegada a Heathrow</b> (hora de Londres, una hora menos que en España). Allí espera el traslado.')
+          + '</div>'
+          + '<div class="tv-card"><h4>VUELTA · Miércoles 9 de diciembre</h4>'
+          + leg('09:55', '<b>Londres Heathrow</b> → Barcelona · <b>VY7641</b> (hora de Londres).')
+          + leg('13:10', '<b>Llegada a Barcelona, Terminal 1.</b> Espera larga: 5 h 40 min.')
+          + leg('18:50', '<b>Barcelona (T1)</b> → Sevilla · <b>VY1392</b>.')
+          + leg('20:30', '<b>Llegada a Sevilla.</b>')
+          + '</div>'
+          + '<div class="tv-warn">🛫 Terminal de Heathrow: por confirmar. Miradla en la tarjeta de embarque o en la app de Vueling. Las noticias de su llegada a Heathrow dicen Terminal 4, pero hay guías que ponen otra.</div>'
+          + '<h3 class="tv-h">🚐 Traslados en minivan privada</h3>'
+          + '<div class="tv-card"><h4>Aeropuerto → apartamento · Viernes 4 dic</h4>'
+          + leg('20:05', 'Os recogen al llegar el vuelo <b>VY7642</b> a Heathrow. <b>El conductor espera 60 min.</b>')
+          + leg('📍', '<b>Punto de encuentro según la terminal:</b> T2 Caffè Nero · T3 WH Smith · T4 y T5 Costa Coffee (en la tarjeta pone «T45»).')
+          + leg('👨‍👩‍👧‍👦', '3 adultos + 4 niños · 7 maletas grandes · 1 silla de niño (2–12 años).')
+          + '</div>'
+          + '<div class="tv-card"><h4>Apartamento → aeropuerto · Miércoles 9 dic</h4>'
+          + leg('06:00', '<b>Recogida en 109 Hammersmith Grove.</b> El conductor espera solo 15 min: estad abajo a las 5:55 con las maletas.')
+          + leg('09:55', 'Vuelo <b>VY7641</b> desde Heathrow.')
+          + leg('👨‍👩‍👧‍👦', '3 adultos + 4 niños · 7 maletas grandes · 1 silla de niño (2–12 años).')
+          + '</div>'
+          + '<a class="tv-wa" href="https://wa.me/34911880435" target="_blank" rel="noopener">🟢 Urgencias del traslado por WhatsApp · +34 911 880 435</a>'
+          + '<h3 class="tv-h">Tarjetas del traslado</h3>'
+          + '<a href="img/traslado-ida.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/traslado-ida.jpg" alt="Traslado de llegada" loading="lazy"></a>'
+          + '<a href="img/traslado-vuelta.jpg" target="_blank" rel="noopener"><img class="tv-img" style="margin-top:10px" src="img/traslado-vuelta.jpg" alt="Traslado de vuelta" loading="lazy"></a>';
+        openInfo('✈️ Vuelos y traslados', h);
+    };
 
     // ── Compartir el día como imagen (WhatsApp) ─────────────────────────
     // La imagen se dibuja aquí mismo con canvas a partir de ITIN: no depende de librerías externas.
@@ -2048,7 +2149,7 @@
                 + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
                 + (loc.hours ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#fff7ed;border:1px solid #fed7aa;font-size:12px;color:#7c2d12;line-height:1.4;"><b>🕒 Horario:</b> ' + loc.hours + '</div>' : '')
-                + directionsBtn + photosBtn + checkboxHtml
+                + directionsBtn + ticketBtn(loc.id) + photosBtn + checkboxHtml
                 + '</div>';
 
             marker.bindPopup(infoContent, { maxWidth: 250 });
