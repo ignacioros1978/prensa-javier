@@ -1254,7 +1254,7 @@
 
         {
             id: 'sugarsin',
-            name: 'SugarSin & Covent Garden',
+            name: 'Covent Garden (mercado y árbol)',
             address: '1 Russell St, WC2B 5JD',
             lat: 51.5115,
             lng: -0.1225,
@@ -1298,9 +1298,9 @@
             lat: 51.5107,
             lng: -0.1297,
             day: 'd1',
-            category: 'bonus',
+            category: 'tiendas',
             emoji: '🍫',
-            desc: 'Tienda oficial de M&M\'s · 4 plantas · de paso entre el Strand y Piccadilly Circus · sin desvío.'
+            desc: 'Tienda oficial de M&M\'s · 4 plantas. Está en la misma Leicester Square: merece la pena dar una vuelta por la plaza, con su mercadillo navideño, la pista de hielo, la tienda de LEGO y los cines de los estrenos.'
         },
 
         {
@@ -1647,7 +1647,7 @@
     const HOURS = {
         londoneye: 'Diciembre: 10:00–20:30 aprox. · reservar hora online',
         southbank_market: 'Todos los días 11:00–22:00 (2 nov–3 ene)',
-        mms_store: 'Lun–Sáb 10:00–24:00 · Dom 12:00–18:00',
+        mms_store: 'Lun–Sáb 10:00–24:00 · Dom 12:00–18:00 · Leicester Square al lado: mercadillo navideño y pista de hielo 10:00–22:00',
         chinatown: 'Restaurantes: la mayoría desde las 12:00',
         kingdom_sweets: 'Abre hasta tarde · horario exacto sin confirmar',
         fortnum_mason: 'Lun–Sáb 10:00–21:00 · Dom 11:30–18:00',
@@ -1660,7 +1660,7 @@
         pier_butlers: 'Barcos a Westminster (diciembre): 12:00, 12:40, 13:20, 14:00, 14:40, 15:20…',
         westminster_pier: 'Muelle con acceso sin escalones',
         trafalgar: 'Plaza abierta siempre · árbol de Navidad iluminado al anochecer',
-        sugarsin: 'SugarSin: Lun–Vie 11:30–19:30 · Sáb 11:00–20:00 · Dom 11:00–19:00 · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00',
+        sugarsin: 'Plaza y mercado cubierto: siempre · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00 · SugarSin: CERRADO temporalmente (reabrirá en un local cercano, sin fecha; mirar sugarsin.co.uk)',
         sg_d1: 'Restaurante · reservar si vais muchos',
         big_ben: 'Exterior: siempre',
         buckingham: 'Cambio de Guardia a las 11:00 (lun, mié, vie y dom) · llegar 10:00–10:15 · se confirma ~6 semanas antes en householddivision.org.uk',
@@ -1693,7 +1693,7 @@
             { move: 'walk', min: 3, text: 'Al bajar de la noria, sigue el paseo del río hacia la izquierda (dirección al puente de Waterloo).', from: 'londoneye', to: 'southbank_market' },
             { t: '11:00', n: 'southbank_market', icon: '✨', title: 'Southbank Centre Winter Market ⭐', text: 'Casetas de madera junto al Támesis. Abre a las 11:00: por eso va después del London Eye.', today: '11:00–22:00' },
             { move: 'walk', min: 25, text: 'Sube las escaleras/rampa al puente de Waterloo, crúzalo (vistas a los dos lados del río), sigue por el Strand y entra hacia Leicester Square.', from: 'southbank_market', to: 'mms_store' },
-            { t: '12:15', n: 'mms_store', icon: '🍫', title: "M&M's Store (Leicester Square)", text: 'Cuatro plantas de M&M’s. Está en la propia plaza.', today: 'sábado 10:00–24:00' },
+            { t: '12:15', n: 'mms_store', icon: '🍫', title: "M&M's Store y Leicester Square", text: 'Cuatro plantas de M&M’s. Al salir, dad una vuelta por Leicester Square: mercadillo navideño, pista de hielo (10:00–22:00), la tienda de LEGO y los cines de los grandes estrenos.', today: 'sábado 10:00–24:00' },
             { move: 'walk', min: 2, text: 'Chinatown empieza justo detrás de Leicester Square (calle Gerrard St, con los arcos chinos).', from: 'mms_store', to: 'chinatown' },
             { t: '13:00', n: 'chinatown', icon: '🍜', title: 'Comida en Chinatown', text: 'Dim sum o ramen para todos. Sin gluten: Bancone o LEON en Covent Garden, a 5–8 min.' },
             { move: 'walk', min: 5, text: 'Baja por Coventry St hasta Piccadilly Circus (la plaza de las pantallas).', from: 'chinatown', to: 'kingdom_sweets' },
@@ -1707,23 +1707,24 @@
             { move: 'taxi', text: 'Taxi negro desde Regent Street a Hammersmith: unos 25 min y £22–26. Con 17 personas, varios taxis (caben 5–6 por taxi).' }
           ],
           gf: 'Oka (Kingly Court, Carnaby): tailandés con mucha carta sin gluten, al lado de Hamleys.' },
-        d2: { title: 'Día 2 · Domingo 6 Dic', zone: 'Borough Market · Winter by the River · Tower Bridge · crucero · Trafalgar · Covent Garden', back: '🚇 / 🚕 Vuelta desde Covent Garden', grad: '#3498db,#2471a3',
+        d2: { title: 'Día 2 · Domingo 6 Dic', zone: 'Borough Market · Winter by the River · Tower Bridge · crucero · Westminster · Trafalgar · Covent Garden', back: '🚇 / 🚕 Vuelta desde Covent Garden', grad: '#3498db,#2471a3',
+          note: '👨‍👩‍👧‍👦 Siendo varias familias: reservad mesa para comer (17 personas) y comprad los billetes del barco online antes del viaje.',
           steps: [
-            { t: '09:15', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
+            { t: '09:20', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'Salir del apartamento a las 9:20. District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En domingo pasan algo menos trenes. En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
             { move: 'walk', min: 3, text: 'En London Bridge sigue los carteles «Borough High Street / Borough Market».', to: 'borough_market' },
-            { t: '10:00', n: 'borough_market', icon: '🛒', title: 'Borough Market ⭐', text: 'El mercado de comida más famoso de Londres. Llegar a la apertura: hay menos gente. Desayuno sin gluten en Free From Bakehouse (100 % sin gluten).', today: 'domingo 10:00–16:00' },
+            { t: '10:00', n: 'borough_market', icon: '🛒', title: 'Borough Market ⭐', text: 'Llegar a la apertura: a partir de las 11:30 se llena y con carritos cuesta moverse. Una hora es suficiente con niños. Desayuno sin gluten en Free From Bakehouse (100 % sin gluten).', today: 'domingo 10:00–16:00' },
             { move: 'walk', min: 15, text: 'Ve hacia el río pasando por la catedral de Southwark, cruza por debajo del puente de Londres y sigue el paseo del río hacia el este hasta Hay’s Galleria.', from: 'borough_market', to: 'winter_river' },
-            { t: '11:30', n: 'winter_river', icon: '🎄', title: 'Winter by the River', text: 'Mercadillo navideño junto al río, con Tower Bridge de fondo. Abre a las 11:00. Hay curling en el muelle.', today: '11:00–22:00' },
+            { t: '11:15', n: 'winter_river', icon: '🎄', title: 'Winter by the River', text: 'Mercadillo navideño junto al río con Tower Bridge de fondo. Abre a las 11:00, así que lo pilláis recién abierto. Hay curling en el muelle.', today: '11:00–22:00' },
             { move: 'walk', min: 5, text: 'Sigue el paseo del río (pasando el HMS Belfast) hasta el pie de Tower Bridge.', from: 'winter_river', to: 'tower_bridge' },
-            { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla y, si os apetece, cruzarlo a pie (gratis). La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
-            { t: '12:45', icon: '🍽️', title: 'Comida en la zona', text: 'En Shad Thames / Butler’s Wharf (al lado del muelle del barco) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
-            { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad 15 min antes.', from: 'tower_bridge', to: 'pier_butlers' },
-            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero a Westminster (Thames River Sightseeing)', text: 'Sale de Butler’s Wharf Pier a las 14:00 (si se escapa, hay otro a las 14:40). Unos 30–40 min por el río: HMS Belfast, St Paul’s, el Globe, el London Eye. Billete sencillo: adulto £13,50, niño £9,40, familia (2+2) £36,40.', today: 'barcos 13:20 · 14:00 · 14:40' },
-            { move: 'walk', min: 15, text: 'Desembarcas en Westminster Pier, al lado del Big Ben. Sube a la calle, gira a la derecha y sigue recto por Whitehall (pasarás Downing Street y los guardias a caballo) hasta Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
-            { t: '15:15', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: quedaos a ver cómo se encienden las luces.' },
+            { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla. No hace falta cruzarlo: el barco sale de este mismo lado. La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
+            { t: '12:30', icon: '🍽️', title: 'Comida (temprano, con mesa reservada)', text: 'Comer a las 12:30 evita las esperas del domingo y deja tiempo de sobra para el barco. En Shad Thames / Butler’s Wharf (al lado del muelle) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
+            { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad a las 13:45.', from: 'tower_bridge', to: 'pier_butlers' },
+            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero a Westminster (Thames River Sightseeing)', text: 'Sale de Butler’s Wharf Pier a las 14:00; si se escapa, hay otro a las 14:40. Unos 35 min por el río con luz de día: HMS Belfast, St Paul’s, el Globe, el London Eye y el Big Ben al llegar. Billete sencillo: adulto £13,50, niño £9,40, familia (2+2) £36,40.', today: 'barcos 13:20 · 14:00 · 14:40' },
+            { move: 'walk', min: 20, text: 'Desembarcas en Westminster Pier, al lado del Big Ben (fotos). Sube a la calle, gira a la derecha y sigue recto por Whitehall: pasarás Downing Street y los guardias a caballo de Horse Guards, y llegas a Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
+            { t: '15:30', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square al anochecer ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: es el mejor momento para verlo encenderse.' },
             { move: 'walk', min: 8, text: 'Sal por la esquina de la iglesia de St Martin-in-the-Fields y sube por William IV St y Chandos Place hasta la plaza de Covent Garden.', from: 'trafalgar', to: 'sugarsin' },
-            { t: '16:00', n: 'sugarsin', icon: '🍭', title: 'Covent Garden iluminado + SugarSin', text: 'El mercado cubierto con su árbol y la decoración. SugarSin está abierto el domingo hasta las 19:00 (según la web de Covent Garden). El Apple Market cierra a las 18:00.', today: 'SugarSin domingo 11:00–19:00' },
-            { move: 'metro', text: 'Vuelta: metro Piccadilly DIRECTO de Covent Garden a Hammersmith, sin trasbordo (unos 20 min; esta estación solo tiene ascensores, ideal con carrito). O taxi negro: unos 30 min y £22–26.' }
+            { t: '16:15', n: 'sugarsin', icon: '✨', title: 'Covent Garden iluminado', text: 'El mercado cubierto con su gran árbol y la decoración navideña, músicos en la plaza. El Apple Market y las tiendas cierran a las 18:00 en domingo. SugarSin está cerrado temporalmente (reabrirá en un local cercano, sin fecha: mirad su web antes de ir).', today: 'mercado hasta las 18:00' },
+            { move: 'metro', text: 'Vuelta hacia las 17:30, antes de que los niños estén agotados: metro Piccadilly DIRECTO de Covent Garden a Hammersmith, sin trasbordo (unos 20 min; esta estación solo tiene ascensores, ideal con carrito). O taxi negro: unos 30 min y £22–26.' }
           ],
           gf: 'Free From Bakehouse y Khanom Krok (en Borough Market, 100 % sin gluten) · Wagamama Tower Bridge · Bancone (Covent Garden).' },
         d3: { title: 'Día 3 · Lunes 7 Dic', zone: 'Westminster · Buckingham · Victoria · Harrods · Hyde Park', back: '🚕 Vuelta £13–17', grad: '#2ecc71,#239b56',
