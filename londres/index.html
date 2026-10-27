@@ -332,6 +332,15 @@
         .tv-leg:first-of-type { border-top:0; }
         .tv-t { min-width:58px; font-weight:800; color:#0f172a; }
         .tv-warn { margin-top:10px; padding:12px; border-radius:12px; background:#fef3c7; border:2px solid #f59e0b; color:#78350f; font-weight:700; }
+        .sg-call { display:flex; align-items:center; justify-content:center; gap:8px; min-height:56px; margin-top:12px; border-radius:14px; background:#c8102e; color:#fff; font-weight:800; text-decoration:none; font-size:18px; }
+        .sg-call.alt { background:#0f172a; font-size:16px; }
+        .sg-tab { width:100%; border-collapse:collapse; margin-top:8px; font-size:15px; }
+        .sg-tab td { padding:9px 6px; border-top:1px solid #e2e8f0; vertical-align:top; }
+        .sg-tab td:last-child { text-align:right; font-weight:800; white-space:nowrap; color:#0f172a; }
+        .sg-det { margin-top:10px; border:2px solid #cbd5e1; border-radius:14px; background:#f8fafc; }
+        .sg-det summary { padding:14px; min-height:48px; font-weight:800; font-size:16px; cursor:pointer; color:#0f172a; }
+        .sg-det > div { padding:0 14px 14px; }
+        .sg-det ul { margin:6px 0 0 18px; } .sg-det li { margin:5px 0; }
         .tv-wa { display:flex; align-items:center; justify-content:center; min-height:50px; margin-top:12px; border-radius:14px; background:#25D366; color:#063; font-weight:800; text-decoration:none; font-size:16px; }
         #day-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; }
 
@@ -950,7 +959,10 @@
             <div class="progress-bar-segment" style="background:#9b59b6;" title="Día 4"></div>
         </div>
         <a href="metro/?v=4" style="display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:10px;border-radius:14px;background:#e74c3c;color:#fff;text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.25)">🚇 Rutas de Metro</a>
-        <button type="button" onclick="openTravel()" style="display:flex;width:100%;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:8px;border:0;border-radius:14px;background:#1d4ed8;color:#fff;font-weight:800;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">✈️ Vuelos y traslados</button>
+        <div style="display:flex;gap:8px;margin-top:8px">
+            <button type="button" onclick="openTravel()" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border:0;border-radius:14px;background:#1d4ed8;color:#fff;font-weight:800;font-size:15px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">✈️ Vuelos y traslados</button>
+            <button type="button" onclick="openSeguro()" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border:0;border-radius:14px;background:#15803d;color:#fff;font-weight:800;font-size:15px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">🛡️ Seguro de viaje</button>
+        </div>
     </header>
 
     <div class="main-layout">
@@ -1928,6 +1940,49 @@
           + '<a href="img/traslado-ida.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/traslado-ida.jpg" alt="Traslado de llegada" loading="lazy"></a>'
           + '<a href="img/traslado-vuelta.jpg" target="_blank" rel="noopener"><img class="tv-img" style="margin-top:10px" src="img/traslado-vuelta.jpg" alt="Traslado de vuelta" loading="lazy"></a>';
         openInfo('✈️ Vuelos y traslados', h);
+    };
+
+    window.openSeguro = function() {
+        const row = (a, b) => '<tr><td>' + a + '</td><td>' + b + '</td></tr>';
+        const det = (t, body, open) => '<details class="sg-det"' + (open ? ' open' : '') + '><summary>' + t + '</summary><div>' + body + '</div></details>';
+        const h = '<a href="img/seguro.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/seguro.jpg" alt="Seguro de viaje XCover: referencia B2PSP-QURYQ-INS, urgencias +34 900 649 659"></a>'
+          + '<a class="sg-call" href="tel:+34900649659">📞 Urgencia médica 24 h · +34 900 649 659</a>'
+          + '<a class="sg-call alt" href="tel:999">🚑 Peligro grave en Reino Unido: 999</a>'
+          + '<div class="tv-card"><h4>Lo esencial</h4>'
+          + '<div class="tv-leg"><span class="tv-t">🔖</span><span>Referencia: <b>B2PSP-QURYQ-INS</b> · Protección Integral de Viaje de <b>XCover</b>, contratada con Vueling el 27 may 2026 (88,18 €).</span></div>'
+          + '<div class="tv-leg"><span class="tv-t">📅</span><span><b>Cancelación del viaje:</b> cubierta desde el 27 de mayo. <b>Todo lo demás</b> (médico, retrasos, equipaje): del 4 al 9 de diciembre.</span></div>'
+          + '<div class="tv-leg"><span class="tv-t">💶</span><span><b>Franquicia:</b> en cada reclamación pagáis vosotros el 10 %, como mucho 50 € por persona.</span></div>'
+          + '<div class="tv-leg"><span class="tv-t">🪪</span><span>Llevad también la <b>Tarjeta Sanitaria Europea</b>: el seguro paga lo que no cubran antes la sanidad pública u otros seguros.</span></div>'
+          + '</div>'
+          + '<div class="tv-warn">⚠️ Todo gasto médico necesita su aprobación previa: llamad al +34 900 649 659 antes de ir al médico, al hospital o al dentista (salvo que sea grave: entonces 999 y luego avisáis). Las enfermedades que ya se tenían antes de contratar <b>no</b> están cubiertas en la parte médica.</div>'
+          + '<h3 class="tv-h">Hasta cuánto cubre</h3>'
+          + '<table class="sg-tab">'
+          + row('🏥 Gastos médicos en el extranjero', '5.000.000 €')
+          + row('🛏️ Ingreso en hospital (20 € por cada 24 h)', '200 €')
+          + row('🦷 Dentista de urgencia', '250 €')
+          + row('✈️ Cancelar o acortar el vuelo', '875,77 €')
+          + row('🏠 Cancelar o acortar el alojamiento', '500 €')
+          + row('🎟️ Cancelar tours y atracciones (London Eye, barco…)', '500 €')
+          + row('⏰ Perder la salida (avería, accidente, transporte público)', '750 €')
+          + row('🕐 Salida retrasada (25 € por cada 12 h)', '250 €')
+          + row('🧳 Equipaje retrasado en la ida (más de 4 h)', '200 €')
+          + row('🧳 Equipaje y objetos personales (total)', '3.000 €')
+          + row('· por objeto', '500 €')
+          + row('· objeto sin factura', '150 €')
+          + row('· móvil, tablet, portátil o reloj inteligente', '800 €')
+          + row('⚱️ Gastos de fallecimiento y repatriación', '1.500 €')
+          + '</table>'
+          + '<p style="margin-top:6px;font-size:14px;color:#475569">A todo se le resta la franquicia (10 %, máx. 50 € por persona y reclamación).</p>'
+          + '<h3 class="tv-h">Qué hacer si pasa algo</h3>'
+          + det('🤒 Alguien se pone enfermo o se hace daño', '<ul><li>Si es grave: <b>999</b> (ambulancia). En cuanto podáis, llamad a XCover Assist: <b>+34 900 649 659</b>.</li><li>Si no es grave: llamad antes al +34 900 649 659 o entrad en xcover.com/claim: <b>todo reembolso médico o dental necesita aprobación previa</b>.</li><li>Guardad informes médicos, recetas y facturas.</li><li>Cubre también alojamiento y transporte extra de un acompañante hasta 14 días, y los taxis al centro médico.</li><li>Ellos deciden si hace falta repatriación o vuelo de vuelta.</li></ul>', true)
+          + det('🧳 La maleta no llega o llega rota', '<ul><li>Antes de salir del aeropuerto, id al mostrador de equipajes y pedid el <b>parte de irregularidad (PIR)</b>.</li><li>Si tarda más de 4 h <b>en la ida</b>, se pagan las compras imprescindibles (hasta 200 €): guardad los tiques. En la vuelta no se cubre.</li><li>Si al final se pierde, lo pagado por el retraso se descuenta.</li><li>Se descuenta por antigüedad: 10 % si tiene hasta 1 año, 20 % hasta 2, 30 % hasta 3, 40 % hasta 4 y 50 % si tiene más.</li></ul>')
+          + det('👜 Nos roban algo', '<ul><li>Denunciad en la policía y pedid el <b>informe policial</b>: sin él no pagan.</li><li>No cubre lo que se deja sin vigilar (salvo en el alojamiento cerrado con llave o con alguien de la familia).</li><li>No cubre dinero, pasaportes, gafas, lentillas, audífonos ni medicinas.</li><li>Móviles, tablets y objetos de valor: <b>siempre en el equipaje de mano</b>, nunca en la maleta facturada.</li></ul>')
+          + det('⏰ Retrasos y salidas perdidas', '<ul><li><b>Salida retrasada:</b> solo si el retraso supera las 12 h por huelga, mal tiempo o avería. Pedid a Vueling el retraso y el motivo <b>por escrito</b>.</li><li><b>Salida perdida:</b> si no llegáis a tiempo al aeropuerto por avería o accidente del vehículo o retraso del transporte público. Antes de pagar nada, hablad con Vueling. Hay que haber salido con tiempo suficiente.</li></ul>')
+          + det('❌ Tenemos que cancelar o acortar el viaje', '<ul><li>Cubierto desde ya si alguno de vosotros o un familiar cercano enferma o se lesiona (también por enfermedades previas que empeoren de golpe), por daños graves en casa en los 7 días antes, o por un retraso de más de 12 h del vuelo de ida.</li><li>Se devuelve lo pagado por adelantado que no se recupera: vuelos, alojamiento, entradas.</li><li>No cubre cambiar de idea, motivos de trabajo o dinero, ni tasas extra (asientos, maletas, gestión).</li></ul>')
+          + det('🚫 Lo que no cubre nunca', '<ul><li>Gastos médicos por enfermedades previas.</li><li>Patinetes y bicis eléctricas (incluidas las de alquiler en la calle) y motos.</li><li>Lo que ocurra por abuso de alcohol o por correr riesgos innecesarios.</li><li>Viajar en contra del consejo del médico.</li></ul>')
+          + det('📝 Cómo reclamar', '<ul><li>En <a href="https://www.xcover.com/claim" target="_blank" rel="noopener"><b>xcover.com/claim</b></a>, mejor dentro de los 7 días siguientes.</li><li>Explicad bien qué pasó y adjuntad reservas, facturas, informes y partes.</li><li>Si no mandáis los papeles que piden, pueden rechazarla.</li><li>La cuenta de XCover se abre con el correo con el que se contrató.</li></ul>')
+          + '<p style="margin-top:14px;font-size:13px;color:#64748b">Emisor: XCover.com (Cover Genius Europe B.V., Ámsterdam). Resumen hecho a partir de las condiciones de la póliza; si hay dudas, mandan las condiciones completas.</p>';
+        openInfo('🛡️ Seguro de viaje', h);
     };
 
     // ── Compartir el día como imagen (WhatsApp) ─────────────────────────
