@@ -316,6 +316,12 @@
         #info-full .if-title { flex:1; font-size:20px; font-weight:800; color:#0f172a; }
         #info-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
         #info-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; font-size:16px; color:#1e293b; line-height:1.5; }
+        .tv-imgbtn { display:block; width:100%; padding:0; margin:0; border:0; background:none; cursor:zoom-in; }
+        #img-view { position:fixed; inset:0; z-index:5200; background:#0b0f19; display:flex; flex-direction:column; }
+        #img-view[hidden] { display:none !important; }
+        #img-view .iv-x { position:absolute; top:max(12px,env(safe-area-inset-top)); right:12px; z-index:2; width:56px; height:56px; border-radius:50%; border:3px solid #fff; background:#0f172a; color:#fff; font-size:28px; font-weight:800; line-height:1; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.5); }
+        #img-view .iv-body { flex:1; overflow:auto; display:flex; align-items:center; justify-content:center; padding:80px 0 20px; -webkit-overflow-scrolling:touch; touch-action:pan-x pan-y pinch-zoom; }
+        #img-view img { max-width:100%; height:auto; display:block; }
         .tk-btn { display:flex; align-items:center; justify-content:center; gap:6px; width:100%; min-height:46px; margin:8px 0; border:2px solid #1d4ed8; border-radius:12px; background:#eff6ff; color:#1e3a8a; font-weight:800; font-size:15px; cursor:pointer; }
         .tk-empty { margin-top:10px; padding:16px; border-radius:14px; background:#fef3c7; border:2px solid #f59e0b; color:#78350f; font-weight:700; }
         .tk-card { margin-top:12px; padding:14px; border-radius:14px; border:2px solid #cbd5e1; background:#f8fafc; }
@@ -945,6 +951,7 @@
 
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
+<div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt=""></div></div>
 <div id="app-container">
     <header style="position:relative;">
         <h1>🇬🇧 Londres · Dic 2026</h1>
@@ -1881,11 +1888,25 @@
         if (document.getElementById('day-full').hidden) document.body.style.overflow = '';
         if (!fromPop && history.state && history.state.info) { skipPop = true; history.back(); }
     };
-    // Al cerrar con la X se hace history.back(): ese «atrás» no debe cerrar también el día a pantalla completa
+    // Al cerrar con la X se hace history.back(): ese «atrás» no debe cerrar también la pantalla de debajo
     let skipPop = false;
+    window.viewImg = function(src) {
+        const ov = document.getElementById('img-view');
+        ov.querySelector('img').src = src; ov.hidden = false; document.body.style.overflow = 'hidden';
+        ov.querySelector('.iv-body').scrollTop = 0;
+        history.pushState({ img: 1 }, '');
+    };
+    window.closeImg = function(fromPop) {
+        const ov = document.getElementById('img-view');
+        if (ov.hidden) return;
+        ov.hidden = true;
+        if (document.getElementById('info-full').hidden && document.getElementById('day-full').hidden) document.body.style.overflow = '';
+        if (!fromPop && history.state && history.state.img) { skipPop = true; history.back(); }
+    };
     window.addEventListener('popstate', () => {
         if (skipPop) { skipPop = false; return; }
-        if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
+        if (!document.getElementById('img-view').hidden) closeImg(true);
+        else if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
     });
 
     // Entradas: cuando lleguen, se suben a londres/entradas/ y se apuntan aquí
@@ -1900,7 +1921,7 @@
               + '<div class="tv-leg"><span class="tv-t">👨‍👩‍👧‍👦</span><span>17 personas: 7 adultos y 10 niños · un solo QR para todo el grupo (descuento de grupo del 15 %)</span></div>'
               + '</div>'
               + '<h3 class="tv-h">🗺️ Nuestro recorrido por el río</h3>'
-              + '<a href="img/crucero-mapa.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/crucero-mapa.jpg" alt="Mapa del crucero: de Tower Bridge (Butler’s Wharf Pier) a Westminster Pier pasando por el HMS Belfast, Bankside, Festival Pier y el London Eye" loading="lazy"></a>'
+              + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/crucero-mapa.jpg\')"><img class="tv-img" src="img/crucero-mapa.jpg" alt="Mapa del crucero: de Tower Bridge (Butler’s Wharf Pier) a Westminster Pier pasando por el HMS Belfast, Bankside, Festival Pier y el London Eye" loading="lazy"></button>'
               + '<div class="tv-card"><h4>Condiciones del billete</h4>'
               + '<div class="tv-leg"><span class="tv-t">🔁</span><span><b>Si perdemos el barco de las 14:40,</b> el billete vale para cualquier otro barco de ese mismo día.</span></div>'
               + '<div class="tv-leg"><span class="tv-t">⏪</span><span><b>Subir a uno anterior</b> no está garantizado: depende de que haya sitio (somos 17).</span></div>'
@@ -1928,7 +1949,7 @@
         else h = (T.qr ? '<div class="tk-card" style="text-align:center"><div class="tk-name">Código QR para embarcar</div><img class="tk-img" style="max-width:300px" src="' + T.qr + '" alt="Código QR de la reserva"><div class="tk-row"><a class="tk-a" href="' + T.qr + '" download="QR-crucero.png">⬇️ Guardar el QR</a></div></div>' : '')
             + (T.info || '') + T.files.map(f => '<div class="tk-card"><div class="tk-name">' + f.name + '</div>'
             + (/\.pdf($|\?)/i.test(f.url) ? '' : '<img class="tk-img" src="' + f.url + '" alt="' + f.name + '">')
-            + '<div class="tk-row"><a class="tk-a" href="' + f.url + '" target="_blank" rel="noopener">👁️ Ver</a><a class="tk-a" href="' + f.url + '" download>⬇️ Descargar</a></div></div>').join('')
+            + '<div class="tk-row">' + (/\.(jpe?g|png)$/i.test(f.url) ? '<button type="button" class="tk-a" style="border:0;font-size:16px;cursor:pointer" onclick="viewImg(\'' + f.url + '\')">👁️ Ver</button>' : '<a class="tk-a" href="' + f.url + '" target="_blank" rel="noopener">👁️ Ver</a>') + '<a class="tk-a" href="' + f.url + '" download>⬇️ Descargar</a></div></div>').join('')
             + '<p class="tk-tip">En el muelle, sube el brillo del móvil al máximo para que lean bien el código QR.</p>';
         openInfo(T.title, h);
     };
@@ -1936,7 +1957,7 @@
     window.openTravel = function() {
         const leg = (t, txt) => '<div class="tv-leg"><span class="tv-t">' + t + '</span><span>' + txt + '</span></div>';
         const h = '<h3 class="tv-h">✈️ Vuelos (Vueling)</h3>'
-          + '<a href="img/vuelos.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/vuelos.jpg" alt="Vuelos a Londres: ida 4 de diciembre y vuelta 9 de diciembre"></a>'
+          + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/vuelos.jpg\')"><img class="tv-img" src="img/vuelos.jpg" alt="Vuelos a Londres: ida 4 de diciembre y vuelta 9 de diciembre"></button>'
           + '<div class="tv-card"><h4>IDA · Viernes 4 de diciembre</h4>'
           + leg('14:10', '<b>Sevilla (SVQ)</b> → Barcelona · <b>VY1385</b>. Sevilla tiene una sola terminal.')
           + leg('15:50', '<b>Llegada a Barcelona, Terminal 1.</b> Vueling usa solo la T1: no hay que cambiar de terminal. Espera de 2 h 55 min.')
@@ -1963,15 +1984,15 @@
           + '</div>'
           + '<a class="tv-wa" href="https://wa.me/34911880435" target="_blank" rel="noopener">🟢 Urgencias del traslado por WhatsApp · +34 911 880 435</a>'
           + '<h3 class="tv-h">Tarjetas del traslado</h3>'
-          + '<a href="img/traslado-ida.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/traslado-ida.jpg" alt="Traslado de llegada" loading="lazy"></a>'
-          + '<a href="img/traslado-vuelta.jpg" target="_blank" rel="noopener"><img class="tv-img" style="margin-top:10px" src="img/traslado-vuelta.jpg" alt="Traslado de vuelta" loading="lazy"></a>';
+          + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/traslado-ida.jpg\')"><img class="tv-img" src="img/traslado-ida.jpg" alt="Traslado de llegada" loading="lazy"></button>'
+          + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/traslado-vuelta.jpg\')"><img class="tv-img" style="margin-top:10px" src="img/traslado-vuelta.jpg" alt="Traslado de vuelta" loading="lazy"></button>';
         openInfo('✈️ Vuelos y traslados', h);
     };
 
     window.openSeguro = function() {
         const row = (a, b) => '<tr><td>' + a + '</td><td>' + b + '</td></tr>';
         const det = (t, body, open) => '<details class="sg-det"' + (open ? ' open' : '') + '><summary>' + t + '</summary><div>' + body + '</div></details>';
-        const h = '<a href="img/seguro.jpg" target="_blank" rel="noopener"><img class="tv-img" src="img/seguro.jpg" alt="Seguro de viaje XCover: referencia B2PSP-QURYQ-INS, urgencias +34 900 649 659"></a>'
+        const h = '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/seguro.jpg\')"><img class="tv-img" src="img/seguro.jpg" alt="Seguro de viaje XCover: referencia B2PSP-QURYQ-INS, urgencias +34 900 649 659"></button>'
           + '<a class="sg-call" href="tel:+34900649659">📞 Urgencia médica 24 h · +34 900 649 659</a>'
           + '<a class="sg-call alt" href="tel:999">🚑 Peligro grave en Reino Unido: 999</a>'
           + '<div class="tv-card"><h4>Lo esencial</h4>'
