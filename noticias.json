@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-26",
- "fechaTexto": "lunes 26 de octubre",
- "actualizado": "2026-10-26T15:58:24+01:00",
+ "fecha": "2026-10-27",
+ "fechaTexto": "martes 27 de octubre",
+ "actualizado": "2026-10-27T07:08:46+01:00",
  "portada": [
-  "ld4",
-  "ee5",
-  "ee4",
   "ld1",
   "ee2",
-  "ed1",
+  "ld2",
   "ok1",
-  "ld5",
-  "to3"
+  "edi3",
+  "ed1",
+  "edi2",
+  "ed3",
+  "to1"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld4",
-     "titular": "PP y Vox pactan sus candidaturas al Senado para el veintinueve de noviembre",
-     "resumen": "Según Libertad Digital, el Partido Popular y Vox han cerrado un acuerdo para repartirse las candidaturas al Senado en las elecciones del veintinueve de noviembre. El objetivo es reunir tres quintos de la Cámara y evitar que la izquierda bloquee la renovación de órganos como el Tribunal Constitucional. Vox no presentará lista propia en seis provincias, entre ellas Cádiz, Valencia y Baleares, donde el PP incluirá a un independiente elegido por Vox. En catorce provincias, como Sevilla, Zaragoza o Alicante, el PP presentará tres candidatos y Vox uno. En las demás concurrirán por separado. Miguel Tellado, del PP, aseguró que ninguno de los dos partidos diluye sus siglas. El Senado debe proponer a cuatro miembros del Constitucional con el mandato caducado desde hace un año. Hasta ahora era necesario un acuerdo con el PSOE.",
+     "id": "ld1",
+     "titular": "El Partido Popular y Vox pactan sus listas al Senado para el veintinueve de noviembre",
+     "resumen": "El Partido Popular y Vox cerraron el lunes un acuerdo para presentar listas coordinadas al Senado en las elecciones generales del veintinueve de noviembre. Según Libertad Digital, el objetivo es sumar tres quintos de la Cámara y poder renovar el Tribunal Constitucional sin depender del Partido Socialista. Vox no se presentará por su cuenta en seis provincias: Las Palmas, Santa Cruz de Tenerife, Cádiz, Valencia, Castellón y Baleares. En esas listas del Partido Popular entrará un candidato independiente propuesto por Vox. A cambio, el Partido Popular no concurrirá en Guipúzcoa, Girona ni Tarragona. En catorce provincias más, uno de los dos partidos presentará un solo candidato. Miguel Tellado, del Partido Popular, dijo que ninguno de los dos diluye sus siglas. El pacto llegó casi al límite del plazo legal, que vencía esa misma medianoche, tras una semana de negociación.",
      "url": "https://www.libertaddigital.com/espana/politica/2026-10-26/feijoo-y-abascal-pactan-en-el-senado-para-lograr-los-tres-quintos-que-impidan-el-bloqueo-de-la-izquierda-7481905/"
     },
     {
-     "id": "ld5",
-     "titular": "El Real Madrid gana al Barça en el Camp Nou con dos goles de Mbappé",
-     "resumen": "El Real Madrid ganó uno a dos al Barcelona en el Camp Nou, en el clásico de Liga disputado el domingo veinticinco de octubre. Mbappé adelantó a los blancos en el minuto cuarenta y uno. Raphinha empató para el Barça en el sesenta y uno. Y en el ochenta y siete Mbappé marcó el gol definitivo, tras un contraataque con pase de Camavinga. Según Libertad Digital, el resultado rompe una igualdad histórica de ciento veinticuatro años entre los dos clubes. Tras doscientos sesenta y cuatro clásicos, el Madrid suma ahora ciento siete victorias, el Barcelona ciento seis, y hay cincuenta y dos empates. La derrota puso fin a la racha del Barça, que llegaba con veintitrés victorias seguidas como local en Liga y nueve triunfos consecutivos en la competición.",
-     "url": "https://www.libertaddigital.com/deportes/futbol/2026-10-26/el-real-madrid-rompe-un-empate-historico-de-124-anos-con-el-barca-el-clasico-que-cambio-las-estadisticas-7482026/"
+     "id": "ld2",
+     "titular": "Un mando de la Guardia Civil declara que decidió abrir la puerta de Ceuta",
+     "resumen": "Un teniente coronel de la Guardia Civil de Ceuta declaró el lunes ante la jueza María Tardón, de la Audiencia Nacional, en la causa por la entrada masiva del treinta de julio. Según Libertad Digital, que cita fuentes jurídicas presentes en la sala, el mando asegura que avisó a la Delegación del Gobierno de la presencia de seis embarcaciones marroquíes la noche anterior. Dice que entraban más de dos mil personas por hora y que era imposible frenarlas. Sostiene que decidió dejar abierta la puerta para evitar aplastamientos y que ningún superior le dio órdenes. Un inspector jefe de la Policía Nacional contó que agentes marroquíes dejaban pasar a la gente hacia Ceuta. El artículo solo recoge lo declarado por los testigos y no incluye respuesta del Gobierno ni de Marruecos. La jueza espera información de Defensa sobre los barcos.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-26/el-guardia-civil-declara-a-tardon-que-informo-al-gobierno-de-la-presencia-de-seis-barcos-marroquies-antes-de-la-invasion-7482092/"
     },
     {
-     "id": "ld1",
-     "titular": "Disturbios en Barcelona: unos 128 detenidos y más de veinte comercios dañados",
-     "resumen": "La noche del sábado veinticuatro de octubre hubo graves disturbios en el centro de Barcelona. Una concentración no autorizada, convocada por redes sociales, empezó hacia las seis de la tarde en la plaza de Cataluña y acabó en saqueos e incendios de mobiliario urbano. Según Libertad Digital, participaron unas quinientas personas. La policía catalana detuvo a unas ciento veintiocho, y más de setenta eran menores. Resultaron heridos quince agentes, cuatro de ellos de gravedad, y unos veintitrés comercios sufrieron daños. Los bomberos atendieron treinta y tres incendios de contenedores y papeleras. El alcalde, Jaume Collboni, aseguró que no quedará impune y que el Ayuntamiento reclamará responsabilidades, también a los padres de los menores. La consejera de Interior, Núria Parlon, defendió la actuación policial, y el presidente catalán, Salvador Illa, condenó la violencia.",
-     "url": "https://www.libertaddigital.com/cataluna/2026-10-25/disturbios-en-barcelona-100-detenidos-14-comercios-vandalizados-y-una-noche-de-incendios-y-saqueos-7481493/"
+     "id": "ld3",
+     "titular": "El Gobierno frena la venta de terminales portuarias de Boluda en Canarias a una empresa marroquí",
+     "resumen": "Según Libertad Digital, el Gobierno mantiene paralizada la venta del cuarenta y cinco por ciento de las terminales portuarias de Boluda en Canarias a Marsa Maroc, una empresa estatal de Marruecos. El Centro Nacional de Inteligencia y el Ministerio de Defensa vigilan la operación por motivos de seguridad. Entre los riesgos que señala el diario están el acceso extranjero a información del puerto y a movimientos militares. Boluda calificó esa vigilancia de alarmismo peligroso y sin sentido. La naviera asegura que el socio marroquí tendría una participación minoritaria y ningún poder de decisión. También recuerda que ha invertido más de doscientos cincuenta millones de euros en las islas. Advirtió de que acudirá a los tribunales si se mantienen los frenos. El expediente sigue en la Junta de Inversiones Exteriores y la decisión final corresponde al Gobierno central.",
+     "url": "https://www.libertaddigital.com/canarias/2026-10-26/el-cni-frena-la-venta-de-los-puertos-de-boluda-en-canarias-a-marruecos-por-riesgo-militar-7481875/"
     }
    ]
   },
@@ -43,22 +43,22 @@
    "nombre": "El Español",
    "noticias": [
     {
-     "id": "ee5",
-     "titular": "Justicia entregará al Supremo una lista de 76.600 nacionalizados por la ley de nietos",
-     "resumen": "Según El Español, el Ministerio de Justicia enviará al Tribunal Supremo una lista con los nombres de setenta y seis mil seiscientos de los ciento sesenta y tres mil veinte nacionalizados por la ley de nietos. El Supremo exigió a los ministros Félix Bolaños y José Manuel Albares la lista completa, con cinco días de plazo, y advirtió de multas y posibles responsabilidades penales si no la entregan. Justicia dice que ya hizo su parte y que corresponde a Exteriores identificar el resto de expedientes. Al cruzar los nombres con el censo para las elecciones del veintinueve de noviembre, la Oficina del Censo encontró treinta y ocho mil ciento ochenta y ocho personas con derecho a voto en el extranjero. Mientras tanto, estos nacionalizados no podrán votar, salvo que los consulados certifiquen que cumplen la ley.",
-     "url": "https://www.elespanol.com/espana/tribunales/20261026/bolanos-entregara-supremo-listado-nietos-envio-oficina-censo-nacionalizados/1003744433827_0.html"
-    },
-    {
-     "id": "ee4",
-     "titular": "Lula gana la segunda vuelta en Brasil y Flávio Bolsonaro pide anular las elecciones",
-     "resumen": "Luiz Inácio Lula da Silva ha ganado la segunda vuelta de las elecciones presidenciales de Brasil con el cincuenta y uno coma setenta y nueve por ciento de los votos, frente al cuarenta y ocho coma veintiuno de Flávio Bolsonaro. Según El Español, será su cuarto mandato y supone una remontada histórica, porque en la primera vuelta Bolsonaro iba por delante. Lula dijo que gobernará para todos y reconoció que tendrá que negociar con un Congreso de mayoría conservadora. Bolsonaro no reconoce la derrota y pedirá anular los comicios. Cuestiona que se ampliara el horario de votación en lugares donde faltaron autobuses. El propio periódico señala que, por ahora, esas denuncias no demuestran que el resultado haya cambiado.",
-     "url": "https://www.elespanol.com/mundo/america/20261026/lula-logra-remontada-historica-volvera-presidir-brasil-victoria-derrota-mentira/1003744434369_0.html"
+     "id": "ee1",
+     "titular": "PP y Vox pactan sus listas al Senado: Vox se retira de seis provincias y el PP de tres",
+     "resumen": "Según El Español, el Partido Popular y Vox acordaron coordinar sus candidaturas al Senado para no dividir el voto de la derecha el veintinueve de noviembre. Vox retira sus listas en Las Palmas, Santa Cruz de Tenerife, Cádiz, Valencia, Castellón y Baleares, y el Partido Popular incluirá allí a un candidato independiente propuesto por Vox. El Partido Popular no se presenta en Guipúzcoa, Girona ni Tarragona. En catorce provincias habrá un candidato único. El anuncio llegó el lunes, último día para registrar las listas. Miguel Tellado lo presentó y habló de un entendimiento para frenar a la extrema izquierda. Según fuentes del Partido Popular, una mayoría de tres quintos permitiría impulsar nombramientos en instituciones clave. El Partido Socialista criticó el pacto y lo definió como dos colores y un mismo proyecto de involución.",
+     "url": "https://www.elespanol.com/espana/politica/20261026/pp-vox-llegan-acuerdo-listas-senado-abascal-retiran-provincias-feijoo/1003744434759_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Un mando de la Guardia Civil abrió la puerta de Ceuta e incitó a entrar, según El Español",
-     "resumen": "Una investigación de El Español, basada en testigos y fuentes que no se identifican, sostiene que el teniente coronel Lobo, de la Guardia Civil en Ceuta, ordenó abrir la puerta fronteriza del Tarajal el treinta de julio. Según el diario, él y sus agentes animaron a los migrantes a entrar en la ciudad. Los mandos de la Policía Nacional querían mantener la frontera cerrada, y el inspector jefe llegó a guardar la llave. Lobo habría argumentado que cerrarla podía provocar una avalancha con muertes. El diario cuenta que hubo un enfrentamiento entre ambos. Más de ochenta mil personas entraron, según datos internos que cita el medio. La jueza María Tardón, de la Audiencia Nacional, ha citado a declarar a los dos mandos este lunes. El texto no recoge respuesta oficial.",
-     "url": "https://www.elespanol.com/espana/20261025/teniente-coronel-lobo-agentes-jalearon-invasores-abrir-puerta-ceuta-ciudad/1003744433091_0.html"
+     "titular": "Lula gana la segunda vuelta en Brasil y Flávio Bolsonaro pide anular las elecciones",
+     "resumen": "Lula da Silva ganó la segunda vuelta de las elecciones de Brasil del domingo con el cincuenta y uno coma siete por ciento de los votos, frente al cuarenta y ocho coma dos de Flávio Bolsonaro. Según El Español, es su cuarto mandato y una remontada histórica, porque ningún candidato que quedó segundo en la primera vuelta había ganado antes con el sistema actual. Lula obtuvo unos sesenta y cuatro millones de votos, cerca de cuatro millones y medio más que su rival. Prometió gobernar para todos y calificó su victoria de derrota de la mentira. Flávio Bolsonaro se negó a aceptar el resultado y dijo que pedirá anular las elecciones. Protesta porque se amplió el horario de votación tras fallos del transporte público en varios estados. El diario recuerda que esas quejas, por sí solas, no prueban fraude.",
+     "url": "https://www.elespanol.com/mundo/america/20261026/lula-logra-remontada-historica-volvera-presidir-brasil-victoria-derrota-mentira/1003744434369_0.html"
+    },
+    {
+     "id": "ee3",
+     "titular": "Microsoft ofrece salidas voluntarias a unos sesenta mil empleados",
+     "resumen": "Microsoft ofrece salidas voluntarias a unos sesenta mil empleados, una cuarta parte de su plantilla mundial, según El Español. La directora de personal, Amy Coleman, anunció el plan el lunes en un mensaje interno, que adelantaron Bloomberg y Business Insider. La oferta alcanza a trabajadores de nivel inferior a vicepresidente en equipos concretos de Estados Unidos, Canadá, India y Reino Unido. Quedan fuera los centros de datos, las ventas y el marketing. Quien acepte recibirá prestaciones parecidas a una indemnización estándar y ayuda para la transición. La empresa explica que la inteligencia artificial está cambiando de forma importante su estructura de ingresos y de costes. Con esta cifra, el plan supera el recorte de dieciocho mil puestos de dos mil catorce, hasta ahora el mayor de su historia. El artículo recoge solo la comunicación interna de la compañía.",
+     "url": "https://www.elespanol.com/invertia/empresas/tecnologia/20261026/microsoft-ofrece-salidas-voluntarias-empleados-cuarta-parte-actual-plantilla/1003744435396_0.html"
     }
    ]
   },
@@ -67,16 +67,22 @@
    "nombre": "El Debate",
    "noticias": [
     {
-     "id": "ed2",
-     "titular": "Barcelona estudia derribar mil ochocientos pisos del Besòs",
-     "resumen": "Según El Debate, el Ayuntamiento de Barcelona incluye por primera vez el derribo en los planes para regenerar el barrio del Besòs y el Maresme. Se plantea tirar mil ochocientas viviendas de unas cuatro mil con graves problemas de construcción. Mil quinientos pisos nuevos serían para los vecinos con derecho a realojo, y otros trescientos propietarios solo recibirían una indemnización. El derribo costaría doscientos setenta millones de euros. La nueva empresa pública prevé gastar cuatrocientos quince millones en doce años. El Ayuntamiento asegura que incluirlo no significa decidirlo y que apuesta por rehabilitar. La plataforma vecinal SOS Besòs dice que la noticia cayó como una bomba, y Barcelona en Comú defiende que rehabilitar es viable. En cuatro años solo se han rehabilitado ciento noventa y dos viviendas.",
-     "url": "https://www.eldebate.com/espana/cataluna/20261025/collboni-contempla-derribar-1800-pisos-besos-abre-puerta-dejar-300-propietarios-realojo_473166.html"
+     "id": "ed1",
+     "titular": "Dos magistrados del Constitucional critican a sus compañeros por la ley de nietos",
+     "resumen": "Los magistrados del Tribunal Constitucional Juan Carlos Campo y Ramón Sáez firmaron un voto discrepante, según El Debate. Disienten de la decisión del pleno de rechazar, por prematuro, el recurso del Defensor del Pueblo contra la suspensión del censo de la llamada ley de nietos, acordada por el Tribunal Supremo. Sostienen que la mayoría actuó de manera manifiesta contra la Constitución, en concreto contra el artículo que obliga a facilitar el voto de los españoles en el exterior. Califican su razonamiento de formalismo enervante. Advierten de que la suspensión podría dejar sin voto en las elecciones del veintinueve de noviembre a unos ciento sesenta mil españoles nacionalizados. También critican que el Supremo avisara a los afectados por edictos y con poco plazo, aunque muchos viven fuera. El artículo no recoge respuesta de la mayoría ni del Gobierno.",
+     "url": "https://www.eldebate.com/espana/20261026/dos-magistrados-votaron-favor-recurso-nietos-acusan-companeros-contravenir-manera-manifiesta-constitucion_473948.html"
     },
     {
-     "id": "ed1",
-     "titular": "María Corina Machado vuelve a Venezuela",
-     "resumen": "La líder opositora venezolana y premio Nobel de la Paz, María Corina Machado, ha regresado a Venezuela. Según El Debate, su primera aparición fue el domingo veinticinco de octubre en el santuario de la Divina Pastora, en el estado de Lara, donde la recibieron seguidores con entusiasmo. Ella escribió que estaba allí con ellos. Había intentado volver siete veces sin éxito; en el último intento, desde Panamá, una aerolínea no la dejó embarcar porque Venezuela había cerrado su espacio aéreo. El diario señala que su regreso habría sido muy complicado sin el visto bueno de Washington. Donald Trump dijo que espera que esté a salvo, y el secretario de Estado, Marco Rubio, afirmó que se dieron las condiciones para un regreso seguro. Machado se negó a formar parte de la mesa de negociación con el Gobierno de Delcy Rodríguez.",
-     "url": "https://www.eldebate.com/internacional/20261025/maria-corina-esta-venezuela_473634.html"
+     "id": "ed2",
+     "titular": "Renfe prepara una compra de trenes de alta velocidad sin Talgo",
+     "resumen": "Renfe ultima la adjudicación de treinta trenes de alta velocidad, ampliables en diez más, de los que se ha excluido a Talgo, según El Debate. El presupuesto base es de mil trescientos sesenta y dos millones de euros, aunque el valor total estimado del contrato llega a más de cuatro mil millones. El consejo de la empresa podría aprobarlo este martes. Solo siguen en la competición dos fabricantes extranjeros, Siemens e Hitachi. Talgo, que da trabajo a unas tres mil personas en España, fue rescatada por el Estado, que entró en su capital con setenta y cinco millones de euros. El diario recuerda que el Partido Popular logró en el Congreso una moción, sin carácter vinculante, para que se reformulasen los requisitos y pudieran competir más fabricantes españoles. La apoyaron Vox y Esquerra Republicana, y la rechazaron el Partido Socialista y Sumar.",
+     "url": "https://www.eldebate.com/economia/20261026/renfe-ultima-compra-1362-millones-trenes-talgo-pese-rescate-estado-advertencias-congreso_473220.html"
+    },
+    {
+     "id": "ed3",
+     "titular": "María Corina Machado recorre Caracas entre miles de seguidores",
+     "resumen": "La líder opositora venezolana María Corina Machado llegó a Caracas la noche del domingo y recorrió la ciudad en una caravana que miles de seguidores casi bloquearon, según El Debate. Antes había reaparecido en una iglesia de Barquisimeto, a unos cuatrocientos kilómetros de la capital. Llegó por carretera y confirmó que había superado los pasos fronterizos, aunque no se sabe por dónde entró al país. Sus seguidores la acompañaron en coches y motos coreando consignas de libertad. Machado dijo que Venezuela le está dando una lección al mundo. Salió del país en diciembre para recibir el Premio Nobel y pasó casi un año escondida o en el exilio. Su regreso llega mientras la oposición y el gobierno interino negocian una transición democrática con apoyo de Estados Unidos. El artículo no recoge reacciones del gobierno.",
+     "url": "https://www.eldebate.com/internacional/20261026/corina-machado-recorre-caracas-agolpada-gran-caravana-gente-estamos-dando-leccion-mundo_473703.html"
     }
    ]
   },
@@ -85,22 +91,16 @@
    "nombre": "The Objective",
    "noticias": [
     {
-     "id": "to2",
-     "titular": "Moeve y Galp ponen fin a su fusión",
-     "resumen": "Las energéticas Moeve, antes llamada Cepsa, y la portuguesa Galp han terminado sus negociaciones para fusionar sus negocios de refino y gasolineras. Según The Objective, ambas dijeron en un comunicado que no lograron unos términos definitivos que cumplieran sus criterios. En enero habían firmado un acuerdo no vinculante para crear un campeón energético ibérico. El plan preveía una sociedad industrial, con las refinerías de Cádiz, Huelva y Sines, donde los accionistas de Moeve tendrían el ochenta por ciento, y otra de venta de combustible repartida a partes iguales. Fuentes del sector citadas por el medio apuntan a la crisis energética provocada por el conflicto en Oriente Próximo. El Gobierno portugués había mostrado su preocupación por perder el control de la refinería de Sines. Moeve seguirá con su estrategia independiente hasta dos mil treinta.",
-     "url": "https://theobjective.com/economia/2026-10-26/moeve-galp-ponen-fin-negociaciones-fusion-campeon-energetico-iberico/"
-    },
-    {
-     "id": "to3",
-     "titular": "Los hutíes dicen haber atacado el aeropuerto de Riad y petroleras saudíes",
-     "resumen": "Los hutíes de Yemen, aliados de Irán, afirman haber lanzado misiles y drones contra Arabia Saudí este lunes. Según The Objective, que cita a Europa Press, un misil habría alcanzado el aeropuerto internacional Rey Jalid de Riad, y varios drones habrían atacado estaciones de bombeo de petróleo. También dicen haber golpeado tropas y depósitos de armas en las provincias yemeníes de Adén y Lahij. Su portavoz militar, Yahya Sari, habla de decenas de bajas. No hay confirmación independiente ni reacción oficial saudí. Los ataques coinciden con una ofensiva de las fuerzas yemeníes, apoyadas por Arabia Saudí, para recuperar la ciudad de Moca. El aeropuerto había anunciado poco antes la reapertura de sus terminales. Estados Unidos pidió hace unos días a su personal no esencial que abandonara el país.",
-     "url": "https://theobjective.com/internacional/2026-10-26/huties-atacado-aeropuerto-riad-instalaciones-petroleras/"
-    },
-    {
      "id": "to1",
-     "titular": "Un consulado en México tardó un mes en hallar expedientes de exiliados reales para un acto del ministro Torres",
-     "resumen": "Según The Objective, un empleado del Consulado General de España en México cuenta que el personal tardó más de un mes en encontrar expedientes de exiliados reales. Eran para un acto del ministro Ángel Víctor Torres, en la residencia del embajador, por el aniversario del exilio español, en junio de dos mil veinticuatro. Según el medio, en Ciudad de México se han tramitado unas cuarenta mil nacionalidades, y unas sesenta mil en todo el país. Tras la revisión solo se localizaron entre cuarenta y cincuenta expedientes de exiliados de la Guerra Civil o del franquismo. Muchos solicitantes eran descendientes. La información forma parte de una serie de reportajes del diario sobre la concesión de pasaportes en el extranjero y se apoya en testimonios anónimos. El artículo no incluye respuesta del Ministerio.",
-     "url": "https://theobjective.com/espana/2026-10-25/mexico-mes-hallar-nietos-torres/"
+     "titular": "Harry Kane gana el Balón de Oro",
+     "resumen": "El delantero inglés Harry Kane, del Bayern de Múnich, ha ganado el Balón de Oro, según The Objective. Tiene treinta y tres años y es capitán de la selección de Inglaterra. En la votación superó a Lamine Yamal, del Barcelona, y a Kylian Mbappé, del Real Madrid. La gala se celebró el lunes en el teatro London Palladium, en Londres. Es el primer jugador inglés que gana el premio desde Michael Owen en dos mil uno, es decir, un cuarto de siglo después. Este año el galardón cumple setenta años, ya que la revista France Football lo creó en mil novecientos cincuenta y seis. Su primer ganador fue también inglés, Stanley Matthews. El diario cuenta que el premio se le resistía a Kane pese a su gran historial goleador en el Tottenham y en el Bayern. El artículo no incluye declaraciones ni el recuento de votos.",
+     "url": "https://theobjective.com/deportes/futbol/2026-10-26/ni-yamal-ni-mbappe-kane-lleva-balon-oro/"
+    },
+    {
+     "id": "to2",
+     "titular": "El Gobierno prepara contratos de emergencia para el voto de los españoles en el exterior",
+     "resumen": "El Consejo de Ministros de este martes podría aprobar dos contratos de emergencia para las elecciones del veintinueve de noviembre, según fuentes del Gobierno citadas por The Objective. El primero, de un millón y medio de euros, serviría para comprar sobres con la documentación electoral de los españoles residentes en el extranjero. Argentina concentra la mayor partida, con quinientos cincuenta mil sobres. El segundo, de siete millones, serviría para alquilar lectores que permitan identificar a los votantes con el documento de identidad digital. El diario relaciona el aumento del censo en el exterior con la llamada ley de nietos, cuestionada por el Tribunal Supremo. Señala además que la cifra de sobres supera a los censados en Argentina, sin explicar la diferencia. El Partido Popular pide todas las garantías para votar y un sistema de identificación seguro.",
+     "url": "https://theobjective.com/espana/politica/2026-10-27/argentina-ley-nietos-sobres-votos-elecciones/"
     }
    ]
   },
@@ -110,9 +110,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "La Fiscalía pide investigar a Zapatero por malversación por las joyas",
-     "resumen": "Según OKDiario, la Fiscalía Anticorrupción pidió el veintitrés de octubre al juez José Luis Calama que investigue también a José Luis Rodríguez Zapatero por malversación, por las joyas halladas en una caja fuerte el diecinueve de mayo. Se tasaron de forma preliminar en más de un millón trescientos mil euros. Sería el quinto delito que se le atribuye. La defensa dice que tres conjuntos fueron un regalo del rey de Arabia Saudí en dos mil siete y pide una comisión rogatoria a ese país. La Fiscalía la rechaza. Sostiene que, si eran un obsequio institucional, pertenecían al Estado, y que no figuran en el acta de regalos de dos mil doce. Considera que el delito no habría prescrito. El juez aún no ha decidido.",
-     "url": "https://okdiario.com/espana/fiscalia-suma-quinto-delito-contra-zapatero-malversacion-joyas-13-millones-20616598"
+     "titular": "Más de la mitad de los detenidos por los saqueos de Barcelona son menores",
+     "resumen": "Los disturbios del sábado en la plaza de Cataluña de Barcelona dejaron alrededor de ciento treinta detenidos, más de la mitad menores de edad, según OKDiario. Fueron identificadas cuatrocientas cincuenta personas y quince policías resultaron heridos, cuatro de ellos de gravedad. El diario cuenta entre veintitrés y veinticuatro comercios dañados y daños en mobiliario urbano por treinta y seis mil euros, con treinta y un contenedores quemados. La convocatoria circuló sobre todo por TikTok. El Sindicato Unificado de Policía pidió una respuesta institucional firme, más prevención y que se investigue la captación de menores por redes sociales. Fuentes policiales anónimas, citadas por el diario, afirman que muchos autores serían de origen extranjero, pero el artículo no aporta datos que lo respalden. Las cifras del texto no coinciden del todo entre titular y cuerpo.",
+     "url": "https://okdiario.com/espana/72-128-detenidos-saqueo-comercios-barcelona-son-menores-edad-20629823"
+    },
+    {
+     "id": "ok2",
+     "titular": "Convocan nuevos saqueos en Barcelona para la noche de Halloween",
+     "resumen": "Según OKDiario, decenas de personas organizan saqueos en Barcelona para la noche de Halloween, el treinta y uno de octubre. El diario dice haber visto mensajes del grupo de Telegram llamado Blocus Barcelona. Citan como punto de encuentro las seis de la tarde, con tiendas elegidas sobre la marcha. Las instrucciones piden ir encapuchados, atacar solo grandes tiendas y dispersarse después de cada golpe. Un usuario afirma que el objetivo es saquear a los ricos. Policías expertos en inteligencia, citados por el diario, describen Blocus como una red de perfiles anónimos y efímeros, no una organización formal. Dicen que usa TikTok para captar y Telegram y WhatsApp para coordinarse. El artículo no incluye declaraciones oficiales de la policía, del Gobierno ni de la Generalitat, y toda la información procede del propio medio.",
+     "url": "https://okdiario.com/espana/mensajes-incendiarios-blocus-redes-saquear-barcelona-halloween-70-somos-inmigrantes-20635740"
+    },
+    {
+     "id": "ok3",
+     "titular": "Los Mossos descartan injerencia rusa en los saqueos de Barcelona",
+     "resumen": "Los Mossos d'Esquadra no han encontrado injerencia rusa en los saqueos de Barcelona, según OKDiario. Tampoco han hallado vínculos con otros países ni con redes antisistema de Italia o Francia. Según el diario, que cita a investigadores sin nombre, al principio las convocatorias las habrían difundido perfiles ligados al independentismo. Después, pequeños grupos de jóvenes sin ideología definida habrían tomado el control y convertido las llamadas en saqueos por diversión. Más de la mitad de los detenidos son menores, la mayoría de origen extranjero y con muy pocos antecedentes. Los investigadores dudan de que una sola organización esté detrás de las convocatorias en doce ciudades. A la Policía le preocupa más la huelga general del once de noviembre en Madrid. Casi todo se atribuye a fuentes anónimas, por lo que no puede verificarse.",
+     "url": "https://okdiario.com/espana/mossos-descartan-injerencia-rusa-saqueos-investigan-perfiles-ligados-independentismo-origen-convocatoria-20634585"
     }
    ]
   },
@@ -122,9 +134,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Una encuesta muestra a la izquierda recortando distancias, pero PP y Vox mantienen la mayoría",
-     "resumen": "Una encuesta de Ateneo del Dato para elDiario.es, realizada del veinte al veintidós de octubre a dos mil personas por internet, indica que el bloque de izquierdas recorta distancias. Aun así, el Partido Popular y Vox conservan la mayoría absoluta. El PP tendría un treinta y uno por ciento de los votos, el PSOE casi veintiocho y Vox casi veinte. Frente Amplio lograría un siete por ciento y Podemos un tres. Sumados, PP y Vox rondan el cincuenta y uno por ciento, frente al treinta y siete de las tres fuerzas de izquierda. La distancia baja de catorce coma seis a trece coma ocho puntos. El PP pierde dos puntos desde la anterior encuesta, y Vox sube seis décimas. Una de cada cinco personas votaría sobre todo para impedir que gobierne otro partido.",
-     "url": "https://www.eldiario.es/politica/bloque-izquierdas-recorta-distancias-pp-vox-mantienen-mayoria-absoluta_1_13611052.html"
+     "titular": "Lula gana en Brasil y Flávio Bolsonaro no reconoce el resultado",
+     "resumen": "Lula da Silva, del Partido de los Trabajadores, ganó la segunda vuelta de las elecciones presidenciales de Brasil por el cincuenta y uno coma siete por ciento frente al cuarenta y ocho coma dos de Flávio Bolsonaro, según elDiario.es. El tribunal electoral le proclamó vencedor la noche del domingo. Ninguna encuesta había previsto ese margen. Bolsonaro dijo que no reconocerá el resultado y que pedirá anular las elecciones, por la confusión del día de la votación. Ese día se amplió el horario dos horas, tras quejas por la falta de autobuses en ciudades como São Paulo y Salvador. Lula ganó en todas las regiones, con especial fuerza en el noreste, donde logró más del setenta y uno por ciento en Bahía. Algunos comentaristas temen una crisis tras las elecciones, y Eduardo Bolsonaro, hermano de Flávio, dijo que la situación huele a golpe.",
+     "url": "https://www.eldiario.es/internacional/brasil-vilo-elecciones-ajustadas-historia_1_13614113.html"
+    },
+    {
+     "id": "edi2",
+     "titular": "El movimiento estudiantil derrota a Vučić en Serbia tras doce años",
+     "resumen": "La Lista Estudiantil ganó las elecciones de Serbia con el cincuenta y dos coma seis por ciento de los votos, frente al treinta y nueve coma dos del presidente Aleksandar Vučić, según elDiario.es. Las estimaciones le dan unos ciento cuarenta de los doscientos cincuenta escaños, una mayoría absoluta. El partido de Vučić quedaría con ciento tres, veintiséis menos que en dos mil veintitrés. La participación subió al sesenta y ocho coma seis por ciento. Vučić admitió el fracaso minutos después de cerrarse las urnas. Gobernaba desde hace doce años y, tras dos años de protestas estudiantiles, anunció en septiembre su dimisión como presidente y convocó elecciones anticipadas. La campaña giró en torno a la lucha contra la corrupción. Los candidatos fueron propuestos sobre todo por facultades universitarias. El ingreso en la Unión Europea se decidiría en referéndum.",
+     "url": "https://www.eldiario.es/internacional/movimiento-estudiantil-pone-reinado-autoritario-12-anos-vucic-serbia_1_13614161.html"
+    },
+    {
+     "id": "edi3",
+     "titular": "Dimite el delegado del Gobierno en Madrid tras quedar fuera de las listas socialistas",
+     "resumen": "Francisco Martín Aguirre, delegado del Gobierno en Madrid desde dos mil veintitrés, ha dimitido, según elDiario.es. Dijo que no se dan las condiciones para continuar en el cargo. La dimisión llegó algo más de un día antes del plazo para presentar candidaturas del veintinueve de noviembre, después de quedar fuera de las listas del Partido Socialista al Congreso y al Senado. El Consejo de Ministros nombraría a su sucesora este martes, probablemente la actual subdelegada, Pilar Trinidad Núñez. El diario añade que otros delegados del Gobierno sí van en listas socialistas. Su etapa estuvo marcada por choques con la Comunidad y el Ayuntamiento de Madrid, por ejemplo por la acampada de la Puerta del Sol. Alfonso Serrano, del Partido Popular, insinuó que la dimisión tendría otras causas. Fue investigado en el caso de Begoña Gómez, pero quedó fuera en diciembre de dos mil veinticinco.",
+     "url": "https://www.eldiario.es/madrid/dimite-delegado-gobierno-madrid-quedarse-fuera-listas-psoe-elecciones_1_13613892.html"
     }
    ]
   }
