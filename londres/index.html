@@ -1879,9 +1879,12 @@
         if (ov.hidden) return;
         ov.hidden = true;
         if (document.getElementById('day-full').hidden) document.body.style.overflow = '';
-        if (!fromPop && history.state && history.state.info) history.back();
+        if (!fromPop && history.state && history.state.info) { skipPop = true; history.back(); }
     };
+    // Al cerrar con la X se hace history.back(): ese «atrás» no debe cerrar también el día a pantalla completa
+    let skipPop = false;
     window.addEventListener('popstate', () => {
+        if (skipPop) { skipPop = false; return; }
         if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
     });
 
