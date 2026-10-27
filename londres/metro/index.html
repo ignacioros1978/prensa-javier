@@ -630,6 +630,8 @@ function showLast(){
   $('#showLast').onclick=()=>{openRoute(last.from,last.to);render(last,!navigator.onLine);};
 }
 showLast();
+/* Enlace directo desde la guía: metro/?r=d2i abre esa ruta */
+try{const rq=new URLSearchParams(location.search).get('r');if(rq&&ROUTES[rq])openFixed(rq);}catch(e){}
 $('#routeBack').onclick=()=>history.back();
 $('#routeBack2').onclick=()=>history.back();
 })();

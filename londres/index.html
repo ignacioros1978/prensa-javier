@@ -287,6 +287,29 @@
             border: 1px solid #e2e8f0;
         }
 
+        /* Itinerario nuevo: más claro y legible */
+        .itin2 .itinerary-time { font-size: 14px; min-width: 46px; }
+        .itin2 .itinerary-details h4 { font-size: 15px; line-height: 1.3; }
+        .itin2 .itinerary-details p { font-size: 14px; color: #334155; line-height: 1.45; margin-top: 4px; }
+        .itin2 .itinerary-details p.itin-hours { color: #7c2d12; font-weight: 700; }
+        .itin-num { display:inline-flex; width:28px; height:28px; border-radius:50%; color:#fff; font-weight:800; font-size:14px; align-items:center; justify-content:center; border:2px solid #fff; box-shadow:0 1px 4px rgba(0,0,0,.3); }
+        .itin2 .itinerary-icon { min-width: 30px; }
+        .itin-sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+        .itin-zone { font-size: 14px; color: #475569; margin: 0 0 10px; font-weight: 600; }
+        .itin-note { background:#fef3c7; border:1.5px solid #f59e0b; color:#78350f; border-radius:10px; padding:10px 12px; font-size:14px; font-weight:700; margin-bottom:10px; }
+        .itin-move { display:flex; gap:10px; align-items:flex-start; margin:2px 0 10px 18px; padding:8px 12px; border-left:3px dashed #94a3b8; background:#f1f5f9; border-radius:0 10px 10px 0; font-size:14px; color:#334155; line-height:1.45; }
+        .itin-move .mv-ic { font-size: 18px; line-height: 1.2; }
+        .itin-move b { color: #0f172a; }
+        .itin-go { display:inline-flex; align-items:center; gap:4px; margin-top:6px; min-height:40px; padding:0 12px; border-radius:10px; background:#1d4ed8; color:#fff !important; font-weight:800; font-size:14px; text-decoration:none; }
+        .itin-move .itin-go { display:flex; width:fit-content; }
+        .itin-full-btn { display:flex; align-items:center; justify-content:center; width:100%; min-height:46px; margin:-4px 0 12px; border:2px solid #1e293b; border-radius:12px; background:#fff; color:#0f172a; font-weight:800; font-size:15px; cursor:pointer; }
+        .itin-gf { margin-top:12px; padding:10px 12px; border-radius:10px; background:#ecfdf5; border:1.5px solid #6ee7b7; font-size:14px; color:#064e3b; line-height:1.45; }
+        #day-full { position:fixed; inset:0; z-index:5000; background:#fff; display:flex; flex-direction:column; }
+        #day-full[hidden] { display:none !important; }
+        #day-full .df-top { display:flex; justify-content:flex-end; padding:max(10px,env(safe-area-inset-top)) 12px 6px; }
+        #day-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
+        #day-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; }
+
         .section-block { margin-top: 16px; margin-bottom: 16px; }
         .section-block h3 { font-size:0.85rem; font-weight:700; color:var(--text-primary); margin-bottom:8px; }
         .card-grid { display:grid; grid-template-columns:1fr; gap:8px; }
@@ -886,6 +909,7 @@
 </head>
 <body>
 
+<div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="app-container">
     <header style="position:relative;">
         <h1>🇬🇧 Londres · Dic 2026</h1>
@@ -1614,15 +1638,193 @@
         }
     ];
 
-    // Asignar orden por día
+
+    // ══════════════════════════════════════════════════════════════════════
+    // ITINERARIO ÚNICO: de aquí salen a la vez el texto de cada día y los
+    // números de los círculos del mapa, así no pueden descuadrarse.
+    // n = parada numerada (lleva su número en el mapa); move = cómo ir.
+    // ══════════════════════════════════════════════════════════════════════
+    const HOURS = {
+        londoneye: 'Diciembre: 10:00–20:30 aprox. · reservar hora online',
+        southbank_market: 'Todos los días 11:00–22:00 (2 nov–3 ene)',
+        mms_store: 'Lun–Sáb 10:00–24:00 · Dom 12:00–18:00',
+        chinatown: 'Restaurantes: la mayoría desde las 12:00',
+        kingdom_sweets: 'Abre hasta tarde · horario exacto sin confirmar',
+        fortnum_mason: 'Lun–Sáb 10:00–21:00 · Dom 11:30–18:00',
+        regent_street: 'Calle abierta siempre · luces encendidas al anochecer (~16:00)',
+        hamleys: 'Lun–Sáb 11:00–20:00 · Dom 12:00–18:00 (en Navidad suele ampliar)',
+        borough_market: 'Lun–Vie 10:00–17:00 · Sáb 9:00–17:00 · Dom 10:00–16:00 (en diciembre abre a diario)',
+        sg_d2: 'Dentro de Borough Market · Dom 10:00–16:00',
+        winter_river: 'Todos los días 11:00–22:00 (10 nov–3 ene)',
+        tower_bridge: 'Cruzar el puente: siempre y gratis · exposición y suelo de cristal 9:30–18:00',
+        pier_butlers: 'Barcos a Westminster (diciembre): 12:00, 12:40, 13:20, 14:00, 14:40, 15:20…',
+        westminster_pier: 'Muelle con acceso sin escalones',
+        trafalgar: 'Plaza abierta siempre · árbol de Navidad iluminado al anochecer',
+        sugarsin: 'SugarSin: Lun–Vie 11:30–19:30 · Sáb 11:00–20:00 · Dom 11:00–19:00 · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00',
+        sg_d1: 'Restaurante · reservar si vais muchos',
+        big_ben: 'Exterior: siempre',
+        buckingham: 'Cambio de Guardia a las 11:00 (lun, mié, vie y dom) · llegar 10:00–10:15 · se confirma ~6 semanas antes en householddivision.org.uk',
+        almuerzo_victoria: 'Restaurantes desde las 12:00',
+        harrods: 'Lun–Sáb 10:00–21:00 · Dom 11:30–18:00',
+        hyde_park: '10:00–22:00 (algunos días abre más tarde) · ENTRADA: reservar franja horaria online, gratis en horas valle',
+        portobello: 'Martes: mercado reducido (comida y algo de antigüedades) · el grande es el sábado',
+        sg_d4: "Horario sin confirmar: mirar libbys.co antes de ir",
+        kensington: 'Jardines: desde las 6:00 hasta el anochecer · Palacio por dentro: en invierno suele abrir de miércoles a domingo (el martes puede estar cerrado)',
+        royal_albert: 'Exterior: siempre',
+        almuerzo_skensington: 'Restaurantes desde las 12:00',
+        harrods_toy: 'Lun–Sáb 10:00–21:00 · Dom 11:30–18:00',
+        battersea: 'Tiendas 10:00–20:00 aprox. · mercadillo navideño (5–22 dic) Lun–Sáb 11:00–20:00, Dom 11:00–18:00'
+    };
+    // Puntos nuevos del crucero del día 2
+    locations.push(
+        { id: 'pier_butlers', name: 'Crucero · Tower Bridge (Butler\'s Wharf Pier)', address: 'Butler\'s Wharf Pier, Shad Thames, SE1 2YE', lat: 51.5043, lng: -0.0722, day: 'd2', category: 'interes', emoji: '⛴️',
+          desc: 'Thames River Sightseeing hacia Westminster · 30–40 min · pasa por el HMS Belfast, la catedral de St Paul, el Globe y el London Eye.' },
+        { id: 'westminster_pier', name: 'Westminster Pier (llegada del barco)', address: 'Victoria Embankment, SW1A 2JH', lat: 51.5017, lng: -0.1235, day: 'd2', category: 'metro', emoji: '⚓',
+          desc: 'Llegada del crucero, justo al lado del Big Ben.' }
+    );
+    locations.forEach(l => { if (HOURS[l.id]) l.hours = HOURS[l.id]; });
+
+    const ITIN = {
+        d1: { title: 'Día 1 · Sábado 5 Dic', zone: 'London Eye · South Bank · Leicester Square · Chinatown · Piccadilly · Regent St', back: '🚕 Vuelta £22–26', grad: '#e74c3c,#c0392b',
+          steps: [
+            { t: '09:15', icon: '🚇', title: 'Metro Hammersmith → Waterloo', text: 'District hasta Westminster y allí Jubilee 1 parada (unos 28 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd1i' },
+            { move: 'walk', min: 5, text: 'Sal de la estación siguiendo los carteles «London Eye / South Bank». La noria se ve desde la salida.', to: 'londoneye' },
+            { t: '10:00', n: 'londoneye', icon: '🎡', title: 'London Eye ⭐', text: 'Vuelta de 30 min en cápsula, 135 m de altura. Coged la primera hora (10:00) para evitar colas; las entradas con hora se compran online antes del viaje.', today: '10:00–20:30 aprox.' },
+            { move: 'walk', min: 3, text: 'Al bajar de la noria, sigue el paseo del río hacia la izquierda (dirección al puente de Waterloo).', from: 'londoneye', to: 'southbank_market' },
+            { t: '11:00', n: 'southbank_market', icon: '✨', title: 'Southbank Centre Winter Market ⭐', text: 'Casetas de madera junto al Támesis. Abre a las 11:00: por eso va después del London Eye.', today: '11:00–22:00' },
+            { move: 'walk', min: 25, text: 'Sube las escaleras/rampa al puente de Waterloo, crúzalo (vistas a los dos lados del río), sigue por el Strand y entra hacia Leicester Square.', from: 'southbank_market', to: 'mms_store' },
+            { t: '12:15', n: 'mms_store', icon: '🍫', title: "M&M's Store (Leicester Square)", text: 'Cuatro plantas de M&M’s. Está en la propia plaza.', today: 'sábado 10:00–24:00' },
+            { move: 'walk', min: 2, text: 'Chinatown empieza justo detrás de Leicester Square (calle Gerrard St, con los arcos chinos).', from: 'mms_store', to: 'chinatown' },
+            { t: '13:00', n: 'chinatown', icon: '🍜', title: 'Comida en Chinatown', text: 'Dim sum o ramen para todos. Sin gluten: Bancone o LEON en Covent Garden, a 5–8 min.' },
+            { move: 'walk', min: 5, text: 'Baja por Coventry St hasta Piccadilly Circus (la plaza de las pantallas).', from: 'chinatown', to: 'kingdom_sweets' },
+            { t: '14:00', n: 'kingdom_sweets', icon: '🍬', title: 'Kingdom of Sweets (Piccadilly Circus)', text: 'Caramelos de todo el mundo y pick’n’mix.' },
+            { move: 'walk', min: 4, text: 'Sigue recto por la calle Piccadilly; Fortnum & Mason está a la izquierda (fachada verde agua).', from: 'kingdom_sweets', to: 'fortnum_mason' },
+            { t: '14:45', n: 'fortnum_mason', icon: '🍰', title: 'Fortnum & Mason', text: 'Desde 1707: té, chocolates y galletas en latas de colores. El regalo típico de Londres.', today: 'sábado 10:00–21:00' },
+            { move: 'walk', min: 5, text: 'Vuelve a Piccadilly Circus y sube por Regent Street (la calle curva de los ángeles).', from: 'fortnum_mason', to: 'regent_street' },
+            { t: '15:30', n: 'regent_street', icon: '✨', title: 'Regent Street (ángeles) → Carnaby Street', text: 'Al anochecer (sobre las 16:00) se encienden los ángeles. Carnaby está a la derecha, a 2 min, con su decoración temática.' },
+            { move: 'walk', min: 3, text: 'Vuelve a Regent Street; Hamleys está en la misma acera, a la altura de Great Marlborough St.', from: 'regent_street', to: 'hamleys' },
+            { t: '16:15', n: 'hamleys', icon: '🧸', title: 'Hamleys ⭐', text: 'Siete plantas de juguetes. Harry Potter en el sótano, LEGO arriba. Calculad 45–60 min.', today: 'sábado 11:00–20:00' },
+            { move: 'taxi', text: 'Taxi negro desde Regent Street a Hammersmith: unos 25 min y £22–26. Con 17 personas, varios taxis (caben 5–6 por taxi).' }
+          ],
+          gf: 'Oka (Kingly Court, Carnaby): tailandés con mucha carta sin gluten, al lado de Hamleys.' },
+        d2: { title: 'Día 2 · Domingo 6 Dic', zone: 'Borough Market · Winter by the River · Tower Bridge · crucero · Trafalgar · Covent Garden', back: '🚇 / 🚕 Vuelta desde Covent Garden', grad: '#3498db,#2471a3',
+          steps: [
+            { t: '09:15', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
+            { move: 'walk', min: 3, text: 'En London Bridge sigue los carteles «Borough High Street / Borough Market».', to: 'borough_market' },
+            { t: '10:00', n: 'borough_market', icon: '🛒', title: 'Borough Market ⭐', text: 'El mercado de comida más famoso de Londres. Llegar a la apertura: hay menos gente. Desayuno sin gluten en Free From Bakehouse (100 % sin gluten).', today: 'domingo 10:00–16:00' },
+            { move: 'walk', min: 15, text: 'Ve hacia el río pasando por la catedral de Southwark, cruza por debajo del puente de Londres y sigue el paseo del río hacia el este hasta Hay’s Galleria.', from: 'borough_market', to: 'winter_river' },
+            { t: '11:30', n: 'winter_river', icon: '🎄', title: 'Winter by the River', text: 'Mercadillo navideño junto al río, con Tower Bridge de fondo. Abre a las 11:00. Hay curling en el muelle.', today: '11:00–22:00' },
+            { move: 'walk', min: 5, text: 'Sigue el paseo del río (pasando el HMS Belfast) hasta el pie de Tower Bridge.', from: 'winter_river', to: 'tower_bridge' },
+            { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla y, si os apetece, cruzarlo a pie (gratis). La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
+            { t: '12:45', icon: '🍽️', title: 'Comida en la zona', text: 'En Shad Thames / Butler’s Wharf (al lado del muelle del barco) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
+            { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad 15 min antes.', from: 'tower_bridge', to: 'pier_butlers' },
+            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero a Westminster (Thames River Sightseeing)', text: 'Sale de Butler’s Wharf Pier a las 14:00 (si se escapa, hay otro a las 14:40). Unos 30–40 min por el río: HMS Belfast, St Paul’s, el Globe, el London Eye. Billete sencillo: adulto £13,50, niño £9,40, familia (2+2) £36,40.', today: 'barcos 13:20 · 14:00 · 14:40' },
+            { move: 'walk', min: 15, text: 'Desembarcas en Westminster Pier, al lado del Big Ben. Sube a la calle, gira a la derecha y sigue recto por Whitehall (pasarás Downing Street y los guardias a caballo) hasta Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
+            { t: '15:15', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: quedaos a ver cómo se encienden las luces.' },
+            { move: 'walk', min: 8, text: 'Sal por la esquina de la iglesia de St Martin-in-the-Fields y sube por William IV St y Chandos Place hasta la plaza de Covent Garden.', from: 'trafalgar', to: 'sugarsin' },
+            { t: '16:00', n: 'sugarsin', icon: '🍭', title: 'Covent Garden iluminado + SugarSin', text: 'El mercado cubierto con su árbol y la decoración. SugarSin está abierto el domingo hasta las 19:00 (según la web de Covent Garden). El Apple Market cierra a las 18:00.', today: 'SugarSin domingo 11:00–19:00' },
+            { move: 'metro', text: 'Vuelta: metro Piccadilly DIRECTO de Covent Garden a Hammersmith, sin trasbordo (unos 20 min; esta estación solo tiene ascensores, ideal con carrito). O taxi negro: unos 30 min y £22–26.' }
+          ],
+          gf: 'Free From Bakehouse y Khanom Krok (en Borough Market, 100 % sin gluten) · Wagamama Tower Bridge · Bancone (Covent Garden).' },
+        d3: { title: 'Día 3 · Lunes 7 Dic', zone: 'Westminster · Buckingham · Victoria · Harrods · Hyde Park', back: '🚕 Vuelta £13–17', grad: '#2ecc71,#239b56',
+          note: '⚠️ HOY SE SALE A LAS 9:00 para coger buen sitio en el Cambio de Guardia.',
+          steps: [
+            { t: '09:00', icon: '🚇', title: 'Metro Hammersmith → Westminster', text: 'District directo, sin trasbordo (unos 20 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd3i' },
+            { move: 'walk', min: 2, text: 'Sal por la salida «Houses of Parliament / Westminster Bridge»: el Big Ben está enfrente.', to: 'big_ben' },
+            { t: '09:30', n: 'big_ben', icon: '🏛️', title: 'Big Ben, Westminster Bridge y Parliament Square', text: 'Las fotos más famosas del viaje. Desde el puente se ve el London Eye.' },
+            { move: 'walk', min: 15, text: 'Cruza Parliament Square y sigue por Birdcage Walk, junto a St James’s Park, hasta el palacio.', from: 'big_ben', to: 'buckingham' },
+            { t: '10:00', n: 'buckingham', icon: '👑', title: 'Cambio de Guardia · Buckingham Palace ⭐⭐', text: 'Llegar a las 10:00–10:15 para coger sitio junto a las verjas o en el monumento a la Reina Victoria. La ceremonia empieza a las 11:00 y dura unos 45 min. Es gratis. Comprobad el día en el calendario oficial (se confirma unas 6 semanas antes; si llueve mucho puede acortarse).' },
+            { move: 'walk', min: 15, text: 'Baja por Buckingham Palace Road hasta la zona de Victoria.', from: 'buckingham', to: 'almuerzo_victoria' },
+            { t: '12:30', n: 'almuerzo_victoria', icon: '🍽️', title: 'Comida en Victoria / Pimlico', text: 'Zona tranquila y con precios razonables. Sin gluten: Al Duca (italiano) o Casa do Frango.' },
+            { move: 'taxi', text: 'A Harrods: taxi o bus 10 min (≈£10 el taxi), o 25 min andando por Grosvenor Place y Knightsbridge.', from: 'almuerzo_victoria', to: 'harrods' },
+            { t: '14:00', n: 'harrods', icon: '🏬', title: 'Harrods', text: 'Fachada con miles de bombillas y escaparates navideños. Se puede entrar a ver la sección de comida.', today: 'lunes 10:00–21:00' },
+            { move: 'walk', min: 15, text: 'Sube por Knightsbridge hasta Hyde Park Corner y entra en el parque: Winter Wonderland está a la derecha.', from: 'harrods', to: 'hyde_park' },
+            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. IMPORTANTE: hay que reservar online una franja de entrada (gratis en horas valle) y la pista de hielo aparte.', today: '10:00–22:00' },
+            { move: 'taxi', text: 'Taxi desde Knightsbridge / Hyde Park Corner a Hammersmith: unos 15 min y £13–17.' }
+          ],
+          gf: 'Al Duca (Willow Place, Victoria): italiano con amplio menú sin gluten · Casa do Frango Victoria.' },
+        d4: { title: 'Día 4 · Martes 8 Dic', zone: 'Notting Hill · Kensington · Royal Albert Hall · Harrods · Battersea', back: '🚕 Vuelta £13–15', grad: '#9b59b6,#7d3c98',
+          steps: [
+            { t: '09:30', icon: '🚇', title: 'Metro Hammersmith → Notting Hill Gate', text: 'District hasta Earl’s Court y allí otro tren de la District que ponga Edgware Road (unos 18 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd4i' },
+            { move: 'walk', min: 3, text: 'Sigue los carteles «Portobello Road» y baja por Pembridge Road.', to: 'portobello' },
+            { t: '09:45', n: 'portobello', icon: '🏘️', title: 'Portobello Road y Notting Hill', text: 'Casas de colores. Los martes el mercado es pequeño (el grande es el sábado). Desayuno sin gluten en Libby’s (Ledbury Rd, a 5 min).' },
+            { move: 'walk', min: 20, text: 'Vuelve a Notting Hill Gate, baja por Kensington Church Street y entra en Kensington Gardens; el palacio queda a la derecha.', from: 'portobello', to: 'kensington' },
+            { t: '11:00', n: 'kensington', icon: '🌳', title: 'Kensington Gardens y Kensington Palace', text: 'Jardines gratis, el estanque redondo y el palacio por fuera. Por dentro en invierno suele abrir solo de miércoles a domingo.' },
+            { move: 'walk', min: 12, text: 'Cruza los jardines hacia el sur hasta el Albert Memorial (el monumento dorado); el Royal Albert Hall está enfrente.', from: 'kensington', to: 'royal_albert' },
+            { t: '12:15', n: 'royal_albert', icon: '🎶', title: 'Royal Albert Hall y Albert Memorial', text: 'La sala de conciertos redonda de ladrillo rojo (1871) y el monumento dorado enfrente.' },
+            { move: 'walk', min: 10, text: 'Baja por Exhibition Road (pasarás junto a los museos) hasta South Kensington.', from: 'royal_albert', to: 'almuerzo_skensington' },
+            { t: '13:15', n: 'almuerzo_skensington', icon: '🍽️', title: 'Comida en South Kensington', text: 'Old Brompton Road y alrededores: buenas opciones y precios razonables. Sin gluten: Zizzi Kensington.' },
+            { move: 'walk', min: 15, text: 'Por Brompton Road hasta Harrods, viendo escaparates navideños.', from: 'almuerzo_skensington', to: 'harrods_toy' },
+            { t: '14:30', n: 'harrods_toy', icon: '🛍️', title: 'Harrods · Toy Kingdom', text: 'El reino de los juguetes de Harrods y su fachada iluminada. Unos 45 min con calma.', today: 'martes 10:00–21:00' },
+            { move: 'taxi', text: 'A Battersea en taxi: unos 15 min (≈£10–15). Andando son unos 40 min: no merece la pena.', from: 'harrods_toy', to: 'battersea' },
+            { t: '16:00', n: 'battersea', icon: '⚡', title: 'Battersea Power Station · mercadillo navideño ⭐⭐', text: 'La antigua central eléctrica iluminada junto al río, con tiendas y mercadillo navideño.', today: 'mercadillo 11:00–20:00' },
+            { move: 'taxi', text: 'Taxi de Battersea a Hammersmith: unos 15 min y £13–15.' }
+          ],
+          gf: 'Libby’s Bakery (Notting Hill, 100 % sin gluten) · Los Mochis (Notting Hill, 100 % sin gluten) · Zizzi Kensington.' }
+    };
+
+    // Números del mapa = orden de las paradas en ITIN
     (function assignOrder() {
-        const counters = {};
-        locations.forEach(loc => {
-            if (loc.day === 'base' || loc.day === 'all' || loc.category === 'metro' || loc.category === 'singluten' || loc.category === 'bonus') { loc.order = 0; return; }
-            if (!counters[loc.day]) counters[loc.day] = 1;
-            loc.order = counters[loc.day]++;
+        locations.forEach(l => { l.order = 0; });
+        Object.keys(ITIN).forEach(day => {
+            let k = 0;
+            ITIN[day].steps.forEach(st => {
+                if (!st.n) return;
+                const loc = locations.find(l => l.id === st.n);
+                if (loc) { k++; loc.order = k; loc.day = day; st.num = k; }
+            });
         });
     })();
+
+    const CIRCLED = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩','⑪','⑫'];
+    function locById(id) { return locations.find(l => l.id === id); }
+    function gDir(a, b, mode) {
+        const A = locById(a), B = locById(b);
+        if (!B) return '';
+        return 'https://www.google.com/maps/dir/?api=1' + (A ? '&origin=' + A.lat + ',' + A.lng : '') + '&destination=' + B.lat + ',' + B.lng + '&travelmode=' + (mode || 'walking');
+    }
+    function itinHtml(day, full) {
+        const D = ITIN[day]; if (!D) return '';
+        const col = getColor(day);
+        let h = '<div class="itin2' + (full ? ' full' : '') + '">';
+        h += '<div class="day-itinerary-header" style="background:linear-gradient(135deg,' + D.grad + ');"><h2>📅 ' + D.title + '</h2><span class="taxi-badge">' + D.back + '</span></div>';
+        if (!full) h += '<button type="button" class="itin-full-btn" onclick="openDayFull(\'' + day + '\')">⛶ Ver el día a pantalla completa</button>';
+        h += '<p class="itin-zone">' + D.zone + '</p>';
+        if (D.note) h += '<div class="itin-note">' + D.note + '</div>';
+        D.steps.forEach(st => {
+            if (st.move) {
+                const ic = st.move === 'walk' ? '🚶' : st.move === 'taxi' ? '🚕' : st.move === 'metro' ? '🚇' : '⛴️';
+                const mode = st.move === 'walk' ? 'walking' : st.move === 'taxi' ? 'driving' : 'transit';
+                const link = st.to ? '<a class="itin-go" target="_blank" rel="noopener" href="' + gDir(st.from, st.to, mode) + '">🗺️ Ver el camino</a>' : '';
+                h += '<div class="itin-move"><div class="mv-ic">' + ic + '</div><div class="mv-tx"><b>Cómo ir' + (st.min ? ' · ' + st.min + ' min' : '') + ':</b> ' + st.text + link + '</div></div>';
+                return;
+            }
+            const loc = st.n ? locById(st.n) : null;
+            const num = st.num ? '<span class="itin-num" style="background:' + col + '">' + st.num + '</span>' : '';
+            const circ = st.num ? '<span class="itin-sr">' + CIRCLED[st.num - 1] + ' </span>' : '';
+            h += '<div class="itinerary-item ' + day + '"><span class="itinerary-time">' + st.t + '</span><span class="itinerary-icon">' + (num || st.icon) + '</span><div class="itinerary-details">'
+              + '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4><p>' + st.text + '</p>'
+              + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
+              + (st.metro ? '<a class="itin-go" href="metro/?v=6&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
+              + '</div></div>';
+        });
+        if (D.gf) h += '<div class="itin-gf"><b>🌾 Sin gluten hoy:</b> ' + D.gf + '</div>';
+        return h + '</div>';
+    }
+    window.openDayFull = function(day) {
+        const ov = document.getElementById('day-full');
+        ov.querySelector('.df-body').innerHTML = itinHtml(day, true);
+        ov.hidden = false; document.body.style.overflow = 'hidden';
+        ov.querySelector('.df-body').scrollTop = 0;
+        history.pushState({ dayFull: day }, '');
+    };
+    window.closeDayFull = function(fromPop) {
+        const ov = document.getElementById('day-full');
+        if (ov.hidden) return;
+        ov.hidden = true; document.body.style.overflow = '';
+        if (!fromPop && history.state && history.state.dayFull) history.back();
+    };
+    window.addEventListener('popstate', () => closeDayFull(true));
 
     let map;
     let markers = [];
@@ -1741,6 +1943,7 @@
                 + '<div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px;">' + loc.emoji + ' ' + loc.name + '</div>'
                 + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
+                + (loc.hours ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#fff7ed;border:1px solid #fed7aa;font-size:12px;color:#7c2d12;line-height:1.4;"><b>🕒 Horario:</b> ' + loc.hours + '</div>' : '')
                 + directionsBtn + photosBtn + checkboxHtml
                 + '</div>';
 
@@ -1832,120 +2035,7 @@
             return;
         }
 
-        if (day === 'd1') {
-            container.innerHTML = `
-                <div class="day-itinerary-header" style="background:linear-gradient(135deg,#e74c3c,#c0392b);">
-                    <h2>📅 Día 1 · Sábado 5 Dic</h2>
-                    <span class="taxi-badge">🚕 Vuelta £22–26</span>
-                </div>
-                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">South Bank · London Eye · Chinatown · Piccadilly · Regent St</p>
-                <div class="itinerary-item"><span class="itinerary-time">09:15</span><span class="itinerary-icon">🚇</span><div class="itinerary-details"><h4>Metro Hammersmith → Waterloo</h4><p>Línea District/Jubilee · 20 min · único metro del día · reservar London Eye online antes del viaje.</p></div></div>
-                <div class="walk-connector"><span>🚶 5 min andando hasta el río</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">09:30</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>① Southbank Centre Winter Market ⭐</h4><p>Chalets alpinos junto al Támesis · el más fotogénico de Londres · ideal antes de que se llene.</p></div></div>
-                <div class="walk-connector"><span>🚶 2 min · misma ribera</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">10:15</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>② London Eye ⭐</h4><p>135 m de altura · cápsula 30 min · £35 adulto / £25 niño · bebé gratis · Reservar online con hora.</p></div></div>
-                <div class="walk-connector"><span>🚶 Waterloo Bridge → Strand → Leicester Square · 25 min andando</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">11:30</span><span class="itinerary-icon">🚶</span><div class="itinerary-details"><h4>Paseo: Waterloo Bridge → Strand → Leicester Square</h4><p>Vistas al Támesis en ambas direcciones · decoración navideña por el Strand · sin prisas, hoy hay tiempo.</p></div></div>
-                <div class="walk-connector"><span>🚶 Llegada a Leicester Square</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:00</span><span class="itinerary-icon">🍫</span><div class="itinerary-details"><h4>③ M&amp;M's Store — Leicester Square</h4><p>Tienda oficial · 4 plantas · a un paso de Chinatown.</p></div></div>
-                <div class="walk-connector"><span>🚶 2 min · Chinatown junto a Leicester Square</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:45</span><span class="itinerary-icon">🍜</span><div class="itinerary-details"><h4>④ Almuerzo en Chinatown</h4><p>Mejor calidad/precio de la zona · dim sum o ramen para toda la familia · justo al lado de Leicester Square.</p></div></div>
-                <div class="walk-connector"><span>🚶 5 min hasta Piccadilly Circus</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:00</span><span class="itinerary-icon">🍬</span><div class="itinerary-details"><h4>⑤ Kingdom of Sweets — Piccadilly Circus</h4><p>La tienda de chuches más famosa de Londres · caramelos del mundo · pick'n'mix · chucherías británicas.</p></div></div>
-                <div class="walk-connector"><span>🚶 3 min desde Piccadilly</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:45</span><span class="itinerary-icon">🍰</span><div class="itinerary-details"><h4>⑥ Fortnum & Mason</h4><p>Desde 1707 · té, chocolates y mermeladas en latas de colores pastel · el regalo típico de Londres.</p></div></div>
-                <div class="walk-connector"><span>🚶 3 min por Piccadilly → Regent St</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">15:30</span><span class="itinerary-icon">✨</span><div class="itinerary-details"><h4>⑦ Regent Street — ángeles dorados → Carnaby Street</h4><p>Los ángeles dorados sobre fachadas georgianas: icono visual de la Navidad londinense · al anochecer se encienden las luces · Carnaby: decoración temática.</p></div></div>
-                <div class="walk-connector"><span>🚶 2 min por Regent St</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">16:15</span><span class="itinerary-icon">🧸</span><div class="itinerary-details"><h4>⑧ Hamleys ⭐ — 7 plantas, la juguetería más antigua del mundo</h4><p>Desde 1760 · Harry Potter (sótano) · Build-a-Bear (3ª) · LEGO (5ª) · demostraciones en vivo · 45–60 min mínimo.</p></div></div>
-                <div class="walk-connector"><span>🚕 Taxi desde Regent Street · ~25 min · £22–26</span></div>
-                <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Oka – Kingly Court (Carnaby St)</h5><p>Thai con amplia carta GF · al lado de Hamleys · muy valorado para familias.</p></div></div></div>
-            `;
-            return;
-        }
-
-        if (day === 'd2') {
-            container.innerHTML = `
-                <div class="day-itinerary-header" style="background:linear-gradient(135deg,#3498db,#2176ae);">
-                    <h2>📅 Día 2 · Domingo 6 Dic</h2>
-                    <span class="taxi-badge">🚕 Vuelta £22–26</span>
-                </div>
-                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">Borough Market · Tower Bridge · Covent Garden · Trafalgar al anochecer</p>
-                <div class="itinerary-item"><span class="itinerary-time">09:15</span><span class="itinerary-icon">🚇</span><div class="itinerary-details"><h4>Metro Hammersmith → London Bridge</h4><p>District + transbordo · 45 min.</p></div></div>
-                <div class="walk-connector"><span>🚶 3 min desde la estación</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">10:00</span><span class="itinerary-icon">🛒</span><div class="itinerary-details"><h4>① Borough Market ⭐</h4><p>Desayuno artesanal · mercado gourmet cubierto desde 1756 · ambiente navideño · probar los puestos de queso y bollería artesanal.</p></div></div>
-                <div class="walk-connector"><span>🚶 8 min hacia el este por Tooley St / Bermondsey</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">11:00</span><span class="itinerary-icon">🌉</span><div class="itinerary-details"><h4>② Winter by the River</h4><p>Cabañas alpinas junto al Támesis con Tower Bridge de fondo · curling sobre hielo disponible · uno de los mercadillos con mejor ubicación de Londres.</p></div></div>
-                <div class="walk-connector"><span>🚶 5 min hasta el puente</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:15</span><span class="itinerary-icon">🗼</span><div class="itinerary-details"><h4>③ Cruzar Tower Bridge a pie + exterior Tower of London</h4><p>Gratis y espectacular · mejores vistas del río · interior opcional ~£35 adulto / £19 niño.</p></div></div>
-                <div class="walk-connector"><span>🚶 Orilla norte, junto a la Torre</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">13:15</span><span class="itinerary-icon">🍽️</span><div class="itinerary-details"><h4>Almuerzo junto a Tower Bridge</h4><p>Zona de St Katharine Docks / Tower Hill · opción sin gluten: Wagamama Tower Bridge.</p></div></div>
-                <div class="walk-connector"><span>🚇 Tower Hill → Embankment · District/Circle · 15 min, sin transbordo</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:45</span><span class="itinerary-icon">🍭</span><div class="itinerary-details"><h4>④ SugarSin → Covent Garden Christmas Market</h4><p>10 min andando desde Embankment · la tienda de chuches más bonita del mundo (Architectural Digest) · pick'n'mix gigante · mercadillo navideño y el gran árbol del mercado.</p></div></div>
-                <div class="walk-connector"><span>🚶 10 min hacia Trafalgar Square</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">16:15</span><span class="itinerary-icon">🌲</span><div class="itinerary-details"><h4>⑤ Trafalgar Square al anochecer ⭐</h4><p>Árbol noruego iluminado (regalo de Noruega desde 1947) · fotos icónicas con las luces encendidas · anochece sobre las 16:00.</p></div></div>
-                <div class="walk-connector"><span>🚕 Taxi desde Trafalgar Square · ~25 min · £22–26</span></div>
-                <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Free From Bakehouse (Borough Market)</h5><p>100% sin gluten · pasteles, galletas, pan · ideal desayuno / tentempié.</p></div><div class="mini-card"><h5>Khanom Krok (Borough Market)</h5><p>Thai 100% sin gluten · el pad thai es excepcional.</p></div><div class="mini-card"><h5>Bancone (Covent Garden)</h5><p>Pasta artesanal · menú GF disponible en todos sus platos.</p></div></div></div>
-            `;
-            return;
-        }
-
-        if (day === 'd3') {
-            container.innerHTML = `
-                <div class="day-itinerary-header" style="background:linear-gradient(135deg,#2ecc71,#27ae60);">
-                    <h2>📅 Día 3 · Lunes 7 Dic</h2>
-                    <span class="taxi-badge">🚕 Vuelta £13–17</span>
-                </div>
-                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">Westminster · Buckingham · Hyde Park · Knightsbridge</p>
-                <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:0.72rem;color:#856404;"><strong>⚠️ SALIR A LAS 9:00h</strong> — Llegar a Buckingham antes de las 10:00h para conseguir buen sitio.</div>
-                <div class="itinerary-item"><span class="itinerary-time">09:00</span><span class="itinerary-icon">🚇</span><div class="itinerary-details"><h4>Metro Hammersmith → Westminster (salida anticipada)</h4><p>Metro District directo · 20 min · HOY salir 30 min antes de lo habitual.</p></div></div>
-                <div class="walk-connector"><span>🚶 3 min por Bridge St</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">09:30</span><span class="itinerary-icon">🏛️</span><div class="itinerary-details"><h4>① Westminster Bridge + Big Ben + Parliament Square</h4><p>Las fotos más icónicas del viaje · pasear por Whitehall hasta Downing Street · luz invernal espectacular.</p></div></div>
-                <div class="walk-connector"><span>🚶 12 min por St James's Park</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">10:00</span><span class="itinerary-icon">👑</span><div class="itinerary-details"><h4>② CAMBIO DE GUARDIA — Buckingham Palace ⭐⭐</h4><p>Cambio de Guardia · banda musical en directo · uniformes rojos y bearskins · ceremonia gratuita · dura 75 min.<br><small style="color:#64748b;">📍 Mejor sitio: Monumento a la Reina Victoria o The Mall (ver el desfile marchar completo)</small></p></div></div>
-                <div class="walk-connector"><span>🌳 St. James's Park → caminar hacia Victoria · 15 min</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">11:30</span><span class="itinerary-icon">🌳</span><div class="itinerary-details"><h4>St. James's Park → caminar hacia Victoria</h4><p>El parque real más elegante en diciembre · estanques · patos · 15 min de paseo.</p></div></div>
-                <div class="walk-connector"><span>🍽️ Almuerzo en Victoria o Pimlico</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:30</span><span class="itinerary-icon">🍽️</span><div class="itinerary-details"><h4>③ Almuerzo en Victoria o Pimlico</h4><p>A 10 min de Buckingham · zona tranquila · precios razonables sin aglomeraciones turísticas.</p></div></div>
-                <div class="walk-connector"><span>🚶 Paseo 25 min por Green Park · o metro 1 parada hasta Hyde Park Corner</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:00</span><span class="itinerary-icon">🏬</span><div class="itinerary-details"><h4>④ Harrods — fachada con 11.500 bombillas ⭐</h4><p>De camino desde Victoria hacia Hyde Park · escaparates mágicos y fachada iluminada · ver desde Brompton Road.</p></div></div>
-                <div class="walk-connector"><span>🚶 15 min a pie hasta Hyde Park Corner</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">15:00</span><span class="itinerary-icon">🎡</span><div class="itinerary-details"><h4>⑤ Hyde Park Winter Wonderland ⭐⭐</h4><p>+100 puestos · noria gigante · pista de hielo (reservar online) · atracciones · recinto gratis · atracciones de pago.</p></div></div>
-                <div class="walk-connector"><span>🚕 Taxi desde Harrods/Knightsbridge · ~15 min · £13–17</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">18:15</span><span class="itinerary-icon">🏠</span><div class="itinerary-details"><h4>Vuelta a Hammersmith</h4><p>Taxi £13–17 · ~15 min · solo 3 km desde Knightsbridge.</p></div></div>
-                <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Al Duca (Willow Place, Victoria)</h5><p>Italiano muy valorado · menú GF amplio · excelente conocimiento de alérgenos.</p></div><div class="mini-card"><h5>Casa do Frango Victoria</h5><p>Portuguesa · muchas opciones naturalmente GF · personal bien formado en alergias.</p></div></div></div>
-            `;
-            return;
-        }
-
-        if (day === 'd4') {
-            container.innerHTML = `
-                <div class="day-itinerary-header" style="background:linear-gradient(135deg,#9b59b6,#7d3c98);">
-                    <h2>📅 Día 4 · Martes 8 Dic</h2>
-                    <span class="taxi-badge">🚕 Vuelta £13–15</span>
-                </div>
-                <p style="font-size:0.72rem;color:#64748b;margin-bottom:10px;font-style:italic;">Notting Hill · Kensington · Harrods · Battersea</p>
-                <div class="itinerary-item"><span class="itinerary-time">09:30</span><span class="itinerary-icon">🚇</span><div class="itinerary-details"><h4>Metro Hammersmith → Notting Hill Gate</h4><p>Metro Circle directo · solo 12 min · el trayecto más corto del viaje.</p></div></div>
-                <div class="walk-connector"><span>🚶 2 min hacia Portobello Rd</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">09:45</span><span class="itinerary-icon">🏘️</span><div class="itinerary-details"><h4>① Portobello Road + Notting Hill + Libby's Bakery (GF)</h4><p>Casas de colores pastel · ambiente local auténtico · Libby's: panadería 100% sin gluten · desayunar aquí.</p></div></div>
-                <div class="walk-connector"><span>🚶 20 min por Kensington Gardens</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">11:00</span><span class="itinerary-icon">🌳</span><div class="itinerary-details"><h4>② Paseo Kensington Gardens → Kensington Palace</h4><p>Jardines reales gratuitos · el Round Pond · palacio de Diana · silencio invernal de diciembre · 20 min a pie.</p></div></div>
-                <div class="walk-connector"><span>🚶 8 min por Kensington Rd</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">12:15</span><span class="itinerary-icon">🎶</span><div class="itinerary-details"><h4>③ Royal Albert Hall + Albert Memorial</h4><p>La sala de conciertos más icónica de Londres · fachada circular de ladrillo rojo y frisos dorados · inaugurada en 1871 · el Memorial dorado enfrente.</p></div></div>
-                <div class="walk-connector"><span>🚶 10 min por Old Brompton Road</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">13:15</span><span class="itinerary-icon">🍽️</span><div class="itinerary-details"><h4>④ Almuerzo en South Kensington (Old Brompton Road)</h4><p>Buenas opciones a precios razonables · sin el caos turístico del centro · 10 min a pie del Royal Albert Hall.</p></div></div>
-                <div class="walk-connector"><span>🚶 Paseo South Kensington → Harrods · 15 min por Brompton Road</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:30</span><span class="itinerary-icon">🚶</span><div class="itinerary-details"><h4>Paseo South Kensington → Harrods</h4><p>A pie por Brompton Road · 15 min · escaparates navideños de las boutiques del camino.</p></div></div>
-                <div class="walk-connector"><span>🚶 1 min · ya en Harrods</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">14:45</span><span class="itinerary-icon">🛍️</span><div class="itinerary-details"><h4>⑤ Harrods — Toy Kingdom (4ª planta) + fachada iluminada ⭐</h4><p>26.000 m² de juguetes · 6 zonas temáticas · la fachada con miles de bombillas · 45 min con calma.</p></div></div>
-                <div class="walk-connector"><span>🚶 ~20 min a pie · o taxi ~5 min / £8–10 · por Chelsea Bridge</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">16:00</span><span class="itinerary-icon">⚡</span><div class="itinerary-details"><h4>⑥ Battersea Power Station — mercadillo navideño ⭐⭐</h4><p>Central art déco iluminada junto al Támesis · skate trail de 200 m a orillas del río · más de 150 tiendas y puestos artesanales · ambiente local y sin aglomeraciones.</p></div></div>
-                <div class="walk-connector"><span>🚕 Taxi Battersea → Hammersmith · ~15 min · £13–15</span></div>
-                <div class="itinerary-item"><span class="itinerary-time">18:15</span><span class="itinerary-icon">🏠</span><div class="itinerary-details"><h4>Vuelta a Hammersmith</h4><p>Taxi £13–15 · desde Nine Elms · ~15 min · el taxi más fácil del viaje.</p></div></div>
-                <div class="section-block" style="margin-top:14px;"><h3>🌾 Sin Gluten hoy</h3><div class="card-grid"><div class="mini-card"><h5>Libby's Bakery (Notting Hill)</h5><p>100% sin gluten · croissants, bagels, sándwiches · ideal para desayunar en Portobello Road.</p></div><div class="mini-card"><h5>Los Mochis (Farmer St, Notting Hill)</h5><p>Fusión japonesa-mexicana 100% GF · sin frutos secos ni apio · referente absoluto en Londres.</p></div></div></div>
-            `;
-            return;
-        }
+        if (ITIN[day]) { container.innerHTML = itinHtml(day); return; }
 
         // Vista "Todos" (Resumen general)
         container.innerHTML = `
