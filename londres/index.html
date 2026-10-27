@@ -1696,7 +1696,7 @@
         sg_d2: 'Dentro de Borough Market · Dom 10:00–16:00',
         winter_river: 'Todos los días 11:00–22:00 (10 nov–3 ene)',
         tower_bridge: 'Cruzar el puente: siempre y gratis · exposición y suelo de cristal 9:30–18:00',
-        pier_butlers: 'Barcos a Westminster (diciembre): 12:00, 12:40, 13:20, 14:00, 14:40, 15:20…',
+        pier_butlers: 'RESERVADO: barco de las 14:40 · estar a las 14:25 · nº de reserva JSDQ9PE4',
         westminster_pier: 'Abierto siempre · muelle sin escalones (bien con carrito)',
         trafalgar: 'Plaza abierta siempre · árbol de Navidad iluminado al anochecer',
         sugarsin: 'Plaza y mercado cubierto: siempre · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00 · SugarSin: CERRADO temporalmente (reabrirá en un local cercano, sin fecha; mirar sugarsin.co.uk)',
@@ -1717,7 +1717,7 @@
     // Puntos nuevos del crucero del día 2
     locations.push(
         { id: 'pier_butlers', name: 'Crucero por el Támesis · salida Butler\'s Wharf Pier (Tower Bridge)', address: 'Butler\'s Wharf Pier, Shad Thames, SE1 2YE', lat: 51.5043, lng: -0.0722, day: 'd2', category: 'interes', emoji: '⛴️',
-          desc: 'Thames River Sightseeing · Tower Bridge → Westminster · billete SOLO IDA · 20–30 min · pasa por el HMS Belfast, St Paul, el Globe y el London Eye. Estar en el muelle a las 13:45.' },
+          desc: 'Thames River Sightseeing · Tower Bridge → Westminster · RESERVADO el barco de las 14:40 (17 personas) · estar en el muelle a las 14:25 · unos 20 min · pasa por el HMS Belfast, St Paul, el Globe y el London Eye.' },
         { id: 'westminster_pier', name: 'Westminster Pier (llegada del crucero)', address: 'Victoria Embankment, SW1A 2JH', lat: 51.5017, lng: -0.1235, day: 'd2', category: 'interes', emoji: '⚓',
           desc: 'Llegada del crucero, justo al lado del Big Ben. Muelle sin escalones.' }
     );
@@ -1747,7 +1747,7 @@
           ],
           gf: 'Oka (Kingly Court, Carnaby): tailandés con mucha carta sin gluten, al lado de Hamleys.' },
         d2: { title: 'Día 2 · Domingo 6 Dic', zone: 'Borough Market · Winter by the River · Tower Bridge · crucero · Westminster · Trafalgar · Covent Garden', back: '🚇 / 🚕 Vuelta desde Covent Garden', grad: '#3498db,#2471a3',
-          note: '👨‍👩‍👧‍👦 Siendo varias familias: reservad mesa para comer (17 personas) y comprad los billetes del barco online antes del viaje.',
+          note: '👨‍👩‍👧‍👦 Siendo varias familias: reservad mesa para comer (17 personas). El barco ya está reservado: 14:40, nº JSDQ9PE4.',
           steps: [
             { t: '09:20', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'Salir del apartamento a las 9:20. District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En domingo pasan algo menos trenes. En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
             { move: 'walk', min: 3, text: 'En London Bridge sigue los carteles «Borough High Street / Borough Market».', to: 'borough_market' },
@@ -1756,11 +1756,11 @@
             { t: '11:15', n: 'winter_river', icon: '🎄', title: 'Winter by the River', text: 'Mercadillo navideño junto al río con Tower Bridge de fondo. Abre a las 11:00, así que lo pilláis recién abierto. Hay curling en el muelle.', today: '11:00–22:00' },
             { move: 'walk', min: 5, text: 'Sigue el paseo del río (pasando el HMS Belfast) hasta el pie de Tower Bridge.', from: 'winter_river', to: 'tower_bridge' },
             { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla. No hace falta cruzarlo: el barco sale de este mismo lado. La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
-            { t: '12:30', icon: '🍽️', title: 'Comida (temprano, con mesa reservada)', text: 'Comer a las 12:30 evita las esperas del domingo y deja tiempo de sobra para el barco. En Shad Thames / Butler’s Wharf (al lado del muelle) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
-            { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad a las 13:45.', from: 'tower_bridge', to: 'pier_butlers' },
-            { t: '14:00', n: 'pier_butlers', icon: '⛴️', title: 'Crucero por el Támesis · Tower Bridge → Westminster', text: 'Thames River Sightseeing desde Butler’s Wharf Pier (orilla sur, NO el Tower Pier de enfrente). Billete SOLO IDA. Estad a las 13:45; si se escapa el de las 14:00, hay otro a las 14:40. 20–30 min por el río con luz de día: HMS Belfast, St Paul’s, el Globe y el London Eye.', today: 'barcos 13:20 · 14:00 · 14:40', tickets: 'pier_butlers' },
-            { move: 'boat', min: '20–30', text: 'En barco hasta Westminster Pier. Mirando hacia delante, el London Eye queda a la izquierda y el Big Ben a la derecha al llegar.' },
-            { t: '14:30', n: 'westminster_pier', icon: '⚓', title: 'Llegada a Westminster Pier · Big Ben', text: 'Bajáis del barco al pie del Big Ben: fotos con el Parlamento y el London Eye enfrente.' },
+            { t: '12:30', icon: '🍽️', title: 'Comida (temprano, con mesa reservada)', text: 'Comer a las 12:30–13:00 evita las esperas del domingo y deja tiempo de sobra para el barco. En Shad Thames / Butler’s Wharf (al lado del muelle) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
+            { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad a las 14:25.', from: 'tower_bridge', to: 'pier_butlers' },
+            { t: '14:40', n: 'pier_butlers', icon: '⛴️', title: 'Crucero por el Támesis · Tower Bridge → Westminster ✅', text: 'RESERVADO (nº JSDQ9PE4, 17 personas). Thames River Sightseeing desde Butler’s Wharf Pier (orilla sur, NO el Tower Pier de enfrente). Estad en el muelle a las 14:25. Si se escapa, el billete vale para otro barco del mismo día. Unos 20 min por el río: HMS Belfast, St Paul’s, el Globe y el London Eye.', today: 'embarque 14:25 · salida 14:40', tickets: 'pier_butlers' },
+            { move: 'boat', min: 20, text: 'En barco hasta Westminster Pier. Mirando hacia delante, el London Eye queda a la izquierda y el Big Ben a la derecha al llegar.' },
+            { t: '15:00', n: 'westminster_pier', icon: '⚓', title: 'Llegada a Westminster Pier · Big Ben', text: 'Bajáis del barco al pie del Big Ben: fotos con el Parlamento y el London Eye enfrente.' },
             { move: 'walk', min: 20, text: 'Desembarcas en Westminster Pier, al lado del Big Ben (fotos). Sube a la calle, gira a la derecha y sigue recto por Whitehall: pasarás Downing Street y los guardias a caballo de Horse Guards, y llegas a Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
             { t: '15:30', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square al anochecer ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: es el mejor momento para verlo encenderse.' },
             { move: 'walk', min: 8, text: 'Sal por la esquina de la iglesia de St Martin-in-the-Fields y sube por William IV St y Chandos Place hasta la plaza de Covent Garden.', from: 'trafalgar', to: 'sugarsin' },
@@ -1889,18 +1889,40 @@
     // Entradas: cuando lleguen, se suben a londres/entradas/ y se apuntan aquí
     // { name: 'Familia Ros · crucero', url: 'entradas/crucero-1.png' } (vale imagen o PDF)
     const TICKETS = {
-        pier_butlers: { title: '🎟️ Entradas del crucero', files: [] }
+        pier_butlers: { title: '🎟️ Crucero · reserva JSDQ9PE4',
+            qr: 'entradas/crucero-JSDQ9PE4-qr.png',
+            info: '<div class="tv-card"><h4>Reservado ✅</h4>'
+              + '<div class="tv-leg"><span class="tv-t">🔖</span><span>Nº de reserva: <b>JSDQ9PE4</b> · Thames River Sightseeing</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">📅</span><span><b>Domingo 6 de diciembre · barco de las 14:40</b> · solo ida, Tower Bridge (Butler’s Wharf) → Westminster, unos 20 min</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">⏰</span><span><b>Estar en el muelle a las 14:25</b>: Butler’s Wharf Pier, Shad Thames, SE1 2YE (orilla sur, al lado este de Tower Bridge)</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">👨‍👩‍👧‍👦</span><span>17 personas: 7 adultos y 10 niños · un solo QR para todo el grupo (descuento de grupo del 15 %)</span></div>'
+              + '</div>'
+              + '<div class="tv-card"><h4>Condiciones del billete</h4>'
+              + '<div class="tv-leg"><span class="tv-t">🔁</span><span><b>Si perdemos el barco de las 14:40,</b> el billete vale para cualquier otro barco de ese mismo día.</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">⏪</span><span><b>Subir a uno anterior</b> no está garantizado: depende de que haya sitio (somos 17).</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">💶</span><span><b>Cancelación:</b> devuelven el dinero si se cancela hasta 24 h antes, escribiendo a <a href="mailto:info@thamesriversightseeing.com?subject=Reserva%20JSDQ9PE4">info@thamesriversightseeing.com</a> con el nº de reserva JSDQ9PE4.</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">✏️</span><span><b>Cambiar fecha u hora:</b> en <a href="https://book.thamesriversightseeing.com/en/checkin" target="_blank" rel="noopener">gestionar la reserva en su web</a></span></div>'
+              + '<div class="tv-leg"><span class="tv-t">📱</span><span>No hace falta imprimir: se enseña el QR en el móvil al embarcar.</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">👶</span><span>Hay sitio para carritos a bordo. Los menores de 5 años viajan gratis.</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">🎧</span><span>Audioguía gratis en español: <a href="https://thamesriver.app.link/guide" target="_blank" rel="noopener">descargar la app</a></span></div>'
+              + '<div class="tv-leg"><span class="tv-t">☎️</span><span>Dudas: +44 20 3778 0700</span></div>'
+              + '</div>',
+            files: [
+                { name: 'Billete completo (PDF)', url: 'entradas/crucero-JSDQ9PE4.pdf' },
+                { name: 'Billete completo (imagen)', url: 'entradas/crucero-JSDQ9PE4.jpg' }
+            ] }
     };
     function ticketBtn(id) {
         const T = TICKETS[id]; if (!T) return '';
         const n = T.files.length;
-        return '<button type="button" class="tk-btn" onclick="openTickets(\'' + id + '\')">🎟️ ' + (n ? 'Ver o descargar entradas / QR (' + n + ')' : 'Entradas / QR · pendientes') + '</button>';
+        return '<button type="button" class="tk-btn" onclick="openTickets(\'' + id + '\')">🎟️ ' + (n ? 'Ver billete y QR · reserva' : 'Entradas / QR · pendientes') + '</button>';
     }
     window.openTickets = function(id) {
         const T = TICKETS[id]; if (!T) return;
         let h;
-        if (!T.files.length) h = '<div class="tk-empty">Todavía no están las entradas. En cuanto las tengamos aparecerán aquí, para verlas o descargarlas.</div>';
-        else h = T.files.map(f => '<div class="tk-card"><div class="tk-name">' + f.name + '</div>'
+        if (!T.files.length) h = (T.info || '') + '<div class="tk-empty">Todavía no están las entradas. En cuanto las tengamos aparecerán aquí, para verlas o descargarlas.</div>';
+        else h = (T.qr ? '<div class="tk-card" style="text-align:center"><div class="tk-name">Código QR para embarcar</div><img class="tk-img" style="max-width:300px" src="' + T.qr + '" alt="Código QR de la reserva"><div class="tk-row"><a class="tk-a" href="' + T.qr + '" download="QR-crucero.png">⬇️ Guardar el QR</a></div></div>' : '')
+            + (T.info || '') + T.files.map(f => '<div class="tk-card"><div class="tk-name">' + f.name + '</div>'
             + (/\.pdf($|\?)/i.test(f.url) ? '' : '<img class="tk-img" src="' + f.url + '" alt="' + f.name + '">')
             + '<div class="tk-row"><a class="tk-a" href="' + f.url + '" target="_blank" rel="noopener">👁️ Ver</a><a class="tk-a" href="' + f.url + '" download>⬇️ Descargar</a></div></div>').join('')
             + '<p class="tk-tip">En el muelle, sube el brillo del móvil al máximo para que lean bien el código QR.</p>';
