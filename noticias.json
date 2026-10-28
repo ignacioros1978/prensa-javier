@@ -1,17 +1,16 @@
 {
- "fecha": "2026-10-27",
- "fechaTexto": "martes 27 de octubre",
- "actualizado": "2026-10-27T16:03:58+01:00",
+ "fecha": "2026-10-28",
+ "fechaTexto": "miércoles 28 de octubre",
+ "actualizado": "2026-10-28T07:03:08+01:00",
  "portada": [
-  "ld4",
-  "ee4",
-  "ld5",
-  "ee5",
-  "to4",
-  "edi4",
   "ld1",
-  "ee2",
-  "ok1"
+  "ld2",
+  "ed1",
+  "ee1",
+  "edi2",
+  "ok1",
+  "edi1",
+  "ed2"
  ],
  "diarios": [
   {
@@ -19,22 +18,16 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld4",
-     "titular": "La jueza Tardón da quince días al Gobierno para desclasificar documentos sobre Ceuta",
-     "resumen": "La jueza de la Audiencia Nacional María Tardón ha pedido al Consejo de Ministros que desclasifique informes relacionados con la invasión de Ceuta. Según Libertad Digital, que ha tenido acceso al auto, entre ellos hay notas del Centro Nacional de Inteligencia. Le da un plazo de quince días naturales y pide que, con carácter urgente, los documentos lleguen a su juzgado para incorporarlos a la parte secreta de la causa. La jueza recuerda que el Gobierno ya levantó el secreto de algunos papeles el ocho de septiembre. Pero explica que aquellos documentos tenían las mismas tachaduras que los publicados por La Moncloa y que no aportaban nada nuevo. Sostiene que la clasificación no impide pedir su desclasificación cuando hace falta para investigar posibles delitos. Además, espera información de Defensa sobre buques marroquíes para valorar una nueva línea de investigación. El Gobierno aún no ha respondido, según el diario.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-27/tardon-da-15-dias-al-consejo-de-ministros-para-que-desclasifique-la-informacion-sobre-la-invasion-de-ceuta-7482747/"
-    },
-    {
-     "id": "ld5",
-     "titular": "Una exmiss suiza acusa a Trump de violación en mil novecientos noventa y tres",
-     "resumen": "Un informe de los demócratas del Comité Judicial de la Cámara de Representantes de Estados Unidos recoge el testimonio de Beatrice Keul, exmodelo y antigua miss Suiza. Según Libertad Digital, ella acusa a Donald Trump de haberla violado en mil novecientos noventa y tres, en una suite del Hotel Plaza de Nueva York. Cuenta que tenía veinticuatro años y que Jeffrey Epstein se le presentó como el mejor amigo de Trump. El informe analiza los relatos de once mujeres, y cinco de ellas acusan directamente al presidente de violación o agresión sexual. Se ha publicado el lunes, una semana antes de las elecciones legislativas del tres de noviembre. El diario recuerda que en dos mil veinticuatro Keul dio una versión distinta, en la que no hubo violación. Los demócratas piden un fiscal especial. La Casa Blanca asegura que ninguna acusación es cierta y habla de un intento desesperado de distraer a los votantes.",
-     "url": "https://www.libertaddigital.com/internacional/estados-unidos/2026-10-27/una-exmiss-suiza-acusa-a-trump-de-violarla-y-asegura-que-epstein-se-presento-como-el-mejor-amigo-de-don-7482753/"
-    },
-    {
      "id": "ld1",
-     "titular": "El Partido Popular y Vox pactan sus listas al Senado para el veintinueve de noviembre",
-     "resumen": "El Partido Popular y Vox cerraron el lunes un acuerdo para presentar listas coordinadas al Senado en las elecciones generales del veintinueve de noviembre. Según Libertad Digital, el objetivo es sumar tres quintos de la Cámara y poder renovar el Tribunal Constitucional sin depender del Partido Socialista. Vox no se presentará por su cuenta en seis provincias: Las Palmas, Santa Cruz de Tenerife, Cádiz, Valencia, Castellón y Baleares. En esas listas del Partido Popular entrará un candidato independiente propuesto por Vox. A cambio, el Partido Popular no concurrirá en Guipúzcoa, Girona ni Tarragona. En catorce provincias más, uno de los dos partidos presentará un solo candidato. Miguel Tellado, del Partido Popular, dijo que ninguno de los dos diluye sus siglas. El pacto llegó casi al límite del plazo legal, que vencía esa misma medianoche, tras una semana de negociación.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-26/feijoo-y-abascal-pactan-en-el-senado-para-lograr-los-tres-quintos-que-impidan-el-bloqueo-de-la-izquierda-7481905/"
+     "titular": "El Gobierno asegura que entregará al Supremo la lista de nacionalizados por la ley de nietos",
+     "resumen": "Según Libertad Digital, el Gobierno afirma que entregará a tiempo al Tribunal Supremo la lista con los nombres de las personas nacionalizadas por la ley de nietos. La portavoz, Elma Saiz, lo dijo el martes, después del Consejo de Ministros. El plazo que dio el Supremo termina este miércoles. El tribunal advirtió de que habría responsabilidad penal si no se cumple, lo que podría suponer un delito de desobediencia. La lista afecta a ciento sesenta y tres mil veinte personas inscritas en el censo de españoles residentes en el extranjero. El periódico recuerda que, hace unas semanas, Moncloa reconocía la enorme dificultad de hacerlo. Ahora Saiz asegura que el plazo se cumplirá. El ministro Félix Bolaños defendió que el trabajo viene de semanas atrás. El Gobierno sostiene que una democracia no puede tener ciudadanos de primera y de segunda, y acusa a la oposición de buscar un recorte masivo de derechos.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-27/el-gobierno-garantiza-entregar-al-supremo-a-tiempo-la-lista-de-afectados-por-la-ley-de-nietos-7482752/"
+    },
+    {
+     "id": "ld2",
+     "titular": "La jueza Tardón da quince días al Gobierno para desclasificar documentos sobre Ceuta",
+     "resumen": "La jueza María Tardón, que investiga la invasión de Ceuta, ha pedido al Consejo de Ministros que desclasifique más documentos. Según Libertad Digital, entre ellos hay notas e informes del Centro Nacional de Inteligencia. Le da un plazo de quince días naturales y pide que se haga con carácter urgente. La información debe enviarse a su juzgado para añadirla a la parte secreta de la causa. El Gobierno ya desclasificó otros documentos el ocho de septiembre. La jueza dice que el informe que recibió venía con las mismas tachaduras que los publicados entonces y que no aportaba datos nuevos. Argumenta que lo que pide complementa lo ya conocido y es compatible con la seguridad del Estado. Añade que la clasificación no es un obstáculo absoluto cuando se investigan presuntos delitos. La Guardia Civil ya le entregó las grabaciones de cuarenta cámaras de la frontera de aquel día.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-27/tardon-da-15-dias-al-consejo-de-ministros-para-que-desclasifique-la-informacion-sobre-la-invasion-de-ceuta-7482747/"
     }
    ]
   },
@@ -43,22 +36,10 @@
    "nombre": "El Español",
    "noticias": [
     {
-     "id": "ee4",
-     "titular": "Israel vota con riesgo de bloqueo político y la oposición teme a Netanyahu",
-     "resumen": "Israel celebra hoy elecciones en un escenario de posible bloqueo. Según El Español, las encuestas indican que ningún bloque alcanzaría los sesenta y un escaños necesarios para gobernar. La última encuesta de la cadena Kan once da veintidós escaños a Yashar, el partido del exjefe del Ejército Gadi Eisenkot, y veinte al Likud de Benjamin Netanyahu. Ni Eisenkot ni sus socios llegarían a la mayoría. Netanyahu ha basado su campaña en rechazar un Estado palestino y en presionar contra Irán. Eisenkot le acusa de usar la amenaza iraní con fines electorales y asegura que no se detendrá ante nada para seguir en el poder. Varios analistas citados por el diario temen que provoque un incidente de seguridad durante la formación del Gobierno. Netanyahu seguirá en funciones hasta que el presidente Isaac Herzog encargue formar gobierno a otro candidato y este lo consiga.",
-     "url": "https://www.elespanol.com/mundo/oriente-proximo/20261027/israel-acude-urnas-riesgo-bloqueo-oposicion-teme-medidas-extremas-netanyahu-atrincherarse/1003744435425_0.html"
-    },
-    {
-     "id": "ee5",
-     "titular": "Ceuta lleva al Supremo la lentitud del Gobierno para expulsar a los inmigrantes",
-     "resumen": "El Gobierno de Ceuta ha presentado un recurso ante el Tribunal Supremo contra lo que llama inactividad del Gobierno central en las expulsiones tras el asalto masivo del treinta y uno de julio. Según El Español, pide que se obligue al Ejecutivo a aprobar un plan, dotarlo de medios y fijar un calendario con hitos cada quince días. Cita datos del Estado hasta el dieciocho de octubre: doce mil ciento cuarenta y dos retornos voluntarios y quinientas sesenta y tres expulsiones. Ceuta sostiene que no se ha ejecutado ninguna devolución ordinaria de adultos o menores. El Gobierno respondió con un escrito de sesenta y tres folios, un día fuera de plazo. Alega que las actuaciones están en curso y que no existe una obligación concreta exigible. El Supremo recibió la demanda el veintidós de octubre y aún no la ha admitido a trámite. Ceuta pide además medidas cautelares urgentes.",
-     "url": "https://www.elespanol.com/espana/politica/20261027/supremo-da-plazo-dias-gobierno-calendario-expulsiones-ceuta-amenaza-multa/1003744433027_0.html"
-    },
-    {
-     "id": "ee2",
-     "titular": "Lula gana la segunda vuelta en Brasil y Flávio Bolsonaro pide anular las elecciones",
-     "resumen": "Lula da Silva ganó la segunda vuelta de las elecciones de Brasil del domingo con el cincuenta y uno coma siete por ciento de los votos, frente al cuarenta y ocho coma dos de Flávio Bolsonaro. Según El Español, es su cuarto mandato y una remontada histórica, porque ningún candidato que quedó segundo en la primera vuelta había ganado antes con el sistema actual. Lula obtuvo unos sesenta y cuatro millones de votos, cerca de cuatro millones y medio más que su rival. Prometió gobernar para todos y calificó su victoria de derrota de la mentira. Flávio Bolsonaro se negó a aceptar el resultado y dijo que pedirá anular las elecciones. Protesta porque se amplió el horario de votación tras fallos del transporte público en varios estados. El diario recuerda que esas quejas, por sí solas, no prueban fraude.",
-     "url": "https://www.elespanol.com/mundo/america/20261026/lula-logra-remontada-historica-volvera-presidir-brasil-victoria-derrota-mentira/1003744434369_0.html"
+     "id": "ee1",
+     "titular": "Flávio Bolsonaro sale de Brasil hacia Estados Unidos pese a tener prohibido viajar",
+     "resumen": "Según El Español, el senador brasileño Flávio Bolsonaro habría salido de Brasil rumbo a Estados Unidos, a pesar de tener prohibido abandonar el país. Había perdido el domingo la segunda vuelta frente a Lula da Silva. No entregó sus pasaportes a la Policía Federal en el plazo fijado por el Supremo, y las autoridades anularon sus documentos. La Casa Blanca confirmó que viajaba en un vuelo hacia Estados Unidos, aunque no dijo desde dónde despegó. CNN Brasil apunta a Florida. Flávio está investigado por presunto blanqueo de dinero a través de plataformas de pago y casas de apuestas. Su hermano Eduardo, que vive en Florida, negó la fuga con ironía. Su padre, Jair Bolsonaro, está en arresto domiciliario. El periódico recuerda que en dos mil veintidós Jair también viajó a Florida tras perder las elecciones. En febrero, Flávio perderá su escaño y su aforamiento.",
+     "url": "https://www.elespanol.com/mundo/america/20261027/brasil-anula-pasaporte-flavio-bolsonaro-incumplir-orden-juez-entregarlo-rumores-fuga/1003744437090_0.html"
     }
    ]
   },
@@ -67,22 +48,16 @@
    "nombre": "El Debate",
    "noticias": [
     {
-     "id": "ed4",
-     "titular": "Neil Young demanda a Trump por usar su canción en un mitin",
-     "resumen": "El cantante Neil Young ha demandado al Trump cuarenta y siete Committee, una entidad política vinculada a Donald Trump, por usar su canción Rockin' in the Free World en un mitin. Según El Debate, que cita a The Hollywood Reporter, es la segunda demanda del artista por este motivo. Young acusa a la organización de infringir los derechos de autor, porque no había licencia, y reclama diez millones de dólares. En dos mil veinte ya había demandado a la campaña de Trump por lo mismo. Según la nueva demanda, el equipo de Trump no presentó defensa y llegó a un acuerdo en el que se comprometía a no volver a usar la canción sin permiso. El equipo del cantante afirma que el tema es lo contrario de todo lo que representa Trump. El artículo recuerda que Young lleva años criticando al presidente. No recoge ninguna respuesta de Trump ni del comité.",
-     "url": "https://www.eldebate.com/cultura/20261027/neil-young-demanda-trump-usar-cancion-rockin-in-the-free-world_474427.html"
-    },
-    {
      "id": "ed1",
-     "titular": "Dos magistrados del Constitucional critican a sus compañeros por la ley de nietos",
-     "resumen": "Los magistrados del Tribunal Constitucional Juan Carlos Campo y Ramón Sáez firmaron un voto discrepante, según El Debate. Disienten de la decisión del pleno de rechazar, por prematuro, el recurso del Defensor del Pueblo contra la suspensión del censo de la llamada ley de nietos, acordada por el Tribunal Supremo. Sostienen que la mayoría actuó de manera manifiesta contra la Constitución, en concreto contra el artículo que obliga a facilitar el voto de los españoles en el exterior. Califican su razonamiento de formalismo enervante. Advierten de que la suspensión podría dejar sin voto en las elecciones del veintinueve de noviembre a unos ciento sesenta mil españoles nacionalizados. También critican que el Supremo avisara a los afectados por edictos y con poco plazo, aunque muchos viven fuera. El artículo no recoge respuesta de la mayoría ni del Gobierno.",
-     "url": "https://www.eldebate.com/espana/20261026/dos-magistrados-votaron-favor-recurso-nietos-acusan-companeros-contravenir-manera-manifiesta-constitucion_473948.html"
+     "titular": "El Partido Popular y Vox pactan listas únicas en veintitrés circunscripciones del Senado",
+     "resumen": "El Partido Popular y Vox han acordado presentar listas conjuntas o de un solo candidato en veintitrés circunscripciones del Senado. Según El Debate, buscan responder a la candidatura común del PSOE y el Frente Amplio. Vox no se presenta en seis provincias, entre ellas Cádiz, Valencia y Baleares, y el Partido Popular incluirá allí a seis independientes propuestos por Vox. El Partido Popular no concurre en Guipúzcoa, Girona ni Tarragona. En catorce provincias, como Sevilla, Alicante y Zaragoza, Vox presenta un único candidato. Según fuentes de la negociación, el pacto no basta para alcanzar los tres quintos necesarios para renovar el Tribunal Constitucional y repartir vocales del Consejo General del Poder Judicial. Miguel Tellado dijo que sirve para maximizar los votos de la derecha. El PSOE lo criticó como un mismo proyecto de involución. Las elecciones son el veintinueve de noviembre.",
+     "url": "https://www.eldebate.com/espana/20261027/pp-vox-alcanzan-pacto-ganador-senado-aunque-insuficiente-aspirar-tres-quintos_474113.html"
     },
     {
      "id": "ed2",
-     "titular": "Renfe prepara una compra de trenes de alta velocidad sin Talgo",
-     "resumen": "Renfe ultima la adjudicación de treinta trenes de alta velocidad, ampliables en diez más, de los que se ha excluido a Talgo, según El Debate. El presupuesto base es de mil trescientos sesenta y dos millones de euros, aunque el valor total estimado del contrato llega a más de cuatro mil millones. El consejo de la empresa podría aprobarlo este martes. Solo siguen en la competición dos fabricantes extranjeros, Siemens e Hitachi. Talgo, que da trabajo a unas tres mil personas en España, fue rescatada por el Estado, que entró en su capital con setenta y cinco millones de euros. El diario recuerda que el Partido Popular logró en el Congreso una moción, sin carácter vinculante, para que se reformulasen los requisitos y pudieran competir más fabricantes españoles. La apoyaron Vox y Esquerra Republicana, y la rechazaron el Partido Socialista y Sumar.",
-     "url": "https://www.eldebate.com/economia/20261026/renfe-ultima-compra-1362-millones-trenes-talgo-pese-rescate-estado-advertencias-congreso_473220.html"
+     "titular": "Bruselas dice que vigilará de cerca a España en la lucha contra la corrupción",
+     "resumen": "La Comisión Europea ha respondido a un escrito de la asociación Hazte Oír sobre los indultos del Gobierno de Pedro Sánchez a políticos condenados por corrupción. Según El Debate, Bruselas asegura que seguirá de cerca la situación en España. Recuerda que el veintinueve de abril se aprobó la primera directiva europea contra la corrupción, que los países deben aplicar como tarde en junio de dos mil veintiocho. Dice que la transposición por parte de España tendrá un estrecho seguimiento. La Comisión afirma que juzgar la legalidad de cada indulto corresponde a las autoridades y los tribunales nacionales. Prepara además la primera estrategia anticorrupción de la Unión Europea, que quiere aprobar antes de que acabe el año. El periódico señala que su enfoque es crítico con el Gobierno y que la respuesta de Bruselas es más general y no valora casos concretos.",
+     "url": "https://www.eldebate.com/espana/20261027/comision-europea-seguira-supervisando-espana-lucha-contra-corrupcion-afecta-propio-gobierno_473872.html"
     }
    ]
   },
@@ -91,22 +66,10 @@
    "nombre": "The Objective",
    "noticias": [
     {
-     "id": "to4",
-     "titular": "Renfe encarga a Siemens treinta trenes de alta velocidad por mil doscientos millones",
-     "resumen": "Renfe ha adjudicado a Siemens un contrato de mil doscientos dieciocho millones de euros para incorporar treinta trenes de alta velocidad del modelo Velaro Novo. Según The Objective, hay opción de comprar diez más, y el precio incluye lo necesario para su mantenimiento. Los trenes alcanzan trescientos cincuenta kilómetros por hora y tienen quinientas veinte plazas en siete coches. Las cinco primeras unidades deben llegar en menos de cuarenta meses. El resto se entregará de forma regular hasta completar el pedido en sesenta y dos meses. Renfe destaca la solvencia de Siemens y quiere evitar nuevos retrasos, como los que ha sufrido con Talgo. Los nuevos trenes buscan ofrecer más plazas frente a la competencia de Iryo y Ouigo. El diario solo recoge la información que ha dado la propia Renfe en un comunicado.",
-     "url": "https://theobjective.com/economia/2026-10-27/renfe-siemens-alta-velocidad-millones/"
-    },
-    {
      "id": "to1",
-     "titular": "Harry Kane gana el Balón de Oro",
-     "resumen": "El delantero inglés Harry Kane, del Bayern de Múnich, ha ganado el Balón de Oro, según The Objective. Tiene treinta y tres años y es capitán de la selección de Inglaterra. En la votación superó a Lamine Yamal, del Barcelona, y a Kylian Mbappé, del Real Madrid. La gala se celebró el lunes en el teatro London Palladium, en Londres. Es el primer jugador inglés que gana el premio desde Michael Owen en dos mil uno, es decir, un cuarto de siglo después. Este año el galardón cumple setenta años, ya que la revista France Football lo creó en mil novecientos cincuenta y seis. Su primer ganador fue también inglés, Stanley Matthews. El diario cuenta que el premio se le resistía a Kane pese a su gran historial goleador en el Tottenham y en el Bayern. El artículo no incluye declaraciones ni el recuento de votos.",
-     "url": "https://theobjective.com/deportes/futbol/2026-10-26/ni-yamal-ni-mbappe-kane-lleva-balon-oro/"
-    },
-    {
-     "id": "to2",
-     "titular": "El Gobierno prepara contratos de emergencia para el voto de los españoles en el exterior",
-     "resumen": "El Consejo de Ministros de este martes podría aprobar dos contratos de emergencia para las elecciones del veintinueve de noviembre, según fuentes del Gobierno citadas por The Objective. El primero, de un millón y medio de euros, serviría para comprar sobres con la documentación electoral de los españoles residentes en el extranjero. Argentina concentra la mayor partida, con quinientos cincuenta mil sobres. El segundo, de siete millones, serviría para alquilar lectores que permitan identificar a los votantes con el documento de identidad digital. El diario relaciona el aumento del censo en el exterior con la llamada ley de nietos, cuestionada por el Tribunal Supremo. Señala además que la cifra de sobres supera a los censados en Argentina, sin explicar la diferencia. El Partido Popular pide todas las garantías para votar y un sistema de identificación seguro.",
-     "url": "https://theobjective.com/espana/politica/2026-10-27/argentina-ley-nietos-sobres-votos-elecciones/"
+     "titular": "Un jefe de la Guardia Civil avisó de seis buques marroquíes la noche antes del asalto a Ceuta",
+     "resumen": "Según The Objective, el jefe de operaciones de la Guardia Civil en Ceuta, el teniente coronel Miguel Lobo, declaró ante la jueza María Tardón. Contó que la noche del veintinueve de julio vio seis embarcaciones de la Marina marroquí junto al límite de las aguas españolas. Eran dos patrulleras, dos interceptores y dos naves pequeñas. Ocurrió horas antes de la entrada masiva de personas del treinta y treinta y uno de julio. Lobo avisó entonces al delegado del Gobierno, que según el relato no dio órdenes al respecto. Pensó que los barcos colaboraban para frenar las llegadas. También dijo que dos naves recogían gente del agua. Explicó que decidió por su cuenta mantener abierta una puerta del espigón del Tarajal para evitar ahogamientos. La Guardia Civil ha cerrado filas con él. El Gobierno habló de un hecho puntual. La jueza ha pedido a Defensa todas las entradas de buques marroquíes en aguas españolas.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-27/guardia-civil-ceuta-gobierno-buques-marroquies-asalto/"
     }
    ]
   },
@@ -115,22 +78,22 @@
    "nombre": "OKDiario",
    "noticias": [
     {
-     "id": "ok4",
-     "titular": "Un estudio cifra en un millón las solicitudes de la ley de nietos en Argentina",
-     "resumen": "Según OKDiario, un informe del Observatorio Demográfico del CEU y del centro CEFAS muestra una gran desproporción entre los exiliados de la Guerra Civil y los posibles nuevos españoles por la ley de nietos. El estudio, dirigido por el socialista Joaquín Leguina, calcula que a Argentina se exiliaron unas tres mil personas, frente a cerca de un millón de solicitudes de nacionalidad. En el escenario máximo, habría dos millones y medio de nuevos españoles, entre doce y dieciséis veces los que salieron. El periódico habla de fraude, aunque el informe usa la palabra desmesura. El diario recuerda que el Supremo mantiene suspendido el voto de los nacionalizados que no acrediten exilio político, de modo que no podrán votar el veintinueve de noviembre salvo que los consulados certifiquen los requisitos. Las cifras proceden del informe y el artículo no las verifica de forma independiente.",
-     "url": "https://okdiario.com/espana/estudio-que-certifica-fraude-ley-nietos-millon-solicitudes-argentina-solo-3-000-exiliados-20634163"
-    },
-    {
      "id": "ok1",
-     "titular": "Más de la mitad de los detenidos por los saqueos de Barcelona son menores",
-     "resumen": "Los disturbios del sábado en la plaza de Cataluña de Barcelona dejaron alrededor de ciento treinta detenidos, más de la mitad menores de edad, según OKDiario. Fueron identificadas cuatrocientas cincuenta personas y quince policías resultaron heridos, cuatro de ellos de gravedad. El diario cuenta entre veintitrés y veinticuatro comercios dañados y daños en mobiliario urbano por treinta y seis mil euros, con treinta y un contenedores quemados. La convocatoria circuló sobre todo por TikTok. El Sindicato Unificado de Policía pidió una respuesta institucional firme, más prevención y que se investigue la captación de menores por redes sociales. Fuentes policiales anónimas, citadas por el diario, afirman que muchos autores serían de origen extranjero, pero el artículo no aporta datos que lo respalden. Las cifras del texto no coinciden del todo entre titular y cuerpo.",
-     "url": "https://okdiario.com/espana/72-128-detenidos-saqueo-comercios-barcelona-son-menores-edad-20629823"
+     "titular": "Los disturbios de Barcelona ponen de nuevo en el punto de mira a los Mossos",
+     "resumen": "Según OKDiario, los disturbios del sábado veinticuatro de octubre en Barcelona dejaron saqueos parciales o totales en unos treinta comercios del centro. La convocatoria había circulado por TikTok cinco días antes, pero los Mossos d'Esquadra apenas estaban preparados. Participaron más de quinientas personas y hubo ciento treinta detenidos, de los que un sesenta por ciento eran menores. Cientos de clientes quedaron encerrados en un gran almacén. La nueva jefa de los Mossos, Sílvia Catà, dijo que la situación era bastante inexplicable. La portavoz del Gobierno atribuyó los hechos a la extrema derecha. El Gobierno catalán, presidido por Salvador Illa, culpa a las redes y anuncia medidas contra grupos de mensajería. El periódico critica a los Mossos y al Gobierno catalán, y afirma sin datos oficiales que se oculta el origen de los detenidos. Es una pieza de opinión.",
+     "url": "https://okdiario.com/espana/disturbios-barcelona-vuelven-poner-entredicho-mossos-20644668"
     },
     {
      "id": "ok2",
-     "titular": "Convocan nuevos saqueos en Barcelona para la noche de Halloween",
-     "resumen": "Según OKDiario, decenas de personas organizan saqueos en Barcelona para la noche de Halloween, el treinta y uno de octubre. El diario dice haber visto mensajes del grupo de Telegram llamado Blocus Barcelona. Citan como punto de encuentro las seis de la tarde, con tiendas elegidas sobre la marcha. Las instrucciones piden ir encapuchados, atacar solo grandes tiendas y dispersarse después de cada golpe. Un usuario afirma que el objetivo es saquear a los ricos. Policías expertos en inteligencia, citados por el diario, describen Blocus como una red de perfiles anónimos y efímeros, no una organización formal. Dicen que usa TikTok para captar y Telegram y WhatsApp para coordinarse. El artículo no incluye declaraciones oficiales de la policía, del Gobierno ni de la Generalitat, y toda la información procede del propio medio.",
-     "url": "https://okdiario.com/espana/mensajes-incendiarios-blocus-redes-saquear-barcelona-halloween-70-somos-inmigrantes-20635740"
+     "titular": "Un grupo convoca nuevos saqueos en el centro de Madrid para el treinta y uno de octubre",
+     "resumen": "Según OKDiario, el grupo llamado Blocus prepara una segunda oleada de saqueos en el centro de Madrid los días treinta y treinta y uno de octubre. Una primera convocatoria, el sábado veinticuatro, fue frustrada por un despliegue policial. En sus mensajes, el grupo escribe que volverá más fuerte y más organizado y que solo dará el punto de reunión una hora antes. Ha creado cuentas nuevas para captar gente. Un informe de un sistema de inteligencia artificial citado por el periódico sitúa el origen en Madrid el cinco de octubre, como imitación de disturbios en Francia. Habría ya más de setenta perfiles convocantes. Los objetivos serían tiendas de lujo y agentes de policía. El texto no recoge respuesta oficial de la Policía ni del Gobierno, y el propio titular y el cuerpo no coinciden en el número de ciudades implicadas.",
+     "url": "https://okdiario.com/espana/blocus-pone-madrid-diana-sus-saqueos-31-volvemos-mas-fuertes-organizados-no-podemos-fallar-20644276"
+    },
+    {
+     "id": "ok3",
+     "titular": "El Gobierno dice que cumplirá el plazo del Supremo sobre la ley de nietos",
+     "resumen": "Según OKDiario, la portavoz del Gobierno, Elma Saiz, aseguró el martes que se cumplirá el plazo fijado por el Tribunal Supremo. Vence el miércoles veintiocho de octubre a las tres de la tarde. El Supremo pide la lista de nacionalizados por la ley de nietos que están en el censo de residentes ausentes sin haber acreditado el exilio de sus antepasados. El tribunal mantiene suspendido el voto de estos nacionalizados para el veintinueve de noviembre, salvo que los consulados certifiquen que presentaron los requisitos. De ciento sesenta y tres mil veinte electores que obtuvieron la nacionalidad por esta vía, el Gobierno no dio un desglose de expedientes. El periódico destaca el cambio de postura, pues hace dos semanas el Gobierno admitía que no podía asegurar depurar esos registros antes de las elecciones. Esa lectura y el titular son valoraciones del medio.",
+     "url": "https://okdiario.com/espana/gobierno-agacha-cabeza-supremo-ley-nietos-cumplira-plazo-ministerios-estan-comprometidos-20639826"
     }
    ]
   },
@@ -139,22 +102,16 @@
    "nombre": "elDiario.es",
    "noticias": [
     {
-     "id": "edi4",
+     "id": "edi1",
      "titular": "El Gobierno llevará los decretos de vivienda a la Diputación Permanente el doce de noviembre",
-     "resumen": "Según elDiario.es, el Gobierno prevé llevar sus dos decretos de vivienda a la Diputación Permanente el doce de noviembre, el día después de la huelga general. La fecha aún no es oficial. El Ejecutivo dice que no hay otra posible porque la campaña de las elecciones del veintinueve de noviembre empieza el trece. Los decretos anteriores fueron derrotados en el Congreso por PP, Vox y Junts, y el Gobierno los volvió a aprobar el seis de octubre. El principal debería salir adelante, porque el PNV ha dicho que votará a favor. Incluye límites a la compra de viviendas por fondos buitre, la suspensión de desahucios de personas vulnerables y una prórroga de dos años para algunos alquileres. También prevé un tope del dos por ciento en ciertas subidas y un préstamo sin intereses para quienes compren su primera vivienda, de hasta cincuenta mil euros.",
+     "resumen": "Según elDiario.es, el Gobierno prevé llevar sus dos decretos de vivienda a la Diputación Permanente del Congreso el doce de noviembre, el día después de la huelga general. La fecha aún no es oficial. El Ejecutivo dice que no hay otra posible, porque la campaña electoral empieza el trece de noviembre y el plazo legal vence el catorce. Los decretos se aprobaron el seis de octubre, tras tumbar el Congreso otros anteriores. El principal limitaría la compra de viviendas por fondos de inversión hasta finales de dos mil veintiocho, suspendería desahucios de personas vulnerables hasta dos mil treinta y prorrogaría dos años los alquileres que venzan antes de esa fecha. Se espera que salga adelante, porque el PNV ha dicho que lo apoyará. Otra medida ofrecería préstamos del Instituto de Crédito Oficial sin intereses de hasta cincuenta mil euros para comprar una primera vivienda.",
      "url": "https://www.eldiario.es/politica/gobierno-preve-llevar-diputacion-permanente-decretos-vivienda-dia-despues-huelga-general_1_13616839.html"
     },
     {
-     "id": "edi5",
-     "titular": "Hallan en Troya una flauta de hueso de dos mil ochocientos años",
-     "resumen": "Arqueólogos que excavan la antigua ciudad de Troya, en Turquía, han encontrado una flauta de hueso de unos dos mil ochocientos años. Según elDiario.es, es el primer instrumento musical hallado allí en más de ciento sesenta años de excavaciones. Procede de la época arcaica, entre los años setecientos cincuenta y cuatrocientos ochenta antes de Cristo. El ministro turco de Cultura y Turismo, Mehmet Nuri Ersoy, anunció el hallazgo en redes sociales y lo describió como prueba directa de la cultura musical de Troya. Se conserva parte de la estructura, incluida la zona de la embocadura. Se desconocen su forma original, el número de agujeros y cómo sonaba. El director de la excavación, Rüstem Aslan, recordó que en Anatolia se han hallado flautas de hueso más antiguas. El equipo también halló la cabeza de un ídolo con forma humana, de hace unos cuatro mil quinientos años.",
-     "url": "https://www.eldiario.es/spin/encuentran-flauta-2-800-anos-troya-primer-instrumento-musical-descubierto-ciudad-pm_1_13615235.html"
-    },
-    {
-     "id": "edi1",
-     "titular": "Lula gana en Brasil y Flávio Bolsonaro no reconoce el resultado",
-     "resumen": "Lula da Silva, del Partido de los Trabajadores, ganó la segunda vuelta de las elecciones presidenciales de Brasil por el cincuenta y uno coma siete por ciento frente al cuarenta y ocho coma dos de Flávio Bolsonaro, según elDiario.es. El tribunal electoral le proclamó vencedor la noche del domingo. Ninguna encuesta había previsto ese margen. Bolsonaro dijo que no reconocerá el resultado y que pedirá anular las elecciones, por la confusión del día de la votación. Ese día se amplió el horario dos horas, tras quejas por la falta de autobuses en ciudades como São Paulo y Salvador. Lula ganó en todas las regiones, con especial fuerza en el noreste, donde logró más del setenta y uno por ciento en Bahía. Algunos comentaristas temen una crisis tras las elecciones, y Eduardo Bolsonaro, hermano de Flávio, dijo que la situación huele a golpe.",
-     "url": "https://www.eldiario.es/internacional/brasil-vilo-elecciones-ajustadas-historia_1_13614113.html"
+     "id": "edi2",
+     "titular": "El empleo marca un récord de 22,8 millones de trabajadores, pero el paro sube",
+     "resumen": "Según elDiario.es, el mercado laboral español alcanzó este verano un nuevo récord de empleo, con más de veintidós millones ochocientos mil trabajadores. Lo muestra la Encuesta de Población Activa del tercer trimestre, publicada por el Instituto Nacional de Estadística. Sin embargo, el empleo creció en setenta y tres mil seiscientas personas, por debajo de lo habitual en esta época. El número de parados subió en noventa y cinco mil novecientos, más que en un verano normal. La población activa aumentó en casi ciento setenta mil personas respecto al trimestre anterior. El periódico explica que influye una regularización extraordinaria de migrantes, que está sacando a trabajadores de la economía sumergida y llevándolos a las estadísticas oficiales. Por esa vía se han dado de alta en la Seguridad Social más de cuatrocientas mil personas.",
+     "url": "https://www.eldiario.es/economia/empleo-marco-nuevo-record-22-8-millones-trabajadores-paro-subio-95-900-personas-verano_1_13617404.html"
     }
    ]
   }
