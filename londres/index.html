@@ -312,6 +312,19 @@
         #day-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
         #info-full { position:fixed; inset:0; z-index:5100; background:#fff; display:flex; flex-direction:column; }
         #info-full[hidden] { display:none !important; }
+        #seats-full { position:fixed; inset:0; z-index:5150; background:#fff; display:flex; flex-direction:column; }
+        #seats-full[hidden] { display:none !important; }
+        #seats-full .df-top { display:flex; align-items:center; gap:10px; padding:max(10px,env(safe-area-inset-top)) 12px 6px; }
+        #seats-full .if-title { flex:1; font-size:20px; font-weight:800; color:#0f172a; }
+        #seats-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
+        #seats-full .df-body { flex:1; overflow-y:auto; padding:0 14px calc(24px + env(safe-area-inset-bottom)); -webkit-overflow-scrolling:touch; font-size:16px; color:#1e293b; line-height:1.5; }
+        .tv-btn { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; min-height:52px; margin-top:12px; border:0; border-radius:14px; background:#1d4ed8; color:#fff; font-size:16px; font-weight:800; cursor:pointer; box-shadow:0 4px 12px rgba(29,78,216,.3); }
+        .st-tab { width:100%; border-collapse:collapse; margin-top:4px; font-size:16px; }
+        .st-tab th { text-align:left; font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:#475569; padding:6px 4px; border-bottom:2px solid #cbd5e1; }
+        .st-tab td { padding:10px 4px; border-bottom:1px solid #e2e8f0; font-weight:600; }
+        .st-tab td.s { font:800 18px ui-monospace, Menlo, monospace; color:#1d4ed8; text-align:center; }
+        .st-tab th.s { text-align:center; }
+        .st-ok { margin-top:10px; padding:12px; border-radius:12px; background:#ecfdf5; border:2px solid #10b981; color:#065f46; font-weight:700; }
         #info-full .df-top { display:flex; align-items:center; gap:10px; padding:max(10px,env(safe-area-inset-top)) 12px 6px; }
         #info-full .if-title { flex:1; font-size:20px; font-weight:800; color:#0f172a; }
         #info-full .df-x { width:52px; height:52px; border-radius:50%; border:2px solid #0f172a; background:#fff; font-size:26px; font-weight:800; line-height:1; cursor:pointer; color:#0f172a; }
@@ -984,6 +997,7 @@
 
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
+<div id="seats-full" hidden role="dialog" aria-label="Asientos y equipaje"><div class="df-top"><div class="if-title">💺 Asientos y equipaje Ros García</div><button type="button" class="df-x" onclick="closeSeats()" aria-label="Cerrar y volver a Vuelos y traslados">✕</button></div><div class="df-body"></div></div>
 <div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt="" draggable="false"></div><div class="iv-bar"><button type="button" data-z="-1" aria-label="Alejar">－</button><button type="button" data-z="0" class="iv-fit">Ajustar</button><button type="button" data-z="1" aria-label="Acercar">＋</button></div><div class="iv-hint">Pellizca con dos dedos o toca dos veces para ampliar</div></div>
 <div id="app-container">
     <header style="position:relative;">
@@ -2011,6 +2025,7 @@
     window.addEventListener('popstate', () => {
         if (skipPop) { skipPop = false; return; }
         if (!document.getElementById('img-view').hidden) closeImg(true);
+        else if (!document.getElementById('seats-full').hidden) closeSeats(true);
         else if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
     });
 
@@ -2075,6 +2090,7 @@
           + leg('18:50', '<b>Barcelona (T1)</b> → Sevilla · <b>VY1392</b>.')
           + leg('20:30', '<b>Llegada a Sevilla.</b>')
           + '</div>'
+          + '<button type="button" class="tv-btn" onclick="openSeats()">💺 Asientos y equipaje Ros García</button>'
           + '<div class="tv-warn">🛫 Terminal de Heathrow: por confirmar. Miradla en la tarjeta de embarque o en la app de Vueling. Las noticias de su llegada a Heathrow dicen Terminal 4, pero hay guías que ponen otra.</div>'
           + '<h3 class="tv-h">🚐 Traslados en minivan privada</h3>'
           + '<div class="tv-card"><h4>Aeropuerto → apartamento · Viernes 4 dic</h4>'
@@ -2092,6 +2108,33 @@
           + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/traslado-ida.jpg\')"><img class="tv-img" src="img/traslado-ida.jpg" alt="Traslado de llegada" loading="lazy"></button>'
           + '<button type="button" class="tv-imgbtn" onclick="viewImg(\'img/traslado-vuelta.jpg\')"><img class="tv-img" style="margin-top:10px" src="img/traslado-vuelta.jpg" alt="Traslado de vuelta" loading="lazy"></button>';
         openInfo('✈️ Vuelos y traslados', h);
+    };
+
+    // ── Asientos y equipaje (familia Ros García), en una pantalla encima de Vuelos ──
+    window.openSeats = function() {
+        const P = [['Ignacio','27F','7B'],['Rosa María','27D','8E'],['Lucía','27B','8C'],['Javi','27E','7C'],['Antonio','27C','8D']];
+        const h = '<div class="st-ok">✅ Cada uno tiene <b>el mismo asiento en los dos vuelos de cada trayecto</b>: en la ida, Sevilla → Barcelona y Barcelona → Londres; en la vuelta, Londres → Barcelona y Barcelona → Sevilla.</div>'
+          + '<h3 class="tv-h">💺 Asientos</h3>'
+          + '<table class="st-tab"><thead><tr><th>Pasajero</th><th class="s">Ida · 4 dic</th><th class="s">Vuelta · 9 dic</th></tr></thead><tbody>'
+          + P.map(p => '<tr><td>' + p[0] + '</td><td class="s">' + p[1] + '</td><td class="s">' + p[2] + '</td></tr>').join('')
+          + '</tbody></table>'
+          + '<p style="margin:10px 0 0;color:#475569;font-size:15px">Ida: los cinco en la fila 27 (B y C a un lado del pasillo; D, E y F al otro). Vuelta: filas 7 y 8 (7B y 7C juntos; 8C al otro lado del pasillo de 8D y 8E).</p>'
+          + '<h3 class="tv-h">🧳 Equipaje (ida y vuelta)</h3>'
+          + '<div class="tv-card"><h4>Los cinco</h4><div class="tv-leg"><span class="tv-t">🎒</span><span><b>1 bolso o mochila bajo el asiento</b> cada uno · máx. 40 × 30 × 20 cm</span></div></div>'
+          + '<div class="tv-card"><h4>Además, a nombre de Ignacio</h4>'
+          + '<div class="tv-leg"><span class="tv-t">🧳</span><span><b>1 maleta de cabina</b> en el compartimento de arriba · máx. 10 kg y 55 × 40 × 20 cm</span></div>'
+          + '<div class="tv-leg"><span class="tv-t">🛄</span><span><b>1 maleta facturada de 25 kg</b> (va en bodega)</span></div></div>'
+          + '<div class="tv-card"><h4>Asistencia</h4><div class="tv-leg"><span class="tv-t">ℹ️</span><span>Ignacio tiene solicitada <b>asistencia especial</b> en la reserva.</span></div></div>';
+        const ov = document.getElementById('seats-full');
+        ov.querySelector('.df-body').innerHTML = h; ov.querySelector('.df-body').scrollTop = 0;
+        ov.hidden = false; document.body.style.overflow = 'hidden';
+        history.pushState({ seats: 1 }, '');
+    };
+    window.closeSeats = function(fromPop) {
+        const ov = document.getElementById('seats-full');
+        if (ov.hidden) return;
+        ov.hidden = true;
+        if (!fromPop && history.state && history.state.seats) { skipPop = true; history.back(); }
     };
 
     window.openSeguro = function() {
