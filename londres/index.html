@@ -416,6 +416,31 @@
         }
         .map-marker:hover { transform: scale(1.15); }
         .pin-icon { background: none; border: none; }
+        /* Botones «Mapa» e «Itinerario» a pantalla completa */
+        .fsbtns { position: absolute; top: 10px; right: 10px; z-index: 1100; display: flex; gap: 6px; }
+        @media (min-width: 768px) { .fsbtns { right: 430px; } }
+        .fsbtns button { min-height: 40px; padding: 0 12px; border: 0; border-radius: 12px; background: rgba(255,255,255,.97); color: #0f172a; font: 800 .875rem system-ui, -apple-system, sans-serif; box-shadow: 0 2px 10px rgba(0,0,0,.22); display: flex; align-items: center; gap: 6px; cursor: pointer; }
+        .fsbar, .fsx, .map-days, #rotate-hint { display: none; }
+        body.fs-map header, body.fs-map .panel-container, body.fs-itin header, body.fs-itin #map, body.fs-map .fsbtns, body.fs-itin .fsbtns { display: none !important; }
+        body.fs-map .main-layout, body.fs-itin .main-layout { position: fixed; inset: 0; z-index: 5000; flex-direction: column; background: #fff; }
+        body.fs-map #map { height: 100%; flex: 1; }
+        body.fs-map .fsx { display: grid; place-items: center; position: fixed; top: max(10px, env(safe-area-inset-top)); right: max(10px, env(safe-area-inset-right)); z-index: 6000; width: 46px; height: 46px; border-radius: 50%; border: 0; background: rgba(15,23,42,.88); color: #fff; font: 700 1.2rem system-ui; box-shadow: 0 2px 10px rgba(0,0,0,.3); cursor: pointer; }
+        body.fs-map .map-days { display: flex; position: fixed; top: max(10px, env(safe-area-inset-top)); left: max(62px, calc(env(safe-area-inset-left) + 52px)); right: max(66px, calc(env(safe-area-inset-right) + 56px)); z-index: 5500; gap: 6px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: none; }
+        .map-days::-webkit-scrollbar { display: none; }
+        .map-days .chip { background: rgba(255,255,255,.96); box-shadow: 0 2px 8px rgba(0,0,0,.18); flex-shrink: 0; min-height: 40px; display: flex; align-items: center; }
+        body.fs-itin .fsbar { display: flex; align-items: center; gap: 10px; flex-shrink: 0; padding: max(8px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) 8px max(16px, env(safe-area-inset-left)); background: #0f172a; color: #fff; }
+        .fsbar b { flex: 1; font: 800 1.05rem system-ui, -apple-system, sans-serif; }
+        .fsbar button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,.14); color: #fff; font: 700 1.15rem system-ui; cursor: pointer; }
+        body.fs-itin .panel-container { width: 100% !important; height: auto !important; flex: 1; margin-top: 0; border-radius: 0; box-shadow: none; }
+        body.fs-itin #drag-handle { display: none; }
+        @media (orientation: portrait) {
+            body.fs-map.need-rotate #rotate-hint { display: flex; position: fixed; inset: 0; z-index: 7000; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 24px; background: rgba(15,23,42,.94); color: #fff; text-align: center; font-family: system-ui, -apple-system, sans-serif; }
+        }
+        #rotate-hint .rh-ic { font-size: 3.4rem; animation: rh 1.6s ease-in-out infinite; }
+        @keyframes rh { 0%,30% { transform: rotate(0); } 60%,100% { transform: rotate(-90deg); } }
+        #rotate-hint b { font-size: 1.3rem; }
+        #rotate-hint p { margin: 0; color: #cbd5e1; font-size: 1rem; max-width: 300px; }
+        #rotate-hint button { min-height: 46px; padding: 0 20px; border-radius: 14px; border: 1.5px solid rgba(255,255,255,.4); background: transparent; color: #fff; font-weight: 700; font-size: .95rem; cursor: pointer; }
         .pinimg { transition: transform .15s; transform-origin: 50% 77%; }
         #map.zoom-far .pinimg { transform: scale(.68); }
         #map.zoom-far .pinimg > span { transform: scale(1.3); }
@@ -980,6 +1005,11 @@
     </header>
 
     <div class="main-layout">
+        <div class="fsbar"><b>📋 Itinerario</b><button type="button" onclick="closeFull()" aria-label="Cerrar el itinerario a pantalla completa">✕</button></div>
+        <div class="fsbtns"><button type="button" onclick="openFull('map')" aria-label="Ver el mapa a pantalla completa">🗺️ Mapa</button><button type="button" onclick="openFull('itin')" aria-label="Ver el itinerario a pantalla completa">📋 Itinerario</button></div>
+        <button type="button" class="fsx" onclick="closeFull()" aria-label="Cerrar el mapa a pantalla completa">✕</button>
+        <div class="map-days" id="map-days" aria-label="Días en el mapa"></div>
+        <div id="rotate-hint" role="dialog" aria-label="Gira el móvil"><div class="rh-ic">📱</div><b>Gira el móvil</b><p>El mapa se ve mejor en horizontal.</p><button type="button" onclick="document.body.classList.remove('need-rotate')">Verlo en vertical</button></div>
         <!-- Mapa de Google Maps -->
         <div id="map"></div>
 
@@ -3454,5 +3484,56 @@
     try { initMap(); } catch (e) { console.error(e); }
 </script>
 
+
+<script>
+// ── Mapa e itinerario a pantalla completa (Android: se bloquea el giro; iPhone: aviso de girar) ──
+(function(){
+    let mode = '';
+    const de = document.documentElement;
+    function refit(){ setTimeout(() => { try { if (gMap) { gMap.invalidateSize(); const c = document.querySelector('#day-filters .chip.active'); if (c) c.click(); } } catch(e) {} }, 120); }
+    async function lockTo(o){
+        try { if (de.requestFullscreen && !document.fullscreenElement) await Promise.race([de.requestFullscreen({ navigationUI: 'hide' }), new Promise(r => setTimeout(r, 1200))]); } catch(e) {}
+        try { if (screen.orientation && screen.orientation.lock) { return await Promise.race([screen.orientation.lock(o).then(() => true), new Promise(r => setTimeout(() => r(false), 1500))]); } } catch(e) {}
+        return false;
+    }
+    window.openFull = async function(m){
+        if (mode) return;
+        mode = m;
+        document.body.classList.add(m === 'map' ? 'fs-map' : 'fs-itin');
+        try { history.pushState({ lcnFull: m }, ''); } catch(e) {}
+        if (m === 'map') refit();
+        const ok = await lockTo(m === 'map' ? 'landscape' : 'portrait');
+        if (m === 'map' && !ok) document.body.classList.add('need-rotate');
+        if (m === 'map') refit();
+    };
+    function leave(){
+        if (!mode) return;
+        const was = mode; mode = '';
+        document.body.classList.remove('fs-map', 'fs-itin', 'need-rotate');
+        try { screen.orientation && screen.orientation.unlock && screen.orientation.unlock(); } catch(e) {}
+        try { if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen(); } catch(e) {}
+        refit();
+    }
+    window.closeFull = function(){ if (!mode) return; if (history.state && history.state.lcnFull) history.back(); else leave(); };
+    window.addEventListener('popstate', leave);
+    document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && mode) { if (history.state && history.state.lcnFull) history.back(); else leave(); } });
+    // Chips de días flotando sobre el mapa (reflejan los del panel)
+    const box = document.getElementById('map-days');
+    const orig = document.querySelectorAll('#day-filters .chip');
+    function sync(){ box.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', !!document.querySelector('#day-filters .chip[data-filter="' + c.dataset.filter + '"].active'))); }
+    orig.forEach(o => {
+        const c = o.cloneNode(true);
+        c.addEventListener('click', () => { o.click(); setTimeout(sync, 0); });
+        o.addEventListener('click', () => setTimeout(sync, 0));
+        box.appendChild(c);
+    });
+    sync();
+    // El álbum y «Compartir» están en el panel: si el mapa está a pantalla completa, se cierra antes
+    ['openAlbum', 'openSharePanel'].forEach(n => {
+        const f = window[n]; if (typeof f !== 'function') return;
+        window[n] = function(){ if (mode === 'map') closeFull(); return f.apply(this, arguments); };
+    });
+})();
+</script>
 </body>
 </html>
