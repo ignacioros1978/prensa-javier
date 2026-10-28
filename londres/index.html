@@ -416,6 +416,32 @@
         }
         .map-marker:hover { transform: scale(1.15); }
         .pin-icon { background: none; border: none; }
+        /* Vista Mapa / Itinerario a pantalla completa (móvil y tablet vertical) */
+        .view-seg { display: none; }
+        .map-days { display: none; }
+        @media (max-width: 767px), (orientation: landscape) and (max-height: 520px) {
+            .view-seg { display: flex; gap: 4px; margin: 10px 12px 8px; padding: 4px; background: #e2e8f0; border-radius: 16px; flex-shrink: 0; }
+            .view-seg button { flex: 1; min-height: 46px; border: 0; border-radius: 12px; background: transparent; color: #475569; font: 800 1rem system-ui, -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: background .2s, color .2s, box-shadow .2s; }
+            .view-seg button[aria-selected="true"] { background: #fff; color: #0f172a; box-shadow: 0 2px 8px rgba(15,23,42,.14); }
+            body.v-map .panel-container { display: none; }
+            body.v-map #map { flex: 1; }
+            body.v-itin #map { display: none; }
+            body.v-itin .panel-container { height: 100% !important; margin-top: 0; border-radius: 0; box-shadow: none; }
+            body.v-itin #drag-handle { display: none; }
+            body.v-map .map-days { display: flex; position: absolute; top: 10px; left: 62px; right: 10px; z-index: 1100; gap: 6px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: none; }
+            .map-days::-webkit-scrollbar { display: none; }
+            .map-days .chip { background: rgba(255,255,255,.96); box-shadow: 0 2px 8px rgba(0,0,0,.18); flex-shrink: 0; min-height: 40px; display: flex; align-items: center; }
+        }
+        /* Móvil en horizontal: el mapa a toda la pantalla y la cabecera recogida */
+        @media (orientation: landscape) and (max-height: 520px) {
+            .main-layout { flex-direction: column; }
+            #map { height: auto; }
+            .view-seg { margin: 6px max(10px, env(safe-area-inset-right)) 6px max(10px, env(safe-area-inset-left)); }
+            .view-seg button { min-height: 40px; }
+            header { display: none; }
+            body.v-itin .panel-container { width: 100%; }
+            body.v-map .map-days { left: max(62px, calc(env(safe-area-inset-left) + 52px)); }
+        }
         .pinimg { transition: transform .15s; transform-origin: 50% 77%; }
         #map.zoom-far .pinimg { transform: scale(.68); }
         #map.zoom-far .pinimg > span { transform: scale(1.3); }
@@ -979,7 +1005,12 @@
         </div>
     </header>
 
+    <div class="view-seg" role="tablist" aria-label="Elegir vista">
+        <button type="button" role="tab" data-view="map" aria-selected="true">🗺️ Mapa</button>
+        <button type="button" role="tab" data-view="itin" aria-selected="false">📋 Itinerario</button>
+    </div>
     <div class="main-layout">
+        <div class="map-days" id="map-days" aria-label="Días en el mapa"></div>
         <!-- Mapa de Google Maps -->
         <div id="map"></div>
 
@@ -3454,5 +3485,40 @@
     try { initMap(); } catch (e) { console.error(e); }
 </script>
 
+
+<script>
+// ── Vista Mapa / Itinerario a pantalla completa ─────────────────────────
+(function(){
+    const KEY = 'lcn26_view';
+    const btns = document.querySelectorAll('.view-seg button');
+    function setView(v, save){
+        document.body.classList.toggle('v-map', v === 'map');
+        document.body.classList.toggle('v-itin', v === 'itin');
+        btns.forEach(b => b.setAttribute('aria-selected', b.dataset.view === v ? 'true' : 'false'));
+        if (save) { try { localStorage.setItem(KEY, v); } catch(e) {} }
+        if (v === 'map') setTimeout(() => { try { if (gMap) { gMap.invalidateSize(); const c = document.querySelector('#day-filters .chip.active'); if (c) c.click(); } } catch(e) {} }, 80);
+    }
+    window.setLondonView = setView;
+    btns.forEach(b => b.addEventListener('click', () => setView(b.dataset.view, true)));
+    let start = 'map'; try { start = localStorage.getItem(KEY) || 'map'; } catch(e) {}
+    setView(start === 'itin' ? 'itin' : 'map', false);
+    // Chips de días flotando sobre el mapa (reflejan los del panel)
+    const box = document.getElementById('map-days');
+    const orig = document.querySelectorAll('#day-filters .chip');
+    function sync(){ box.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', !!document.querySelector('#day-filters .chip[data-filter="' + c.dataset.filter + '"].active'))); }
+    orig.forEach(o => {
+        const c = o.cloneNode(true);
+        c.addEventListener('click', () => { o.click(); setTimeout(sync, 0); });
+        o.addEventListener('click', () => setTimeout(sync, 0));
+        box.appendChild(c);
+    });
+    sync();
+    // El álbum y el panel de compartir viven en el panel: se pasa a «Itinerario» al abrirlos
+    ['openAlbum', 'openSharePanel'].forEach(n => {
+        const f = window[n]; if (typeof f !== 'function') return;
+        window[n] = function(){ if (document.body.classList.contains('v-map')) setView('itin', false); return f.apply(this, arguments); };
+    });
+})();
+</script>
 </body>
 </html>
