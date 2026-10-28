@@ -1,22 +1,29 @@
 {
  "fecha": "2026-10-28",
  "fechaTexto": "miércoles 28 de octubre",
- "actualizado": "2026-10-28T07:03:08+01:00",
+ "actualizado": "2026-10-28T15:58:34+01:00",
  "portada": [
-  "ld1",
-  "ld2",
-  "ed1",
-  "ee1",
-  "edi2",
-  "ok1",
-  "edi1",
-  "ed2"
+  "ld3",
+  "ed4",
+  "ed3",
+  "ee3",
+  "ee2",
+  "to2",
+  "edi4",
+  "edi3",
+  "ee1"
  ],
  "diarios": [
   {
    "id": "ld",
    "nombre": "Libertad Digital",
    "noticias": [
+    {
+     "id": "ld3",
+     "titular": "Al menos sesenta y ocho muertos al chocar dos trenes de alta velocidad en Toledo",
+     "url": "https://libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067",
+     "resumen": "Un tren de Iryo y un AVE de Renfe han chocado esta mañana cerca de la estación de Urda, en Toledo, en la línea de alta velocidad entre Madrid y Andalucía. Fue sobre las nueve menos seis minutos. Según Libertad Digital, varios vagones descarrilaron y uno cayó por un terraplén. El presidente de Castilla-La Mancha, Emiliano García-Page, elevó a primera hora de la tarde la cifra de fallecidos a sesenta y ocho, y teme que aumente. Hay decenas de heridos, muchos graves. La exministra Fátima Báñez viajaba en uno de los trenes y seguía sin localizar. Antes del choque, una avería en el sistema de señalización había detenido varios trenes. El ministro Óscar Puente afirmó que el sistema es seguro y señaló a una persona del centro de control. Descartó dimitir. Pedro Sánchez acudió al lugar y prometió medidas contundentes. Madrid y Andalucía decretaron tres días de luto. Un juzgado de Orgaz investiga lo ocurrido."
+    },
     {
      "id": "ld1",
      "titular": "El Gobierno asegura que entregará al Supremo la lista de nacionalizados por la ley de nietos",
@@ -36,6 +43,18 @@
    "nombre": "El Español",
    "noticias": [
     {
+     "id": "ee2",
+     "titular": "Ayuso presenta unos presupuestos récord de casi treinta y tres mil millones para Madrid",
+     "url": "https://www.elespanol.com/madrid/comunidad/20261028/ayuso-baja-impuestos-bate-record-historico-sanidad-educacion-presupuestos/1003744436954_0.html",
+     "resumen": "El Gobierno de la Comunidad de Madrid, que preside Isabel Díaz Ayuso, ha aprobado este miércoles el proyecto de presupuestos para dos mil veintisiete. Según El Español, suman treinta y dos mil novecientos once millones de euros, un siete coma tres por ciento más que este año, y son las mayores cuentas de la historia de la región. La sanidad se lleva más de doce mil millones, un diez coma seis por ciento más. La educación, la ciencia y las universidades reciben casi siete mil ochocientos millones, un once por ciento más. La inversión sube un veinticinco por ciento. El Ejecutivo madrileño anuncia además seis nuevas bajadas de impuestos, que se sumarían a las treinta y cinco aprobadas desde dos mil diecinueve. Dice que las cuentas no prevén déficit ni más deuda. El proyecto llegará mañana a la Asamblea de Madrid para su debate."
+    },
+    {
+     "id": "ee3",
+     "titular": "Un juez ve dudas en la explicación de Zapatero sobre las joyas",
+     "url": "https://www.elespanol.com/espana/politica/20261028/juez-desmonta-datos-version-zapatero-joyas-priva-sanchez-utilizarle-baza-electoral/1003744437278_0.html",
+     "resumen": "El juez José Luis Calama, de la Audiencia Nacional, ha dictado un auto que pone en duda la versión de José Luis Rodríguez Zapatero sobre unas joyas. El expresidente sostiene que fueron un regalo del rey saudí en dos mil siete. Según El Español, el juez señala cinco indicios. Las joyas aparecieron sueltas, sin estuche, en la caja fuerte de su oficina. Las piezas más valiosas fueron tasadas en un millón trescientos mil euros. La defensa aún no ha presentado documentos que acrediten el regalo. Zapatero sí registró otros obsequios saudíes en Patrimonio Nacional. Y el código de buen gobierno de dos mil cinco exigía entregar los regalos de especial valor. Anticorrupción pide que se le atribuya un delito de malversación. El juez aún no ha decidido. El periódico dice que el PSOE busca ahora a Lula da Silva como apoyo para la campaña."
+    },
+    {
      "id": "ee1",
      "titular": "Flávio Bolsonaro sale de Brasil hacia Estados Unidos pese a tener prohibido viajar",
      "resumen": "Según El Español, el senador brasileño Flávio Bolsonaro habría salido de Brasil rumbo a Estados Unidos, a pesar de tener prohibido abandonar el país. Había perdido el domingo la segunda vuelta frente a Lula da Silva. No entregó sus pasaportes a la Policía Federal en el plazo fijado por el Supremo, y las autoridades anularon sus documentos. La Casa Blanca confirmó que viajaba en un vuelo hacia Estados Unidos, aunque no dijo desde dónde despegó. CNN Brasil apunta a Florida. Flávio está investigado por presunto blanqueo de dinero a través de plataformas de pago y casas de apuestas. Su hermano Eduardo, que vive en Florida, negó la fuga con ironía. Su padre, Jair Bolsonaro, está en arresto domiciliario. El periódico recuerda que en dos mil veintidós Jair también viajó a Florida tras perder las elecciones. En febrero, Flávio perderá su escaño y su aforamiento.",
@@ -48,16 +67,22 @@
    "nombre": "El Debate",
    "noticias": [
     {
+     "id": "ed4",
+     "titular": "Netanyahu lidera el recuento en Israel, pero sin mayoría clara",
+     "url": "https://www.eldebate.com/internacional/20261028/netanyahu-encabeza-recuento-votos-eisenkot-acechando-primer-puesto_474603.html",
+     "resumen": "Israel sigue contando los votos de sus elecciones. Según El Debate, con menos de un treinta por ciento escrutado, el primer ministro, Benjamin Netanyahu, encabeza el recuento con un veintidós por ciento. Le sigue Gadi Eisenkot, antiguo jefe del ejército, con un quince por ciento. Naftali Bennett y Yair Lapid tienen cada uno algo más de un ocho por ciento. Las previsiones no dan una victoria holgada a ninguno de los dos bloques, así que los partidos árabes podrían ser decisivos. La participación árabe fue muy alta, sobre todo en el norte. Eisenkot dijo que hará todo lo posible por formar gobierno y no descartó a los partidos árabes. Netanyahu los descartó y pidió un gobierno de derechas fuerte. Habló de una oportunidad única, junto a Donald Trump, para eliminar la amenaza de Irán."
+    },
+    {
+     "id": "ed3",
+     "titular": "El Gobierno entrega al Supremo la lista de más de ciento sesenta mil afectados por la ley de nietos",
+     "url": "https://www.eldebate.com/espana/20261028/gobierno-dice-supremo-identificado-163355-afectados-ley-nietos_474878.html",
+     "resumen": "El Gobierno ha entregado hoy al Tribunal Supremo, dentro del plazo, la lista con los nombres de ciento sesenta y tres mil trescientas cincuenta y cinco personas afectadas por la suspensión del voto de la llamada ley de nietos. Según El Debate, la lista se envió antes de las tres de la tarde. El Supremo la había pedido a los ministros Félix Bolaños y José Manuel Albares, con aviso de multas si no la recibía. Son algo más que las ciento sesenta y tres mil veinte personas que se habían notificado antes. Según las fuentes del periódico, buena parte verá suspendido su voto si no acredita que es hijo o nieto de exiliados. La Asociación de Diplomáticos Españoles denunció que la red consular está gravemente desatendida por Exteriores."
+    },
+    {
      "id": "ed1",
      "titular": "El Partido Popular y Vox pactan listas únicas en veintitrés circunscripciones del Senado",
      "resumen": "El Partido Popular y Vox han acordado presentar listas conjuntas o de un solo candidato en veintitrés circunscripciones del Senado. Según El Debate, buscan responder a la candidatura común del PSOE y el Frente Amplio. Vox no se presenta en seis provincias, entre ellas Cádiz, Valencia y Baleares, y el Partido Popular incluirá allí a seis independientes propuestos por Vox. El Partido Popular no concurre en Guipúzcoa, Girona ni Tarragona. En catorce provincias, como Sevilla, Alicante y Zaragoza, Vox presenta un único candidato. Según fuentes de la negociación, el pacto no basta para alcanzar los tres quintos necesarios para renovar el Tribunal Constitucional y repartir vocales del Consejo General del Poder Judicial. Miguel Tellado dijo que sirve para maximizar los votos de la derecha. El PSOE lo criticó como un mismo proyecto de involución. Las elecciones son el veintinueve de noviembre.",
      "url": "https://www.eldebate.com/espana/20261027/pp-vox-alcanzan-pacto-ganador-senado-aunque-insuficiente-aspirar-tres-quintos_474113.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "Bruselas dice que vigilará de cerca a España en la lucha contra la corrupción",
-     "resumen": "La Comisión Europea ha respondido a un escrito de la asociación Hazte Oír sobre los indultos del Gobierno de Pedro Sánchez a políticos condenados por corrupción. Según El Debate, Bruselas asegura que seguirá de cerca la situación en España. Recuerda que el veintinueve de abril se aprobó la primera directiva europea contra la corrupción, que los países deben aplicar como tarde en junio de dos mil veintiocho. Dice que la transposición por parte de España tendrá un estrecho seguimiento. La Comisión afirma que juzgar la legalidad de cada indulto corresponde a las autoridades y los tribunales nacionales. Prepara además la primera estrategia anticorrupción de la Unión Europea, que quiere aprobar antes de que acabe el año. El periódico señala que su enfoque es crítico con el Gobierno y que la respuesta de Bruselas es más general y no valora casos concretos.",
-     "url": "https://www.eldebate.com/espana/20261027/comision-europea-seguira-supervisando-espana-lucha-contra-corrupcion-afecta-propio-gobierno_473872.html"
     }
    ]
   },
@@ -65,6 +90,12 @@
    "id": "to",
    "nombre": "The Objective",
    "noticias": [
+    {
+     "id": "to2",
+     "titular": "Malestar en el PSOE por los cambios de última hora en sus listas al Senado",
+     "url": "https://theobjective.com/espana/politica/2026-10-28/desorden-bronca-psoe-listas-senado/",
+     "resumen": "Dirigentes socialistas se quejan de los cambios en sus listas al Senado para las elecciones del veintinueve de noviembre. Según The Objective, los cambios nacen del pacto que el PSOE cerró el dieciséis de octubre con Izquierda Unida, Sumar, Compromís, Más Madrid y otras fuerzas, para presentarse juntos en el Senado. Muchos afectados dicen que no se les consultó ni se les avisó. En Castilla y León, la coalición ocupará el puesto número dos en las nueve provincias. En Badajoz, Rafael Lemus, que iba a encabezar la lista, supo por su sustituto que se quedaba fuera. Lo criticó en público y habló de desorden total. En Cataluña, los comunes retiraron sus candidaturas al Senado en Girona, Lleida y Tarragona. El PSC les dará a cambio un senador autonómico después de las elecciones."
+    },
     {
      "id": "to1",
      "titular": "Un jefe de la Guardia Civil avisó de seis buques marroquíes la noche antes del asalto a Ceuta",
@@ -102,16 +133,22 @@
    "nombre": "elDiario.es",
    "noticias": [
     {
+     "id": "edi4",
+     "titular": "Ada Colau propone un impuesto del diez por ciento a quienes acumulan viviendas",
+     "url": "https://www.eldiario.es/politica/colau-propone-impuesto-disuasorio-10-multipropietarios-no-sea-rentable-especular_1_13620560.html",
+     "resumen": "Ada Colau, candidata del Frente Amplio en las elecciones del veintinueve de noviembre, ha anunciado un impuesto disuasorio del diez por ciento para los multipropietarios. Según elDiario.es, lo pagarían los particulares con cuatro o más viviendas cuyo valor conjunto supere los ochocientos mil euros, a partir de la cuarta casa. Las empresas y los fondos pagarían desde la primera. Colau dice que el objetivo es que especular deje de ser rentable y que los dueños bajen precios o vendan a precios asequibles. Parte de lo recaudado serviría para financiar vivienda pública, con una inversión de hasta el uno por ciento del producto interior bruto. Ella calcula que la medida podría rebajar los alquileres en torno a un treinta por ciento en Madrid y Barcelona. El artículo no recoge reacciones de otros partidos."
+    },
+    {
+     "id": "edi3",
+     "titular": "Aena gana más de mil setecientos millones hasta septiembre, un doce por ciento más",
+     "url": "https://www.eldiario.es/economia/auge-trafico-aereo-actividad-internacional-elevan-ganancias-aena-crecen-12-4_1_13620553.html",
+     "resumen": "El gestor de aeropuertos Aena ganó mil setecientos setenta y cinco millones de euros en los nueve primeros meses del año, un doce coma cuatro por ciento más que en el mismo periodo anterior. Según elDiario.es, la empresa atribuye el avance al auge del tráfico aéreo y a su actividad internacional. Sus aeropuertos recibieron un récord de trescientos nueve coma nueve millones de pasajeros, un cuatro por ciento más. Los ingresos totales llegaron a cinco mil doscientos ochenta y cuatro millones, un diez por ciento más. Los ingresos comerciales subieron un siete coma siete por ciento. La inversión en infraestructuras fue de setecientos noventa millones. El Gobierno aprobó el quince de septiembre el marco regulatorio de tarifas para dos mil veintisiete a dos mil treinta y uno."
+    },
+    {
      "id": "edi1",
      "titular": "El Gobierno llevará los decretos de vivienda a la Diputación Permanente el doce de noviembre",
      "resumen": "Según elDiario.es, el Gobierno prevé llevar sus dos decretos de vivienda a la Diputación Permanente del Congreso el doce de noviembre, el día después de la huelga general. La fecha aún no es oficial. El Ejecutivo dice que no hay otra posible, porque la campaña electoral empieza el trece de noviembre y el plazo legal vence el catorce. Los decretos se aprobaron el seis de octubre, tras tumbar el Congreso otros anteriores. El principal limitaría la compra de viviendas por fondos de inversión hasta finales de dos mil veintiocho, suspendería desahucios de personas vulnerables hasta dos mil treinta y prorrogaría dos años los alquileres que venzan antes de esa fecha. Se espera que salga adelante, porque el PNV ha dicho que lo apoyará. Otra medida ofrecería préstamos del Instituto de Crédito Oficial sin intereses de hasta cincuenta mil euros para comprar una primera vivienda.",
      "url": "https://www.eldiario.es/politica/gobierno-preve-llevar-diputacion-permanente-decretos-vivienda-dia-despues-huelga-general_1_13616839.html"
-    },
-    {
-     "id": "edi2",
-     "titular": "El empleo marca un récord de 22,8 millones de trabajadores, pero el paro sube",
-     "resumen": "Según elDiario.es, el mercado laboral español alcanzó este verano un nuevo récord de empleo, con más de veintidós millones ochocientos mil trabajadores. Lo muestra la Encuesta de Población Activa del tercer trimestre, publicada por el Instituto Nacional de Estadística. Sin embargo, el empleo creció en setenta y tres mil seiscientas personas, por debajo de lo habitual en esta época. El número de parados subió en noventa y cinco mil novecientos, más que en un verano normal. La población activa aumentó en casi ciento setenta mil personas respecto al trimestre anterior. El periódico explica que influye una regularización extraordinaria de migrantes, que está sacando a trabajadores de la economía sumergida y llevándolos a las estadísticas oficiales. Por esa vía se han dado de alta en la Seguridad Social más de cuatrocientas mil personas.",
-     "url": "https://www.eldiario.es/economia/empleo-marco-nuevo-record-22-8-millones-trabajadores-paro-subio-95-900-personas-verano_1_13617404.html"
     }
    ]
   }
