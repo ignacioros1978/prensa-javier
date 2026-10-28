@@ -416,6 +416,9 @@
         }
         .map-marker:hover { transform: scale(1.15); }
         .pin-icon { background: none; border: none; }
+        .pinimg { transition: transform .15s; transform-origin: 50% 77%; }
+        #map.zoom-far .pinimg { transform: scale(.68); }
+        #map.zoom-far .pinimg > span { transform: scale(1.3); }
         #map { z-index: 0; }
         .leaflet-popup-content { margin: 12px 14px; }
 
@@ -2228,7 +2231,26 @@
         try { localStorage.setItem(visitedKey, JSON.stringify(v)); } catch(e) {}
     }
 
-    function makePinIcon(color, label, isNum) {
+    // Iconos ilustrados de cada sitio (img/iconos). El número del itinerario va en una chapita al lado.
+    const PIN_IMG = {
+        base: 'hotel', londoneye: 'london-eye', big_ben: 'big-ben', westminster_pier: 'westminster-bridge',
+        pier_butlers: 'crucero-tamesis', tower_bridge: 'tower-bridge', trafalgar: 'trafalgar-square',
+        buckingham: 'buckingham-palace', kensington: 'kensington-palace', royal_albert: 'royal-albert-hall',
+        harrods: 'harrods', harrods_toy: 'harrods', mms_store: 'mms-store',
+        kingdom_sweets: 'tienda-dulces', fortnum_mason: 'tienda-dulces'
+    };
+    function pinImg(loc) {
+        const k = PIN_IMG[loc.id] || (loc.category === 'mercadillos' ? 'mercadillo-navideno' : '');
+        return k ? 'img/iconos/' + k + '.png?v=1' : '';
+    }
+    function makePinIcon(color, label, isNum, img) {
+        if (img) {
+            const badge = isNum ? '<span style="position:absolute;left:-4px;top:-4px;min-width:22px;height:22px;padding:0 4px;border-radius:11px;background:' + color + ';border:2px solid #fff;color:#fff;font:700 12px/18px Arial,sans-serif;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.45)">' + label + '</span>' : '';
+            const gray = color === '#9ca3af' ? 'filter:grayscale(1) drop-shadow(0 2px 3px rgba(0,0,0,.45));' : 'filter:drop-shadow(0 2px 3px rgba(0,0,0,.45));';
+            const html = '<div class="pinimg" style="position:relative;width:52px;height:52px">'
+                + '<img src="' + img + '" alt="" draggable="false" style="width:52px;height:52px;object-fit:contain;' + gray + '">' + badge + '</div>';
+            return L.divIcon({ html: html, className: 'pin-icon', iconSize: [52, 52], iconAnchor: [26, 40], popupAnchor: [0, -36] });
+        }
         const html = '<div style="width:32px;height:32px;border-radius:50%;background:' + color + ';border:2.5px solid #fff;'
             + 'display:flex;align-items:center;justify-content:center;color:#fff;font:' + (isNum ? '700 14px' : '400 15px') + ' Arial,sans-serif;'
             + 'box-shadow:0 2px 5px rgba(0,0,0,.4);">' + label + '</div>';
@@ -2265,6 +2287,8 @@
         renderMarkers();
         // Recalcular tamaño cuando cambia el panel
         window.addEventListener('resize', () => gMap.invalidateSize());
+        const zf = () => document.getElementById('map').classList.toggle('zoom-far', gMap.getZoom() < 15);
+        gMap.on('zoomend', zf); zf();
     }
 
     function renderMarkers() {
@@ -2286,7 +2310,7 @@
             const isVisited = showNum && !!getVisited()[loc.id];
 
             const marker = L.marker([loc.lat, loc.lng], {
-                icon: makePinIcon(isVisited ? '#9ca3af' : color, label, showNum),
+                icon: makePinIcon(isVisited ? '#9ca3af' : color, label, showNum, pinImg(loc)),
                 title: loc.name,
                 zIndexOffset: loc.id === 'base' ? 1000 : showNum ? 100 + loc.order : 0,
                 opacity: isVisited ? 0.55 : 1
@@ -2294,6 +2318,7 @@
             marker._locId = loc.id;
             marker._origColor = color;
             marker._label = label;
+            marker._img = pinImg(loc);
             marker._showNum = showNum;
 
             const dayLabel = loc.day === 'base' ? 'Base' : loc.day === 'all' ? 'Serv.' : 'Día ' + loc.day.replace('d','');
@@ -3323,7 +3348,7 @@
             }
         }
         if (marker) {
-            marker.setIcon(makePinIcon(checked ? '#9ca3af' : marker._origColor, marker._label, marker._showNum));
+            marker.setIcon(makePinIcon(checked ? '#9ca3af' : marker._origColor, marker._label, marker._showNum, marker._img));
             marker.setOpacity(checked ? 0.55 : 1);
         }
     };
