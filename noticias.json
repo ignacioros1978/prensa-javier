@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-28",
- "fechaTexto": "miércoles 28 de octubre",
- "actualizado": "2026-10-28T15:58:34+01:00",
+ "fecha": "2026-10-29",
+ "fechaTexto": "jueves 29 de octubre",
+ "actualizado": "2026-10-29T07:08:41+01:00",
  "portada": [
-  "ld3",
-  "ed4",
-  "ed3",
-  "ee3",
-  "ee2",
+  "ld1",
+  "to1",
+  "ee1",
+  "ed1",
+  "ld2",
   "to2",
-  "edi4",
-  "edi3",
-  "ee1"
+  "edi2",
+  "ok1",
+  "edi3"
  ],
  "diarios": [
   {
@@ -19,22 +19,16 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld3",
-     "titular": "Al menos sesenta y ocho muertos al chocar dos trenes de alta velocidad en Toledo",
-     "url": "https://libertaddigital.com/espana/2026-10-28/accidente-tren-urda-toledo-alta-velocidad-iryo-renfe-7483067",
-     "resumen": "Un tren de Iryo y un AVE de Renfe han chocado esta mañana cerca de la estación de Urda, en Toledo, en la línea de alta velocidad entre Madrid y Andalucía. Fue sobre las nueve menos seis minutos. Según Libertad Digital, varios vagones descarrilaron y uno cayó por un terraplén. El presidente de Castilla-La Mancha, Emiliano García-Page, elevó a primera hora de la tarde la cifra de fallecidos a sesenta y ocho, y teme que aumente. Hay decenas de heridos, muchos graves. La exministra Fátima Báñez viajaba en uno de los trenes y seguía sin localizar. Antes del choque, una avería en el sistema de señalización había detenido varios trenes. El ministro Óscar Puente afirmó que el sistema es seguro y señaló a una persona del centro de control. Descartó dimitir. Pedro Sánchez acudió al lugar y prometió medidas contundentes. Madrid y Andalucía decretaron tres días de luto. Un juzgado de Orgaz investiga lo ocurrido."
-    },
-    {
      "id": "ld1",
-     "titular": "El Gobierno asegura que entregará al Supremo la lista de nacionalizados por la ley de nietos",
-     "resumen": "Según Libertad Digital, el Gobierno afirma que entregará a tiempo al Tribunal Supremo la lista con los nombres de las personas nacionalizadas por la ley de nietos. La portavoz, Elma Saiz, lo dijo el martes, después del Consejo de Ministros. El plazo que dio el Supremo termina este miércoles. El tribunal advirtió de que habría responsabilidad penal si no se cumple, lo que podría suponer un delito de desobediencia. La lista afecta a ciento sesenta y tres mil veinte personas inscritas en el censo de españoles residentes en el extranjero. El periódico recuerda que, hace unas semanas, Moncloa reconocía la enorme dificultad de hacerlo. Ahora Saiz asegura que el plazo se cumplirá. El ministro Félix Bolaños defendió que el trabajo viene de semanas atrás. El Gobierno sostiene que una democracia no puede tener ciudadanos de primera y de segunda, y acusa a la oposición de buscar un recorte masivo de derechos.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-27/el-gobierno-garantiza-entregar-al-supremo-a-tiempo-la-lista-de-afectados-por-la-ley-de-nietos-7482752/"
+     "titular": "Puente culpa a una persona del centro de control de Adif por el accidente de Urda",
+     "resumen": "El ministro de Transportes, Óscar Puente, compareció el miércoles en el centro de control de Adif, en Madrid, más de cinco horas y media después del choque de dos trenes de alta velocidad en Urda, en Toledo. Según la cifra oficial que recoge Libertad Digital, hay sesenta y cuatro fallecidos. Puente calificó lo ocurrido de inverosímil. Explicó que falló un sistema de señalización llamado LZB y que hubo que detener hasta seis trenes. Después, el centro de control de Atocha tomó la decisión de reanudar la marcha. El ministro la llamó inexplicable y errónea, y dijo que se hizo sin limitar la velocidad. Señaló a una persona como responsable, aunque pidió esperar a la investigación. Puente descartó dimitir. Dijo que ahora solo piensa en gestionar la situación. La Unidad Militar de Emergencias desplegó unos doscientos efectivos.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-28/puente-senala-a-una-persona-del-centro-de-control-como-responsable-del-accidente-de-urda-7483531/"
     },
     {
      "id": "ld2",
-     "titular": "La jueza Tardón da quince días al Gobierno para desclasificar documentos sobre Ceuta",
-     "resumen": "La jueza María Tardón, que investiga la invasión de Ceuta, ha pedido al Consejo de Ministros que desclasifique más documentos. Según Libertad Digital, entre ellos hay notas e informes del Centro Nacional de Inteligencia. Le da un plazo de quince días naturales y pide que se haga con carácter urgente. La información debe enviarse a su juzgado para añadirla a la parte secreta de la causa. El Gobierno ya desclasificó otros documentos el ocho de septiembre. La jueza dice que el informe que recibió venía con las mismas tachaduras que los publicados entonces y que no aportaba datos nuevos. Argumenta que lo que pide complementa lo ya conocido y es compatible con la seguridad del Estado. Añade que la clasificación no es un obstáculo absoluto cuando se investigan presuntos delitos. La Guardia Civil ya le entregó las grabaciones de cuarenta cámaras de la frontera de aquel día.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-27/tardon-da-15-dias-al-consejo-de-ministros-para-que-desclasifique-la-informacion-sobre-la-invasion-de-ceuta-7482747/"
+     "titular": "Feijóo exige respuestas al Gobierno y una revisión de toda la red ferroviaria",
+     "resumen": "El presidente del Partido Popular, Alberto Núñez Feijóo, hizo el martes una declaración institucional desde la sede de su partido, en la calle Génova, tras el accidente ferroviario de Urda. Según Libertad Digital, expresó su apoyo a las familias de los fallecidos y heridos, a los servicios de emergencia y a los trabajadores de Adif. El Partido Popular canceló todos sus actos de campaña. Feijóo pidió que los españoles donen sangre en los hospitales. Reclamó una investigación del Gobierno y de la justicia, con todos los medios y sin interferencias. Dijo que España tiene derecho a saber en qué estado están las vías y los sistemas de seguridad, y qué avisos se recibieron. Pidió también una revisión completa de la red y que se rindan cuentas del gasto. Sobre las responsabilidades políticas, dijo que no entraría a discutirlas en ese momento.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-10-28/feijoo-exige-respuestas-al-gobierno-y-pide-la-revision-del-gasto-y-del-estado-de-toda-la-red-ferroviaria-7483610/"
     }
    ]
   },
@@ -43,22 +37,22 @@
    "nombre": "El Español",
    "noticias": [
     {
+     "id": "ee1",
+     "titular": "Sánchez ve inasumibles dos tragedias ferroviarias en un año y no decide sobre Puente",
+     "resumen": "El presidente del Gobierno, Pedro Sánchez, calificó de inasumible sufrir dos accidentes de alta velocidad en un año. Lo cuenta El Español, que recuerda que en enero hubo otro en Adamuz, con cuarenta y seis muertos. El diario cifra en setenta los fallecidos de Urda. Según este periódico, Sánchez no aclaró si habrá cambios en cargos concretos. Moncloa responde que no es el momento de hablar de medidas ni del ministro Óscar Puente, y la versión oficial atribuye lo ocurrido a un fallo humano. El socio minoritario del Gobierno, el Frente Amplio, pide responsabilidades políticas a todos los niveles. Feijóo reclama una auditoría de las infraestructuras. Según El Español, el accidente ha desbaratado la campaña del PSOE ante las elecciones del veintinueve de noviembre. Sánchez confía en Puente, pero no se ha decidido nada sobre su futuro.",
+     "url": "https://www.elespanol.com/espana/politica/20261029/sanchez-ve-inasumible-tragedias-ferroviarias-ano-no-decide-puente-psoe-queda-sin-campana/1003744438610_0.html"
+    },
+    {
      "id": "ee2",
-     "titular": "Ayuso presenta unos presupuestos récord de casi treinta y tres mil millones para Madrid",
-     "url": "https://www.elespanol.com/madrid/comunidad/20261028/ayuso-baja-impuestos-bate-record-historico-sanidad-educacion-presupuestos/1003744436954_0.html",
-     "resumen": "El Gobierno de la Comunidad de Madrid, que preside Isabel Díaz Ayuso, ha aprobado este miércoles el proyecto de presupuestos para dos mil veintisiete. Según El Español, suman treinta y dos mil novecientos once millones de euros, un siete coma tres por ciento más que este año, y son las mayores cuentas de la historia de la región. La sanidad se lleva más de doce mil millones, un diez coma seis por ciento más. La educación, la ciencia y las universidades reciben casi siete mil ochocientos millones, un once por ciento más. La inversión sube un veinticinco por ciento. El Ejecutivo madrileño anuncia además seis nuevas bajadas de impuestos, que se sumarían a las treinta y cinco aprobadas desde dos mil diecinueve. Dice que las cuentas no prevén déficit ni más deuda. El proyecto llegará mañana a la Asamblea de Madrid para su debate."
+     "titular": "Así se produjo el fallo en Urda, según el ministro de Transportes",
+     "resumen": "Según El Español, el ministro Óscar Puente explicó que sobre las ocho y media de la mañana del miércoles falló, por un problema informático, el sistema de seguridad LZB en la estación de Urda, en Toledo. Seis trenes quedaron parados en un tramo de sesenta y nueve kilómetros. A las ocho y treinta y seis, el centro de control de Adif en Atocha autorizó a todos a reanudar la marcha normal. Puente dijo que eso incumplía las normas, que obligan a ir a unos cuarenta kilómetros por hora cuando el sistema falla. Según el ministro, el maquinista de otro tren advirtió del error y Adif ordenó entonces circular en las condiciones correctas. Pero el tren de alta velocidad ya había recibido la primera orden y siguió a marcha normal durante diecisiete minutos, casi a doscientos por hora, hasta chocar. Puente reconoció que no había ningún sistema que evitara un error humano y no ha dimitido.",
+     "url": "https://www.elespanol.com/espana/20261028/oscar-puente-senala-adif-decidir-tren-renfe-reanudara-marcha-circunstancias-inexplicables/1003744437994_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Un juez ve dudas en la explicación de Zapatero sobre las joyas",
-     "url": "https://www.elespanol.com/espana/politica/20261028/juez-desmonta-datos-version-zapatero-joyas-priva-sanchez-utilizarle-baza-electoral/1003744437278_0.html",
-     "resumen": "El juez José Luis Calama, de la Audiencia Nacional, ha dictado un auto que pone en duda la versión de José Luis Rodríguez Zapatero sobre unas joyas. El expresidente sostiene que fueron un regalo del rey saudí en dos mil siete. Según El Español, el juez señala cinco indicios. Las joyas aparecieron sueltas, sin estuche, en la caja fuerte de su oficina. Las piezas más valiosas fueron tasadas en un millón trescientos mil euros. La defensa aún no ha presentado documentos que acrediten el regalo. Zapatero sí registró otros obsequios saudíes en Patrimonio Nacional. Y el código de buen gobierno de dos mil cinco exigía entregar los regalos de especial valor. Anticorrupción pide que se le atribuya un delito de malversación. El juez aún no ha decidido. El periódico dice que el PSOE busca ahora a Lula da Silva como apoyo para la campaña."
-    },
-    {
-     "id": "ee1",
-     "titular": "Flávio Bolsonaro sale de Brasil hacia Estados Unidos pese a tener prohibido viajar",
-     "resumen": "Según El Español, el senador brasileño Flávio Bolsonaro habría salido de Brasil rumbo a Estados Unidos, a pesar de tener prohibido abandonar el país. Había perdido el domingo la segunda vuelta frente a Lula da Silva. No entregó sus pasaportes a la Policía Federal en el plazo fijado por el Supremo, y las autoridades anularon sus documentos. La Casa Blanca confirmó que viajaba en un vuelo hacia Estados Unidos, aunque no dijo desde dónde despegó. CNN Brasil apunta a Florida. Flávio está investigado por presunto blanqueo de dinero a través de plataformas de pago y casas de apuestas. Su hermano Eduardo, que vive en Florida, negó la fuga con ironía. Su padre, Jair Bolsonaro, está en arresto domiciliario. El periódico recuerda que en dos mil veintidós Jair también viajó a Florida tras perder las elecciones. En febrero, Flávio perderá su escaño y su aforamiento.",
-     "url": "https://www.elespanol.com/mundo/america/20261027/brasil-anula-pasaporte-flavio-bolsonaro-incumplir-orden-juez-entregarlo-rumores-fuga/1003744437090_0.html"
+     "titular": "Los peores accidentes de tren de la historia de España suman casi quinientos muertos",
+     "resumen": "El Español repasa los accidentes ferroviarios más graves del país tras el de Urda, ocurrido el miércoles hacia las nueve menos seis de la mañana en la línea Madrid-Sevilla. El diario habla de al menos cincuenta fallecidos en el momento de escribir, aunque la cifra puede subir. El más trágico hasta ahora era el de El Cuervo, en Sevilla, en mil novecientos setenta y dos, con ochenta y seis muertos. Le sigue Angrois, en Santiago de Compostela, en dos mil trece, con ochenta. En el último medio siglo, unos veinte accidentes han causado cuatrocientos treinta y cuatro muertes, sin contar Urda. Con este, el total se acerca a quinientos. El Gobierno y los principales partidos cancelaron sus actos de precampaña. Los Reyes enviaron su pésame a las familias. El diario recuerda que una semana antes Puente bromeó sobre las averías de Renfe, lo que indignó a las víctimas de Adamuz.",
+     "url": "https://www.elespanol.com/espana/20261028/adamuz-urda-peores-accidentes-ferroviarios-historia-espana-dejan-muertos-medio-siglo/1003744438061_0.html"
     }
    ]
   },
@@ -67,22 +61,16 @@
    "nombre": "El Debate",
    "noticias": [
     {
-     "id": "ed4",
-     "titular": "Netanyahu lidera el recuento en Israel, pero sin mayoría clara",
-     "url": "https://www.eldebate.com/internacional/20261028/netanyahu-encabeza-recuento-votos-eisenkot-acechando-primer-puesto_474603.html",
-     "resumen": "Israel sigue contando los votos de sus elecciones. Según El Debate, con menos de un treinta por ciento escrutado, el primer ministro, Benjamin Netanyahu, encabeza el recuento con un veintidós por ciento. Le sigue Gadi Eisenkot, antiguo jefe del ejército, con un quince por ciento. Naftali Bennett y Yair Lapid tienen cada uno algo más de un ocho por ciento. Las previsiones no dan una victoria holgada a ninguno de los dos bloques, así que los partidos árabes podrían ser decisivos. La participación árabe fue muy alta, sobre todo en el norte. Eisenkot dijo que hará todo lo posible por formar gobierno y no descartó a los partidos árabes. Netanyahu los descartó y pidió un gobierno de derechas fuerte. Habló de una oportunidad única, junto a Donald Trump, para eliminar la amenaza de Irán."
-    },
-    {
-     "id": "ed3",
-     "titular": "El Gobierno entrega al Supremo la lista de más de ciento sesenta mil afectados por la ley de nietos",
-     "url": "https://www.eldebate.com/espana/20261028/gobierno-dice-supremo-identificado-163355-afectados-ley-nietos_474878.html",
-     "resumen": "El Gobierno ha entregado hoy al Tribunal Supremo, dentro del plazo, la lista con los nombres de ciento sesenta y tres mil trescientas cincuenta y cinco personas afectadas por la suspensión del voto de la llamada ley de nietos. Según El Debate, la lista se envió antes de las tres de la tarde. El Supremo la había pedido a los ministros Félix Bolaños y José Manuel Albares, con aviso de multas si no la recibía. Son algo más que las ciento sesenta y tres mil veinte personas que se habían notificado antes. Según las fuentes del periódico, buena parte verá suspendido su voto si no acredita que es hijo o nieto de exiliados. La Asociación de Diplomáticos Españoles denunció que la red consular está gravemente desatendida por Exteriores."
-    },
-    {
      "id": "ed1",
-     "titular": "El Partido Popular y Vox pactan listas únicas en veintitrés circunscripciones del Senado",
-     "resumen": "El Partido Popular y Vox han acordado presentar listas conjuntas o de un solo candidato en veintitrés circunscripciones del Senado. Según El Debate, buscan responder a la candidatura común del PSOE y el Frente Amplio. Vox no se presenta en seis provincias, entre ellas Cádiz, Valencia y Baleares, y el Partido Popular incluirá allí a seis independientes propuestos por Vox. El Partido Popular no concurre en Guipúzcoa, Girona ni Tarragona. En catorce provincias, como Sevilla, Alicante y Zaragoza, Vox presenta un único candidato. Según fuentes de la negociación, el pacto no basta para alcanzar los tres quintos necesarios para renovar el Tribunal Constitucional y repartir vocales del Consejo General del Poder Judicial. Miguel Tellado dijo que sirve para maximizar los votos de la derecha. El PSOE lo criticó como un mismo proyecto de involución. Las elecciones son el veintinueve de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261027/pp-vox-alcanzan-pacto-ganador-senado-aunque-insuficiente-aspirar-tres-quintos_474113.html"
+     "titular": "Muere en el accidente de Urda la exministra Fátima Báñez",
+     "resumen": "Según El Debate, la exministra de Empleo Fátima Báñez, de cincuenta y nueve años, murió en el accidente ferroviario del miércoles en Toledo. El diario lo confirmó con dos fuentes sobre el terreno. Viajaba en el último vagón del tren Iryo, embestido por un AVE de Renfe con destino a Sevilla. Ese vagón concentró la mayoría de las víctimas. Báñez impulsó la reforma laboral de dos mil doce con el Gobierno de Mariano Rajoy, que provocó huelgas de los sindicatos. Después pasó al sector privado, en Rovi e Iberdrola. Presidía la Fundación CEOE, y preparaba la Cumbre Iberoamericana de Madrid, prevista para la semana siguiente. El Debate aclara que el texto solo confirma su presencia en el tren, y que la noticia de su muerte se apoya en el titular.",
+     "url": "https://www.eldebate.com/economia/20261028/muere-accidente-tren-fatima-banez-ministra-transformo-panorama-laboral_474861.html"
+    },
+    {
+     "id": "ed2",
+     "titular": "Minutos de silencio en toda España por las víctimas del accidente ferroviario",
+     "resumen": "La tarde del miércoles se guardaron minutos de silencio en toda España en memoria de los fallecidos en el accidente de Urda, en Toledo, donde chocaron dos trenes de alta velocidad. Según El Debate, participaron instituciones y representantes políticos. Hubo concentraciones en Toledo, Madrid, Barcelona y Adamuz. El diario describe un clima de dolor, consternación y solidaridad con las familias. La Federación de Municipios y Provincias convocó el homenaje a las ocho de la tarde en todos los ayuntamientos. El artículo no ofrece un balance de víctimas, aunque otro titular de la página habla de al menos sesenta y ocho muertos. Los enlaces relacionados mencionan la interrupción de la alta velocidad entre Madrid y Andalucía y las críticas al ministro Óscar Puente.",
+     "url": "https://eldebate.com/espana/20261028/minutos-silencio-toda-espana-memoria-fallecidos-accidente-ferroviario_475035.html"
     }
    ]
   },
@@ -91,16 +79,22 @@
    "nombre": "The Objective",
    "noticias": [
     {
-     "id": "to2",
-     "titular": "Malestar en el PSOE por los cambios de última hora en sus listas al Senado",
-     "url": "https://theobjective.com/espana/politica/2026-10-28/desorden-bronca-psoe-listas-senado/",
-     "resumen": "Dirigentes socialistas se quejan de los cambios en sus listas al Senado para las elecciones del veintinueve de noviembre. Según The Objective, los cambios nacen del pacto que el PSOE cerró el dieciséis de octubre con Izquierda Unida, Sumar, Compromís, Más Madrid y otras fuerzas, para presentarse juntos en el Senado. Muchos afectados dicen que no se les consultó ni se les avisó. En Castilla y León, la coalición ocupará el puesto número dos en las nueve provincias. En Badajoz, Rafael Lemus, que iba a encabezar la lista, supo por su sustituto que se quedaba fuera. Lo criticó en público y habló de desorden total. En Cataluña, los comunes retiraron sus candidaturas al Senado en Girona, Lleida y Tarragona. El PSC les dará a cambio un senador autonómico después de las elecciones."
+     "id": "to1",
+     "titular": "Los audios de Atocha muestran las órdenes al maquinista del AVE",
+     "resumen": "The Objective ha accedido a grabaciones del centro de control de Adif en Atocha. Según el diario, el controlador, muy dubitativo, ordenó al maquinista del AVE reanudar la marcha normal. El diario recuerda que el reglamento de dos mil quince exige marchar a la vista, con un máximo de cuarenta kilómetros por hora. El AVE estaba a unos veinticinco kilómetros del Iryo. La maquinista del Iryo había avisado de que perdía la transmisión y estaba detenida en Urda. Siete minutos después de recibir la orden, volvió a llamar porque seguía parada. Según el diario, nadie avisó entonces al maquinista del AVE para que frenara. Fuentes del Gobierno dicen que el controlador solo debía autorizar la marcha normal si los trenes estaban a más de treinta kilómetros. Hay al menos sesenta y ocho muertos y unos cincuenta heridos. El impacto fue, según las primeras estimaciones, a más de cien por hora.",
+     "url": "https://theobjective.com/espana/2026-10-28/ordenes-atocha-maquinista-ave-marcha-normal/"
     },
     {
-     "id": "to1",
-     "titular": "Un jefe de la Guardia Civil avisó de seis buques marroquíes la noche antes del asalto a Ceuta",
-     "resumen": "Según The Objective, el jefe de operaciones de la Guardia Civil en Ceuta, el teniente coronel Miguel Lobo, declaró ante la jueza María Tardón. Contó que la noche del veintinueve de julio vio seis embarcaciones de la Marina marroquí junto al límite de las aguas españolas. Eran dos patrulleras, dos interceptores y dos naves pequeñas. Ocurrió horas antes de la entrada masiva de personas del treinta y treinta y uno de julio. Lobo avisó entonces al delegado del Gobierno, que según el relato no dio órdenes al respecto. Pensó que los barcos colaboraban para frenar las llegadas. También dijo que dos naves recogían gente del agua. Explicó que decidió por su cuenta mantener abierta una puerta del espigón del Tarajal para evitar ahogamientos. La Guardia Civil ha cerrado filas con él. El Gobierno habló de un hecho puntual. La jueza ha pedido a Defensa todas las entradas de buques marroquíes en aguas españolas.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-27/guardia-civil-ceuta-gobierno-buques-marroquies-asalto/"
+     "id": "to2",
+     "titular": "Adif retrasó el cambio del sistema de seguridad de la línea Madrid-Sevilla",
+     "resumen": "The Objective explica que Adif retrasó la sustitución del sistema de señalización LZB por otro europeo, llamado ERTMS, en la línea de alta velocidad entre Madrid y Sevilla. La contratación empezó en febrero de dos mil veinte. Se abandonó la primera licitación por una infracción en las normas de adjudicación y se reinició en noviembre de ese año. El presupuesto era de ciento treinta y un millones de euros y el plazo, de cincuenta y dos meses. La adjudicación se autorizó en septiembre de dos mil veintiuno, con fin de obras previsto en dos mil veintiséis, pero no han terminado. El LZB está instalado desde que se inauguró el AVE en mil novecientos noventa y dos. Según las primeras investigaciones, un fallo de ese sistema habría iniciado el accidente de Urda, aunque otros titulares hablan de error humano.",
+     "url": "https://theobjective.com/economia/transporte/2026-10-28/adif-cambio-lzb-ertms"
+    },
+    {
+     "id": "to3",
+     "titular": "Qué es el sistema LZB, clave en el accidente de Urda",
+     "resumen": "The Objective explica qué es el LZB, el sistema de seguridad que falló antes del choque de Urda. Según el Ministerio de Transportes, tras la avería el centro de control de Adif en Atocha autorizó a los trenes a circular con normalidad, aunque la norma limitaba la velocidad a cuarenta kilómetros por hora. El sistema protege las líneas de alta velocidad de más de ciento sesenta kilómetros por hora. Vigila la velocidad y la posición del tren y puede activar el freno de emergencia. Se usa en la línea Madrid-Sevilla y en una línea de Cercanías de Madrid. El ministro Óscar Puente dice que se instaló en mil novecientos noventa y dos y que está en proceso de sustitución. Reconoce que puede fallar de forma ocasional, aunque lo considera muy contrastado. Dice que se ha identificado a la persona que autorizó reanudar la marcha. Renfe ha suspendido la venta de billetes entre Madrid y Andalucía hasta diciembre.",
+     "url": "https://theobjective.com/economia/transporte/2026-10-28/que-es-sistema-lzb-clave-accidente-urda/"
     }
    ]
   },
@@ -110,21 +104,9 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Los disturbios de Barcelona ponen de nuevo en el punto de mira a los Mossos",
-     "resumen": "Según OKDiario, los disturbios del sábado veinticuatro de octubre en Barcelona dejaron saqueos parciales o totales en unos treinta comercios del centro. La convocatoria había circulado por TikTok cinco días antes, pero los Mossos d'Esquadra apenas estaban preparados. Participaron más de quinientas personas y hubo ciento treinta detenidos, de los que un sesenta por ciento eran menores. Cientos de clientes quedaron encerrados en un gran almacén. La nueva jefa de los Mossos, Sílvia Catà, dijo que la situación era bastante inexplicable. La portavoz del Gobierno atribuyó los hechos a la extrema derecha. El Gobierno catalán, presidido por Salvador Illa, culpa a las redes y anuncia medidas contra grupos de mensajería. El periódico critica a los Mossos y al Gobierno catalán, y afirma sin datos oficiales que se oculta el origen de los detenidos. Es una pieza de opinión.",
-     "url": "https://okdiario.com/espana/disturbios-barcelona-vuelven-poner-entredicho-mossos-20644668"
-    },
-    {
-     "id": "ok2",
-     "titular": "Un grupo convoca nuevos saqueos en el centro de Madrid para el treinta y uno de octubre",
-     "resumen": "Según OKDiario, el grupo llamado Blocus prepara una segunda oleada de saqueos en el centro de Madrid los días treinta y treinta y uno de octubre. Una primera convocatoria, el sábado veinticuatro, fue frustrada por un despliegue policial. En sus mensajes, el grupo escribe que volverá más fuerte y más organizado y que solo dará el punto de reunión una hora antes. Ha creado cuentas nuevas para captar gente. Un informe de un sistema de inteligencia artificial citado por el periódico sitúa el origen en Madrid el cinco de octubre, como imitación de disturbios en Francia. Habría ya más de setenta perfiles convocantes. Los objetivos serían tiendas de lujo y agentes de policía. El texto no recoge respuesta oficial de la Policía ni del Gobierno, y el propio titular y el cuerpo no coinciden en el número de ciudades implicadas.",
-     "url": "https://okdiario.com/espana/blocus-pone-madrid-diana-sus-saqueos-31-volvemos-mas-fuertes-organizados-no-podemos-fallar-20644276"
-    },
-    {
-     "id": "ok3",
-     "titular": "El Gobierno dice que cumplirá el plazo del Supremo sobre la ley de nietos",
-     "resumen": "Según OKDiario, la portavoz del Gobierno, Elma Saiz, aseguró el martes que se cumplirá el plazo fijado por el Tribunal Supremo. Vence el miércoles veintiocho de octubre a las tres de la tarde. El Supremo pide la lista de nacionalizados por la ley de nietos que están en el censo de residentes ausentes sin haber acreditado el exilio de sus antepasados. El tribunal mantiene suspendido el voto de estos nacionalizados para el veintinueve de noviembre, salvo que los consulados certifiquen que presentaron los requisitos. De ciento sesenta y tres mil veinte electores que obtuvieron la nacionalidad por esta vía, el Gobierno no dio un desglose de expedientes. El periódico destaca el cambio de postura, pues hace dos semanas el Gobierno admitía que no podía asegurar depurar esos registros antes de las elecciones. Esa lectura y el titular son valoraciones del medio.",
-     "url": "https://okdiario.com/espana/gobierno-agacha-cabeza-supremo-ley-nietos-cumplira-plazo-ministerios-estan-comprometidos-20639826"
+     "titular": "Convocan nuevos saqueos en Madrid tras los disturbios de Barcelona y Bilbao",
+     "resumen": "Según OKDiario, ha habido episodios de violencia callejera en Barcelona y Bilbao que podrían extenderse a Madrid y otras ciudades este fin de semana. Los grupos conocidos como Blocus anuncian nuevos saqueos en la capital el viernes y el sábado. El diario critica que el Gobierno no señale a su socio EH Bildu tras los gritos a favor de ETA durante los disturbios de Bilbao. Ese mismo día, el Tribunal Supremo fijó las tres de la tarde para que el Gobierno entregara la lista de ciento sesenta y tres mil personas afectadas por la ley de nietos. Si no lo hacía, podía imponerle una multa de mil euros, repetida hasta cumplir. Además, la jueza Tardón citó a declarar a tres ciudadanos marroquíes que entraron en Ceuta el treinta de julio. Unos quinientos tractores llegaron a Madrid para reclamar más apoyo.",
+     "url": "https://okdiario.com/espana/ultima-hora-elecciones-generales-del-29-n-actualidad-politica-hoy-acaba-plazo-del-tribunal-supremo-entregar-listas-ley-nietos-20645948"
     }
    ]
   },
@@ -133,22 +115,22 @@
    "nombre": "elDiario.es",
    "noticias": [
     {
-     "id": "edi4",
-     "titular": "Ada Colau propone un impuesto del diez por ciento a quienes acumulan viviendas",
-     "url": "https://www.eldiario.es/politica/colau-propone-impuesto-disuasorio-10-multipropietarios-no-sea-rentable-especular_1_13620560.html",
-     "resumen": "Ada Colau, candidata del Frente Amplio en las elecciones del veintinueve de noviembre, ha anunciado un impuesto disuasorio del diez por ciento para los multipropietarios. Según elDiario.es, lo pagarían los particulares con cuatro o más viviendas cuyo valor conjunto supere los ochocientos mil euros, a partir de la cuarta casa. Las empresas y los fondos pagarían desde la primera. Colau dice que el objetivo es que especular deje de ser rentable y que los dueños bajen precios o vendan a precios asequibles. Parte de lo recaudado serviría para financiar vivienda pública, con una inversión de hasta el uno por ciento del producto interior bruto. Ella calcula que la medida podría rebajar los alquileres en torno a un treinta por ciento en Madrid y Barcelona. El artículo no recoge reacciones de otros partidos."
+     "id": "edi1",
+     "titular": "Vox mantiene su agenda mientras el resto de partidos suspende la campaña",
+     "resumen": "Vox mantiene su agenda tras el choque de trenes de Urda, en Toledo, que según elDiario.es ha dejado al menos sesenta y cuatro muertos. Santiago Abascal tenía previstos actos de precampaña en Santander y Valladolid el miércoles. Acusa al Partido Socialista de hacer una campaña del amor que causa muertos, y dice que seguirá presionando al Gobierno por las infraestructuras. La mayoría de los demás partidos suspendió su actividad. El Partido Popular paró todos sus actos en España y Pedro Sánchez canceló su agenda. Los gobiernos de la ciudad y de la Comunidad de Madrid también cancelaron actos oficiales. Ada Colau, candidata del Frente Amplio, expresó su solidaridad con los afectados. Renfe activó su plan de atención a las víctimas y a sus familias.",
+     "url": "https://www.eldiario.es/politica/vox-mantiene-agenda-ataca-gobierno-accidente-toledo-campana-amor-psoe-causa-muertos_1_13620836.html"
+    },
+    {
+     "id": "edi2",
+     "titular": "PSOE y Frente Amplio irán juntos al Senado en casi todas las provincias",
+     "resumen": "Según el seguimiento de elDiario.es sobre la actualidad política, el Boletín Oficial del Estado publicó las candidaturas al Congreso y al Senado para las elecciones del veintinueve de noviembre, que no serán definitivas hasta la semana próxima. El Partido Socialista y el Frente Amplio concurrirán juntos al Senado en casi todas las provincias. En la derecha, Vox se retirará en seis provincias y el Partido Popular en tres, para que los votantes puedan apoyar a un solo partido en cada una. Los ministerios de Exteriores y Justicia debían entregar al Tribunal Supremo la lista de unos ciento sesenta mil afectados por la ley de nietos. También cuenta que la derecha vincula los disturbios recientes con Pedro Sánchez, y que Begoña Gómez denunció al Partido Popular por usar su imagen en un vídeo hecho con inteligencia artificial.",
+     "url": "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13620471.html"
     },
     {
      "id": "edi3",
-     "titular": "Aena gana más de mil setecientos millones hasta septiembre, un doce por ciento más",
-     "url": "https://www.eldiario.es/economia/auge-trafico-aereo-actividad-internacional-elevan-ganancias-aena-crecen-12-4_1_13620553.html",
-     "resumen": "El gestor de aeropuertos Aena ganó mil setecientos setenta y cinco millones de euros en los nueve primeros meses del año, un doce coma cuatro por ciento más que en el mismo periodo anterior. Según elDiario.es, la empresa atribuye el avance al auge del tráfico aéreo y a su actividad internacional. Sus aeropuertos recibieron un récord de trescientos nueve coma nueve millones de pasajeros, un cuatro por ciento más. Los ingresos totales llegaron a cinco mil doscientos ochenta y cuatro millones, un diez por ciento más. Los ingresos comerciales subieron un siete coma siete por ciento. La inversión en infraestructuras fue de setecientos noventa millones. El Gobierno aprobó el quince de septiembre el marco regulatorio de tarifas para dos mil veintisiete a dos mil treinta y uno."
-    },
-    {
-     "id": "edi1",
-     "titular": "El Gobierno llevará los decretos de vivienda a la Diputación Permanente el doce de noviembre",
-     "resumen": "Según elDiario.es, el Gobierno prevé llevar sus dos decretos de vivienda a la Diputación Permanente del Congreso el doce de noviembre, el día después de la huelga general. La fecha aún no es oficial. El Ejecutivo dice que no hay otra posible, porque la campaña electoral empieza el trece de noviembre y el plazo legal vence el catorce. Los decretos se aprobaron el seis de octubre, tras tumbar el Congreso otros anteriores. El principal limitaría la compra de viviendas por fondos de inversión hasta finales de dos mil veintiocho, suspendería desahucios de personas vulnerables hasta dos mil treinta y prorrogaría dos años los alquileres que venzan antes de esa fecha. Se espera que salga adelante, porque el PNV ha dicho que lo apoyará. Otra medida ofrecería préstamos del Instituto de Crédito Oficial sin intereses de hasta cincuenta mil euros para comprar una primera vivienda.",
-     "url": "https://www.eldiario.es/politica/gobierno-preve-llevar-diputacion-permanente-decretos-vivienda-dia-despues-huelga-general_1_13616839.html"
+     "titular": "Flávio Bolsonaro huye a Estados Unidos tras la derrota electoral en Brasil",
+     "resumen": "En su portada del miércoles, elDiario.es cuenta que Flávio Bolsonaro huyó a Estados Unidos tras su derrota electoral. Lula ganó las elecciones presidenciales de Brasil del veinticinco de octubre. Según el diario, la Administración de Trump dice que expedirá visados a Bolsonaro y a su familia. La misma portada recoge que, según los sondeos, Netanyahu gana las primeras elecciones israelíes tras la guerra de Gaza, pero la oposición suma más escaños. También informa de que un informe detecta estrategias de captación y coordinación detrás de las convocatorias de saqueos en Barcelona. La Ertzaintza admite que tardó catorce minutos en intervenir en los disturbios de Bilbao. Los sindicatos médicos mantienen la huelga en cinco comunidades. Enrique Vila-Matas recibe el Premio Nacional de las Letras Españolas dos mil veintiséis.",
+     "url": "https://www.eldiario.es/adelanto/28-de-octubre-de-2026/"
     }
    ]
   }
