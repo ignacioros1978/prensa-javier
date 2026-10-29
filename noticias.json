@@ -1,16 +1,16 @@
 {
  "fecha": "2026-10-29",
  "fechaTexto": "jueves 29 de octubre",
- "actualizado": "2026-10-29T07:08:41+01:00",
+ "actualizado": "2026-10-29T16:26:57+01:00",
  "portada": [
-  "ld1",
-  "to1",
+  "to4",
+  "ee4",
+  "ld4",
+  "ed3",
+  "ld3",
+  "to5",
   "ee1",
   "ed1",
-  "ld2",
-  "to2",
-  "edi2",
-  "ok1",
   "edi3"
  ],
  "diarios": [
@@ -19,16 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
+     "id": "ld4",
+     "titular": "El jefe de Iryo avisó en el Senado de los fallos del sistema de seguridad",
+     "resumen": "Según Libertad Digital, el consejero delegado de Iryo, Fabrizio Favara, advirtió en el Senado, el cinco de octubre, de que el problema más frecuente en la línea entre Madrid y Andalucía era el sistema de seguridad llamado LZB. El accidente de Urda ocurrió veintitrés días después. Este sistema funciona desde mil novecientos noventa y dos. Cuando pierde la señal con la vía, frena el tren de forma automática, y luego tarda mucho en volver a funcionar. El periódico cuenta que maquinistas de Iryo y de Renfe llevaban avisando de incidencias desde dos mil veinticinco. Según los sindicatos, se había hecho normal circular en modo degradado, para evitar retrasos. El sistema está anticuado y se está sustituyendo poco a poco. El diario eleva a sesenta y nueve los muertos y pone en duda la gestión del Gobierno, aunque no aporta datos que lo prueben. Tampoco ha comprobado por su cuenta la autenticidad de los audios.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-29/la-premonitoria-advertencia-del-ceo-de-iryo-en-pleno-senado-sobre-los-problemas-de-la-conexion-madrid-sevilla-7484083/"
+    },
+    {
+     "id": "ld3",
+     "titular": "Muere el maquinista del tren de Renfe en el accidente de Urda",
+     "resumen": "Libertad Digital cuenta que ha fallecido Antonio Acedo, el maquinista del tren de Renfe que chocó por detrás con el de Iryo en Urda, en Toledo. Tenía treinta y seis años, había nacido en Móstoles y era hijo de maquinista. También murió David Cabañas, el maquinista en prácticas que viajaba con él. Según los audios filtrados, el centro de control de Atocha le ordenó seguir con marcha normal. El periódico asegura que nadie le avisó de que el otro tren seguía parado, y que al verlo tiró del freno de emergencia. Su partido, Izquierda Española, confirmó la muerte y lo describió como una buena persona comprometida con el ferrocarril. Según el diario, había denunciado varias veces el mal estado de las infraestructuras. Los equipos de rescate seguían buscando a más víctimas.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-29/confirmar-la-muerte-de-antonio-acedo-el-maquinista-que-freno-hasta-el-ultimo-segundo-para-evitar-una-catastrofe-mayor-7484000/"
+    },
+    {
      "id": "ld1",
      "titular": "Puente culpa a una persona del centro de control de Adif por el accidente de Urda",
      "resumen": "El ministro de Transportes, Óscar Puente, compareció el miércoles en el centro de control de Adif, en Madrid, más de cinco horas y media después del choque de dos trenes de alta velocidad en Urda, en Toledo. Según la cifra oficial que recoge Libertad Digital, hay sesenta y cuatro fallecidos. Puente calificó lo ocurrido de inverosímil. Explicó que falló un sistema de señalización llamado LZB y que hubo que detener hasta seis trenes. Después, el centro de control de Atocha tomó la decisión de reanudar la marcha. El ministro la llamó inexplicable y errónea, y dijo que se hizo sin limitar la velocidad. Señaló a una persona como responsable, aunque pidió esperar a la investigación. Puente descartó dimitir. Dijo que ahora solo piensa en gestionar la situación. La Unidad Militar de Emergencias desplegó unos doscientos efectivos.",
      "url": "https://www.libertaddigital.com/espana/politica/2026-10-28/puente-senala-a-una-persona-del-centro-de-control-como-responsable-del-accidente-de-urda-7483531/"
-    },
-    {
-     "id": "ld2",
-     "titular": "Feijóo exige respuestas al Gobierno y una revisión de toda la red ferroviaria",
-     "resumen": "El presidente del Partido Popular, Alberto Núñez Feijóo, hizo el martes una declaración institucional desde la sede de su partido, en la calle Génova, tras el accidente ferroviario de Urda. Según Libertad Digital, expresó su apoyo a las familias de los fallecidos y heridos, a los servicios de emergencia y a los trabajadores de Adif. El Partido Popular canceló todos sus actos de campaña. Feijóo pidió que los españoles donen sangre en los hospitales. Reclamó una investigación del Gobierno y de la justicia, con todos los medios y sin interferencias. Dijo que España tiene derecho a saber en qué estado están las vías y los sistemas de seguridad, y qué avisos se recibieron. Pidió también una revisión completa de la red y que se rindan cuentas del gasto. Sobre las responsabilidades políticas, dijo que no entraría a discutirlas en ese momento.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-28/feijoo-exige-respuestas-al-gobierno-y-pide-la-revision-del-gasto-y-del-estado-de-toda-la-red-ferroviaria-7483610/"
     }
    ]
   },
@@ -36,6 +42,12 @@
    "id": "ee",
    "nombre": "El Español",
    "noticias": [
+    {
+     "id": "ee4",
+     "titular": "El Gobierno decreta tres días de luto oficial por el accidente de Urda",
+     "resumen": "Según El Español, el Gobierno ha decretado tres días de luto oficial en toda España, hasta el sábado treinta y uno de octubre, en memoria de las sesenta y ocho víctimas del accidente ferroviario de Toledo. Durante esos días se suspende la precampaña de las elecciones generales del veintinueve de noviembre. Las banderas ondean a media asta en los edificios oficiales, y se cancelan o aplazan actos públicos. El luto no es festivo: el trabajo, los colegios y los servicios siguen con normalidad. La federación de fútbol aplazó la jornada de Copa del Rey y, en los partidos, habrá minuto de silencio. Los Reyes visitaron a los heridos en el Hospital Universitario de Toledo. El presidente Pedro Sánchez separó este accidente del de Adamuz, aunque dijo que dos tragedias ferroviarias en un año son inasumibles.",
+     "url": "https://www.elespanol.com/sociedad/20261029/gobierno-confirma-dias-luto-oficial-espana-accidente-tren-implica-afecta-ciudadanos/1003744438562_0.html"
+    },
     {
      "id": "ee1",
      "titular": "Sánchez ve inasumibles dos tragedias ferroviarias en un año y no decide sobre Puente",
@@ -47,12 +59,6 @@
      "titular": "Así se produjo el fallo en Urda, según el ministro de Transportes",
      "resumen": "Según El Español, el ministro Óscar Puente explicó que sobre las ocho y media de la mañana del miércoles falló, por un problema informático, el sistema de seguridad LZB en la estación de Urda, en Toledo. Seis trenes quedaron parados en un tramo de sesenta y nueve kilómetros. A las ocho y treinta y seis, el centro de control de Adif en Atocha autorizó a todos a reanudar la marcha normal. Puente dijo que eso incumplía las normas, que obligan a ir a unos cuarenta kilómetros por hora cuando el sistema falla. Según el ministro, el maquinista de otro tren advirtió del error y Adif ordenó entonces circular en las condiciones correctas. Pero el tren de alta velocidad ya había recibido la primera orden y siguió a marcha normal durante diecisiete minutos, casi a doscientos por hora, hasta chocar. Puente reconoció que no había ningún sistema que evitara un error humano y no ha dimitido.",
      "url": "https://www.elespanol.com/espana/20261028/oscar-puente-senala-adif-decidir-tren-renfe-reanudara-marcha-circunstancias-inexplicables/1003744437994_0.html"
-    },
-    {
-     "id": "ee3",
-     "titular": "Los peores accidentes de tren de la historia de España suman casi quinientos muertos",
-     "resumen": "El Español repasa los accidentes ferroviarios más graves del país tras el de Urda, ocurrido el miércoles hacia las nueve menos seis de la mañana en la línea Madrid-Sevilla. El diario habla de al menos cincuenta fallecidos en el momento de escribir, aunque la cifra puede subir. El más trágico hasta ahora era el de El Cuervo, en Sevilla, en mil novecientos setenta y dos, con ochenta y seis muertos. Le sigue Angrois, en Santiago de Compostela, en dos mil trece, con ochenta. En el último medio siglo, unos veinte accidentes han causado cuatrocientos treinta y cuatro muertes, sin contar Urda. Con este, el total se acerca a quinientos. El Gobierno y los principales partidos cancelaron sus actos de precampaña. Los Reyes enviaron su pésame a las familias. El diario recuerda que una semana antes Puente bromeó sobre las averías de Renfe, lo que indignó a las víctimas de Adamuz.",
-     "url": "https://www.elespanol.com/espana/20261028/adamuz-urda-peores-accidentes-ferroviarios-historia-espana-dejan-muertos-medio-siglo/1003744438061_0.html"
     }
    ]
   },
@@ -60,6 +66,12 @@
    "id": "ed",
    "nombre": "El Debate",
    "noticias": [
+    {
+     "id": "ed3",
+     "titular": "Puente eliminó la comisión que investigaba los accidentes de tren",
+     "resumen": "Según El Debate, el Ministerio de Transportes, que dirige Óscar Puente, disolvió la comisión independiente que investigaba los accidentes ferroviarios, mes y medio después del accidente de Adamuz. Ocurrió en un decreto del veinticinco de febrero, que también eliminó los organismos equivalentes de barcos y aviones. En su lugar se creó una nueva autoridad de investigación en julio. El periódico recuerda que, el ocho de octubre, una investigadora dijo en el Congreso que los informes técnicos se modificaban al subir de nivel, y habló de falta de transparencia. Cuenta además que el presidente de la comisión planteó en televisión que una soldadura rota pudo causar el accidente de Adamuz, y que eso habría molestado a Puente. El diario no recoge la respuesta completa del ministerio. Enlaza todo con Urda, donde murieron al menos sesenta y ocho personas.",
+     "url": "https://www.eldebate.com/economia/20261029/puente-suprimio-comite-expertos-accidentes-ferroviarios-mes-medio-despues-tragedia-adamuz_474883.html"
+    },
     {
      "id": "ed1",
      "titular": "Muere en el accidente de Urda la exministra Fátima Báñez",
@@ -79,22 +91,22 @@
    "nombre": "The Objective",
    "noticias": [
     {
+     "id": "to4",
+     "titular": "Dirigentes del PSOE piden que Puente deje el cargo",
+     "resumen": "Según The Objective, varios dirigentes del PSOE reclaman la destitución del ministro Óscar Puente tras el accidente de Urda. Dicen que dos accidentes con víctimas mortales en nueve meses son demasiados. La mayoría del partido, sin embargo, pide prudencia y esperar a la investigación. Moncloa sostiene que la gestión del ministro no está en cuestión. El presidente Pedro Sánchez reconoció que dos accidentes ferroviarios en un mismo año no es asumible, pero no contestó cuando le preguntaron si cesará a Puente. El Frente Amplio pide responsabilidades políticas a todos los niveles. Alberto Núñez Feijóo exige una investigación inmediata y sin interferencias, aunque evita pedir el cese. Puente ha descartado dimitir. Mientras, la asociación de víctimas de Adamuz sostiene que lo ocurrido en Urda no es un simple fallo humano.",
+     "url": "https://theobjective.com/espana/politica/2026-10-29/dirigentes-psoe-cese-puente-accidentes-tren/"
+    },
+    {
+     "id": "to5",
+     "titular": "Ordenadores antiguos del sistema de seguridad, en el foco del accidente",
+     "resumen": "Según The Objective, el accidente de Urda empezó cuando se cayeron tres ordenadores que controlan el sistema de seguridad de la línea de alta velocidad entre Madrid y Sevilla. Al caer, unos sesenta kilómetros de vía quedaron sin señalización y el centro de control de Atocha tuvo que intervenir. Ocho trenes frenaron. El centro puede autorizar la marcha a un máximo de cuarenta kilómetros por hora. Fuentes técnicas citadas por el diario dicen que estos equipos son antiguos, fallan con frecuencia y que se había pedido cambiarlos varias veces. Critican además que se deje tanta responsabilidad en operadores con poca formación y sueldos bajos. El periódico aclara que no está confirmado que estos ordenadores causaran el fallo. El sistema se está sustituyendo por otro europeo, pero la obra avanza despacio porque se hace de madrugada.",
+     "url": "https://theobjective.com/economia/transporte/2026-10-29/asi-son-ordenadores-adif-siglo-xx-hacen-fallar-sistema-via-andalucia/"
+    },
+    {
      "id": "to1",
      "titular": "Los audios de Atocha muestran las órdenes al maquinista del AVE",
      "resumen": "The Objective ha accedido a grabaciones del centro de control de Adif en Atocha. Según el diario, el controlador, muy dubitativo, ordenó al maquinista del AVE reanudar la marcha normal. El diario recuerda que el reglamento de dos mil quince exige marchar a la vista, con un máximo de cuarenta kilómetros por hora. El AVE estaba a unos veinticinco kilómetros del Iryo. La maquinista del Iryo había avisado de que perdía la transmisión y estaba detenida en Urda. Siete minutos después de recibir la orden, volvió a llamar porque seguía parada. Según el diario, nadie avisó entonces al maquinista del AVE para que frenara. Fuentes del Gobierno dicen que el controlador solo debía autorizar la marcha normal si los trenes estaban a más de treinta kilómetros. Hay al menos sesenta y ocho muertos y unos cincuenta heridos. El impacto fue, según las primeras estimaciones, a más de cien por hora.",
      "url": "https://theobjective.com/espana/2026-10-28/ordenes-atocha-maquinista-ave-marcha-normal/"
-    },
-    {
-     "id": "to2",
-     "titular": "Adif retrasó el cambio del sistema de seguridad de la línea Madrid-Sevilla",
-     "resumen": "The Objective explica que Adif retrasó la sustitución del sistema de señalización LZB por otro europeo, llamado ERTMS, en la línea de alta velocidad entre Madrid y Sevilla. La contratación empezó en febrero de dos mil veinte. Se abandonó la primera licitación por una infracción en las normas de adjudicación y se reinició en noviembre de ese año. El presupuesto era de ciento treinta y un millones de euros y el plazo, de cincuenta y dos meses. La adjudicación se autorizó en septiembre de dos mil veintiuno, con fin de obras previsto en dos mil veintiséis, pero no han terminado. El LZB está instalado desde que se inauguró el AVE en mil novecientos noventa y dos. Según las primeras investigaciones, un fallo de ese sistema habría iniciado el accidente de Urda, aunque otros titulares hablan de error humano.",
-     "url": "https://theobjective.com/economia/transporte/2026-10-28/adif-cambio-lzb-ertms"
-    },
-    {
-     "id": "to3",
-     "titular": "Qué es el sistema LZB, clave en el accidente de Urda",
-     "resumen": "The Objective explica qué es el LZB, el sistema de seguridad que falló antes del choque de Urda. Según el Ministerio de Transportes, tras la avería el centro de control de Adif en Atocha autorizó a los trenes a circular con normalidad, aunque la norma limitaba la velocidad a cuarenta kilómetros por hora. El sistema protege las líneas de alta velocidad de más de ciento sesenta kilómetros por hora. Vigila la velocidad y la posición del tren y puede activar el freno de emergencia. Se usa en la línea Madrid-Sevilla y en una línea de Cercanías de Madrid. El ministro Óscar Puente dice que se instaló en mil novecientos noventa y dos y que está en proceso de sustitución. Reconoce que puede fallar de forma ocasional, aunque lo considera muy contrastado. Dice que se ha identificado a la persona que autorizó reanudar la marcha. Renfe ha suspendido la venta de billetes entre Madrid y Andalucía hasta diciembre.",
-     "url": "https://theobjective.com/economia/transporte/2026-10-28/que-es-sistema-lzb-clave-accidente-urda/"
     }
    ]
   },
