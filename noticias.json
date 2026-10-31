@@ -1,17 +1,17 @@
 {
- "fecha": "2026-10-30",
- "fechaTexto": "viernes 30 de octubre",
- "actualizado": "2026-10-30T07:00:01+01:00",
+ "fecha": "2026-10-31",
+ "fechaTexto": "sábado 31 de octubre",
+ "actualizado": "2026-10-31T06:59:36+01:00",
  "portada": [
-  "ee2",
+  "ld1",
   "ee1",
-  "to1",
-  "ok1",
-  "ed1",
-  "ld2",
   "edi1",
+  "ed2",
+  "ed1",
+  "edi3",
   "edi2",
-  "to2"
+  "to2",
+  "ok2"
  ],
  "diarios": [
   {
@@ -20,15 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Sánchez mantiene a Puente tras el accidente de Urda",
-     "resumen": "Según Libertad Digital, el Gobierno cierra filas con el ministro de Transportes, Óscar Puente, tras el accidente ferroviario de Urda, en Toledo. Fuentes del Ejecutivo aseguran que lo ocurrido no cuestiona su gestión. El balance oficial es de sesenta y nueve fallecidos. Puente centra sus explicaciones en la actuación de un trabajador del centro de control de Adif en Atocha, lo que lleva el foco a una responsabilidad individual. Según el diario, Sánchez no contempla por ahora cuestionar la continuidad del ministro, a un mes de las elecciones. Puente ha pedido comparecer por su cuenta el martes tres de noviembre, a las cinco de la tarde, en la Diputación Permanente del Congreso, y dará una rueda de prensa el jueves. Podemos, Esquerra y Frente Amplio han pedido explicaciones. El diario recoge también que Feijóo exige responsabilidades políticas y que los sindicatos critican unos audios filtrados a algunos medios.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-10-29/sanchez-blinda-a-puente-y-niega-que-el-accidente-de-urda-cuestione-su-gestion-en-transportes-7484263/"
+     "titular": "Tragedia de Urda: 69 cuerpos y cinco víctimas identificadas",
+     "resumen": "Según Libertad Digital, el Instituto de Medicina Legal de Toledo y Ciudad Real ha recibido ya sesenta y nueve cadáveres del accidente ferroviario de Urda, en Toledo, donde chocaron un tren de alta velocidad de Renfe y otro de Iryo. Hasta el viernes se habían practicado cuarenta y ocho autopsias. Cinco víctimas, tres mujeres y dos hombres, han sido identificadas por sus huellas dactilares y ya se ha avisado a sus familias. Se han recogido setenta denuncias de familiares en varias comandancias de la Guardia Civil. Dos de las personas denunciadas han aparecido con vida. Trabajan en la identificación veinte forenses y seis técnicos de Toxicología, que hacen pruebas de ADN, y psicólogas atienden a los allegados. La línea entre Madrid y Andalucía sigue cortada. Según el Ministerio de Transportes, una caída del sistema de señalización permitió que el tren de Renfe saliera con la vía aún ocupada.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-30/tragedia-en-urda-se-han-realizado-48-autopsias-y-hay-cinco-identificaciones-7484424/"
     },
     {
      "id": "ld2",
-     "titular": "La UCO dice que avisó a la jueza Biedma de los correos de Begoña Gómez",
-     "resumen": "Según Libertad Digital, la Unidad Central Operativa de la Guardia Civil ha enviado al juez Santiago Pedraz un informe en el que afirma que advirtió a la jueza Beatriz Biedma de que los anexos de la causa de David Sánchez incluían los correos de Begoña Gómez y de Pedro Sánchez. El informe sostiene que el aviso se hizo meses antes de que esos correos aparecieran en un medio de comunicación. La UCO añade que no fue un error, porque la jueza ya había validado la documentación en septiembre y decidió entregarla a las partes. Tras la filtración, una investigación interna concluyó que la información salió de lo que el juzgado había dado a las partes. Según el informe, Biedma confirmó que fue decisión suya. El diario cuenta además que el director adjunto operativo de la Guardia Civil explicó que se abrieron dos informaciones reservadas tras llamadas de la directora general y del ministro del Interior.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-29/la-uco-asegura-a-pedraz-que-informo-a-biedma-de-que-su-informe-contenia-el-correo-de-begona-gomez-7484228/"
+     "titular": "Crisis en Polonia: la policía rodea el Tribunal Constitucional",
+     "resumen": "Libertad Digital habla de un golpe de Estado judicial en Polonia. La noche del viernes la policía desplegó un dispositivo alrededor del Tribunal Constitucional, en Varsovia. El conflicto enfrenta al primer ministro, Donald Tusk, con el presidente, Karol Nawrocki, y con el líder opositor Jarosław Kaczyński. Según la agencia polaca PAP, una jueza suspendió durante un mes al presidente del tribunal y a su adjunto. El propio tribunal denunció una toma ilegal de su página web y advirtió de un posible delito de golpe de Estado. Su portavoz asegura que agentes entraron por una puerta conectada con la Cancillería junto a siete personas elegidas por el Parlamento. La policía detuvo a tres personas que saltaron la valla. Tusk reconoció que es un proceso difícil y a veces doloroso, y Kaczyński habló de Estado policial. Nawrocki interrumpió su viaje a Senegal y regresó. El embajador en China anunció su dimisión.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-30/golpe-de-estado-judicial-en-polonia-la-policia-rodea-el-tribunal-constitucional-7485045/"
+    },
+    {
+     "id": "ld3",
+     "titular": "Marruecos refuerza sus puertos frente a Algeciras, Ceuta y Melilla",
+     "resumen": "Según Libertad Digital, Marruecos ha anunciado que en los próximos días entrará en servicio la primera terminal del gran puerto de Nador West Med, cerca de Melilla, y que ampliará Tanger Med, cerca de Ceuta. El anuncio salió de una reunión presidida por el rey Mohamed sexto el miércoles en Rabat, según el Gabinete Real. El objetivo es llegar a veinte millones de contenedores al año. Nador West Med ha movilizado unos cinco mil millones de euros y prevé catorce mil empleos directos. Tanger Med sumará mil doscientos metros de muelles y cuatro millones y medio de contenedores más cada año. El periódico compara estas cifras con las de los puertos españoles. Algeciras movió más de setenta y seis millones de toneladas hasta septiembre. Libertad Digital sostiene que estas obras forman parte de la presión marroquí sobre Ceuta y Melilla, y que las autoridades portuarias y empresarios españoles muestran preocupación.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-30/nador-west-med-y-tanger-med-las-cifras-con-las-que-mohamed-vi-desafia-a-algeciras-ceuta-y-melilla-7484526/"
     }
    ]
   },
@@ -38,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Sánchez respalda la tesis del fallo humano y mantiene a Puente",
-     "resumen": "Según El Español, Pedro Sánchez mantiene al ministro Óscar Puente en el Gobierno tras el accidente ferroviario de Urda, en Toledo. Fuentes de Moncloa atribuyen el choque a un fallo humano, a partir de los audios entre el centro de control de Adif en Atocha y los maquinistas. El diario explica que a las ocho y treinta y uno el maquinista del AVE perdió la señal del sistema de seguridad LZB. Cinco minutos después le ordenaron desconectarlo, volver a conectarlo y reanudar la marcha. Puente habló de una orden inexplicable, admitió que quedan dudas sobre los diecisiete minutos hasta la colisión y rechaza dimitir. Comparecerá el martes tres de noviembre en la Diputación Permanente. El líder del PP, Alberto Núñez Feijóo, dijo que echar la culpa a un operador de Atocha es una frivolidad impropia de un ministro. El diario añade que hubo muchas críticas desde la izquierda por culpar a un operario.",
-     "url": "https://www.elespanol.com/espana/politica/20261029/sanchez-respalda-tesis-fallo-humano-apoya-puente-ministro-considera-no-motivos-dimitir/1003744440228_0.html"
+     "titular": "Puente no dimite y avisa de que vivirá un calvario",
+     "resumen": "El ministro de Transportes, Óscar Puente, descartó dimitir en una rueda de prensa en Madrid, dos días después del accidente ferroviario de Urda, que ya suma sesenta y nueve muertos. Según El Español, dijo que solo daría un paso al lado si su continuidad perjudicara al proyecto del PSOE, y que él nunca será un problema. Admitió que le espera un calvario de insultos en plena campaña electoral y mencionó también el accidente de Adamuz. Fuentes de Moncloa sostienen que lo ocurrido nada tiene que ver con su gestión. El Gobierno prepara medidas de seguridad, no descarta una auditoría completa y valora cortar del todo las líneas en obras, incluida la de Madrid y Barcelona, para acortar la renovación a veinticuatro meses. Mientras tanto, la exalcaldesa de Barcelona Ada Colau pide su dimisión cuanto antes, y el líder del PP, Alberto Núñez Feijóo, afirma que si no dimiten, los echarán en las urnas.",
+     "url": "https://www.elespanol.com/espana/politica/20261030/puente-no-dimite-perjudica-proyecto-pais-augura-vivira-calvario-encima-campana-electoral/1003744441161_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Urda vive una segunda noche de búsqueda con sesenta y nueve muertos",
-     "resumen": "Según El Español, la tragedia ferroviaria de Urda, en Toledo, ya ha costado la vida a sesenta y nueve personas. Los equipos de rescate pasaron una segunda noche buscando víctimas entre Urda y Los Yébenes, con drones, perros, guardias civiles y la Unidad Militar de Emergencias. Más de cuarenta heridos siguen hospitalizados, y algunos están en estado crítico. La Guardia Civil ha recibido sesenta y cuatro denuncias de desaparecidos y ha tomado muestras de ADN a familiares en Madrid, Toledo, Sevilla y Córdoba. En una morgue provisional trabajan veinticinco médicos forenses. En el dispositivo participan setecientos veinticuatro guardias civiles y doscientos militares. Los Reyes visitaron más de una hora y media a los heridos en el hospital de Toledo. Se confirmó también la muerte de la exministra Fátima Báñez, que viajaba en un vagón del tren de Iryo. El presidente castellanomanchego, Emiliano García-Page, no prevé que aparezcan más cuerpos.",
-     "url": "https://www.elespanol.com/eldigitalcastillalamancha/sociedad/sucesos/20261029/segunda-noche-busqueda-victimas-urda-tragedia-cobrado-vidas-todavia-heridos-critico/1003744440544_0.html"
+     "titular": "Sánchez reconoce una confianza quebrada en la alta velocidad",
+     "resumen": "Según El Español, el presidente del Gobierno, Pedro Sánchez, hizo el viernes su tercera declaración seguida sobre el accidente de Urda, junto al presidente de Castilla-La Mancha, Emiliano García-Page. Tras reunirse el comité de emergencias en Toledo, que rebajó la alerta al nivel uno, Sánchez calificó de inasumibles dos accidentes así en un año, el de Adamuz y el de Urda, que suman unos ciento quince muertos. Reconoció una confianza quebrada en la alta velocidad y atribuyó el choque a un error humano en el centro de control de Adif, después de que cayera el sistema de seguridad. Fue una colisión por alcance de un tren de Renfe contra uno de Iryo detenido. El balance es de al menos sesenta y nueve fallecidos de veintisiete nacionalidades. Page dijo que no se descarta que superen los setenta. Sánchez recordó las palabras del Rey, que pidió que la tragedia no se repita.",
+     "url": "https://www.elespanol.com/espana/politica/20261030/sanchez-comparece-tercer-dia-escudandose-page-cita-rey-reconoce-confianza-quebrada-alta-velocidad/1003744440823_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Sánchez quiere llegar a las elecciones con Puente de ministro",
-     "resumen": "Según El Español, Pedro Sánchez está decidido a llegar a las elecciones con Óscar Puente como ministro, pese al accidente de Urda y a las críticas de sus socios. Las elecciones generales son el veintinueve de noviembre y se convocaron el cinco de octubre. Desde entonces han dimitido la portavoz del PSOE, Montse Mínguez, el delegado del Gobierno en Madrid y toda la candidatura socialista de Palencia. El equipo electoral recalcula la campaña con Puente dentro. Los socios parlamentarios piden responsabilidades políticas, incluso más que el PP. Fuentes socialistas responden que ya no son socios, porque las Cortes están disueltas. Sánchez había dicho que no es asumible sufrir dos accidentes de alta velocidad en un año. Puente dará una rueda de prensa el viernes. El diario añade que Moncloa prevé anuncios sociales, una subida del salario mínimo y el indulto al exfiscal general.",
-     "url": "https://www.elespanol.com/espana/politica/20261030/sanchez-decidido-llegar-elecciones-puente-ministro-pese-tragedia-urda-criticas-socios/1003744439442_0.html"
+     "titular": "Quién era el maquinista en prácticas que murió en Urda",
+     "resumen": "El Español dedica un reportaje a Daniel Cabañas, de treinta y un años y vecino de Leganés, que viajaba en la cabina del tren de alta velocidad accidentado en Urda junto al maquinista titular, Antonio Acedo. Ambos están entre las sesenta y nueve víctimas del choque del miércoles veintiocho de octubre. Cabañas estudió electricidad y robótica y trabajó como técnico de mantenimiento. Se formó como maquinista en una escuela privada entre dos mil dieciocho y dos mil diecinueve, y ejerció de maquinista de dos mil diecinueve a dos mil veintiuno. Después trabajó en Barcelona y en Cercanías de Madrid hasta marzo de este año. Desde entonces acompañaba a los maquinistas en la ruta entre Madrid y Andalucía, es decir, llevaba siete meses en ella. De Acedo, nacido en Móstoles en mil novecientos noventa, el texto cuenta que militaba en un partido político y denunciaba la falta de financiación del mantenimiento. Sus compañeros los recuerdan como hombres buenos.",
+     "url": "https://www.elespanol.com/reportajes/20261029/daniel-cabanas-maquinista-practicas-iba-cabina-ave-cubria-ruta-madrid-andalucia-hace-meses/1003744439976_0.html"
     }
    ]
   },
@@ -62,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Transportes suprimió la comisión que investigaba accidentes de tren",
-     "resumen": "Según El Debate, el Ministerio de Transportes, que dirige Óscar Puente, suprimió la Comisión de Investigación de Accidentes Ferroviarios. Lo hizo mediante un real decreto del veinticinco de febrero de dos mil veintiséis, que también elimina las comisiones de accidentes marítimos y de aviación civil. Esa comisión era el organismo técnico independiente que investigaba los accidentes graves y proponía medidas. La supresión llegó mes y medio después del accidente de Adamuz, el dieciocho de enero, que causó cuarenta y seis muertos. Una nueva agencia unificada asumió después esas funciones y se constituyó el quince de julio. El diario recuerda que el ocho de octubre una investigadora de la comisión denunció en el Congreso que los informes técnicos se modifican a veces al llegar a instancias superiores. Según El Debate, Puente se molestó con el presidente de la comisión por hablar en televisión de la rotura de una soldadura. El artículo no recoge respuesta del Ministerio.",
-     "url": "https://www.eldebate.com/economia/20261029/puente-suprimio-comite-expertos-accidentes-ferroviarios-mes-medio-despues-tragedia-adamuz_474883.html"
+     "titular": "Polonia, en crisis por el pulso entre Tusk y Nawrocki",
+     "resumen": "Según El Debate, el presidente polaco, Karol Nawrocki, entró de madrugada en la sede del Tribunal Constitucional, en Varsovia, entre empujones y forcejeos. Lo hizo después de que el Gobierno de Donald Tusk suspendiera de forma temporal al presidente del tribunal y a su vicepresidente. Nawrocki había interrumpido un viaje oficial a Senegal. El Gobierno presenta la medida como un paso para restablecer la legalidad, mientras la oposición habla de una toma política del tribunal. Cientos de personas se concentraron ante el edificio, hubo forcejeos con la policía y tres detenidos por saltar la valla. Un asesor de Tusk acusó al presidente de atacar físicamente a una jueza, algo que la Presidencia niega. El sindicato Solidaridad lanzó un aviso de guerra, y el embajador de Estados Unidos pidió calma. El embajador polaco en Rumanía presentó su dimisión, y antes lo había hecho el jefe de la delegación en China.",
+     "url": "https://www.eldebate.com/internacional/20261031/polonia-estalla-choque-entre-tusk-nawrocki-disturbios-ante-constitucional-tres-detenidos_475852.html"
     },
     {
      "id": "ed2",
-     "titular": "Puente pide comparecer en el Congreso y descarta dimitir",
-     "resumen": "Según El Debate, el ministro Óscar Puente ha pedido comparecer por iniciativa propia en la Diputación Permanente del Congreso para informar del accidente ferroviario de Urda. La sesión será el martes tres de noviembre, a las cinco de la tarde. Por ahora, Puente rechaza dimitir y el viernes por la mañana dará otra rueda de prensa. El choque entre un AVE y un tren de Iryo ocurrió el miércoles veintiocho de octubre y es el segundo gran accidente de alta velocidad en nueve meses, tras el de Adamuz. El diario cifra los fallecidos en sesenta y nueve. Pedro Sánchez dijo que no es asumible sufrir dos accidentes así en un año. Ada Colau, de Frente Amplio, pidió la comparecencia, y se sumaron Esquerra y Podemos. Vox ha presentado una querella contra Puente en el Supremo por homicidio y lesiones por imprudencia grave. El diario añade que Sánchez podría prescindir del ministro.",
-     "url": "https://www.eldebate.com/espana/20261029/oscar-puente-solicita-comparecer-diputacion-permanente-hace-oidos-sordos-peticiones-dimision_475330.html"
+     "titular": "La Guardia Civil investiga presiones de Adif para despachar trenes",
+     "resumen": "Según El Debate, la Guardia Civil investiga si hubo presiones en Adif para despachar trenes con rapidez y evitar críticas por un nuevo fallo del sistema de seguridad. El contexto es la tragedia de Urda, en Toledo, donde el tráfico se reanudó con prisas tras la caída del sistema. Trabajadores ferroviarios denuncian que desde hace cinco años se prioriza evitar la mala imagen de los retrasos en la alta velocidad. El diario añade que el informe preliminar del organismo de investigación de accidentes descarta que el error humano sea la única causa, y apunta a fallos encadenados en los filtros de control. El ministro de Transportes, Óscar Puente, reconoció en su comparecencia hasta ciento setenta incidencias del sistema en el corredor andaluz. Según el texto, Puente ofreció su dimisión y Sánchez la rechazó. La presión de la empresa es por ahora una hipótesis, sin conclusiones, y Adif no ha respondido.",
+     "url": "https://www.eldebate.com/espana/20261030/guardia-civil-investiga-posibles-presiones-adif-despachar-trenes-rapidez-evitar-criticas-nuevo-fallo-sistema_475413.html"
     },
     {
      "id": "ed3",
-     "titular": "Técnicos de Transportes detectan un sobrecoste en el contrato de seguridad",
-     "resumen": "Según El Debate, técnicos del Ministerio de Transportes han detectado un sobrecoste de diez coma nueve millones de euros en el contrato de renovación del sistema de seguridad de la línea Madrid-Sevilla. Afirman que ese dinero lo exigió un tercero y que no encuentran justificación. Un grupo de cinco funcionarios, creado tras el accidente, revisó el contrato, y buscaba responsabilidades en la empresa adjudicataria, Thales. Adif sacó el contrato con un presupuesto de ciento ocho millones de euros sin IVA. Thales ofertó setenta y siete millones, un veintiocho por ciento menos. Se adjudicó en septiembre de dos mil veintiuno, con un plazo de cincuenta y dos meses. En enero de este año el Ministerio cifraba el coste en ciento cuatro millones. El diario precisa que el sistema europeo ERTMS seguía sin funcionar en el tramo de Urda. El artículo no recoge respuesta del Ministerio ni de Thales.",
-     "url": "https://www.eldebate.com/espana/20261029/tecnicos-transportes-hallan-sobrecoste-109-millones-tercero-exigio-contrato-linea-accidente_475319.html"
+     "titular": "Explosión en una fábrica de munición de Granada",
+     "resumen": "Una fuerte explosión sacudió el viernes, poco antes de las nueve de la mañana, la fábrica de municiones de El Fargue, a las afueras de Granada. Según El Debate, ocurrió en una zona de quema muy restringida y dejó tres heridos leves, con problemas de oído, que fueron trasladados al hospital Virgen de las Nieves. La detonación se oyó en localidades cercanas como Fuente Vaqueros y La Zubia, y levantó una nube de humo. Un representante sindical de UGT explicó que ocurrió durante una prueba de calidad de un proyectil, y dijo que estos incidentes entran dentro de cierta normalidad. Acudieron Policía Nacional, bomberos, Guardia Civil y Policía Local, y el servicio de emergencias coordinó más de treinta avisos. Se informó a la Inspección de Trabajo. El periódico recuerda que el trece de octubre volcó un camión con granadas de la misma fábrica, lo que llevó a la Junta a activar una fase de preemergencia.",
+     "url": "https://www.eldebate.com/espana/andalucia/20261030/fuerte-explosion-fabrica-polvora-pone-alerta-toda-granada_475486.html"
     }
    ]
   },
@@ -86,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Ordenadores de los años noventa fallan en la línea a Andalucía",
-     "resumen": "Según una exclusiva de The Objective, el accidente de Urda empezó con la caída de tres ordenadores que gestionan el sistema de señalización LZB en la línea de alta velocidad Madrid-Sevilla. Unos sesenta y tres kilómetros quedaron sin señalización y el centro de control de Atocha tuvo que intervenir. Fuentes anónimas aseguran que esos equipos fallan de forma recurrente, que son del siglo pasado y que se pidió varias veces cambiarlos. La línea es de mil novecientos noventa y dos y usa un sistema alemán, que el sistema europeo ERTMS va sustituyendo despacio. El ministro Óscar Puente dijo el miércoles que fue un fallo de comunicación en tres ordenadores y que esas caídas son normales. Después puso el foco en un trabajador del centro de control. Fuentes técnicas critican que se cargue tanta responsabilidad en operadores con poca formación. Según el diario, los centros de Atocha y Sevilla tienen equipos modernos. Casi todas las fuentes son anónimas.",
-     "url": "https://theobjective.com/economia/transporte/2026-10-29/asi-son-ordenadores-adif-siglo-xx-hacen-fallar-sistema-via-andalucia/"
+     "titular": "El Gobierno oculta un audio clave sobre el accidente de Urda",
+     "resumen": "Según The Objective, los audios difundidos sobre el accidente de Urda, con las conversaciones entre los maquinistas y el centro de control de Adif, están incompletos. Falta un fragmento en el que un maquinista de Iryo corrige la orden de circular a marcha normal y exige hacerlo a la vista, porque había otro tren parado cerca. Ese tramo, según fuentes sin identificar, se grabó justo antes de la tragedia, aunque no se sabe si lo dijo la misma persona que dio la orden. El ministro de Transportes, Óscar Puente, habló de error humano del maquinista de Renfe y dijo no entender por qué se ordenó marcha normal. El periódico cita el reglamento de circulación, que fija un límite de cuarenta kilómetros por hora hasta la siguiente señal. Recuerda además el accidente de Adamuz, en enero, con cuarenta y seis muertos. Entre las reacciones, el PP pide la comparecencia urgente de Sánchez, y más de veinticinco mil personas han firmado para exigir la dimisión de Puente.",
+     "url": "https://theobjective.com/economia/transporte/2026-10-30/gobierno-oculta-audio-accidente-urda-version-oficial/"
     },
     {
      "id": "to2",
-     "titular": "El BCE mantiene los tipos de interés en el dos coma cinco por ciento",
-     "resumen": "Según The Objective, el Banco Central Europeo mantuvo este jueves el tipo de interés de los depósitos en el dos coma cinco por ciento. También dejó sin cambios los otros tipos de referencia. El banco explica que los salarios no responden de forma importante al aumento de la inflación general, mientras que los precios de la energía han subido más. En su comunicado, advierte de riesgos al alza para la inflación y a la baja para el crecimiento. Prevé que la inflación suba y que la economía se frene por la perturbación energética. Señala que las condiciones de financiación se han endurecido desde septiembre. Afirma que seguirá decidiendo según los datos de cada reunión, sin comprometer una senda concreta de tipos. Ese mismo día, la presidenta Christine Lagarde anunció que dejará el cargo el siete de febrero de dos mil veintisiete. El artículo no recoge reacciones de otros actores.",
-     "url": "https://theobjective.com/economia/2026-10-29/bce-tipos-interes-precios/"
+     "titular": "La joyería Yanes tasa al alza las joyas de Zapatero",
+     "resumen": "Según The Objective, la joyería Yanes ha subido la tasación de las joyas que el rey Mohamed sexto regaló en dos mil ocho al expresidente José Luis Rodríguez Zapatero y a su esposa. Otra casa las había valorado en ocho mil doscientos euros y Yanes las pone en ocho mil novecientos. El conjunto de joyas halladas en la caja fuerte del despacho de Zapatero baja, en cambio, de más de un millón doscientos mil euros a novecientos treinta y ocho mil quinientos. El juez José Luis Calama rechazó pedir información a Arabia Saudí sobre el origen de las piezas, que fueron incautadas el diecinueve de mayo, y considera que tienen relevante entidad patrimonial. El periódico explica que el posible delito por donaciones estaría prescrito, pero queda el impuesto sobre el patrimonio de dos mil veintidós a dos mil veinticinco, con un riesgo de entre cuatrocientos mil y cuatrocientos setenta mil euros por año. El texto no recoge declaraciones de Zapatero ni de su defensa.",
+     "url": "https://theobjective.com/espana/tribunales/2026-10-30/yanes-joyas-mohamed-zapatero/"
     },
     {
      "id": "to3",
-     "titular": "El jefe de operaciones de Adif fue elegido en un concurso polémico",
-     "resumen": "Según The Objective, el veinte de marzo Adif nombró a Ángel García de la Bandera director general de Operaciones y Explotación. De ese puesto dependen los centros de control, en los que el Gobierno ha puesto el foco para explicar el accidente de Urda. Fuentes internas dicen que su elección se esperaba por su cercanía al ministro Óscar Puente y que los concursos de la empresa estaban dirigidos de antemano. Su llegada causó malestar en la plantilla, que duda de su experiencia. Según esas fuentes, fue elegido como experto en circulación, pero sin conocimientos de mantenimiento, que es la función principal del puesto. El otro candidato, el ingeniero Antonio Berrios, tenía el apoyo de la mayoría de los trabajadores. Adif lo describe como ingeniero de montes con más de quince años en el sector público. El artículo no incluye respuesta de Puente sobre este nombramiento. Vox ha presentado una querella contra varios miembros del departamento.",
-     "url": "https://theobjective.com/economia/transporte/2026-10-29/principal-responsable-centro-adif-concurso/"
+     "titular": "Adif, segundo mayor receptor de fondos europeos de recuperación",
+     "resumen": "The Objective ha analizado el registro de la Comisión Europea sobre el Mecanismo de Recuperación y Resiliencia, los fondos Next Generation. Según su análisis, Adif y Adif Alta Velocidad suman cinco mil ochocientos veinticinco millones de euros, casi el triple que Tragsa, la siguiente entidad española. Solo las supera el grupo ferroviario italiano Ferrovie dello Stato, con más de catorce mil millones. El periódico aclara que esto no significa que el dinero se haya cobrado o gastado, y que no incluye otros fondos europeos. El dato llega tras los accidentes de Adamuz y Urda. El líder del PP, Alberto Núñez Feijóo, pidió rendir cuentas de cada euro. El diario recuerda que en dos mil veinticuatro Adif presupuestó mil ciento noventa y tres millones para mantenimiento y dejó sin usar unos ciento treinta y un millones, alrededor del once por ciento. Su programa de inversiones de dos mil veintidós a dos mil veintiséis asciende a veinticuatro mil cien millones. Ni Adif ni el Ministerio han respondido.",
+     "url": "https://theobjective.com/economia/2026-10-30/adif-fondos-next-generation-6000-millones/"
     }
    ]
   },
@@ -110,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "El jefe de Iryo avisó de que las caídas del sistema LZB paraban sus trenes",
-     "resumen": "Según OKDiario, el director ejecutivo de Iryo, Fabrizio Favara, advirtió en el Senado de que el sistema de seguridad LZB se desconectaba con frecuencia en la línea Madrid-Sevilla. Según el diario, esas caídas dejaban los trenes parados y tardaban bastante tiempo en reconectarse. El cinco de octubre dijo que cada vez que la señal del tren se desconecta de la de tierra, el tren se para. Calificó el sistema de seguro, pero bastante antiguo. El accidente de Urda ocurrió el miércoles: el tren de Iryo se detuvo poco antes de las ocho y media y minutos después fue embestido por un AVE de Renfe. El diario cifra los muertos en al menos sesenta y nueve. Recuerda que el Ministerio de Transportes admitió en marzo que estas instalaciones estaban al final de su vida útil. Las pruebas del sistema europeo se fijan para abril de dos mil veintinueve. El texto no recoge reacciones.",
-     "url": "https://okdiario.com/espana/ceo-iryo-aviso-hace-20-dias-que-fallos-del-sistema-lzb-dejaban-sus-trenes-parados-linea-siniestrada-20658518"
+     "titular": "Puente: no era mi deber estar en el centro de mando",
+     "resumen": "Según OKDiario, el ministro de Transportes, Óscar Puente, afirmó el viernes en su comparecencia que no dimitirá, pese a los ciento quince fallecidos en los accidentes ferroviarios de Adamuz y Urda. Urda suma ya sesenta y nueve víctimas confirmadas, según datos oficiales. Puente sostuvo que los indicios apuntan a que el fallo se debe al centro de control de Adif. Dijo que no era su deber estar en el centro de mando aquel martes, pero que ahora sí es su deber estar al mando. Añadió que no va a utilizar a ningún trabajador como escudo y que su forma de asumir responsabilidades es dar la cara. Si la investigación demuestra fallos, aseguró, actuarán en consecuencia. El artículo no recoge reacciones de otros actores, aunque titulares relacionados del propio medio hablan de maquinistas que desmienten al ministro.",
+     "url": "https://okdiario.com/espana/puente-dice-que-no-era-deber-estar-centro-mando-niega-dimitir-115-muertos-adamuz-urda-20666559"
     },
     {
      "id": "ok2",
-     "titular": "La maquinista de Iryo pidió ayuda tras no poder arrancar el tren",
-     "resumen": "Según OKDiario, la maquinista del tren de Iryo embestido en Urda intentó dos veces desbloquear el tren sin éxito y pidió ayuda a su empresa, pero no llegó a recibirla por el impacto. Fuentes de Iryo, citadas por la agencia EFE, dicen que cada intento de reinicio tras una caída del sistema LZB dura de tres a cuatro minutos. Apuntan a que la caída abarcó sesenta y tres kilómetros, una distancia anormal, y que cuanto mayor es, más tarda el reinicio. El tren se había detenido ante una señal en blanco y, según el protocolo, contactó con el centro de control de Adif. La maquinista le dijo al operador que el tren no le permitía reiniciar el sistema. Seguía parado en la señal de entrada de Urda. El diario recuerda la advertencia del director de Iryo en el Senado. El artículo no incluye reacciones de Adif, Renfe ni del Gobierno.",
-     "url": "https://okdiario.com/espana/maquinista-del-iryo-pidio-ayuda-compania-intentar-arrancar-dos-veces-tren-sin-exito-20660403"
+     "titular": "El Gobierno Vasco concede la semilibertad a un etarra",
+     "resumen": "Según OKDiario, el Gobierno Vasco ha concedido la semilibertad a Iurgi Garitagoitia, miembro de ETA condenado a más de cuatrocientos años de cárcel. Se le permite salir para actividades, trabajo o voluntariado, al amparo del artículo cien punto dos del Reglamento Penitenciario. Seguirá en segundo grado, saldrá de día y dormirá en prisión, y cumplirá la condena hasta el final. La Administración vasca justifica la decisión en su reflexión personal y en su reintegración a la sociedad. Entre sus condenas figuran trescientos ochenta y nueve años por un atentado con explosivos contra la Ertzaintza en Hernani, cuarenta y cuatro por colaborar en el asesinato del empresario Ignacio Uría, en dos mil ocho, y veintiséis por un coche bomba en la Universidad de Navarra, ese mismo año. El artículo no recoge reacciones de los partidos.",
+     "url": "https://okdiario.com/espana/gobierno-vasco-otorga-semi-libertad-etarra-iurgi-garitagoitia-condenado-mas-400-anos-prision-20668425"
     },
     {
      "id": "ok3",
-     "titular": "Puente admitió hace un año problemas en el sistema de seguridad de la línea",
-     "resumen": "Según OKDiario, el ministro Óscar Puente evita asumir responsabilidades por la tragedia de Urda y señala al operador del centro de control de Adif en Atocha. Según su cronología, a las ocho y media cayó el sistema LZB, afectó a sesenta y tres kilómetros y detuvo seis trenes. A las ocho y treinta y seis el centro ordenó reanudar la marcha. A las ocho y cincuenta y tres el AVE, que llegó a doscientos kilómetros por hora, chocó con el último vagón del Iryo. Puente lo calificó de inverosímil, descartó dimitir y apuntó a un fallo humano. El diario recuerda que en septiembre de dos mil veinticinco Puente habló en el Congreso de distorsiones durante la migración al nuevo sistema. Añade que el contrato de modernización se adjudicó en dos mil veintiuno a Thales por más de ciento treinta y seis millones y que su plazo expiró en enero.",
-     "url": "https://okdiario.com/espana/puente-admitio-hace-ano-congreso-distorsiones-sistema-seguridad-linea-del-accidente-20660951"
+     "titular": "Un sondeo vasco da la victoria a Bildu en las elecciones",
+     "resumen": "OKDiario informa de un sondeo del Gobierno Vasco, conocido como CIS vasco, que da como ganadora a EH Bildu en las próximas elecciones autonómicas del País Vasco. Según el estudio, que entrevistó a tres mil cuatrocientas ochenta y cinco personas entre el veinte y el veintitrés de octubre, Bildu obtendría el veintinueve coma uno por ciento de los votos, frente al veintitrés coma nueve de las anteriores elecciones. El PSE bajaría ligeramente, hasta el veinticuatro coma siete, y el PNV caería del veinticuatro al veintiuno coma nueve. Bildu ganaría en Vizcaya y en Guipúzcoa, con tres escaños en cada una, y el PP se quedaría sin escaños en Guipúzcoa. La abstención estaría en torno al treinta y uno por ciento. El artículo contiene algunas incoherencias en las cifras de escaños y no recoge reacciones de los partidos.",
+     "url": "https://okdiario.com/espana/proetarras-bildu-ganarian-elecciones-pais-vasco-segun-cis-vasco-20666824"
     }
    ]
   },
@@ -134,15 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "La editora de OKDiario pagó la defensa de Koldo García",
-     "resumen": "Según elDiario.es, la editora de OKDiario pagó doscientos cuarenta y dos mil euros por la defensa de Koldo García, antiguo asesor de Ábalos. El dinero fue en dos facturas a un despacho donde trabaja la abogada Leticia de la Hoz, que defendió a Koldo en la Audiencia Nacional y en el Supremo. Las facturas son del once de noviembre de dos mil veinticinco y del veintitrés de enero de este año. La abogada entregó los documentos al juez Santiago Pedraz, que la investiga en el caso de Leire Díez. Según su escrito, el PSOE no le pagó nada por esa defensa. El diario recuerda que en noviembre OKDiario publicó una entrevista muy crítica con Sánchez a Koldo. En el último día del juicio del Supremo, Koldo dijo que le ofrecieron que su caso quedaría en nada si hablaba contra el Gobierno. Ábalos fue condenado a diecinueve años y ocho meses. El diario no logró contactar con la editora.",
-     "url": "https://www.eldiario.es/politica/editora-okdiario-pago-defensa-koldo-garcia-juicio-supremo_1_13623197.html"
+     "titular": "El maquinista avisó de que la vía estaba ocupada y le dieron paso",
+     "resumen": "Según elDiario.es, el maquinista del tren de alta velocidad que chocó en Urda avisó al centro de control de Atocha de que tenía un fallo por bloqueo parcial, tras caer el sistema de seguridad. Ese código indica que la vía está ocupada por delante, en este caso por un tren de Iryo. El operador de Atocha repitió la información y ordenó seguir a marcha normal, sin reducir la velocidad. El maquinista murió junto a un auxiliar en la cabina. El periódico explica que, a la conductora del tren de Iryo, el sistema le daba límite de cuarenta, y que el semáforo de Urda se puso en verde para ella, lo que también anuló la alerta del sistema de respaldo. Un informe inicial estima que la colisión se produjo entre ciento sesenta y doscientos kilómetros por hora. Todavía se desconoce por qué el maquinista obedeció la orden. El ministro Óscar Puente dio su explicación en su comparecencia del viernes.",
+     "url": "https://www.eldiario.es/castilla-la-mancha/maquinista-ave-informo-sistema-seguridad-veia-via-ocupada-le-dieron-paso_1_13626993.html"
     },
     {
      "id": "edi2",
-     "titular": "Argüeso dice que no debía estar en la reunión de la dana, y la jueza le responde",
-     "resumen": "Según elDiario.es, Emilio Argüeso, exresponsable de Emergencias del gobierno valenciano de Carlos Mazón, sostiene que ni siquiera debía participar en la reunión del centro de coordinación del veintinueve de octubre de dos mil veinticuatro, el día de la dana que dejó doscientos treinta y tres muertos. Su defensa atribuye la convocatoria y el envío del mensaje de alerta a la exconsellera Salomé Pradas. La jueza responde en un auto del jueves que fue el propio Argüeso quien convocó la reunión y que figuraba entre los convocados. Explica que la citación salió por correo con la firma del director de la agencia de emergencias. Considera difícilmente comprensible que a las dos y cuarenta y cuatro de la tarde alertara de que los barrancos estaban a punto de colapsar. El auto también acepta nuevas diligencias sobre la vigilancia del barranco del Poyo. El artículo no recoge reacción de Argüeso.",
-     "url": "https://www.eldiario.es/comunitat-valenciana/argueso-dice-siquiera-debia-participar-cecopi-dana-jueza-le-recuerda-convoco_1_13625030.html"
+     "titular": "Detenidos en Valencia por impulsar el movimiento Blocus",
+     "resumen": "Según elDiario.es, la Guardia Civil ha detenido en Picanya, en Valencia, a un presunto fundador e impulsor en España del movimiento Blocus, que bajo la apariencia de protesta estudiantil convocaba saqueos y actos violentos. Se le atribuye crear y administrar grupos de Telegram. Se investigan delitos de desórdenes públicos agravados y organización criminal. Por su parte, la Policía Nacional arrestó en Alfafar a un joven de dieciocho años que animaba en aplicaciones de mensajería a fabricar cócteles molotov para saquear comercios del centro de la ciudad. Es el tercer detenido de la semana en Valencia y suman cinco de cara a las concentraciones convocadas para el sábado treinta y uno de octubre: tres en Valencia, uno en Lleida y uno en Bilbao. Los convocantes usaban vídeos de TikTok y carteles con códigos QR, y pedían ir de negro y con máscaras. La Policía Nacional prepara un dispositivo extraordinario para el fin de semana.",
+     "url": "https://www.eldiario.es/comunitat-valenciana/valencia/policia-nacional-detiene-joven-miembro-blocus-valencia-instigar-fabricar-arrojar-cocteles-molotov_1_13626921.html"
+    },
+    {
+     "id": "edi3",
+     "titular": "Google e Intel se desploman en bolsa y alimentan el temor a una burbuja",
+     "resumen": "Según elDiario.es, las acciones de Google cayeron hasta un doce coma seis por ciento tras presentar sus resultados trimestrales, lo que supone una pérdida de unos quinientos mil millones de dólares. Los ingresos del buscador bajaron un doce por ciento, los beneficios cayeron un veinticinco por ciento y el flujo de caja fue negativo. La empresa prevé invertir entre ciento noventa y cinco mil y doscientos cinco mil millones de dólares en inteligencia artificial este año. Intel llegó a caer cerca de un treinta por ciento al abrir la bolsa, unos ciento treinta mil millones de dólares, y avisó de que no tendrá flujo de caja positivo en dos mil veintisiete. También bajaron Micron, Nvidia y Amazon, y las bolsas de Taiwán y Corea del Sur. La red social Reddit se deja un treinta y cuatro por ciento desde el jueves, y su directivo anunció que exigirá iniciar sesión para navegar. El periódico lo presenta como un nuevo golpe a la llamada burbuja de la inteligencia artificial.",
+     "url": "https://www.eldiario.es/tecnologia/historico-desplome-google-e-intel-asesta-nuevo-golpe-burbuja-ia_1_13627374.html"
     }
    ]
   }
