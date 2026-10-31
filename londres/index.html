@@ -997,7 +997,7 @@
 
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
-<div id="seats-full" hidden role="dialog" aria-label="Asientos y equipaje"><div class="df-top"><div class="if-title">💺 Asientos y equipaje Ros García</div><button type="button" class="df-x" onclick="closeSeats()" aria-label="Cerrar y volver a Vuelos y traslados">✕</button></div><div class="df-body"></div></div>
+<div id="seats-full" hidden role="dialog" aria-label="Asientos y equipaje"><div class="df-top"><div class="if-title">💺 Asientos y equipaje</div><button type="button" class="df-x" onclick="closeSeats()" aria-label="Cerrar y volver a Vuelos y traslados">✕</button></div><div class="df-body"></div></div>
 <div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt="" draggable="false"></div><div class="iv-bar"><button type="button" data-z="-1" aria-label="Alejar">－</button><button type="button" data-z="0" class="iv-fit">Ajustar</button><button type="button" data-z="1" aria-label="Acercar">＋</button></div><div class="iv-hint">Pellizca con dos dedos o toca dos veces para ampliar</div></div>
 <div id="app-container">
     <header style="position:relative;">
@@ -2090,7 +2090,7 @@
           + leg('18:50', '<b>Barcelona (T1)</b> → Sevilla · <b>VY1392</b>.')
           + leg('20:30', '<b>Llegada a Sevilla.</b>')
           + '</div>'
-          + '<button type="button" class="tv-btn" onclick="openSeats()">💺 Asientos y equipaje Ros García</button>'
+          + '<button type="button" class="tv-btn" onclick="openSeats()">💺 Asientos y equipaje</button>'
           + '<div class="tv-warn">🛫 Terminal de Heathrow: por confirmar. Miradla en la tarjeta de embarque o en la app de Vueling. Las noticias de su llegada a Heathrow dicen Terminal 4, pero hay guías que ponen otra.</div>'
           + '<h3 class="tv-h">🚐 Traslados en minivan privada</h3>'
           + '<div class="tv-card"><h4>Aeropuerto → apartamento · Viernes 4 dic</h4>'
@@ -2114,12 +2114,17 @@
     window.openSeats = function() {
         const P = [['Ignacio','27F','7B'],['Rosa María','27D','8E'],['Lucía','27B','8C'],['Javi','27E','7C'],['Antonio','27C','8D']];
         const h = '<div class="st-ok">✅ Cada uno tiene <b>el mismo asiento en los dos vuelos de cada trayecto</b>: en la ida, Sevilla → Barcelona y Barcelona → Londres; en la vuelta, Londres → Barcelona y Barcelona → Sevilla.</div>'
-          + '<h3 class="tv-h">💺 Asientos</h3>'
+          + '<h3 class="tv-h">💺 Asientos Ros García</h3>'
           + '<table class="st-tab"><thead><tr><th>Pasajero</th><th class="s">Ida · 4 dic</th><th class="s">Vuelta · 9 dic</th></tr></thead><tbody>'
           + P.map(p => '<tr><td>' + p[0] + '</td><td class="s">' + p[1] + '</td><td class="s">' + p[2] + '</td></tr>').join('')
           + '</tbody></table>'
           + '<p style="margin:10px 0 0;color:#475569;font-size:15px">Ida: los cinco en la fila 27 (B y C a un lado del pasillo; D, E y F al otro). Vuelta: filas 7 y 8 (7B y 7C juntos; 8C al otro lado del pasillo de 8D y 8E).</p>'
-          + '<h3 class="tv-h">🧳 Equipaje (ida y vuelta)</h3>'
+          + '<h3 class="tv-h">💺 Asientos Ros Pérez</h3>'
+          + '<table class="st-tab"><thead><tr><th>Pasajero</th><th class="s">Ida · 4 dic</th><th class="s">Vuelta · 9 dic</th></tr></thead><tbody>'
+          + [['Santiago','5A'],['Fátima (madre)','5B'],['Ángela','5C'],['Fátima (hija)','5D']].map(p => '<tr><td>' + p[0] + '</td><td class="s">' + p[1] + '</td><td class="s">—</td></tr>').join('')
+          + '</tbody></table>'
+          + '<p style="margin:10px 0 0;color:#475569;font-size:15px">Ida: los cuatro en la fila 5, con el mismo asiento en Sevilla → Barcelona y Barcelona → Londres (5A, 5B y 5C juntos; 5D al otro lado del pasillo). Vuelta: pendiente.</p>'
+          + '<h3 class="tv-h">🧳 Equipaje Ros García (ida y vuelta)</h3>'
           + '<div class="st-ok">En total la familia lleva: <b>5 mochilas</b> (una cada uno) + <b>1 maleta de cabina de 10 kg</b> + <b>1 maleta facturada de 25 kg</b>.</div>'
           + '<div class="tv-card"><h4>Los cinco</h4><div class="tv-leg"><span class="tv-t">🎒</span><span><b>1 bolso o mochila bajo el asiento</b> cada uno · máx. 40 × 30 × 20 cm</span></div></div>'
           + '<div class="tv-card"><h4>Además, a nombre de Ignacio</h4>'
