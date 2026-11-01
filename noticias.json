@@ -1,17 +1,11 @@
 {
- "fecha": "2026-10-31",
- "fechaTexto": "sábado 31 de octubre",
- "actualizado": "2026-10-31T06:59:36+01:00",
+ "fecha": "2026-11-01",
+ "fechaTexto": "domingo 1 de noviembre",
+ "actualizado": "2026-11-01T06:57:35+01:00",
  "portada": [
   "ld1",
-  "ee1",
-  "edi1",
-  "ed2",
-  "ed1",
-  "edi3",
-  "edi2",
-  "to2",
-  "ok2"
+  "ld2",
+  "ld3"
  ],
  "diarios": [
   {
@@ -20,141 +14,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Tragedia de Urda: 69 cuerpos y cinco víctimas identificadas",
-     "resumen": "Según Libertad Digital, el Instituto de Medicina Legal de Toledo y Ciudad Real ha recibido ya sesenta y nueve cadáveres del accidente ferroviario de Urda, en Toledo, donde chocaron un tren de alta velocidad de Renfe y otro de Iryo. Hasta el viernes se habían practicado cuarenta y ocho autopsias. Cinco víctimas, tres mujeres y dos hombres, han sido identificadas por sus huellas dactilares y ya se ha avisado a sus familias. Se han recogido setenta denuncias de familiares en varias comandancias de la Guardia Civil. Dos de las personas denunciadas han aparecido con vida. Trabajan en la identificación veinte forenses y seis técnicos de Toxicología, que hacen pruebas de ADN, y psicólogas atienden a los allegados. La línea entre Madrid y Andalucía sigue cortada. Según el Ministerio de Transportes, una caída del sistema de señalización permitió que el tren de Renfe saliera con la vía aún ocupada.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-30/tragedia-en-urda-se-han-realizado-48-autopsias-y-hay-cinco-identificaciones-7484424/"
+     "titular": "Urda: los sistemas de seguridad del tren, en el punto de mira",
+     "resumen": "El miércoles veintiocho de octubre chocaron dos trenes de alta velocidad en Urda, en Toledo. Según Libertad Digital, el balance es de al menos sesenta y ocho muertos, aunque en una tertulia de esRadio se habló de sesenta y nueve. Se informó de que los equipos de rescate seguían sacando cuerpos de debajo de los dos vagones del tren de Iryo. El presidente de Castilla-La Mancha, Emiliano García-Page, dijo que aún no se habían recuperado todos. La versión del ministro Óscar Puente habla de un error humano en el centro de control junto con la caída de un sistema de seguridad llamado LZB. Los tertulianos lo describieron como antiguo y en proceso de sustitución. Renfe ha bloqueado la venta de billetes de alta velocidad entre Madrid y Andalucía hasta diciembre. Los críticos con el Gobierno piden responsabilidades y el ministro no ha dimitido.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-31/lzb-asfa-y-ertms-los-sistemas-de-seguridad-de-la-alta-velocidad-en-el-foco-tras-el-accidente-de-urda-7484694/"
     },
     {
      "id": "ld2",
-     "titular": "Crisis en Polonia: la policía rodea el Tribunal Constitucional",
-     "resumen": "Libertad Digital habla de un golpe de Estado judicial en Polonia. La noche del viernes la policía desplegó un dispositivo alrededor del Tribunal Constitucional, en Varsovia. El conflicto enfrenta al primer ministro, Donald Tusk, con el presidente, Karol Nawrocki, y con el líder opositor Jarosław Kaczyński. Según la agencia polaca PAP, una jueza suspendió durante un mes al presidente del tribunal y a su adjunto. El propio tribunal denunció una toma ilegal de su página web y advirtió de un posible delito de golpe de Estado. Su portavoz asegura que agentes entraron por una puerta conectada con la Cancillería junto a siete personas elegidas por el Parlamento. La policía detuvo a tres personas que saltaron la valla. Tusk reconoció que es un proceso difícil y a veces doloroso, y Kaczyński habló de Estado policial. Nawrocki interrumpió su viaje a Senegal y regresó. El embajador en China anunció su dimisión.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-10-30/golpe-de-estado-judicial-en-polonia-la-policia-rodea-el-tribunal-constitucional-7485045/"
+     "titular": "Prisión sin fianza para el supuesto fundador de Blocus España",
+     "resumen": "Un juzgado de Torrent, en Valencia, ha decretado prisión provisional y sin fianza para el hombre que la Guardia Civil considera fundador e impulsor de Blocus España. Fue detenido el viernes en Picanya. Según Libertad Digital, se le investiga por presunta organización criminal para incitar a desórdenes públicos, robos en comercios y daños. El juez le prohíbe usar en prisión ordenadores o dispositivos con acceso a redes sociales. Blocus difundía sus mensajes por Telegram y convocó disturbios y saqueos en Valencia para el sábado uno de noviembre. Los investigadores lo relacionan con los disturbios del veinticuatro de octubre en Barcelona. En los últimos días se ha detenido a otras cinco personas por estos llamamientos: tres en la provincia de Valencia, una en Bilbao y una en Lérida. Entre ellas hay un menor de diecisiete años, internado cautelarmente.",
+     "url": "https://www.libertaddigital.com/espana/2026-10-31/prision-sin-fianza-para-el-supuesto-fundador-de-blocus-espana-por-incitar-a-cometer-saqueos-7485140/"
     },
     {
      "id": "ld3",
-     "titular": "Marruecos refuerza sus puertos frente a Algeciras, Ceuta y Melilla",
-     "resumen": "Según Libertad Digital, Marruecos ha anunciado que en los próximos días entrará en servicio la primera terminal del gran puerto de Nador West Med, cerca de Melilla, y que ampliará Tanger Med, cerca de Ceuta. El anuncio salió de una reunión presidida por el rey Mohamed sexto el miércoles en Rabat, según el Gabinete Real. El objetivo es llegar a veinte millones de contenedores al año. Nador West Med ha movilizado unos cinco mil millones de euros y prevé catorce mil empleos directos. Tanger Med sumará mil doscientos metros de muelles y cuatro millones y medio de contenedores más cada año. El periódico compara estas cifras con las de los puertos españoles. Algeciras movió más de setenta y seis millones de toneladas hasta septiembre. Libertad Digital sostiene que estas obras forman parte de la presión marroquí sobre Ceuta y Melilla, y que las autoridades portuarias y empresarios españoles muestran preocupación.",
-     "url": "https://www.libertaddigital.com/espana/2026-10-30/nador-west-med-y-tanger-med-las-cifras-con-las-que-mohamed-vi-desafia-a-algeciras-ceuta-y-melilla-7484526/"
-    }
-   ]
-  },
-  {
-   "id": "ee",
-   "nombre": "El Español",
-   "noticias": [
-    {
-     "id": "ee1",
-     "titular": "Puente no dimite y avisa de que vivirá un calvario",
-     "resumen": "El ministro de Transportes, Óscar Puente, descartó dimitir en una rueda de prensa en Madrid, dos días después del accidente ferroviario de Urda, que ya suma sesenta y nueve muertos. Según El Español, dijo que solo daría un paso al lado si su continuidad perjudicara al proyecto del PSOE, y que él nunca será un problema. Admitió que le espera un calvario de insultos en plena campaña electoral y mencionó también el accidente de Adamuz. Fuentes de Moncloa sostienen que lo ocurrido nada tiene que ver con su gestión. El Gobierno prepara medidas de seguridad, no descarta una auditoría completa y valora cortar del todo las líneas en obras, incluida la de Madrid y Barcelona, para acortar la renovación a veinticuatro meses. Mientras tanto, la exalcaldesa de Barcelona Ada Colau pide su dimisión cuanto antes, y el líder del PP, Alberto Núñez Feijóo, afirma que si no dimiten, los echarán en las urnas.",
-     "url": "https://www.elespanol.com/espana/politica/20261030/puente-no-dimite-perjudica-proyecto-pais-augura-vivira-calvario-encima-campana-electoral/1003744441161_0.html"
-    },
-    {
-     "id": "ee2",
-     "titular": "Sánchez reconoce una confianza quebrada en la alta velocidad",
-     "resumen": "Según El Español, el presidente del Gobierno, Pedro Sánchez, hizo el viernes su tercera declaración seguida sobre el accidente de Urda, junto al presidente de Castilla-La Mancha, Emiliano García-Page. Tras reunirse el comité de emergencias en Toledo, que rebajó la alerta al nivel uno, Sánchez calificó de inasumibles dos accidentes así en un año, el de Adamuz y el de Urda, que suman unos ciento quince muertos. Reconoció una confianza quebrada en la alta velocidad y atribuyó el choque a un error humano en el centro de control de Adif, después de que cayera el sistema de seguridad. Fue una colisión por alcance de un tren de Renfe contra uno de Iryo detenido. El balance es de al menos sesenta y nueve fallecidos de veintisiete nacionalidades. Page dijo que no se descarta que superen los setenta. Sánchez recordó las palabras del Rey, que pidió que la tragedia no se repita.",
-     "url": "https://www.elespanol.com/espana/politica/20261030/sanchez-comparece-tercer-dia-escudandose-page-cita-rey-reconoce-confianza-quebrada-alta-velocidad/1003744440823_0.html"
-    },
-    {
-     "id": "ee3",
-     "titular": "Quién era el maquinista en prácticas que murió en Urda",
-     "resumen": "El Español dedica un reportaje a Daniel Cabañas, de treinta y un años y vecino de Leganés, que viajaba en la cabina del tren de alta velocidad accidentado en Urda junto al maquinista titular, Antonio Acedo. Ambos están entre las sesenta y nueve víctimas del choque del miércoles veintiocho de octubre. Cabañas estudió electricidad y robótica y trabajó como técnico de mantenimiento. Se formó como maquinista en una escuela privada entre dos mil dieciocho y dos mil diecinueve, y ejerció de maquinista de dos mil diecinueve a dos mil veintiuno. Después trabajó en Barcelona y en Cercanías de Madrid hasta marzo de este año. Desde entonces acompañaba a los maquinistas en la ruta entre Madrid y Andalucía, es decir, llevaba siete meses en ella. De Acedo, nacido en Móstoles en mil novecientos noventa, el texto cuenta que militaba en un partido político y denunciaba la falta de financiación del mantenimiento. Sus compañeros los recuerdan como hombres buenos.",
-     "url": "https://www.elespanol.com/reportajes/20261029/daniel-cabanas-maquinista-practicas-iba-cabina-ave-cubria-ruta-madrid-andalucia-hace-meses/1003744439976_0.html"
-    }
-   ]
-  },
-  {
-   "id": "ed",
-   "nombre": "El Debate",
-   "noticias": [
-    {
-     "id": "ed1",
-     "titular": "Polonia, en crisis por el pulso entre Tusk y Nawrocki",
-     "resumen": "Según El Debate, el presidente polaco, Karol Nawrocki, entró de madrugada en la sede del Tribunal Constitucional, en Varsovia, entre empujones y forcejeos. Lo hizo después de que el Gobierno de Donald Tusk suspendiera de forma temporal al presidente del tribunal y a su vicepresidente. Nawrocki había interrumpido un viaje oficial a Senegal. El Gobierno presenta la medida como un paso para restablecer la legalidad, mientras la oposición habla de una toma política del tribunal. Cientos de personas se concentraron ante el edificio, hubo forcejeos con la policía y tres detenidos por saltar la valla. Un asesor de Tusk acusó al presidente de atacar físicamente a una jueza, algo que la Presidencia niega. El sindicato Solidaridad lanzó un aviso de guerra, y el embajador de Estados Unidos pidió calma. El embajador polaco en Rumanía presentó su dimisión, y antes lo había hecho el jefe de la delegación en China.",
-     "url": "https://www.eldebate.com/internacional/20261031/polonia-estalla-choque-entre-tusk-nawrocki-disturbios-ante-constitucional-tres-detenidos_475852.html"
-    },
-    {
-     "id": "ed2",
-     "titular": "La Guardia Civil investiga presiones de Adif para despachar trenes",
-     "resumen": "Según El Debate, la Guardia Civil investiga si hubo presiones en Adif para despachar trenes con rapidez y evitar críticas por un nuevo fallo del sistema de seguridad. El contexto es la tragedia de Urda, en Toledo, donde el tráfico se reanudó con prisas tras la caída del sistema. Trabajadores ferroviarios denuncian que desde hace cinco años se prioriza evitar la mala imagen de los retrasos en la alta velocidad. El diario añade que el informe preliminar del organismo de investigación de accidentes descarta que el error humano sea la única causa, y apunta a fallos encadenados en los filtros de control. El ministro de Transportes, Óscar Puente, reconoció en su comparecencia hasta ciento setenta incidencias del sistema en el corredor andaluz. Según el texto, Puente ofreció su dimisión y Sánchez la rechazó. La presión de la empresa es por ahora una hipótesis, sin conclusiones, y Adif no ha respondido.",
-     "url": "https://www.eldebate.com/espana/20261030/guardia-civil-investiga-posibles-presiones-adif-despachar-trenes-rapidez-evitar-criticas-nuevo-fallo-sistema_475413.html"
-    },
-    {
-     "id": "ed3",
-     "titular": "Explosión en una fábrica de munición de Granada",
-     "resumen": "Una fuerte explosión sacudió el viernes, poco antes de las nueve de la mañana, la fábrica de municiones de El Fargue, a las afueras de Granada. Según El Debate, ocurrió en una zona de quema muy restringida y dejó tres heridos leves, con problemas de oído, que fueron trasladados al hospital Virgen de las Nieves. La detonación se oyó en localidades cercanas como Fuente Vaqueros y La Zubia, y levantó una nube de humo. Un representante sindical de UGT explicó que ocurrió durante una prueba de calidad de un proyectil, y dijo que estos incidentes entran dentro de cierta normalidad. Acudieron Policía Nacional, bomberos, Guardia Civil y Policía Local, y el servicio de emergencias coordinó más de treinta avisos. Se informó a la Inspección de Trabajo. El periódico recuerda que el trece de octubre volcó un camión con granadas de la misma fábrica, lo que llevó a la Junta a activar una fase de preemergencia.",
-     "url": "https://www.eldebate.com/espana/andalucia/20261030/fuerte-explosion-fabrica-polvora-pone-alerta-toda-granada_475486.html"
-    }
-   ]
-  },
-  {
-   "id": "to",
-   "nombre": "The Objective",
-   "noticias": [
-    {
-     "id": "to1",
-     "titular": "El Gobierno oculta un audio clave sobre el accidente de Urda",
-     "resumen": "Según The Objective, los audios difundidos sobre el accidente de Urda, con las conversaciones entre los maquinistas y el centro de control de Adif, están incompletos. Falta un fragmento en el que un maquinista de Iryo corrige la orden de circular a marcha normal y exige hacerlo a la vista, porque había otro tren parado cerca. Ese tramo, según fuentes sin identificar, se grabó justo antes de la tragedia, aunque no se sabe si lo dijo la misma persona que dio la orden. El ministro de Transportes, Óscar Puente, habló de error humano del maquinista de Renfe y dijo no entender por qué se ordenó marcha normal. El periódico cita el reglamento de circulación, que fija un límite de cuarenta kilómetros por hora hasta la siguiente señal. Recuerda además el accidente de Adamuz, en enero, con cuarenta y seis muertos. Entre las reacciones, el PP pide la comparecencia urgente de Sánchez, y más de veinticinco mil personas han firmado para exigir la dimisión de Puente.",
-     "url": "https://theobjective.com/economia/transporte/2026-10-30/gobierno-oculta-audio-accidente-urda-version-oficial/"
-    },
-    {
-     "id": "to2",
-     "titular": "La joyería Yanes tasa al alza las joyas de Zapatero",
-     "resumen": "Según The Objective, la joyería Yanes ha subido la tasación de las joyas que el rey Mohamed sexto regaló en dos mil ocho al expresidente José Luis Rodríguez Zapatero y a su esposa. Otra casa las había valorado en ocho mil doscientos euros y Yanes las pone en ocho mil novecientos. El conjunto de joyas halladas en la caja fuerte del despacho de Zapatero baja, en cambio, de más de un millón doscientos mil euros a novecientos treinta y ocho mil quinientos. El juez José Luis Calama rechazó pedir información a Arabia Saudí sobre el origen de las piezas, que fueron incautadas el diecinueve de mayo, y considera que tienen relevante entidad patrimonial. El periódico explica que el posible delito por donaciones estaría prescrito, pero queda el impuesto sobre el patrimonio de dos mil veintidós a dos mil veinticinco, con un riesgo de entre cuatrocientos mil y cuatrocientos setenta mil euros por año. El texto no recoge declaraciones de Zapatero ni de su defensa.",
-     "url": "https://theobjective.com/espana/tribunales/2026-10-30/yanes-joyas-mohamed-zapatero/"
-    },
-    {
-     "id": "to3",
-     "titular": "Adif, segundo mayor receptor de fondos europeos de recuperación",
-     "resumen": "The Objective ha analizado el registro de la Comisión Europea sobre el Mecanismo de Recuperación y Resiliencia, los fondos Next Generation. Según su análisis, Adif y Adif Alta Velocidad suman cinco mil ochocientos veinticinco millones de euros, casi el triple que Tragsa, la siguiente entidad española. Solo las supera el grupo ferroviario italiano Ferrovie dello Stato, con más de catorce mil millones. El periódico aclara que esto no significa que el dinero se haya cobrado o gastado, y que no incluye otros fondos europeos. El dato llega tras los accidentes de Adamuz y Urda. El líder del PP, Alberto Núñez Feijóo, pidió rendir cuentas de cada euro. El diario recuerda que en dos mil veinticuatro Adif presupuestó mil ciento noventa y tres millones para mantenimiento y dejó sin usar unos ciento treinta y un millones, alrededor del once por ciento. Su programa de inversiones de dos mil veintidós a dos mil veintiséis asciende a veinticuatro mil cien millones. Ni Adif ni el Ministerio han respondido.",
-     "url": "https://theobjective.com/economia/2026-10-30/adif-fondos-next-generation-6000-millones/"
-    }
-   ]
-  },
-  {
-   "id": "ok",
-   "nombre": "OKDiario",
-   "noticias": [
-    {
-     "id": "ok1",
-     "titular": "Puente: no era mi deber estar en el centro de mando",
-     "resumen": "Según OKDiario, el ministro de Transportes, Óscar Puente, afirmó el viernes en su comparecencia que no dimitirá, pese a los ciento quince fallecidos en los accidentes ferroviarios de Adamuz y Urda. Urda suma ya sesenta y nueve víctimas confirmadas, según datos oficiales. Puente sostuvo que los indicios apuntan a que el fallo se debe al centro de control de Adif. Dijo que no era su deber estar en el centro de mando aquel martes, pero que ahora sí es su deber estar al mando. Añadió que no va a utilizar a ningún trabajador como escudo y que su forma de asumir responsabilidades es dar la cara. Si la investigación demuestra fallos, aseguró, actuarán en consecuencia. El artículo no recoge reacciones de otros actores, aunque titulares relacionados del propio medio hablan de maquinistas que desmienten al ministro.",
-     "url": "https://okdiario.com/espana/puente-dice-que-no-era-deber-estar-centro-mando-niega-dimitir-115-muertos-adamuz-urda-20666559"
-    },
-    {
-     "id": "ok2",
-     "titular": "El Gobierno Vasco concede la semilibertad a un etarra",
-     "resumen": "Según OKDiario, el Gobierno Vasco ha concedido la semilibertad a Iurgi Garitagoitia, miembro de ETA condenado a más de cuatrocientos años de cárcel. Se le permite salir para actividades, trabajo o voluntariado, al amparo del artículo cien punto dos del Reglamento Penitenciario. Seguirá en segundo grado, saldrá de día y dormirá en prisión, y cumplirá la condena hasta el final. La Administración vasca justifica la decisión en su reflexión personal y en su reintegración a la sociedad. Entre sus condenas figuran trescientos ochenta y nueve años por un atentado con explosivos contra la Ertzaintza en Hernani, cuarenta y cuatro por colaborar en el asesinato del empresario Ignacio Uría, en dos mil ocho, y veintiséis por un coche bomba en la Universidad de Navarra, ese mismo año. El artículo no recoge reacciones de los partidos.",
-     "url": "https://okdiario.com/espana/gobierno-vasco-otorga-semi-libertad-etarra-iurgi-garitagoitia-condenado-mas-400-anos-prision-20668425"
-    },
-    {
-     "id": "ok3",
-     "titular": "Un sondeo vasco da la victoria a Bildu en las elecciones",
-     "resumen": "OKDiario informa de un sondeo del Gobierno Vasco, conocido como CIS vasco, que da como ganadora a EH Bildu en las próximas elecciones autonómicas del País Vasco. Según el estudio, que entrevistó a tres mil cuatrocientas ochenta y cinco personas entre el veinte y el veintitrés de octubre, Bildu obtendría el veintinueve coma uno por ciento de los votos, frente al veintitrés coma nueve de las anteriores elecciones. El PSE bajaría ligeramente, hasta el veinticuatro coma siete, y el PNV caería del veinticuatro al veintiuno coma nueve. Bildu ganaría en Vizcaya y en Guipúzcoa, con tres escaños en cada una, y el PP se quedaría sin escaños en Guipúzcoa. La abstención estaría en torno al treinta y uno por ciento. El artículo contiene algunas incoherencias en las cifras de escaños y no recoge reacciones de los partidos.",
-     "url": "https://okdiario.com/espana/proetarras-bildu-ganarian-elecciones-pais-vasco-segun-cis-vasco-20666824"
-    }
-   ]
-  },
-  {
-   "id": "edi",
-   "nombre": "elDiario.es",
-   "noticias": [
-    {
-     "id": "edi1",
-     "titular": "El maquinista avisó de que la vía estaba ocupada y le dieron paso",
-     "resumen": "Según elDiario.es, el maquinista del tren de alta velocidad que chocó en Urda avisó al centro de control de Atocha de que tenía un fallo por bloqueo parcial, tras caer el sistema de seguridad. Ese código indica que la vía está ocupada por delante, en este caso por un tren de Iryo. El operador de Atocha repitió la información y ordenó seguir a marcha normal, sin reducir la velocidad. El maquinista murió junto a un auxiliar en la cabina. El periódico explica que, a la conductora del tren de Iryo, el sistema le daba límite de cuarenta, y que el semáforo de Urda se puso en verde para ella, lo que también anuló la alerta del sistema de respaldo. Un informe inicial estima que la colisión se produjo entre ciento sesenta y doscientos kilómetros por hora. Todavía se desconoce por qué el maquinista obedeció la orden. El ministro Óscar Puente dio su explicación en su comparecencia del viernes.",
-     "url": "https://www.eldiario.es/castilla-la-mancha/maquinista-ave-informo-sistema-seguridad-veia-via-ocupada-le-dieron-paso_1_13626993.html"
-    },
-    {
-     "id": "edi2",
-     "titular": "Detenidos en Valencia por impulsar el movimiento Blocus",
-     "resumen": "Según elDiario.es, la Guardia Civil ha detenido en Picanya, en Valencia, a un presunto fundador e impulsor en España del movimiento Blocus, que bajo la apariencia de protesta estudiantil convocaba saqueos y actos violentos. Se le atribuye crear y administrar grupos de Telegram. Se investigan delitos de desórdenes públicos agravados y organización criminal. Por su parte, la Policía Nacional arrestó en Alfafar a un joven de dieciocho años que animaba en aplicaciones de mensajería a fabricar cócteles molotov para saquear comercios del centro de la ciudad. Es el tercer detenido de la semana en Valencia y suman cinco de cara a las concentraciones convocadas para el sábado treinta y uno de octubre: tres en Valencia, uno en Lleida y uno en Bilbao. Los convocantes usaban vídeos de TikTok y carteles con códigos QR, y pedían ir de negro y con máscaras. La Policía Nacional prepara un dispositivo extraordinario para el fin de semana.",
-     "url": "https://www.eldiario.es/comunitat-valenciana/valencia/policia-nacional-detiene-joven-miembro-blocus-valencia-instigar-fabricar-arrojar-cocteles-molotov_1_13626921.html"
-    },
-    {
-     "id": "edi3",
-     "titular": "Google e Intel se desploman en bolsa y alimentan el temor a una burbuja",
-     "resumen": "Según elDiario.es, las acciones de Google cayeron hasta un doce coma seis por ciento tras presentar sus resultados trimestrales, lo que supone una pérdida de unos quinientos mil millones de dólares. Los ingresos del buscador bajaron un doce por ciento, los beneficios cayeron un veinticinco por ciento y el flujo de caja fue negativo. La empresa prevé invertir entre ciento noventa y cinco mil y doscientos cinco mil millones de dólares en inteligencia artificial este año. Intel llegó a caer cerca de un treinta por ciento al abrir la bolsa, unos ciento treinta mil millones de dólares, y avisó de que no tendrá flujo de caja positivo en dos mil veintisiete. También bajaron Micron, Nvidia y Amazon, y las bolsas de Taiwán y Corea del Sur. La red social Reddit se deja un treinta y cuatro por ciento desde el jueves, y su directivo anunció que exigirá iniciar sesión para navegar. El periódico lo presenta como un nuevo golpe a la llamada burbuja de la inteligencia artificial.",
-     "url": "https://www.eldiario.es/tecnologia/historico-desplome-google-e-intel-asesta-nuevo-golpe-burbuja-ia_1_13627374.html"
+     "titular": "Polonia detiene a un ruso por fotografiar trenes e instalaciones",
+     "resumen": "La policía polaca ha detenido en la localidad de Świdnica a un ciudadano ruso de cincuenta y cinco años. Está acusado de espiar para un servicio de inteligencia extranjero. Lo arrestaron mientras fotografiaba trenes e instalaciones ferroviarias con equipo profesional. Al revisar sus dispositivos de almacenamiento, los agentes encontraron cientos de miles de archivos con imágenes de infraestructuras de transporte de Polonia y de otros países. También se incautaron portátiles, discos duros, teléfonos móviles y varios documentos de identidad. Según los investigadores, la información iba destinada a agencias de inteligencia de otros países. Libertad Digital da la noticia citando como fuente original a un medio especializado en defensa llamado Militarnyi. En el texto no constan reacciones oficiales adicionales.",
+     "url": "https://www.libertaddigital.com/defensa/2026-10-31/polonia-detiene-a-un-ciudadano-ruso-por-fotografiar-infraestructura-ferroviaria-7484792/"
     }
    ]
   }
