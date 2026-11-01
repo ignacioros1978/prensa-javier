@@ -1,45 +1,36 @@
 {
- "actualizado": "2026-10-21T12:41:50+02:00",
- "semanaTexto": "miércoles 21 de octubre",
+ "actualizado": "2026-11-01T10:48:18+01:00",
+ "semanaTexto": "domingo 1 de noviembre",
  "estado": "ok",
  "pareja": {
   "destino": "Oporto",
   "pais": "Portugal",
   "origen": "Sevilla",
-  "fechaIda": "2026-11-02",
-  "fechaVuelta": "2026-11-05",
-  "fechasTexto": "lunes 2 al jueves 5 de noviembre",
+  "fechaIda": "2026-12-14",
+  "fechaVuelta": "2026-12-17",
+  "fechasTexto": "lunes 14 al jueves 17 de diciembre",
   "noches": 3,
   "viajeros": "2 adultos",
-  "precioTotal": 260.38,
-  "precioPersona": 130,
+  "precioTotal": 253.62,
+  "precioPersona": 127,
   "tipo": "Vuelo + hotel",
   "vuelo": {
    "compania": "Ryanair",
    "directo": true,
-   "detalle": "Ida lun 2 nov 22:40 (llega 22:55 hora de Oporto) · vuelta jue 5 nov 13:55 (llega 16:10)"
+   "detalle": "Ida lun 14 dic 22:40 (llega 22:55 hora de Oporto) · vuelta jue 17 dic 13:55 (llega 16:10)"
   },
   "alojamiento": {
-   "nombre": "JAM Porto",
-   "estrellas": 4,
-   "nota": "9,1",
-   "zona": "a 1,7 km del centro (Rua de Frei Heitor Pinto)"
+   "nombre": "Park Hotel Porto Gaia",
+   "estrellas": 3,
+   "nota": "7,5",
+   "zona": "a 3,3 km del centro (Rua da Bélgica)"
   },
-  "incluye": "Vuelos directos y 3 noches en habitación doble, sin desayuno",
-  "porQue": "Es lo más barato que cumple todo: hotel de 4 estrellas con 9,1 de nota y 333 opiniones, y vuelos directos. El Park Hotel Porto Gaia sale 9 € menos pero con 7,5 de nota y más lejos. Por separado no compensa: el vuelo en eDreams ya cuesta 142 € y en Booking no hay hoteles con nota de 8 o más por menos de 50 € la noche. Tarifa no reembolsable (con cancelación gratis hasta el 31 de octubre cuesta 273,84 €). Ojo: se llega el lunes por la noche, así que en la práctica son dos días y medio.",
+  "incluye": "Vuelos directos y 3 noches en habitación doble superior, sin desayuno",
+  "porQue": "Es lo más barato que cumple los criterios (nota 7,5 con 429 opiniones, justo en el mínimo). Por separado sale más caro: vuelos en eDreams 156 € y, por ejemplo, Vibrant Host-Campo 24 Agosto en Booking (9,1 de nota) 140,40 €, unos 296 € en total. Tarifa no reembolsable; con cancelación gratis hasta el 7 de diciembre cuesta 254,35 €. Ojo: se llega el lunes a las 22:55.",
   "fuente": "lastminute.com",
-  "url": "https://www.lastminute.com/s/tsx/10212831?pageType=review&destination=OPO&dateFrom=2026-11-02&dateTo=2026-11-05&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261102-20261105&roomId=1932081396-1&mealPlanId=-744871194&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=832204122631804928SCHv01981959009&vcSearchId=749704158",
+  "url": "https://www.lastminute.com/s/tsx/41000?pageType=review&destination=OPO&dateFrom=2026-12-14&dateTo=2026-12-17&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261214-20261217&roomId=41000DOUBLE_SUPERIOR-1&mealPlanId=-1468557264&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=836176993495934976SCHv01-1739858722&vcSearchId=783709081",
   "cancelable": false,
-  "alternativas": [
-   {
-    "destino": "Lisboa",
-    "fechasTexto": "10–13 dic",
-    "origen": "Sevilla",
-    "fuente": "lastminute.com",
-    "precioTotal": 448.95,
-    "url": "https://www.lastminute.com/"
-   }
-  ]
+  "alternativas": []
  },
  "familia": {
   "destino": "Oporto",
@@ -50,8 +41,8 @@
   "fechasTexto": "viernes 27 al domingo 29 de noviembre",
   "noches": 2,
   "viajeros": "2 adultos y 3 hijos",
-  "precioTotal": 405.26,
-  "precioPersona": 81,
+  "precioTotal": 616.4,
+  "precioPersona": 123,
   "tipo": "Vuelo + hotel por separado",
   "vuelo": {
    "compania": "Ryanair",
@@ -59,35 +50,29 @@
    "detalle": "Ida vie 27 nov 14:55 (llega 15:10 hora de Oporto) · vuelta dom 29 nov 20:15 (llega 22:30)"
   },
   "alojamiento": {
-   "nombre": "KirasHouse",
+   "nombre": "Porto Santa Maria Apartments",
    "estrellas": 4,
-   "nota": "8,5",
-   "zona": "en el centro de Oporto (Rua de Aníbal Cunha)"
+   "nota": "9,1",
+   "zona": "en el centro de Oporto (Travessa de Antero de Quental)"
   },
-  "incluye": "Vuelos directos en eDreams (265 €) y 2 noches en KirasHouse en Booking (140,26 €), sin desayuno",
-  "porQue": "Por separado sale unos 109 € más barato que el mejor paquete (Cosme Apartments en lastminute, 514,29 €, con 9,1 de nota): alojamiento con 8,5 de nota y 584 opiniones en pleno centro y vuelos directos con la vuelta el domingo por la noche. Son dos reservas distintas: el vuelo en eDreams y el alojamiento en Booking. Comprueba al reservar que la habitación familiar tiene camas para los cinco. Si prefieres algo más espacioso, ApartmentsPorto - Bolhão 42 (9,4 de nota) cuesta 220 € en Booking. Ojo: el viernes hay que salir del cole antes de tiempo.",
+  "incluye": "Vuelos directos en eDreams (420 € los cinco) y 2 noches en Porto Santa Maria Apartments en Booking (196,40 €), sin desayuno",
+  "porQue": "Sale unos 11 € más barato que el mejor paquete de lastminute (Cosme Apartments, 627,46 €, nota 9,1): alojamiento con 9,1 de nota y 433 opiniones, con habitaciones familiares, y vuelos directos con la vuelta el domingo por la noche. Son dos reservas distintas y los vuelos son más caros que la semana pasada. Comprueba al reservar que la habitación tiene camas para los cinco. Ojo: el viernes hay que salir del cole antes de tiempo.",
   "fuente": "eDreams + Booking.com",
-  "url": "https://www.booking.com/hotel/pt/kirashouse.html?aid=8132308&checkin=2026-11-27&checkout=2026-11-29&no_rooms=1&group_adults=2&group_children=3&age=14&age=11&age=4&selected_currency=EUR",
-  "alternativas": [
-   {
-    "destino": "Roma",
-    "fechasTexto": "11–13 dic",
-    "origen": "Sevilla",
-    "fuente": "lastminute.com",
-    "precioTotal": 655.18,
-    "url": "https://www.lastminute.com/"
-   },
-   {
-    "destino": "Lisboa",
-    "fechasTexto": "27–29 nov",
-    "origen": "Sevilla",
-    "fuente": "lastminute.com",
-    "precioTotal": 921.01,
-    "url": "https://www.lastminute.com/"
-   }
-  ]
+  "url": "https://www.booking.com/hotel/pt/porto-santa-maria-apartments-porto1.html?aid=8132308&checkin=2026-11-27&checkout=2026-11-29&no_rooms=1&group_adults=3&group_children=2&age=11&age=4&selected_currency=EUR",
+  "alternativas": []
  },
  "anteriores": [
+  {
+   "semanaTexto": "miércoles 21 de octubre",
+   "pareja": {
+    "destino": "Oporto",
+    "precioTotal": 260.38
+   },
+   "familia": {
+    "destino": "Oporto",
+    "precioTotal": 405.26
+   }
+  },
   {
    "semanaTexto": "lunes 19 de octubre",
    "pareja": {
@@ -125,5 +110,5 @@
    "estado": "ok"
   }
  ],
- "nota": "El vuelo de la familia se reserva en eDreams: https://www.edreams.com/ (Ryanair SVQ-OPO 27 nov 14:55, vuelta 29 nov 20:15, 265 € los cinco). Desde Málaga no salió nada mejor (Nápoles, Bolonia y Malta con vuelos con escala o más caros). El puente de Todos los Santos para la familia solo daba paquetes con escala por encima de 1.400 €. Los precios cambian rápido: compruébalos antes de reservar."
+ "nota": "El vuelo de la familia se reserva en eDreams: https://www.edreams.com/ (Ryanair SVQ-OPO 27 nov 14:55, vuelta 29 nov 20:15, 420 € los cinco). Con las fechas ocupadas (Laponia y Londres) quedaban pocas tandas; en Roma, Milán, Lisboa, Praga y Budapest ningún alojamiento cumplía la calidad mínima o el precio era muy alto. Los precios cambian rápido: compruébalos antes de reservar."
 }
