@@ -1,7 +1,7 @@
 {
  "fecha": "2026-11-02",
  "fechaTexto": "lunes 2 de noviembre",
- "actualizado": "2026-11-02T09:43:24+01:00",
+ "actualizado": "2026-11-02T17:00:50+01:00",
  "portada": [
   "to1",
   "edi1",
@@ -11,13 +11,19 @@
   "ee1",
   "ok1",
   "to3",
-  "ld3"
+  "ld4"
  ],
  "diarios": [
   {
    "id": "ld",
    "nombre": "Libertad Digital",
    "noticias": [
+    {
+     "id": "ld4",
+     "titular": "Mueren cuatro miembros de una familia en un accidente en Zamora",
+     "resumen": "Un hombre de cincuenta y nueve años, su hija de veintinueve y los dos hijos pequeños de ella, de dos y tres años, murieron este domingo en un accidente de tráfico en la provincia de Zamora. Según Libertad Digital, que cita a la agencia EFE, el coche se salió de la carretera por la derecha a las dos menos cuarto de la tarde, en un tramo recto entre Andavías y Malva, y chocó contra una obra de drenaje de hormigón. Los servicios de emergencia llegaron con un helicóptero medicalizado, pero solo pudieron confirmar el fallecimiento de los cuatro ocupantes. La familia vivía desde hacía unos meses en Aspariegos, un pueblo de unos doscientos veinte habitantes. El abuelo trabajaba en una fábrica de quesos de Toro y su hija y sus nietos habían llegado desde Sevilla al acabar el curso. La alcaldesa habló de un mazazo para el pueblo y propondrá luto oficial. El presidente de la Junta de Castilla y León expresó su pesar.",
+     "url": "https://www.libertaddigital.com/sucesos/2026-11-01/mueren-en-un-accidente-de-trafico-en-zamora-un-hombre-su-hija-y-sus-dos-nietos-pequenos-7485302/"
+    },
     {
      "id": "ld1",
      "titular": "La jueza de Urda pide más operarios y prohíbe difundir imágenes de las víctimas",
@@ -29,12 +35,6 @@
      "titular": "Un exdirectivo de Adif dice que Puente politizó la empresa",
      "resumen": "Miguel Ángel Uriondo, que fue director del gabinete de presidencia de Adif, ha criticado al ministro de Transportes, Óscar Puente. Lo hizo en una entrevista en el programa La Trinchera de Llamas, de esRadio, publicada el 1 de noviembre. Según Uriondo, Puente quiso ejercer un mayor control político sobre Adif con cambios en su equipo directivo. Explica que se concentraron funciones, algunas de seguridad, en el gabinete de presidencia, cuando antes las llevaba una dirección general de seguridad con voz en el comité de dirección. Para él, eso fue un error porque fragmentó las competencias. Uriondo aclara que no pretende señalar las causas del accidente de Urda y que habla solo de motivos políticos, no de corrupción. También opina que el presidente de Renfe, Álvaro Fernández Heredia, no debería ocupar ese cargo. La entrevista no recoge respuesta del Ministerio ni de Adif.",
      "url": "https://www.libertaddigital.com/espana/2026-11-01/un-exdirectivo-de-adif-denuncia-la-politizacion-de-la-empresa-con-puente-quisieron-poner-un-comisario-politico-7485221/"
-    },
-    {
-     "id": "ld3",
-     "titular": "Ayuso logra que el Gobierno rectifique y salve la luz de 100.000 viviendas",
-     "resumen": "Según Libertad Digital, la presidenta de la Comunidad de Madrid, Isabel Díaz Ayuso, ha conseguido que el Gobierno de Pedro Sánchez rectifique. Gracias a ello, queda a salvo el suministro eléctrico de unas 100.000 viviendas. Sin embargo, el periódico señala que los municipios de Parla y Algete siguen en riesgo. La noticia se publicó el 2 de noviembre en la sección de Madrid.",
-     "url": "https://www.libertaddigital.com/madrid/2026-11-02/ayuso-logra-que-sanchez-rectifique-y-salva-la-electricidad-para-100-000-viviendas-pero-parla-y-algete-siguen-en-riesgo-7484956/"
     }
    ]
   },
