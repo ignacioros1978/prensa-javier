@@ -1,17 +1,17 @@
 {
- "fecha": "2026-11-02",
- "fechaTexto": "lunes 2 de noviembre",
- "actualizado": "2026-11-02T17:00:50+01:00",
+ "fecha": "2026-11-03",
+ "fechaTexto": "martes 3 de noviembre",
+ "actualizado": "2026-11-03T06:57:38+01:00",
  "portada": [
-  "to1",
-  "edi1",
-  "edi2",
-  "ed1",
   "ld1",
+  "edi1",
+  "to1",
+  "ed1",
+  "ld2",
+  "ld3",
   "ee1",
-  "ok1",
-  "to3",
-  "ld4"
+  "ok3",
+  "to3"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld4",
-     "titular": "Mueren cuatro miembros de una familia en un accidente en Zamora",
-     "resumen": "Un hombre de cincuenta y nueve años, su hija de veintinueve y los dos hijos pequeños de ella, de dos y tres años, murieron este domingo en un accidente de tráfico en la provincia de Zamora. Según Libertad Digital, que cita a la agencia EFE, el coche se salió de la carretera por la derecha a las dos menos cuarto de la tarde, en un tramo recto entre Andavías y Malva, y chocó contra una obra de drenaje de hormigón. Los servicios de emergencia llegaron con un helicóptero medicalizado, pero solo pudieron confirmar el fallecimiento de los cuatro ocupantes. La familia vivía desde hacía unos meses en Aspariegos, un pueblo de unos doscientos veinte habitantes. El abuelo trabajaba en una fábrica de quesos de Toro y su hija y sus nietos habían llegado desde Sevilla al acabar el curso. La alcaldesa habló de un mazazo para el pueblo y propondrá luto oficial. El presidente de la Junta de Castilla y León expresó su pesar.",
-     "url": "https://www.libertaddigital.com/sucesos/2026-11-01/mueren-en-un-accidente-de-trafico-en-zamora-un-hombre-su-hija-y-sus-dos-nietos-pequenos-7485302/"
-    },
-    {
      "id": "ld1",
-     "titular": "La jueza de Urda pide más operarios y prohíbe difundir imágenes de las víctimas",
-     "resumen": "La jueza que investiga el accidente ferroviario de Urda, en Toledo, ha pedido con urgencia a la empresa de grúas contratada por Adif y Renfe que ponga todos los operarios necesarios. Quiere que se siga retirando los vagones sin parar y que se localicen posibles restos que aún queden en la zona. Según la información de Europa Press publicada en Libertad Digital, los trabajos no pudieron mantenerse durante la noche del 31 de octubre al 1 de noviembre por falta de personal. La jueza pidió turnos de relevo. El Tribunal Superior de Justicia de Castilla-La Mancha informó de que las tareas se reanudaron el domingo por la mañana. Además, un auto prohíbe obtener, difundir o publicar imágenes e información de las víctimas y sus familiares, para proteger su intimidad y su dignidad. Sí se pueden dar los datos necesarios para identificarlas. El procedimiento sigue bajo secreto de sumario.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-01/la-jueza-de-urda-exige-mas-operarios-para-localizar-restos-y-prohibe-difundir-imagenes-de-las-victimas-7485269/"
+     "titular": "Identificadas las 69 víctimas mortales del accidente de Urda",
+     "resumen": "Las autoridades han identificado ya a las sesenta y nueve personas fallecidas en el accidente ferroviario de Urda, en Toledo, en el que chocaron trenes de alta velocidad de Renfe e Iryo. Según Libertad Digital, que recoge un texto de la agencia EFE, lo comunicó el Centro Integrado de Datos, que es el único organismo autorizado para dar cifras oficiales. Entre las víctimas hay cincuenta y cuatro españoles y quince extranjeros, con cuatro estadounidenses, dos australianos y dos japoneses, entre otras nacionalidades. Son cuarenta hombres y veintinueve mujeres, todos mayores de edad. Cincuenta y seis se identificaron por huellas dactilares y trece por ADN. Los trabajos se hacen desde el miércoles veintiocho de octubre en los Institutos de Medicina Legal de Toledo y Ciudad Real, con más de sesenta profesionales. El lunes ya se había terminado de retirar los vagones siniestrados.",
+     "url": "https://www.libertaddigital.com/espana/2026-11-02/identificadas-las-69-victimas-mortales-del-accidente-ferroviario-de-urda-7485657/"
     },
     {
      "id": "ld2",
-     "titular": "Un exdirectivo de Adif dice que Puente politizó la empresa",
-     "resumen": "Miguel Ángel Uriondo, que fue director del gabinete de presidencia de Adif, ha criticado al ministro de Transportes, Óscar Puente. Lo hizo en una entrevista en el programa La Trinchera de Llamas, de esRadio, publicada el 1 de noviembre. Según Uriondo, Puente quiso ejercer un mayor control político sobre Adif con cambios en su equipo directivo. Explica que se concentraron funciones, algunas de seguridad, en el gabinete de presidencia, cuando antes las llevaba una dirección general de seguridad con voz en el comité de dirección. Para él, eso fue un error porque fragmentó las competencias. Uriondo aclara que no pretende señalar las causas del accidente de Urda y que habla solo de motivos políticos, no de corrupción. También opina que el presidente de Renfe, Álvaro Fernández Heredia, no debería ocupar ese cargo. La entrevista no recoge respuesta del Ministerio ni de Adif.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-01/un-exdirectivo-de-adif-denuncia-la-politizacion-de-la-empresa-con-puente-quisieron-poner-un-comisario-politico-7485221/"
+     "titular": "Dimite el jefe de gabinete de Illa, investigado por corrupción",
+     "resumen": "Eduard Rivas, jefe de gabinete del presidente de la Generalitat, Salvador Illa, ha dimitido, según informa Libertad Digital. La dimisión se conoció el lunes por la noche, después de que un juzgado de Martorell levantara el secreto de sumario de una causa por desvío de fondos públicos. Rivas fue alcalde de Esparreguera hasta agosto de dos mil veinticuatro. La investigación se centra en los años dos mil veintidós, dos mil veintitrés y dos mil veinticuatro. Según el periódico, se habrían desviado fondos públicos a gastos privados de directivos de una fundación dedicada a la limpieza y el mantenimiento de espacios públicos. Rivas defiende que siempre actuó con legalidad y dice dimitir para evitar cualquier sombra de duda sobre Illa. En abril, Illa había dicho que pondría la mano en el fuego por él. Le sustituirá Xavier Amor, hasta ahora secretario de la Generalitat para gobiernos locales.",
+     "url": "https://www.libertaddigital.com/cataluna/2026-11-02/dimite-el-jefe-de-gabinete-de-illa-investigado-en-un-caso-de-corrupcion-7485645/"
+    },
+    {
+     "id": "ld3",
+     "titular": "Rusia mata a 24 personas en un ataque a un centro de ayuda en Zaporiyia",
+     "resumen": "Al menos veinticuatro personas han muerto en la ciudad ucraniana de Zaporiyia tras un ataque ruso contra un centro donde se repartía ayuda humanitaria. Según Libertad Digital, el ataque alcanzó una escuela que se usaba para ese reparto, y lo calificó de horrendo. El Español añade que Rusia lanzó una decena de bombas. Por ahora no constan más detalles sobre los heridos ni sobre la reacción del gobierno ucraniano.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-11-02/rusia-mata-a-24-personas-en-un-horrendo-ataque-a-una-escuela-que-repartia-ayuda-7485637/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Primer sondeo tras Urda: el PP sube y el PSOE cae",
-     "resumen": "El Español publica el primer sondeo realizado después de la tragedia de Urda. Según esta encuesta, el Partido Popular, junto con UPN, subiría a 139 escaños. Vox llegaría a 64. El PSOE bajaría a 106 escaños y el Frente Amplio se quedaría en 5. Las izquierdas nacionalistas sumarían 25. Con esos números, el bloque que apoyó la investidura de Sánchez quedaría a 30 escaños de la mayoría absoluta y a 58 de lo que sumarían el PP y Vox. Las elecciones generales se celebran el 29 de noviembre.",
-     "url": "https://www.elespanol.com/espana/politica/20261101/primer-sondeo-tragedia-pp-vox-amplian-ventaja-sanchez-sigue-cayendo-pese-vaciar-frente-amplio/1003744442810_0.html"
+     "titular": "El primer ministro de Bélgica dimite y el rey no lo acepta",
+     "resumen": "El primer ministro de Bélgica ha presentado su dimisión porque no ha logrado sacar adelante los Presupuestos, según El Español. El rey Felipe no la ha aceptado por ahora y deja la decisión en suspenso. La noticia llega tras el fracaso de las negociaciones presupuestarias entre los partidos del Gobierno belga. The Objective cuenta lo mismo y habla de negociaciones fracasadas. Todavía no se sabe si el rey acabará aceptando la renuncia ni cómo seguirá la situación política en el país.",
+     "url": "https://www.elespanol.com/mundo/europa/20261102/primer-ministro-belgica-presenta-dimision-no-aprobar-presupuestos-rey-felipe-deja-suspenso/1003744443327_0.html"
     },
     {
      "id": "ee2",
-     "titular": "El año más duro de Óscar Puente en cifras",
-     "resumen": "Un reportaje de El Español hace balance del año del ministro de Transportes, Óscar Puente, y lo titula el año de la vergüenza. Según el periódico, el último año suma 116 muertos en accidentes ferroviarios, sistemas obsoletos, 4.046 trenes retrasados y 409 robos de cable. El texto lo firma Alejandra Inza y se publicó el 1 de noviembre, días después del accidente de Urda.",
-     "url": "https://www.elespanol.com/reportajes/20261101/ano-verguenza-oscar-puente-muertos-ave-sistemas-obsoletos-trenes-retrasados-robos-cable/1003744440808_0.html"
+     "titular": "PP y Vox tendrían un 72 por ciento de opciones de lograr tres quintos del Senado",
+     "resumen": "Según un análisis de El Español, tras la tragedia de Urda el Partido Popular y Vox tienen hoy un setenta y dos por ciento de posibilidades de lograr la mayoría de tres quintos en el Senado. Esa mayoría reforzada permitiría, entre otras cosas, tomar decisiones que requieren un apoyo muy amplio en la Cámara alta. El periódico lo enlaza con un sondeo del domingo que mostraba cómo el PP y Vox amplían su ventaja mientras el PSOE sigue cayendo. Las elecciones generales son el veintinueve de noviembre.",
+     "url": "https://www.elespanol.com/espana/politica/20261102/tragedia-urda-pp-vox-hoy-opciones-lograr-mayoria-quintos-senado/1003744443526_0.html"
     },
     {
      "id": "ee3",
-     "titular": "España pierde en nueve meses su fama de seguridad en alta velocidad",
-     "resumen": "Según un análisis de El Español, España ha pasado de ser un referente mundial a concentrar el 73 por ciento de las muertes en alta velocidad. El periódico afirma que en solo nueve meses el país ha perdido 34 años de seguridad en este tipo de trenes. El texto, de Javier Muñoz, se publicó el 31 de octubre, tras los accidentes de Adamuz y de Urda.",
-     "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261031/referente-mundial-reunir-muertes-espana-pierde-meses-anos-seguridad-alta-velocidad/1003744440261_0.html"
+     "titular": "Iryo pide nuevos protocolos de seguridad y se suma a la revisión de Renfe y Adif",
+     "resumen": "Iryo ha pedido a la Agencia de Seguridad Ferroviaria que establezca nuevos protocolos, según El Español. La empresa se suma así a la revisión de seguridad que ya hacen Renfe y Adif después del accidente de Urda. El periódico recuerda además que Feijóo dijo al ministro de Transportes, Óscar Puente, que el calvario no es suyo, sino de las familias que esperan recuperar un cuerpo. Todavía no se conocen las medidas concretas que propone Iryo.",
+     "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261102/iryo-pide-agencia-seguridad-ferroviaria-nuevos-protocolos-urda-suma-revision-renfe-adif/1003744443048_0.html"
     }
    ]
   },
@@ -68,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Identificadas 66 de las 69 víctimas de Urda en cien horas",
-     "resumen": "Según El Debate, ya se ha identificado a 66 de las 69 víctimas del accidente ferroviario de Urda, en Toledo. La identificación se ha logrado en apenas cien horas. Quedan por identificar tres personas. La noticia se publicó el 2 de noviembre, cinco días después del accidente.",
-     "url": "https://www.eldebate.com/sociedad/20261102/identificadas-66-69-victimas-accidente-urda-apenas-100-horas_476235.html"
+     "titular": "Feijóo adelanta a Sánchez como líder mejor valorado tras Urda",
+     "resumen": "Según una encuesta de Target Point que recoge El Debate, el líder del Partido Popular, Alberto Núñez Feijóo, ha adelantado a Pedro Sánchez como el líder político mejor valorado tras el accidente de Urda. El sondeo también apunta a más apoyo para el PP, mientras que el PSOE se frena. El Debate habla incluso de una mayoría muy amplia de la derecha. Faltan menos de cuatro semanas para las elecciones generales del veintinueve de noviembre.",
+     "url": "https://www.eldebate.com/espana/20261102/feijoo-adelanta-sanchez-como-lider-politico-mejor-valorado-accidente-urda_475809.html"
     },
     {
      "id": "ed2",
-     "titular": "Una encuesta da más apoyo al PP tras el accidente",
-     "resumen": "El Debate publica una encuesta de la empresa Target Point. Según ella, el accidente de Urda frena al PSOE y amplía el apoyo al Partido Popular, hasta una mayoría muy amplia de la derecha. El periódico presenta los datos el 2 de noviembre, a menos de un mes de las elecciones generales del 29 de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261102/accidente-frena-psoe-amplia-apoyo-pp-mayoria-absolutisima-derecha_475640.html"
+     "titular": "El Gobierno gasta 4,1 millones en limpiar y destruir los cayucos que llegan a Canarias",
+     "resumen": "El Gobierno destina cuatro millones cien mil euros a limpiar, transportar y destruir los cayucos que llegan a las islas Canarias, según informa El Debate. Se trata del coste de gestionar las embarcaciones en las que llegan los inmigrantes, una vez que ya han sido atendidas las personas. El periódico presenta la cifra como un gasto del Estado en un problema que sigue sin resolverse. No se detalla en este resumen el plazo del contrato.",
+     "url": "https://www.eldebate.com/espana/20261102/gobierno-destina-41-millones-limpiar-transportar-destruir-cayucos-llegan-canarias_472732.html"
     },
     {
      "id": "ed3",
-     "titular": "Puente nombró directivo de Renfe a un revisor que apoyó a Sánchez",
-     "resumen": "En una información exclusiva, El Debate asegura que el ministro Óscar Puente nombró directivo de Renfe, nada más llegar al cargo, a un revisor del tren de alta velocidad. Según el periódico, ese trabajador apoyó a Pedro Sánchez cuando lo echaron de la sede del PSOE en Ferraz. La noticia se publicó el 2 de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261102/puente-nombro-directivo-renfe-nada-llegar-revisor-ave-apoyo-sanchez-cuando-echaron-ferraz_475435.html"
+     "titular": "Los ayuntamientos empiezan a devolver las multas de las zonas de bajas emisiones",
+     "resumen": "Varios ayuntamientos han empezado a devolver las multas impuestas en las zonas de bajas emisiones, según El Debate. El periódico publica una guía con lo que deben hacer los conductores que fueron sancionados para reclamar el dinero. Las devoluciones llegan después de que se pusieran en duda esas sanciones. Conviene consultar en cada ayuntamiento el procedimiento y los plazos.",
+     "url": "https://www.eldebate.com/motor/20261102/ayuntamientos-comienzan-devolver-multas-zonas-bajas-emisiones-esto-hay-hacer_474683.html"
     }
    ]
   },
@@ -92,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Correos internos de Adif señalan Urda como punto negro de señalización",
-     "resumen": "Según una exclusiva de The Objective, correos internos de Adif muestran que el tramo de Urda, en Toledo, daba fallos de señalización desde finales de 2023. En uno de ellos, del 15 de noviembre de ese año, una técnica pregunta: ¿otra vez Urda? Y otro interlocutor responde que sí. Esos fallos afectan al sistema LZB, que controla la circulación en la línea Madrid-Sevilla. El ministro Óscar Puente reconoció 170 incidentes de este sistema en 2026, trece de ellos en Urda. Según el periódico, una caída anterior se produjo unos veinte minutos antes del choque mortal del 28 de octubre. La investigación debe aclarar si fue la misma avería. Puente defendió que las incidencias son normales y que tres de cada cuatro tuvieron causas externas, como robos de cable. The Objective añade que los ordenadores de control datan de principios de los años noventa.",
+     "titular": "Correos internos de Adif señalan Urda como punto negro desde 2023",
+     "resumen": "Según correos internos de Adif a los que dice haber tenido acceso The Objective, la zona de Urda acumulaba averías de señalización desde finales de dos mil veintitrés. En un correo de noviembre de ese año, un técnico escribió: otra vez Urda. El periódico cuenta unos diez fallos de señalización en la zona entre mayo de dos mil veinticuatro y julio de dos mil veintiséis. El ministro Óscar Puente reconoció ciento setenta incidentes con el sistema de señalización LZB este año en la línea Madrid Sevilla, trece de ellos en el tramo de Urda. Puente sostiene que eso entraba dentro de la normalidad y que tres de cada cuatro tenían causas externas, como robos de cable. Adif admitió por escrito que el sistema es obsoleto. Su sustituto no estará operativo hasta principios de dos mil veintisiete.",
      "url": "https://theobjective.com/espana/2026-11-02/urda-correos-adif-revelan-accidente/"
     },
     {
      "id": "to2",
-     "titular": "Caos en el Ministerio de Transportes tras el accidente de Urda",
-     "resumen": "The Objective describe, según fuentes internas, un Ministerio de Transportes caótico tras el segundo accidente de alta velocidad en menos de diez meses. El primero fue el de Adamuz, el 18 de enero, y el segundo el de Urda, el 28 de octubre. Según el periódico, la secretaria general de Transporte Urbano, Sara Hernández del Olmo, está de baja, y sus funciones han pasado a los directores generales. También asegura que los técnicos se niegan a firmar proyectos, de modo que no sale nada adelante. Pedro Sánchez reconoció que hay una confianza quebrada en el sistema, pero mantiene su apoyo a Puente. El Partido Popular dice que, si no dimite, lo harán dimitir en las urnas. Vox pide su dimisión y se ha querellado contra el ministro. Las elecciones generales son el 29 de noviembre.",
-     "url": "https://theobjective.com/espana/politica/2026-11-02/transporte-caos-baja/"
+     "titular": "Sánchez promete recuperar la confianza en la alta velocidad",
+     "resumen": "El presidente del Gobierno, Pedro Sánchez, prometió en Barcelona recuperar cuanto antes la confianza en la alta velocidad tras el accidente de Urda, según The Objective, que recoge su frase: nunca debió suceder. Según elDiario.es, Sánchez habló en un foro del grupo Prisa y dijo que las investigaciones, independientes y judiciales, tendrán todos los medios y total transparencia. Añadió que recuperar esa confianza es la prioridad, cueste lo que cueste.",
+     "url": "https://theobjective.com/espana/politica/2026-11-02/sanchez-confianza-alta-velocidad-urda/"
     },
     {
      "id": "to3",
-     "titular": "Iryo guarda los registros de las conversaciones del accidente de Urda",
-     "resumen": "Según The Objective, la compañía Iryo conserva el registro de las conversaciones entre el centro de control de Adif y sus maquinistas el día del accidente de Urda. Lo guarda para reconstruir lo ocurrido y defenderse si el ministro Óscar Puente cuestiona su actuación. Según fuentes cercanas a Iryo, una de las conversaciones muestra que su maquinista corrigió a un técnico de Adif que le ordenaba marcha normal, cuando había otro tren de Iryo parado en la vía. El maquinista pidió circular a la vista, es decir, despacio, y el centro de control rectificó. El accidente causó 69 muertos. El periódico recuerda que Puente ya señaló a Iryo como posible causa en Adamuz y que ahora apunta a un error humano en Urda. Estos datos proceden de fuentes de la propia compañía y de sindicatos.",
-     "url": "https://theobjective.com/economia/transporte/2026-11-02/iryo-registros-accidente-urda-puente/"
+     "titular": "Un ciberataque afecta a decenas de supermercados europeos",
+     "resumen": "Un ciberataque ha afectado a supermercados de varios países europeos. Según The Objective, alcanzó a sesenta supermercados de Bélgica y Luxemburgo. El Español dice que el ataque disparó la temperatura de las neveras de tiendas de siete países, y elDiario.es habla de pérdidas millonarias en Bélgica, Suecia y Luxemburgo. Las cifras difieren según el periódico y todavía no hay un balance oficial del daño.",
+     "url": "https://theobjective.com/internacional/2026-11-02/ciberataque-supermercados-belgica-luxemburgo/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "El Gobierno quitó un millón a la seguridad ferroviaria para el apoyo del PNV",
-     "resumen": "Según OKDiario, el Gobierno de Pedro Sánchez retiró un millón de euros destinado a un sistema de seguridad ferroviaria, el ASFA digital, y lo dedicó a reforzar servicios de tren en el País Vasco. Según el periódico, fue una exigencia del PNV mediante una enmienda a los presupuestos. Otra enmienda del mismo partido pedía otro millón para líneas ferroviarias en Irún. El ASFA es un sistema de respaldo que actúa cuando falla el sistema principal. En Urda cayó el sistema LZB y se activó el ASFA, que no pudo evitar el choque. El ministro Óscar Puente explicó que los dos trenes estaban parados dentro del mismo tramo, y por eso el ASFA no podía avisarles. El artículo no afirma que el cambio de dinero causara el accidente y no recoge respuesta del Gobierno ni del PNV.",
-     "url": "https://okdiario.com/espana/gobierno-desvio-1-millon-del-presupuesto-sistema-seguridad-asfa-pagar-apoyo-del-pnv-20668413"
+     "titular": "Sánchez aparta a Puente de la campaña electoral, según OKDiario",
+     "resumen": "Según OKDiario, Pedro Sánchez da por amortizado al ministro Óscar Puente y lo borra de la campaña de las elecciones del veintinueve de noviembre. El periódico afirma que una encuesta interna de Moncloa sitúa al PSOE por debajo de los noventa y cinco escaños y que Sánchez contempla destituir al ministro. Compromís pide la dimisión de Puente. Según OKDiario, por ahora seguiría como ministro, pero fuera de la campaña.",
+     "url": "https://okdiario.com/espana/sanchez-da-amortizado-puente-lo-borra-campana-del-29-n-20680331"
     },
     {
      "id": "ok2",
-     "titular": "Vox acusa al Gobierno de un fracaso institucional en Ceuta",
-     "resumen": "Según OKDiario, Vox señala al Gobierno de Pedro Sánchez por la entrada masiva de inmigrantes en Ceuta. El partido la califica como el mayor fracaso político e institucional de la historia reciente. La noticia se publicó el 1 de noviembre y recoge la posición de Vox.",
-     "url": "https://okdiario.com/espana/vox-senala-gobierno-sanchez-invasion-ceuta-mayor-fracaso-institucional-historia-reciente-20679970"
+     "titular": "Prisión para un joven de 21 años por coordinar los saqueos de Blocus en Barcelona",
+     "resumen": "Un juzgado de Barcelona ha enviado a prisión provisional a un joven de veintiún años, acusado de coordinar por WhatsApp los saqueos de Blocus, según OKDiario, que cita al Tribunal Superior de Justicia de Cataluña. Los Mossos d'Esquadra lo identificaron. El juzgado de instrucción número veinte de Barcelona fue el que acordó la medida. No se han dado más detalles de la investigación.",
+     "url": "https://okdiario.com/espana/prision-provisional-joven-21-anos-acusado-coordinar-whatsapp-saqueos-blocus-barcelona-20684710"
     },
     {
      "id": "ok3",
-     "titular": "Albiol denuncia que TVE ha aplazado el debate electoral",
-     "resumen": "Según OKDiario, el dirigente del Partido Popular Alejandro Albiol denuncia que Televisión Española ha aplazado el debate electoral previsto para el lunes. Afirma que toman decisiones en función de los intereses del PSOE. La noticia se publicó el 1 de noviembre, a menos de un mes de las elecciones del 29 de noviembre.",
-     "url": "https://okdiario.com/espana/albiol-denuncia-que-tve-aplazado-debate-electoral-del-lunes-toman-decisiones-funcion-intereses-del-psoe-20679150"
+     "titular": "La Palma sufre un apagón general que deja sin luz a toda la isla",
+     "resumen": "La isla de La Palma ha sufrido un apagón general que la dejó sin suministro eléctrico, según OKDiario. El Español cuenta que fueron dos apagones y los atribuye a equipos obsoletos que llevan trece años esperando renovación. The Objective informa de que la luz volvió tras cuatro horas. OKDiario recuerda el gran apagón de dos mil veinticinco y señala a la presidenta de Red Eléctrica, Beatriz Corredor.",
+     "url": "https://okdiario.com/espana/alerta-palma-sufre-apagon-general-que-deja-sin-suministro-electrico-toda-isla-20681389"
     }
    ]
   },
@@ -140,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Sánchez sostiene a Puente para que no dimita por ahora",
-     "resumen": "Según elDiario.es, tras el accidente de Urda el ministro Óscar Puente puso su cargo a disposición de Pedro Sánchez. El presidente le pidió que no dimitiera y que siga al frente para gestionar la crisis. El debate sobre su salida se ha cerrado de momento. Es la segunda catástrofe ferroviaria en diez meses, después de Adamuz, y entre ambas suman más de cien muertos. Una investigación apunta a una orden errónea del centro de control de Atocha: durante 17 minutos nadie avisó de que un tren a 200 kilómetros por hora se dirigía a otro parado. Sánchez habló de una confianza quebrada en la alta velocidad. En Moncloa creen que dimitir sería admitir culpa. Puente comparece el martes en el Congreso. Las elecciones generales son el 29 de noviembre.",
-     "url": "https://www.eldiario.es/politica/sanchez-sostiene-puente-no-dimita-ahora-le-ayude-gestionar-gran-crisis-urda_1_13628223.html"
+     "titular": "El Gobierno aprobará hoy ayudas y adelantará indemnizaciones a las víctimas de Urda",
+     "resumen": "El Consejo de Ministros aprobará este martes un real decreto con ayudas para las víctimas del accidente de Urda, según elDiario.es. Lo anunció Pedro Sánchez en Barcelona el lunes. El paquete incluye doblar las ayudas del seguro obligatorio, un mecanismo para adelantar las indemnizaciones, un procedimiento de incapacidad temporal para los accidentados y oficinas de apoyo en las provincias donde viven las víctimas. Sánchez dijo que son medidas muy parecidas a las del accidente de Adamuz, en Córdoba, en enero. Agradeció su trabajo a los servicios de emergencia, a los sanitarios y al pueblo de Urda.",
+     "url": "https://www.eldiario.es/catalunya/gobierno-anticipara-indemnizaciones-doblara-ayudas-obligatorias-victimas-accidente-urda_1_13631241.html"
     },
     {
      "id": "edi2",
-     "titular": "El Gobierno aprobará el martes ayudas para las víctimas de Urda",
-     "resumen": "Según la agencia EFE, el Consejo de Ministros prevé aprobar este martes, 3 de noviembre, un real decreto con ayudas para los afectados por el accidente de Urda. Pedro Sánchez las anunció el jueves en Toledo. El Consejo recibirá además un informe del ministro Óscar Puente. Según fuentes del Gobierno, Puente comparecerá en rueda de prensa en La Moncloa y, horas después, ante la Diputación Permanente del Congreso. Como precedente, tras el accidente de Adamuz el decreto fijó unos 210.000 euros por fallecido, repartidos en tres pagos de 72.000 euros. Para las lesiones, las cantidades iban de 2.400 euros a más de 84.000 euros, según el baremo, y estaban exentas de impuestos. Puente descartó de nuevo dimitir y prepara medidas para recuperar la confianza en el sistema ferroviario.",
-     "url": "https://www.eldiario.es/politica/gobierno-aprobara-martes-ayudas-economicas-victimas-accidente-urda_1_13630405.html"
+     "titular": "Feijóo acusa al Gobierno de una actitud ruin con Urda",
+     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, acusó al Gobierno de tener una actitud ruin ante la tragedia de Urda. Según elDiario.es, dijo que dudaba de que fueran buena gente. Feijóo critica que se intente reducir la responsabilidad al trabajador. OKDiario recoge la misma frase y añade que acusó a Sánchez de pensar en el poder como único fin. Por su parte, el portavoz de Compromís pide responsabilidades políticas.",
+     "url": "https://www.eldiario.es/politica/feijoo-acusa-gobierno-reducir-trabajador-responsabilidad-tragedia-urda-dudo-sean-buena-gente_1_13631683.html"
     },
     {
      "id": "edi3",
-     "titular": "El PP se personará como acusación en la causa de Urda",
-     "resumen": "Según elDiario.es, el Partido Popular se une a Vox y anuncia que se personará como acusación particular en la causa judicial del accidente de Urda. Con ello, tendrá un papel activo en el procedimiento que investiga el siniestro ferroviario ocurrido el 28 de octubre en Toledo.",
-     "url": "https://www.eldiario.es/politica/pp-une-vox-anuncia-personara-acusacion-particular-causa-judicial-accidente-urda_1_13630675.html"
+     "titular": "Renfe propone limitar la velocidad a 40 kilómetros por hora ante fallos de seguridad",
+     "resumen": "Según elDiario.es, que ha tenido acceso a un documento, Renfe propone limitar la velocidad de los trenes a cuarenta kilómetros por hora cuando haya fallos en los sistemas de seguridad. La propuesta llega después del accidente de Urda. El periódico no detalla todavía en qué tramos se aplicaría ni cuándo.",
+     "url": "https://www.eldiario.es/castilla-la-mancha/social/documento-propuesta-renfe-limitar-velocidad-40-km-hora-fallos-seguridad_1_13631195.html"
     }
    ]
   }
