@@ -1,17 +1,17 @@
 {
- "fecha": "2026-11-03",
- "fechaTexto": "martes 3 de noviembre",
- "actualizado": "2026-11-03T06:57:38+01:00",
+ "fecha": "2026-11-04",
+ "fechaTexto": "miércoles 4 de noviembre",
+ "actualizado": "2026-11-04T07:35:29+01:00",
  "portada": [
   "ld1",
-  "edi1",
-  "to1",
-  "ed1",
   "ld2",
+  "edi1",
+  "ee2",
+  "ed1",
+  "edi2",
   "ld3",
-  "ee1",
-  "ok3",
-  "to3"
+  "edi3",
+  "ed3"
  ],
  "diarios": [
   {
@@ -20,21 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Identificadas las 69 víctimas mortales del accidente de Urda",
-     "resumen": "Las autoridades han identificado ya a las sesenta y nueve personas fallecidas en el accidente ferroviario de Urda, en Toledo, en el que chocaron trenes de alta velocidad de Renfe e Iryo. Según Libertad Digital, que recoge un texto de la agencia EFE, lo comunicó el Centro Integrado de Datos, que es el único organismo autorizado para dar cifras oficiales. Entre las víctimas hay cincuenta y cuatro españoles y quince extranjeros, con cuatro estadounidenses, dos australianos y dos japoneses, entre otras nacionalidades. Son cuarenta hombres y veintinueve mujeres, todos mayores de edad. Cincuenta y seis se identificaron por huellas dactilares y trece por ADN. Los trabajos se hacen desde el miércoles veintiocho de octubre en los Institutos de Medicina Legal de Toledo y Ciudad Real, con más de sesenta profesionales. El lunes ya se había terminado de retirar los vagones siniestrados.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-02/identificadas-las-69-victimas-mortales-del-accidente-ferroviario-de-urda-7485657/"
+     "titular": "Dimite el ministro Óscar Puente por el accidente de Urda",
+     "resumen": "El ministro de Transportes, Óscar Puente, ha anunciado su dimisión tras unas cuatro horas de comparecencia en la Diputación Permanente del Congreso sobre el accidente ferroviario de Urda. Según Libertad Digital, lo presentó como un gesto de dignidad política y renunció a ir en las listas del PSOE. El periódico habla de ciento dieciséis víctimas mortales y critica que no pidiera perdón a las víctimas. Puente reconoció que España es el quinto país de la Unión Europea con más fallos en los sistemas de señalización. La portavoz del PP, Ester Muñoz, lo calificó de frívolo, demagogo y cínico. Vox abandonó la sala con todo su grupo. Sumar y el PNV pidieron su dimisión. Esquerra Republicana lo defendió y no reclamó expresamente su salida.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-11-03/oscar-puente-dimite-por-dignidad-politica-7486190/"
     },
     {
      "id": "ld2",
-     "titular": "Dimite el jefe de gabinete de Illa, investigado por corrupción",
-     "resumen": "Eduard Rivas, jefe de gabinete del presidente de la Generalitat, Salvador Illa, ha dimitido, según informa Libertad Digital. La dimisión se conoció el lunes por la noche, después de que un juzgado de Martorell levantara el secreto de sumario de una causa por desvío de fondos públicos. Rivas fue alcalde de Esparreguera hasta agosto de dos mil veinticuatro. La investigación se centra en los años dos mil veintidós, dos mil veintitrés y dos mil veinticuatro. Según el periódico, se habrían desviado fondos públicos a gastos privados de directivos de una fundación dedicada a la limpieza y el mantenimiento de espacios públicos. Rivas defiende que siempre actuó con legalidad y dice dimitir para evitar cualquier sombra de duda sobre Illa. En abril, Illa había dicho que pondría la mano en el fuego por él. Le sustituirá Xavier Amor, hasta ahora secretario de la Generalitat para gobiernos locales.",
-     "url": "https://www.libertaddigital.com/cataluna/2026-11-02/dimite-el-jefe-de-gabinete-de-illa-investigado-en-un-caso-de-corrupcion-7485645/"
+     "titular": "Los demócratas recuperan el control de la Cámara de Representantes de Estados Unidos",
+     "resumen": "Según las proyecciones de las elecciones legislativas de mitad de mandato en Estados Unidos, los demócratas recuperan el control de la Cámara de Representantes. Así lo cuenta Libertad Digital. Según El Español, el presidente Donald Trump reconoció la victoria demócrata y anunció que trabajará con ellos. El mismo periódico explica que los demócratas arrebataron Carolina del Norte a los republicanos y mantuvieron Georgia, dos victorias clave en la pelea por el Senado. El titular del directo de elDiario.es va más lejos y asegura que los demócratas también le quitan a Trump el control del Senado.",
+     "url": "https://www.libertaddigital.com/internacional/estados-unidos/2026-11-04/los-democratas-recuperan-el-control-de-la-camara-de-representantes-de-acuerdo-con-las-proyecciones-7486253/"
     },
     {
      "id": "ld3",
-     "titular": "Rusia mata a 24 personas en un ataque a un centro de ayuda en Zaporiyia",
-     "resumen": "Al menos veinticuatro personas han muerto en la ciudad ucraniana de Zaporiyia tras un ataque ruso contra un centro donde se repartía ayuda humanitaria. Según Libertad Digital, el ataque alcanzó una escuela que se usaba para ese reparto, y lo calificó de horrendo. El Español añade que Rusia lanzó una decena de bombas. Por ahora no constan más detalles sobre los heridos ni sobre la reacción del gobierno ucraniano.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-11-02/rusia-mata-a-24-personas-en-un-horrendo-ataque-a-una-escuela-que-repartia-ayuda-7485637/"
+     "titular": "El Supremo obliga al exfiscal general a pagar 39.000 euros en costas",
+     "resumen": "El Tribunal Supremo ha rechazado el recurso del exfiscal general del Estado, Álvaro García Ortiz, y le obliga a pagar unos treinta y nueve mil euros a Alberto González Amador, pareja de la presidenta madrileña. Así lo cuenta Libertad Digital. Según OKDiario, el tribunal rechazó la impugnación presentada por la Abogacía del Estado y la Fiscalía, confirmó que los honorarios del abogado ascienden a treinta y ocho mil quinientos ocho euros y no los considera excesivos. Según elDiario.es, el Supremo ratifica así la condena al exfiscal general a pagar esa cantidad.",
+     "url": "https://www.libertaddigital.com/madrid/2026-11-03/el-supremo-desestima-el-recurso-de-garcia-ortiz-y-lo-obliga-a-pagar-39-000-euros-a-gonzalez-amador-en-costas-7486068/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "El primer ministro de Bélgica dimite y el rey no lo acepta",
-     "resumen": "El primer ministro de Bélgica ha presentado su dimisión porque no ha logrado sacar adelante los Presupuestos, según El Español. El rey Felipe no la ha aceptado por ahora y deja la decisión en suspenso. La noticia llega tras el fracaso de las negociaciones presupuestarias entre los partidos del Gobierno belga. The Objective cuenta lo mismo y habla de negociaciones fracasadas. Todavía no se sabe si el rey acabará aceptando la renuncia ni cómo seguirá la situación política en el país.",
-     "url": "https://www.elespanol.com/mundo/europa/20261102/primer-ministro-belgica-presenta-dimision-no-aprobar-presupuestos-rey-felipe-deja-suspenso/1003744443327_0.html"
+     "titular": "Puente dimite por sorpresa aunque Sánchez le pidió seguir hasta las elecciones",
+     "resumen": "Según El Español, el ministro de Transportes, Óscar Puente, ha presentado su dimisión por sorpresa, pese a que el presidente Pedro Sánchez le había pedido que continuara hasta las elecciones del 29 de noviembre. El periódico sostiene que Sánchez quería usarlo como pararrayos. Cuenta también que el ya exministro había dado a entender hasta en cuatro ocasiones que no dejaría el cargo. Puente aseguró que comunicó su decisión al presidente unos minutos antes de anunciarla. El PP afirma que se va por las encuestas y no por dignidad.",
+     "url": "https://www.elespanol.com/espana/politica/20261104/oscar-puente-dimite-sorpresa-pese-sanchez-pidio-continuara-usarle-pararrayos/1003744445234_0.html"
     },
     {
      "id": "ee2",
-     "titular": "PP y Vox tendrían un 72 por ciento de opciones de lograr tres quintos del Senado",
-     "resumen": "Según un análisis de El Español, tras la tragedia de Urda el Partido Popular y Vox tienen hoy un setenta y dos por ciento de posibilidades de lograr la mayoría de tres quintos en el Senado. Esa mayoría reforzada permitiría, entre otras cosas, tomar decisiones que requieren un apoyo muy amplio en la Cámara alta. El periódico lo enlaza con un sondeo del domingo que mostraba cómo el PP y Vox amplían su ventaja mientras el PSOE sigue cayendo. Las elecciones generales son el veintinueve de noviembre.",
-     "url": "https://www.elespanol.com/espana/politica/20261102/tragedia-urda-pp-vox-hoy-opciones-lograr-mayoria-quintos-senado/1003744443526_0.html"
+     "titular": "Trump anuncia el fin de la ayuda militar a Israel y dice que ataca a Irán",
+     "resumen": "Según El Español, el presidente de Estados Unidos, Donald Trump, ha revelado que lleva semanas atacando en secreto a Irán. Al mismo tiempo ha anunciado el final de la ayuda a Israel, porque, según sus palabras, no la necesitan. Según elDiario.es, Estados Unidos dejará de dar cuatro mil millones de dólares al año a Israel, aunque seguirá vendiéndole armas. El Español precisa que la medida se aplicaría a partir de dos mil veintisiete.",
+     "url": "https://www.elespanol.com/mundo/america/eeuu/20261104/trump-revela-lleva-semanas-atacando-secreto-iran-anuncia-final-ayuda-israel-no-necesitan/1003744444864_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Iryo pide nuevos protocolos de seguridad y se suma a la revisión de Renfe y Adif",
-     "resumen": "Iryo ha pedido a la Agencia de Seguridad Ferroviaria que establezca nuevos protocolos, según El Español. La empresa se suma así a la revisión de seguridad que ya hacen Renfe y Adif después del accidente de Urda. El periódico recuerda además que Feijóo dijo al ministro de Transportes, Óscar Puente, que el calvario no es suyo, sino de las familias que esperan recuperar un cuerpo. Todavía no se conocen las medidas concretas que propone Iryo.",
-     "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261102/iryo-pide-agencia-seguridad-ferroviaria-nuevos-protocolos-urda-suma-revision-renfe-adif/1003744443048_0.html"
+     "titular": "El Gobierno intenta que se pueda votar con el DNI en el móvil",
+     "resumen": "Según El Español, el Gobierno intenta a última hora que la Junta Electoral permita votar con el documento de identidad en el teléfono móvil en las elecciones generales del 29 de noviembre. La Junta Electoral había suspendido esta medida por considerarla insegura. El periódico describe el movimiento del Ejecutivo como un intento in extremis para que pueda aplicarse en estos comicios.",
+     "url": "https://www.elespanol.com/espana/politica/20261104/gobierno-intenta-in-extremis-permita-votar-dni-movil-junta-electoral-suspendio-inseguro/1003744444905_0.html"
     }
    ]
   },
@@ -68,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Feijóo adelanta a Sánchez como líder mejor valorado tras Urda",
-     "resumen": "Según una encuesta de Target Point que recoge El Debate, el líder del Partido Popular, Alberto Núñez Feijóo, ha adelantado a Pedro Sánchez como el líder político mejor valorado tras el accidente de Urda. El sondeo también apunta a más apoyo para el PP, mientras que el PSOE se frena. El Debate habla incluso de una mayoría muy amplia de la derecha. Faltan menos de cuatro semanas para las elecciones generales del veintinueve de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261102/feijoo-adelanta-sanchez-como-lider-politico-mejor-valorado-accidente-urda_475809.html"
+     "titular": "Transportes encargó la seguridad de la zona del accidente a una empresa sancionada",
+     "resumen": "Según una exclusiva de El Debate, el Ministerio de Transportes encargó la seguridad de la zona del accidente de Urda a una empresa que había sido sancionada con diecisiete millones de euros por corrupción. El periódico sostiene que el ministerio lo hizo sabiendo que la empresa tenía esa sanción. La información llega el mismo día en que el ministro, Óscar Puente, ha dimitido por el accidente ferroviario.",
+     "url": "https://www.eldebate.com/espana/20261103/transportes-encargo-seguridad-zona-accidente-empresa-sabiendo-estaba-sancionada-17-millones-corrupcion_475442.html"
     },
     {
      "id": "ed2",
-     "titular": "El Gobierno gasta 4,1 millones en limpiar y destruir los cayucos que llegan a Canarias",
-     "resumen": "El Gobierno destina cuatro millones cien mil euros a limpiar, transportar y destruir los cayucos que llegan a las islas Canarias, según informa El Debate. Se trata del coste de gestionar las embarcaciones en las que llegan los inmigrantes, una vez que ya han sido atendidas las personas. El periódico presenta la cifra como un gasto del Estado en un problema que sigue sin resolverse. No se detalla en este resumen el plazo del contrato.",
-     "url": "https://www.eldebate.com/espana/20261102/gobierno-destina-41-millones-limpiar-transportar-destruir-cayucos-llegan-canarias_472732.html"
+     "titular": "Presionan a Sánchez para que explique las reuniones de Zapatero con Julio Martínez",
+     "resumen": "Según El Debate, el presidente Pedro Sánchez está contra las cuerdas porque le obligan a explicar su ayuda en las reuniones entre el expresidente José Luis Rodríguez Zapatero y el empresario Julio Martínez, a quien la Policía ha detenido. El periódico afirma que esos encuentros se celebraron en espacios del Estado.",
+     "url": "https://www.eldebate.com/espana/20261103/sanchez-contra-cuerdas-le-obligan-explicar-ayuda-reuniones-entre-zapatero-julito-martinez-espacios-estado_474576.html"
     },
     {
      "id": "ed3",
-     "titular": "Los ayuntamientos empiezan a devolver las multas de las zonas de bajas emisiones",
-     "resumen": "Varios ayuntamientos han empezado a devolver las multas impuestas en las zonas de bajas emisiones, según El Debate. El periódico publica una guía con lo que deben hacer los conductores que fueron sancionados para reclamar el dinero. Las devoluciones llegan después de que se pusieran en duda esas sanciones. Conviene consultar en cada ayuntamiento el procedimiento y los plazos.",
-     "url": "https://www.eldebate.com/motor/20261102/ayuntamientos-comienzan-devolver-multas-zonas-bajas-emisiones-esto-hay-hacer_474683.html"
+     "titular": "La Policía desaloja la acampada de la Puerta del Sol tras treinta y ocho días",
+     "resumen": "La Policía Nacional ha desalojado la acampada que llevaba treinta y ocho días en la Puerta del Sol, en Madrid. Así lo cuenta El Debate. Según Libertad Digital, después hubo máxima tensión, porque la Policía cargó contra grupos de ultraizquierda que intentaron montar una nueva acampada. El líder del PP, Alberto Núñez Feijóo, celebró que la protesta se levantara tras un mes y lo atribuyó a las demandas de la presidenta madrileña y del alcalde de Madrid.",
+     "url": "https://www.eldebate.com/espana/madrid/20261103/policia-nacional-desaloja-acampada-puerta-sol-38-dias-despues_476478.html"
     }
    ]
   },
@@ -92,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Correos internos de Adif señalan Urda como punto negro desde 2023",
-     "resumen": "Según correos internos de Adif a los que dice haber tenido acceso The Objective, la zona de Urda acumulaba averías de señalización desde finales de dos mil veintitrés. En un correo de noviembre de ese año, un técnico escribió: otra vez Urda. El periódico cuenta unos diez fallos de señalización en la zona entre mayo de dos mil veinticuatro y julio de dos mil veintiséis. El ministro Óscar Puente reconoció ciento setenta incidentes con el sistema de señalización LZB este año en la línea Madrid Sevilla, trece de ellos en el tramo de Urda. Puente sostiene que eso entraba dentro de la normalidad y que tres de cada cuatro tenían causas externas, como robos de cable. Adif admitió por escrito que el sistema es obsoleto. Su sustituto no estará operativo hasta principios de dos mil veintisiete.",
-     "url": "https://theobjective.com/espana/2026-11-02/urda-correos-adif-revelan-accidente/"
+     "titular": "Alivio en el PSOE por la dimisión de Puente",
+     "resumen": "Según The Objective, en el PSOE hay alivio por la dimisión del ministro de Transportes, Óscar Puente, porque, en palabras que recoge el titular, despeja la campaña de las elecciones del 29 de noviembre. El periódico sitúa la dimisión después del accidente ferroviario de Urda y de la comparecencia del ministro en el Congreso.",
+     "url": "https://theobjective.com/espana/politica/2026-11-04/alivio-psoe-dimision-puente-campana/"
     },
     {
      "id": "to2",
-     "titular": "Sánchez promete recuperar la confianza en la alta velocidad",
-     "resumen": "El presidente del Gobierno, Pedro Sánchez, prometió en Barcelona recuperar cuanto antes la confianza en la alta velocidad tras el accidente de Urda, según The Objective, que recoge su frase: nunca debió suceder. Según elDiario.es, Sánchez habló en un foro del grupo Prisa y dijo que las investigaciones, independientes y judiciales, tendrán todos los medios y total transparencia. Añadió que recuperar esa confianza es la prioridad, cueste lo que cueste.",
-     "url": "https://theobjective.com/espana/politica/2026-11-02/sanchez-confianza-alta-velocidad-urda/"
+     "titular": "Marruecos estrena un megapuerto que preocupa a los puertos andaluces",
+     "resumen": "Según The Objective, Marruecos ha estrenado un gran puerto con una inversión de unos cinco mil millones de euros. El periódico sostiene que esta infraestructura amenaza a los muelles andaluces, que podrían perder tráfico de mercancías frente al nuevo puerto marroquí.",
+     "url": "https://theobjective.com/espana/2026-11-04/marruecos-megapuerto-millones-muelles-andaluces/"
     },
     {
      "id": "to3",
-     "titular": "Un ciberataque afecta a decenas de supermercados europeos",
-     "resumen": "Un ciberataque ha afectado a supermercados de varios países europeos. Según The Objective, alcanzó a sesenta supermercados de Bélgica y Luxemburgo. El Español dice que el ataque disparó la temperatura de las neveras de tiendas de siete países, y elDiario.es habla de pérdidas millonarias en Bélgica, Suecia y Luxemburgo. Las cifras difieren según el periódico y todavía no hay un balance oficial del daño.",
-     "url": "https://theobjective.com/internacional/2026-11-02/ciberataque-supermercados-belgica-luxemburgo/"
+     "titular": "El examen para controlador de Adif llevaba tres preguntas sobre igualdad",
+     "resumen": "Según The Objective, el examen de ingreso para controlador de Adif incluía tres preguntas sobre igualdad y ninguna sobre el sistema de seguridad LZB, el que estaba fuera de servicio cuando ocurrió el accidente de Urda. El periódico lo presenta como una muestra de los criterios de selección en la empresa.",
+     "url": "https://theobjective.com/economia/transporte/2026-11-04/examen-controlador-adif-preguntas-igualdad-lzb/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Sánchez aparta a Puente de la campaña electoral, según OKDiario",
-     "resumen": "Según OKDiario, Pedro Sánchez da por amortizado al ministro Óscar Puente y lo borra de la campaña de las elecciones del veintinueve de noviembre. El periódico afirma que una encuesta interna de Moncloa sitúa al PSOE por debajo de los noventa y cinco escaños y que Sánchez contempla destituir al ministro. Compromís pide la dimisión de Puente. Según OKDiario, por ahora seguiría como ministro, pero fuera de la campaña.",
-     "url": "https://okdiario.com/espana/sanchez-da-amortizado-puente-lo-borra-campana-del-29-n-20680331"
+     "titular": "Puente dimite y rechaza ir en las listas del PSOE",
+     "resumen": "Según OKDiario, el ministro de Transportes, Óscar Puente, ha dimitido tras la tragedia ferroviaria de Urda, en Toledo, donde murieron sesenta y nueve personas. También rechaza ir en las listas del PSOE para las elecciones generales del 29 de noviembre. El periódico dice que avanzó la noticia y recoge que el PP culpa a Sánchez, que los socios del Gobierno pedían la salida del ministro y que el presidente defendió a Puente.",
+     "url": "https://okdiario.com/espana/puente-dimite-como-rechaza-ir-listas-del-psoe-20694118"
     },
     {
      "id": "ok2",
-     "titular": "Prisión para un joven de 21 años por coordinar los saqueos de Blocus en Barcelona",
-     "resumen": "Un juzgado de Barcelona ha enviado a prisión provisional a un joven de veintiún años, acusado de coordinar por WhatsApp los saqueos de Blocus, según OKDiario, que cita al Tribunal Superior de Justicia de Cataluña. Los Mossos d'Esquadra lo identificaron. El juzgado de instrucción número veinte de Barcelona fue el que acordó la medida. No se han dado más detalles de la investigación.",
-     "url": "https://okdiario.com/espana/prision-provisional-joven-21-anos-acusado-coordinar-whatsapp-saqueos-blocus-barcelona-20684710"
+     "titular": "El Supremo confirma los 38.508 euros que debe pagar García Ortiz",
+     "resumen": "Según OKDiario, el Tribunal Supremo rechaza la impugnación de la Abogacía del Estado y la Fiscalía y confirma que el exfiscal general Álvaro García Ortiz debe pagar treinta y ocho mil quinientos ocho euros al abogado de González Amador. El tribunal no considera excesivos esos honorarios.",
+     "url": "https://okdiario.com/espana/supremo-confirma-38-508-que-debe-pagar-garcia-ortiz-gonzalez-amador-no-ve-excesivos-20692025"
     },
     {
      "id": "ok3",
-     "titular": "La Palma sufre un apagón general que deja sin luz a toda la isla",
-     "resumen": "La isla de La Palma ha sufrido un apagón general que la dejó sin suministro eléctrico, según OKDiario. El Español cuenta que fueron dos apagones y los atribuye a equipos obsoletos que llevan trece años esperando renovación. The Objective informa de que la luz volvió tras cuatro horas. OKDiario recuerda el gran apagón de dos mil veinticinco y señala a la presidenta de Red Eléctrica, Beatriz Corredor.",
-     "url": "https://okdiario.com/espana/alerta-palma-sufre-apagon-general-que-deja-sin-suministro-electrico-toda-isla-20681389"
+     "titular": "El juez ordena rastrear el sello de las joyas de Zapatero",
+     "resumen": "Según OKDiario, el juez de la Audiencia Nacional José Luis Calama ha ordenado a la unidad policial de delitos económicos que investigue quién grabó el sello de las joyas de Zapatero. Según elDiario.es, deberá pedir ayuda a Interpol y Europol si hace falta. El sello lleva la marca de dieciocho quilates y una letra T de diseño especial.",
+     "url": "https://okdiario.com/espana/juez-calama-encarga-udef-rastrear-interpol-europol-sellos-18tk-joyas-zapatero-20691430"
     }
    ]
   },
@@ -140,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El Gobierno aprobará hoy ayudas y adelantará indemnizaciones a las víctimas de Urda",
-     "resumen": "El Consejo de Ministros aprobará este martes un real decreto con ayudas para las víctimas del accidente de Urda, según elDiario.es. Lo anunció Pedro Sánchez en Barcelona el lunes. El paquete incluye doblar las ayudas del seguro obligatorio, un mecanismo para adelantar las indemnizaciones, un procedimiento de incapacidad temporal para los accidentados y oficinas de apoyo en las provincias donde viven las víctimas. Sánchez dijo que son medidas muy parecidas a las del accidente de Adamuz, en Córdoba, en enero. Agradeció su trabajo a los servicios de emergencia, a los sanitarios y al pueblo de Urda.",
-     "url": "https://www.eldiario.es/catalunya/gobierno-anticipara-indemnizaciones-doblara-ayudas-obligatorias-victimas-accidente-urda_1_13631241.html"
+     "titular": "Puente: el centro de control supo que el Iryo seguía parado y no actuó",
+     "resumen": "Según elDiario.es, el ministro Óscar Puente explicó en el Congreso cómo ocurrió el accidente de Urda. A las ocho y treinta y seis, el centro de control autorizó por teléfono a un AVE a reanudar la marcha con normalidad, aunque el sistema de seguridad LZB estaba fuera de servicio y había un tren Iryo parado delante. El AVE recorrió unos veinticinco kilómetros, a más de ciento sesenta por hora, y chocó con el Iryo hacia las ocho y cincuenta y tres. Puente dijo que el centro recibió el aviso de que el Iryo seguía parado, pero no tomó ninguna acción. Defendió los setecientos ochenta millones invertidos en la línea Madrid Sevilla.",
+     "url": "https://www.eldiario.es/economia/oscar-puente-centro-control-recibio-iryo-seguia-parado-no-tomo-accion_1_13634565.html"
     },
     {
      "id": "edi2",
-     "titular": "Feijóo acusa al Gobierno de una actitud ruin con Urda",
-     "resumen": "El líder del Partido Popular, Alberto Núñez Feijóo, acusó al Gobierno de tener una actitud ruin ante la tragedia de Urda. Según elDiario.es, dijo que dudaba de que fueran buena gente. Feijóo critica que se intente reducir la responsabilidad al trabajador. OKDiario recoge la misma frase y añade que acusó a Sánchez de pensar en el poder como único fin. Por su parte, el portavoz de Compromís pide responsabilidades políticas.",
-     "url": "https://www.eldiario.es/politica/feijoo-acusa-gobierno-reducir-trabajador-responsabilidad-tragedia-urda-dudo-sean-buena-gente_1_13631683.html"
+     "titular": "Feijóo pide a los sindicatos que desconvoquen la huelga del 11 de noviembre",
+     "resumen": "Según elDiario.es, el líder del PP, Alberto Núñez Feijóo, ha pedido a CCOO y UGT que desconvoquen la huelga general por la vivienda prevista para el 11 de noviembre. Su argumento es el accidente de Urda, con sesenta y nueve fallecidos: dijo que convocarla ahora es un grave error. Añadió que perjudicaría a los sindicatos por ligarlos a Pedro Sánchez, a tres semanas de las elecciones. Reconoció que ha presionado en privado a dirigentes de ambos sindicatos. La convocatoria partió del Sindicato de Inquilinas, y CCOO y UGT la respaldan.",
+     "url": "https://www.eldiario.es/politica/feijoo-reclama-sindicatos-desconvoquen-huelga-11n-accidente-urda-grave-error_1_13632870.html"
     },
     {
      "id": "edi3",
-     "titular": "Renfe propone limitar la velocidad a 40 kilómetros por hora ante fallos de seguridad",
-     "resumen": "Según elDiario.es, que ha tenido acceso a un documento, Renfe propone limitar la velocidad de los trenes a cuarenta kilómetros por hora cuando haya fallos en los sistemas de seguridad. La propuesta llega después del accidente de Urda. El periódico no detalla todavía en qué tramos se aplicaría ni cuándo.",
-     "url": "https://www.eldiario.es/castilla-la-mancha/social/documento-propuesta-renfe-limitar-velocidad-40-km-hora-fallos-seguridad_1_13631195.html"
+     "titular": "El juez pide identificar al autor del sello de las joyas de Zapatero",
+     "resumen": "Según elDiario.es, el juez de la Audiencia Nacional José Luis Calama, que instruye el caso Plus Ultra, pide a la Policía que identifique quién hizo el sello de las joyas de más valor incautadas a Zapatero. Si hace falta, deberá contar con Interpol y Europol. Un segundo informe pericial las valora en un millón veinte mil euros y ve muy probable su origen asiático. Zapatero está investigado por tráfico de influencias en el rescate de cincuenta y tres millones a Plus Ultra. Sostiene que las joyas son un obsequio personal del rey de Arabia Saudí en dos mil siete.",
+     "url": "https://www.eldiario.es/politica/juez-caso-plus-ultra-pide-policia-identifique-autor-punzon-joyas-zapatero_1_13634445.html"
     }
    ]
   }
