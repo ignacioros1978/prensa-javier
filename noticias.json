@@ -1,8 +1,9 @@
 {
  "fecha": "2026-11-04",
  "fechaTexto": "miércoles 4 de noviembre",
- "actualizado": "2026-11-04T07:36:43+01:00",
+ "actualizado": "2026-11-04T15:57:22+01:00",
  "portada": [
+  "ed4",
   "ld1",
   "ld2",
   "edi1",
@@ -10,8 +11,7 @@
   "ed1",
   "edi2",
   "ld3",
-  "edi3",
-  "ed3"
+  "edi3"
  ],
  "diarios": [
   {
@@ -67,6 +67,12 @@
    "nombre": "El Debate",
    "noticias": [
     {
+     "id": "ed4",
+     "titular": "La Guardia Civil rastrea hasta Moncloa la filtración del audio del accidente de Urda",
+     "resumen": "Según una exclusiva de El Debate, la Guardia Civil de Toledo ha encontrado un rastro que apunta a la Secretaría de Estado de Comunicación en la filtración de los audios del centro de control de Adif. Esas grabaciones se publicaron la noche del accidente de Urda. Los agentes han sacado los originales de los sistemas de Adif y comparan sus datos con los archivos difundidos, para saber si fueron recortados o editados. Según el diario, los datos del archivo muestran un envío selectivo por mensajería. El audio habría pasado el veintiocho de octubre por varios despachos de Adif y por el gabinete del ministro, y tres horas después ya estaba en la prensa. La jueza de Orgaz mantiene el sumario secreto. Varios sindicatos acusan al ministro de haber señalado a un trabajador como culpable. El accidente ha dejado al menos sesenta y nueve muertos.",
+     "url": "https://www.eldebate.com/espana/20261104/guardia-civil-encuentra-huella-apunta-moncloa-filtracion-audio-puente-culpar-tecnico_476787.html"
+    },
+    {
      "id": "ed1",
      "titular": "Transportes encargó la seguridad de la zona del accidente a una empresa sancionada",
      "resumen": "Según una exclusiva de El Debate, el Ministerio de Transportes encargó el mantenimiento de la seguridad de la línea Madrid Sevilla, en el tramo de Urda donde chocaron un AVE y un Iryo, a una empresa sancionada por corrupción. La Comisión Nacional de los Mercados y la Competencia multó en dos mil veintiuno a Thales España con más de diecisiete millones de euros por participar en un cártel que se repartía licitaciones ferroviarias. Según el periódico, Adif adjudicó el contrato en enero de dos mil veinticuatro, con una sola oferta, por unos setenta y dos millones de euros durante cuatro años. Afirma que es un veintisiete por ciento más caro que el contrato anterior. El accidente ocurrió en el kilómetro ciento dieciocho. El artículo no recoge declaraciones de Transportes, de Adif ni de las empresas.",
@@ -77,12 +83,6 @@
      "titular": "Presionan a Sánchez para que explique las reuniones de Zapatero con Julio Martínez",
      "resumen": "Según El Debate, el presidente Pedro Sánchez está contra las cuerdas porque le obligan a explicar su ayuda en las reuniones entre el expresidente José Luis Rodríguez Zapatero y el empresario Julio Martínez, a quien la Policía ha detenido. El periódico afirma que esos encuentros se celebraron en espacios del Estado.",
      "url": "https://www.eldebate.com/espana/20261103/sanchez-contra-cuerdas-le-obligan-explicar-ayuda-reuniones-entre-zapatero-julito-martinez-espacios-estado_474576.html"
-    },
-    {
-     "id": "ed3",
-     "titular": "La Policía desaloja la acampada de la Puerta del Sol tras treinta y ocho días",
-     "resumen": "La Policía Nacional ha desalojado la acampada que llevaba treinta y ocho días en la Puerta del Sol, en Madrid. Así lo cuenta El Debate. Según Libertad Digital, después hubo máxima tensión, porque la Policía cargó contra grupos de ultraizquierda que intentaron montar una nueva acampada. El líder del PP, Alberto Núñez Feijóo, celebró que la protesta se levantara tras un mes y lo atribuyó a las demandas de la presidenta madrileña y del alcalde de Madrid.",
-     "url": "https://www.eldebate.com/espana/madrid/20261103/policia-nacional-desaloja-acampada-puerta-sol-38-dias-despues_476478.html"
     }
    ]
   },
