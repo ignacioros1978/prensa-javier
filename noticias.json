@@ -1,17 +1,17 @@
 {
  "fecha": "2026-11-05",
  "fechaTexto": "jueves 5 de noviembre",
- "actualizado": "2026-11-05T07:57:16+01:00",
+ "actualizado": "2026-11-05T15:58:13+01:00",
  "portada": [
-  "ld3",
+  "ld5",
+  "to4",
+  "edi4",
+  "ld4",
   "ee1",
-  "to1",
   "ee3",
   "ld1",
   "ed1",
-  "to2",
-  "to3",
-  "ok1"
+  "to1"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
+     "id": "ld5",
+     "titular": "Detenido el antiguo chófer de Sánchez en una operación de la UCO",
+     "resumen": "La Unidad Central Operativa de la Guardia Civil ha detenido este jueves al antiguo chófer del presidente del Gobierno, Pedro Sánchez. Según Libertad Digital, la operación se desarrolló en varios puntos de España y tiene que ver con contratos de Adif durante la pandemia. El mismo periódico cuenta por separado que los agentes también arrestaron a la expareja de Ábalos, acusada de blanqueo de capitales. El Partido Popular reaccionó enseguida. Su portavoz, Ester Muñoz, dijo que es un deber moral sacar a Pedro Sánchez de las instituciones. El secretario general, Miguel Tellado, afirmó que ya solo queda él, en alusión al presidente. Tellado relacionó además los accidentes ferroviarios de Adamuz y de Urda con la gestión del Gobierno.",
+     "url": "https://www.libertaddigital.com/espana/politica/2026-11-05/el-pp-tras-la-detencion-del-exchofer-de-sanchez-solo-queda-el-7487158/"
+    },
+    {
+     "id": "ld4",
+     "titular": "Amenazas de bomba obligan a desviar más de diez vuelos en Europa",
+     "resumen": "Una oleada de avisos de bomba ha obligado a desviar al menos quince aviones de pasajeros en el espacio aéreo europeo, según Libertad Digital. Un Airbus de Aer Lingus que iba de Dublín a Roma aterrizó en una base aérea francesa, con ciento cincuenta y un pasajeros y seis tripulantes a salvo. Tres vuelos de Ryanair procedentes de Madrid, Londres y Copenhague recibieron amenazas en Bulgaria. La policía no encontró explosivos y el avión de Londres fue desviado a Plovdiv. También hubo alertas en dos aviones de Finnair, y en aparatos de LOT y Wizz Air. Cuatro aviones aterrizaron en Praga. Las autoridades búlgaras habían detectado otras siete amenazas el martes, enviadas por correo electrónico a distintas instituciones.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-11-05/una-oleada-de-amenazas-de-bomba-obliga-a-desviar-mas-de-una-decena-vuelos-en-europa-7487079/"
+    },
+    {
      "id": "ld1",
      "titular": "Bloqueo en el Poder Judicial: sin nombramientos en el Supremo antes de las elecciones",
      "resumen": "Según Libertad Digital, que cita fuentes del Consejo General del Poder Judicial, los nueve vocales considerados cercanos al Gobierno han bloqueado los nombramientos pendientes en el Tribunal Supremo hasta después de las elecciones del 29 de noviembre. Para cubrir una plaza hacen falta trece de los veintiún votos del pleno, así que sin acuerdo no se nombra a nadie. Están pendientes cuatro plazas de la Sala de lo Penal, dos de la Sala Tercera, entre ellas su presidencia, vacante desde julio, y otras nueve plazas convocadas en septiembre. El origen del choque está en el reparto de comisiones aprobado la semana pasada por doce votos contra nueve. Según esas fuentes, los vocales cercanos al Gobierno seguían instrucciones del ministro Félix Bolaños y ocultaron su intención. El diario no recoge declaraciones de los vocales señalados. La información procede de fuentes anónimas y tiene un enfoque muy crítico.",
      "url": "https://www.libertaddigital.com/espana/2026-11-05/los-vocales-sanchistas-del-cgpj-bloquean-los-nombramientos-en-el-tribunal-supremo-hasta-despues-del-29-n-7486083/"
-    },
-    {
-     "id": "ld2",
-     "titular": "Renuncia el presidente de Adif, que había sido nombrado por Óscar Puente",
-     "resumen": "Luis Pedro Marco de la Peña ha presentado su renuncia como presidente de Adif ante Carlos Cuerpo, que ha asumido la gestión de Transportes tras la dimisión de Óscar Puente. Según fuentes citadas por Libertad Digital, ya le había dicho a Puente que quería irse. La renuncia se formalizó en una primera reunión con Cuerpo y con el secretario de Estado de Transportes. Marco de la Peña fue nombrado por Puente en septiembre de dos mil veinticuatro. El diario sitúa su salida tras los accidentes de Urda y de Adamuz, y la presenta como paso previo a una auditoría de seguridad de la red ferroviaria. Libertad Digital menciona un sueldo de más de ciento setenta mil euros al año y critica con dureza su perfil. No hay declaraciones de Cuerpo ni del afectado: todo procede de fuentes sin nombre.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-11-04/carlos-cuerpo-destituye-al-presidente-de-adif-que-coloco-oscar-puente-7486782/"
-    },
-    {
-     "id": "ld3",
-     "titular": "Carlos Cuerpo será ministro de Transportes de forma transitoria",
-     "resumen": "El presidente del Gobierno, Pedro Sánchez, compareció en Moncloa horas después de la dimisión de Óscar Puente. Anunció que el vicepresidente Carlos Cuerpo asumirá Transportes de forma transitoria, hasta las elecciones del 29 de noviembre. Según Libertad Digital, Sánchez había elogiado a Puente la noche anterior. Dijo que el ministro dimitió por empatía con las víctimas, dignidad y coherencia, y que su renuncia ayuda a recuperar la confianza en el sistema ferroviario. El relevo llega a veinticuatro días de las elecciones y tras la catástrofe de Urda. Además, obliga al Gobierno a replantear otra vez su campaña. El diario, muy crítico con el Ejecutivo, enlaza columnas que ponen en duda el gesto. En el cuerpo de la noticia no aparecen respuestas de la oposición.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-11-04/pedro-sanchez-anuncia-que-carlos-cuerpo-va-a-ser-el-nuevo-ministro-de-transportes-7486332/"
     }
    ]
   },
@@ -85,6 +85,12 @@
    "nombre": "The Objective",
    "noticias": [
     {
+     "id": "to4",
+     "titular": "El salario mínimo subirá a 1.286 euros en 2027, sin acuerdo con la patronal",
+     "resumen": "El Ministerio de Trabajo, dirigido por Yolanda Díaz, ha fijado una subida del cinco coma tres por ciento del salario mínimo para el año dos mil veintisiete. Según The Objective, pasará de mil doscientos veintiún euros a mil doscientos ochenta y seis euros brutos al mes, en catorce pagas. Son sesenta y cinco euros más al mes, y el total anual sube a dieciocho mil cuatro euros. La propuesta supera la recomendación de los expertos, que pedían un cuatro coma nueve por ciento, es decir, sesenta euros mensuales. El Gobierno consultó a patronal y sindicatos, pero no hubo acuerdo. El plazo de alegaciones termina el dieciséis de noviembre. El Consejo de Ministros podría aprobarla el diecisiete o el veinticuatro de noviembre, antes de las elecciones del veintinueve.",
+     "url": "https://theobjective.com/economia/2026-11-05/trabajo-salario-minimo-53-2027-1286-euros/"
+    },
+    {
      "id": "to1",
      "titular": "Los trenes del choque de Urda ya tuvieron otro incidente en septiembre",
      "resumen": "Según una exclusiva de The Objective, los dos trenes que chocaron el veintiocho de octubre en Urda, con sesenta y nueve muertos, ya habían sufrido otro incidente el quince de septiembre cerca de Toledo. Ese día cayó el sistema de señalización. Adif notificó la incidencia a las ocho y media de la mañana y, desde el centro de control de Atocha, no ordenó a los trenes reanudar la marcha. Los viajeros del tren de Alta Velocidad recibieron un correo de Renfe que culpaba al Iryo que iba delante, aunque Adif admitió después que el fallo era de señalización. Adif no comunicó que se había resuelto hasta las seis de la mañana del día siguiente. El periódico no ha podido saber dónde estaban exactamente los trenes durante la avería, porque faltan datos de localización.",
@@ -95,12 +101,6 @@
      "titular": "Informes de Correos admiten fallos en el control del voto por correo",
      "resumen": "Según fuentes del Partido Popular citadas por The Objective, dos informes internos de Correos reconocen deficiencias en el control del voto por correo. El primero es del siete de octubre y trata de reforzar la trazabilidad y la seguridad. El segundo, del veintinueve de octubre, se ocupa de la custodia de los envíos electorales. Ambos relacionan las nuevas medidas con el robo de votos en Fuente de Cantos, en Badajoz, donde desaparecieron ciento veinticuatro votos. Correos ha aceptado varias peticiones del Partido Popular: un plan para que los afectados puedan volver a votar, custodia en espacios cerrados, videovigilancia y seguimiento por GPS del transporte. El partido sostiene que faltan otras medidas, como guardar los votos en las sedes de las juntas electorales o informar sobre los que llegan tarde. Las elecciones generales son el veintinueve de noviembre.",
      "url": "https://theobjective.com/espana/politica/2026-11-05/voto-correos-deficiencias-informes/"
-    },
-    {
-     "id": "to3",
-     "titular": "Feijóo auditará en sus primeros cien días las subvenciones, ayudas y contratos públicos",
-     "resumen": "El programa electoral del Partido Popular, al que ha tenido acceso The Objective, recoge que Alberto Núñez Feijóo auditará en sus primeros cien días de Gobierno todo el gasto de la Administración central, con atención especial a subvenciones, ayudas y contratos. Las partidas fraudulentas se denunciarían, y las que no cumplan su objetivo se corregirían o se eliminarían. Feijóo ha anunciado además que presentará sus primeros presupuestos en la primavera de dos mil veintisiete, y los de dos mil veintiocho a finales de ese mismo año, siempre pendientes de la auditoría. El programa prevé que una segunda prórroga presupuestaria seguida lleve a disolver las Cortes y convocar elecciones. Según el periódico, el texto lo ha redactado casi por completo el equipo de Alma Ezcurra. El artículo no recoge reacciones de otros partidos.",
-     "url": "https://theobjective.com/espana/politica/2026-11-05/feijoo-auditara-100-dias-subvenciones-ayudas-contratos/"
     }
    ]
   },
@@ -127,6 +127,12 @@
    "nombre": "elDiario.es",
    "noticias": [
     {
+     "id": "edi4",
+     "titular": "Koldo García dice que el abogado del PP le ofreció un millón por información",
+     "resumen": "Koldo García, antiguo asesor de Ábalos, asegura desde prisión que un abogado del Partido Popular le ofreció hasta un millón de euros a cambio de información contra el Gobierno de Sánchez. Lo cuenta en un audio enviado a la Cadena Ser, según elDiario.es. Afirma que el pago pasaría por la editora de Okdiario y que Eduardo Inda, director del medio, era el pagador. El periódico recuerda que esa editora abonó dos facturas, por doscientos cuarenta y dos mil euros, para la defensa de García en el Supremo. Okdiario sostiene que se trataba de un acuerdo para una docuserie y otras colaboraciones. El abogado señalado, Alberto Durán, ha negado estos hechos.",
+     "url": "https://www.eldiario.es/politica/koldo-garcia-afirma-abogado-pp-le-ofrecio-millon-informacion-gobierno-sanchez_1_13639592.html"
+    },
+    {
      "id": "edi1",
      "titular": "Los demócratas ganan con holgura el Congreso de Estados Unidos",
      "resumen": "Según elDiario.es, los demócratas ganan con holgura la Cámara de Representantes y logran la mayoría en el Senado, con victorias en Texas, Iowa, Carolina del Sur, Carolina del Norte, Maine y Kansas. En Texas gana James Talarico, que según el periódico es el primer senador demócrata del estado en muchos años, y también el gobierno estatal. El autor atribuye la derrota de Trump a su baja aprobación, de cerca del treinta por ciento, al encarecimiento del combustible por la guerra con Irán y a su política de aranceles. Trump escribió en su red social que él no estaba en las papeletas y que, si hubiera estado, habrían ganado por mayoría aplastante. Una fuente de la Casa Blanca atribuyó el resultado a la calidad de los candidatos y dijo que el presidente reforzará su empeño en frenar a la izquierda radical.",
@@ -137,12 +143,6 @@
      "titular": "El presidente de Adif renuncia ante Carlos Cuerpo",
      "resumen": "Luis Pedro Marco de la Peña presentó el miércoles su renuncia como presidente de Adif ante Carlos Cuerpo, vicepresidente primero y ministro de Economía, un día después de la dimisión de Óscar Puente. Según fuentes del Gobierno citadas por elDiario.es, Cuerpo aceptó la renuncia y agradeció su trabajo. Antes, Cuerpo había mantenido una primera reunión con el presidente de Adif y con el secretario de Estado de Transportes. Marco de la Peña ya le había dicho a Puente que quería dejar el cargo. En su última comparecencia, Puente había defendido la dirección de Adif y criticó el señalamiento público a su gestión, que calificó de torticero, falaz y absolutamente injusto. La noticia se enmarca en la crisis ferroviaria tras el accidente de Urda, la segunda gran tragedia en unos diez meses.",
      "url": "https://www.eldiario.es/economia/presidente-adif-luis-pedro-marco-pena-presenta-cuerpo-renuncia-cargo_1_13639153.html"
-    },
-    {
-     "id": "edi3",
-     "titular": "La dimisión de Puente vuelve a cambiar el rumbo de la campaña",
-     "resumen": "Según elDiario.es, Óscar Puente dimitió el martes por la noche, por sorpresa y contra la opinión de Pedro Sánchez, que le había pedido seguir, tras una semana de conmoción por el accidente de Urda. Carlos Cuerpo asume Transportes. El PSOE vuelve a la ofensiva con el lema de que no todos los políticos son iguales. Sánchez retoma su caravana electoral el viernes en Valencia, el sábado en Tarragona y el domingo en Bilbao. El Partido Popular pide que Sánchez dimita en las urnas, y Feijóo respondió con la palabra aplícatelo. Ada Colau agradeció a Puente su dignidad, mientras que Ione Belarra dijo que su salida no es suficiente y reclamó revertir la liberalización ferroviaria. Entre los próximos hitos figuran una huelga general por la vivienda el once de noviembre y protestas del sector ferroviario.",
-     "url": "https://www.eldiario.es/politica/dimision-puente-vuelve-cambiar-paso-campana_1_13638923.html"
     }
    ]
   }
