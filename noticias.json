@@ -1,17 +1,16 @@
 {
- "fecha": "2026-11-05",
- "fechaTexto": "jueves 5 de noviembre",
- "actualizado": "2026-11-05T15:58:13+01:00",
+ "fecha": "2026-11-06",
+ "fechaTexto": "viernes 6 de noviembre",
+ "actualizado": "2026-11-06T06:58:37+01:00",
  "portada": [
-  "ld5",
-  "to4",
-  "edi4",
-  "ld4",
-  "ee1",
-  "ee3",
-  "ld1",
   "ed1",
-  "to1"
+  "to1",
+  "edi2",
+  "edi1",
+  "ld2",
+  "ed2",
+  "ld1",
+  "ld3"
  ],
  "diarios": [
   {
@@ -19,48 +18,29 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld5",
-     "titular": "Detenido el antiguo chófer de Sánchez en una operación de la UCO",
-     "resumen": "La Unidad Central Operativa de la Guardia Civil ha detenido este jueves al antiguo chófer del presidente del Gobierno, Pedro Sánchez. Según Libertad Digital, la operación se desarrolló en varios puntos de España y tiene que ver con contratos de Adif durante la pandemia. El mismo periódico cuenta por separado que los agentes también arrestaron a la expareja de Ábalos, acusada de blanqueo de capitales. El Partido Popular reaccionó enseguida. Su portavoz, Ester Muñoz, dijo que es un deber moral sacar a Pedro Sánchez de las instituciones. El secretario general, Miguel Tellado, afirmó que ya solo queda él, en alusión al presidente. Tellado relacionó además los accidentes ferroviarios de Adamuz y de Urda con la gestión del Gobierno.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-11-05/el-pp-tras-la-detencion-del-exchofer-de-sanchez-solo-queda-el-7487158/"
+     "id": "ld1",
+     "titular": "Colau propone un impuesto a los más ricos para recaudar diez mil millones",
+     "resumen": "Ada Colau, candidata de Frente Amplio a las elecciones generales del 29 de noviembre, ha presentado en Madrid una propuesta fiscal contra los llamados ultrarricos. Según Libertad Digital, plantea un impuesto del dos por ciento a los patrimonios superiores a un millón de euros y del tres por ciento a partir de veinte millones. Calcula que recaudaría más de diez mil millones de euros. Colau también quiere revisar las desgravaciones de grandes empresas y bancos. Sostiene que su tipo efectivo está entre el seis y el nueve por ciento, mientras que las pequeñas y medianas empresas pagan cerca del veinte. Además propone un gravamen para quienes tienen más de cuatro viviendas, con el objetivo de llevar unas quinientas mil casas al mercado del alquiler. Las cifras son las que defiende la candidata. El artículo no recoge la respuesta de otros partidos.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-11-05/colau-lanza-su-ofensiva-fiscal-contra-los-ultrarricos-para-recaudar-10-000-millones-de-euros-7487090/"
     },
     {
-     "id": "ld4",
-     "titular": "Amenazas de bomba obligan a desviar más de diez vuelos en Europa",
-     "resumen": "Una oleada de avisos de bomba ha obligado a desviar al menos quince aviones de pasajeros en el espacio aéreo europeo, según Libertad Digital. Un Airbus de Aer Lingus que iba de Dublín a Roma aterrizó en una base aérea francesa, con ciento cincuenta y un pasajeros y seis tripulantes a salvo. Tres vuelos de Ryanair procedentes de Madrid, Londres y Copenhague recibieron amenazas en Bulgaria. La policía no encontró explosivos y el avión de Londres fue desviado a Plovdiv. También hubo alertas en dos aviones de Finnair, y en aparatos de LOT y Wizz Air. Cuatro aviones aterrizaron en Praga. Las autoridades búlgaras habían detectado otras siete amenazas el martes, enviadas por correo electrónico a distintas instituciones.",
+     "id": "ld2",
+     "titular": "Amenazas de bomba obligan a desviar quince vuelos en Europa",
+     "resumen": "Según Libertad Digital, al menos quince aviones de pasajeros han tenido que aterrizar de emergencia en Europa por supuestos avisos de bomba. Uno de ellos, un Airbus de Aer Lingus que iba de Dublín a Roma con ciento cincuenta y un pasajeros y seis tripulantes, fue desviado a una base militar en Normandía. Los ocupantes están a salvo y las autoridades francesas inspeccionan el aparato. Bulgaria informó de tres vuelos de Ryanair con avisos, procedentes de Madrid, Londres y Copenhague. Dos aviones de Finnair salidos de Helsinki también recibieron amenazas, y uno aterrizó en Roma escoltado por la fuerza aérea italiana. La policía checa habló de otros cuatro aviones con destino a Praga. En ningún caso se encontraron explosivos. El martes ya se habían registrado amenazas falsas contra siete vuelos en varios países, entre ellos España. El diario no informa de autores ni de detenidos.",
      "url": "https://www.libertaddigital.com/internacional/europa/2026-11-05/una-oleada-de-amenazas-de-bomba-obliga-a-desviar-mas-de-una-decena-vuelos-en-europa-7487079/"
     },
     {
-     "id": "ld1",
-     "titular": "Bloqueo en el Poder Judicial: sin nombramientos en el Supremo antes de las elecciones",
-     "resumen": "Según Libertad Digital, que cita fuentes del Consejo General del Poder Judicial, los nueve vocales considerados cercanos al Gobierno han bloqueado los nombramientos pendientes en el Tribunal Supremo hasta después de las elecciones del 29 de noviembre. Para cubrir una plaza hacen falta trece de los veintiún votos del pleno, así que sin acuerdo no se nombra a nadie. Están pendientes cuatro plazas de la Sala de lo Penal, dos de la Sala Tercera, entre ellas su presidencia, vacante desde julio, y otras nueve plazas convocadas en septiembre. El origen del choque está en el reparto de comisiones aprobado la semana pasada por doce votos contra nueve. Según esas fuentes, los vocales cercanos al Gobierno seguían instrucciones del ministro Félix Bolaños y ocultaron su intención. El diario no recoge declaraciones de los vocales señalados. La información procede de fuentes anónimas y tiene un enfoque muy crítico.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-05/los-vocales-sanchistas-del-cgpj-bloquean-los-nombramientos-en-el-tribunal-supremo-hasta-despues-del-29-n-7486083/"
+     "id": "ld3",
+     "titular": "Solo unas pocas de las ochocientas órdenes de expulsión en Ceuta se han ejecutado",
+     "resumen": "El ministro Ángel Víctor Torres, responsable único de la crisis en Ceuta, anunció que el Gobierno empezará a desmantelar los campamentos de migrantes en los próximos días. Dijo que quedan menos personas y que ya se han producido más de quince mil retornos. Sin embargo, según fuentes consultadas por Libertad Digital, de unas ochocientas resoluciones de expulsión emitidas desde el once de septiembre apenas se han ejecutado unas pocas. El Gobierno no facilita datos oficiales y Torres evitó dar cifras. Esas fuentes cuentan que los agentes acuden a los campamentos con muchas notificaciones y se van con una o ninguna. Fuentes policiales y jurídicas, que piden anonimato, atribuyen a algunas organizaciones no gubernamentales el aviso a los afectados para que abandonen el lugar. El artículo no incluye la respuesta de esas organizaciones ni la del Gobierno.",
+     "url": "https://www.libertaddigital.com/espana/2026-11-05/por-que-solo-se-han-ejecutado-unas-cuantas-de-las-alrededor-de-800-resoluciones-de-expulsion-emitidas-en-ceuta-7487089/"
     }
    ]
   },
   {
    "id": "ee",
    "nombre": "El Español",
-   "noticias": [
-    {
-     "id": "ee1",
-     "titular": "Cuerpo cesa al presidente de Adif una semana después del accidente de Urda",
-     "resumen": "Según El Español, Luis Pedro Marco de la Peña deja la presidencia de Adif tras una reunión con Carlos Cuerpo, ministro de Transportes en funciones, que le retiró la confianza. La salida llega menos de un día después de la dimisión de Óscar Puente y una semana después del choque de trenes en Urda, con sesenta y nueve víctimas. El diario cuenta que Marco había puesto su cargo a disposición desde el día del accidente, pero Puente lo mantuvo. Para sucederle suena Ángel García de la Bandera, director general de Operaciones y Explotación de Adif. Cuerpo busca un perfil técnico ajeno a la cúpula actual, aunque las investigaciones en curso complican la búsqueda. Los sindicatos de Adif y Renfe calificaron de humo el plan anterior y han convocado una huelga para el 17 de noviembre.",
-     "url": "https://www.elespanol.com/invertia/observatorios/movilidad/20261104/cuerpo-cesa-presidente-adif-dimision-puente-semana-despues-accidente-urda/1003744446212_0.html"
-    },
-    {
-     "id": "ee2",
-     "titular": "Sánchez presenta la dimisión de Puente como ejemplo y como baza electoral",
-     "resumen": "En una declaración desde Moncloa, Pedro Sánchez aceptó la renuncia de Óscar Puente con gratitud y respeto. Anunció que el vicepresidente Carlos Cuerpo asumirá Transportes de forma transitoria. Según El Español, Puente dimitió por sorpresa el martes, tras resistir una semana, aunque Sánchez le había pedido que siguiera hasta las elecciones del 29 de noviembre. Sánchez elogió su dedicación, su transparencia y su integridad, y pidió honrar su gesto para recuperar la confianza en el tren tras el accidente de Urda, con sesenta y nueve muertos. Afirmó que el Gobierno saldrá más fuerte de esta crisis. El diario interpreta sus palabras como un intento de usar la dimisión en campaña, al decir que no todos los servidores públicos son iguales. El Partido Popular sostiene que Puente se va por las encuestas.",
-     "url": "https://www.elespanol.com/espana/politica/20261104/sanchez-presenta-dimision-oscar-puente-ejemplo-politico-baza-electoral-vuelto-hacer-volveremos/1003744445469_0.html"
-    },
-    {
-     "id": "ee3",
-     "titular": "Los demócratas se hacen con el Congreso de Estados Unidos",
-     "resumen": "Según el seguimiento en directo de El Español sobre las elecciones de mitad de mandato celebradas el martes, los demócratas logran la mayoría en la Cámara de Representantes y se hacen con el control del Senado. El presidente Donald Trump reconoce la derrota, pero la atribuye a que él no estaba en las papeletas, y asegura que, si hubiera estado, habrían arrasado. Entre los resultados destaca el de James Talarico en Texas, el primer demócrata que gana allí en casi cuatro décadas. Barack Obama habla de un mensaje claro de los votantes, y Bernie Sanders celebra que los demócratas puedan pedir cuentas a Trump. Pedro Sánchez lo interpreta como un anticipo de lo que ocurrirá en España el 29 de noviembre. El diario avisa de que parte de los datos de esa página en directo no pudo comprobarse.",
-     "url": "https://www.elespanol.com/mundo/20261103/resultados-elecciones-estados-unidos-directo-ultima-hora-midterms-eeuu-donald-trump-encuestas-hoy-candidatos-votacion-victoria-democratas-republicanos-senado-congreso-2026/1003744444908_10.html"
-    }
-   ]
+   "noticias": []
   },
   {
    "id": "ed",
@@ -68,15 +48,15 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Sánchez reinicia su precampaña sin Puente y con el PSOE por debajo de cien escaños",
-     "resumen": "Según El Debate, tras la dimisión de Óscar Puente, anunciada tras su comparecencia por el accidente ferroviario de Urda, Pedro Sánchez encarga a Carlos Cuerpo el despacho ordinario de Transportes hasta las elecciones. Cuerpo se reunió con el presidente de Adif, Luis Pedro Marco, y este dimitió. El diario recuerda que varias encuestas dejan al PSOE por debajo de cien escaños, y que la suya le da un veinticinco coma cinco por ciento de voto. El partido retira los bailes y la llamada kisscam de sus mítines. Sánchez hará tres actos: el viernes en Valencia, el sábado en Tarragona y el domingo en Bilbao. El funeral por los sesenta y nueve fallecidos será el martes diez de noviembre. Y el lunes dieciséis habrá un cara a cara entre Sánchez y Feijóo en Mediaset. El entorno de Puente insiste en que se fue por voluntad propia.",
-     "url": "https://www.eldebate.com/espana/20261105/sanchez-resetea-precampana-puente-bailes-psoe-debajo-cien-escanos_477405.html"
+     "titular": "Puente dimitió dos horas después de que Sánchez recibiera acusaciones sobre un empresario",
+     "resumen": "Según El Debate, Diego Rubio, director del Gabinete de la Presidencia, informó a Pedro Sánchez de información sensible sobre presuntos hechos de corrupción de Óscar Puente. Fue dos horas antes de que el ministro de Transportes dimitiera, el martes tres de noviembre. El diario afirma que, cuando Puente era alcalde de Valladolid, un empresario de Medina del Campo le habría invitado a banquetes y a fiestas con prostitutas a cambio de mediar para conseguir ayudas públicas. Cita un aval de doscientos mil euros y otro de dos millones. El empresario reconoce las invitaciones, pero niega lo de las prostitutas, y su empresa dice que un aval no es una subvención. La dimisión llegó tras el accidente ferroviario de Urda, en Toledo, con sesenta y nueve muertos. Rubio no ha hecho declaraciones.",
+     "url": "https://www.eldebate.com/espana/20261105/puente-dimitio-2-horas-despues-sanchez-recibiera-acusaciones-sobre-empresario-le-invito-banquetes-fiestas-prostitutas-cambio-ayuda_477125.html"
     },
     {
      "id": "ed2",
-     "titular": "Las veces que Puente y Moncloa descartaron la dimisión tras Urda",
-     "resumen": "El Debate repasa las negativas públicas del ministro Óscar Puente a dimitir tras el accidente de Urda. El día del choque, en la estación de Atocha, rechazó dejar el cargo y dijo que su prioridad era esclarecer lo ocurrido. Dos días después afirmó que su forma de asumir responsabilidades era dar la cara y estar al mando, y señaló a Adif. Según fuentes de Moncloa recogidas por la agencia EFE, Pedro Sánchez le respaldaba. Casi todos los partidos pedían su dimisión desde hacía días. El diario cuenta que Puente informó a Sánchez minutos antes de anunciarla. En su declaración, Sánchez habló de dignidad y de voluntad propia, y aceptó la renuncia con gratitud y respeto. Alberto Núñez Feijóo calificó la dimisión de teatrillo, y la oposición la considera insuficiente y señala a Sánchez.",
-     "url": "https://www.eldebate.com/espana/20261104/veces-puente-moncloa-descartaron-dimision-accidente-urda_477132.html"
+     "titular": "Trump asegura que las deportaciones continuarán pese a la derrota electoral",
+     "resumen": "Tras la derrota republicana en las elecciones de mitad de mandato del martes tres de noviembre, el secretario de Seguridad Nacional, Markwayne Mullin, confirmó en la red social X que las deportaciones de inmigrantes seguirán. Según El Debate, los republicanos perdieron terreno en el noventa y nueve por ciento de unos dos mil doscientos condados respecto a las elecciones anteriores, sobre todo en los de mayoría hispana. En las encuestas a pie de urna de NBC, solo el catorce por ciento señaló la inmigración como principal problema, por detrás de la economía y la democracia. Un sondeo de octubre indicaba que el sesenta y dos por ciento de los votantes latinos cree que se expulsa a demasiados inmigrantes. Un instituto de estudios migratorios calcula unas novecientas ochenta mil deportaciones desde enero de dos mil veinticinco hasta finales de julio, y dice que el ochenta por ciento de los deportados no tenía condenas penales.",
+     "url": "https://www.eldebate.com/internacional/20261105/trump-insiste-deportaciones-inmigrantes-continuaran-pesar-elecciones_477428.html"
     }
    ]
   },
@@ -85,63 +65,50 @@
    "nombre": "The Objective",
    "noticias": [
     {
-     "id": "to4",
-     "titular": "El salario mínimo subirá a 1.286 euros en 2027, sin acuerdo con la patronal",
-     "resumen": "El Ministerio de Trabajo, dirigido por Yolanda Díaz, ha fijado una subida del cinco coma tres por ciento del salario mínimo para el año dos mil veintisiete. Según The Objective, pasará de mil doscientos veintiún euros a mil doscientos ochenta y seis euros brutos al mes, en catorce pagas. Son sesenta y cinco euros más al mes, y el total anual sube a dieciocho mil cuatro euros. La propuesta supera la recomendación de los expertos, que pedían un cuatro coma nueve por ciento, es decir, sesenta euros mensuales. El Gobierno consultó a patronal y sindicatos, pero no hubo acuerdo. El plazo de alegaciones termina el dieciséis de noviembre. El Consejo de Ministros podría aprobarla el diecisiete o el veinticuatro de noviembre, antes de las elecciones del veintinueve.",
-     "url": "https://theobjective.com/economia/2026-11-05/trabajo-salario-minimo-53-2027-1286-euros/"
-    },
-    {
      "id": "to1",
-     "titular": "Los trenes del choque de Urda ya tuvieron otro incidente en septiembre",
-     "resumen": "Según una exclusiva de The Objective, los dos trenes que chocaron el veintiocho de octubre en Urda, con sesenta y nueve muertos, ya habían sufrido otro incidente el quince de septiembre cerca de Toledo. Ese día cayó el sistema de señalización. Adif notificó la incidencia a las ocho y media de la mañana y, desde el centro de control de Atocha, no ordenó a los trenes reanudar la marcha. Los viajeros del tren de Alta Velocidad recibieron un correo de Renfe que culpaba al Iryo que iba delante, aunque Adif admitió después que el fallo era de señalización. Adif no comunicó que se había resuelto hasta las seis de la mañana del día siguiente. El periódico no ha podido saber dónde estaban exactamente los trenes durante la avería, porque faltan datos de localización.",
+     "titular": "Los dos trenes del choque de Urda ya sufrieron un incidente en el mismo punto en septiembre",
+     "resumen": "Según una exclusiva de The Objective, los dos trenes que chocaron el veintiocho de octubre en Urda, con sesenta y nueve muertos, habían sufrido ya el quince de septiembre una caída del sistema de señalización parecida, en un tramo cercano a Toledo. El diario cuenta que la incidencia se notificó a las ocho y media y que el centro de control de Atocha no ordenó reanudar la marcha. Renfe atribuyó el retraso a un tren de Iryo que iba delante, mientras Adif anunciaba una incidencia de señalización. Adif no dio el problema por resuelto hasta casi veinticuatro horas después. El periódico añade que el tren de alta velocidad llegó a superar los ciento sesenta kilómetros por hora en el accidente. No pudo precisar la posición exacta de los trenes en septiembre, porque faltan registros de geolocalización. El texto recuerda la dimisión de Óscar Puente y la del presidente de Adif.",
      "url": "https://theobjective.com/economia/transporte/2026-11-05/trenes-choque-urda-incidente-septiembre/"
     },
     {
      "id": "to2",
-     "titular": "Informes de Correos admiten fallos en el control del voto por correo",
-     "resumen": "Según fuentes del Partido Popular citadas por The Objective, dos informes internos de Correos reconocen deficiencias en el control del voto por correo. El primero es del siete de octubre y trata de reforzar la trazabilidad y la seguridad. El segundo, del veintinueve de octubre, se ocupa de la custodia de los envíos electorales. Ambos relacionan las nuevas medidas con el robo de votos en Fuente de Cantos, en Badajoz, donde desaparecieron ciento veinticuatro votos. Correos ha aceptado varias peticiones del Partido Popular: un plan para que los afectados puedan volver a votar, custodia en espacios cerrados, videovigilancia y seguimiento por GPS del transporte. El partido sostiene que faltan otras medidas, como guardar los votos en las sedes de las juntas electorales o informar sobre los que llegan tarde. Las elecciones generales son el veintinueve de noviembre.",
+     "titular": "Informes de Correos admiten deficiencias en el voto por correo",
+     "resumen": "Según fuentes del PP citadas por The Objective, dos informes internos de Correos reconocen deficiencias en el control del voto por correo de cara a las elecciones generales del veintinueve de noviembre. El primero es del siete de octubre y trata de trazabilidad, transparencia y seguridad. El segundo, del veintinueve de octubre, se centra en la custodia de los envíos electorales. Ambos mencionan el robo de Fuente de Cantos, en Badajoz, donde se sustrajeron ciento veinticuatro votos. Correos habría adoptado medidas como un plan para que los afectados puedan volver a votar, custodia en espacios cerrados, videovigilancia las veinticuatro horas y seguimiento por GPS del transporte. El PP considera que siguen pendientes la transparencia hacia ciudadanos y partidos y la información de Interior sobre incidencias. Los informes no son públicos y el artículo no recoge la respuesta de Correos.",
      "url": "https://theobjective.com/espana/politica/2026-11-05/voto-correos-deficiencias-informes/"
+    },
+    {
+     "id": "to3",
+     "titular": "Feijóo auditará en cien días todas las subvenciones, ayudas y contratos públicos",
+     "resumen": "Según The Objective, que ha tenido acceso al programa electoral del PP para el veintinueve de noviembre, un Gobierno de Feijóo auditaría en sus primeros cien días todo el gasto de la Administración central. Las subvenciones, ayudas y contratos que no cumplan sus objetivos serían corregidos o eliminados, y las partidas fraudulentas se denunciarían. Feijóo ha anunciado que presentará sus primeros Presupuestos en la primavera de dos mil veintisiete, y los de dos mil veintiocho a finales de ese año, condicionados a la auditoría. El programa propone además obligar a convocar elecciones tras dos prórrogas presupuestarias seguidas. Como prioridad de gasto cita la conservación de vías férreas y autovías. El diario recuerda que en julio Hacienda detectó una actividad frenética de ministerios pidiendo ayudas con urgencia. El artículo no recoge respuesta del Gobierno.",
+     "url": "https://theobjective.com/espana/politica/2026-11-05/feijoo-auditara-100-dias-subvenciones-ayudas-contratos/"
     }
    ]
   },
   {
    "id": "ok",
    "nombre": "OKDiario",
-   "noticias": [
-    {
-     "id": "ok1",
-     "titular": "Un joven lanza huevos durante un acto de Abascal en Ciudad Real",
-     "resumen": "Según OKDiario, un joven lanzó varios huevos durante una comparecencia ante los medios del presidente de Vox, Santiago Abascal, en la Plaza Mayor de Ciudad Real. El acto acabó reuniendo a unos mil doscientos asistentes. Antes, un grupo de radicales había gritado e insultado a la comitiva. Los huevos no alcanzaron a Abascal, sino a periodistas que cubrían el acto. La Policía Nacional identificó enseguida al autor, que huyó. El Ayuntamiento condenó lo ocurrido. Vox lo atribuye a grupos de extrema izquierda, y los simpatizantes abuchearon al agresor. Abascal pidió disculpas a los periodistas afectados y dijo que ya están aquí las milicias de Pedro Sánchez. El diario sitúa el suceso en plena campaña para las elecciones del 29 de noviembre y lo enlaza con otro episodio anterior en Tarragona.",
-     "url": "https://okdiario.com/espana/radicales-lanzan-huevos-contra-abascal-ciudad-real-ya-estan-aqui-milicias-pedro-sanchez-20703634"
-    },
-    {
-     "id": "ok2",
-     "titular": "El programa del PP promete eliminar las subvenciones y contratos que no cumplan su fin",
-     "resumen": "Según OKDiario, el programa electoral del Partido Popular para el 29 de noviembre prevé eliminar o corregir las subvenciones y los contratos públicos que no cumplan su objetivo, y denunciar los que sean fraudulentos. Incluye una auditoría del gasto en los primeros cien días de gobierno. Propone también que dos prórrogas presupuestarias obliguen a convocar elecciones. Alberto Núñez Feijóo anunció en Antena 3 presupuestos para la primavera de dos mil veintisiete y otros para dos mil veintiocho a finales de año. El diario recuerda pactos del Partido Popular con Vox: en Extremadura, reducir a la mitad las ayudas a sindicatos y patronales sin utilidad pública, y en Andalucía, suprimir las ayudas a ONG que favorezcan la inmigración ilegal. El artículo no recoge reacciones de otros partidos.",
-     "url": "https://okdiario.com/espana/feijoo-promete-eliminar-o-corregir-subvenciones-contratos-publicos-que-no-cumplan-fin-20700868"
-    }
-   ]
+   "noticias": []
   },
   {
    "id": "edi",
    "nombre": "elDiario.es",
    "noticias": [
     {
-     "id": "edi4",
-     "titular": "Koldo García dice que el abogado del PP le ofreció un millón por información",
-     "resumen": "Koldo García, antiguo asesor de Ábalos, asegura desde prisión que un abogado del Partido Popular le ofreció hasta un millón de euros a cambio de información contra el Gobierno de Sánchez. Lo cuenta en un audio enviado a la Cadena Ser, según elDiario.es. Afirma que el pago pasaría por la editora de Okdiario y que Eduardo Inda, director del medio, era el pagador. El periódico recuerda que esa editora abonó dos facturas, por doscientos cuarenta y dos mil euros, para la defensa de García en el Supremo. Okdiario sostiene que se trataba de un acuerdo para una docuserie y otras colaboraciones. El abogado señalado, Alberto Durán, ha negado estos hechos.",
+     "id": "edi1",
+     "titular": "Koldo dice que el abogado del PP le ofreció un millón por información contra el Gobierno",
+     "resumen": "Koldo García, asesor de José Luis Ábalos, afirma desde la cárcel, en un audio enviado a la Cadena SER, que Alberto Durán, abogado del PP hasta hace unos meses, le propuso pagar su defensa y hasta un millón de euros a través de la editora de Okdiario. A cambio, según Koldo, debía aportar información contra el Gobierno de Sánchez. Dice también que Eduardo Inda era el pagador del PP. Según elDiario.es, habría habido dos reuniones en un despacho de abogados. Como única prueba, el artículo cita dos facturas de doscientos cuarenta y dos mil euros pagadas por la editora para la defensa de Koldo. Durán niega los hechos. Okdiario, según el periódico, sostiene que el acuerdo era para una docuserie y otras colaboraciones. El asunto se conecta con la investigación del caso de Leire Díez.",
      "url": "https://www.eldiario.es/politica/koldo-garcia-afirma-abogado-pp-le-ofrecio-millon-informacion-gobierno-sanchez_1_13639592.html"
     },
     {
-     "id": "edi1",
-     "titular": "Los demócratas ganan con holgura el Congreso de Estados Unidos",
-     "resumen": "Según elDiario.es, los demócratas ganan con holgura la Cámara de Representantes y logran la mayoría en el Senado, con victorias en Texas, Iowa, Carolina del Sur, Carolina del Norte, Maine y Kansas. En Texas gana James Talarico, que según el periódico es el primer senador demócrata del estado en muchos años, y también el gobierno estatal. El autor atribuye la derrota de Trump a su baja aprobación, de cerca del treinta por ciento, al encarecimiento del combustible por la guerra con Irán y a su política de aranceles. Trump escribió en su red social que él no estaba en las papeletas y que, si hubiera estado, habrían ganado por mayoría aplastante. Una fuente de la Casa Blanca atribuyó el resultado a la calidad de los candidatos y dijo que el presidente reforzará su empeño en frenar a la izquierda radical.",
-     "url": "https://www.eldiario.es/internacional/eeuu-empieza-enterrar-trumpismo-rotunda-victoria-democrata-congreso_1_13636088.html"
+     "id": "edi2",
+     "titular": "El salario mínimo subirá un cinco coma tres por ciento hasta mil doscientos ochenta y seis euros",
+     "resumen": "El Ministerio de Trabajo, dirigido por Yolanda Díaz, ha publicado el borrador del decreto del salario mínimo para dos mil veintisiete. Según elDiario.es, subirá un cinco coma tres por ciento, sesenta y cinco euros brutos más al mes, hasta mil doscientos ochenta y seis euros en catorce pagas. La comisión de expertos recomendaba un cuatro coma nueve por ciento. Trabajo lo justifica por la pérdida de poder adquisitivo de este año, en que el salario subió un tres coma uno por ciento con una inflación media del tres coma cinco. Los sindicatos CCOO y UGT pedían un siete por ciento, y los empresarios rechazan una subida ahora. El Gobierno quiere aprobarla antes de las elecciones del veintinueve de noviembre, y las fuentes apuntan al Consejo de Ministros del diecisiete de noviembre. Los sindicatos creen muy posible que se apruebe sin apoyo de la patronal, algo inédito en esta legislatura.",
+     "url": "https://www.eldiario.es/economia/salario-minimo-subira-5-3-1-286-euros-mes_1_13639220.html"
     },
     {
-     "id": "edi2",
-     "titular": "El presidente de Adif renuncia ante Carlos Cuerpo",
-     "resumen": "Luis Pedro Marco de la Peña presentó el miércoles su renuncia como presidente de Adif ante Carlos Cuerpo, vicepresidente primero y ministro de Economía, un día después de la dimisión de Óscar Puente. Según fuentes del Gobierno citadas por elDiario.es, Cuerpo aceptó la renuncia y agradeció su trabajo. Antes, Cuerpo había mantenido una primera reunión con el presidente de Adif y con el secretario de Estado de Transportes. Marco de la Peña ya le había dicho a Puente que quería dejar el cargo. En su última comparecencia, Puente había defendido la dirección de Adif y criticó el señalamiento público a su gestión, que calificó de torticero, falaz y absolutamente injusto. La noticia se enmarca en la crisis ferroviaria tras el accidente de Urda, la segunda gran tragedia en unos diez meses.",
+     "id": "edi3",
+     "titular": "El presidente de Adif presenta su renuncia",
+     "resumen": "Luis Pedro Marco de la Peña ha presentado su renuncia como presidente de Adif ante Carlos Cuerpo, vicepresidente primero y ministro de Economía. Según fuentes del Gobierno citadas por elDiario.es, la decisión llega un día después de la dimisión de Óscar Puente como ministro de Transportes. Cuerpo ha aceptado la renuncia y ha agradecido su trabajo. El ministro de Economía ya ha asumido la gestión de los asuntos del Ministerio de Transportes y ha mantenido una primera reunión con el presidente de Adif y el secretario de Estado de Transportes. Marco de la Peña ya había comunicado a Puente que quería dejar el cargo. En su última comparecencia en la Diputación Permanente, Puente defendió la dirección de Adif y calificó las críticas a su gestión de análisis torticero y falaz. El artículo no recoge reacciones de la oposición ni explica el motivo concreto de la renuncia.",
      "url": "https://www.eldiario.es/economia/presidente-adif-luis-pedro-marco-pena-presenta-cuerpo-renuncia-cargo_1_13639153.html"
     }
    ]
