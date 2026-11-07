@@ -373,6 +373,8 @@
         .en-sel button[aria-pressed="true"] { background:#7c3aed; border-color:#7c3aed; color:#fff; }
         .en-sel button[aria-pressed="true"] small { color:#ede9fe; }
         .en-forget { display:block; margin:22px auto 6px; min-height:46px; padding:0 16px; border-radius:12px; border:2px solid #cbd5e1; background:#fff; color:#475569; font-weight:700; font-size:15px; cursor:pointer; }
+        .itin-mapa { position:relative; display:inline-flex; align-items:center; justify-content:center; width:40px; height:32px; margin:-6px 0 -4px 6px; vertical-align:middle; border-radius:10px; background:#eef2ff; border:2px solid #c7d2fe; text-decoration:none; font-size:18px; }
+        .itin-mapa::before { content:""; position:absolute; inset:-6px -2px; }
         .tv-h { margin:18px 0 8px; font-size:19px; font-weight:800; color:#0f172a; }
         .tv-img { display:block; width:100%; border-radius:14px; border:1px solid #cbd5e1; }
         .tv-card { margin-top:10px; padding:14px; border-radius:14px; background:#f8fafc; border:2px solid #cbd5e1; }
@@ -1867,7 +1869,7 @@
             { move: 'taxi', text: 'A Harrods: taxi o bus 10 min (≈£10 el taxi), o 25 min andando por Grosvenor Place y Knightsbridge.', from: 'almuerzo_victoria', to: 'harrods' },
             { t: '14:00', n: 'harrods', icon: '🏬', title: 'Harrods', text: 'Fachada con miles de bombillas y escaparates navideños. Se puede entrar a ver la sección de comida.', today: 'lunes 10:00–21:00' },
             { move: 'walk', min: 15, text: 'Sube por Knightsbridge hasta Hyde Park Corner y entra en el parque: Winter Wonderland está a la derecha.', from: 'harrods', to: 'hyde_park' },
-            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. IMPORTANTE: hay que reservar online una franja de entrada (gratis en horas valle) y la pista de hielo aparte.', today: '10:00–22:00' },
+            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', mapa: 'winter-wonderland/', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. IMPORTANTE: hay que reservar online una franja de entrada (gratis en horas valle) y la pista de hielo aparte.', today: '10:00–22:00' },
             { move: 'taxi', text: 'Taxi desde Knightsbridge / Hyde Park Corner a Hammersmith: unos 15 min y £13–17.' }
           ],
           gf: 'Al Duca (Willow Place, Victoria): italiano con amplio menú sin gluten · Casa do Frango Victoria.' },
@@ -1931,7 +1933,7 @@
             const num = st.num ? '<span class="itin-num" style="background:' + col + '">' + st.num + '</span>' : '';
             const circ = st.num ? '<span class="itin-sr">' + CIRCLED[st.num - 1] + ' </span>' : '';
             h += '<div class="itinerary-item ' + day + '"><span class="itinerary-time">' + st.t + '</span><span class="itinerary-icon">' + (num || st.icon) + '</span><div class="itinerary-details">'
-              + '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4>' + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
+              + '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + (st.mapa ? ' <a class="itin-mapa" href="' + st.mapa + '" aria-label="Ver el mapa de ' + st.title.replace(/[⭐"]/g, '').trim() + '" title="Ver el mapa">🗺️</a>' : '') + '</h4>' + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
               + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
               + (st.metro ? '<a class="itin-go" href="metro/?v=6&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
               + '</div></div>';
