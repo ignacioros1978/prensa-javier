@@ -377,8 +377,9 @@
         .en-dl { display:inline-flex; align-items:center; min-height:44px; padding:0 14px; margin-top:10px; border-radius:12px; background:#f1f5f9; color:#0f172a; font-weight:800; text-decoration:none; }
         .en-file { display:flex; align-items:center; justify-content:center; width:100%; min-height:50px; margin-top:10px; border-radius:14px; border:2px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:16px; cursor:pointer; font-family:inherit; }
         .en-forget { display:block; margin:22px auto 6px; min-height:46px; padding:0 16px; border-radius:12px; border:2px solid #cbd5e1; background:#fff; color:#475569; font-weight:700; font-size:15px; cursor:pointer; }
-        .itin-mapa { position:relative; display:inline-flex; align-items:center; justify-content:center; width:40px; height:32px; margin:-6px 0 -4px 6px; vertical-align:middle; border-radius:10px; background:#eef2ff; border:2px solid #c7d2fe; text-decoration:none; font-size:18px; }
-        .itin-mapa::before { content:""; position:absolute; inset:-6px -2px; }
+        .h4-map { display:flex; align-items:flex-start; gap:8px; }
+        .h4-map > span { flex:1; min-width:0; }
+        .itin-mapa { flex:none; display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; margin:-8px 0 -12px; border-radius:12px; background:#eef2ff; border:2px solid #c7d2fe; text-decoration:none; font-size:20px; line-height:1; }
         .tv-h { margin:18px 0 8px; font-size:19px; font-weight:800; color:#0f172a; }
         .tv-img { display:block; width:100%; border-radius:14px; border:1px solid #cbd5e1; }
         .tv-card { margin-top:10px; padding:14px; border-radius:14px; background:#f8fafc; border:2px solid #cbd5e1; }
@@ -1937,7 +1938,7 @@
             const num = st.num ? '<span class="itin-num" style="background:' + col + '">' + st.num + '</span>' : '';
             const circ = st.num ? '<span class="itin-sr">' + CIRCLED[st.num - 1] + ' </span>' : '';
             h += '<div class="itinerary-item ' + day + '"><span class="itinerary-time">' + st.t + '</span><span class="itinerary-icon">' + (num || st.icon) + '</span><div class="itinerary-details">'
-              + '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + (st.mapa ? ' <a class="itin-mapa" href="' + st.mapa + '" aria-label="Ver el mapa de ' + st.title.replace(/[⭐"]/g, '').trim() + '" title="Ver el mapa">🗺️</a>' : '') + '</h4>' + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
+              + (st.mapa ? '<h4 class="h4-map"><span>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</span><a class="itin-mapa" href="' + st.mapa + '" aria-label="Ver el mapa de ' + st.title.replace(/[⭐"]/g, '').trim() + '" title="Ver el mapa">🗺️</a></h4>' : '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4>') + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
               + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
               + (st.metro ? '<a class="itin-go" href="metro/?v=6&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
               + '</div></div>';
