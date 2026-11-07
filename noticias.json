@@ -1,16 +1,17 @@
 {
- "fecha": "2026-11-06",
- "fechaTexto": "viernes 6 de noviembre",
- "actualizado": "2026-11-06T06:58:37+01:00",
+ "fecha": "2026-11-07",
+ "fechaTexto": "sábado 7 de noviembre",
+ "actualizado": "2026-11-07T06:56:12+01:00",
  "portada": [
-  "ed1",
-  "to1",
-  "edi2",
-  "edi1",
   "ld2",
-  "ed2",
-  "ld1",
-  "ld3"
+  "to2",
+  "ee1",
+  "edi1",
+  "edi3",
+  "to3",
+  "ed1",
+  "ee2",
+  "ld1"
  ],
  "diarios": [
   {
@@ -19,28 +20,41 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Colau propone un impuesto a los más ricos para recaudar diez mil millones",
-     "resumen": "Ada Colau, candidata de Frente Amplio a las elecciones generales del 29 de noviembre, ha presentado en Madrid una propuesta fiscal contra los llamados ultrarricos. Según Libertad Digital, plantea un impuesto del dos por ciento a los patrimonios superiores a un millón de euros y del tres por ciento a partir de veinte millones. Calcula que recaudaría más de diez mil millones de euros. Colau también quiere revisar las desgravaciones de grandes empresas y bancos. Sostiene que su tipo efectivo está entre el seis y el nueve por ciento, mientras que las pequeñas y medianas empresas pagan cerca del veinte. Además propone un gravamen para quienes tienen más de cuatro viviendas, con el objetivo de llevar unas quinientas mil casas al mercado del alquiler. Las cifras son las que defiende la candidata. El artículo no recoge la respuesta de otros partidos.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-11-05/colau-lanza-su-ofensiva-fiscal-contra-los-ultrarricos-para-recaudar-10-000-millones-de-euros-7487090/"
+     "titular": "Cortan durante 43 días la conexión entre la A-5 y la M-30 en Madrid",
+     "resumen": "Desde el diez de noviembre hasta el veintitrés de diciembre, la conexión entre la autovía A-5 y la M-30 permanecerá cerrada en los dos sentidos. Según Libertad Digital, el corte forma parte de la fase final del soterramiento de la A-5. El tramo en obras seguirá abierto con dos carriles por sentido, pero los coches no podrán entrar directamente a la M-30. Habrá desvíos por la avenida de Portugal y por Batán. Los trabajos incluyen demoler la rampa actual, colocar ciento cuarenta y dos vigas, cubrir un tramo de ciento setenta y dos metros y excavar unos siete mil metros cúbicos de tierra. Por este enlace pasan unos ochenta mil vehículos al día. El Ayuntamiento reforzará hasta un veinticinco por ciento algunas líneas de autobús, aumentará los trenes en dos líneas de metro y añadirá autobuses interurbanos. El concejal de Movilidad, Borja Carabante, pidió paciencia y avisó de que los primeros días serán complicados. El alcalde, José Luis Martínez-Almeida, asegura que el túnel abrirá el veintitrés de diciembre.",
+     "url": "https://www.libertaddigital.com/madrid/2026-11-07/la-conexion-de-la-a-5-con-la-m-30-se-cortara-en-ambos-sentidos-durante-43-dias-desvios-y-alternativas-7486534/"
     },
     {
      "id": "ld2",
-     "titular": "Amenazas de bomba obligan a desviar quince vuelos en Europa",
-     "resumen": "Según Libertad Digital, al menos quince aviones de pasajeros han tenido que aterrizar de emergencia en Europa por supuestos avisos de bomba. Uno de ellos, un Airbus de Aer Lingus que iba de Dublín a Roma con ciento cincuenta y un pasajeros y seis tripulantes, fue desviado a una base militar en Normandía. Los ocupantes están a salvo y las autoridades francesas inspeccionan el aparato. Bulgaria informó de tres vuelos de Ryanair con avisos, procedentes de Madrid, Londres y Copenhague. Dos aviones de Finnair salidos de Helsinki también recibieron amenazas, y uno aterrizó en Roma escoltado por la fuerza aérea italiana. La policía checa habló de otros cuatro aviones con destino a Praga. En ningún caso se encontraron explosivos. El martes ya se habían registrado amenazas falsas contra siete vuelos en varios países, entre ellos España. El diario no informa de autores ni de detenidos.",
-     "url": "https://www.libertaddigital.com/internacional/europa/2026-11-05/una-oleada-de-amenazas-de-bomba-obliga-a-desviar-mas-de-una-decena-vuelos-en-europa-7487079/"
-    },
-    {
-     "id": "ld3",
-     "titular": "Solo unas pocas de las ochocientas órdenes de expulsión en Ceuta se han ejecutado",
-     "resumen": "El ministro Ángel Víctor Torres, responsable único de la crisis en Ceuta, anunció que el Gobierno empezará a desmantelar los campamentos de migrantes en los próximos días. Dijo que quedan menos personas y que ya se han producido más de quince mil retornos. Sin embargo, según fuentes consultadas por Libertad Digital, de unas ochocientas resoluciones de expulsión emitidas desde el once de septiembre apenas se han ejecutado unas pocas. El Gobierno no facilita datos oficiales y Torres evitó dar cifras. Esas fuentes cuentan que los agentes acuden a los campamentos con muchas notificaciones y se van con una o ninguna. Fuentes policiales y jurídicas, que piden anonimato, atribuyen a algunas organizaciones no gubernamentales el aviso a los afectados para que abandonen el lugar. El artículo no incluye la respuesta de esas organizaciones ni la del Gobierno.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-05/por-que-solo-se-han-ejecutado-unas-cuantas-de-las-alrededor-de-800-resoluciones-de-expulsion-emitidas-en-ceuta-7487089/"
+     "titular": "Detienen en Paraguay al expresidente Santiago Peña tras su destitución",
+     "resumen": "La Policía de Paraguay informó de que el expresidente Santiago Peña quedó detenido en su domicilio por orden de la Fiscalía. Ocurre en plena crisis política por el cierre del banco Ueno. Según Libertad Digital, el fiscal Cristian Benítez explicó que el caso es complejo y que un juez de garantías decidirá más adelante cómo sigue el proceso. La orden alcanza también a Carlos Carvallo Spalding, que dirigió el Banco Central hasta el martes, cuando dimitió por el escándalo. El Senado aprobó la destitución de Peña, mediante juicio político, con cuarenta y cuatro votos de cuarenta y cinco, porque un senador se ausentó. Al perder su cargo, Peña dejó de tener protección frente a la justicia. Antes había pedido aplazar el juicio setenta y dos horas, y un grupo de senadores de su propio partido, el Colorado, abandonó el pleno. El vicepresidente, Pedro Alliana, juró como nuevo presidente y prometió compensar a los afectados, empezando por los más desfavorecidos. El artículo no recoge la reacción de Peña ni de su defensa.",
+     "url": "https://www.libertaddigital.com/internacional/latinoamerica/2026-11-07/detienen-en-paraguay-al-expresidente-santiago-pena-tras-su-destitucion-7488077/"
     }
    ]
   },
   {
    "id": "ee",
    "nombre": "El Español",
-   "noticias": []
+   "noticias": [
+    {
+     "id": "ee1",
+     "titular": "La Policía detiene a dirigentes del grupo neonazi Núcleo Nacional",
+     "resumen": "La Policía Nacional ha detenido a varios dirigentes del grupo neonazi Núcleo Nacional. Según El Español, entre ellos están Isabel Medina Peralta, los hermanos Iván y David Rico Olivares, y el activista Alberto Pugilato. Se les investiga por presuntos delitos de odio y por asociación ilícita. La investigación nació de unos altercados ocurridos a comienzos de este año cerca de un colegio jesuita de Gijón, durante una protesta contra la retirada de un monumento considerado franquista. Siete detenidos irán a Gijón a declarar ante la jueza, y otros tres quedan a disposición de juzgados de sus localidades. El diario señala que se esperan más detenciones. El grupo nació en dos mil veintidós y ganó visibilidad en las protestas frente a la sede del PSOE en Ferraz contra la amnistía. Interior lo inscribió como asociación en agosto de dos mil veinticuatro. Peralta fue condenada en julio a un año de prisión por un discurso xenófobo pronunciado en dos mil veintiuno. El artículo no recoge declaraciones oficiales nuevas.",
+     "url": "https://www.elespanol.com/espana/20261107/policia-descabeza-ultras-nucleo-nacional-rico-peralta-pugilato-detenidos-mayor-golpe-grupo-neonazi/1003744449624_0.html"
+    },
+    {
+     "id": "ee2",
+     "titular": "Qué permisos deben dar las empresas para votar el 29 de noviembre",
+     "resumen": "Con las elecciones generales del 29 de noviembre a la vista, El Español repasa los permisos que las empresas deben conceder. Quien tenga que trabajar mientras están abiertas las urnas puede tener hasta cuatro horas pagadas para ir a votar, aunque no es automático y depende de cómo coincida su horario. Los presidentes y vocales de mesa tienen jornada completa pagada si les toca trabajar ese domingo, y cinco horas pagadas menos el lunes treinta, que en principio se descuentan al comienzo de la jornada. Los interventores tienen el mismo régimen y los apoderados solo el día de las elecciones. El diario recuerda que formar parte de una mesa es obligatorio. Las excusas se presentan ante la Junta Electoral de Zona en siete días, y no acudir puede suponer una pena de tres meses a un año de prisión o una multa. Según el Instituto Nacional de Estadística, hay más de treinta y ocho millones de electores, y más de un millón seiscientos mil votarán por primera vez en unas generales.",
+     "url": "https://www.elespanol.com/espana/20261107/oficial-empresas-deben-conceder-permisos-retribuidos-trabajadores-elecciones/1003744427201_0.html"
+    },
+    {
+     "id": "ee3",
+     "titular": "Cobrar parte del sueldo en especie: cómo funciona la retribución flexible",
+     "resumen": "El Español explica la retribución flexible, que permite cambiar hasta un treinta por ciento del sueldo bruto anual por bienes o servicios. Se apoya en la ley del impuesto sobre la renta y debe pactarse por convenio o modificando el contrato, con trámites antes del treinta y uno de diciembre para que cuente en la renta de este año. El titular dice que se puede cobrar ese treinta por ciento sin pagar impuestos, pero el texto matiza que solo algunos conceptos quedan exentos. Entre los límites citados están los vales de comida de once euros al día, el seguro médico de quinientos euros al año por persona y el transporte público de mil quinientos euros al año. La guardería autorizada no tiene tope. Como ejemplo, con un sueldo bruto de treinta y cinco mil euros y tres mil euros destinados a guardería y comidas, el ahorro sería de unos novecientos euros al año. El diario no cita un documento concreto de Hacienda que lo confirme.",
+     "url": "https://www.elespanol.com/sociedad/20261107/hacienda-confirma-trabajadores-podran-cobrar-sueldo-especie-sin-pagar-irpf/1003744444278_0.html"
+    }
+   ]
   },
   {
    "id": "ed",
@@ -48,15 +62,15 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Puente dimitió dos horas después de que Sánchez recibiera acusaciones sobre un empresario",
-     "resumen": "Según El Debate, Diego Rubio, director del Gabinete de la Presidencia, informó a Pedro Sánchez de información sensible sobre presuntos hechos de corrupción de Óscar Puente. Fue dos horas antes de que el ministro de Transportes dimitiera, el martes tres de noviembre. El diario afirma que, cuando Puente era alcalde de Valladolid, un empresario de Medina del Campo le habría invitado a banquetes y a fiestas con prostitutas a cambio de mediar para conseguir ayudas públicas. Cita un aval de doscientos mil euros y otro de dos millones. El empresario reconoce las invitaciones, pero niega lo de las prostitutas, y su empresa dice que un aval no es una subvención. La dimisión llegó tras el accidente ferroviario de Urda, en Toledo, con sesenta y nueve muertos. Rubio no ha hecho declaraciones.",
-     "url": "https://www.eldebate.com/espana/20261105/puente-dimitio-2-horas-despues-sanchez-recibiera-acusaciones-sobre-empresario-le-invito-banquetes-fiestas-prostitutas-cambio-ayuda_477125.html"
+     "titular": "Adif conocía desde 2024 un riesgo grave en la vía de Adamuz",
+     "resumen": "Según El Debate, un informe de la autoridad que investiga el accidente de Adamuz, en Córdoba, que dejó cuarenta y seis muertos el dieciocho de enero, indica que Adif sabía desde dos mil veinticuatro que sus circuitos de vía no garantizaban detectar algunas roturas completas de carril. Ese riesgo figuraba en un proyecto de renovación con la máxima gravedad y el calificativo de intolerable, pero no se corrigió. Los registros apuntan a que una caída de tensión la noche del diecisiete de enero pudo señalar la rotura, que habría pasado inadvertida unas veintidós horas, con cuarenta y siete trenes pasando por el punto. La recomendación de seguridad llevaba meses frenada y, según fuentes del organismo, se redujo de veintiséis a cinco páginas. Desde dos mil diecisiete, solo el cuarenta y uno por ciento de las roturas en alta velocidad se detectaron con estos circuitos. Las causas de la fractura siguen sin determinarse. El texto no incluye la versión de Adif ni del Ministerio.",
+     "url": "https://www.eldebate.com/economia/20261106/adif-conocia-desde-2024-riesgo-catastrofico-e-intolerable-via-adamuz-no-corrigio_477798.html"
     },
     {
      "id": "ed2",
-     "titular": "Trump asegura que las deportaciones continuarán pese a la derrota electoral",
-     "resumen": "Tras la derrota republicana en las elecciones de mitad de mandato del martes tres de noviembre, el secretario de Seguridad Nacional, Markwayne Mullin, confirmó en la red social X que las deportaciones de inmigrantes seguirán. Según El Debate, los republicanos perdieron terreno en el noventa y nueve por ciento de unos dos mil doscientos condados respecto a las elecciones anteriores, sobre todo en los de mayoría hispana. En las encuestas a pie de urna de NBC, solo el catorce por ciento señaló la inmigración como principal problema, por detrás de la economía y la democracia. Un sondeo de octubre indicaba que el sesenta y dos por ciento de los votantes latinos cree que se expulsa a demasiados inmigrantes. Un instituto de estudios migratorios calcula unas novecientas ochenta mil deportaciones desde enero de dos mil veinticinco hasta finales de julio, y dice que el ochenta por ciento de los deportados no tenía condenas penales.",
-     "url": "https://www.eldebate.com/internacional/20261105/trump-insiste-deportaciones-inmigrantes-continuaran-pesar-elecciones_477428.html"
+     "titular": "Maroto se reunió dos veces con el empresario que invitó a Puente a fiestas",
+     "resumen": "El Debate sostiene que la exministra de Industria Reyes Maroto se reunió en dos ocasiones con Francisco Javier Meléndez, dueño de Patatas Meléndez. Según el diario, este empresario habría invitado al ministro Óscar Puente a fiestas con prostitutas a cambio de ayudas. La primera reunión fue el dos de agosto de dos mil veintiuno, para hablar de un proyecto de digitalización de treinta y dos millones de euros. La segunda fue una visita a la fábrica el nueve de septiembre de dos mil veintidós. El medio documenta dos avales públicos, uno de doscientos mil euros del Ministerio de Industria en dos mil veintitrés y otro de dos millones del Instituto de Crédito Oficial en dos mil veinticinco. La empresa dice que fue una garantía y no una subvención, que ya devolvió los préstamos y que rechaza cualquier irregularidad. El artículo no recoge respuesta de Maroto ni del PSOE. Son afirmaciones del propio diario y de sus fuentes.",
+     "url": "https://www.eldebate.com/espana/20261106/maroto-reunio-dos-veces-empresario-senalado-invitar-puente-fiestas-prostitutas-pedirle-ministro-promocionara-fabrica_477236.html"
     }
    ]
   },
@@ -66,28 +80,35 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Los dos trenes del choque de Urda ya sufrieron un incidente en el mismo punto en septiembre",
-     "resumen": "Según una exclusiva de The Objective, los dos trenes que chocaron el veintiocho de octubre en Urda, con sesenta y nueve muertos, habían sufrido ya el quince de septiembre una caída del sistema de señalización parecida, en un tramo cercano a Toledo. El diario cuenta que la incidencia se notificó a las ocho y media y que el centro de control de Atocha no ordenó reanudar la marcha. Renfe atribuyó el retraso a un tren de Iryo que iba delante, mientras Adif anunciaba una incidencia de señalización. Adif no dio el problema por resuelto hasta casi veinticuatro horas después. El periódico añade que el tren de alta velocidad llegó a superar los ciento sesenta kilómetros por hora en el accidente. No pudo precisar la posición exacta de los trenes en septiembre, porque faltan registros de geolocalización. El texto recuerda la dimisión de Óscar Puente y la del presidente de Adif.",
-     "url": "https://theobjective.com/economia/transporte/2026-11-05/trenes-choque-urda-incidente-septiembre/"
+     "titular": "Un sondeo da a PP y Vox entre 198 y 215 diputados",
+     "resumen": "The Objective publica una nueva entrega de su Votómetro, un sondeo elaborado por la consultora Redlines. Según este estudio, el accidente ferroviario de Urda, ocurrido el veintiocho de octubre, frena la mejora que el PSOE venía registrando desde el inicio de la precampaña. El PSOE quedaría entre ciento uno y ciento diez escaños, con un veintiséis coma siete por ciento de los votos. PP y Vox sumarían entre ciento noventa y ocho y doscientos quince diputados, por encima de los ciento setenta y seis de la mayoría absoluta. El PP tendría entre ciento treinta y uno y ciento cuarenta escaños, y Vox entre sesenta y siete y setenta y cinco. El bloque de izquierdas se quedaría entre ciento treinta y cuatro y ciento cincuenta y dos. El diario calcula en un noventa y ocho coma seis por ciento la probabilidad de que Feijóo y Abascal puedan gobernar. El método combina la media de varias encuestas con diez mil simulaciones por ordenador.",
+     "url": "https://theobjective.com/espana/politica/2026-11-07/urda-frena-psoe-crece-pp-vox-votometro/"
     },
     {
      "id": "to2",
-     "titular": "Informes de Correos admiten deficiencias en el voto por correo",
-     "resumen": "Según fuentes del PP citadas por The Objective, dos informes internos de Correos reconocen deficiencias en el control del voto por correo de cara a las elecciones generales del veintinueve de noviembre. El primero es del siete de octubre y trata de trazabilidad, transparencia y seguridad. El segundo, del veintinueve de octubre, se centra en la custodia de los envíos electorales. Ambos mencionan el robo de Fuente de Cantos, en Badajoz, donde se sustrajeron ciento veinticuatro votos. Correos habría adoptado medidas como un plan para que los afectados puedan volver a votar, custodia en espacios cerrados, videovigilancia las veinticuatro horas y seguimiento por GPS del transporte. El PP considera que siguen pendientes la transparencia hacia ciudadanos y partidos y la información de Interior sobre incidencias. Los informes no son públicos y el artículo no recoge la respuesta de Correos.",
-     "url": "https://theobjective.com/espana/politica/2026-11-05/voto-correos-deficiencias-informes/"
+     "titular": "Bruselas investiga a directivos de Adif por obras de Urda con fondos europeos",
+     "resumen": "Según The Objective, la Unidad Central Operativa de la Guardia Civil acudió el viernes al Tribunal de Cuentas, por orden de la Fiscalía Europea, para recoger documentación. La Fiscalía europea abrió por su cuenta una investigación por posible fraude con fondos europeos de recuperación. También actuó en Adif y en la Agencia de Seguridad Ferroviaria. El foco está en el contrato de señalización de la línea Madrid-Sevilla, adjudicado en octubre de dos mil veintiuno a la empresa Thales por setenta y siete millones y medio de euros, con una rebaja del veintiocho coma cinco por ciento. Un informe del Tribunal de Cuentas de diciembre de dos mil veinticinco señaló que en seis expedientes, este incluido, no se había acreditado bien el poder de los firmantes. El diario aclara que el Tribunal no concluyó que hubiera fraude. Las instalaciones se terminaron en junio, pero entrarán en servicio a comienzos de dos mil veintisiete. El sistema de frenado automático falló ciento setenta veces, la última veinte minutos antes del accidente de Urda.",
+     "url": "https://theobjective.com/espana/2026-11-07/bruselas-directivos-adif-urda-fondos-europeos/"
     },
     {
      "id": "to3",
-     "titular": "Feijóo auditará en cien días todas las subvenciones, ayudas y contratos públicos",
-     "resumen": "Según The Objective, que ha tenido acceso al programa electoral del PP para el veintinueve de noviembre, un Gobierno de Feijóo auditaría en sus primeros cien días todo el gasto de la Administración central. Las subvenciones, ayudas y contratos que no cumplan sus objetivos serían corregidos o eliminados, y las partidas fraudulentas se denunciarían. Feijóo ha anunciado que presentará sus primeros Presupuestos en la primavera de dos mil veintisiete, y los de dos mil veintiocho a finales de ese año, condicionados a la auditoría. El programa propone además obligar a convocar elecciones tras dos prórrogas presupuestarias seguidas. Como prioridad de gasto cita la conservación de vías férreas y autovías. El diario recuerda que en julio Hacienda detectó una actividad frenética de ministerios pidiendo ayudas con urgencia. El artículo no recoge respuesta del Gobierno.",
-     "url": "https://theobjective.com/espana/politica/2026-11-05/feijoo-auditara-100-dias-subvenciones-ayudas-contratos/"
+     "titular": "Los sindicatos cuestionan la versión de Puente sobre el accidente de Urda",
+     "resumen": "Los sindicatos ferroviarios rechazan la explicación del Ministerio de Transportes sobre el accidente de Urda, según The Objective. El ministro Óscar Puente atribuyó el accidente a un error humano de un operador en Atocha y al hecho de que dos trenes, un Iryo y un AVE de Renfe, ocupaban el mismo tramo de vía de unos veinte kilómetros. Los sindicatos responden que eso es muy grave y casi imposible si el sistema de seguridad funcionaba, y que nadie lo ha explicado. Sospechan que se oculta la causa de la caída de ese sistema. También critican la filtración del audio entre el operador y el maquinista, que murió. Piden la dimisión del ministro y de altos cargos de Adif, y convocan paros los días diez y doce de noviembre. El diario recuerda que Puente ya ha sido sustituido por Carlos Cuerpo y que el accidente de Adamuz, en enero, dejó cuarenta y seis fallecidos. El texto no recoge una respuesta oficial nueva.",
+     "url": "https://theobjective.com/espana/politica/2026-11-07/sindicatos-cuestionan-version-puente-canton/"
     }
    ]
   },
   {
    "id": "ok",
    "nombre": "OKDiario",
-   "noticias": []
+   "noticias": [
+    {
+     "id": "ok1",
+     "titular": "Detenidos en una operación policial contra el grupo neonazi Núcleo Nacional",
+     "resumen": "Según OKDiario, la Policía Nacional ha hecho una operación contra el grupo Núcleo Nacional, al que el diario describe como neonazi. Hubo detenciones en Madrid, Valladolid, Alicante, Asturias, Burgos y Pontevedra, y se registró la sede del grupo en Madrid. El diario habla de al menos nueve detenidos. Las diligencias las coordina la Comisaría General de Información y siguen abiertas. El texto no da nombres ni cargos concretos. OKDiario atribuye al grupo entre mil quinientos y dos mil afiliados y ciento catorce mil seguidores en redes sociales. Recuerda denuncias de estudiantes por agresiones en Gijón, investigaciones previas por delitos de odio y altercados en Madrid y Sevilla. El grupo iba a celebrar su aniversario con una manifestación en la Plaza de España el sábado. El artículo se publicó el viernes seis de noviembre y no recoge declaraciones de la Policía, del Gobierno ni del propio grupo.",
+     "url": "https://okdiario.com/espana/varios-detenidos-operacion-policia-contra-grupo-neonazi-nucleo-nacional-20714086"
+    }
+   ]
   },
   {
    "id": "edi",
@@ -95,21 +116,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Koldo dice que el abogado del PP le ofreció un millón por información contra el Gobierno",
-     "resumen": "Koldo García, asesor de José Luis Ábalos, afirma desde la cárcel, en un audio enviado a la Cadena SER, que Alberto Durán, abogado del PP hasta hace unos meses, le propuso pagar su defensa y hasta un millón de euros a través de la editora de Okdiario. A cambio, según Koldo, debía aportar información contra el Gobierno de Sánchez. Dice también que Eduardo Inda era el pagador del PP. Según elDiario.es, habría habido dos reuniones en un despacho de abogados. Como única prueba, el artículo cita dos facturas de doscientos cuarenta y dos mil euros pagadas por la editora para la defensa de Koldo. Durán niega los hechos. Okdiario, según el periódico, sostiene que el acuerdo era para una docuserie y otras colaboraciones. El asunto se conecta con la investigación del caso de Leire Díez.",
-     "url": "https://www.eldiario.es/politica/koldo-garcia-afirma-abogado-pp-le-ofrecio-millon-informacion-gobierno-sanchez_1_13639592.html"
+     "titular": "El PSOE estudia querellarse por los pagos a Koldo",
+     "resumen": "Koldo García, exasesor de Ábalos y encarcelado, afirma que un abogado que hasta hace unos meses llevaba casos de corrupción del PP le ofreció hasta un millón de euros para mentir contra el Gobierno, según elDiario.es. Según su relato, el dinero cubriría su defensa y sacaría de la causa a su hermano y a su pareja, a cambio de declarar contra Pedro Sánchez y Begoña Gómez. El abogado, Alberto Durán, lo niega. El diario cita dos facturas de la editora de OKDiario por doscientos cuarenta y dos mil euros por la defensa de Koldo. La dirigente socialista Rebeca Torró no descartó acciones judiciales. Sánchez evitó entrar en el fondo, pidió explicaciones a Feijóo y dijo no conocer a uno de los detenidos ni que fuera su chófer. El jueves la Unidad Central Operativa realizó una operación en el caso Koldo, y el juez abrió una pieza separada sobre presuntos amaños de adjudicaciones en el Ministerio de Transportes.",
+     "url": "https://www.eldiario.es/politica/psoe-estudia-querellarse-pagos-koldo-grave-influir-declaracion-derrocar-gobierno_1_13642399.html"
     },
     {
      "id": "edi2",
-     "titular": "El salario mínimo subirá un cinco coma tres por ciento hasta mil doscientos ochenta y seis euros",
-     "resumen": "El Ministerio de Trabajo, dirigido por Yolanda Díaz, ha publicado el borrador del decreto del salario mínimo para dos mil veintisiete. Según elDiario.es, subirá un cinco coma tres por ciento, sesenta y cinco euros brutos más al mes, hasta mil doscientos ochenta y seis euros en catorce pagas. La comisión de expertos recomendaba un cuatro coma nueve por ciento. Trabajo lo justifica por la pérdida de poder adquisitivo de este año, en que el salario subió un tres coma uno por ciento con una inflación media del tres coma cinco. Los sindicatos CCOO y UGT pedían un siete por ciento, y los empresarios rechazan una subida ahora. El Gobierno quiere aprobarla antes de las elecciones del veintinueve de noviembre, y las fuentes apuntan al Consejo de Ministros del diecisiete de noviembre. Los sindicatos creen muy posible que se apruebe sin apoyo de la patronal, algo inédito en esta legislatura.",
-     "url": "https://www.eldiario.es/economia/salario-minimo-subira-5-3-1-286-euros-mes_1_13639220.html"
+     "titular": "El Gobierno ordena retirar aceite de oliva del mercado para evitar que caigan los precios",
+     "resumen": "El Boletín Oficial del Estado publica una orden del Ministerio de Agricultura que obliga a las almazaras a almacenar el doce por ciento de la producción que declaren cada mes, informa elDiario.es. Supone retirar temporalmente ciento ochenta y ocho mil toneladas hasta el treinta de septiembre de dos mil veintisiete, y se aplica desde este viernes a la producción de noviembre. Es la primera vez que se hace. El motivo es el exceso de existencias, trescientas cincuenta y siete mil toneladas al inicio de la campaña, un veintitrés por ciento más que la anterior. Además, se prevé una cosecha de más de un millón seiscientas mil toneladas, también un veintitrés por ciento mayor. Según el Ministerio, la cosecha más las existencias alcanzan el ciento veinte por ciento de la media de las seis campañas anteriores, lo que activa el mecanismo. Las almazaras eligen qué categoría retiran. Se creará un grupo técnico de seguimiento y la medida podrá modificarse a partir del treinta y uno de diciembre.",
+     "url": "https://www.eldiario.es/economia/gobierno-decreta-retirada-aceite-oliva-mercado-primera-vez-evitar-desplome-precios_1_13642909.html"
     },
     {
      "id": "edi3",
-     "titular": "El presidente de Adif presenta su renuncia",
-     "resumen": "Luis Pedro Marco de la Peña ha presentado su renuncia como presidente de Adif ante Carlos Cuerpo, vicepresidente primero y ministro de Economía. Según fuentes del Gobierno citadas por elDiario.es, la decisión llega un día después de la dimisión de Óscar Puente como ministro de Transportes. Cuerpo ha aceptado la renuncia y ha agradecido su trabajo. El ministro de Economía ya ha asumido la gestión de los asuntos del Ministerio de Transportes y ha mantenido una primera reunión con el presidente de Adif y el secretario de Estado de Transportes. Marco de la Peña ya había comunicado a Puente que quería dejar el cargo. En su última comparecencia en la Diputación Permanente, Puente defendió la dirección de Adif y calificó las críticas a su gestión de análisis torticero y falaz. El artículo no recoge reacciones de la oposición ni explica el motivo concreto de la renuncia.",
-     "url": "https://www.eldiario.es/economia/presidente-adif-luis-pedro-marco-pena-presenta-cuerpo-renuncia-cargo_1_13639153.html"
+     "titular": "El juez Calama rechaza investigar a Zapatero por malversación en el caso de las joyas",
+     "resumen": "El juez de la Audiencia Nacional José Luis Calama rechaza la petición de la Fiscalía Anticorrupción de investigar a José Luis Rodríguez Zapatero por malversación, según elDiario.es. La Fiscalía sostiene que unas joyas debían integrarse en el patrimonio público. Las más valiosas, incautadas en mayo, procederían de un regalo del rey de Arabia Saudí en dos mil siete, cuando Zapatero era presidente. El juez considera que la tesis de la Fiscalía es una interpretación posterior a los hechos. La obligación de incorporar los regalos institucionales al patrimonio llegó con la ley de transparencia de dos mil trece, y el código de buen gobierno de dos mil cinco no tenía valor normativo para ello. Por tanto, falta un elemento esencial del delito. En otro auto, el juez paraliza las inspecciones de Hacienda contra Zapatero, su mujer, sus hijas y otros investigados. El artículo no recoge reacciones de las partes.",
+     "url": "https://www.eldiario.es/politica/juez-calama-rechaza-imputar-zapatero-malversacion-fondos-publicos-joyas-pretendia-anticorrupcion_1_13643682.html"
     }
    ]
   }
