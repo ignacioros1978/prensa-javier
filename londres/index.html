@@ -347,6 +347,25 @@
         .tk-row { display:flex; gap:10px; }
         .tk-a { flex:1; display:flex; align-items:center; justify-content:center; min-height:48px; border-radius:12px; background:#1d4ed8; color:#fff; font-weight:800; text-decoration:none; }
         .tk-tip { margin-top:12px; font-weight:700; color:#334155; }
+        .hb4 { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:10px; }
+        .hb4b { display:flex; align-items:center; justify-content:center; gap:6px; min-height:50px; padding:6px 8px; border:0; border-radius:14px; color:#fff; text-decoration:none; font-weight:800; font-size:15px; line-height:1.15; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,.25); cursor:pointer; font-family:inherit; }
+        .en-lock { text-align:center; padding:24px 8px; }
+        .en-ic { font-size:44px; }
+        .en-lock p { font-size:16px; font-weight:600; color:#334155; }
+        #en-pin { width:100%; max-width:260px; min-height:60px; font-size:30px; letter-spacing:.4em; text-align:center; border:2px solid #94a3b8; border-radius:14px; padding:6px 10px; font-weight:800; color:#0f172a; background:#fff; }
+        #en-pin:focus { outline:3px solid #7c3aed; border-color:#7c3aed; }
+        .en-lock .tv-btn { max-width:260px; margin:12px auto 0; background:#7c3aed; }
+        .en-err { color:#b91c1c; font-weight:800; min-height:1.4em; }
+        .en-tip { margin:10px 0 0; padding:10px 12px; border-radius:12px; background:#f1f5f9; font-size:15px; font-weight:600; color:#334155; }
+        .en-when { display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:6px; font-size:17px; }
+        .en-hora { font-size:26px; font-weight:900; color:#7c3aed; white-space:nowrap; }
+        .en-car { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; margin:12px -14px 0; padding:0 14px 8px; }
+        .en-tk { flex:0 0 100%; scroll-snap-align:center; background:#fff; border:2px solid #0f172a; border-radius:16px; padding:14px 12px; box-sizing:border-box; }
+        .en-th { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px; font-size:18px; color:#0f172a; }
+        .en-th span { font-weight:800; color:#475569; font-size:16px; }
+        .en-bc { display:block; width:100%; height:150px; }
+        .en-num { margin-top:8px; text-align:center; font-family:ui-monospace,Menlo,monospace; font-size:16px; font-weight:700; letter-spacing:.06em; color:#0f172a; }
+        .en-forget { display:block; margin:22px auto 6px; min-height:46px; padding:0 16px; border-radius:12px; border:2px solid #cbd5e1; background:#fff; color:#475569; font-weight:700; font-size:15px; cursor:pointer; }
         .tv-h { margin:18px 0 8px; font-size:19px; font-weight:800; color:#0f172a; }
         .tv-img { display:block; width:100%; border-radius:14px; border:1px solid #cbd5e1; }
         .tv-card { margin-top:10px; padding:14px; border-radius:14px; background:#f8fafc; border:2px solid #cbd5e1; }
@@ -1012,10 +1031,11 @@
             <div class="progress-bar-segment" style="background:#2ecc71;" title="Día 3"></div>
             <div class="progress-bar-segment" style="background:#9b59b6;" title="Día 4"></div>
         </div>
-        <a href="metro/?v=4" style="display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;margin-top:10px;border-radius:14px;background:#e74c3c;color:#fff;text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.25)">🚇 Rutas de Metro</a>
-        <div style="display:flex;gap:8px;margin-top:8px">
-            <button type="button" onclick="openTravel()" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border:0;border-radius:14px;background:#1d4ed8;color:#fff;font-weight:800;font-size:15px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">✈️ Vuelos y traslados</button>
-            <button type="button" onclick="openSeguro()" style="flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;border:0;border-radius:14px;background:#15803d;color:#fff;font-weight:800;font-size:15px;box-shadow:0 4px 12px rgba(0,0,0,.25);cursor:pointer">🛡️ Seguro de viaje</button>
+        <div class="hb4">
+            <a href="metro/?v=4" class="hb4b" style="background:#e74c3c">🚇 Rutas de Metro</a>
+            <button type="button" onclick="openTravel()" class="hb4b" style="background:#1d4ed8">✈️ Vuelos y traslados</button>
+            <button type="button" onclick="openSeguro()" class="hb4b" style="background:#15803d">🛡️ Seguro de viaje</button>
+            <button type="button" onclick="openEntradas()" class="hb4b" style="background:#7c3aed">🎟️ Entradas</button>
         </div>
     </header>
 
@@ -2161,6 +2181,66 @@
         if (!fromPop && history.state && history.state.seats) { skipPop = true; history.back(); }
     };
 
+    // ── Entradas (cifradas con un código de 6 cifras) ─────────
+    const ENT_BLOB = {"v": 1, "it": 600000, "salt": "6OCGz0da+8oh0ZDjBetvkA==", "iv": "op9a2Kni0FCfPOQR", "ct": "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"};
+    let ENT_DATA = null;
+    const ENT_KEY = 'lon.ent.pin';
+    const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+    async function entDecrypt(pin) {
+        const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pin), 'PBKDF2', false, ['deriveKey']);
+        const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(ENT_BLOB.salt), iterations: ENT_BLOB.it, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+        const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(ENT_BLOB.iv) }, key, b64(ENT_BLOB.ct));
+        return JSON.parse(new TextDecoder().decode(pt));
+    }
+    function entEsc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+    function entBars(bars) {
+        const q = 12, W = bars.length + q * 2; let r = '';
+        for (let i = 0; i < bars.length;) { if (bars[i] === '1') { let j = i; while (bars[j] === '1') j++; r += '<rect x="' + (i + q) + '" y="0" width="' + (j - i) + '" height="60"/>'; i = j; } else i++; }
+        return '<svg class="en-bc" viewBox="0 0 ' + W + ' 60" preserveAspectRatio="none" shape-rendering="crispEdges" aria-hidden="true"><rect width="' + W + '" height="60" fill="#fff"/><g fill="#000">' + r + '</g></svg>';
+    }
+    function entPinHtml(err) {
+        return '<div class="en-lock"><div class="en-ic">🔒</div><p>Escribe el código de 6 cifras para ver las entradas.</p>'
+            + '<form id="en-form" autocomplete="off"><input id="en-pin" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="off" aria-label="Código de 6 cifras" placeholder="••••••">'
+            + '<button type="submit" class="tv-btn">Ver entradas</button></form>'
+            + '<p class="en-err" role="alert">' + (err || '') + '</p></div>';
+    }
+    function entListHtml() {
+        let h = '<p class="en-tip">💡 Sube el brillo del móvil al enseñar el código. Desliza para pasar de una entrada a otra.</p>';
+        ENT_DATA.forEach(r => {
+            const n = r.tickets.length;
+            h += '<section class="en-res"><h3 class="tv-h">🎟️ ' + entEsc(r.titulo) + '</h3>'
+              + '<div class="tv-card"><div class="en-when"><b>' + entEsc(r.fecha) + '</b><span class="en-hora">' + entEsc(r.hora) + ' h</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">Quiénes</span><span>' + entEsc(r.personas) + '</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">Dónde</span><span>' + entEsc(r.lugar) + '</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">Reserva</span><span>' + entEsc(r.ref) + ' · a nombre de ' + entEsc(r.titular) + '</span></div>'
+              + (r.nota ? '<div class="tv-leg"><span class="tv-t">Nota</span><span>' + entEsc(r.nota) + '</span></div>' : '') + '</div>'
+              + '<div class="en-car">' + r.tickets.map((t, i) => '<div class="en-tk"><div class="en-th"><b>' + entEsc(t.tipo) + '</b><span>' + (i + 1) + ' / ' + n + '</span></div>' + entBars(t.bars) + '<div class="en-num">' + entEsc(t.num) + '</div></div>').join('') + '</div></section>';
+        });
+        h += '<button type="button" class="en-forget" onclick="entForget()">Olvidar el código en este móvil</button>';
+        return h;
+    }
+    function entMount() {
+        const f = document.getElementById('en-form'); if (!f) return;
+        const inp = document.getElementById('en-pin'); setTimeout(() => inp.focus(), 80);
+        inp.addEventListener('input', () => { inp.value = inp.value.replace(/\D/g, '').slice(0, 6); if (inp.value.length === 6) f.requestSubmit ? f.requestSubmit() : f.dispatchEvent(new Event('submit', { cancelable: true })); });
+        f.addEventListener('submit', async e => {
+            e.preventDefault(); const pin = inp.value; const err = document.querySelector('#info-full .en-err');
+            if (pin.length !== 6) { err.textContent = 'Son 6 cifras.'; return; }
+            err.textContent = 'Comprobando…';
+            try { ENT_DATA = await entDecrypt(pin); try { localStorage.setItem(ENT_KEY, pin); } catch (x) {} entShow(); }
+            catch (x) { inp.value = ''; err.textContent = 'Código incorrecto. Prueba otra vez.'; inp.focus(); }
+        });
+    }
+    function entShow() { const b = document.querySelector('#info-full .df-body'); if (b) { b.innerHTML = entListHtml(); b.scrollTop = 0; } }
+    window.entForget = function() { try { localStorage.removeItem(ENT_KEY); } catch (x) {} ENT_DATA = null; const b = document.querySelector('#info-full .df-body'); if (b) { b.innerHTML = entPinHtml(''); entMount(); } };
+    window.openEntradas = async function() {
+        if (ENT_DATA) { openInfo('🎟️ Entradas', entListHtml()); return; }
+        let pin = null; try { pin = localStorage.getItem(ENT_KEY); } catch (x) {}
+        openInfo('🎟️ Entradas', pin ? '<p class="en-tip">Abriendo las entradas…</p>' : entPinHtml(''));
+        if (!pin) { entMount(); return; }
+        try { ENT_DATA = await entDecrypt(pin); entShow(); }
+        catch (x) { try { localStorage.removeItem(ENT_KEY); } catch (y) {} const b = document.querySelector('#info-full .df-body'); b.innerHTML = entPinHtml(''); entMount(); }
+    };
     window.openSeguro = function() {
         const row = (a, b) => '<tr><td>' + a + '</td><td>' + b + '</td></tr>';
         const det = (t, body, open) => '<details class="sg-det"' + (open ? ' open' : '') + '><summary>' + t + '</summary><div>' + body + '</div></details>';
