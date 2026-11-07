@@ -366,12 +366,16 @@
         .en-bc { display:block; width:100%; height:150px; }
         .en-num { margin-top:8px; text-align:center; font-family:ui-monospace,Menlo,monospace; font-size:16px; font-weight:700; letter-spacing:.06em; color:#0f172a; }
         .en-q { margin:10px 0 6px; font-size:16px; font-weight:800; color:#0f172a; }
-        .en-sel { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+        .en-sel { display:grid; grid-template-columns:repeat(auto-fit,minmax(100px,1fr)); gap:8px; }
         .en-sel button { min-height:64px; border-radius:14px; border:2px solid #cbd5e1; background:#fff; color:#0f172a; cursor:pointer; font-family:inherit; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; padding:6px; }
         .en-sel button b { font-size:22px; font-weight:900; }
         .en-sel button small { font-size:14px; font-weight:700; color:#475569; }
         .en-sel button[aria-pressed="true"] { background:#7c3aed; border-color:#7c3aed; color:#fff; }
         .en-sel button[aria-pressed="true"] small { color:#ede9fe; }
+        .en-qr { text-align:center; margin-top:12px; }
+        .en-qr img { display:block; width:100%; max-width:300px; margin:0 auto; image-rendering:pixelated; }
+        .en-dl { display:inline-flex; align-items:center; min-height:44px; padding:0 14px; margin-top:10px; border-radius:12px; background:#f1f5f9; color:#0f172a; font-weight:800; text-decoration:none; }
+        .en-file { display:flex; align-items:center; justify-content:center; width:100%; min-height:50px; margin-top:10px; border-radius:14px; border:2px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:16px; cursor:pointer; font-family:inherit; }
         .en-forget { display:block; margin:22px auto 6px; min-height:46px; padding:0 16px; border-radius:12px; border:2px solid #cbd5e1; background:#fff; color:#475569; font-weight:700; font-size:15px; cursor:pointer; }
         .itin-mapa { position:relative; display:inline-flex; align-items:center; justify-content:center; width:40px; height:32px; margin:-6px 0 -4px 6px; vertical-align:middle; border-radius:10px; background:#eef2ff; border:2px solid #c7d2fe; text-decoration:none; font-size:18px; }
         .itin-mapa::before { content:""; position:absolute; inset:-6px -2px; }
@@ -1784,7 +1788,7 @@
         sg_d2: 'Dentro de Borough Market · Dom 10:00–16:00',
         winter_river: 'Todos los días 11:00–22:00 (10 nov–3 ene)',
         tower_bridge: 'Cruzar el puente: siempre y gratis · exposición y suelo de cristal 9:30–18:00',
-        pier_butlers: 'RESERVADO: barco de las 14:40 · estar a las 14:25 · nº de reserva JSDQ9PE4',
+        pier_butlers: 'RESERVADO: barco de las 14:40 · estar a las 14:25',
         westminster_pier: 'Abierto siempre · muelle sin escalones (bien con carrito)',
         trafalgar: 'Plaza abierta siempre · árbol de Navidad iluminado al anochecer',
         sugarsin: 'Plaza y mercado cubierto: siempre · Apple Market 10:00–18:00 · tiendas en domingo ~11:00–18:00 · SugarSin: CERRADO temporalmente (reabrirá en un local cercano, sin fecha; mirar sugarsin.co.uk)',
@@ -1835,7 +1839,7 @@
           ],
           gf: 'Oka (Kingly Court, Carnaby): tailandés con mucha carta sin gluten, al lado de Hamleys.' },
         d2: { title: 'Día 2 · Domingo 6 Dic', zone: 'Borough Market · Winter by the River · Tower Bridge · crucero · Westminster · Trafalgar · Covent Garden', back: '🚇 / 🚕 Vuelta desde Covent Garden', grad: '#3498db,#2471a3',
-          note: '👨‍👩‍👧‍👦 Siendo varias familias: reservad mesa para comer (17 personas). El barco ya está reservado: 14:40, nº JSDQ9PE4.',
+          note: '👨‍👩‍👧‍👦 Siendo varias familias: reservad mesa para comer (17 personas). El barco ya está reservado: 14:40.',
           steps: [
             { t: '09:20', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'Salir del apartamento a las 9:20. District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En domingo pasan algo menos trenes. En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
             { move: 'walk', min: 3, text: 'En London Bridge sigue los carteles «Borough High Street / Borough Market».', to: 'borough_market' },
@@ -1846,7 +1850,7 @@
             { t: '12:00', n: 'tower_bridge', icon: '🗼', title: 'Tower Bridge', text: 'Fotos desde la orilla. No hace falta cruzarlo: el barco sale de este mismo lado. La exposición con suelo de cristal es opcional.', today: 'exposición 9:30–18:00' },
             { t: '12:30', icon: '🍽️', title: 'Comida (temprano, con mesa reservada)', text: 'Comer a las 12:30–13:00 evita las esperas del domingo y deja tiempo de sobra para el barco. En Shad Thames / Butler’s Wharf (al lado del muelle) o en Hay’s Galleria. Sin gluten: Wagamama Tower Bridge (Hay’s Galleria).' },
             { move: 'walk', min: 5, text: 'Butler’s Wharf Pier está en la orilla sur, justo pasado Tower Bridge (lado este), frente a los almacenes de Shad Thames. Estad a las 14:25.', from: 'tower_bridge', to: 'pier_butlers' },
-            { t: '14:40', n: 'pier_butlers', icon: '⛴️', title: 'Crucero por el Támesis · Tower Bridge → Westminster ✅', text: 'RESERVADO (nº JSDQ9PE4, 17 personas). Thames River Sightseeing desde Butler’s Wharf Pier (orilla sur, NO el Tower Pier de enfrente). Estad en el muelle a las 14:25. Si se escapa, el billete vale para otro barco del mismo día. Unos 20 min por el río: HMS Belfast, St Paul’s, el Globe y el London Eye.', today: 'embarque 14:25 · salida 14:40', tickets: 'pier_butlers' },
+            { t: '14:40', n: 'pier_butlers', icon: '⛴️', title: 'Crucero por el Támesis · Tower Bridge → Westminster ✅', text: 'RESERVADO (17 personas). Thames River Sightseeing desde Butler’s Wharf Pier (orilla sur, NO el Tower Pier de enfrente). Estad en el muelle a las 14:25. Si se escapa, el billete vale para otro barco del mismo día. Unos 20 min por el río: HMS Belfast, St Paul’s, el Globe y el London Eye.', today: 'embarque 14:25 · salida 14:40', tickets: 'pier_butlers' },
             { move: 'boat', min: 20, text: 'En barco hasta Westminster Pier. Mirando hacia delante, el London Eye queda a la izquierda y el Big Ben a la derecha al llegar.' },
             { t: '15:00', n: 'westminster_pier', icon: '⚓', title: 'Llegada a Westminster Pier · Big Ben', text: 'Bajáis del barco al pie del Big Ben: fotos con el Parlamento y el London Eye enfrente.' },
             { move: 'walk', min: 20, text: 'Desembarcas en Westminster Pier, al lado del Big Ben (fotos). Sube a la calle, gira a la derecha y sigue recto por Whitehall: pasarás Downing Street y los guardias a caballo de Horse Guards, y llegas a Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
@@ -2061,10 +2065,9 @@
     // Entradas: cuando lleguen, se suben a londres/entradas/ y se apuntan aquí
     // { name: 'Familia Ros · crucero', url: 'entradas/crucero-1.png' } (vale imagen o PDF)
     const TICKETS = {
-        pier_butlers: { title: '🎟️ Crucero · reserva JSDQ9PE4',
-            qr: 'entradas/crucero-JSDQ9PE4-qr.png',
+        pier_butlers: { title: '🎟️ Crucero por el Támesis', secure: 'crucero',
             info: '<div class="tv-card"><h4>Reservado ✅</h4>'
-              + '<div class="tv-leg"><span class="tv-t">🔖</span><span>Nº de reserva: <b>JSDQ9PE4</b> · Thames River Sightseeing</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">🔖</span><span>Thames River Sightseeing · el QR y el nº de reserva están en <b>🎟️ Entradas</b> (con el código)</span></div>'
               + '<div class="tv-leg"><span class="tv-t">📅</span><span><b>Domingo 6 de diciembre · barco de las 14:40</b> · solo ida, Tower Bridge (Butler’s Wharf) → Westminster, unos 20 min</span></div>'
               + '<div class="tv-leg"><span class="tv-t">⏰</span><span><b>Estar en el muelle a las 14:25</b>: Butler’s Wharf Pier, Shad Thames, SE1 2YE (orilla sur, al lado este de Tower Bridge)</span></div>'
               + '<div class="tv-leg"><span class="tv-t">👨‍👩‍👧‍👦</span><span>17 personas: 7 adultos y 10 niños · un solo QR para todo el grupo (descuento de grupo del 15 %)</span></div>'
@@ -2074,27 +2077,26 @@
               + '<div class="tv-card"><h4>Condiciones del billete</h4>'
               + '<div class="tv-leg"><span class="tv-t">🔁</span><span><b>Si perdemos el barco de las 14:40,</b> el billete vale para cualquier otro barco de ese mismo día.</span></div>'
               + '<div class="tv-leg"><span class="tv-t">⏪</span><span><b>Subir a uno anterior</b> no está garantizado: depende de que haya sitio (somos 17).</span></div>'
-              + '<div class="tv-leg"><span class="tv-t">💶</span><span><b>Cancelación:</b> devuelven el dinero si se cancela hasta 24 h antes, escribiendo a <a href="mailto:info@thamesriversightseeing.com?subject=Reserva%20JSDQ9PE4">info@thamesriversightseeing.com</a> con el nº de reserva JSDQ9PE4.</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">💶</span><span><b>Cancelación:</b> devuelven el dinero si se cancela hasta 24 h antes, escribiendo a <a href="mailto:info@thamesriversightseeing.com">info@thamesriversightseeing.com</a> con el nº de reserva (está en Entradas).</span></div>'
               + '<div class="tv-leg"><span class="tv-t">✏️</span><span><b>Cambiar fecha u hora:</b> en <a href="https://book.thamesriversightseeing.com/en/checkin" target="_blank" rel="noopener">gestionar la reserva en su web</a></span></div>'
               + '<div class="tv-leg"><span class="tv-t">📱</span><span>No hace falta imprimir: se enseña el QR en el móvil al embarcar.</span></div>'
               + '<div class="tv-leg"><span class="tv-t">👶</span><span>Hay sitio para carritos a bordo. Los menores de 5 años viajan gratis.</span></div>'
               + '<div class="tv-leg"><span class="tv-t">🎧</span><span>Audioguía gratis en español: <a href="https://thamesriver.app.link/guide" target="_blank" rel="noopener">descargar la app</a></span></div>'
               + '<div class="tv-leg"><span class="tv-t">☎️</span><span>Dudas: +44 20 3778 0700</span></div>'
               + '</div>',
-            files: [
-                { name: 'Billete completo (PDF)', url: 'entradas/crucero-JSDQ9PE4.pdf' },
-                { name: 'Billete completo (imagen)', url: 'entradas/crucero-JSDQ9PE4.jpg' }
-            ] }
+            files: [] }
     };
     function ticketBtn(id) {
         const T = TICKETS[id]; if (!T) return '';
+        if (T.secure) return '<button type="button" class="tk-btn" onclick="openTickets(\'' + id + '\')">🎟️ Ver billete y QR · reserva</button>';
         const n = T.files.length;
         return '<button type="button" class="tk-btn" onclick="openTickets(\'' + id + '\')">🎟️ ' + (n ? 'Ver billete y QR · reserva' : 'Entradas / QR · pendientes') + '</button>';
     }
     window.openTickets = function(id) {
         const T = TICKETS[id]; if (!T) return;
         let h;
-        if (!T.files.length) h = (T.info || '') + '<div class="tk-empty">Todavía no están las entradas. En cuanto las tengamos aparecerán aquí, para verlas o descargarlas.</div>';
+        if (T.secure) h = '<button type="button" class="tv-btn" style="background:#7c3aed" onclick="closeInfo();setTimeout(()=>openEntradas(\'' + T.secure + '\'),60)">🔒 Ver el QR y el billete</button>' + (T.info || '');
+        else if (!T.files.length) h = (T.info || '') + '<div class="tk-empty">Todavía no están las entradas. En cuanto las tengamos aparecerán aquí, para verlas o descargarlas.</div>';
         else h = (T.qr ? '<div class="tk-card" style="text-align:center"><div class="tk-name">Código QR para embarcar</div><img class="tk-img" style="max-width:300px" src="' + T.qr + '" alt="Código QR de la reserva"><div class="tk-row"><a class="tk-a" href="' + T.qr + '" download="QR-crucero.png">⬇️ Guardar el QR</a></div></div>' : '')
             + (T.info || '') + T.files.map(f => '<div class="tk-card"><div class="tk-name">' + f.name + '</div>'
             + (/\.pdf($|\?)/i.test(f.url) ? '' : '<img class="tk-img" src="' + f.url + '" alt="' + f.name + '">')
@@ -2191,11 +2193,13 @@
     };
 
     // ── Entradas (cifradas con un código de 6 cifras) ─────────
-    const ENT_BLOB = {"v": 1, "it": 600000, "salt": "gRrBet86ID/jtsqjzEmm+A==", "iv": "cqgYdeuXUWElBGFD", "ct": "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"};
+    let ENT_BLOB = null;
+    async function entBlob() { if (!ENT_BLOB) { const r = await fetch('entradas/datos.json?v=' + Date.now().toString(36).slice(0, 5), { cache: 'no-store' }); if (!r.ok) throw new Error('net'); ENT_BLOB = await r.json(); } return ENT_BLOB; }
     let ENT_DATA = null;
     const ENT_KEY = 'lon.ent.pin';
     const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
     async function entDecrypt(pin) {
+        await entBlob();
         const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pin), 'PBKDF2', false, ['deriveKey']);
         const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(ENT_BLOB.salt), iterations: ENT_BLOB.it, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
         const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(ENT_BLOB.iv) }, key, b64(ENT_BLOB.ct));
@@ -2218,17 +2222,20 @@
     function entListHtml() {
         if (ENT_SEL >= ENT_DATA.length) ENT_SEL = 0;
         let h = '';
-        if (ENT_DATA.length > 1) h += '<p class="en-q">¿Qué entradas quieres ver?</p><div class="en-sel" role="group" aria-label="Elegir grupo de entradas">' + ENT_DATA.map((r, i) => '<button type="button" aria-pressed="' + (i === ENT_SEL) + '" onclick="entPick(' + i + ')"><b>' + entEsc(r.hora) + ' h</b><small>' + entEsc(r.titulo) + ' · ' + r.tickets.length + ' entradas</small></button>').join('') + '</div>';
-        h += '<p class="en-tip">💡 Sube el brillo del móvil al enseñar el código. Desliza para pasar de una entrada a otra.</p>';
+        if (ENT_DATA.length > 1) h += '<p class="en-q">¿Qué entradas quieres ver?</p><div class="en-sel" role="group" aria-label="Elegir grupo de entradas">' + ENT_DATA.map((r, i) => '<button type="button" aria-pressed="' + (i === ENT_SEL) + '" onclick="entPick(' + i + ')"><b>' + entEsc(r.hora) + ' h</b><small>' + entEsc(r.corto || r.titulo) + ' · ' + entEsc((r.fecha || '').split(' ')[0]) + '</small><small>' + (r.tickets.length ? r.tickets.length + ' entradas' : 'QR del grupo') + '</small></button>').join('') + '</div>';
+        h += '<p class="en-tip">💡 Sube el brillo del móvil al enseñar el código.' + (ENT_DATA[ENT_SEL].tickets.length > 1 ? ' Desliza para pasar de una entrada a otra.' : '') + '</p>';
         [ENT_DATA[ENT_SEL]].forEach(r => {
             const n = r.tickets.length;
             h += '<section class="en-res"><h3 class="tv-h">🎟️ ' + entEsc(r.titulo) + '</h3>'
               + '<div class="tv-card"><div class="en-when"><b>' + entEsc(r.fecha) + '</b><span class="en-hora">' + entEsc(r.hora) + ' h</span></div>'
               + '<div class="tv-leg"><span class="tv-t">Quiénes</span><span>' + entEsc(r.personas) + '</span></div>'
               + '<div class="tv-leg"><span class="tv-t">Dónde</span><span>' + entEsc(r.lugar) + '</span></div>'
-              + '<div class="tv-leg"><span class="tv-t">Reserva</span><span>' + entEsc(r.ref) + ' · a nombre de ' + entEsc(r.titular) + '</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">Reserva</span><span>' + entEsc(r.ref) + (r.titular ? ' · a nombre de ' + entEsc(r.titular) : (r.proveedor ? ' · ' + entEsc(r.proveedor) : '')) + '</span></div>'
               + (r.nota ? '<div class="tv-leg"><span class="tv-t">Nota</span><span>' + entEsc(r.nota) + '</span></div>' : '') + '</div>'
-              + '<div class="en-car">' + r.tickets.map((t, i) => '<div class="en-tk"><div class="en-th"><b>' + entEsc(t.tipo) + '</b><span>' + (i + 1) + ' / ' + n + '</span></div>' + entBars(t.bars) + '<div class="en-num">' + entEsc(t.num) + '</div></div>').join('') + '</div></section>';
+              + (n ? '<div class="en-car">' + r.tickets.map((t, i) => '<div class="en-tk"><div class="en-th"><b>' + entEsc(t.tipo) + '</b><span>' + (i + 1) + ' / ' + n + '</span></div>' + entBars(t.bars) + '<div class="en-num">' + entEsc(t.num) + '</div></div>').join('') + '</div>' : '')
+              + (r.qr ? '<div class="en-tk en-qr"><div class="en-th"><b>Código QR para embarcar</b><span>1 para los 17</span></div><img src="' + r.qr + '" alt="Código QR de la reserva"><a class="en-dl" href="' + r.qr + '" download="QR-' + entEsc(r.id) + '.png">⬇️ Guardar el QR</a></div>' : '')
+              + (r.files ? r.files.map((f, j) => '<button type="button" class="en-file" onclick="entFile(' + ENT_SEL + ',' + j + ')">' + (f.type === 'pdf' ? '📄 ' : '🖼️ ') + entEsc(f.name) + '</button>').join('') : '')
+              + '</section>';
         });
         h += '<button type="button" class="en-forget" onclick="entForget()">Olvidar el código en este móvil</button>';
         return h;
@@ -2241,19 +2248,28 @@
             e.preventDefault(); const pin = inp.value; const err = document.querySelector('#info-full .en-err');
             if (pin.length !== 6) { err.textContent = 'Son 6 cifras.'; return; }
             err.textContent = 'Comprobando…';
-            try { ENT_DATA = await entDecrypt(pin); try { localStorage.setItem(ENT_KEY, pin); } catch (x) {} entShow(); }
-            catch (x) { inp.value = ''; err.textContent = 'Código incorrecto. Prueba otra vez.'; inp.focus(); }
+            try { ENT_DATA = await entDecrypt(pin); try { localStorage.setItem(ENT_KEY, pin); } catch (x) {} if (window.__entWant) { const k = ENT_DATA.findIndex(r => r.id === window.__entWant); if (k > -1) ENT_SEL = k; } entShow(); }
+            catch (x) { inp.value = ''; err.textContent = x && x.message === 'net' ? 'Sin conexión: no se han podido cargar las entradas.' : 'Código incorrecto. Prueba otra vez.'; inp.focus(); }
         });
     }
     function entShow() { const b = document.querySelector('#info-full .df-body'); if (b) { b.innerHTML = entListHtml(); b.scrollTop = 0; } }
+    window.entFile = function(i, j) {
+        const f = ENT_DATA[i].files[j];
+        if (f.type === 'img') { viewImg(f.data); return; }
+        const bin = atob(f.data.split(',')[1]), u = new Uint8Array(bin.length); for (let k = 0; k < bin.length; k++) u[k] = bin.charCodeAt(k);
+        const url = URL.createObjectURL(new Blob([u], { type: 'application/pdf' }));
+        const w = window.open(url, '_blank'); if (!w) location.href = url;
+    };
     window.entForget = function() { try { localStorage.removeItem(ENT_KEY); } catch (x) {} ENT_DATA = null; const b = document.querySelector('#info-full .df-body'); if (b) { b.innerHTML = entPinHtml(''); entMount(); } };
-    window.openEntradas = async function() {
-        if (ENT_DATA) { openInfo('🎟️ Entradas', entListHtml()); return; }
+    window.openEntradas = async function(want) {
+        window.__entWant = want || null;
+        const selWant = () => { if (want && ENT_DATA) { const k = ENT_DATA.findIndex(r => r.id === want); if (k > -1) ENT_SEL = k; } };
+        if (ENT_DATA) { selWant(); openInfo('🎟️ Entradas', entListHtml()); return; }
         let pin = null; try { pin = localStorage.getItem(ENT_KEY); } catch (x) {}
         openInfo('🎟️ Entradas', pin ? '<p class="en-tip">Abriendo las entradas…</p>' : entPinHtml(''));
         if (!pin) { entMount(); return; }
-        try { ENT_DATA = await entDecrypt(pin); entShow(); }
-        catch (x) { try { localStorage.removeItem(ENT_KEY); } catch (y) {} const b = document.querySelector('#info-full .df-body'); b.innerHTML = entPinHtml(''); entMount(); }
+        try { ENT_DATA = await entDecrypt(pin); selWant(); entShow(); }
+        catch (x) { if (x && x.message === 'net') { document.querySelector('#info-full .df-body').innerHTML = '<p class="en-err">No se han podido cargar las entradas. Comprueba la conexión y vuelve a intentarlo.</p>'; return; } try { localStorage.removeItem(ENT_KEY); } catch (y) {} const b = document.querySelector('#info-full .df-body'); b.innerHTML = entPinHtml(''); entMount(); }
     };
     window.openSeguro = function() {
         const row = (a, b) => '<tr><td>' + a + '</td><td>' + b + '</td></tr>';
