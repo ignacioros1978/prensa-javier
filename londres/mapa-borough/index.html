@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Borough Market · Mapa</title>
+<style>
+:root{--bg:#0b1630;--bg2:#13234a;--ink:#f4f7ff;--soft:#c9d4ee;--muted:#9fb0d6;--line:rgba(255,255,255,.14);
+  --red:#e5484d;--blue:#3b82f6;--green:#22c55e;--gold:#f5b70a;--card:#ffffff;--cink:#0f172a;--cmuted:#475569}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-tap-highlight-color:transparent}
+.wrap{max-width:720px;margin:0 auto;padding:max(14px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+h1{margin:4px 0 2px;font-size:clamp(1.5rem,6vw,2rem);font-weight:900;letter-spacing:-.01em}
+.sub{margin:0;color:var(--soft);font-size:15px;font-weight:600}
+.when{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}
+.when span{background:rgba(255,255,255,.1);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:700}
+.mapbox{position:relative;margin-top:12px;border-radius:22px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#1d3466 0%,#0e1b3a 70%);border:1px solid var(--line)}
+svg.map{display:block;width:100%;height:auto;touch-action:manipulation}
+.zone{cursor:pointer}
+.zone rect{transition:transform .15s,filter .15s;transform-box:fill-box;transform-origin:center}
+.zone:hover rect,.zone:focus rect{filter:brightness(1.12)}
+.zone.on rect{stroke:#fff;stroke-width:4}
+.zone text{pointer-events:none}
+.gate{cursor:pointer}
+.back{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;margin-bottom:6px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.08);color:var(--ink);text-decoration:none;font-weight:800;font-size:15px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.legend button{display:flex;align-items:center;gap:8px;min-height:44px;padding:6px 12px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.legend i{width:14px;height:14px;border-radius:50%}
+.note{margin:12px 0 0;font-size:14px;color:var(--muted);line-height:1.45}
+.pop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(6,12,28,.55);animation:fi .15s ease}
+.pop[hidden]{display:none}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.pop .card{position:relative;width:100%;max-width:440px;max-height:100%;overflow-y:auto;margin:0}
+.pop .card h2{padding-right:50px;min-height:44px}
+.px{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:2px solid #0f172a;background:#fff;color:#0f172a;font-size:22px;font-weight:900;line-height:1;cursor:pointer;display:grid;place-items:center}
+.hint{margin:10px 0 0;font-size:15px;font-weight:700;color:var(--soft)}
+.card{margin-top:14px;background:var(--card);color:var(--cink);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card h2{margin:0;font-size:22px;font-weight:900;display:flex;align-items:center;gap:10px}
+.card .tag{display:inline-block;margin-top:6px;font-size:14px;font-weight:800;padding:4px 10px;border-radius:999px;color:#fff}
+.card ul{margin:10px 0 0;padding-left:20px;font-size:16px;line-height:1.5}
+.card .fam{margin-top:10px;padding:10px 12px;border-radius:12px;background:#f1f5f9;font-size:15px;font-weight:600;color:#1e293b}
+.card .warn{margin-top:10px;padding:10px 12px;border-radius:12px;background:#fef3c7;border:2px solid #f59e0b;color:#78350f;font-size:15px;font-weight:700}
+.tips{margin-top:16px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.tips h3{margin:0 0 6px;font-size:18px;font-weight:900}
+.tips li{margin:6px 0;font-size:15px;line-height:1.45;color:var(--soft)}
+.tips b{color:var(--ink)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.btns a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:50px;border-radius:14px;text-decoration:none;font-weight:800;font-size:15px;color:#fff;text-align:center;padding:6px}
+.src{margin-top:14px;font-size:14px;color:var(--muted);line-height:1.45}
+.src a{color:#b9cbff}
+@media (max-width:360px){.btns{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../" onclick="if(history.length>1&&document.referrer){history.back();return false;}">‹ Volver a la guía</a>
+  <h1>🛒 Borough Market</h1>
+  <p class="sub">Mapa de zonas · Día 2 · domingo 6 de diciembre, 10:00</p>
+  <div class="when"><span>🕙 Domingo 10:00–16:00</span><span>🚇 London Bridge, a 4 min</span><span>🌾 Desayuno sin gluten</span></div>
+  <div class="mapbox">
+    <svg class="map" id="map" role="img" aria-label="Esquema de Borough Market">
+      <defs><pattern id="snow" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="6" cy="8" r="1.3" fill="#fff" opacity=".35"/><circle cx="26" cy="22" r="1" fill="#fff" opacity=".3"/><circle cx="16" cy="34" r="1.4" fill="#fff" opacity=".25"/></pattern></defs>
+      <rect x="0" y="0" width="400" height="440" fill="url(#snow)"/>
+    </svg>
+    <div class="pop" id="pop" hidden><div class="card" id="card" role="dialog" aria-modal="false" aria-labelledby="popT"></div></div>
+  </div>
+  <p class="hint">👆 Toca una zona o un punto para ver qué hay.</p>
+  <div class="legend" id="legend" aria-label="Puntos del mapa"></div>
+  <p class="note">Esquema orientativo con las zonas que nombra el propio mercado. La posición exacta de cada puesto viene en el plano gratis que dan en información.</p>
+  <div class="tips"><h3>👨‍👩‍👧‍👦 Para vosotros</h3><ul><li><b>Llegad a la apertura (10:00):</b> desde las 11:30 se llena mucho y con carritos cuesta moverse.</li><li><b>Una hora basta</b> con niños: desayuno y un paseo por los puestos.</li><li><b>Plano en papel gratis:</b> en la tienda de información, a la derecha nada más entrar en Three Crown Square.</li><li><b>Domingo:</b> abre de 10:00 a 16:00; en Navidad el horario puede cambiar, comprobadlo antes.</li></ul></div>
+  <div class="btns">
+    <a href="https://www.google.com/maps/search/?api=1&query=Borough+Market+London" target="_blank" rel="noopener" style="background:#1d4ed8">🗺️ Abrir en Google Maps</a>
+    <a href="https://boroughmarket.org.uk/visit-us/" target="_blank" rel="noopener" style="background:#15803d">🌐 Web oficial</a>
+  </div>
+  <p class="src">Datos de la web oficial de Borough Market y guías (Londonist, Strawberry Tours, London Cheapo).</p>
+</div>
+<script>window.MAPA={"h": 440, "decor": [{"t": "rect", "x": 0, "y": 0, "w": 400, "h": 34, "rx": 0, "fill": "rgba(56,130,220,.35)"}, {"t": "text", "x": 200, "y": 23, "s": "〰️ Río Támesis (norte) 〰️", "fs": 16, "fill": "#dbe7ff"}, {"t": "path", "d": "M372 40 L372 420", "stroke": "rgba(255,255,255,.35)", "sw": 10}, {"t": "text", "x": 388, "y": 250, "s": "Borough High Street", "rot": 90, "fs": 16}, {"t": "path", "d": "M20 404 L360 404", "stroke": "rgba(255,255,255,.35)", "sw": 10}, {"t": "text", "x": 190, "y": 430, "s": "Southwark Street", "fs": 16}, {"t": "rect", "x": 40, "y": 60, "w": 310, "h": 328, "rx": 30, "fill": "rgba(255,255,255,.05)", "stroke": "rgba(255,255,255,.35)", "sw": 2, "dash": "7 6"}], "zones": [{"id": "cat", "n": "Southwark Cathedral", "lbl": "Catedral", "e": "⛪", "x": 52, "y": 72, "w": 118, "h": 70, "c": "#94a3b8", "it": ["La catedral pegada al mercado, en su lado noroeste", "Buena referencia para orientarse y quedar"], "fam": "Si alguien se pierde: quedad en la puerta de la catedral."}, {"id": "green", "n": "Green Market", "e": "🥬", "x": 52, "y": 152, "w": 118, "h": 96, "c": "#22c55e", "tag": "La zona más cercana a la catedral", "it": ["Puestos pequeños de productores especializados", "Buena para un bocado rápido"], "fam": "Aquí suele haber menos aglomeración que en el centro del mercado."}, {"id": "three", "n": "Three Crown\nSquare", "e": "🧀", "x": 180, "y": 152, "w": 150, "h": 96, "c": "#f5b70a", "tag": "La zona más grande", "it": ["Fruta y verdura, quesos, carne y pescado", "Puesto de Bread Ahead (los famosos donuts)", "Nada más entrar por sus verjas, a la derecha: la tienda e información del mercado, con el plano en papel gratis"], "fam": "Pedid el plano gratis en información: marca los aseos y los puestos."}, {"id": "hall", "n": "Market Hall", "e": "🌱", "x": 180, "y": 72, "w": 150, "h": 70, "c": "#14b8a6", "tag": "Da a Borough High Street", "it": ["Demostraciones de cocina, catas y talleres", "Funciona también como invernadero de plantas"]}, {"id": "kitchen", "n": "Borough Market\nKitchen", "e": "🌮", "x": 52, "y": 258, "w": 278, "h": 70, "c": "#f97316", "it": ["La zona de comida callejera", "Puestos para comer de pie o en mesas compartidas"], "fam": "Buena opción si alguno quiere algo caliente después del desayuno."}, {"id": "gf", "n": "Sin gluten", "e": "🌾", "x": 52, "y": 338, "w": 278, "h": 40, "c": "#a3e635", "fs": 16, "it": ["<b>Free From Bakehouse:<\/b> obrador 100 % sin gluten (pasteles, pan, galletas): ideal para el desayuno", "<b>Khanom Krok:<\/b> comida tailandesa 100 % sin gluten"], "warn": "La web del mercado no dice en qué zona está cada puesto: preguntad en información al entrar, os lo marcan en el plano."}], "pins": [{"n": "Metro London Bridge", "l": "🚇", "x": 356, "y": 52, "c": "#1d4ed8", "fs": 16, "r": 16, "lab": "Llegáis aquí", "la": "end", "it": ["Desde la estación, unos 4 minutos andando", "Bajad por Borough High Street: el mercado queda a la derecha"], "fam": "Venís en metro desde Hammersmith (District + transbordo, unos 45 min)."}, {"n": "Aseos", "l": "🚻", "x": 355, "y": 330, "c": "#6366f1", "fs": 16, "r": 15, "it": ["Cada una de las tres zonas tiene aseos accesibles con cambiador de bebés y fuente de agua", "Vienen marcados en el plano gratis de información"]}, {"n": "Hacia Winter by the River", "l": "➜", "x": 356, "y": 150, "c": "#e5484d", "fs": 16, "r": 15, "it": ["Siguiente parada: Winter by the River", "Unos 8 minutos hacia el este, por Tooley Street", "Abre a las 11:00"], "fam": "Salid hacia Borough High Street y cruzad hacia London Bridge."}]};</script>
+<script>
+(function(){
+'use strict';
+const C=window.MAPA,NS='http://www.w3.org/2000/svg';
+const el=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;};
+const svg=document.getElementById('map');
+svg.setAttribute('viewBox','0 0 400 '+(C.h||440));
+const dec=el('g',{'aria-hidden':'true'},svg);
+(C.decor||[]).forEach(d=>{
+  if(d.t==='path')el('path',{d:d.d,fill:d.fill||'none',stroke:d.stroke||'rgba(255,255,255,.3)','stroke-width':d.sw||2,'stroke-dasharray':d.dash||'','stroke-linecap':'round','stroke-linejoin':'round',opacity:d.op||1},dec);
+  else if(d.t==='rect')el('rect',{x:d.x,y:d.y,width:d.w,height:d.h,rx:d.rx||12,fill:d.fill||'rgba(255,255,255,.05)',stroke:d.stroke||'none','stroke-width':d.sw||0,'stroke-dasharray':d.dash||''},dec);
+  else if(d.t==='text'){const x=el('text',{x:d.x,y:d.y,'text-anchor':d.a||'middle','font-size':d.fs||14,'font-weight':d.fw||700,fill:d.fill||'#b8c6e6',transform:d.rot?'rotate('+d.rot+' '+d.x+' '+d.y+')':''},dec);x.textContent=d.s;}
+});
+const zg=el('g',{},svg),pg=el('g',{},svg);
+C.zones.forEach(z=>{
+  const g=el('g',{class:'zone',tabindex:'0',role:'button','aria-label':z.n.replace('\n',' '),'data-z':z.id},zg);
+  el('rect',{x:z.x,y:z.y,width:z.w,height:z.h,rx:14,fill:z.c,opacity:.93},g);
+  const L=(z.lbl||z.n).split('\n'),cx=z.x+z.w/2,side=!z.stack&&z.w>=118&&z.h<80;
+  const fs=z.fs||17;
+  if(side){const t=el('text',{x:z.x+22,y:z.y+z.h/2+7,'text-anchor':'middle','font-size':22},g);t.textContent=z.e;
+    L.forEach((ln,i)=>{const tx=el('text',{x:z.x+42+(z.w-42)/2,y:z.y+z.h/2+(L.length===2?-3:6)+i*18,'text-anchor':'middle','font-size':fs,'font-weight':900,fill:'#0b1630'},g);tx.textContent=ln;});}
+  else{const t=el('text',{x:cx,y:z.y+z.h/2-(L.length===2?12:4),'text-anchor':'middle','font-size':18},g);t.textContent=z.e;
+    L.forEach((ln,i)=>{const tx=el('text',{x:cx,y:z.y+z.h/2+(L.length===2?12:18)+i*17,'text-anchor':'middle','font-size':fs,'font-weight':900,fill:'#0b1630'},g);tx.textContent=ln;});}
+  g.addEventListener('click',()=>pick(z));
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(z);}});
+});
+(C.pins||[]).forEach(p=>{
+  const g=el('g',{class:'gate',tabindex:'0',role:'button','aria-label':p.n},pg);
+  el('circle',{cx:p.x,cy:p.y,r:p.r||15,fill:p.c,stroke:'#fff','stroke-width':3},g);
+  const t=el('text',{x:p.x,y:p.y+5,'text-anchor':'middle','font-size':p.fs||14,'font-weight':900,fill:'#fff'},g);t.textContent=p.l;
+  if(p.lab){const r=el('text',{x:p.x+(p.la==='end'?-22:22),y:p.y+5,'text-anchor':p.la||'start','font-size':16,'font-weight':900,fill:'#fff'},g);r.textContent=p.lab;}
+  g.addEventListener('click',()=>pick(p));
+  g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(p);}});
+});
+const lg=document.getElementById('legend');
+lg.innerHTML=(C.pins||[]).map((p,i)=>'<button type="button" data-p="'+i+'"><i style="background:'+p.c+'"></i>'+p.n+'</button>').join('');
+lg.addEventListener('click',e=>{const b=e.target.closest('[data-p]');if(b){pick(C.pins[+b.dataset.p]);document.querySelector('.mapbox').scrollIntoView({behavior:'smooth',block:'center'});}});
+const card=document.getElementById('card'),pop=document.getElementById('pop');let lastF=null;
+function pick(z){
+  document.querySelectorAll('.zone').forEach(n=>n.classList.toggle('on',n.dataset.z===z.id));
+  lastF=document.activeElement;
+  card.innerHTML='<button type="button" class="px" aria-label="Cerrar" id="popX">✕</button><h2 id="popT"><span>'+(z.e||'<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:'+z.c+'"></span>')+'</span>'+z.n.replace('\n',' ')+'</h2>'
+    +(z.tag?'<span class="tag" style="background:'+(z.tagc||z.c)+'">'+z.tag+'</span>':'')
+    +'<ul>'+z.it.map(i=>'<li>'+i+'</li>').join('')+'</ul>'
+    +(z.fam?'<div class="fam">👨‍👩‍👧‍👦 '+z.fam+'</div>':'')+(z.warn?'<div class="warn">'+z.warn+'</div>':'');
+  pop.hidden=false;document.getElementById('popX').focus();
+}
+function hide(){pop.hidden=true;document.querySelectorAll('.zone').forEach(n=>n.classList.remove('on'));if(lastF&&lastF.focus)lastF.focus();}
+pop.addEventListener('click',e=>{if(e.target===pop||e.target.closest('#popX'))hide();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!pop.hidden)hide();});
+})();
+
+</script>
+</body>
+</html>

@@ -1843,7 +1843,7 @@
           steps: [
             { t: '09:20', icon: '🚇', title: 'Metro Hammersmith → London Bridge', text: 'Salir del apartamento a las 9:20. District hasta Westminster y allí Jubilee 3 paradas (unos 32 min). En domingo pasan algo menos trenes. En «Rutas de Metro» tienes el paso a paso.', metro: 'd2i' },
             { move: 'walk', min: 3, text: 'En London Bridge sigue los carteles «Borough High Street / Borough Market».', to: 'borough_market' },
-            { t: '10:00', n: 'borough_market', icon: '🛒', title: 'Borough Market ⭐', text: 'Llegar a la apertura: a partir de las 11:30 se llena y con carritos cuesta moverse. Una hora es suficiente con niños. Desayuno sin gluten en Free From Bakehouse (100 % sin gluten).', today: 'domingo 10:00–16:00' },
+            { t: '10:00', n: 'borough_market', icon: '🛒', title: 'Borough Market ⭐', mapa: 'mapa-borough/', text: 'Llegar a la apertura: a partir de las 11:30 se llena y con carritos cuesta moverse. Una hora es suficiente con niños. Desayuno sin gluten en Free From Bakehouse (100 % sin gluten).', today: 'domingo 10:00–16:00' },
             { move: 'walk', min: 15, text: 'Ve hacia el río pasando por la catedral de Southwark, cruza por debajo del puente de Londres y sigue el paseo del río hacia el este hasta Hay’s Galleria.', from: 'borough_market', to: 'winter_river' },
             { t: '11:15', n: 'winter_river', icon: '🎄', title: 'Winter by the River', text: 'Mercadillo navideño junto al río con Tower Bridge de fondo. Abre a las 11:00, así que lo pilláis recién abierto. Hay curling en el muelle.', today: '11:00–22:00' },
             { move: 'walk', min: 5, text: 'Sigue el paseo del río (pasando el HMS Belfast) hasta el pie de Tower Bridge.', from: 'winter_river', to: 'tower_bridge' },
@@ -1856,7 +1856,7 @@
             { move: 'walk', min: 20, text: 'Desembarcas en Westminster Pier, al lado del Big Ben (fotos). Sube a la calle, gira a la derecha y sigue recto por Whitehall: pasarás Downing Street y los guardias a caballo de Horse Guards, y llegas a Trafalgar Square.', from: 'westminster_pier', to: 'trafalgar' },
             { t: '15:30', n: 'trafalgar', icon: '🌲', title: 'Trafalgar Square al anochecer ⭐', text: 'El gran árbol de Navidad que regala Noruega. Anochece sobre las 15:50: es el mejor momento para verlo encenderse.' },
             { move: 'walk', min: 8, text: 'Sal por la esquina de la iglesia de St Martin-in-the-Fields y sube por William IV St y Chandos Place hasta la plaza de Covent Garden.', from: 'trafalgar', to: 'sugarsin' },
-            { t: '16:15', n: 'sugarsin', icon: '✨', title: 'Covent Garden iluminado', text: 'El mercado cubierto con su gran árbol y la decoración navideña, músicos en la plaza. El Apple Market y las tiendas cierran a las 18:00 en domingo. SugarSin está cerrado temporalmente (reabrirá en un local cercano, sin fecha: mirad su web antes de ir).', today: 'mercado hasta las 18:00' },
+            { t: '16:15', n: 'sugarsin', icon: '✨', title: 'Covent Garden iluminado', mapa: 'mapa-covent-garden/', text: 'El mercado cubierto con su gran árbol y la decoración navideña, músicos en la plaza. El Apple Market y las tiendas cierran a las 18:00 en domingo. SugarSin está cerrado temporalmente (reabrirá en un local cercano, sin fecha: mirad su web antes de ir).', today: 'mercado hasta las 18:00' },
             { move: 'metro', text: 'Vuelta hacia las 17:30, antes de que los niños estén agotados: metro Piccadilly DIRECTO de Covent Garden a Hammersmith, sin trasbordo (unos 20 min; esta estación solo tiene ascensores, ideal con carrito). O taxi negro: unos 30 min y £22–26.' }
           ],
           gf: 'Free From Bakehouse y Khanom Krok (en Borough Market, 100 % sin gluten) · Wagamama Tower Bridge · Bancone (Covent Garden).' },
@@ -1881,7 +1881,7 @@
           steps: [
             { t: '09:30', icon: '🚇', title: 'Metro Hammersmith → Notting Hill Gate', text: 'District hasta Earl’s Court y allí otro tren de la District que ponga Edgware Road (unos 18 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd4i' },
             { move: 'walk', min: 3, text: 'Sigue los carteles «Portobello Road» y baja por Pembridge Road.', to: 'portobello' },
-            { t: '09:45', n: 'portobello', icon: '🏘️', title: 'Portobello Road y Notting Hill', text: 'Casas de colores. Los martes el mercado es pequeño (el grande es el sábado). Desayuno sin gluten en Libby’s (Ledbury Rd, a 5 min).' },
+            { t: '09:45', n: 'portobello', icon: '🏘️', title: 'Portobello Road y Notting Hill', mapa: 'mapa-portobello/', text: 'Casas de colores. Los martes el mercado es pequeño (el grande es el sábado). Desayuno sin gluten en Libby’s (Ledbury Rd, a 5 min).' },
             { move: 'walk', min: 20, text: 'Vuelve a Notting Hill Gate, baja por Kensington Church Street y entra en Kensington Gardens; el palacio queda a la derecha.', from: 'portobello', to: 'kensington' },
             { t: '11:00', n: 'kensington', icon: '🌳', title: 'Kensington Gardens y Kensington Palace', text: 'Jardines gratis, el estanque redondo y el palacio por fuera. Por dentro en invierno suele abrir solo de miércoles a domingo.' },
             { move: 'walk', min: 12, text: 'Cruza los jardines hacia el sur hasta el Albert Memorial (el monumento dorado); el Royal Albert Hall está enfrente.', from: 'kensington', to: 'royal_albert' },
@@ -1891,7 +1891,7 @@
             { move: 'walk', min: 15, text: 'Por Brompton Road hasta Harrods, viendo escaparates navideños.', from: 'almuerzo_skensington', to: 'harrods_toy' },
             { t: '14:30', n: 'harrods_toy', icon: '🛍️', title: 'Harrods · Toy Kingdom', text: 'El reino de los juguetes de Harrods y su fachada iluminada. Unos 45 min con calma.', today: 'martes 10:00–21:00' },
             { move: 'taxi', text: 'A Battersea en taxi: unos 15 min (≈£10–15). Andando son unos 40 min: no merece la pena.', from: 'harrods_toy', to: 'battersea' },
-            { t: '16:00', n: 'battersea', icon: '⚡', title: 'Battersea Power Station · mercadillo navideño ⭐⭐', text: 'La antigua central eléctrica iluminada junto al río, con tiendas y mercadillo navideño.', today: 'mercadillo 11:00–20:00' },
+            { t: '16:00', n: 'battersea', icon: '⚡', title: 'Battersea Power Station · mercadillo navideño ⭐⭐', mapa: 'mapa-battersea/', text: 'La antigua central eléctrica iluminada junto al río, con tiendas y mercadillo navideño.', today: 'mercadillo 11:00–20:00' },
             { move: 'taxi', text: 'Taxi de Battersea a Hammersmith: unos 15 min y £13–15.' }
           ],
           gf: 'Libby’s Bakery (Notting Hill, 100 % sin gluten) · Los Mochis (Notting Hill, 100 % sin gluten) · Zizzi Kensington.' }
