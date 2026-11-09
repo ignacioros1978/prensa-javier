@@ -1,17 +1,17 @@
 {
- "fecha": "2026-11-07",
- "fechaTexto": "sábado 7 de noviembre",
- "actualizado": "2026-11-07T06:56:12+01:00",
+ "fecha": "2026-11-09",
+ "fechaTexto": "lunes 9 de noviembre",
+ "actualizado": "2026-11-09T06:56:49+01:00",
  "portada": [
-  "ld2",
-  "to2",
-  "ee1",
   "edi1",
-  "edi3",
-  "to3",
   "ed1",
-  "ee2",
-  "ld1"
+  "ed2",
+  "to1",
+  "ee1",
+  "edi2",
+  "ed3",
+  "ok3",
+  "ok1"
  ],
  "diarios": [
   {
@@ -20,15 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Cortan durante 43 días la conexión entre la A-5 y la M-30 en Madrid",
-     "resumen": "Desde el diez de noviembre hasta el veintitrés de diciembre, la conexión entre la autovía A-5 y la M-30 permanecerá cerrada en los dos sentidos. Según Libertad Digital, el corte forma parte de la fase final del soterramiento de la A-5. El tramo en obras seguirá abierto con dos carriles por sentido, pero los coches no podrán entrar directamente a la M-30. Habrá desvíos por la avenida de Portugal y por Batán. Los trabajos incluyen demoler la rampa actual, colocar ciento cuarenta y dos vigas, cubrir un tramo de ciento setenta y dos metros y excavar unos siete mil metros cúbicos de tierra. Por este enlace pasan unos ochenta mil vehículos al día. El Ayuntamiento reforzará hasta un veinticinco por ciento algunas líneas de autobús, aumentará los trenes en dos líneas de metro y añadirá autobuses interurbanos. El concejal de Movilidad, Borja Carabante, pidió paciencia y avisó de que los primeros días serán complicados. El alcalde, José Luis Martínez-Almeida, asegura que el túnel abrirá el veintitrés de diciembre.",
-     "url": "https://www.libertaddigital.com/madrid/2026-11-07/la-conexion-de-la-a-5-con-la-m-30-se-cortara-en-ambos-sentidos-durante-43-dias-desvios-y-alternativas-7486534/"
+     "titular": "Tiroteo en la plaza mayor de Cracovia, con al menos cinco muertos",
+     "resumen": "El sábado siete de noviembre, hacia las tres de la tarde, un hombre llegó en coche a la plaza mayor de Cracovia, en el sur de Polonia, y empezó a disparar al azar contra la gente. Según Libertad Digital, el titular habla de al menos seis muertos y más de una docena de heridos, aunque la policía polaca hablaba en su comunicado de cinco fallecidos y varias docenas de heridos. Los agentes dispararon al atacante, que resultó herido y quedó detenido. Según testigos, el ataque se dirigió contra turistas y paseantes de las terrazas, en una zona muy concurrida los fines de semana. El primer ministro, Donald Tusk, fue informado por el ministro del Interior, que viajó a Cracovia. El presidente, Karol Nawrocki, expresó su enorme preocupación. La policía investiga los motivos, que todavía no se conocen.",
+     "url": "https://www.libertaddigital.com/internacional/europa/2026-11-07/al-menos-cinco-muertos-y-docenas-de-heridos-en-un-tiroteo-en-cracovia-7488174/"
     },
     {
      "id": "ld2",
-     "titular": "Detienen en Paraguay al expresidente Santiago Peña tras su destitución",
-     "resumen": "La Policía de Paraguay informó de que el expresidente Santiago Peña quedó detenido en su domicilio por orden de la Fiscalía. Ocurre en plena crisis política por el cierre del banco Ueno. Según Libertad Digital, el fiscal Cristian Benítez explicó que el caso es complejo y que un juez de garantías decidirá más adelante cómo sigue el proceso. La orden alcanza también a Carlos Carvallo Spalding, que dirigió el Banco Central hasta el martes, cuando dimitió por el escándalo. El Senado aprobó la destitución de Peña, mediante juicio político, con cuarenta y cuatro votos de cuarenta y cinco, porque un senador se ausentó. Al perder su cargo, Peña dejó de tener protección frente a la justicia. Antes había pedido aplazar el juicio setenta y dos horas, y un grupo de senadores de su propio partido, el Colorado, abandonó el pleno. El vicepresidente, Pedro Alliana, juró como nuevo presidente y prometió compensar a los afectados, empezando por los más desfavorecidos. El artículo no recoge la reacción de Peña ni de su defensa.",
-     "url": "https://www.libertaddigital.com/internacional/latinoamerica/2026-11-07/detienen-en-paraguay-al-expresidente-santiago-pena-tras-su-destitucion-7488077/"
+     "titular": "La Guardia Civil sitúa al detenido Corvillo en los mismos hoteles que Koldo y Ábalos",
+     "resumen": "Libertad Digital cuenta que un informe de la Guardia Civil vincula al empresario Cristian Corvillo, detenido en la investigación del caso Koldo, con Koldo García y con el exministro José Luis Ábalos. Según el informe, Corvillo habría coincidido con Koldo en varios hoteles entre octubre de dos mil diecinueve y junio de dos mil veintiuno, en Torremolinos, en Jaén y en Sevilla. Ábalos estaba en esos lugares por actos oficiales o del partido, según el diario. El informe añade que los hermanos Corvillo podrían tener intereses empresariales con Víctor de Aldama. Cristian ocuparía cargos en la ejecutiva socialista de Córdoba y su hermano sería concejal del PSOE en un pueblo de Zamora. El texto habla siempre en condicional y presenta todo esto como indicios, no como hechos probados. El Gobierno ha negado que Corvillo fuera chófer de Pedro Sánchez.",
+     "url": "https://www.libertaddigital.com/espana/2026-11-07/corvillo-era-tan-peugeot-como-koldo-o-abalos-la-uco-tiene-el-listado-hasta-de-estancias-y-noches-en-comun-en-hospedajes-7487770/"
+    },
+    {
+     "id": "ld3",
+     "titular": "Una jueza deja a Adif ver el tren de Adamuz, pero sin tocar nada",
+     "resumen": "La jueza de Montoro, que investiga el accidente ferroviario de Adamuz, ocurrido en enero, permite a Adif inspeccionar con la vista los ocho primeros coches del tren Iryo y sus restos. Según Libertad Digital, podrá hacer fotos y vídeos, pero tiene prohibido alterar cualquier elemento. La revisión se hará bajo vigilancia de la Policía Judicial de Córdoba, que fijará la fecha. La resolución es del treinta de octubre. La jueza ya denunció en marzo que Adif había retirado cuarenta y dos metros de vía sin avisar al juzgado. También rechazó que Adif participe en la lectura de las cajas negras, prevista para el doce de noviembre, porque es una tarea de los peritos. Los peritos judiciales piden a Adif los informes de revisión de la vía de antes y después del accidente.",
+     "url": "https://www.libertaddigital.com/espana/2026-11-08/la-juez-autoriza-a-adif-a-ver-el-iryo-de-adamuz-bajo-control-policial-y-les-prohibe-alterar-cualquier-elemento-7487636/"
     }
    ]
   },
@@ -38,21 +44,15 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "La Policía detiene a dirigentes del grupo neonazi Núcleo Nacional",
-     "resumen": "La Policía Nacional ha detenido a varios dirigentes del grupo neonazi Núcleo Nacional. Según El Español, entre ellos están Isabel Medina Peralta, los hermanos Iván y David Rico Olivares, y el activista Alberto Pugilato. Se les investiga por presuntos delitos de odio y por asociación ilícita. La investigación nació de unos altercados ocurridos a comienzos de este año cerca de un colegio jesuita de Gijón, durante una protesta contra la retirada de un monumento considerado franquista. Siete detenidos irán a Gijón a declarar ante la jueza, y otros tres quedan a disposición de juzgados de sus localidades. El diario señala que se esperan más detenciones. El grupo nació en dos mil veintidós y ganó visibilidad en las protestas frente a la sede del PSOE en Ferraz contra la amnistía. Interior lo inscribió como asociación en agosto de dos mil veinticuatro. Peralta fue condenada en julio a un año de prisión por un discurso xenófobo pronunciado en dos mil veintiuno. El artículo no recoge declaraciones oficiales nuevas.",
-     "url": "https://www.elespanol.com/espana/20261107/policia-descabeza-ultras-nucleo-nacional-rico-peralta-pugilato-detenidos-mayor-golpe-grupo-neonazi/1003744449624_0.html"
+     "titular": "Un sondeo da a PP y Vox mayoría absoluta y al PSOE una pequeña recuperación",
+     "resumen": "Según una encuesta de la empresa SocioMétrica para El Español, el PP y Vox sumarían unos doscientos dos escaños en las elecciones del veintinueve de noviembre, contando los dos de UPN en Navarra. Eso les daría una amplia mayoría absoluta. El resto de partidos del bloque que apoyó la investidura de Pedro Sánchez se quedaría en ciento cuarenta y cinco escaños, treinta y uno por debajo de la mayoría. El sondeo indica que el PSOE recupera dos escaños que había perdido tras el accidente ferroviario de Urda y la dimisión del ministro Óscar Puente. Aun así, retrocede en once comunidades y tendría su peor resultado en Andalucía. El PP sería la primera fuerza en trece comunidades, además de Ceuta y Melilla. Podemos y el Frente Amplio no despegan. Feijóo critica el escapismo de Sánchez.",
+     "url": "https://www.elespanol.com/espana/politica/20261108/pp-vox-suman-escanos-sanchez-recupera-perdio-urda-dimision-puente-sondeo-noche/1003744450645_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Qué permisos deben dar las empresas para votar el 29 de noviembre",
-     "resumen": "Con las elecciones generales del 29 de noviembre a la vista, El Español repasa los permisos que las empresas deben conceder. Quien tenga que trabajar mientras están abiertas las urnas puede tener hasta cuatro horas pagadas para ir a votar, aunque no es automático y depende de cómo coincida su horario. Los presidentes y vocales de mesa tienen jornada completa pagada si les toca trabajar ese domingo, y cinco horas pagadas menos el lunes treinta, que en principio se descuentan al comienzo de la jornada. Los interventores tienen el mismo régimen y los apoderados solo el día de las elecciones. El diario recuerda que formar parte de una mesa es obligatorio. Las excusas se presentan ante la Junta Electoral de Zona en siete días, y no acudir puede suponer una pena de tres meses a un año de prisión o una multa. Según el Instituto Nacional de Estadística, hay más de treinta y ocho millones de electores, y más de un millón seiscientos mil votarán por primera vez en unas generales.",
-     "url": "https://www.elespanol.com/espana/20261107/oficial-empresas-deben-conceder-permisos-retribuidos-trabajadores-elecciones/1003744427201_0.html"
-    },
-    {
-     "id": "ee3",
-     "titular": "Cobrar parte del sueldo en especie: cómo funciona la retribución flexible",
-     "resumen": "El Español explica la retribución flexible, que permite cambiar hasta un treinta por ciento del sueldo bruto anual por bienes o servicios. Se apoya en la ley del impuesto sobre la renta y debe pactarse por convenio o modificando el contrato, con trámites antes del treinta y uno de diciembre para que cuente en la renta de este año. El titular dice que se puede cobrar ese treinta por ciento sin pagar impuestos, pero el texto matiza que solo algunos conceptos quedan exentos. Entre los límites citados están los vales de comida de once euros al día, el seguro médico de quinientos euros al año por persona y el transporte público de mil quinientos euros al año. La guardería autorizada no tiene tope. Como ejemplo, con un sueldo bruto de treinta y cinco mil euros y tres mil euros destinados a guardería y comidas, el ahorro sería de unos novecientos euros al año. El diario no cita un documento concreto de Hacienda que lo confirme.",
-     "url": "https://www.elespanol.com/sociedad/20261107/hacienda-confirma-trabajadores-podran-cobrar-sueldo-especie-sin-pagar-irpf/1003744444278_0.html"
+     "titular": "El PP pide votar en defensa propia en Ceuta y Vivas condiciona su futuro",
+     "resumen": "Según El Español, la portavoz del PP en el Congreso, Ester Muñoz, presentó el domingo en Ceuta a los candidatos de su partido al Congreso y al Senado. Arropó al presidente de la ciudad, Juan Jesús Vivas, que anunció que no se presentará a la reelección en mayo de dos mil veintisiete si el PP no es la lista más votada el veintinueve de noviembre. Muñoz pidió votar en defensa propia para que Ceuta jamás vuelva a ser invadida. Acusó al PSOE de no actuar durante la crisis migratoria de finales de julio, pese a los avisos de inteligencia. La candidata al Senado culpó a Marruecos de la entrada masiva y al Gobierno de no proteger la frontera. Recordaron también las cinco visitas de Feijóo a la ciudad desde el treinta de julio. El texto no recoge la respuesta del PSOE.",
+     "url": "https://www.elespanol.com/espana/20261108/ester-munoz-arropa-vivas-llama-votar-defensa-propia-evitar-ceuta-jamas-vuelva-invadida/1003744450602_0.html"
     }
    ]
   },
@@ -62,15 +62,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Adif conocía desde 2024 un riesgo grave en la vía de Adamuz",
-     "resumen": "Según El Debate, un informe de la autoridad que investiga el accidente de Adamuz, en Córdoba, que dejó cuarenta y seis muertos el dieciocho de enero, indica que Adif sabía desde dos mil veinticuatro que sus circuitos de vía no garantizaban detectar algunas roturas completas de carril. Ese riesgo figuraba en un proyecto de renovación con la máxima gravedad y el calificativo de intolerable, pero no se corrigió. Los registros apuntan a que una caída de tensión la noche del diecisiete de enero pudo señalar la rotura, que habría pasado inadvertida unas veintidós horas, con cuarenta y siete trenes pasando por el punto. La recomendación de seguridad llevaba meses frenada y, según fuentes del organismo, se redujo de veintiséis a cinco páginas. Desde dos mil diecisiete, solo el cuarenta y uno por ciento de las roturas en alta velocidad se detectaron con estos circuitos. Las causas de la fractura siguen sin determinarse. El texto no incluye la versión de Adif ni del Ministerio.",
-     "url": "https://www.eldebate.com/economia/20261106/adif-conocia-desde-2024-riesgo-catastrofico-e-intolerable-via-adamuz-no-corrigio_477798.html"
+     "titular": "La huelga general podría costar a la economía hasta 4.560 millones de euros",
+     "resumen": "La Confederación Nacional de Pymes calcula que la huelga general del miércoles once de noviembre podría costar a la economía española hasta cuatro mil quinientos sesenta millones de euros. Según El Debate, eso equivale al cero coma veintisiete por ciento del producto interior bruto anual y corresponde a un escenario en el que la huelga afecte al setenta por ciento. Con una afectación del treinta por ciento, la pérdida bajaría a mil ochocientos cincuenta millones. La patronal sostiene que los más perjudicados serán las pequeñas empresas y los autónomos, que dependen de la facturación diaria. Reconoce que los servicios mínimos, el teletrabajo y los negocios que abran amortiguarán el golpe. Pide garantizar el derecho de huelga y la libertad de quien no la secunde. El artículo recoge solo la versión de la patronal, no la de los sindicatos.",
+     "url": "https://www.eldebate.com/economia/20261109/huelga-general-amenaza-dejar-agujero-economia-hasta-4560-millones_478658.html"
     },
     {
      "id": "ed2",
-     "titular": "Maroto se reunió dos veces con el empresario que invitó a Puente a fiestas",
-     "resumen": "El Debate sostiene que la exministra de Industria Reyes Maroto se reunió en dos ocasiones con Francisco Javier Meléndez, dueño de Patatas Meléndez. Según el diario, este empresario habría invitado al ministro Óscar Puente a fiestas con prostitutas a cambio de ayudas. La primera reunión fue el dos de agosto de dos mil veintiuno, para hablar de un proyecto de digitalización de treinta y dos millones de euros. La segunda fue una visita a la fábrica el nueve de septiembre de dos mil veintidós. El medio documenta dos avales públicos, uno de doscientos mil euros del Ministerio de Industria en dos mil veintitrés y otro de dos millones del Instituto de Crédito Oficial en dos mil veinticinco. La empresa dice que fue una garantía y no una subvención, que ya devolvió los préstamos y que rechaza cualquier irregularidad. El artículo no recoge respuesta de Maroto ni del PSOE. Son afirmaciones del propio diario y de sus fuentes.",
-     "url": "https://www.eldebate.com/espana/20261106/maroto-reunio-dos-veces-empresario-senalado-invitar-puente-fiestas-prostitutas-pedirle-ministro-promocionara-fabrica_477236.html"
+     "titular": "Tres magistrados decidirán si Arabia Saudí debe confirmar el origen de las joyas de Zapatero",
+     "resumen": "Tres magistrados de la Sala de Apelación de la Audiencia Nacional revisarán la decisión del juez Calama, que el veintisiete de octubre rechazó pedir a Arabia Saudí que confirme el origen de unas joyas de José Luis Rodríguez Zapatero. Según El Debate, se trata de tres juegos de rubíes, esmeraldas y zafiros, hallados el diecinueve de mayo en la caja fuerte de su despacho. Fueron tasados en más de un millón de euros. La defensa sostiene que son un regalo del rey Abdalá en dos mil siete, y admite que Zapatero no conserva ningún recibo. El juez dijo que esa versión carece de corroboración mínima. La Fiscalía Anticorrupción también se opone y recuerda que el monarca murió en dos mil quince. El diario cuenta que la explicación de Zapatero ha ido cambiando desde mayo.",
+     "url": "https://www.eldebate.com/espana/20261109/zapatero-juega-ultima-baza-tres-magistrados-decidiran-arabia-saudi-debe-confirmar-origen-joyas_478738.html"
+    },
+    {
+     "id": "ed3",
+     "titular": "Transportes disolvió la comisión que investigaba Adamuz sin avisar a sus responsables",
+     "resumen": "Según El Debate, la comisión de investigación de accidentes ferroviarios, que trabajó sobre el terreno desde el primer día tras el accidente de Adamuz, dejó de existir en julio sin que se lo comunicaran oficialmente. Su presidente, Iñaki Barrón, tuvo que escribir una carta al subsecretario de Transportes asumiendo que ya no investigaban. Sus funciones pasaron a una nueva autoridad independiente, que empezó a trabajar el quince de julio. El diario añade que los miembros de la antigua comisión no cobraron la dieta de su último pleno, pese a reclamarla varias veces. El presidente de la nueva autoridad, Gonzalo Guillén, dijo el seis de noviembre en la Cadena SER que su organismo es independiente y que le faltan investigadores. El texto no incluye la respuesta del Ministerio de Transportes.",
+     "url": "https://www.eldebate.com/economia/20261109/transportes-desmantelo-comision-investigacion-adamuz-comunicarlo-responsables-poner-marcha-suya_478263.html"
     }
    ]
   },
@@ -80,21 +86,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Un sondeo da a PP y Vox entre 198 y 215 diputados",
-     "resumen": "The Objective publica una nueva entrega de su Votómetro, un sondeo elaborado por la consultora Redlines. Según este estudio, el accidente ferroviario de Urda, ocurrido el veintiocho de octubre, frena la mejora que el PSOE venía registrando desde el inicio de la precampaña. El PSOE quedaría entre ciento uno y ciento diez escaños, con un veintiséis coma siete por ciento de los votos. PP y Vox sumarían entre ciento noventa y ocho y doscientos quince diputados, por encima de los ciento setenta y seis de la mayoría absoluta. El PP tendría entre ciento treinta y uno y ciento cuarenta escaños, y Vox entre sesenta y siete y setenta y cinco. El bloque de izquierdas se quedaría entre ciento treinta y cuatro y ciento cincuenta y dos. El diario calcula en un noventa y ocho coma seis por ciento la probabilidad de que Feijóo y Abascal puedan gobernar. El método combina la media de varias encuestas con diez mil simulaciones por ordenador.",
-     "url": "https://theobjective.com/espana/politica/2026-11-07/urda-frena-psoe-crece-pp-vox-votometro/"
+     "titular": "Zapatero dio 460.000 euros a una empresa del exchófer de Sánchez que desapareció en meses",
+     "resumen": "The Objective afirma que en julio de dos mil diez el Gobierno de Zapatero concedió una subvención de cuatrocientos sesenta mil euros a una empresa administrada por Cristian Corvillo, el empresario cordobés que fue chófer de Pedro Sánchez en las primarias de dos mil diecisiete. La sociedad se creó con solo cuatro mil euros de capital. El dinero era para reformar un edificio en Peñarroya-Pueblonuevo y abrir una residencia para adultos con discapacidad intelectual. Las últimas cuentas de la empresa son de dos mil diez, y Hacienda le retiró el número fiscal en dos mil diecisiete. Corvillo fue detenido el cinco de noviembre en el caso Koldo, y quedó libre poco después. El texto no recoge declaraciones de Zapatero, de Corvillo ni del Gobierno.",
+     "url": "https://theobjective.com/espana/2026-11-09/zapatero-ayuda-460000-empresa-corvillo-exchofer-sanchez/"
     },
     {
      "id": "to2",
-     "titular": "Bruselas investiga a directivos de Adif por obras de Urda con fondos europeos",
-     "resumen": "Según The Objective, la Unidad Central Operativa de la Guardia Civil acudió el viernes al Tribunal de Cuentas, por orden de la Fiscalía Europea, para recoger documentación. La Fiscalía europea abrió por su cuenta una investigación por posible fraude con fondos europeos de recuperación. También actuó en Adif y en la Agencia de Seguridad Ferroviaria. El foco está en el contrato de señalización de la línea Madrid-Sevilla, adjudicado en octubre de dos mil veintiuno a la empresa Thales por setenta y siete millones y medio de euros, con una rebaja del veintiocho coma cinco por ciento. Un informe del Tribunal de Cuentas de diciembre de dos mil veinticinco señaló que en seis expedientes, este incluido, no se había acreditado bien el poder de los firmantes. El diario aclara que el Tribunal no concluyó que hubiera fraude. Las instalaciones se terminaron en junio, pero entrarán en servicio a comienzos de dos mil veintisiete. El sistema de frenado automático falló ciento setenta veces, la última veinte minutos antes del accidente de Urda.",
-     "url": "https://theobjective.com/espana/2026-11-07/bruselas-directivos-adif-urda-fondos-europeos/"
+     "titular": "La policía halla seis inmuebles en Argel ligados a la trama de visados del consulado",
+     "resumen": "Según The Objective, un matrimonio que dirigía una trama de visados en el consulado español de Argel compró al menos seis propiedades en cinco años. Los agentes hablan de compras entre dos mil dieciséis y dos mil veintiuno por unos setecientos ochenta mil euros. El caso estalló a finales de abril, con varias detenciones, y hay seis imputados ante la jueza María Tardón, de la Audiencia Nacional. Según la investigación, se tramitaban visados irregulares a cambio de pagos de hasta veinticinco mil euros por familia. La esposa del excanciller investigado niega tener propiedades en Argelia, y su abogado pide a la jueza una comisión rogatoria a ese país. El informe policial sitúa también propiedades en Portugal. No hay declaración del Ministerio de Exteriores en el texto.",
+     "url": "https://theobjective.com/espana/tribunales/2026-11-09/udef-inmuebles-argel-consulado/"
     },
     {
      "id": "to3",
-     "titular": "Los sindicatos cuestionan la versión de Puente sobre el accidente de Urda",
-     "resumen": "Los sindicatos ferroviarios rechazan la explicación del Ministerio de Transportes sobre el accidente de Urda, según The Objective. El ministro Óscar Puente atribuyó el accidente a un error humano de un operador en Atocha y al hecho de que dos trenes, un Iryo y un AVE de Renfe, ocupaban el mismo tramo de vía de unos veinte kilómetros. Los sindicatos responden que eso es muy grave y casi imposible si el sistema de seguridad funcionaba, y que nadie lo ha explicado. Sospechan que se oculta la causa de la caída de ese sistema. También critican la filtración del audio entre el operador y el maquinista, que murió. Piden la dimisión del ministro y de altos cargos de Adif, y convocan paros los días diez y doce de noviembre. El diario recuerda que Puente ya ha sido sustituido por Carlos Cuerpo y que el accidente de Adamuz, en enero, dejó cuarenta y seis fallecidos. El texto no recoge una respuesta oficial nueva.",
-     "url": "https://theobjective.com/espana/politica/2026-11-07/sindicatos-cuestionan-version-puente-canton/"
+     "titular": "El PSOE andaluz teme su peor resultado histórico el 29 de noviembre",
+     "resumen": "Dirigentes socialistas consultados por The Objective temen que el PSOE andaluz tenga el peor resultado de su historia en las elecciones generales del veintinueve de noviembre. Citan como causas el accidente ferroviario de Urda, la entrada masiva de inmigrantes en Ceuta a finales de julio y el auge de Adelante Andalucía, que podría lograr hasta tres diputados. En dos mil veintitrés el PSOE sacó en Andalucía el treinta y tres coma ocho por ciento y veintiún escaños. Los sondeos internos apuntan a que bajaría del treinta por ciento por primera vez en democracia y se quedaría en unos veinte de los sesenta escaños en juego. El artículo cuestiona a los líderes regionales Juan Espadas y María Jesús Montero. Todas las voces citadas son anónimas.",
+     "url": "https://theobjective.com/espana/politica/2026-11-09/nervios-psoe-andalucia-peor-resultado-generales/"
     }
    ]
   },
@@ -104,9 +110,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Detenidos en una operación policial contra el grupo neonazi Núcleo Nacional",
-     "resumen": "Según OKDiario, la Policía Nacional ha hecho una operación contra el grupo Núcleo Nacional, al que el diario describe como neonazi. Hubo detenciones en Madrid, Valladolid, Alicante, Asturias, Burgos y Pontevedra, y se registró la sede del grupo en Madrid. El diario habla de al menos nueve detenidos. Las diligencias las coordina la Comisaría General de Información y siguen abiertas. El texto no da nombres ni cargos concretos. OKDiario atribuye al grupo entre mil quinientos y dos mil afiliados y ciento catorce mil seguidores en redes sociales. Recuerda denuncias de estudiantes por agresiones en Gijón, investigaciones previas por delitos de odio y altercados en Madrid y Sevilla. El grupo iba a celebrar su aniversario con una manifestación en la Plaza de España el sábado. El artículo se publicó el viernes seis de noviembre y no recoge declaraciones de la Policía, del Gobierno ni del propio grupo.",
-     "url": "https://okdiario.com/espana/varios-detenidos-operacion-policia-contra-grupo-neonazi-nucleo-nacional-20714086"
+     "titular": "Feijóo critica que Puente dimita tras ciento dieciséis víctimas ferroviarias",
+     "resumen": "Según OKDiario, Alberto Núñez Feijóo habló en Valladolid, ante unas tres mil personas, en su primer mitin de campaña tras el accidente de Urda. Criticó la dimisión del exministro de Transportes Óscar Puente. Dijo que lo digno habría sido dimitir desde el principio y pedir perdón, y no irse a las puertas de las elecciones tras ciento dieciséis víctimas de accidentes ferroviarios. Afirmó que los ocho años de sanchismo se resumen en el Ministerio de Transportes. Propuso una auditoría del transporte ferroviario y revalorizar las pensiones cada año. Pidió el voto de quienes votaron al PSOE y hoy se avergüenzan. El artículo no incluye respuesta del Gobierno ni del Ministerio. Las elecciones generales son el veintinueve de noviembre.",
+     "url": "https://okdiario.com/espana/feijoo-desmonta-relato-puente-dignidad-no-irse-elecciones-116-victimas-dimitir-desde-inicio-pedir-perdon-20722311"
+    },
+    {
+     "id": "ok2",
+     "titular": "Sánchez pide movilizarse contra la ultraderecha como en Estados Unidos",
+     "resumen": "Según OKDiario, Pedro Sánchez pidió el sábado en un mitin en Tarragona movilizarse contra la ola ultraderechista, como ocurrió en las elecciones de mitad de mandato de Estados Unidos. Aseguró que el Papa León catorce comparte sus ideas y dijo que hasta él votó, aunque reconoció que no sabe qué votó. Pidió el voto para mandar a casa a Feijóo y a Abascal, y predijo que esa ola se desmoronará el veintinueve de noviembre. Propuso subir las pensiones con el índice de precios y aumentar el salario mínimo cada año que gobierne la izquierda. Criticó al presidente argentino, Javier Milei, por su definición del socialismo. El acto contó con Salvador Illa. El artículo recoge solo las palabras de Sánchez, no la respuesta del PP ni de Vox.",
+     "url": "https://okdiario.com/espana/sanchez-pide-movilizarse-contra-ultraderecha-como-eeuu-frenar-pp-vox-apropiandose-del-papa-hasta-leon-xiv-voto-20721738"
+    },
+    {
+     "id": "ok3",
+     "titular": "Canarias logra que Sánchez convoque con urgencia la comisión de inmigración",
+     "resumen": "Según OKDiario, el presidente canario, Fernando Clavijo, logró que Pedro Sánchez se comprometa a convocar de urgencia la Comisión Interministerial de Inmigración, el próximo martes en La Moncloa, con todos los ministros afectados. La isla de El Hierro declaró la emergencia social por la llegada de más de ocho mil inmigrantes irregulares en cinco semanas, tres mil de ellos en los últimos cinco días, según el presidente del Cabildo, Alpidio Armas. Sánchez prometió reforzar los recursos sanitarios. Clavijo pide medidas concretas con plazos y una reunión urgente con la presidenta de la Comisión Europea, Ursula von der Leyen. Dijo que no se puede actuar solo cuando la situación se agrava. La cifra de ocho mil es del Cabildo, no un dato oficial.",
+     "url": "https://okdiario.com/espana/canarias-fuerza-sanchez-convocar-urgencia-comision-interministerial-presion-migratoria-islas-20723380"
     }
    ]
   },
@@ -116,21 +134,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El PSOE estudia querellarse por los pagos a Koldo",
-     "resumen": "Koldo García, exasesor de Ábalos y encarcelado, afirma que un abogado que hasta hace unos meses llevaba casos de corrupción del PP le ofreció hasta un millón de euros para mentir contra el Gobierno, según elDiario.es. Según su relato, el dinero cubriría su defensa y sacaría de la causa a su hermano y a su pareja, a cambio de declarar contra Pedro Sánchez y Begoña Gómez. El abogado, Alberto Durán, lo niega. El diario cita dos facturas de la editora de OKDiario por doscientos cuarenta y dos mil euros por la defensa de Koldo. La dirigente socialista Rebeca Torró no descartó acciones judiciales. Sánchez evitó entrar en el fondo, pidió explicaciones a Feijóo y dijo no conocer a uno de los detenidos ni que fuera su chófer. El jueves la Unidad Central Operativa realizó una operación en el caso Koldo, y el juez abrió una pieza separada sobre presuntos amaños de adjudicaciones en el Ministerio de Transportes.",
-     "url": "https://www.eldiario.es/politica/psoe-estudia-querellarse-pagos-koldo-grave-influir-declaracion-derrocar-gobierno_1_13642399.html"
+     "titular": "Seis muertos en un ataque ultraderechista en la plaza de Cracovia",
+     "resumen": "Según elDiario.es, el sábado siete de noviembre, poco después de las tres de la tarde, un hombre de veinticuatro años entró en coche en la plaza del Mercado de Cracovia y disparó contra los transeúntes. Murieron seis personas, cuatro mujeres y dos hombres, y hubo quince heridos, dos de ellos policías graves. Después la policía encontró en su casa tres cadáveres de familiares, así que el total asciende a nueve. El atacante, con permiso de armas, fue herido y detenido. El ministro del Interior dijo que todo apunta a una fascinación por ideas de extrema derecha, aún por verificar. El primer ministro, Donald Tusk, habló de atentado terrorista y anunció dos días de luto nacional. Pedro Sánchez se solidarizó con Polonia. Una de las heridas es portuguesa.",
+     "url": "https://www.eldiario.es/internacional/cinco-muertos-docena-heridos-tiroteo-ciudad-polaca-cracovia_1_13646897.html"
     },
     {
      "id": "edi2",
-     "titular": "El Gobierno ordena retirar aceite de oliva del mercado para evitar que caigan los precios",
-     "resumen": "El Boletín Oficial del Estado publica una orden del Ministerio de Agricultura que obliga a las almazaras a almacenar el doce por ciento de la producción que declaren cada mes, informa elDiario.es. Supone retirar temporalmente ciento ochenta y ocho mil toneladas hasta el treinta de septiembre de dos mil veintisiete, y se aplica desde este viernes a la producción de noviembre. Es la primera vez que se hace. El motivo es el exceso de existencias, trescientas cincuenta y siete mil toneladas al inicio de la campaña, un veintitrés por ciento más que la anterior. Además, se prevé una cosecha de más de un millón seiscientas mil toneladas, también un veintitrés por ciento mayor. Según el Ministerio, la cosecha más las existencias alcanzan el ciento veinte por ciento de la media de las seis campañas anteriores, lo que activa el mecanismo. Las almazaras eligen qué categoría retiran. Se creará un grupo técnico de seguimiento y la medida podrá modificarse a partir del treinta y uno de diciembre.",
-     "url": "https://www.eldiario.es/economia/gobierno-decreta-retirada-aceite-oliva-mercado-primera-vez-evitar-desplome-precios_1_13642909.html"
+     "titular": "El presidente de Israel encarga a Eisenkot formar gobierno",
+     "resumen": "Según elDiario.es, el presidente de Israel, Isaac Herzog, encargó el sábado al líder de la oposición, Gadi Eisenkot, formar un nuevo gobierno tras las elecciones del veintisiete de octubre. En la ronda de consultas, sesenta y siete diputados respaldaron a Eisenkot, incluidos los de los partidos árabes. Benjamin Netanyahu solo logró cuarenta y seis apoyos, porque el partido ultraortodoxo Judaísmo Unido de la Torá, con siete escaños, no recomendó a nadie. Eisenkot pidió un gobierno nacional de emergencia. Netanyahu reclamó un gobierno de unidad con su partido y la oposición que deje fuera a los partidos árabes, y advirtió de que con el otro gobierno Israel no sobreviviría. El plazo para formar gobierno es de veintiocho días, ampliable catorce más.",
+     "url": "https://www.eldiario.es/internacional/presidente-israel-pide-eisenkot-formar-gobierno-recibir-apoyo-partidos-arabes_1_13647220.html"
     },
     {
      "id": "edi3",
-     "titular": "El juez Calama rechaza investigar a Zapatero por malversación en el caso de las joyas",
-     "resumen": "El juez de la Audiencia Nacional José Luis Calama rechaza la petición de la Fiscalía Anticorrupción de investigar a José Luis Rodríguez Zapatero por malversación, según elDiario.es. La Fiscalía sostiene que unas joyas debían integrarse en el patrimonio público. Las más valiosas, incautadas en mayo, procederían de un regalo del rey de Arabia Saudí en dos mil siete, cuando Zapatero era presidente. El juez considera que la tesis de la Fiscalía es una interpretación posterior a los hechos. La obligación de incorporar los regalos institucionales al patrimonio llegó con la ley de transparencia de dos mil trece, y el código de buen gobierno de dos mil cinco no tenía valor normativo para ello. Por tanto, falta un elemento esencial del delito. En otro auto, el juez paraliza las inspecciones de Hacienda contra Zapatero, su mujer, sus hijas y otros investigados. El artículo no recoge reacciones de las partes.",
-     "url": "https://www.eldiario.es/politica/juez-calama-rechaza-imputar-zapatero-malversacion-fondos-publicos-joyas-pretendia-anticorrupcion_1_13643682.html"
+     "titular": "Illa acusa a Feijóo de usar a las víctimas de Urda contra la huelga",
+     "resumen": "En una entrevista publicada el siete de noviembre en elDiario.es, el presidente de la Generalitat, Salvador Illa, calificó de bajeza moral que Feijóo utilice a las sesenta y nueve víctimas del accidente de Urda para evitar la huelga general por la vivienda. Defendió el derecho de los sindicatos a convocarla. Predijo una victoria del PSOE en las elecciones del veintinueve de noviembre y pidió elegir entre democracia y autoritarismo. Sobre el exministro Óscar Puente, sostuvo que las primeras conclusiones apuntan a un error humano. Habló de ciento cincuenta y una actuaciones en marcha en Rodalies. Sobre el caso Koldo, pidió llegar al fondo. Defendió a su jefe de gabinete, Eduard Rivas, que dimitió tras ser investigado, como una persona honesta.",
+     "url": "https://www.eldiario.es/catalunya/salvador-illa-bajeza-moral-feijoo-utilice-69-victimas-urda-no-convoque-huelga-general_128_13643854.html"
     }
    ]
   }
