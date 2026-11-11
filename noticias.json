@@ -1,17 +1,16 @@
 {
- "fecha": "2026-11-10",
- "fechaTexto": "martes 10 de noviembre",
- "actualizado": "2026-11-10T06:59:29+01:00",
+ "fecha": "2026-11-11",
+ "fechaTexto": "miércoles 11 de noviembre",
+ "actualizado": "2026-11-11T15:59:00+01:00",
  "portada": [
-  "ee1",
-  "ld2",
+  "ed1",
+  "edi1",
   "ed2",
-  "to3",
-  "ok2",
-  "ok1",
-  "ld1",
+  "ee2",
+  "edi3",
+  "ed3",
   "edi2",
-  "ee2"
+  "ee3"
  ],
  "diarios": [
   {
@@ -20,21 +19,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Delcy Rodríguez se querella contra Aldama por el sobre de PDVSA",
-     "resumen": "La presidenta encargada de Venezuela, Delcy Rodríguez, ha presentado una querella contra el empresario Víctor de Aldama. Le acusa de una injuria grave con publicidad por unas entrevistas que dio en febrero a Telemadrid y a Cuatro. En ellas, Aldama habló de un sobre con el logo de la petrolera venezolana PDVSA, que contendría documentación sobre una supuesta financiación irregular del PSOE. Según Libertad Digital, la querella la ha redactado el despacho de Baltasar Garzón. Rodríguez niega conocer ese sobre y asegura que nada en él la identifica. Recuerda que en julio pidió a Aldama que se retractara, y que él no lo hizo. La querella pide que se recojan las grabaciones completas de ambas entrevistas. La pena prevista para este delito es una multa de seis a catorce meses. El artículo no recoge reacciones de Aldama ni del PSOE.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-09/delcy-rodriguez-se-querella-contra-aldama-por-el-sobre-con-los-cupos-de-250-millones-de-pdvsa-para-financiar-al-psoe-7488522/"
+     "titular": "Una empresa pública canaria adjudica 200.000 euros a la consultora de Carlos Alonso",
+     "resumen": "La empresa pública canaria Gesplan adjudicó un contrato de 200.000 euros a Anitya Consultores, la sociedad de Carlos Alonso, según una información de Libertad Digital. El concurso se publicó el 7 de mayo y era un servicio de asesoramiento estratégico: una bolsa de 5.000 horas a 40 euros la hora. Gesplan cambió el pliego el 19 de mayo, tres días antes del cierre, para permitir subcontratar prestaciones accesorias. Anitya, que Alonso creó en 2019 y de la que es administrador y único socio, obtuvo 43 puntos en la valoración técnica, frente a 41 de la oferta rival. Según el diario, sus cuentas de 2024 indican que no tenía empleados de media. La adjudicación la firmó el 20 de julio el consejero delegado, Miguel Ángel Pérez Hernández. El artículo plantea preguntas, pero no recoge respuesta ni de Gesplan ni de Alonso.",
+     "url": "https://www.libertaddigital.com/canarias/2026-11-11/gesplan-cambio-el-pliego-a-tres-dias-del-cierre-y-adjudico-un-contrato-de-200-000-euros-a-la-consultora-de-carlos-alonso-7489469/"
     },
     {
      "id": "ld2",
-     "titular": "Sánchez dice que Zapatero no quiere las joyas y no descarta un indulto a García Ortiz",
-     "resumen": "El presidente del Gobierno, Pedro Sánchez, dio anoche una entrevista en La Séptima, el nuevo canal dirigido por el periodista Javier Ruiz. Fue el mismo día en que Santiago Abascal estuvo en el programa La Revuelta. Según Libertad Digital, Sánchez advirtió de que el proyecto del PP y de Vox es, en sus palabras, involucionista. Sobre Zapatero, dijo que nunca habló con él de Plus Ultra y que el préstamo a la aerolínea es impecable. Añadió que Zapatero no quiere volver a tener las joyas que se investigan. Sobre el fiscal general condenado, Álvaro García Ortiz, dijo que el Gobierno sigue dispuesto a indultarlo, aunque no antes de las elecciones del 29 de noviembre. También confirmó que no irá al funeral por las víctimas de Urda. El diario critica que Sánchez elija medios afines y no recoge réplicas del PSOE.",
-     "url": "https://www.libertaddigital.com/espana/politica/2026-11-09/sanchez-despacha-las-joyas-de-zapatero-con-un-no-quiere-tenerlas-y-no-descarta-indultar-a-garcia-ortiz-7488797/"
+     "titular": "Arranca en Madrid la feria SIMO Educación",
+     "resumen": "Comienza hoy en Madrid la feria SIMO Educación, que celebra su duodécima edición en el pabellón 14.1 de IFEMA hasta el viernes 13 de noviembre. Su directora, Ana Rodríguez, lo explicó en una entrevista en esRadio, recogida por Libertad Digital. El lema de este año es liderazgo directivo para la transformación educativa. La feria reúne a unas 60 empresas de 8 países, 120 ponencias y más de 200 ponentes, e incluye el primer Congreso Internacional de NeuroEduca, con 24 especialistas. Rodríguez defendió un uso responsable de la inteligencia artificial en los centros. Según sus cifras, que el artículo no contrasta, los profesores que usan estas herramientas ahorran casi 6 horas a la semana y los asistentes conversacionales reducen el abandono escolar un 21 por ciento.",
+     "url": "https://www.libertaddigital.com/sociedad/2026-11-11/ana-rodriguez-directora-de-simo-educacion-sobre-la-ia-en-los-centros-se-trata-de-un-uso-responsable-7488887/"
     },
     {
      "id": "ld3",
-     "titular": "La jueza Biedma dice que se siguió una estrategia coordinada por Leire Díez",
-     "resumen": "La jueza Beatriz Biedma ha enviado un escrito al juez de la Audiencia Nacional Santiago Pedraz. Según Libertad Digital, sostiene que el exjuez Luis Sáenz de Tejada seguía una estrategia perfectamente coordinada por Leire Díez, la llamada fontanera socialista. Esa estrategia, según los informes de la Guardia Civil, tenía varias fases. Primero, personarse en la causa contra David Sánchez, hermano del presidente. Después, recusar a la jueza y llenarla de denuncias. Al no funcionar, habrían intentado quitarla de en medio a través de un clan de narcotraficantes. El escrito afirma que Díez y el entonces responsable de organización del PSOE intercambiaron esas denuncias. Pedraz ha citado como testigo a la líder de ese clan la semana de las elecciones. Son alegaciones de la defensa de la jueza, no hechos probados. El diario no recoge respuesta de los implicados.",
-     "url": "https://www.libertaddigital.com/espana/2026-11-09/biedma-denuncia-ante-pedraz-que-saenz-de-tejada-seguia-una-estrategia-perfectamente-coordinada-por-leire-diez-7488071/"
+     "titular": "El Cristo de Urda preside el funeral por las víctimas en Toledo",
+     "resumen": "Libertad Digital cuenta la historia del Cristo de Urda, la talla que presidió en la catedral de Toledo la misa funeral por las 69 víctimas del accidente ferroviario de Urda. Es una imagen del siglo dieciséis, obra de Luis de Villoldo, que llegó a Toledo la noche del 9 de noviembre. Según el diario, es la primera vez desde 1596 que sale de Urda, salvo cuando fue restaurada en Valencia tras la Guerra Civil. La talla sufrió un saqueo en 1936. Para la ceremonia se encendieron 69 velas, una por cada víctima, y después la imagen vuelve a su basílica. Según los titulares del diario, asistieron los Reyes y el arzobispo de Toledo pidió que se esclarezcan las causas del accidente.",
+     "url": "https://www.libertaddigital.com/cultura/historia/2026-11-10/el-cristo-de-urda-un-crucificado-que-sobrevivio-a-dos-guerras-presidira-el-funeral-en-la-catedral-de-toledo-7489161/"
     }
    ]
   },
@@ -44,21 +43,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Muere el autor del tiroteo de Cracovia, que tenía ideas de ultraderecha",
-     "resumen": "El hombre que disparó el sábado en el centro de Cracovia, en Polonia, ha muerto en el hospital. Según El Español, tenía veinticuatro años y, de acuerdo con el ministro del Interior polaco, estaba fascinado por la ideología de extrema derecha. Entró con un coche en la plaza del Mercado y disparó contra la gente. La policía lo neutralizó en unos tres minutos y él resultó herido. Murió de madrugada, después de varias operaciones. El periódico cuenta seis fallecidos confirmados y dieciséis heridos, aunque el titular da cifras más altas. Además, en la casa del atacante aparecieron tres cadáveres, que serían sus familiares. La fiscalía investiga el caso como terrorismo. El primer ministro, Donald Tusk, habló de atentado y decretó dos días de luto nacional. El motivo exacto sigue sin aclararse.",
-     "url": "https://www.elespanol.com/mundo/europa/20261109/muere-hospital-presunto-autor-tiroteo-cracovia-dejo-muertos-heridos-abatido-policia/1003744450865_0.html"
+     "titular": "Arranca la huelga general con tensión en Madrid",
+     "resumen": "La huelga general de este miércoles 11 de noviembre arranca con tensión, según el seguimiento en directo de El Español. En Madrid, el Sindicato de Inquilinas tomó una oficina de la inmobiliaria Alquiler Seguro, y otros medios hablan de 27 oficinas de esa empresa vandalizadas. El diario también recoge los servicios mínimos y los horarios de Metro, Cercanías y autobuses para esta jornada. Además, informa de que los maquinistas de Renfe han trasladado su propia huelga al 23 de noviembre. La protesta, convocada por los sindicatos, llega a pocas semanas de las elecciones generales del 29 de noviembre. El Español señala que el directo seguirá actualizándose a lo largo del día.",
+     "url": "https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones/1003744452728_10.html"
     },
     {
      "id": "ee2",
-     "titular": "Russell Brand, condenado a diez años de cárcel por violación y agresiones sexuales",
-     "resumen": "Un tribunal de Londres ha condenado al actor y humorista británico Russell Brand a diez años y seis meses de prisión. Según El Español, tiene cincuenta y un años y fue sentenciado este lunes en el Tribunal de la Corona de Southwark. Un jurado lo declaró culpable de cuatro de los siete cargos: una violación y tres agresiones sexuales contra cuatro mujeres, cometidas entre dos mil cuatro y dos mil nueve. Fue absuelto de otros dos cargos de violación y de un intento de agresión sexual. El juez lo calificó de depredador sexual y dijo que su fama le hizo sentirse por encima de las normas. Brand ha negado todo y sostiene que las relaciones fueron consentidas. La Policía Metropolitana de Londres dice que sigue estudiando otras denuncias contra él.",
-     "url": "https://www.elespanol.com/corazon/celebrities/20261109/russell-brand-condenado-anos-meses-prision-violacion-agresiones-sexuales-mujeres/1003744451256_0.html"
+     "titular": "Muere un policía en una explosión en Oviedo",
+     "resumen": "Según El Español, una explosión y un tiroteo en Oviedo dejaron un policía muerto y otro herido de gravedad. Los titulares del diario hablan de una mochila con un artefacto explosivo. El autor huyó y la Policía busca a un hombre. El Español identifica al fallecido como el subinspector conocido como Jota. Por su parte, elDiario.es sitúa el suceso en la mañana del martes y habla de un agente de la unidad canina fallecido. Libertad Digital añade que murió también el perro policía Deny y que el sospechoso sería apodado el Ruso. Los datos proceden de los titulares de las portadas, y los detalles de la investigación aún no están claros.",
+     "url": "https://www.elespanol.com/sociedad/20261110/muere-policia-resulta-herido-grave-oviedo-tiroteo-explosion-mochila/1003744452011_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Francia acusa a Irán del ciberataque que apagó neveras de supermercados europeos",
-     "resumen": "Los servicios de inteligencia franceses acusan a la Guardia Revolucionaria iraní de estar detrás de un ciberataque. Según El Español, el ataque ocurrió la noche del once de octubre y apagó las cámaras frigoríficas de decenas de supermercados europeos. La fiscalía de París investiga si lo hizo un grupo llamado Shahid Kaveh, unidad de ciberataques ligada a la Guardia Revolucionaria. Ya se han emitido órdenes de arresto internacionales contra el líder del grupo y sus dos lugartenientes. La fiscalía no descarta que haya más personas implicadas. El Ministerio de Asuntos Exteriores francés ha citado al embajador de Francia en Irán. El artículo aún se estaba actualizando y no recoge la reacción de Irán ni el número exacto de tiendas afectadas.",
-     "url": "https://www.elespanol.com/mundo/europa/20261109/francia-acusa-iran-detras-ciberataque-supermercados-europeos-apago-neveras-congeladores/1003744451623_0.html"
+     "titular": "Los Reyes consuelan a las familias de las víctimas de Urda",
+     "resumen": "El Español cuenta que los Reyes consolaron uno a uno a los familiares de las víctimas de Urda durante el funeral celebrado en Toledo. Según la información del diario, el presidente del Gobierno, Pedro Sánchez, no acudió a la ceremonia, y mientras tanto grababa un pódcast. El arzobispo de Toledo pidió que se esclarezcan las causas de lo ocurrido. La misa se celebró en la catedral, presidida por la talla del Cristo de Urda, y recordó a las 69 víctimas del accidente ferroviario. El suceso ha conmocionado a la localidad, y la ausencia de Sánchez ha sido uno de los puntos más comentados de la jornada.",
+     "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261110/reyes-consuelan-familiares-victimas-urda-sanchez-graba-podcast-jordi-wild/1003744453244_0.html"
     }
    ]
   },
@@ -68,21 +67,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "Sánchez dice que Zapatero nunca le habló de Plus Ultra",
-     "resumen": "Pedro Sánchez ha asegurado que Zapatero nunca le habló de Plus Ultra ni de ninguna empresa. Según El Debate, lo dijo en una entrevista con Javier Ruiz en La Séptima, la cadena recién estrenada. Sánchez defendió que el rescate de la aerolínea fue un préstamo y que el expediente es absolutamente impoluto. Sobre las joyas de Zapatero, de más de un millón de euros, no dio detalles. Solo afirmó que lo último que quiere Zapatero es volver a tenerlas. Zapatero está investigado en el caso Plus Ultra. El diario recuerda que en los próximos días tres magistrados de la Audiencia Nacional revisarán un recurso de la defensa de Zapatero. Ese recurso pide que se pregunte a Arabia Saudí por el origen de las joyas, algo que el juez ya rechazó. El artículo no recoge reacciones de otros partidos.",
-     "url": "https://www.eldebate.com/espana/20261110/sanchez-asegura-zapatero-nunca-le-hablo-plus-ultra-rescate-prestamo-esta-absolutamente-impoluto_479010.html"
+     "titular": "La huelga general arranca con piquetes y cargas en Mercamadrid",
+     "resumen": "La huelga general del 11 de noviembre ha empezado con piquetes en toda España, según El Debate. El diario destaca las cargas policiales en Mercamadrid, el mercado mayorista de Madrid. En su seguimiento en directo, recoge heridos y un detenido durante las primeras horas de la jornada. La convocatoria llega a pocas semanas de las elecciones generales del 29 de noviembre. Los sindicatos denuncian, según otros medios, el uso de gas pimienta contra los piquetes. El Debate irá actualizando la información a lo largo del día con el seguimiento de la huelga y los incidentes que se vayan produciendo en distintas ciudades.",
+     "url": "https://www.eldebate.com/economia/20261111/huelga-general-amanece-piquetes-toda-espana-cargas-policiales-mercamadrid_479496.html"
     },
     {
      "id": "ed2",
-     "titular": "Toledo despide hoy a las víctimas de Urda con los Reyes y sin Sánchez",
-     "resumen": "Esta tarde se celebra en la catedral de Toledo el funeral por las sesenta y nueve víctimas del accidente ferroviario de Urda. Empieza a las siete y lo preside el arzobispo primado, Francisco Cerro. Según El Debate, asistirán los Reyes, y se espera también a Feijóo, al presidente de Castilla-La Mancha, Emiliano García-Page, a otros presidentes autonómicos y a varios ministros. El presidente del Gobierno, Pedro Sánchez, no irá. En su nombre acudirán el ministro de Transportes, Carlos Cuerpo, y la ministra Milagros Tolón. El periódico recuerda que Sánchez criticó el carácter religioso del funeral de Adamuz y prometió un funeral de Estado que nunca se celebró. Cuerpo dijo que esperar abucheos va en su sueldo. El Cristo de Urda presidirá la ceremonia. El diario subraya la carga política del acto, en plena precampaña de las elecciones del veintinueve de noviembre.",
-     "url": "https://www.eldebate.com/espana/20261110/toledo-acoge-este-martes-funeral-victimas-urda-presencia-reyes-ausencia-sanchez_479017.html"
+     "titular": "La Audiencia Nacional calcula que Zapatero aspiraba a ganar 3 millones",
+     "resumen": "Según El Debate, la Audiencia Nacional calcula que el expresidente José Luis Rodríguez Zapatero aspiraba a ganar unos 3 millones de euros en cinco años. El dinero vendría de influir en operaciones en Dubái y en Latinoamérica. El diario atribuye este cálculo al tribunal, que lo recoge en su investigación. El caso de Zapatero y su relación con la aerolínea Plus Ultra ha estado en el centro del debate político en los últimos días, y el presidente Pedro Sánchez dijo ayer que Zapatero nunca le habló de ese asunto. El Debate publica el dato esta mañana, sin que consten por ahora reacciones del expresidente.",
+     "url": "https://www.eldebate.com/espana/20261111/an-calcula-zapatero-aspiraba-ganar-3-millones-cinco-anos-influir-operaciones-dubai-latinoamerica_479491.html"
     },
     {
      "id": "ed3",
-     "titular": "Cuerpo recibe a las víctimas de Angrois, algo que Puente nunca hizo",
-     "resumen": "El nuevo ministro de Transportes, Carlos Cuerpo, recibirá hoy a las víctimas del accidente ferroviario de Angrois. Según El Debate, ellas habían pedido varias veces reunirse con el anterior ministro, Óscar Puente, y la cita nunca se celebró. La reunión es a las cuatro de la tarde, en el Ministerio de Economía, y coincide con el funeral de Urda. Faltan unos veinte días para las elecciones generales. La plataforma de afectados exige eliminar con urgencia la norma que permite circular a doscientos kilómetros por hora con el sistema de seguridad llamado Asfa cuando fallan los sistemas principales. Un ingeniero experto en seguridad ferroviaria, que acompañará a las víctimas, dice que ningún país europeo hace eso. El periódico no recoge una respuesta oficial del Gobierno.",
-     "url": "https://www.eldebate.com/espana/galicia/20261110/cuerpo-recibira-victimas-angrois-20-dias-generales-despues-puente-nunca-hiciese_478857.html"
+     "titular": "EE. UU. acusa a tres agentes vinculados a Irán de casi 20 atentados en Europa",
+     "resumen": "Estados Unidos acusa a tres presuntos agentes vinculados a Irán de casi 20 atentados en Europa, según informa El Debate. Entre los hechos imputados figura también un intento de atacar una base británica. El diario recoge la noticia a primera hora de la mañana de este miércoles. La acusación llega pocos días después de que Francia atribuyera a Irán un ciberataque que apagó neveras de supermercados europeos, según informó El Español. El Debate no detalla en su titular las identidades de los acusados ni los lugares de los ataques, y no constan por ahora reacciones del Gobierno iraní.",
+     "url": "https://www.eldebate.com/internacional/20261111/eeuu-acusa-tres-agentes-vinculados-iran-casi-20-atentados-europa-intentar-atacar-base-britanica_479486.html"
     }
    ]
   },
@@ -92,21 +91,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Moncloa oculta las puntuaciones con las que La Séptima ganó la licencia de televisión",
-     "resumen": "El Ministerio para la Transformación Digital se niega a revelar las puntuaciones del concurso que ganó La Séptima. Según The Objective, el ministro Óscar López invoca la ley de protección de datos para no decir quién elaboró y validó los informes técnicos. La Séptima, de José Miguel Contreras y Javier Ruiz, compitió solo con Mediaset, dueño de Cuatro y Telecinco. El Consejo de Ministros le adjudicó la licencia el veintiséis de mayo de este año. El periódico consiguió una resolución de transparencia con acceso parcial. El ministerio alega secreto profesional y límites por intereses económicos. Dice también que el interés público en conocer a los autores de los informes es inexistente. El canal se estrenó el cinco de noviembre. El artículo solo recoge la postura del ministerio, no la de La Séptima ni la de Mediaset.",
-     "url": "https://theobjective.com/medios/television/2026-11-09/gobierno-puntuaciones-septima-mediaset-tdt/"
+     "titular": "Ábalos pasó una noche en un parador con el exchófer de Sánchez",
+     "resumen": "The Objective publica que el exministro José Luis Ábalos pasó una noche en un parador con el exchófer de Pedro Sánchez, antes de la destitución de este último. Según el titular del diario, la coincidencia se produjo antes de que el chófer fuera apartado de su puesto. El asunto se suma a las novedades judiciales del caso en el que aparece Ábalos, cuya vivienda ha sido registrada por la Guardia Civil, según informa OKDiario. The Objective publicó la noticia el martes 10 de noviembre, y de momento no constan reacciones de los protagonistas.",
+     "url": "https://theobjective.com/espana/2026-11-10/abalos-noche-exchofer-sanchez-parador/"
     },
     {
      "id": "to2",
-     "titular": "Feijóo llama «vomitivo» al cobro de gratificaciones en Adif",
-     "resumen": "Alberto Núñez Feijóo ha exigido que se devuelvan las gratificaciones cobradas por los responsables de Adif tras el accidente de Urda. Según The Objective, lo dijo en un mitin del PP en Málaga, el domingo, el primero de la campaña en Andalucía. Calificó la situación de vomitiva y habló de negligencia continuada en los trenes. Recordó que los accidentes dejaron ciento quince fallecidos. Prometió revisar la red palmo a palmo. También criticó a Sánchez por ocuparse de las elecciones de Brasil y Estados Unidos. El presidente andaluz, Juanma Moreno, pidió un castigo masivo al Gobierno en las elecciones del veintinueve de noviembre. El artículo no indica el importe de las gratificaciones ni recoge respuesta de Adif o del Gobierno.",
-     "url": "https://theobjective.com/espana/politica/2026-11-08/feijoo-vomitivo-cobro-gratificaciones-adif/"
+     "titular": "La secretaria del cónsul en Argel, usada como mula para meter efectivo",
+     "resumen": "Según The Objective, la secretaria del cónsul de España en Argel fue utilizada como mula para introducir dinero en efectivo en el país. El diario publicó la información el martes 10 de noviembre. El titular sitúa el hecho en el entorno del consulado español en la capital argelina. The Objective no detalla en su portada las cantidades ni quién ordenó el traslado del dinero, por lo que habrá que esperar a nuevas informaciones para conocer el alcance del caso y la respuesta del Ministerio de Asuntos Exteriores.",
+     "url": "https://theobjective.com/espana/2026-11-10/secretaria-consul-argel/"
     },
     {
      "id": "to3",
-     "titular": "Feijóo propone una reconstrucción nacional y revisar toda la red ferroviaria",
-     "resumen": "Feijóo presenta un plan de reconstrucción nacional de cara a las elecciones del veintinueve de noviembre. Lo explica en una entrevista con The Objective en la sede del PP. En ferrocarril anuncia una revisión inmediata de la red y de sus contratos, kilómetro a kilómetro. Plantea incluso paralizar la línea Madrid-Andalucía si no se garantiza la seguridad. Propone devolver el billete si el retraso supera un límite, un nuevo ministro, un nuevo presidente de Adif y una dirección de seguridad con voz y voto. Según el periódico, mientras se hacía la entrevista la Guardia Civil entró en Adif y en el Tribunal de Cuentas por orden de la Fiscalía Europea, que investiga un presunto fraude con fondos europeos. Feijóo afirma, sin pruebas en el artículo, que hay ciento treinta y un imputados ligados al Gobierno.",
-     "url": "https://theobjective.com/espana/politica/2026-11-09/pp-feijoo-gobierno/"
+     "titular": "Adif relevó a un veterano experto en seguridad de vías antes de Adamuz",
+     "resumen": "The Objective cuenta que Adif relevó a un veterano matemático, experto en seguridad de las vías, un año antes del accidente de Adamuz. El diario publicó la información el martes 10 de noviembre. Adif es el administrador de las infraestructuras ferroviarias. La noticia se suma a las críticas sobre la gestión ferroviaria tras el accidente de Urda, por el que ayer hubo un funeral en Toledo. El líder del PP, Alberto Núñez Feijóo, propone una reconstrucción nacional y revisar toda la red ferroviaria. The Objective no detalla en su portada los motivos del relevo.",
+     "url": "https://theobjective.com/espana/2026-11-10/adif-veterano-matematico-seguridad-ano-adamuz/"
     }
    ]
   },
@@ -116,21 +115,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "El Supremo mantiene el voto de unos 190.000 hijos de nacionalizados por la Ley de Nietos",
-     "resumen": "El Tribunal Supremo ha rechazado suspender el voto de unas ciento noventa mil personas, hijos de nacionalizados con la Ley de Nietos, en las elecciones del veintinueve de noviembre. Según OKDiario, Vox y la asociación Iustitia Europa habían pedido extender la suspensión. El tribunal denegó esas medidas cautelares en un auto notificado el lunes. El Gobierno, a través de la Abogacía del Estado, se opuso a esas peticiones. El Supremo ya había suspendido el voto de los padres, nacionalizados por la Ley de Memoria Democrática, salvo que acrediten ser descendientes de exiliados. Ellos siguen sin poder votar. El auto tiene un voto particular discrepante de uno de los seis magistrados y una jueza que apoya el fallo, pero discrepa de parte de los argumentos.",
-     "url": "https://okdiario.com/espana/supremo-rechaza-suspender-voto-hijos-nacionalizados-ley-nietos-20736615"
+     "titular": "OKDiario dice que la huelga general tiene poco seguimiento",
+     "resumen": "Según OKDiario, la huelga general de este 11 de noviembre tiene poco seguimiento. El diario afirma que las carreteras, el metro y los mercados funcionan con normalidad. La huelga está convocada por CCOO y UGT, es la primera conjunta de los dos sindicatos en 14 años y llega a 18 días de las elecciones generales. OKDiario habla de un fracaso de la convocatoria, una valoración que no comparten los sindicatos, que denuncian cargas policiales contra los piquetes, según otros medios. Es la lectura del periódico a partir de lo ocurrido en las primeras horas de la jornada.",
+     "url": "https://okdiario.com/espana/huelga-sanchez-pincha-calles-metro-mercados-funcionan-normalidad-20748540"
     },
     {
      "id": "ok2",
-     "titular": "Unos 6.000 inmigrantes llegan a El Hierro en nueve días",
-     "resumen": "Según OKDiario, unas seis mil personas han llegado en cayuco a la isla de El Hierro en los primeros nueve días de noviembre. Es la mitad de la población de la isla, que ronda los doce mil habitantes. Desde principios de octubre serían unas ocho mil, casi todas de Senegal. Solo el sábado y el domingo llegaron más de mil trescientas. El presidente del Cabildo, el socialista Alpidio Armas, ha declarado la emergencia social. Se queja de la lentitud de los traslados a otras islas, porque Tenerife y Gran Canaria están saturadas. El hospital ha habilitado espacios adicionales y avisa del agotamiento de su personal. El presidente canario, Fernando Clavijo, logró que el Gobierno convoque hoy con urgencia la Comisión Interministerial de Inmigración. El diario critica a Sánchez por callar el problema.",
-     "url": "https://okdiario.com/espana/otra-invasion-que-calla-sanchez-6-000-inmigrantes-llegan-hierro-9-dias-equivalente-mitad-poblacion-20729703"
+     "titular": "Koldo García pide al Constitucional que suspenda su condena",
+     "resumen": "Koldo García, exasesor del exministro José Luis Ábalos, pide al Tribunal Constitucional que suspenda su condena de 19 años y ocho meses de cárcel, según OKDiario. La pena se le impuso por las comisiones cobradas en la compra de mascarillas. Lo que solicita es la suspensión cautelar, es decir, que la pena no se ejecute mientras el tribunal estudia su caso. Su abogada, Leticia de la Hoz, ha renunciado este martes a su defensa ante la Audiencia Nacional, según elDiario.es. El Constitucional todavía no se ha pronunciado sobre la petición.",
+     "url": "https://okdiario.com/espana/koldo-garcia-pide-constitucional-que-suspenda-condena-19-anos-carcel-comisiones-mascarillas-20750584"
     },
     {
      "id": "ok3",
-     "titular": "Sánchez acusa a OKDiario y a Inda de pagar la defensa de Koldo para difamarle",
-     "resumen": "Pedro Sánchez ha acusado a OKDiario y a su director, Eduardo Inda, de pagar la defensa de Koldo García para difamarle a él, a su mujer y al Gobierno. Según OKDiario, lo dijo en la entrevista de La Séptima con Javier Ruiz. Sánchez afirmó que existe una factura de un medio digital para pagar esa defensa y que no son especulaciones. Pidió que la justicia lo investigue. Llamó al periódico pseudomedio digital y acusó a Inda de difundir terraplanismo. El diario, que es parte en este conflicto, califica de falsas esas afirmaciones. Según el texto, el entrevistador apenas reaccionó. El artículo no recoge respuesta del Gobierno ni de Inda.",
-     "url": "https://okdiario.com/espana/sanchez-no-quita-inda-cabeza-acusa-querer-difamarme-mujer-gobierno-20739419"
+     "titular": "El Gobierno vasco concede el tercer grado al etarra Asier Eceiza",
+     "resumen": "Según OKDiario, el Gobierno vasco ha concedido el tercer grado, una semilibertad, al preso de ETA Asier Eceiza. Eceiza fue condenado a penas que suman 201 años de cárcel. El tercer grado permite cumplir la pena en régimen abierto, con salidas de la prisión. El diario critica la decisión. La competencia sobre las prisiones corresponde al Gobierno vasco, que la asumió hace unos años. OKDiario no recoge en su titular la reacción de las asociaciones de víctimas.",
+     "url": "https://okdiario.com/espana/gobierno-vasco-concede-semilibertad-etarra-asier-eceiza-condenado-201-anos-carcel-20751841"
     }
    ]
   },
@@ -140,21 +139,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Unos apuntes de Leire Díez dicen que el PP «ha ofrecido un pastizal» a Koldo",
-     "resumen": "Leire Díez, imputada como jefa de un grupo ligado al PSOE, anotó en un cuaderno que el PP había ofrecido un pastizal a Koldo García. Según elDiario.es, la Guardia Civil incautó ese cuaderno y la nota es de finales de febrero de dos mil veinticinco. Koldo, condenado a casi veinte años, afirmó desde la cárcel que el PP le ofreció un millón de euros por declarar contra el Gobierno. El PP lo niega. Koldo dice que el abogado Durán le ofreció rebajar la pena y pagar su defensa. La abogada de Durán presentó dos facturas por doscientos cuarenta y dos mil euros pagadas por la editora de OKDiario. La Audiencia Nacional investiga si Leire Díez cobró del PSOE a través de varios abogados.",
-     "url": "https://www.eldiario.es/politica/apuntes-leire-diez-anos-koldo-buen-aldama-pp-ofrecido-pastizal_1_13648465.html"
+     "titular": "El PP incluye en su programa la prioridad nacional de Vox",
+     "resumen": "Según elDiario.es, el programa electoral del PP para las elecciones del 29 de noviembre incluye la prioridad nacional que el partido ya ha pactado con Vox en cuatro comunidades. Es un criterio para acceder a ayudas y recursos públicos según el arraigo: empadronamiento, cotización y años de permanencia. El programa propone sustituir el Ingreso Mínimo Vital por una renta de activación ligada a la búsqueda de empleo, y reforzar las mutuas para combatir el absentismo. También promete construir un millón de viviendas, derogar la Ley de Vivienda y la Ley de Memoria Democrática, y añadir 4.500 médicos de Atención Primaria. Incluye también eliminar el calendario de cierre de las centrales nucleares y prohibir el burka y el niqab en espacios públicos.",
+     "url": "https://www.eldiario.es/politica/pp-asume-programa-electoral-prioridad-nacional-vox-modificar-imv-atajar-absentismo-injustificado_1_13652361.html"
     },
     {
      "id": "edi2",
-     "titular": "Una investigación halla miles de contenidos de abuso infantil en TikTok",
-     "resumen": "La organización Maldita.es publica una investigación sobre abusos sexuales a menores en TikTok. Según elDiario.es, entre septiembre y octubre documentó doscientos treinta y un perfiles con mil ciento ochenta y tres contenidos de abuso infantil explícito, con cuarenta y ocho millones de visualizaciones. El último día, más de la mitad de esos perfiles seguía activo. Los perfiles vendían material o llevaban a aplicaciones de mensajería. Maldita detectó más de siete mil cuentas en español vinculadas a este material. Al menos cincuenta y cinco decían tener material propio con hijos, hermanos o sobrinos. De cincuenta vídeos denunciados a TikTok, la plataforma borró cinco. Maldita ha presentado una denuncia ante la Fiscalía. TikTok no respondió antes de la publicación.",
-     "url": "https://www.eldiario.es/sociedad/investigacion-halla-tiktok-miles-contenidos-abusos-sexuales-ninos-ofrecen-videos-hijas-sobrinos_1_13644637.html"
+     "titular": "La abogada de Koldo García renuncia a su defensa",
+     "resumen": "La abogada Leticia de la Hoz ha renunciado a la defensa de Koldo García ante la Audiencia Nacional, según elDiario.es. Presentó el escrito este martes 10 de noviembre y alega razones profesionales, que no detalla por el secreto profesional. De la Hoz defendió a Koldo en el juicio del Tribunal Supremo, que terminó con una condena de casi 20 años. Ella misma está imputada en el caso Leire, por un presunto intento de soborno que niega. Aportó al juzgado dos facturas de la editora de OKDiario por un total de 242.000 euros, que cubrían la defensa de Koldo. Koldo asegura desde la prisión que puede demostrar sus afirmaciones, y el PSOE estudia presentar una querella.",
+     "url": "https://www.eldiario.es/politica/abogada-koldo-garcia-renuncia-defensa_1_13652818.html"
     },
     {
      "id": "edi3",
-     "titular": "Arranca la cumbre del clima en Turquía en un momento difícil",
-     "resumen": "La cumbre del clima de la ONU, la COP treinta y uno, empezó el lunes en Antalya, en Turquía, y durará dos semanas. Según elDiario.es, participan más de ciento sesenta delegaciones. Coincide con el inicio de la campaña de las elecciones generales españolas. Los países gastan más dinero público que nunca en combustibles fósiles. La ONU considera ya obsoleto el objetivo de limitar el calentamiento a un grado y medio. Ecologistas en Acción espera un choque entre dos mundos. Greenpeace dice que será una de las cumbres políticamente más difíciles, por la postura de Estados Unidos, que defiende los combustibles fósiles, y por los pasos atrás de la Unión Europea. Turquía propone electrificar el treinta y cinco por ciento de su energía en dos mil treinta y cinco.",
-     "url": "https://www.eldiario.es/sociedad/comienza-cumbre-clima-hara-evidente-choque-mundos_1_13640288.html"
+     "titular": "El Gobierno pide suspender TikTok por contenidos de abuso infantil",
+     "resumen": "Según elDiario.es, el Gobierno pide a la Agencia de Protección de Datos que actúe contra TikTok en España por alojar contenidos de abuso sexual infantil. La petición se produce tras una investigación del propio diario, que halló miles de estos contenidos en la plataforma, entre ellos vídeos en los que se ofrecen hijas o sobrinos. El titular habla de pedir que se suspenda la plataforma. Por ahora no constan la respuesta de TikTok ni los detalles de la base legal de la petición. La noticia ha sido uno de los temas destacados de la portada de elDiario.es este miércoles.",
+     "url": "https://www.eldiario.es/sociedad/gobierno-pide-agencia-proteccion-datos-suspenda-tiktok-alojar-contenidos-pederastia_1_13652827.html"
     }
    ]
   }
