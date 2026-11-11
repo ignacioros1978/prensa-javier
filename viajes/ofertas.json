@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-01T10:48:18+01:00",
- "semanaTexto": "domingo 1 de noviembre",
+ "actualizado": "2026-11-11T10:53:09+01:00",
+ "semanaTexto": "miércoles 11 de noviembre",
  "estado": "ok",
  "pareja": {
   "destino": "Oporto",
@@ -11,8 +11,8 @@
   "fechasTexto": "lunes 14 al jueves 17 de diciembre",
   "noches": 3,
   "viajeros": "2 adultos",
-  "precioTotal": 253.62,
-  "precioPersona": 127,
+  "precioTotal": 224.7,
+  "precioPersona": 112,
   "tipo": "Vuelo + hotel",
   "vuelo": {
    "compania": "Ryanair",
@@ -23,45 +23,56 @@
    "nombre": "Park Hotel Porto Gaia",
    "estrellas": 3,
    "nota": "7,5",
-   "zona": "a 3,3 km del centro (Rua da Bélgica)"
+   "zona": "a 3,3 km del centro (Rua da Bélgica, Vila Nova de Gaia)"
   },
   "incluye": "Vuelos directos y 3 noches en habitación doble superior, sin desayuno",
-  "porQue": "Es lo más barato que cumple los criterios (nota 7,5 con 429 opiniones, justo en el mínimo). Por separado sale más caro: vuelos en eDreams 156 € y, por ejemplo, Vibrant Host-Campo 24 Agosto en Booking (9,1 de nota) 140,40 €, unos 296 € en total. Tarifa no reembolsable; con cancelación gratis hasta el 7 de diciembre cuesta 254,35 €. Ojo: se llega el lunes a las 22:55.",
+  "porQue": "Es lo más barato que cumple los criterios (nota 7,5 con 429 opiniones, justo en el mínimo) y sale unos 29 € más barato que la semana pasada para las mismas fechas. Por separado sale más caro: vuelos en eDreams 140 € y, por ejemplo, Casa Maya Boutique Guesthouse en Booking (8,7) 132,85 €, unos 273 € en total. Cancelación gratis hasta el 11 de diciembre. Ojo: se llega el lunes a las 22:55.",
   "fuente": "lastminute.com",
-  "url": "https://www.lastminute.com/s/tsx/41000?pageType=review&destination=OPO&dateFrom=2026-12-14&dateTo=2026-12-17&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261214-20261217&roomId=41000DOUBLE_SUPERIOR-1&mealPlanId=-1468557264&mealPlanCode=BONR&searchMode=DP&origin=SVQ&transportId=836176993495934976SCHv01-1739858722&vcSearchId=783709081",
-  "cancelable": false,
+  "url": "https://www.lastminute.com/s/tsx/41000?pageType=review&destination=OPO&dateFrom=2026-12-14&dateTo=2026-12-17&sort=recommended&source=gptmcp&bfSubSource=-----TL0S10RS01&businessProfileId=HOL_LMNES_LLMPROJECTDPES&adults=2&departureIntervals=20261214-20261217&roomId=-1155686787-1&mealPlanId=1610009174&mealPlanCode=BORF20261211&searchMode=DP&origin=SVQ&transportId=839802006821799936SCHv01-1739858722&vcSearchId=814563582",
+  "cancelable": true,
   "alternativas": []
  },
  "familia": {
   "destino": "Oporto",
   "pais": "Portugal",
   "origen": "Sevilla",
-  "fechaIda": "2026-11-27",
-  "fechaVuelta": "2026-11-29",
-  "fechasTexto": "viernes 27 al domingo 29 de noviembre",
+  "fechaIda": "2026-12-11",
+  "fechaVuelta": "2026-12-13",
+  "fechasTexto": "viernes 11 al domingo 13 de diciembre",
   "noches": 2,
   "viajeros": "2 adultos y 3 hijos",
-  "precioTotal": 616.4,
-  "precioPersona": 123,
+  "precioTotal": 736.7,
+  "precioPersona": 147,
   "tipo": "Vuelo + hotel por separado",
   "vuelo": {
    "compania": "Ryanair",
    "directo": true,
-   "detalle": "Ida vie 27 nov 14:55 (llega 15:10 hora de Oporto) · vuelta dom 29 nov 20:15 (llega 22:30)"
+   "detalle": "Ida vie 11 dic 14:55 (llega 15:10 hora de Oporto) · vuelta dom 13 dic 13:10 (llega 15:25)"
   },
   "alojamiento": {
-   "nombre": "Porto Santa Maria Apartments",
+   "nombre": "Pestana Apartments",
    "estrellas": 4,
    "nota": "9,1",
-   "zona": "en el centro de Oporto (Travessa de Antero de Quental)"
+   "zona": "en Oporto, barrio de Bonfim"
   },
-  "incluye": "Vuelos directos en eDreams (420 € los cinco) y 2 noches en Porto Santa Maria Apartments en Booking (196,40 €), sin desayuno",
-  "porQue": "Sale unos 11 € más barato que el mejor paquete de lastminute (Cosme Apartments, 627,46 €, nota 9,1): alojamiento con 9,1 de nota y 433 opiniones, con habitaciones familiares, y vuelos directos con la vuelta el domingo por la noche. Son dos reservas distintas y los vuelos son más caros que la semana pasada. Comprueba al reservar que la habitación tiene camas para los cinco. Ojo: el viernes hay que salir del cole antes de tiempo.",
+  "incluye": "Vuelos directos en eDreams (515 € los cinco) y 2 noches en Pestana Apartments en Booking (221,70 €), sin desayuno",
+  "porQue": "Es la opción más barata que cumple todo: apartamento con habitaciones familiares, nota 9,1 con 451 opiniones y vuelos directos. Los paquetes de lastminute para la familia salían desde unos 817 € pero sin alojamientos que cumplieran la calidad mínima (pocas opiniones o nota baja). Son dos reservas distintas: comprueba al reservar que hay camas para los cinco. Con la vuelta el domingo a las 20:15 los vuelos suben a 550 €. Ojo: el viernes hay que salir del cole antes de tiempo.",
   "fuente": "eDreams + Booking.com",
-  "url": "https://www.booking.com/hotel/pt/porto-santa-maria-apartments-porto1.html?aid=8132308&checkin=2026-11-27&checkout=2026-11-29&no_rooms=1&group_adults=3&group_children=2&age=11&age=4&selected_currency=EUR",
+  "url": "https://www.booking.com/hotel/pt/pestana-apartments-premium.html?aid=8132308&checkin=2026-12-11&checkout=2026-12-13&no_rooms=1&group_adults=3&group_children=2&age=11&age=4&selected_currency=EUR",
   "alternativas": []
  },
  "anteriores": [
+  {
+   "semanaTexto": "domingo 1 de noviembre",
+   "pareja": {
+    "destino": "Oporto",
+    "precioTotal": 253.62
+   },
+   "familia": {
+    "destino": "Oporto",
+    "precioTotal": 616.4
+   }
+  },
   {
    "semanaTexto": "miércoles 21 de octubre",
    "pareja": {
@@ -110,5 +121,5 @@
    "estado": "ok"
   }
  ],
- "nota": "El vuelo de la familia se reserva en eDreams: https://www.edreams.com/ (Ryanair SVQ-OPO 27 nov 14:55, vuelta 29 nov 20:15, 420 € los cinco). Con las fechas ocupadas (Laponia y Londres) quedaban pocas tandas; en Roma, Milán, Lisboa, Praga y Budapest ningún alojamiento cumplía la calidad mínima o el precio era muy alto. Los precios cambian rápido: compruébalos antes de reservar."
+ "nota": "El vuelo de la familia se reserva en eDreams: https://www.edreams.com/ (Ryanair SVQ-OPO vie 11 dic 14:55, vuelta dom 13 dic 13:10, 515 € los cinco). Con las fechas ocupadas (Laponia hasta el 23 de nov y Londres del 4 al 9 de dic) quedaban pocas tandas. En Roma, Milán, París, Bruselas, Lisboa, Nápoles y Malta los paquetes no cumplían la calidad mínima (alojamientos lejos del centro, con pocas opiniones o nota baja) o eran muy caros. Los precios cambian rápido: compruébalos antes de reservar."
 }
