@@ -1,7 +1,7 @@
 {
  "fecha": "2026-11-11",
  "fechaTexto": "miércoles 11 de noviembre",
- "actualizado": "2026-11-11T15:59:00+01:00",
+ "actualizado": "2026-11-11T15:59:15+01:00",
  "portada": [
   "ed1",
   "edi1",
@@ -56,7 +56,7 @@
     {
      "id": "ee3",
      "titular": "Los Reyes consuelan a las familias de las víctimas de Urda",
-     "resumen": "El Español cuenta que los Reyes consolaron uno a uno a los familiares de las víctimas de Urda durante el funeral celebrado en Toledo. Según la información del diario, el presidente del Gobierno, Pedro Sánchez, no acudió a la ceremonia, y mientras tanto grababa un pódcast. El arzobispo de Toledo pidió que se esclarezcan las causas de lo ocurrido. La misa se celebró en la catedral, presidida por la talla del Cristo de Urda, y recordó a las 69 víctimas del accidente ferroviario. El suceso ha conmocionado a la localidad, y la ausencia de Sánchez ha sido uno de los puntos más comentados de la jornada.",
+     "resumen": "El Español cuenta que los Reyes consolaron uno a uno a los familiares de las víctimas de Urda durante el funeral celebrado en Toledo. Según la información del diario, el presidente del Gobierno, Pedro Sánchez, no acudió a la ceremonia,, según el titular de la noticia, que menciona que grababa un pódcast. El arzobispo de Toledo pidió que se esclarezcan las causas de lo ocurrido. La misa se celebró en la catedral, presidida por la talla del Cristo de Urda, y recordó a las 69 víctimas del accidente ferroviario.",
      "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261110/reyes-consuelan-familiares-victimas-urda-sanchez-graba-podcast-jordi-wild/1003744453244_0.html"
     }
    ]
@@ -74,7 +74,7 @@
     {
      "id": "ed2",
      "titular": "La Audiencia Nacional calcula que Zapatero aspiraba a ganar 3 millones",
-     "resumen": "Según El Debate, la Audiencia Nacional calcula que el expresidente José Luis Rodríguez Zapatero aspiraba a ganar unos 3 millones de euros en cinco años. El dinero vendría de influir en operaciones en Dubái y en Latinoamérica. El diario atribuye este cálculo al tribunal, que lo recoge en su investigación. El caso de Zapatero y su relación con la aerolínea Plus Ultra ha estado en el centro del debate político en los últimos días, y el presidente Pedro Sánchez dijo ayer que Zapatero nunca le habló de ese asunto. El Debate publica el dato esta mañana, sin que consten por ahora reacciones del expresidente.",
+     "resumen": "Según El Debate, la Audiencia Nacional calcula que el expresidente José Luis Rodríguez Zapatero aspiraba a ganar unos 3 millones de euros en cinco años. El dinero vendría de influir en operaciones en Dubái y en Latinoamérica. El diario atribuye este cálculo al tribunal. El caso de Zapatero y su relación con la aerolínea Plus Ultra ha estado en el centro del debate político en los últimos días, y el presidente Pedro Sánchez dijo ayer que Zapatero nunca le habló de ese asunto. El Debate publica el dato esta mañana, sin que consten por ahora reacciones del expresidente.",
      "url": "https://www.eldebate.com/espana/20261111/an-calcula-zapatero-aspiraba-ganar-3-millones-cinco-anos-influir-operaciones-dubai-latinoamerica_479491.html"
     },
     {
@@ -92,7 +92,7 @@
     {
      "id": "to1",
      "titular": "Ábalos pasó una noche en un parador con el exchófer de Sánchez",
-     "resumen": "The Objective publica que el exministro José Luis Ábalos pasó una noche en un parador con el exchófer de Pedro Sánchez, antes de la destitución de este último. Según el titular del diario, la coincidencia se produjo antes de que el chófer fuera apartado de su puesto. El asunto se suma a las novedades judiciales del caso en el que aparece Ábalos, cuya vivienda ha sido registrada por la Guardia Civil, según informa OKDiario. The Objective publicó la noticia el martes 10 de noviembre, y de momento no constan reacciones de los protagonistas.",
+     "resumen": "The Objective publica que el exministro José Luis Ábalos pasó una noche en un parador con el exchófer de Pedro Sánchez, antes de la destitución de este último. Según el titular del diario, la coincidencia se produjo antes de que el chófer fuera apartado de su puesto. The Objective publicó la noticia el martes 10 de noviembre, y de momento no constan reacciones de los protagonistas.",
      "url": "https://theobjective.com/espana/2026-11-10/abalos-noche-exchofer-sanchez-parador/"
     },
     {
@@ -128,7 +128,7 @@
     {
      "id": "ok3",
      "titular": "El Gobierno vasco concede el tercer grado al etarra Asier Eceiza",
-     "resumen": "Según OKDiario, el Gobierno vasco ha concedido el tercer grado, una semilibertad, al preso de ETA Asier Eceiza. Eceiza fue condenado a penas que suman 201 años de cárcel. El tercer grado permite cumplir la pena en régimen abierto, con salidas de la prisión. El diario critica la decisión. La competencia sobre las prisiones corresponde al Gobierno vasco, que la asumió hace unos años. OKDiario no recoge en su titular la reacción de las asociaciones de víctimas.",
+     "resumen": "Según OKDiario, el Gobierno vasco ha concedido el tercer grado, una semilibertad, al preso de ETA Asier Eceiza. Eceiza fue condenado a penas que suman 201 años de cárcel. El tercer grado permite cumplir la pena en régimen abierto, con salidas de la prisión. La competencia sobre las prisiones en el País Vasco corresponde al Gobierno vasco. OKDiario no recoge en su titular la reacción de las asociaciones de víctimas.",
      "url": "https://okdiario.com/espana/gobierno-vasco-concede-semilibertad-etarra-asier-eceiza-condenado-201-anos-carcel-20751841"
     }
    ]
