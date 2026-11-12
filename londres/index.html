@@ -377,8 +377,13 @@
         .en-dl { display:inline-flex; align-items:center; min-height:44px; padding:0 14px; margin-top:10px; border-radius:12px; background:#f1f5f9; color:#0f172a; font-weight:800; text-decoration:none; }
         .en-file { display:flex; align-items:center; justify-content:center; width:100%; min-height:50px; margin-top:10px; border-radius:14px; border:2px solid #cbd5e1; background:#fff; color:#0f172a; font-weight:800; font-size:16px; cursor:pointer; font-family:inherit; }
         .en-forget { display:block; margin:22px auto 6px; min-height:46px; padding:0 16px; border-radius:12px; border:2px solid #cbd5e1; background:#fff; color:#475569; font-weight:700; font-size:15px; cursor:pointer; }
-        .h4-map { display:flex; align-items:flex-start; gap:8px; }
-        .h4-map > span { flex:1; min-width:0; }
+        .itinerary-details h4.h4-map { display:flex !important; flex-direction:row !important; flex-wrap:nowrap !important; align-items:flex-start; gap:8px; }
+        .itinerary-details h4.h4-map > span { flex:1 1 auto; min-width:0; }
+        .itinerary-details h4.h4-map > .itin-mapa { flex:0 0 44px !important; }
+        #mapa-view { position:fixed; inset:0; z-index:5150; background:#0b1020; }
+        #mapa-view[hidden] { display:none !important; }
+        #mapa-view iframe { position:absolute; inset:0; width:100%; height:100%; border:0; background:#0b1020; }
+        #mapa-view .mv-x { position:absolute; top:max(10px,env(safe-area-inset-top)); right:10px; z-index:2; width:56px; height:56px; border-radius:50%; border:3px solid #fff; background:#0f172a; color:#fff; font-size:28px; font-weight:800; line-height:1; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.5); }
         .itin-mapa { flex:none; display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; margin:-8px 0 -12px; border-radius:12px; background:#eef2ff; border:2px solid #c7d2fe; text-decoration:none; font-size:20px; line-height:1; }
         .tv-h { margin:18px 0 8px; font-size:19px; font-weight:800; color:#0f172a; }
         .tv-img { display:block; width:100%; border-radius:14px; border:1px solid #cbd5e1; }
@@ -1031,6 +1036,7 @@
 <div id="day-full" hidden role="dialog" aria-label="Itinerario del día"><div class="df-top"><button type="button" class="df-share" onclick="shareDayImage()">🟢 Compartir por WhatsApp</button><button type="button" class="df-x" onclick="closeDayFull()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="info-full" hidden role="dialog" aria-label="Información"><div class="df-top"><div class="if-title"></div><button type="button" class="df-x" onclick="closeInfo()" aria-label="Cerrar">✕</button></div><div class="df-body"></div></div>
 <div id="seats-full" hidden role="dialog" aria-label="Asientos y equipaje"><div class="df-top"><div class="if-title">💺 Asientos y equipaje</div><button type="button" class="df-x" onclick="closeSeats()" aria-label="Cerrar y volver a Vuelos y traslados">✕</button></div><div class="df-body"></div></div>
+<div id="mapa-view" hidden role="dialog" aria-label="Mapa del mercadillo"><button type="button" class="mv-x" onclick="closeMapa()" aria-label="Cerrar el mapa y volver al itinerario">✕</button></div>
 <div id="img-view" hidden role="dialog" aria-label="Imagen"><button type="button" class="iv-x" onclick="closeImg()" aria-label="Cerrar">✕</button><div class="iv-body"><img alt="" draggable="false"></div><div class="iv-bar"><button type="button" data-z="-1" aria-label="Alejar">－</button><button type="button" data-z="0" class="iv-fit">Ajustar</button><button type="button" data-z="1" aria-label="Acercar">＋</button></div><div class="iv-hint">Pellizca con dos dedos o toca dos veces para ampliar</div></div>
 <div id="app-container">
     <header style="position:relative;">
@@ -2056,9 +2062,33 @@
         if (document.getElementById('info-full').hidden && document.getElementById('day-full').hidden) document.body.style.overflow = '';
         if (!fromPop && history.state && history.state.img) { skipPop = true; history.back(); }
     };
+    // Mapas de los mercadillos: se abren encima del itinerario y la X vuelve a donde estabas
+    window.openMapa = function(href) {
+        const ov = document.getElementById('mapa-view');
+        // Un iframe nuevo cada vez: así cargarlo no añade un paso al historial y «atrás» cierra el mapa
+        const old = ov.querySelector('iframe'); if (old) old.remove();
+        const fr = document.createElement('iframe'); fr.title = 'Mapa del mercadillo';
+        fr.src = href + (href.indexOf('?') < 0 ? '?embed=1' : '&embed=1');
+        ov.insertBefore(fr, ov.firstChild);
+        ov.hidden = false; document.body.style.overflow = 'hidden';
+        history.pushState({ mapa: 1 }, '');
+    };
+    window.closeMapa = function(fromPop) {
+        const ov = document.getElementById('mapa-view');
+        if (ov.hidden) return;
+        ov.hidden = true; const fr = ov.querySelector('iframe'); if (fr) fr.remove();
+        if (['day-full','info-full','img-view'].every(id => document.getElementById(id).hidden)) document.body.style.overflow = '';
+        if (!fromPop && history.state && history.state.mapa) { skipPop = true; history.back(); }
+    };
+    document.addEventListener('click', e => {
+        const a = e.target.closest && e.target.closest('a.itin-mapa');
+        if (!a) return;
+        e.preventDefault(); openMapa(a.getAttribute('href'));
+    });
     window.addEventListener('popstate', () => {
         if (skipPop) { skipPop = false; return; }
-        if (!document.getElementById('img-view').hidden) closeImg(true);
+        if (!document.getElementById('mapa-view').hidden) closeMapa(true);
+        else if (!document.getElementById('img-view').hidden) closeImg(true);
         else if (!document.getElementById('seats-full').hidden) closeSeats(true);
         else if (!document.getElementById('info-full').hidden) closeInfo(true); else closeDayFull(true);
     });
@@ -3696,7 +3726,7 @@
         refit();
     }
     window.closeFull = function(){ if (!mode) return; if (history.state && history.state.lcnFull) history.back(); else leave(); };
-    window.addEventListener('popstate', leave);
+    window.addEventListener('popstate', () => { if (history.state && history.state.lcnFull) return; leave(); });
     document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && mode) { if (history.state && history.state.lcnFull) history.back(); else leave(); } });
     // Chips de días flotando sobre el mapa (reflejan los del panel)
     const box = document.getElementById('map-days');
