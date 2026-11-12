@@ -1,16 +1,17 @@
 {
- "fecha": "2026-11-11",
- "fechaTexto": "miércoles 11 de noviembre",
- "actualizado": "2026-11-11T15:59:15+01:00",
+ "fecha": "2026-11-12",
+ "fechaTexto": "jueves 12 de noviembre",
+ "actualizado": "2026-11-12T12:00:46+01:00",
  "portada": [
+  "ee1",
+  "ld2",
+  "ee3",
+  "ld1",
+  "ee2",
   "ed1",
   "edi1",
   "ed2",
-  "ee2",
-  "edi3",
-  "ed3",
-  "edi2",
-  "ee3"
+  "to3"
  ],
  "diarios": [
   {
@@ -19,21 +20,21 @@
    "noticias": [
     {
      "id": "ld1",
-     "titular": "Una empresa pública canaria adjudica 200.000 euros a la consultora de Carlos Alonso",
-     "resumen": "La empresa pública canaria Gesplan adjudicó un contrato de 200.000 euros a Anitya Consultores, la sociedad de Carlos Alonso, según una información de Libertad Digital. El concurso se publicó el 7 de mayo y era un servicio de asesoramiento estratégico: una bolsa de 5.000 horas a 40 euros la hora. Gesplan cambió el pliego el 19 de mayo, tres días antes del cierre, para permitir subcontratar prestaciones accesorias. Anitya, que Alonso creó en 2019 y de la que es administrador y único socio, obtuvo 43 puntos en la valoración técnica, frente a 41 de la oferta rival. Según el diario, sus cuentas de 2024 indican que no tenía empleados de media. La adjudicación la firmó el 20 de julio el consejero delegado, Miguel Ángel Pérez Hernández. El artículo plantea preguntas, pero no recoge respuesta ni de Gesplan ni de Alonso.",
-     "url": "https://www.libertaddigital.com/canarias/2026-11-11/gesplan-cambio-el-pliego-a-tres-dias-del-cierre-y-adjudico-un-contrato-de-200-000-euros-a-la-consultora-de-carlos-alonso-7489469/"
+     "titular": "Alerta roja por riesgo de desbordamiento del Manzanares en Rivas",
+     "resumen": "La Confederación Hidrográfica del Tajo ha activado este jueves el aviso rojo por riesgo de desbordamiento del río Manzanares a su paso por Rivas-Vaciamadrid, en el sureste de la Comunidad de Madrid. Según los datos oficiales que recoge Libertad Digital, el río ha llegado a cuatro metros y treinta centímetros de altura, muy por encima de los dos metros y sesenta y seis centímetros que marcan la alerta roja. El punto crítico está junto a la zona de La Chopera, frente a la Escuela Nacional de Protección Civil. El río Jarama, a la altura de Titulcia, está en aviso amarillo y se acerca al naranja. El resto de los ríos de la región están en situación normal. La crecida llega tras las últimas lluvias y con la borrasca Charles atravesando la península con lluvia en el norte y fuertes rachas de viento en el centro y el este. Los embalses del Canal de Isabel Segundo están al cincuenta y nueve por ciento.",
+     "url": "https://libertaddigital.com/madrid/2026-11-12/alerta-roja-en-madrid-grave-riesgo-de-desbordamiento-del-rio-manzanares-a-su-paso-por-rivas-7490380"
     },
     {
      "id": "ld2",
-     "titular": "Arranca en Madrid la feria SIMO Educación",
-     "resumen": "Comienza hoy en Madrid la feria SIMO Educación, que celebra su duodécima edición en el pabellón 14.1 de IFEMA hasta el viernes 13 de noviembre. Su directora, Ana Rodríguez, lo explicó en una entrevista en esRadio, recogida por Libertad Digital. El lema de este año es liderazgo directivo para la transformación educativa. La feria reúne a unas 60 empresas de 8 países, 120 ponencias y más de 200 ponentes, e incluye el primer Congreso Internacional de NeuroEduca, con 24 especialistas. Rodríguez defendió un uso responsable de la inteligencia artificial en los centros. Según sus cifras, que el artículo no contrasta, los profesores que usan estas herramientas ahorran casi 6 horas a la semana y los asistentes conversacionales reducen el abandono escolar un 21 por ciento.",
-     "url": "https://www.libertaddigital.com/sociedad/2026-11-11/ana-rodriguez-directora-de-simo-educacion-sobre-la-ia-en-los-centros-se-trata-de-un-uso-responsable-7488887/"
+     "titular": "Trabajo propone subir el salario mínimo a 1.286 euros",
+     "resumen": "El Ministerio de Trabajo propone subir el salario mínimo interprofesional de 1.221 a 1.286 euros brutos al mes en catorce pagas, sesenta y cinco euros más. Según Libre Mercado, la sección de economía de Libertad Digital, la ministra Yolanda Díaz encargó el estudio a su comité de expertos el 8 de octubre y el informe llegó el 4 de noviembre, en apenas tres semanas, cuando lo habitual es que tarden de octubre a febrero. Los expertos proponían una subida del cuatro coma nueve por ciento, hasta unos 1.281 euros, y el Ministerio ha ido cinco euros más allá. Al día siguiente convocó de urgencia a sindicatos y patronal. El periódico sostiene que Díaz quiere dejar la subida aprobada antes de las elecciones del 29 de noviembre. La patronal CEOE se queja de que se enteró por la prensa. Desde Podemos, Irene Montero pide 1.800 euros y dice que con 1.286 no se puede vivir.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-11-12/yolanda-diaz-infla-el-smi-por-encima-de-sus-expertos-tras-despachar-el-calculo-en-tres-semanas-7489228/"
     },
     {
      "id": "ld3",
-     "titular": "El Cristo de Urda preside el funeral por las víctimas en Toledo",
-     "resumen": "Libertad Digital cuenta la historia del Cristo de Urda, la talla que presidió en la catedral de Toledo la misa funeral por las 69 víctimas del accidente ferroviario de Urda. Es una imagen del siglo dieciséis, obra de Luis de Villoldo, que llegó a Toledo la noche del 9 de noviembre. Según el diario, es la primera vez desde 1596 que sale de Urda, salvo cuando fue restaurada en Valencia tras la Guerra Civil. La talla sufrió un saqueo en 1936. Para la ceremonia se encendieron 69 velas, una por cada víctima, y después la imagen vuelve a su basílica. Según los titulares del diario, asistieron los Reyes y el arzobispo de Toledo pidió que se esclarezcan las causas del accidente.",
-     "url": "https://www.libertaddigital.com/cultura/historia/2026-11-10/el-cristo-de-urda-un-crucificado-que-sobrevivio-a-dos-guerras-presidira-el-funeral-en-la-catedral-de-toledo-7489161/"
+     "titular": "La Policía desaloja la acampada por la vivienda de las Setas de Sevilla",
+     "resumen": "La Policía Nacional ha desalojado a primera hora de este jueves la acampada por la vivienda de la plaza de la Encarnación, en Sevilla, junto a las Setas. El operativo empezó hacia las seis de la mañana con una decena de furgones, para identificar a las veinte personas que seguían allí. Se retiraron las tiendas de campaña y entraron después los servicios municipales de limpieza. La acampada, impulsada por el Sindicato de Inquilinas, llevaba allí desde el 28 de septiembre y llegó a reunir a un centenar de personas. Pedían prorrogar los alquileres, congelar las hipotecas y prohibir los desahucios por motivos económicos. Según Libertad Digital, los comerciantes y hosteleros de la zona calculan pérdidas de entre el treinta y el cuarenta por ciento. El alcalde, José Luis Sanz, llevaba semanas pidiendo la intervención y celebró el desalojo en las redes sociales. El Ayuntamiento quiere recuperar la plaza para el alumbrado de Navidad.",
+     "url": "https://www.libertaddigital.com/andalucia/2026-11-12/la-policia-pone-fin-a-la-acampada-de-sevilla-los-comerciantes-denuncian-perdidas-del-40-por-ciento-7490332/"
     }
    ]
   },
@@ -43,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Arranca la huelga general con tensión en Madrid",
-     "resumen": "La huelga general de este miércoles 11 de noviembre arranca con tensión, según el seguimiento en directo de El Español. En Madrid, el Sindicato de Inquilinas tomó una oficina de la inmobiliaria Alquiler Seguro, y otros medios hablan de 27 oficinas de esa empresa vandalizadas. El diario también recoge los servicios mínimos y los horarios de Metro, Cercanías y autobuses para esta jornada. Además, informa de que los maquinistas de Renfe han trasladado su propia huelga al 23 de noviembre. La protesta, convocada por los sindicatos, llega a pocas semanas de las elecciones generales del 29 de noviembre. El Español señala que el directo seguirá actualizándose a lo largo del día.",
-     "url": "https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones/1003744452728_10.html"
+     "titular": "Marlaska ordena investigar las cargas policiales de la huelga y los socios piden su dimisión",
+     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha pedido al director general de la Policía Nacional que abra investigaciones específicas sobre las cargas policiales de la huelga general de ayer, aparte de la inspección interna habitual. También ha ordenado dejar de usar gas lacrimógeno, tras ver imágenes de agentes rociando a manifestantes en los ojos. Según El Español, los socios del Gobierno piden su cabeza: Sumar exige su dimisión, igual que Esquerra Republicana, Compromís y Podemos. La portavoz del Gobierno, Elma Saiz, descarta destituirlo, y el ministro Félix Bolaños admite que algunas imágenes no le gustaron. El Partido Popular, por su parte, habla de huelga fracasada y denuncia la violencia de algunos manifestantes contra quienes querían trabajar. Policía y Guardia Civil contabilizaron 1.144 incidencias y 47 detenidos, sin contar Cataluña y el País Vasco. Solo en Barcelona hubo otros 52 detenidos, de modo que el total supera el centenar.",
+     "url": "https://www.elespanol.com/espana/politica/20261112/marlaska-ordena-investigar-cargas-policiales-huelga-general-socios-gobierno-piden-dimision/1003744455203_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Muere un policía en una explosión en Oviedo",
-     "resumen": "Según El Español, una explosión y un tiroteo en Oviedo dejaron un policía muerto y otro herido de gravedad. Los titulares del diario hablan de una mochila con un artefacto explosivo. El autor huyó y la Policía busca a un hombre. El Español identifica al fallecido como el subinspector conocido como Jota. Por su parte, elDiario.es sitúa el suceso en la mañana del martes y habla de un agente de la unidad canina fallecido. Libertad Digital añade que murió también el perro policía Deny y que el sospechoso sería apodado el Ruso. Los datos proceden de los titulares de las portadas, y los detalles de la investigación aún no están claros.",
-     "url": "https://www.elespanol.com/sociedad/20261110/muere-policia-resulta-herido-grave-oviedo-tiroteo-explosion-mochila/1003744452011_0.html"
+     "titular": "Aviso de bomba junto a la Catedral de Sevilla: la Policía detona una mochila",
+     "resumen": "La Policía Nacional ha acordonado esta mañana la avenida de la Constitución de Sevilla por un aviso de bomba. Los agentes evacuaron los alrededores de la Catedral y del Archivo de Indias, los dos declarados Patrimonio de la Humanidad, por un objeto sospechoso que apareció cerca. Según El Español, la zona cortada iba desde la Puerta de Jerez hasta el Ayuntamiento, con decenas de agentes, unidades a caballo, coches patrulla y un helicóptero sobrevolando el centro. Finalmente, los artificieros detonaron de forma controlada una mochila sospechosa, con un fuerte ruido junto a la delegación de Hacienda de la Junta. La Policía pidió calma en ese momento. Después se reabrió la circulación. El periódico no informa de heridos ni aclara si la mochila contenía realmente explosivos. La Guardia Civil investiga desde hace días una oleada de falsos avisos de bomba contra infraestructuras y transportes en toda España.",
+     "url": "https://www.elespanol.com/sevilla/20261112/policia-evacua-alrededores-catedral-sevilla-archivo-indias-aviso-bomba/1003744455247_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Los Reyes consuelan a las familias de las víctimas de Urda",
-     "resumen": "El Español cuenta que los Reyes consolaron uno a uno a los familiares de las víctimas de Urda durante el funeral celebrado en Toledo. Según la información del diario, el presidente del Gobierno, Pedro Sánchez, no acudió a la ceremonia,, según el titular de la noticia, que menciona que grababa un pódcast. El arzobispo de Toledo pidió que se esclarezcan las causas de lo ocurrido. La misa se celebró en la catedral, presidida por la talla del Cristo de Urda, y recordó a las 69 víctimas del accidente ferroviario.",
-     "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/toledo/20261110/reyes-consuelan-familiares-victimas-urda-sanchez-graba-podcast-jordi-wild/1003744453244_0.html"
+     "titular": "Esta medianoche empieza la campaña de las elecciones del 29 de noviembre",
+     "resumen": "La campaña electoral de las elecciones generales arranca a las doce de esta noche, en el paso del jueves al viernes 13, y terminará el viernes 27. El sábado 28 será jornada de reflexión y el domingo 29 se vota. El Español repasa cómo empiezan los partidos en Galicia, donde se reparten veintitrés diputados. El Partido Popular hará su acto central en Santiago a última hora del jueves, y Alberto Núñez Feijóo dará un gran mitin el sábado junto a Alfonso Rueda. Los socialistas empiezan en Vigo y Ourense y esperan, aunque sin confirmar, la visita de Pedro Sánchez. El Bloque Nacionalista Galego arranca en Santiago con Ana Pontón. Santiago Abascal encabeza cuatro actos a medianoche, uno de ellos en La Coruña, porque Vox quiere entrar por fin en el Congreso por Galicia. La campaña llega justo después de la huelga general de ayer, centrada en la vivienda, los salarios y el coste de la vida.",
+     "url": "https://www.elespanol.com/quincemil/actualidad/galicia/20261112/campana-arranca-viernes-galicia-semana-marcada-huelga-general/1003744450971_0.html"
     }
    ]
   },
@@ -67,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "La huelga general arranca con piquetes y cargas en Mercamadrid",
-     "resumen": "La huelga general del 11 de noviembre ha empezado con piquetes en toda España, según El Debate. El diario destaca las cargas policiales en Mercamadrid, el mercado mayorista de Madrid. En su seguimiento en directo, recoge heridos y un detenido durante las primeras horas de la jornada. La convocatoria llega a pocas semanas de las elecciones generales del 29 de noviembre. Los sindicatos denuncian, según otros medios, el uso de gas pimienta contra los piquetes. El Debate irá actualizando la información a lo largo del día con el seguimiento de la huelga y los incidentes que se vayan produciendo en distintas ciudades.",
-     "url": "https://www.eldebate.com/economia/20261111/huelga-general-amanece-piquetes-toda-espana-cargas-policiales-mercamadrid_479496.html"
+     "titular": "La huelga deja destrozos en casi cuarenta oficinas inmobiliarias",
+     "resumen": "La Federación de Asociaciones de Empresas Inmobiliarias ha hecho balance de la huelga general de ayer y, según cuenta El Debate, más de ciento veinte empresas del sector se vieron afectadas en toda España. Su observatorio de incidencias registró treinta y siete ataques en dieciséis provincias. Hubo daños en oficinas y escaparates, negocios que tuvieron que cerrar por seguridad, actividad interrumpida y accesos bloqueados. Una de las oficinas destrozadas está en Palma de Mallorca. La federación condena el vandalismo y la intimidación, y dice que ninguna reivindicación ni el derecho de huelga justifican la violencia ni los daños a la propiedad privada. Considera especialmente grave que se intentara impedir trabajar a otras personas y pide que no quede impune. Su presidente, Miguel Ángel Gómez Huecas, agradeció la actuación de las fuerzas de seguridad. La federación estudiará cada caso y lo llevará ante las autoridades.",
+     "url": "https://www.eldebate.com/economia/20261112/huelga-salda-destrozos-casi-40-oficinas-inmobiliarias_480028.html"
     },
     {
      "id": "ed2",
-     "titular": "La Audiencia Nacional calcula que Zapatero aspiraba a ganar 3 millones",
-     "resumen": "Según El Debate, la Audiencia Nacional calcula que el expresidente José Luis Rodríguez Zapatero aspiraba a ganar unos 3 millones de euros en cinco años. El dinero vendría de influir en operaciones en Dubái y en Latinoamérica. El diario atribuye este cálculo al tribunal. El caso de Zapatero y su relación con la aerolínea Plus Ultra ha estado en el centro del debate político en los últimos días, y el presidente Pedro Sánchez dijo ayer que Zapatero nunca le habló de ese asunto. El Debate publica el dato esta mañana, sin que consten por ahora reacciones del expresidente.",
-     "url": "https://www.eldebate.com/espana/20261111/an-calcula-zapatero-aspiraba-ganar-3-millones-cinco-anos-influir-operaciones-dubai-latinoamerica_479491.html"
+     "titular": "Israel bombardea un hospital en el sur de Gaza y mueren al menos seis personas",
+     "resumen": "El ejército israelí ha atacado poco después de la medianoche el hospital Nasser de Jan Yunis, en el sur de la franja de Gaza. Según El Debate, al menos seis personas han muerto, entre ellas un niño de trece años y un médico, y una treintena han resultado heridas, también personal sanitario. El personal del hospital cuenta que dos drones alcanzaron el ala de cirugía y que los quirófanos han quedado fuera de servicio. En el hospital había unos ochocientos pacientes y, según los trabajadores, nadie avisó ni ordenó evacuar. El ejército de Israel asegura que su objetivo era un alto mando de Hamás y otros milicianos que operaban dentro del hospital, y acusa a Hamás de guardar armas allí. El Ministerio de Sanidad de Gaza, controlado por Hamás, lo califica de grave ataque contra la sanidad. El ataque llega en plena crisis política en Israel, donde el presidente ha encargado formar Gobierno a Gadi Eisenkot y no a Netanyahu.",
+     "url": "https://www.eldebate.com/internacional/20261112/israel-bombardea-hospital-sur-gaza-mata-menos-seis-personas_479980.html"
     },
     {
      "id": "ed3",
-     "titular": "EE. UU. acusa a tres agentes vinculados a Irán de casi 20 atentados en Europa",
-     "resumen": "Estados Unidos acusa a tres presuntos agentes vinculados a Irán de casi 20 atentados en Europa, según informa El Debate. Entre los hechos imputados figura también un intento de atacar una base británica. El diario recoge la noticia a primera hora de la mañana de este miércoles. La acusación llega pocos días después de que Francia atribuyera a Irán un ciberataque que apagó neveras de supermercados europeos, según informó El Español. El Debate no detalla en su titular las identidades de los acusados ni los lugares de los ataques, y no constan por ahora reacciones del Gobierno iraní.",
-     "url": "https://www.eldebate.com/internacional/20261111/eeuu-acusa-tres-agentes-vinculados-iran-casi-20-atentados-europa-intentar-atacar-base-britanica_479486.html"
+     "titular": "El Papa León Catorce reúne esta tarde a miles de jóvenes en el Estadio Nacional de Lima",
+     "resumen": "El Papa León Catorce vive hoy en Lima su primera gran jornada en el Perú, el país donde fue misionero y obispo durante años. Llegó ayer por la tarde a la base aérea del Callao, en la última etapa de su viaje por Sudamérica. Según El Debate, esta mañana recibirá de forma simbólica la llave de la ciudad, se reunirá a puerta cerrada con los obispos peruanos y rezará en la catedral de Lima, donde descansan los restos de Santo Toribio de Mogrovejo. A mediodía, en la Plaza de Armas, escuchará testimonios de familias, mujeres y empresarios sobre los retos del país. Por la tarde tiene un encuentro privado con los agustinos, su orden religiosa. El acto grande llega a las seis de la tarde, hora de Lima, con una vigilia de oración con jóvenes y universitarios de todo el país en el Estadio Nacional. En los próximos días el Papa recorrerá regiones del interior del Perú.",
+     "url": "https://www.eldebate.com/religion/iglesia/20261112/primer-gran-clamor-peru-leon-xiv-citara-este-jueves-miles-jovenes-estadio-nacional-lima_479851.html"
     }
    ]
   },
@@ -91,21 +92,21 @@
    "noticias": [
     {
      "id": "to1",
-     "titular": "Ábalos pasó una noche en un parador con el exchófer de Sánchez",
-     "resumen": "The Objective publica que el exministro José Luis Ábalos pasó una noche en un parador con el exchófer de Pedro Sánchez, antes de la destitución de este último. Según el titular del diario, la coincidencia se produjo antes de que el chófer fuera apartado de su puesto. The Objective publicó la noticia el martes 10 de noviembre, y de momento no constan reacciones de los protagonistas.",
-     "url": "https://theobjective.com/espana/2026-11-10/abalos-noche-exchofer-sanchez-parador/"
+     "titular": "El PP llama fracaso a la huelga general y pide un Gobierno que ponga orden",
+     "resumen": "La portavoz del Partido Popular en el Congreso, Ester Muñoz, ha calificado de fracaso la huelga general de ayer, convocada por Comisiones Obreras, la UGT y el Sindicato de Inquilinas. Según recoge The Objective, Muñoz dijo en Telecinco que la huelga no iba a los problemas reales de los trabajadores, que podría haberse convocado en cualquier momento de los últimos ocho años y que es una huelga preventiva contra un posible futuro Gobierno. Condenó la violencia de los piquetes que impidieron trabajar y aseguró que los episodios violentos han aumentado desde que se disolvieron las Cortes, con ejemplos en Barcelona, Bilbao y La Coruña. Pidió un Gobierno que ponga orden, más medios para la Policía y la Guardia Civil, y que su trabajo se reconozca como profesión de riesgo. También criticó la política de inmigración y aseguró que, si el Partido Popular gana el 29 de noviembre, se acabará el efecto llamada.",
+     "url": "https://theobjective.com/espana/politica/2026-11-12/ester-munoz-fracaso-huelga-preventiva/"
     },
     {
      "id": "to2",
-     "titular": "La secretaria del cónsul en Argel, usada como mula para meter efectivo",
-     "resumen": "Según The Objective, la secretaria del cónsul de España en Argel fue utilizada como mula para introducir dinero en efectivo en el país. El diario publicó la información el martes 10 de noviembre. El titular sitúa el hecho en el entorno del consulado español en la capital argelina. The Objective no detalla en su portada las cantidades ni quién ordenó el traslado del dinero, por lo que habrá que esperar a nuevas informaciones para conocer el alcance del caso y la respuesta del Ministerio de Asuntos Exteriores.",
-     "url": "https://theobjective.com/espana/2026-11-10/secretaria-consul-argel/"
+     "titular": "La acampada por la vivienda de Valencia sigue y el Gobierno descarta desalojarla",
+     "resumen": "La acampada por la vivienda que hay desde el 3 de octubre en la plaza del Ayuntamiento de Valencia sigue sin fecha de salida, según The Objective. Los acampados han pedido una segunda reunión de negociación para hoy jueves. La alcaldesa, María José Catalá, del Partido Popular, quiere recuperar la normalidad con diálogo, pero de forma muy firme, y no ha aclarado si pedirá que intervenga la Policía. El delegado del Gobierno, Roger Llanes, descarta por ahora un desalojo forzoso, dice que las negociaciones avanzan mucho y califica de ejemplar el comportamiento de los acampados. La Policía Local advierte de que las tiendas son incompatibles con la seguridad de las fiestas de Navidad, cuando abrirán la pista de hielo y el carrusel a finales de mes. Los acampados piden, entre otras cosas, volver a los alquileres indefinidos, limitar más los pisos turísticos y paralizar los desahucios sin alternativa de vivienda.",
+     "url": "https://theobjective.com/espana/comunidad-valenciana/2026-11-12/acampada-valencia-eleva-presion-gobierno-descarta-desalojo/"
     },
     {
      "id": "to3",
-     "titular": "Adif relevó a un veterano experto en seguridad de vías antes de Adamuz",
-     "resumen": "The Objective cuenta que Adif relevó a un veterano matemático, experto en seguridad de las vías, un año antes del accidente de Adamuz. El diario publicó la información el martes 10 de noviembre. Adif es el administrador de las infraestructuras ferroviarias. La noticia se suma a las críticas sobre la gestión ferroviaria tras el accidente de Urda, por el que ayer hubo un funeral en Toledo. El líder del PP, Alberto Núñez Feijóo, propone una reconstrucción nacional y revisar toda la red ferroviaria. The Objective no detalla en su portada los motivos del relevo.",
-     "url": "https://theobjective.com/espana/2026-11-10/adif-veterano-matematico-seguridad-ano-adamuz/"
+     "titular": "El Santander mejora un cinco por ciento su oferta por su filial de Brasil",
+     "resumen": "El Banco Santander, presidido por Ana Botín, ha mejorado un cinco por ciento su oferta para comprar el diez por ciento de su filial brasileña que todavía no es suyo, según cuenta The Objective. La oferta no se paga en dinero sino en acciones: el banco entregará acciones propias a cambio de las de Santander Brasil, y ahora da un poco más por cada una que en la oferta inicial de finales de julio. Si todos los accionistas aceptan, el Santander emitirá unos ciento sesenta y seis millones de acciones nuevas, algo más del uno por ciento de su capital, y la operación rondaría los 1.900 millones de euros. El banco explica la mejora por la evolución reciente de los mercados y por las opiniones de los inversores, y dice que no afecta a su solvencia. Los accionistas del banco tendrán que aprobarlo en una junta extraordinaria prevista para el 15 de diciembre.",
+     "url": "https://theobjective.com/economia/banca/2026-11-12/santander-oferta-filial-brasilena/"
     }
    ]
   },
@@ -115,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "OKDiario dice que la huelga general tiene poco seguimiento",
-     "resumen": "Según OKDiario, la huelga general de este 11 de noviembre tiene poco seguimiento. El diario afirma que las carreteras, el metro y los mercados funcionan con normalidad. La huelga está convocada por CCOO y UGT, es la primera conjunta de los dos sindicatos en 14 años y llega a 18 días de las elecciones generales. OKDiario habla de un fracaso de la convocatoria, una valoración que no comparten los sindicatos, que denuncian cargas policiales contra los piquetes, según otros medios. Es la lectura del periódico a partir de lo ocurrido en las primeras horas de la jornada.",
-     "url": "https://okdiario.com/espana/huelga-sanchez-pincha-calles-metro-mercados-funcionan-normalidad-20748540"
+     "titular": "Bolaños descarta el cese de Marlaska tras ordenar investigar las cargas de la huelga",
+     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha ordenado al director general de la Policía Nacional, Francisco Pardo Piqueras, que investigue las cargas contra los piquetes durante la huelga general de ayer. Según OKDiario, que califica de violentos a esos piquetes, la investigación irá aparte de la inspección interna habitual. Marlaska también ha prohibido usar gas lacrimógeno en adelante para controlar manifestaciones. El balance de Interior hasta las once de la noche deja 1.144 incidencias y 47 detenidos, veinte de ellos en Madrid, seis en Valencia y cuatro en Málaga y en Almería. Son cifras provisionales que no incluyen Cataluña ni el País Vasco. El ministro de la Presidencia, Félix Bolaños, ha dicho en Radio Nacional que algunas imágenes no le gustaron y que serán los mandos policiales quienes digan si hubo exceso de fuerza, pero ha dejado claro que el cargo de Marlaska no está en cuestión. Podemos y el Frente Amplio piden su cese.",
+     "url": "https://okdiario.com/espana/marlaska-ordena-investigar-cargas-policia-contra-piquetes-violentos-huelga-20771200"
     },
     {
      "id": "ok2",
-     "titular": "Koldo García pide al Constitucional que suspenda su condena",
-     "resumen": "Koldo García, exasesor del exministro José Luis Ábalos, pide al Tribunal Constitucional que suspenda su condena de 19 años y ocho meses de cárcel, según OKDiario. La pena se le impuso por las comisiones cobradas en la compra de mascarillas. Lo que solicita es la suspensión cautelar, es decir, que la pena no se ejecute mientras el tribunal estudia su caso. Su abogada, Leticia de la Hoz, ha renunciado este martes a su defensa ante la Audiencia Nacional, según elDiario.es. El Constitucional todavía no se ha pronunciado sobre la petición.",
-     "url": "https://okdiario.com/espana/koldo-garcia-pide-constitucional-que-suspenda-condena-19-anos-carcel-comisiones-mascarillas-20750584"
+     "titular": "El Gobierno licita solo 62 pisos de los 438 prometidos en un antiguo cuartel de Valencia",
+     "resumen": "El Consejo de Ministros aprobó, el día antes de la huelga general, licitar sesenta y dos viviendas de alquiler asequible en el antiguo Cuartel de Ingenieros de Valencia, por algo más de trece millones de euros. Según OKDiario, es una pequeña parte de lo prometido: el proyecto llegó a anunciarse con cuatrocientas treinta y ocho viviendas. El periódico repasa el historial de anuncios. En 2018 el entonces ministro José Luis Ábalos presentó en Valencia un plan de veinte mil viviendas públicas que incluía este cuartel. En 2020 dijo que las obras se licitarían ese mismo invierno y anunció más de trescientos setenta pisos en el recinto. En 2021 y en enero de 2025 se volvieron a anunciar las cuatrocientas treinta y ocho viviendas. OKDiario sostiene que en estos años ni el Gobierno, ni la Generalitat, ni el Ayuntamiento han construido apenas vivienda pública en Valencia. El artículo no recoge la versión del Gobierno.",
+     "url": "https://okdiario.com/comunidad-valenciana/gobierno-dio-luz-verde-24-horas-huelga-62-pisos-valencia-anunciados-abalos-2018-20757754"
     },
     {
      "id": "ok3",
-     "titular": "El Gobierno vasco concede el tercer grado al etarra Asier Eceiza",
-     "resumen": "Según OKDiario, el Gobierno vasco ha concedido el tercer grado, una semilibertad, al preso de ETA Asier Eceiza. Eceiza fue condenado a penas que suman 201 años de cárcel. El tercer grado permite cumplir la pena en régimen abierto, con salidas de la prisión. La competencia sobre las prisiones en el País Vasco corresponde al Gobierno vasco. OKDiario no recoge en su titular la reacción de las asociaciones de víctimas.",
-     "url": "https://okdiario.com/espana/gobierno-vasco-concede-semilibertad-etarra-asier-eceiza-condenado-201-anos-carcel-20751841"
+     "titular": "Miriam González deja una empresa para centrarse en su candidatura del 29 de noviembre",
+     "resumen": "Miriam González, presidenta del partido Democracia 21, ha dimitido como consejera de la empresa sanitaria Atrys Health para dedicarse por completo a la política y a su candidatura en las elecciones generales del 29 de noviembre. Según OKDiario, la empresa lo ha comunicado a la Comisión Nacional del Mercado de Valores y la renuncia es efectiva desde hoy. González, abogada y esposa del que fue vice primer ministro británico Nick Clegg, entró en el consejo en junio de 2023 como consejera independiente y su mandato duraba hasta junio de 2027. Con la dimisión deja también sus puestos en las comisiones de nombramientos y de auditoría de la compañía. El consejo de Atrys le ha agradecido su dedicación. Democracia 21 se estrena en unas generales, en coalición con Ciudadanos, y solo se presenta en Madrid y Barcelona, las provincias que reparten más diputados, donde es más fácil que entre un partido nuevo.",
+     "url": "https://okdiario.com/economia/empresas/miriam-gonzalez-lider-democracia-21-dimite-como-consejera-atrys-centrarse-elecciones-20757581"
     }
    ]
   },
@@ -139,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "El PP incluye en su programa la prioridad nacional de Vox",
-     "resumen": "Según elDiario.es, el programa electoral del PP para las elecciones del 29 de noviembre incluye la prioridad nacional que el partido ya ha pactado con Vox en cuatro comunidades. Es un criterio para acceder a ayudas y recursos públicos según el arraigo: empadronamiento, cotización y años de permanencia. El programa propone sustituir el Ingreso Mínimo Vital por una renta de activación ligada a la búsqueda de empleo, y reforzar las mutuas para combatir el absentismo. También promete construir un millón de viviendas, derogar la Ley de Vivienda y la Ley de Memoria Democrática, y añadir 4.500 médicos de Atención Primaria. Incluye también eliminar el calendario de cierre de las centrales nucleares y prohibir el burka y el niqab en espacios públicos.",
-     "url": "https://www.eldiario.es/politica/pp-asume-programa-electoral-prioridad-nacional-vox-modificar-imv-atajar-absentismo-injustificado_1_13652361.html"
+     "titular": "Leire Díez asegura en un libro que le ofrecieron dos millones por declarar contra Sánchez",
+     "resumen": "Leire Díez, antigua militante socialista investigada en la Audiencia Nacional, publica hoy un libro titulado Desmontando las cloacas. En él afirma que unos abogados próximos al Partido Popular le ofrecieron dos millones de euros, además de ayuda con sus problemas judiciales, a cambio de declarar contra Pedro Sánchez y el Partido Socialista. Ella dice que lo rechazó y lo describe como una forma de extorsión. Según elDiario.es, Díez no aporta facturas, contratos, transferencias ni grabaciones, sino testimonios y algunos mensajes de teléfono que hablan de ayudas, que sugieren más de lo que prueban. Tampoco da los nombres de esos abogados. El periódico advierte de que la cercanía de esos intermediarios al Partido Popular no demuestra por sí sola que el partido encargara nada. Díez dice que se animó a contarlo tras conocerse los pagos de OKDiario al abogado de Koldo García, el exasesor de Ábalos. El artículo no recoge respuesta del Partido Popular.",
+     "url": "https://www.eldiario.es/politica/leire-diez-afirma-abogados-afines-pp-le-ofrecieron-millones-mentir-sanchez_1_13656894.html"
     },
     {
      "id": "edi2",
-     "titular": "La abogada de Koldo García renuncia a su defensa",
-     "resumen": "La abogada Leticia de la Hoz ha renunciado a la defensa de Koldo García ante la Audiencia Nacional, según elDiario.es. Presentó el escrito este martes 10 de noviembre y alega razones profesionales, que no detalla por el secreto profesional. De la Hoz defendió a Koldo en el juicio del Tribunal Supremo, que terminó con una condena de casi 20 años. Ella misma está imputada en el caso Leire, por un presunto intento de soborno que niega. Aportó al juzgado dos facturas de la editora de OKDiario por un total de 242.000 euros, que cubrían la defensa de Koldo. Koldo asegura desde la prisión que puede demostrar sus afirmaciones, y el PSOE estudia presentar una querella.",
-     "url": "https://www.eldiario.es/politica/abogada-koldo-garcia-renuncia-defensa_1_13652818.html"
+     "titular": "Interior prohíbe el gas lacrimógeno en las manifestaciones tras la huelga",
+     "resumen": "El Ministerio del Interior ha ordenado que la Policía deje de usar gas lacrimógeno en las manifestaciones y ha pedido a la Dirección General de la Policía que investigue las distintas incidencias de la huelga general de ayer. Según elDiario.es, estas investigaciones irán aparte de la revisión interna que la Policía Nacional hace siempre de sus actuaciones. La decisión del ministro Fernando Grande-Marlaska llega después de las duras cargas policiales de la jornada, muy criticadas por los sindicatos convocantes, que preparan acciones en los tribunales por las cargas contra los piquetes. Entre las quejas de ese día está la de la cantante Samantha Hudson, que contó que la Policía le roció con gas pimienta. En Madrid, los agentes cortaron el acceso a la plaza de España, donde debía terminar la manifestación. El periódico indica que la información se seguirá actualizando a lo largo del día.",
+     "url": "https://www.eldiario.es/politica/interior-ordena-gas-lacrimogeno-manifestaciones-investigacion-incidencias-dia-huelga_1_13657122.html"
     },
     {
      "id": "edi3",
-     "titular": "El Gobierno pide suspender TikTok por contenidos de abuso infantil",
-     "resumen": "Según elDiario.es, el Gobierno pide a la Agencia de Protección de Datos que actúe contra TikTok en España por alojar contenidos de abuso sexual infantil. La petición se produce tras una investigación del propio diario, que halló miles de estos contenidos en la plataforma, entre ellos vídeos en los que se ofrecen hijas o sobrinos. El titular habla de pedir que se suspenda la plataforma. Por ahora no constan la respuesta de TikTok ni los detalles de la base legal de la petición. La noticia ha sido uno de los temas destacados de la portada de elDiario.es este miércoles.",
-     "url": "https://www.eldiario.es/sociedad/gobierno-pide-agencia-proteccion-datos-suspenda-tiktok-alojar-contenidos-pederastia_1_13652827.html"
+     "titular": "Polémica en Barcelona: un mosso de paisano detiene a un manifestante con una bandera sindical en la mano",
+     "resumen": "El sindicato CGT denuncia que un mosso de escuadra vestido de paisano llevaba una bandera del sindicato mientras ayudaba a detener a un manifestante en Barcelona, tras la marcha que cerró la huelga general de ayer. Según elDiario.es, un vídeo muestra al agente con la bandera en una mano y la porra extensible en la otra, en el cruce de las calles Casp y Pau Claris. Tras la manifestación, que fue pacífica, grupos encapuchados lanzaron petardos a los agentes, quemaron contenedores y rompieron escaparates. Hubo cincuenta y dos detenidos, seis de ellos menores, y treinta y dos policías heridos. La CGT habla de un intento de criminalizar al sindicato, estudia ir a los tribunales y pide el cese de la consejera de Interior catalana, Núria Parlon. Parlon culpa de los disturbios a grupos radicales y antisistema, a los que llama cuatro facinerosos, y defiende que la Policía actuó con moderación.",
+     "url": "https://www.eldiario.es/catalunya/cgt-denuncia-mosso-paisano-llevaba-bandera-sindicato-detenia-manifestante_1_13657245.html"
     }
    ]
   }
