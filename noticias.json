@@ -1,23 +1,29 @@
 {
  "fecha": "2026-11-12",
  "fechaTexto": "jueves 12 de noviembre",
- "actualizado": "2026-11-12T12:00:46+01:00",
+ "actualizado": "2026-11-12T23:10:04+01:00",
  "portada": [
+  "to4",
+  "ld4",
   "ee1",
   "ld2",
-  "ee3",
   "ld1",
   "ee2",
   "ed1",
   "edi1",
-  "ed2",
-  "to3"
+  "ed2"
  ],
  "diarios": [
   {
    "id": "ld",
    "nombre": "Libertad Digital",
    "noticias": [
+    {
+     "id": "ld4",
+     "titular": "El Supremo obliga a UGT de Andalucía a devolver ocho millones y medio",
+     "resumen": "Según Libertad Digital, el Tribunal Supremo ha rechazado el recurso de UGT de Andalucía. Con ello queda confirmado que el sindicato debe devolver ocho millones setecientos ochenta mil euros a la Junta de Andalucía. Se trata de dinero público destinado a cursos de formación para parados. El tribunal considera que parte de esos fondos se usó para otros fines. La sentencia se conoció pocos días antes de la huelga general. El Supremo recuerda que solo se puede justificar el gasto de personal que esté directamente ligado a dar los cursos. Las subidas de sueldo por encima del convenio no valen y las debe pagar el propio sindicato. El diario añade que, sumada una condena anterior de dieciocho millones trescientos mil euros, la cifra pasa de veintisiete millones. Ese mismo día terminó en Sevilla otro proceso penal contra antiguos dirigentes de UGT de Andalucía. El texto no recoge la respuesta del sindicato.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-11-12/ugt-encaro-la-huelga-general-tras-recibir-la-reclamacion-judicial-de-8-78-millones-por-fraude-en-las-subvenciones-7489812/"
+    },
     {
      "id": "ld1",
      "titular": "Alerta roja por riesgo de desbordamiento del Manzanares en Rivas",
@@ -29,12 +35,6 @@
      "titular": "Trabajo propone subir el salario mínimo a 1.286 euros",
      "resumen": "El Ministerio de Trabajo propone subir el salario mínimo interprofesional de 1.221 a 1.286 euros brutos al mes en catorce pagas, sesenta y cinco euros más. Según Libre Mercado, la sección de economía de Libertad Digital, la ministra Yolanda Díaz encargó el estudio a su comité de expertos el 8 de octubre y el informe llegó el 4 de noviembre, en apenas tres semanas, cuando lo habitual es que tarden de octubre a febrero. Los expertos proponían una subida del cuatro coma nueve por ciento, hasta unos 1.281 euros, y el Ministerio ha ido cinco euros más allá. Al día siguiente convocó de urgencia a sindicatos y patronal. El periódico sostiene que Díaz quiere dejar la subida aprobada antes de las elecciones del 29 de noviembre. La patronal CEOE se queja de que se enteró por la prensa. Desde Podemos, Irene Montero pide 1.800 euros y dice que con 1.286 no se puede vivir.",
      "url": "https://www.libertaddigital.com/libremercado/2026-11-12/yolanda-diaz-infla-el-smi-por-encima-de-sus-expertos-tras-despachar-el-calculo-en-tres-semanas-7489228/"
-    },
-    {
-     "id": "ld3",
-     "titular": "La Policía desaloja la acampada por la vivienda de las Setas de Sevilla",
-     "resumen": "La Policía Nacional ha desalojado a primera hora de este jueves la acampada por la vivienda de la plaza de la Encarnación, en Sevilla, junto a las Setas. El operativo empezó hacia las seis de la mañana con una decena de furgones, para identificar a las veinte personas que seguían allí. Se retiraron las tiendas de campaña y entraron después los servicios municipales de limpieza. La acampada, impulsada por el Sindicato de Inquilinas, llevaba allí desde el 28 de septiembre y llegó a reunir a un centenar de personas. Pedían prorrogar los alquileres, congelar las hipotecas y prohibir los desahucios por motivos económicos. Según Libertad Digital, los comerciantes y hosteleros de la zona calculan pérdidas de entre el treinta y el cuarenta por ciento. El alcalde, José Luis Sanz, llevaba semanas pidiendo la intervención y celebró el desalojo en las redes sociales. El Ayuntamiento quiere recuperar la plaza para el alumbrado de Navidad.",
-     "url": "https://www.libertaddigital.com/andalucia/2026-11-12/la-policia-pone-fin-a-la-acampada-de-sevilla-los-comerciantes-denuncian-perdidas-del-40-por-ciento-7490332/"
     }
    ]
   },
@@ -91,6 +91,12 @@
    "nombre": "The Objective",
    "noticias": [
     {
+     "id": "to4",
+     "titular": "El CIS da ganador al PSOE con casi ocho puntos sobre el PP",
+     "resumen": "Según The Objective, el nuevo sondeo del Centro de Investigaciones Sociológicas sigue dando como ganador al PSOE en las elecciones generales del veintinueve de noviembre. Los socialistas obtendrían el treinta y tres coma tres por ciento de los votos. El PP se quedaría en el veinticinco coma cinco y Vox en el dieciocho coma cuatro. La ventaja del PSOE sobre el PP sería de siete coma ocho puntos. El Frente Amplio caería hasta el cuatro coma siete por ciento. La encuesta, dirigida por José Félix Tezanos, se basa en más de cuarenta y cinco mil entrevistas por teléfono. Es una muestra un cincuenta y cuatro por ciento mayor que la última publicada antes de las elecciones de dos mil veintitrés. El trabajo de campo se hizo entre el siete y el treinta de octubre. Por eso, según el artículo, apenas recoge el efecto del accidente ferroviario de Urda.",
+     "url": "https://theobjective.com/espana/politica/2026-11-12/cis-psoe-tragedia-urda/"
+    },
+    {
      "id": "to1",
      "titular": "El PP llama fracaso a la huelga general y pide un Gobierno que ponga orden",
      "resumen": "La portavoz del Partido Popular en el Congreso, Ester Muñoz, ha calificado de fracaso la huelga general de ayer, convocada por Comisiones Obreras, la UGT y el Sindicato de Inquilinas. Según recoge The Objective, Muñoz dijo en Telecinco que la huelga no iba a los problemas reales de los trabajadores, que podría haberse convocado en cualquier momento de los últimos ocho años y que es una huelga preventiva contra un posible futuro Gobierno. Condenó la violencia de los piquetes que impidieron trabajar y aseguró que los episodios violentos han aumentado desde que se disolvieron las Cortes, con ejemplos en Barcelona, Bilbao y La Coruña. Pidió un Gobierno que ponga orden, más medios para la Policía y la Guardia Civil, y que su trabajo se reconozca como profesión de riesgo. También criticó la política de inmigración y aseguró que, si el Partido Popular gana el 29 de noviembre, se acabará el efecto llamada.",
@@ -101,12 +107,6 @@
      "titular": "La acampada por la vivienda de Valencia sigue y el Gobierno descarta desalojarla",
      "resumen": "La acampada por la vivienda que hay desde el 3 de octubre en la plaza del Ayuntamiento de Valencia sigue sin fecha de salida, según The Objective. Los acampados han pedido una segunda reunión de negociación para hoy jueves. La alcaldesa, María José Catalá, del Partido Popular, quiere recuperar la normalidad con diálogo, pero de forma muy firme, y no ha aclarado si pedirá que intervenga la Policía. El delegado del Gobierno, Roger Llanes, descarta por ahora un desalojo forzoso, dice que las negociaciones avanzan mucho y califica de ejemplar el comportamiento de los acampados. La Policía Local advierte de que las tiendas son incompatibles con la seguridad de las fiestas de Navidad, cuando abrirán la pista de hielo y el carrusel a finales de mes. Los acampados piden, entre otras cosas, volver a los alquileres indefinidos, limitar más los pisos turísticos y paralizar los desahucios sin alternativa de vivienda.",
      "url": "https://theobjective.com/espana/comunidad-valenciana/2026-11-12/acampada-valencia-eleva-presion-gobierno-descarta-desalojo/"
-    },
-    {
-     "id": "to3",
-     "titular": "El Santander mejora un cinco por ciento su oferta por su filial de Brasil",
-     "resumen": "El Banco Santander, presidido por Ana Botín, ha mejorado un cinco por ciento su oferta para comprar el diez por ciento de su filial brasileña que todavía no es suyo, según cuenta The Objective. La oferta no se paga en dinero sino en acciones: el banco entregará acciones propias a cambio de las de Santander Brasil, y ahora da un poco más por cada una que en la oferta inicial de finales de julio. Si todos los accionistas aceptan, el Santander emitirá unos ciento sesenta y seis millones de acciones nuevas, algo más del uno por ciento de su capital, y la operación rondaría los 1.900 millones de euros. El banco explica la mejora por la evolución reciente de los mercados y por las opiniones de los inversores, y dice que no afecta a su solvencia. Los accionistas del banco tendrán que aprobarlo en una junta extraordinaria prevista para el 15 de diciembre.",
-     "url": "https://theobjective.com/economia/banca/2026-11-12/santander-oferta-filial-brasilena/"
     }
    ]
   },
