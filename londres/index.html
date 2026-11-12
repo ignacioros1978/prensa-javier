@@ -372,6 +372,15 @@
         .en-sel button small { font-size:14px; font-weight:700; color:#475569; }
         .en-sel button[aria-pressed="true"] { background:#7c3aed; border-color:#7c3aed; color:#fff; }
         .en-sel button[aria-pressed="true"] small { color:#ede9fe; }
+        .en-banner { display:block; width:100%; border-radius:16px; margin:4px 0 10px; }
+        .en-tk.en-tq { border-color:#0b2a6f; background:linear-gradient(180deg,#f0f6ff 0,#fff 90px); }
+        .en-tkh { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+        .en-tkh img { width:48px; height:48px; flex:none; }
+        .en-tkh div { flex:1; min-width:0; }
+        .en-tkh b { display:block; font-size:18px; color:#0b2a6f; line-height:1.2; }
+        .en-tkh small { display:block; font-size:15px; font-weight:700; color:#475569; margin-top:2px; }
+        .en-tkh > span { font-weight:800; color:#475569; font-size:16px; white-space:nowrap; }
+        .en-qrimg { display:block; width:100%; max-width:280px; margin:0 auto; background:#fff; image-rendering:pixelated; }
         .en-qr { text-align:center; margin-top:12px; }
         .en-qr img { display:block; width:100%; max-width:300px; margin:0 auto; image-rendering:pixelated; }
         .en-dl { display:inline-flex; align-items:center; min-height:44px; padding:0 14px; margin-top:10px; border-radius:12px; background:#f1f5f9; color:#0f172a; font-weight:800; text-decoration:none; }
@@ -1880,7 +1889,7 @@
             { move: 'taxi', text: 'A Harrods: taxi o bus 10 min (≈£10 el taxi), o 25 min andando por Grosvenor Place y Knightsbridge.', from: 'almuerzo_victoria', to: 'harrods' },
             { t: '14:00', n: 'harrods', icon: '🏬', title: 'Harrods', text: 'Fachada con miles de bombillas y escaparates navideños. Se puede entrar a ver la sección de comida.', today: 'lunes 10:00–21:00' },
             { move: 'walk', min: 15, text: 'Sube por Knightsbridge hasta Hyde Park Corner y entra en el parque: Winter Wonderland está a la derecha.', from: 'harrods', to: 'hyde_park' },
-            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', mapa: 'winter-wonderland/', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. IMPORTANTE: hay que reservar online una franja de entrada (gratis en horas valle) y la pista de hielo aparte.', today: '10:00–22:00' },
+            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', mapa: 'winter-wonderland/', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. Ros García: entradas RESERVADAS (entrar de 15:00 a 16:00, con 4 pases ilimitados de Santa Land); están en 🎟️ Entradas. Los demás: reservad online una franja de entrada; la pista de hielo va aparte.', today: '10:00–22:00 · entrar de 15:00 a 16:00', tickets: 'hyde_park' },
             { move: 'taxi', text: 'Taxi desde Knightsbridge / Hyde Park Corner a Hammersmith: unos 15 min y £13–17.' }
           ],
           gf: 'Al Duca (Willow Place, Victoria): italiano con amplio menú sin gluten · Casa do Frango Victoria.' },
@@ -2096,6 +2105,13 @@
     // Entradas: cuando lleguen, se suben a londres/entradas/ y se apuntan aquí
     // { name: 'Familia Ros · crucero', url: 'entradas/crucero-1.png' } (vale imagen o PDF)
     const TICKETS = {
+        hyde_park: { title: '🎟️ Winter Wonderland', secure: 'ww',
+            info: '<div class="tv-card"><h4>Ros García · reservado ✅</h4>'
+              + '<div class="tv-leg"><span class="tv-t">📅</span><span><b>Lunes 7 de diciembre · entrar de 15:00 a 16:00</b>. Dentro, lo que queráis hasta el cierre (22:00).</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">🎟️</span><span>1 entrada de adulto + 4 pases ilimitados de Santa Land (llevan la entrada incluida). Los QR están en <b>🎟️ Entradas</b> (con el código).</span></div>'
+              + '<div class="tv-leg"><span class="tv-t">🎠</span><span>Las pulseras de Santa Land se recogen en su punto de recogida. La Time Machine Coaster va aparte (3 £ niño, 4 £ adulto). Altura mínima: 1 m.</span></div>'
+              + '</div>',
+            files: [] },
         pier_butlers: { title: '🎟️ Crucero por el Támesis', secure: 'crucero',
             info: '<div class="tv-card"><h4>Reservado ✅</h4>'
               + '<div class="tv-leg"><span class="tv-t">🔖</span><span>Thames River Sightseeing · el QR y el nº de reserva están en <b>🎟️ Entradas</b> (con el código)</span></div>'
@@ -2257,13 +2273,15 @@
         h += '<p class="en-tip">💡 Sube el brillo del móvil al enseñar el código.' + (ENT_DATA[ENT_SEL].tickets.length > 1 ? ' Desliza para pasar de una entrada a otra.' : '') + '</p>';
         [ENT_DATA[ENT_SEL]].forEach(r => {
             const n = r.tickets.length;
-            h += '<section class="en-res"><h3 class="tv-h">🎟️ ' + entEsc(r.titulo) + '</h3>'
+            h += '<section class="en-res">' + (r.banner ? '<img class="en-banner" src="' + r.banner + '" alt="' + entEsc(r.titulo) + '">' : '') + '<h3 class="tv-h">🎟️ ' + entEsc(r.titulo) + '</h3>'
               + '<div class="tv-card"><div class="en-when"><b>' + entEsc(r.fecha) + '</b><span class="en-hora">' + entEsc(r.hora) + ' h</span></div>'
               + '<div class="tv-leg"><span class="tv-t">Quiénes</span><span>' + entEsc(r.personas) + '</span></div>'
               + '<div class="tv-leg"><span class="tv-t">Dónde</span><span>' + entEsc(r.lugar) + '</span></div>'
               + '<div class="tv-leg"><span class="tv-t">Reserva</span><span>' + entEsc(r.ref) + (r.titular ? ' · a nombre de ' + entEsc(r.titular) : (r.proveedor ? ' · ' + entEsc(r.proveedor) : '')) + '</span></div>'
               + (r.nota ? '<div class="tv-leg"><span class="tv-t">Nota</span><span>' + entEsc(r.nota) + '</span></div>' : '') + '</div>'
-              + (n ? '<div class="en-car">' + r.tickets.map((t, i) => '<div class="en-tk"><div class="en-th"><b>' + entEsc(t.tipo) + '</b><span>' + (i + 1) + ' / ' + n + '</span></div>' + entBars(t.bars) + '<div class="en-num">' + entEsc(t.num) + '</div></div>').join('') + '</div>' : '')
+              + (n ? '<div class="en-car">' + r.tickets.map((t, i) => t.qr
+                    ? '<div class="en-tk en-tq"><div class="en-tkh">' + (t.badge && r.badges && r.badges[t.badge] ? '<img src="' + r.badges[t.badge] + '" alt="">' : '') + '<div><b>' + entEsc(t.tipo) + '</b>' + (t.sub ? '<small>' + entEsc(t.sub) + '</small>' : '') + '</div><span>' + (i + 1) + ' / ' + n + '</span></div><img class="en-qrimg" src="' + t.qr + '" alt="Código QR ' + entEsc(t.num) + '"><div class="en-num">' + entEsc(t.num) + '</div></div>'
+                    : '<div class="en-tk"><div class="en-th"><b>' + entEsc(t.tipo) + '</b><span>' + (i + 1) + ' / ' + n + '</span></div>' + entBars(t.bars) + '<div class="en-num">' + entEsc(t.num) + '</div></div>').join('') + '</div>' : '')
               + (r.qr ? '<div class="en-tk en-qr"><div class="en-th"><b>Código QR para embarcar</b><span>1 para los 17</span></div><img src="' + r.qr + '" alt="Código QR de la reserva"><a class="en-dl" href="' + r.qr + '" download="QR-' + entEsc(r.id) + '.png">⬇️ Guardar el QR</a></div>' : '')
               + (r.files ? r.files.map((f, j) => '<button type="button" class="en-file" onclick="entFile(' + ENT_SEL + ',' + j + ')">' + (f.type === 'pdf' ? '📄 ' : '🖼️ ') + entEsc(f.name) + '</button>').join('') : '')
               + '</section>';
