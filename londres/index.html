@@ -2241,10 +2241,10 @@
 
     // ── Entradas (cifradas con un código de 6 cifras) ─────────
     let ENT_BLOB = null;
-    async function entBlob() { if (!ENT_BLOB) { const r = await fetch('entradas/datos.json?v=' + Date.now().toString(36).slice(0, 5), { cache: 'no-store' }); if (!r.ok) throw new Error('net'); ENT_BLOB = await r.json(); } return ENT_BLOB; }
+    async function entBlob() { if (!ENT_BLOB) { let r; try { r = await fetch('entradas/datos.json?v=' + Date.now().toString(36).slice(0, 5), { cache: 'no-store' }); } catch (e) { throw new Error('net'); } if (!r.ok) throw new Error('net'); ENT_BLOB = await r.json(); } return ENT_BLOB; }
     let ENT_DATA = null;
     const ENT_KEY = 'lon.ent.pin';
-    const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+    const b64 = s => { const bin = atob(s), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u; };
     async function entDecrypt(pin) {
         await entBlob();
         const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pin), 'PBKDF2', false, ['deriveKey']);
@@ -2318,7 +2318,10 @@
         openInfo('🎟️ Entradas', pin ? '<p class="en-tip">Abriendo las entradas…</p>' : entPinHtml(''));
         if (!pin) { entMount(); return; }
         try { ENT_DATA = await entDecrypt(pin); selWant(); entShow(); }
-        catch (x) { if (x && x.message === 'net') { document.querySelector('#info-full .df-body').innerHTML = '<p class="en-err">No se han podido cargar las entradas. Comprueba la conexión y vuelve a intentarlo.</p>'; return; } try { localStorage.removeItem(ENT_KEY); } catch (y) {} const b = document.querySelector('#info-full .df-body'); b.innerHTML = entPinHtml(''); entMount(); }
+        catch (x) {
+            // Solo un código incorrecto (OperationError) borra el código guardado; cualquier otro fallo se enseña y se puede reintentar
+            if (x && x.message !== 'net' && x.name !== 'OperationError') { ENT_BLOB = null; document.querySelector('#info-full .df-body').innerHTML = '<p class="en-err">No se han podido abrir las entradas (' + entEsc(x.name || '') + ' ' + entEsc(x.message || x) + ').</p><button type="button" class="tv-btn" onclick="closeInfo();setTimeout(()=>openEntradas(),80)">Volver a intentarlo</button>'; return; }
+            if (x && x.message === 'net') { document.querySelector('#info-full .df-body').innerHTML = '<p class="en-err">No se han podido cargar las entradas. Comprueba la conexión y vuelve a intentarlo.</p>'; return; } try { localStorage.removeItem(ENT_KEY); } catch (y) {} const b = document.querySelector('#info-full .df-body'); b.innerHTML = entPinHtml(''); entMount(); }
     };
     window.openSeguro = function() {
         const row = (a, b) => '<tr><td>' + a + '</td><td>' + b + '</td></tr>';
