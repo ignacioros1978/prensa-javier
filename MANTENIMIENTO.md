@@ -21,14 +21,15 @@ Este archivo es para Claude. Si estás leyendo esto desde una cuenta nueva de Cl
 
 Hay dos tareas, con zona horaria Europe/Madrid:
 
-1. **«Noticias del día para la Prensa de Javier (lun-jue, 6:50 y 15:50)»**
-   - cron: `CRON_TZ=Europe/Madrid 50 6,15 * * 1-4`
+1. **«Noticias del día para la Prensa de Javier (lun-jue, 6:50 y 15:50, con reintento a las 7:50 y 16:50)»**
+   - cron: `CRON_TZ=Europe/Madrid 50 6,7,15,16 * * 1-4`
    - Usa el PROMPT A de abajo.
-2. **«Noticias del fin de semana para la Prensa de Javier (vie-dom, 6:50)»**
-   - cron: `CRON_TZ=Europe/Madrid 50 6 * * 5,6,0`
+2. **«Noticias del fin de semana para la Prensa de Javier (vie-dom, 6:50, con reintento a las 7:50)»**
+   - cron: `CRON_TZ=Europe/Madrid 50 6,7 * * 5,6,0`
    - Usa el PROMPT B de abajo.
 
 Importante:
+- **Reintento (12 de noviembre de 2026):** algunas ejecuciones terminaban a los 30 segundos sin guardar nada y figuraban como «completadas». Lanzada a mano, la tarea funcionaba. Por eso cada tarea se lanza dos veces, con una hora de diferencia, y la segunda comprueba primero noticias.json: si ya está la actualización de esa mañana (o la de la tarde, con «actualizado» a las 15:00 o más tarde), termina sin hacer nada. Los prompts actuales están en las propias tareas; los de abajo no incluyen ese paso.
 - Las tareas programadas no tienen la herramienta add_repo. Los prompts ya lo tienen en cuenta: clonan con git y hacen push directamente (comprobado: funciona también en cuentas nuevas).
 - **Permisos de WebFetch (aprendido el 17 de octubre de 2026 al traspasar la app a otra cuenta):** en una cuenta nueva, las tareas programadas NO pueden abrir con WebFetch las direcciones escritas en sus propias instrucciones (error PROVENANCE_REQUIRED, y nadie está para aprobarlo). La tarea termina a los pocos minutos sin guardar nada y aun así figura como «completada». Por eso los prompts entran a cada periódico a través de WebSearch: las URLs que devuelve una búsqueda sí se pueden abrir.
 - Los prompts piden además no usar skills, subagentes ni procesos en segundo plano: en una tarea desatendida, lo que no esté terminado cuando acaba la respuesta se pierde.
