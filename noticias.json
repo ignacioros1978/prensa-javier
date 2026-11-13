@@ -1,17 +1,17 @@
 {
- "fecha": "2026-11-12",
- "fechaTexto": "jueves 12 de noviembre",
- "actualizado": "2026-11-12T23:10:04+01:00",
+ "fecha": "2026-11-13",
+ "fechaTexto": "viernes 13 de noviembre",
+ "actualizado": "2026-11-13T07:59:03+01:00",
  "portada": [
-  "to4",
-  "ld4",
-  "ee1",
-  "ld2",
-  "ld1",
-  "ee2",
-  "ed1",
+  "ok2",
+  "edi2",
+  "to3",
+  "ok1",
   "edi1",
-  "ed2"
+  "ld2",
+  "to1",
+  "ed2",
+  "ld3"
  ],
  "diarios": [
   {
@@ -19,22 +19,22 @@
    "nombre": "Libertad Digital",
    "noticias": [
     {
-     "id": "ld4",
-     "titular": "El Supremo obliga a UGT de Andalucía a devolver ocho millones y medio",
-     "resumen": "Según Libertad Digital, el Tribunal Supremo ha rechazado el recurso de UGT de Andalucía. Con ello queda confirmado que el sindicato debe devolver ocho millones setecientos ochenta mil euros a la Junta de Andalucía. Se trata de dinero público destinado a cursos de formación para parados. El tribunal considera que parte de esos fondos se usó para otros fines. La sentencia se conoció pocos días antes de la huelga general. El Supremo recuerda que solo se puede justificar el gasto de personal que esté directamente ligado a dar los cursos. Las subidas de sueldo por encima del convenio no valen y las debe pagar el propio sindicato. El diario añade que, sumada una condena anterior de dieciocho millones trescientos mil euros, la cifra pasa de veintisiete millones. Ese mismo día terminó en Sevilla otro proceso penal contra antiguos dirigentes de UGT de Andalucía. El texto no recoge la respuesta del sindicato.",
-     "url": "https://www.libertaddigital.com/libremercado/2026-11-12/ugt-encaro-la-huelga-general-tras-recibir-la-reclamacion-judicial-de-8-78-millones-por-fraude-en-las-subvenciones-7489812/"
-    },
-    {
      "id": "ld1",
-     "titular": "Alerta roja por riesgo de desbordamiento del Manzanares en Rivas",
-     "resumen": "La Confederación Hidrográfica del Tajo ha activado este jueves el aviso rojo por riesgo de desbordamiento del río Manzanares a su paso por Rivas-Vaciamadrid, en el sureste de la Comunidad de Madrid. Según los datos oficiales que recoge Libertad Digital, el río ha llegado a cuatro metros y treinta centímetros de altura, muy por encima de los dos metros y sesenta y seis centímetros que marcan la alerta roja. El punto crítico está junto a la zona de La Chopera, frente a la Escuela Nacional de Protección Civil. El río Jarama, a la altura de Titulcia, está en aviso amarillo y se acerca al naranja. El resto de los ríos de la región están en situación normal. La crecida llega tras las últimas lluvias y con la borrasca Charles atravesando la península con lluvia en el norte y fuertes rachas de viento en el centro y el este. Los embalses del Canal de Isabel Segundo están al cincuenta y nueve por ciento.",
-     "url": "https://libertaddigital.com/madrid/2026-11-12/alerta-roja-en-madrid-grave-riesgo-de-desbordamiento-del-rio-manzanares-a-su-paso-por-rivas-7490380"
+     "titular": "El ejército alemán prohíbe coches y drones chinos en sus instalaciones",
+     "resumen": "Las Fuerzas Armadas alemanas han reforzado las restricciones a la tecnología china en sus cuarteles. Según la revista Der Spiegel, el Ministerio de Defensa confirmó la medida el miércoles 12 de noviembre, por motivos de seguridad. El Ejército quiere retirar cuanto antes todos los drones de fabricación china, incluidos los que se compraron para entrenamiento. También limita la entrada de ciertos vehículos chinos. El motivo fue una revisión del servicio de contrainteligencia militar, que detectó una transferencia de datos al exterior en algunos aparatos. Libertad Digital aclara que eso no prueba que se hayan filtrado secretos militares a Pekín. Los drones se compraban desde hace años con fondos de libre uso de los comandantes. Una revista especializada, Hartpunkt, cree que la medida se queda corta y pide extenderla a móviles, ordenadores y televisores chinos.",
+     "url": "https://www.libertaddigital.com/defensa/2026-11-12/el-ejercito-aleman-prohibe-la-entrada-de-coches-y-drones-chinos-en-sus-instalaciones-para-evitar-el-espionaje-7489817/"
     },
     {
      "id": "ld2",
-     "titular": "Trabajo propone subir el salario mínimo a 1.286 euros",
-     "resumen": "El Ministerio de Trabajo propone subir el salario mínimo interprofesional de 1.221 a 1.286 euros brutos al mes en catorce pagas, sesenta y cinco euros más. Según Libre Mercado, la sección de economía de Libertad Digital, la ministra Yolanda Díaz encargó el estudio a su comité de expertos el 8 de octubre y el informe llegó el 4 de noviembre, en apenas tres semanas, cuando lo habitual es que tarden de octubre a febrero. Los expertos proponían una subida del cuatro coma nueve por ciento, hasta unos 1.281 euros, y el Ministerio ha ido cinco euros más allá. Al día siguiente convocó de urgencia a sindicatos y patronal. El periódico sostiene que Díaz quiere dejar la subida aprobada antes de las elecciones del 29 de noviembre. La patronal CEOE se queja de que se enteró por la prensa. Desde Podemos, Irene Montero pide 1.800 euros y dice que con 1.286 no se puede vivir.",
+     "titular": "Yolanda Díaz propone un salario mínimo más alto que el de sus expertos",
+     "resumen": "El Ministerio de Trabajo, dirigido por Yolanda Díaz, propone subir el salario mínimo de mil doscientos veintiún euros a mil doscientos ochenta y seis euros brutos al mes, en catorce pagas. Son unos sesenta y cinco euros más al mes. Según Libertad Digital, es una cifra cinco euros superior a la que recomendó su propio comité de expertos. Ese comité presentó su informe el cuatro de noviembre y proponía una subida del cuatro coma nueve por ciento. El periódico señala que el informe se despachó en solo tres semanas, cuando lo habitual es tardar mucho más. El Gobierno quiere cerrar la medida antes del veintinueve de noviembre. La patronal CEOE se queja de que conoció los detalles por la prensa. Otros críticos hablan de uso político de la medida, mientras Irene Montero pide mil ochocientos euros.",
      "url": "https://www.libertaddigital.com/libremercado/2026-11-12/yolanda-diaz-infla-el-smi-por-encima-de-sus-expertos-tras-despachar-el-calculo-en-tres-semanas-7489228/"
+    },
+    {
+     "id": "ld3",
+     "titular": "El Supremo obliga a UGT de Andalucía a devolver ocho millones de subvenciones",
+     "resumen": "El Tribunal Supremo ha rechazado el recurso de UGT de Andalucía y confirma que el sindicato debe devolver ocho millones setecientos ochenta mil euros a la Junta de Andalucía. Se trata de ayudas para cursos de formación de personas en paro que, según la sentencia, no se usaron para su fin. El Supremo explica que solo se pueden pagar con la subvención los costes de personal directamente ligados a dar las clases. Según Libertad Digital, la sentencia llegó justo antes de la huelga general del once de noviembre. Se suma a otra sentencia firme que obliga a devolver dieciocho millones trescientos mil euros, así que la deuda supera los veintisiete millones. El mismo día se cerró el proceso penal contra la antigua dirección del sindicato en Andalucía. El periódico no recoge la respuesta de UGT.",
+     "url": "https://www.libertaddigital.com/libremercado/2026-11-12/ugt-encaro-la-huelga-general-tras-recibir-la-reclamacion-judicial-de-8-78-millones-por-fraude-en-las-subvenciones-7489812/"
     }
    ]
   },
@@ -44,21 +44,21 @@
    "noticias": [
     {
      "id": "ee1",
-     "titular": "Marlaska ordena investigar las cargas policiales de la huelga y los socios piden su dimisión",
-     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha pedido al director general de la Policía Nacional que abra investigaciones específicas sobre las cargas policiales de la huelga general de ayer, aparte de la inspección interna habitual. También ha ordenado dejar de usar gas lacrimógeno, tras ver imágenes de agentes rociando a manifestantes en los ojos. Según El Español, los socios del Gobierno piden su cabeza: Sumar exige su dimisión, igual que Esquerra Republicana, Compromís y Podemos. La portavoz del Gobierno, Elma Saiz, descarta destituirlo, y el ministro Félix Bolaños admite que algunas imágenes no le gustaron. El Partido Popular, por su parte, habla de huelga fracasada y denuncia la violencia de algunos manifestantes contra quienes querían trabajar. Policía y Guardia Civil contabilizaron 1.144 incidencias y 47 detenidos, sin contar Cataluña y el País Vasco. Solo en Barcelona hubo otros 52 detenidos, de modo que el total supera el centenar.",
-     "url": "https://www.elespanol.com/espana/politica/20261112/marlaska-ordena-investigar-cargas-policiales-huelga-general-socios-gobierno-piden-dimision/1003744455203_0.html"
+     "titular": "Culpable el acusado de matar a su pareja y quemar el cuerpo en Albacete",
+     "resumen": "Un jurado popular de la Audiencia Provincial de Albacete ha declarado culpable a un hombre del asesinato de su pareja, Ángela, de cuarenta y ocho años. También lo considera culpable de provocar un incendio en la vivienda para ocultar el crimen. Según la acusación, los hechos ocurrieron la noche del nueve al diez de diciembre de dos mil veintidós. La Fiscalía sostiene que la estranguló después de golpearla, dejó el cuerpo en el sofá y prendió fuego. El fiscal pide cuarenta años de cárcel. Pide además setenta mil euros para la madre de la víctima y veintisiete mil para su hermana. La defensa mantuvo que era inocente. El acusado pidió perdón a la familia al empezar su declaración. Según El Español, todavía no se sabe cuándo se dictará la sentencia.",
+     "url": "https://www.elespanol.com/eldigitalcastillalamancha/sociedad/sucesos/20261113/jurado-declara-culpable-acusado-asesinar-pareja-quemar-cadaver-vivienda-albacete/1003744456640_0.html"
     },
     {
      "id": "ee2",
-     "titular": "Aviso de bomba junto a la Catedral de Sevilla: la Policía detona una mochila",
-     "resumen": "La Policía Nacional ha acordonado esta mañana la avenida de la Constitución de Sevilla por un aviso de bomba. Los agentes evacuaron los alrededores de la Catedral y del Archivo de Indias, los dos declarados Patrimonio de la Humanidad, por un objeto sospechoso que apareció cerca. Según El Español, la zona cortada iba desde la Puerta de Jerez hasta el Ayuntamiento, con decenas de agentes, unidades a caballo, coches patrulla y un helicóptero sobrevolando el centro. Finalmente, los artificieros detonaron de forma controlada una mochila sospechosa, con un fuerte ruido junto a la delegación de Hacienda de la Junta. La Policía pidió calma en ese momento. Después se reabrió la circulación. El periódico no informa de heridos ni aclara si la mochila contenía realmente explosivos. La Guardia Civil investiga desde hace días una oleada de falsos avisos de bomba contra infraestructuras y transportes en toda España.",
-     "url": "https://www.elespanol.com/sevilla/20261112/policia-evacua-alrededores-catedral-sevilla-archivo-indias-aviso-bomba/1003744455247_0.html"
+     "titular": "Muere la cantante Helena Bianco a los setenta y ocho años",
+     "resumen": "La cantante Helena Bianco ha muerto a los setenta y ocho años, en la madrugada del jueves 12 de noviembre. Lo anunció su hermano, Alberto Vázquez, en las redes sociales con un mensaje de despedida. Según El Español, el cuatro de noviembre ella misma había contado en Instagram que tenía un cáncer neuroendocrino. Esa enfermedad la obligó a suspender conciertos y a empezar quimioterapia. Su hermano la describió como muy agresiva y resistente a los tratamientos. El diez de noviembre ella publicó un último mensaje de agradecimiento a quienes la apoyaban. La familia pide que no se envíen coronas al tanatorio y que se hagan donaciones para investigar la enfermedad. El periódico recuerda su carrera de más de cinco décadas, incluido su paso por el grupo Los Mismos, y habla de conmoción en el mundo de la música.",
+     "url": "https://www.elespanol.com/corazon/famosos/20261112/muere-helena-bianco-anos-dias-despues-hacerse-publico-padecia-cancer-neuroendocrino/1003744455100_0.html"
     },
     {
      "id": "ee3",
-     "titular": "Esta medianoche empieza la campaña de las elecciones del 29 de noviembre",
-     "resumen": "La campaña electoral de las elecciones generales arranca a las doce de esta noche, en el paso del jueves al viernes 13, y terminará el viernes 27. El sábado 28 será jornada de reflexión y el domingo 29 se vota. El Español repasa cómo empiezan los partidos en Galicia, donde se reparten veintitrés diputados. El Partido Popular hará su acto central en Santiago a última hora del jueves, y Alberto Núñez Feijóo dará un gran mitin el sábado junto a Alfonso Rueda. Los socialistas empiezan en Vigo y Ourense y esperan, aunque sin confirmar, la visita de Pedro Sánchez. El Bloque Nacionalista Galego arranca en Santiago con Ana Pontón. Santiago Abascal encabeza cuatro actos a medianoche, uno de ellos en La Coruña, porque Vox quiere entrar por fin en el Congreso por Galicia. La campaña llega justo después de la huelga general de ayer, centrada en la vivienda, los salarios y el coste de la vida.",
-     "url": "https://www.elespanol.com/quincemil/actualidad/galicia/20261112/campana-arranca-viernes-galicia-semana-marcada-huelga-general/1003744450971_0.html"
+     "titular": "Sánchez abre la campaña con una entrevista en televisión",
+     "resumen": "Pedro Sánchez ha empezado la campaña de las elecciones del veintinueve de noviembre con una entrevista de una hora y cuarto en Televisión Española. La entrevistó el humorista Manu Sánchez en el programa El Perro Andaluz. Según El Español, el presidente defendió al ministro del Interior, Fernando Grande-Marlaska, que ha sido reprobado tres veces por el Congreso. Dijo que desconoce quién ordenó las cargas policiales en Madrid durante la huelga general y anunció una investigación interna. También defendió a Begoña Gómez tras su primer acto de partido y quitó importancia al espionaje con el programa Pegasus. El Gobierno ha confirmado que se extrajeron dos coma siete gigas del móvil. El periódico critica que es la tercera entrevista del presidente en esa cadena desde septiembre, y que ninguna fue en los servicios informativos.",
+     "url": "https://www.elespanol.com/espana/politica/20261113/sanchez-inicia-pegada-carteles-show-tve-marlaska-ojito-derecho-reprobado/1003744456647_0.html"
     }
    ]
   },
@@ -68,21 +68,21 @@
    "noticias": [
     {
      "id": "ed1",
-     "titular": "La huelga deja destrozos en casi cuarenta oficinas inmobiliarias",
-     "resumen": "La Federación de Asociaciones de Empresas Inmobiliarias ha hecho balance de la huelga general de ayer y, según cuenta El Debate, más de ciento veinte empresas del sector se vieron afectadas en toda España. Su observatorio de incidencias registró treinta y siete ataques en dieciséis provincias. Hubo daños en oficinas y escaparates, negocios que tuvieron que cerrar por seguridad, actividad interrumpida y accesos bloqueados. Una de las oficinas destrozadas está en Palma de Mallorca. La federación condena el vandalismo y la intimidación, y dice que ninguna reivindicación ni el derecho de huelga justifican la violencia ni los daños a la propiedad privada. Considera especialmente grave que se intentara impedir trabajar a otras personas y pide que no quede impune. Su presidente, Miguel Ángel Gómez Huecas, agradeció la actuación de las fuerzas de seguridad. La federación estudiará cada caso y lo llevará ante las autoridades.",
-     "url": "https://www.eldebate.com/economia/20261112/huelga-salda-destrozos-casi-40-oficinas-inmobiliarias_480028.html"
+     "titular": "La huelga general amanece con piquetes y cargas policiales en Mercamadrid",
+     "resumen": "La huelga general empezó en la madrugada del miércoles once de noviembre con piquetes en toda España. Estaba convocada por sindicatos y colectivos sociales, a dieciocho días de las elecciones. El primer foco de tensión fue Mercamadrid, en Madrid, donde se reunieron unas mil personas. Según Comisiones Obreras de Madrid, la policía lanzó gas pimienta contra los piquetes informativos. El sindicato dice que trece personas fueron atendidas por los servicios sanitarios y que una fue detenida. También hubo concentraciones junto al Sindicato de Inquilinas, a las puertas de las cocheras de autobuses de la EMT en Carabanchel. Según El Debate, el artículo no da cifras oficiales de seguimiento de la huelga ni una respuesta de la policía o de la Delegación del Gobierno. Los datos de heridos proceden del propio sindicato.",
+     "url": "https://www.eldebate.com/economia/20261111/huelga-general-amanece-piquetes-toda-espana-cargas-policiales-mercamadrid_479496.html"
     },
     {
      "id": "ed2",
-     "titular": "Israel bombardea un hospital en el sur de Gaza y mueren al menos seis personas",
-     "resumen": "El ejército israelí ha atacado poco después de la medianoche el hospital Nasser de Jan Yunis, en el sur de la franja de Gaza. Según El Debate, al menos seis personas han muerto, entre ellas un niño de trece años y un médico, y una treintena han resultado heridas, también personal sanitario. El personal del hospital cuenta que dos drones alcanzaron el ala de cirugía y que los quirófanos han quedado fuera de servicio. En el hospital había unos ochocientos pacientes y, según los trabajadores, nadie avisó ni ordenó evacuar. El ejército de Israel asegura que su objetivo era un alto mando de Hamás y otros milicianos que operaban dentro del hospital, y acusa a Hamás de guardar armas allí. El Ministerio de Sanidad de Gaza, controlado por Hamás, lo califica de grave ataque contra la sanidad. El ataque llega en plena crisis política en Israel, donde el presidente ha encargado formar Gobierno a Gadi Eisenkot y no a Netanyahu.",
-     "url": "https://www.eldebate.com/internacional/20261112/israel-bombardea-hospital-sur-gaza-mata-menos-seis-personas_479980.html"
+     "titular": "EE. UU. acusa a tres hombres ligados a Irán de casi veinte atentados en Europa",
+     "resumen": "El Departamento de Justicia de Estados Unidos ha presentado cargos contra tres hombres vinculados a la Guardia Revolucionaria iraní y a una milicia llamada Kataib Hizbulá. Según la acusación, participaron en casi veinte ataques o intentos en Europa. Dieciocho de ellos ocurrieron en la primavera de este año, siete en el Reino Unido, con incendios, explosivos y un apuñalamiento en Londres. El caso más reciente es un complot contra la base británica de Fairford, donde hay personal y aviones militares estadounidenses. Las fuerzas británicas detuvieron a los ocupantes de tres furgonetas el veintisiete de septiembre. Uno de los acusados está detenido en Nueva York. Los otros dos están en Irán y no se conoce su paradero. Los cargos pueden suponer hasta cadena perpetua. El Debate no recoge ninguna reacción de Irán ni del Reino Unido.",
+     "url": "https://www.eldebate.com/internacional/20261111/eeuu-acusa-tres-agentes-vinculados-iran-casi-20-atentados-europa-intentar-atacar-base-britanica_479486.html"
     },
     {
      "id": "ed3",
-     "titular": "El Papa León Catorce reúne esta tarde a miles de jóvenes en el Estadio Nacional de Lima",
-     "resumen": "El Papa León Catorce vive hoy en Lima su primera gran jornada en el Perú, el país donde fue misionero y obispo durante años. Llegó ayer por la tarde a la base aérea del Callao, en la última etapa de su viaje por Sudamérica. Según El Debate, esta mañana recibirá de forma simbólica la llave de la ciudad, se reunirá a puerta cerrada con los obispos peruanos y rezará en la catedral de Lima, donde descansan los restos de Santo Toribio de Mogrovejo. A mediodía, en la Plaza de Armas, escuchará testimonios de familias, mujeres y empresarios sobre los retos del país. Por la tarde tiene un encuentro privado con los agustinos, su orden religiosa. El acto grande llega a las seis de la tarde, hora de Lima, con una vigilia de oración con jóvenes y universitarios de todo el país en el Estadio Nacional. En los próximos días el Papa recorrerá regiones del interior del Perú.",
-     "url": "https://www.eldebate.com/religion/iglesia/20261112/primer-gran-clamor-peru-leon-xiv-citara-este-jueves-miles-jovenes-estadio-nacional-lima_479851.html"
+     "titular": "Un autobús arrolla a decenas de coches en Corea del Sur y deja al menos cincuenta y siete heridos",
+     "resumen": "Un autobús urbano arrolló a decenas de vehículos el miércoles once de noviembre, a las siete y media de la mañana, hora local. Ocurrió cerca de un cruce del distrito de Bundang, en la ciudad de Seongnam, al sur de Seúl. Según la agencia Yonhap, embistió a treinta y dos vehículos parados en un semáforo, entre ellos cuatro autobuses, un camión y veintisiete coches. Después chocó contra la mediana de la carretera y se detuvo. Hay nueve heridos graves y cuarenta y ocho leves, y las autoridades avisan de que la cifra podría subir. El conductor tiene unos sesenta años y está entre los graves. Dijo que los frenos no funcionaron. La prueba de alcohol dio negativo. La causa oficial sigue en investigación. Es una noticia de agencia que El Debate reproduce.",
+     "url": "https://www.eldebate.com/sociedad/20261111/menos-48-heridos-embestida-autobus-decenas-vehiculos-corea-sur_479487.html"
     }
    ]
   },
@@ -91,22 +91,22 @@
    "nombre": "The Objective",
    "noticias": [
     {
-     "id": "to4",
-     "titular": "El CIS da ganador al PSOE con casi ocho puntos sobre el PP",
-     "resumen": "Según The Objective, el nuevo sondeo del Centro de Investigaciones Sociológicas sigue dando como ganador al PSOE en las elecciones generales del veintinueve de noviembre. Los socialistas obtendrían el treinta y tres coma tres por ciento de los votos. El PP se quedaría en el veinticinco coma cinco y Vox en el dieciocho coma cuatro. La ventaja del PSOE sobre el PP sería de siete coma ocho puntos. El Frente Amplio caería hasta el cuatro coma siete por ciento. La encuesta, dirigida por José Félix Tezanos, se basa en más de cuarenta y cinco mil entrevistas por teléfono. Es una muestra un cincuenta y cuatro por ciento mayor que la última publicada antes de las elecciones de dos mil veintitrés. El trabajo de campo se hizo entre el siete y el treinta de octubre. Por eso, según el artículo, apenas recoge el efecto del accidente ferroviario de Urda.",
-     "url": "https://theobjective.com/espana/politica/2026-11-12/cis-psoe-tragedia-urda/"
-    },
-    {
      "id": "to1",
-     "titular": "El PP llama fracaso a la huelga general y pide un Gobierno que ponga orden",
-     "resumen": "La portavoz del Partido Popular en el Congreso, Ester Muñoz, ha calificado de fracaso la huelga general de ayer, convocada por Comisiones Obreras, la UGT y el Sindicato de Inquilinas. Según recoge The Objective, Muñoz dijo en Telecinco que la huelga no iba a los problemas reales de los trabajadores, que podría haberse convocado en cualquier momento de los últimos ocho años y que es una huelga preventiva contra un posible futuro Gobierno. Condenó la violencia de los piquetes que impidieron trabajar y aseguró que los episodios violentos han aumentado desde que se disolvieron las Cortes, con ejemplos en Barcelona, Bilbao y La Coruña. Pidió un Gobierno que ponga orden, más medios para la Policía y la Guardia Civil, y que su trabajo se reconozca como profesión de riesgo. También criticó la política de inmigración y aseguró que, si el Partido Popular gana el 29 de noviembre, se acabará el efecto llamada.",
-     "url": "https://theobjective.com/espana/politica/2026-11-12/ester-munoz-fracaso-huelga-preventiva/"
+     "titular": "Adif vuelve a publicar los expedientes sobre el accidente de Urda",
+     "resumen": "El gestor ferroviario Adif ha vuelto a dar acceso a la documentación técnica del proyecto de señalización de la línea Madrid-Sevilla, clave en el accidente mortal de Urda. Según The Objective, buena parte de esos archivos habían desaparecido de la plataforma pública de contratación. Muchos daban error al abrirse. Seis horas después de que el periódico lo contara, Adif añadió una nota y un enlace con los archivos. El contrato se adjudicó en dos mil veintiuno a la empresa Thales por setenta y siete millones y medio de euros, con fondos europeos. Según el periódico, los documentos muestran que se usaba una versión antigua de un sistema de frenado que Alemania ya retiró. Eso contradice la versión oficial de Transportes. La Fiscalía Europea investiga un posible fraude en el contrato. Adif no explica por qué los archivos dejaron de descargarse.",
+     "url": "https://theobjective.com/espana/2026-11-12/adif-expedientes-urda-habian-desaparecido/"
     },
     {
      "id": "to2",
-     "titular": "La acampada por la vivienda de Valencia sigue y el Gobierno descarta desalojarla",
-     "resumen": "La acampada por la vivienda que hay desde el 3 de octubre en la plaza del Ayuntamiento de Valencia sigue sin fecha de salida, según The Objective. Los acampados han pedido una segunda reunión de negociación para hoy jueves. La alcaldesa, María José Catalá, del Partido Popular, quiere recuperar la normalidad con diálogo, pero de forma muy firme, y no ha aclarado si pedirá que intervenga la Policía. El delegado del Gobierno, Roger Llanes, descarta por ahora un desalojo forzoso, dice que las negociaciones avanzan mucho y califica de ejemplar el comportamiento de los acampados. La Policía Local advierte de que las tiendas son incompatibles con la seguridad de las fiestas de Navidad, cuando abrirán la pista de hielo y el carrusel a finales de mes. Los acampados piden, entre otras cosas, volver a los alquileres indefinidos, limitar más los pisos turísticos y paralizar los desahucios sin alternativa de vivienda.",
-     "url": "https://theobjective.com/espana/comunidad-valenciana/2026-11-12/acampada-valencia-eleva-presion-gobierno-descarta-desalojo/"
+     "titular": "La UCO cree que Ábalos usó al exchófer de Sánchez para financiar una casa",
+     "resumen": "Según un informe de la Guardia Civil al que ha tenido acceso The Objective, el exministro José Luis Ábalos habría recurrido a Cristian Corvillo, exchófer de Pedro Sánchez, para conseguir dinero. Ese dinero serviría para que su pareja, Andrea de la Torre, comprara una casa. La UCO sitúa el foco en el doce de febrero de dos mil veinticuatro, cuando ella recibió sesenta y cinco mil euros como préstamo, a través de una sociedad portuguesa. En abril compró un local industrial y una plaza de aparcamiento por ciento veinticinco mil euros. Los agentes sostienen que Corvillo actuó mediante terceros para no aparecer en las sociedades. La pareja de Ábalos fue detenida el cinco de noviembre en Valencia por presunto blanqueo de capitales. El periódico presenta la relación con Corvillo como una hipótesis de la UCO. No recoge reacciones.",
+     "url": "https://theobjective.com/espana/tribunales/2026-11-12/uco-abalos-exchofer-sanchez-casa-expareja/"
+    },
+    {
+     "id": "to3",
+     "titular": "Marlaska descarta dimitir por las cargas policiales en la huelga general",
+     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha descartado dimitir por la actuación de la policía durante la huelga general del once de noviembre. Lo dijo el jueves doce, en el acto de apertura de la campaña electoral. Aun así, puso en duda la proporcionalidad de algunas cargas y ordenó abrir una investigación muy específica. Según el balance de Interior, hubo mil ciento cuarenta y cuatro incidencias y cuarenta y siete detenciones hasta las once de la noche del miércoles. Marlaska defendió el ejercicio legítimo de la fuerza y dijo que la policía fue absolutamente ejemplar. Preguntado por su dimisión, respondió que no tiene ninguna razón para dejar el cargo. The Objective recuerda que el portavoz de Esquerra, Gabriel Rufián, pidió su dimisión, y que el ministro Félix Bolaños dijo que algunas imágenes no le habían gustado.",
+     "url": "https://theobjective.com/espana/politica/2026-11-12/marlaska-dimitir-actuaciones-policia-huelga-general/"
     }
    ]
   },
@@ -116,21 +116,21 @@
    "noticias": [
     {
      "id": "ok1",
-     "titular": "Bolaños descarta el cese de Marlaska tras ordenar investigar las cargas de la huelga",
-     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha ordenado al director general de la Policía Nacional, Francisco Pardo Piqueras, que investigue las cargas contra los piquetes durante la huelga general de ayer. Según OKDiario, que califica de violentos a esos piquetes, la investigación irá aparte de la inspección interna habitual. Marlaska también ha prohibido usar gas lacrimógeno en adelante para controlar manifestaciones. El balance de Interior hasta las once de la noche deja 1.144 incidencias y 47 detenidos, veinte de ellos en Madrid, seis en Valencia y cuatro en Málaga y en Almería. Son cifras provisionales que no incluyen Cataluña ni el País Vasco. El ministro de la Presidencia, Félix Bolaños, ha dicho en Radio Nacional que algunas imágenes no le gustaron y que serán los mandos policiales quienes digan si hubo exceso de fuerza, pero ha dejado claro que el cargo de Marlaska no está en cuestión. Podemos y el Frente Amplio piden su cese.",
-     "url": "https://okdiario.com/espana/marlaska-ordena-investigar-cargas-policia-contra-piquetes-violentos-huelga-20771200"
+     "titular": "La UCO acude al Tribunal de Cuentas por las donaciones del PSOE",
+     "resumen": "Agentes de la UCO, de la Guardia Civil, acudieron el jueves doce de noviembre al Tribunal de Cuentas. Según OKDIARIO, detectaron irregularidades en las donaciones que declaró el PSOE. La orden viene del juez de la Audiencia Nacional que lleva el caso Koldo, dentro de una pieza secreta sobre la presunta financiación ilegal del partido. Los agentes piden información al tribunal en presencia de una letrada de la Administración de Justicia. El juez había pedido antes al partido la relación de pagos en efectivo entre dos mil diecisiete y dos mil veinticuatro. Según el periódico, algunos conceptos no cuadran. Cita pagos en metálico de más de cien mil euros al año al principio y de más de doscientos mil en dos mil veintitrés. El texto no recoge ninguna respuesta del PSOE ni del Tribunal de Cuentas.",
+     "url": "https://okdiario.com/espana/uco-acude-tribunal-cuentas-detectar-irregularidades-donaciones-declaradas-psoe-20806961"
     },
     {
      "id": "ok2",
-     "titular": "El Gobierno licita solo 62 pisos de los 438 prometidos en un antiguo cuartel de Valencia",
-     "resumen": "El Consejo de Ministros aprobó, el día antes de la huelga general, licitar sesenta y dos viviendas de alquiler asequible en el antiguo Cuartel de Ingenieros de Valencia, por algo más de trece millones de euros. Según OKDiario, es una pequeña parte de lo prometido: el proyecto llegó a anunciarse con cuatrocientas treinta y ocho viviendas. El periódico repasa el historial de anuncios. En 2018 el entonces ministro José Luis Ábalos presentó en Valencia un plan de veinte mil viviendas públicas que incluía este cuartel. En 2020 dijo que las obras se licitarían ese mismo invierno y anunció más de trescientos setenta pisos en el recinto. En 2021 y en enero de 2025 se volvieron a anunciar las cuatrocientas treinta y ocho viviendas. OKDiario sostiene que en estos años ni el Gobierno, ni la Generalitat, ni el Ayuntamiento han construido apenas vivienda pública en Valencia. El artículo no recoge la versión del Gobierno.",
-     "url": "https://okdiario.com/comunidad-valenciana/gobierno-dio-luz-verde-24-horas-huelga-62-pisos-valencia-anunciados-abalos-2018-20757754"
+     "titular": "La Diputación Permanente aprueba el decreto de vivienda que el Congreso había rechazado",
+     "resumen": "La Diputación Permanente del Congreso aprobó el jueves doce de noviembre el decreto ley para intervenir en el mercado de la vivienda. El pleno del Congreso lo había rechazado antes. Las Cortes están disueltas por las elecciones del veintinueve de noviembre, así que esta comisión es el único órgano activo. Según OKDIARIO, el voto de calidad de la presidenta del Congreso, Francina Armengol, resultó decisivo. Hubo treinta y cinco votos a favor, de PSOE, Sumar, Esquerra, PNV y Podemos, y treinta y cuatro en contra, de PP, Vox y Junts. Entre las medidas están la prohibición de desahucios de personas vulnerables hasta dos mil treinta y préstamos del ICO de hasta cincuenta mil euros para la primera vivienda. Un segundo decreto, sobre renovación automática de alquileres, cayó porque el PNV votó en contra.",
+     "url": "https://okdiario.com/espana/sanchez-saca-adelante-diputacion-permanente-decretazo-vivienda-que-tumbo-congreso-20810519"
     },
     {
      "id": "ok3",
-     "titular": "Miriam González deja una empresa para centrarse en su candidatura del 29 de noviembre",
-     "resumen": "Miriam González, presidenta del partido Democracia 21, ha dimitido como consejera de la empresa sanitaria Atrys Health para dedicarse por completo a la política y a su candidatura en las elecciones generales del 29 de noviembre. Según OKDiario, la empresa lo ha comunicado a la Comisión Nacional del Mercado de Valores y la renuncia es efectiva desde hoy. González, abogada y esposa del que fue vice primer ministro británico Nick Clegg, entró en el consejo en junio de 2023 como consejera independiente y su mandato duraba hasta junio de 2027. Con la dimisión deja también sus puestos en las comisiones de nombramientos y de auditoría de la compañía. El consejo de Atrys le ha agradecido su dedicación. Democracia 21 se estrena en unas generales, en coalición con Ciudadanos, y solo se presenta en Madrid y Barcelona, las provincias que reparten más diputados, donde es más fácil que entre un partido nuevo.",
-     "url": "https://okdiario.com/economia/empresas/miriam-gonzalez-lider-democracia-21-dimite-como-consejera-atrys-centrarse-elecciones-20757581"
+     "titular": "Marlaska ordena investigar las cargas policiales contra los piquetes",
+     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ordenó el jueves doce de noviembre abrir investigaciones sobre las cargas policiales contra piquetes en la huelga general del miércoles. Según fuentes de Interior, serán independientes de la inspección interna habitual. El ministro también ordenó no usar gas lacrimógeno en los dispositivos de control de manifestaciones. El balance de Interior hasta las once de la noche del miércoles es de mil ciento cuarenta y cuatro incidencias y cuarenta y siete detenciones. Madrid registró veinte detenciones y Valencia seis. Las cifras no incluyen Cataluña ni el País Vasco. Según OKDIARIO, el ministro Félix Bolaños descartó el cese de Marlaska y admitió que algunas imágenes no le habían gustado. Podemos y otros grupos habían exigido su salida. El artículo no recoge la opinión de los sindicatos de policía.",
+     "url": "https://okdiario.com/espana/marlaska-ordena-investigar-cargas-policia-contra-piquetes-violentos-huelga-20771200"
     }
    ]
   },
@@ -140,21 +140,21 @@
    "noticias": [
     {
      "id": "edi1",
-     "titular": "Leire Díez asegura en un libro que le ofrecieron dos millones por declarar contra Sánchez",
-     "resumen": "Leire Díez, antigua militante socialista investigada en la Audiencia Nacional, publica hoy un libro titulado Desmontando las cloacas. En él afirma que unos abogados próximos al Partido Popular le ofrecieron dos millones de euros, además de ayuda con sus problemas judiciales, a cambio de declarar contra Pedro Sánchez y el Partido Socialista. Ella dice que lo rechazó y lo describe como una forma de extorsión. Según elDiario.es, Díez no aporta facturas, contratos, transferencias ni grabaciones, sino testimonios y algunos mensajes de teléfono que hablan de ayudas, que sugieren más de lo que prueban. Tampoco da los nombres de esos abogados. El periódico advierte de que la cercanía de esos intermediarios al Partido Popular no demuestra por sí sola que el partido encargara nada. Díez dice que se animó a contarlo tras conocerse los pagos de OKDiario al abogado de Koldo García, el exasesor de Ábalos. El artículo no recoge respuesta del Partido Popular.",
-     "url": "https://www.eldiario.es/politica/leire-diez-afirma-abogados-afines-pp-le-ofrecieron-millones-mentir-sanchez_1_13656894.html"
+     "titular": "Trump quiere resolver lo de Cuba antes de irse y no descarta la fuerza militar",
+     "resumen": "El presidente de Estados Unidos, Donald Trump, ha dicho en una entrevista con el locutor conservador Hugh Hewitt que quiere resolver lo de Cuba antes de dejar el cargo. Según elDiario.es, afirmó que la isla es un país fracasado y que el secretario de Estado, Marco Rubio, de origen cubano, seguiría el asunto muy de cerca. Preguntado por si usaría la fuerza militar, respondió que sin duda lo consideraría. El periódico recuerda que Cuba sufre desde hace un año un bloqueo de petróleo y energía por parte de Estados Unidos. El lunes nueve de noviembre, Trump había dicho que Cuba caerá muy pronto. También aseguró haber ganado el voto cubano en Florida con un noventa y cuatro por ciento, pero es una afirmación suya. El artículo no recoge la reacción del Gobierno cubano.",
+     "url": "https://www.eldiario.es/internacional/trump-dice-quiere-acabar-cuba-no-descarta-fuerza-militar-duda-consideraria_1_13660339.html"
     },
     {
      "id": "edi2",
-     "titular": "Interior prohíbe el gas lacrimógeno en las manifestaciones tras la huelga",
-     "resumen": "El Ministerio del Interior ha ordenado que la Policía deje de usar gas lacrimógeno en las manifestaciones y ha pedido a la Dirección General de la Policía que investigue las distintas incidencias de la huelga general de ayer. Según elDiario.es, estas investigaciones irán aparte de la revisión interna que la Policía Nacional hace siempre de sus actuaciones. La decisión del ministro Fernando Grande-Marlaska llega después de las duras cargas policiales de la jornada, muy criticadas por los sindicatos convocantes, que preparan acciones en los tribunales por las cargas contra los piquetes. Entre las quejas de ese día está la de la cantante Samantha Hudson, que contó que la Policía le roció con gas pimienta. En Madrid, los agentes cortaron el acceso a la plaza de España, donde debía terminar la manifestación. El periódico indica que la información se seguirá actualizando a lo largo del día.",
-     "url": "https://www.eldiario.es/politica/interior-ordena-gas-lacrimogeno-manifestaciones-investigacion-incidencias-dia-huelga_1_13657122.html"
+     "titular": "Jensen Huang, el jefe de Nvidia, dimite tras conocerse sus relaciones con una presunta espía china",
+     "resumen": "El cofundador y consejero delegado de Nvidia, Jensen Huang, dimitió el jueves doce de noviembre, según elDiario.es. Se conoció que mantuvo relaciones con una ejecutiva de la empresa y con Alice Huang, que los servicios de inteligencia de Estados Unidos consideran una espía china. Ella dirigía una empresa de Singapur llamada Megaspeed. Esa empresa compró unos cuatro mil ochocientos millones de dólares en chips de Nvidia. Unos dos mil cuatrocientos millones correspondían a placas cuya venta a China estaba prohibida. Una firma de análisis calcula que hasta el veinte por ciento de los ingresos de Nvidia podría venir de ventas ocultas a China. Nvidia no lo ha confirmado ni desmentido. Las acciones cayeron hasta un catorce por ciento al abrir la bolsa y cerraron con una bajada de alrededor del cuatro por ciento. China niega que Alice Huang sea espía.",
+     "url": "https://www.eldiario.es/tecnologia/espias-contrabando-e-infidelidades-cloacas-ia-tumban-jensen-huang-creador-imperio-nvidia_1_13658846.html"
     },
     {
      "id": "edi3",
-     "titular": "Polémica en Barcelona: un mosso de paisano detiene a un manifestante con una bandera sindical en la mano",
-     "resumen": "El sindicato CGT denuncia que un mosso de escuadra vestido de paisano llevaba una bandera del sindicato mientras ayudaba a detener a un manifestante en Barcelona, tras la marcha que cerró la huelga general de ayer. Según elDiario.es, un vídeo muestra al agente con la bandera en una mano y la porra extensible en la otra, en el cruce de las calles Casp y Pau Claris. Tras la manifestación, que fue pacífica, grupos encapuchados lanzaron petardos a los agentes, quemaron contenedores y rompieron escaparates. Hubo cincuenta y dos detenidos, seis de ellos menores, y treinta y dos policías heridos. La CGT habla de un intento de criminalizar al sindicato, estudia ir a los tribunales y pide el cese de la consejera de Interior catalana, Núria Parlon. Parlon culpa de los disturbios a grupos radicales y antisistema, a los que llama cuatro facinerosos, y defiende que la Policía actuó con moderación.",
-     "url": "https://www.eldiario.es/catalunya/cgt-denuncia-mosso-paisano-llevaba-bandera-sindicato-detenia-manifestante_1_13657245.html"
+     "titular": "Interior compró spray de pimienta hace un mes y ahora suspende su uso",
+     "resumen": "El ministro del Interior, Fernando Grande-Marlaska, ha suspendido el uso del gas pimienta en las unidades antidisturbios hasta revisar los protocolos. La decisión llega tras las cargas de la huelga general del once de noviembre. Según elDiario.es, Interior firmó el cinco de octubre un contrato de setecientos noventa sprays por más de setenta y un mil euros. Se lo adjudicó a una empresa llamada Falken, que el periódico vincula a una familia cercana al Partido Popular. Sindicatos y Amnistía Internacional denuncian que el spray se usó de forma indiscriminada. Comisiones Obreras presentará una denuncia penal. El periódico recoge estas acusaciones, pero el texto no incluye una respuesta de la empresa ni del ministerio sobre el contrato.",
+     "url": "https://www.eldiario.es/politica/interior-gasto-mes-70-000-euros-spray-pimienta-cuyo-acaba-suspender-marlaska_1_13659556.html"
     }
    ]
   }
