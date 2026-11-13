@@ -30,6 +30,7 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 ARCHIVO = os.path.join(RAIZ, "noticias.json")
 MADRID = ZoneInfo("Europe/Madrid")
 MODELO = os.environ.get("MODELO", "claude-haiku-5-5")
+MODELO_PORTADA = os.environ.get("MODELO_PORTADA", "claude-sonnet-5-5")  # elegir portada sin repetir hechos
 HORA_MINIMA = 11  # no actualiza antes de las 11:00 de Madrid (salvo FORZAR)
 POR_DIARIO = 3
 MIN_NOTICIAS = 6  # si salen menos, no se sobrescribe lo anterior
@@ -196,10 +197,11 @@ def texto_articulo(url):
 SIN_RAZONAR = {"ok": True}  # se apaga si la API no admite desactivar el razonamiento
 
 
-def claude(sistema, mensaje, max_tokens=4000):
+def claude(sistema, mensaje, max_tokens=4000, modelo=None):
     clave = os.environ["ANTHROPIC_API_KEY"]
+    modelo = modelo or MODELO
     for intento in range(5):
-        peticion = {"model": MODELO, "max_tokens": max_tokens, "system": sistema,
+        peticion = {"model": modelo, "max_tokens": max_tokens, "system": sistema,
                     "messages": [{"role": "user", "content": mensaje}]}
         if SIN_RAZONAR["ok"]:
             peticion["thinking"] = {"type": "disabled"}
@@ -214,8 +216,11 @@ def claude(sistema, mensaje, max_tokens=4000):
             with urllib.request.urlopen(req, timeout=180) as r:
                 resp = json.loads(r.read().decode("utf-8"))
             uso = resp.get("usage", {})
+            precio = (2.0, 10.0) if "sonnet" in modelo else (0.10, 0.50)
             GASTO["entrada"] += uso.get("input_tokens", 0)
             GASTO["salida"] += uso.get("output_tokens", 0)
+            GASTO["dolares"] = GASTO.get("dolares", 0) + (uso.get("input_tokens", 0) * precio[0]
+                                                         + uso.get("output_tokens", 0) * precio[1]) / 1e6
             texto = "".join(b.get("text", "") for b in resp.get("content", []) if b.get("type") == "text")
             if not texto.strip():
                 tipos = [b.get("type") for b in resp.get("content", [])]
@@ -267,7 +272,7 @@ SIS_ESCRIBIR = (
     "Para la noticia que te paso escribe, con TUS PROPIAS PALABRAS (nunca copies frases del artículo; "
     "como mucho una cita breve de menos de 15 palabras si es imprescindible):\n"
     "- titular: claro y corto, entendible al oírlo.\n"
-    "- resumen: entre 110 y 170 palabras, frases cortas, tono neutro, atribuyendo al periódico o a "
+    "- resumen: entre 110 y 160 palabras (nunca más de 170), frases cortas, tono neutro, atribuyendo al periódico o a "
     "las fuentes las afirmaciones polémicas («según {nombre}…»). Para el oído: nada de siglas raras "
     "sin explicar, fechas como «29 de noviembre» (no «29-N»), sin paréntesis ni viñetas, números "
     "romanos escritos con letra. Solo hechos que estén en el artículo; no inventes nada.\n"
@@ -280,7 +285,8 @@ SIS_PORTADA = (
     "(id y titular). Elige entre 7 y 9 para la portada: las más importantes del día, mezclando "
     "periódicos, empezando por la más importante. Cada una debe ser de un HECHO DISTINTO: si dos "
     "periódicos cuentan lo mismo (el mismo suceso, declaración o votación, aunque con otro enfoque), "
-    "elige solo una. Responde SOLO con JSON: {\"portada\": [\"id\", …]}"
+    "elige solo una. Antes de responder, agrupa mentalmente las noticias por hecho y quédate con una "
+    "de cada grupo. Responde SOLO con JSON: {\"portada\": [\"id\", …]}"
 )
 
 
@@ -389,7 +395,7 @@ def main():
     lineas = "\n".join(f"{n['id']} ({d['nombre']}): {n['titular']}"
                        for d in diarios_out for n in d["noticias"])
     try:
-        portada = json_de(claude(SIS_PORTADA, lineas, 300)).get("portada", [])
+        portada = json_de(claude(SIS_PORTADA, lineas, 600, MODELO_PORTADA)).get("portada", [])
     except Exception as e:  # noqa: BLE001
         log(f"✗ al elegir la portada: {e}")
         portada = []
@@ -414,11 +420,11 @@ def main():
         json.dump(salida, f, ensure_ascii=False, indent=1)
         f.write("\n")
 
-    coste = GASTO["entrada"] / 1e6 * 0.10 + GASTO["salida"] / 1e6 * 0.50
+    coste = GASTO.get("dolares", 0)
     log(f"\nGuardadas {len(todas)} noticias, {len(portada)} en portada."
         + (f" Fallaron: {', '.join(fallos)}." if fallos else "")
         + f" Tokens: {GASTO['entrada']} de entrada y {GASTO['salida']} de salida"
-        + (f" (≈ {coste:.3f} $ con Haiku)." if "haiku" in MODELO else "."))
+        + f" (≈ {coste:.3f} $).")
     with open(os.environ.get("GITHUB_STEP_SUMMARY", os.devnull), "a", encoding="utf-8") as f:
         f.write(f"Guardadas {len(todas)} noticias ({salida['actualizado']}). "
                 + (f"Fallaron: {', '.join(fallos)}. " if fallos else "")
