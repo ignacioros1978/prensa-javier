@@ -194,7 +194,7 @@ def texto_articulo(url):
 
 # ---------------------------------------------------------------- Claude
 
-SIN_RAZONAR = {"ok": True}  # se apaga si la API no admite desactivar el razonamiento
+SIN_RAZONAR = {}  # por modelo: False si la API no admite desactivar el razonamiento
 
 
 def claude(sistema, mensaje, max_tokens=4000, modelo=None):
@@ -203,8 +203,8 @@ def claude(sistema, mensaje, max_tokens=4000, modelo=None):
     for intento in range(5):
         peticion = {"model": modelo, "max_tokens": max_tokens, "system": sistema,
                     "messages": [{"role": "user", "content": mensaje}]}
-        if SIN_RAZONAR["ok"]:
-            peticion["thinking"] = {"type": "disabled"}
+        if SIN_RAZONAR.get(modelo, True):
+            peticion["thinking"] = {"type": "between_tools" if "sonnet" in modelo else "disabled"}
         else:
             peticion["max_tokens"] = max_tokens + 6000  # deja sitio al razonamiento
         cuerpo = json.dumps(peticion).encode("utf-8")
@@ -229,8 +229,8 @@ def claude(sistema, mensaje, max_tokens=4000, modelo=None):
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
             log(f"   API {e.code}: {detalle}")
-            if e.code == 400 and SIN_RAZONAR["ok"] and "thinking" in detalle:
-                SIN_RAZONAR["ok"] = False
+            if e.code == 400 and SIN_RAZONAR.get(modelo, True) and "thinking" in detalle:
+                SIN_RAZONAR[modelo] = False
                 continue
             if e.code in (429, 500, 502, 503, 529) and intento < 3:
                 time.sleep(15 * (intento + 1))
