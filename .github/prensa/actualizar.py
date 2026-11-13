@@ -210,7 +210,11 @@ def claude(sistema, mensaje, max_tokens=4000):
             uso = resp.get("usage", {})
             GASTO["entrada"] += uso.get("input_tokens", 0)
             GASTO["salida"] += uso.get("output_tokens", 0)
-            return "".join(b.get("text", "") for b in resp.get("content", []))
+            texto = "".join(b.get("text", "") for b in resp.get("content", []) if b.get("type") == "text")
+            if not texto.strip():
+                tipos = [b.get("type") for b in resp.get("content", [])]
+                log(f"   API sin texto: stop_reason={resp.get('stop_reason')} bloques={tipos} uso={uso}")
+            return texto
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
             log(f"   API {e.code}: {detalle}")
@@ -229,6 +233,8 @@ def claude(sistema, mensaje, max_tokens=4000):
 
 def json_de(texto):
     texto = texto.strip()
+    if "{" not in texto and "[" not in texto:
+        log(f"   respuesta sin JSON: {texto[:300]!r}")
     texto = re.sub(r"^```(?:json)?\s*|\s*```$", "", texto)
     ini = min([i for i in (texto.find("{"), texto.find("[")) if i >= 0], default=-1)
     fin = max(texto.rfind("}"), texto.rfind("]"))
