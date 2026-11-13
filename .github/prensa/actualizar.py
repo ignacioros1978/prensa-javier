@@ -413,6 +413,10 @@ def main():
         "actualizado": ahora.isoformat(),
         "portada": portada,
         "diarios": diarios_out,
+        # Lo que ha costado esta actualización (Ignacio, 13-11-2026: que se sume al saldo de la API del panel de
+        # Jarvis, que lo lee del historial). La web de Javier no lo usa.
+        "gasto": {"dolares": round(GASTO.get("dolares", 0), 5), "entrada": GASTO["entrada"],
+                  "salida": GASTO["salida"]},
     }
     urls = [n["url"] for n in todas]
     assert len(urls) == len(set(urls)), "URLs repetidas"
