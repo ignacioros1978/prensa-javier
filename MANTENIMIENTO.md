@@ -17,6 +17,19 @@ Este archivo es para Claude. Si estás leyendo esto desde una cuenta nueva de Cl
 - `noticias.json`: **el único archivo que cambia cada día**. Lo escriben las tareas programadas.
 - `manifest.json` e `icono-*.png`: el icono de la pantalla de inicio.
 
+## Actualización automática (desde el 13-11-2026): GitHub Actions + API de Anthropic
+
+Las noticias YA NO las prepara una tarea programada de Claude (fallaban a menudo porque compartían el límite de uso del plan). Ahora:
+
+- `.github/prensa/actualizar.py` lee los seis periódicos (RSS o, si no hay, la web), pide a Claude por la API (modelo `claude-haiku-5-5`, se cambia con la variable MODELO) que elija y resuma las noticias y escribe `noticias.json` (3 por periódico, 7-9 en portada).
+- `.github/workflows/prensa.yml` lo lanza una vez al día a partir de las 11:00 de Madrid (con reintento a las 12:07 en invierno), lo guarda en GitHub y publica la web.
+- Necesita el secreto del repositorio `ANTHROPIC_API_KEY` (Settings → Secrets and variables → Actions).
+- Para lanzarlo a mano: pestaña Actions → «Prensa de Javier» → Run workflow (modo «forzar» = actualizar ya; «prueba» = solo comprobar que se leen los periódicos, sin gastar).
+- Si falla, GitHub manda un correo y la web conserva las noticias anteriores (si salen menos de 6 noticias no se sobrescribe nada).
+- Plan: a partir del 10-01-2027 pasarlo a Jarvis en el mini PC.
+
+Lo que sigue es el sistema anterior con tareas programadas de Claude, que se conserva por si hay que volver a él.
+
 ## Tareas programadas (crear con modelo Sonnet)
 
 Hay dos tareas, con zona horaria Europe/Madrid:
