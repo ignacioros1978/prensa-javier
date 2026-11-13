@@ -1,0 +1,61 @@
+name: Prensa de Javier
+
+# Una actualización al día a partir de las 11:00 de Madrid.
+# GitHub solo entiende la hora UTC, así que se lanza a las 9:07, 10:07 y 11:07 UTC:
+# el programa solo trabaja si en Madrid ya son las 11 o más y hoy no se ha hecho todavía
+# (invierno: 11:07 Madrid; verano: 11:07 Madrid; la última pasada es de reintento).
+on:
+  schedule:
+    - cron: "7 9,10,11 * * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "normal, forzar (actualiza ya) o prueba (solo comprueba los periódicos)"
+        default: "forzar"
+        type: choice
+        options: [forzar, prueba, normal]
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: prensa
+  cancel-in-progress: false
+
+jobs:
+  noticias:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Preparar noticias
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORZAR: ${{ github.event.inputs.modo == 'forzar' && '1' || '' }}
+          PRUEBA: ${{ github.event.inputs.modo == 'prueba' && '1' || '' }}
+        run: python3 .github/prensa/actualizar.py
+
+      - name: Guardar en GitHub
+        run: |
+          if git diff --quiet -- noticias.json; then
+            echo "Sin cambios en noticias.json"; exit 0
+          fi
+          git config user.name "Prensa de Javier"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add noticias.json
+          git commit -m "Noticias del $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "PUBLICAR=1" >> "$GITHUB_ENV"
+
+      - name: Publicar la web
+        if: env.PUBLICAR == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
