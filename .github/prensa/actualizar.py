@@ -193,13 +193,19 @@ def texto_articulo(url):
 
 # ---------------------------------------------------------------- Claude
 
+SIN_RAZONAR = {"ok": True}  # se apaga si la API no admite desactivar el razonamiento
+
+
 def claude(sistema, mensaje, max_tokens=4000):
     clave = os.environ["ANTHROPIC_API_KEY"]
-    cuerpo = json.dumps({
-        "model": MODELO, "max_tokens": max_tokens, "system": sistema,
-        "messages": [{"role": "user", "content": mensaje}],
-    }).encode("utf-8")
-    for intento in range(4):
+    for intento in range(5):
+        peticion = {"model": MODELO, "max_tokens": max_tokens, "system": sistema,
+                    "messages": [{"role": "user", "content": mensaje}]}
+        if SIN_RAZONAR["ok"]:
+            peticion["thinking"] = {"type": "disabled"}
+        else:
+            peticion["max_tokens"] = max_tokens + 6000  # deja sitio al razonamiento
+        cuerpo = json.dumps(peticion).encode("utf-8")
         req = urllib.request.Request(
             "https://api.anthropic.com/v1/messages", data=cuerpo, method="POST",
             headers={"x-api-key": clave, "anthropic-version": "2023-06-01",
@@ -218,6 +224,9 @@ def claude(sistema, mensaje, max_tokens=4000):
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
             log(f"   API {e.code}: {detalle}")
+            if e.code == 400 and SIN_RAZONAR["ok"] and "thinking" in detalle:
+                SIN_RAZONAR["ok"] = False
+                continue
             if e.code in (429, 500, 502, 503, 529) and intento < 3:
                 time.sleep(15 * (intento + 1))
                 continue
