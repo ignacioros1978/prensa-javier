@@ -112,9 +112,12 @@ def candidatos_rss(diario):
             titulo = enlace = desc = ""
             for h in it:
                 t = h.tag.split("}")[-1]
-                if t == "title":
+                ns = h.tag.split("}")[0] if "}" in h.tag else ""
+                if "search.yahoo.com/mrss" in ns:  # media:title, media:description… (pies de foto)
+                    continue
+                if t == "title" and not titulo:
                     titulo = limpiar(h.text)
-                elif t == "link":
+                elif t == "link" and not enlace:
                     enlace = (h.text or h.get("href") or "").strip()
                 elif t in ("description", "summary") and not desc:
                     desc = limpiar(h.text)[:300]
