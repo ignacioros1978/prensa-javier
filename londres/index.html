@@ -1061,7 +1061,7 @@
             <div class="progress-bar-segment" style="background:#9b59b6;" title="Día 4"></div>
         </div>
         <div class="hb4">
-            <a href="metro/?v=4" class="hb4b" style="background:#e74c3c">🚇 Rutas de Metro</a>
+            <a href="metro/?v=7" class="hb4b" style="background:#e74c3c">🚇 Rutas de Metro</a>
             <button type="button" onclick="openTravel()" class="hb4b" style="background:#1d4ed8">✈️ Vuelos y traslados</button>
             <button type="button" onclick="openSeguro()" class="hb4b" style="background:#15803d">🛡️ Seguro de viaje</button>
             <button type="button" onclick="openEntradas()" class="hb4b" style="background:#7c3aed">🎟️ Entradas</button>
@@ -1584,31 +1584,31 @@
         },
 
         // DÍA 3 — Lunes 7 dic
-        // Orden geográfico: Big Ben(1) → Buckingham Palace(2) → Almuerzo Victoria(3) → Harrods(4) → Hyde Park Winter Wonderland(5)
+        // Orden: Buckingham Palace(1) → Big Ben, Parlamento y Westminster Bridge(2) → Almuerzo Victoria(3) → Hyde Park Winter Wonderland(4)
 
         {
             id: 'metro_westminster',
-            name: 'Metro Westminster',
-            address: 'Westminster Station, SW1A 2JR',
-            lat: 51.5013,
-            lng: -0.1248,
+            name: 'Metro St James’s Park',
+            address: 'St James’s Park Station, 55 Broadway, SW1H 0BD',
+            lat: 51.4994,
+            lng: -0.1335,
             day: 'd3',
             category: 'metro',
             emoji: '🚇',
-            desc: 'Llegada directa para ver el Big Ben y el Cambio de Guardia.',
+            desc: 'Llegada en la District, sin trasbordo, a 10 min andando de Buckingham Palace.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Westminster_tube_station_entrance.jpg/640px-Westminster_tube_station_entrance.jpg'
         },
 
         {
             id: 'big_ben',
-            name: 'Big Ben & Westminster Bridge',
+            name: 'Big Ben, Parlamento & Westminster Bridge',
             address: 'Westminster Bridge, SW1A 0AA',
             lat: 51.5007,
             lng: -0.1246,
             day: 'd3',
             category: 'interes',
             emoji: '🏛️',
-            desc: 'Las fotos más icónicas del viaje y paseo por Whitehall.',
+            desc: 'Las fotos más icónicas del viaje: Big Ben, el Parlamento y el puente con el London Eye enfrente.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Big_Ben_and_Houses_of_Parliament%2C_London_-_UK.jpg/640px-Big_Ben_and_Houses_of_Parliament%2C_London_-_UK.jpg'
         },
 
@@ -1621,7 +1621,7 @@
             day: 'd3',
             category: 'interes',
             emoji: '👑',
-            desc: 'Cambio de Guardia a las 10:00h con banda musical en directo.',
+            desc: 'Cambio de Guardia a las 11:00 con banda musical en directo · llegar sobre las 10:00.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Buckingham_Palace_during_Queen_Elizabeth_II_Golden_Jubilee%2C_2002.jpg/640px-Buckingham_Palace_during_Queen_Elizabeth_II_Golden_Jubilee%2C_2002.jpg'
         },
 
@@ -1634,21 +1634,8 @@
             day: 'd3',
             category: 'interes',
             emoji: '🍽️',
-            desc: 'Zona de Victoria para almorzar antes de Hyde Park.',
+            desc: 'Zona de Victoria para comer antes de Winter Wonderland.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Victoria_station_interior.jpg/640px-Victoria_station_interior.jpg'
-        },
-
-        {
-            id: 'harrods',
-            name: 'Harrods (Fachada iluminada)',
-            address: '87-135 Brompton Rd, SW1X 7XL',
-            lat: 51.4994,
-            lng: -0.1632,
-            day: 'd3',
-            category: 'tiendas',
-            emoji: '🏬',
-            desc: 'Fachada con 11.500 bombillas encendidas y escaparates mágicos.',
-            photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Harrods_London_at_Christmas.jpg/640px-Harrods_London_at_Christmas.jpg'
         },
 
         {
@@ -1876,21 +1863,19 @@
             { move: 'metro', text: 'Vuelta hacia las 17:30, antes de que los niños estén agotados: metro Piccadilly DIRECTO de Covent Garden a Hammersmith, sin trasbordo (unos 20 min; esta estación solo tiene ascensores, ideal con carrito). O taxi negro: unos 30 min y £22–26.' }
           ],
           gf: 'Free From Bakehouse y Khanom Krok (en Borough Market, 100 % sin gluten) · Wagamama Tower Bridge · Bancone (Covent Garden).' },
-        d3: { title: 'Día 3 · Lunes 7 Dic', zone: 'Westminster · Buckingham · Victoria · Harrods · Hyde Park', back: '🚕 Vuelta £13–17', grad: '#2ecc71,#239b56',
-          note: '⚠️ HOY SE SALE A LAS 9:00 para coger buen sitio en el Cambio de Guardia.',
+        d3: { title: 'Día 3 · Lunes 7 Dic', zone: 'Buckingham · Westminster · Victoria · Hyde Park Winter Wonderland', back: '🚕 Vuelta £13–17 · o metro Piccadilly directo', grad: '#2ecc71,#239b56',
+          note: '⚠️ HOY SE SALE A LAS 9:15 para coger buen sitio en el Cambio de Guardia (empieza a las 11:00).',
           steps: [
-            { t: '09:00', icon: '🚇', title: 'Metro Hammersmith → Westminster', text: 'District directo, sin trasbordo (unos 20 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd3i' },
-            { move: 'walk', min: 2, text: 'Sal por la salida «Houses of Parliament / Westminster Bridge»: el Big Ben está enfrente.', to: 'big_ben' },
-            { t: '09:30', n: 'big_ben', icon: '🏛️', title: 'Big Ben, Westminster Bridge y Parliament Square', text: 'Las fotos más famosas del viaje. Desde el puente se ve el London Eye.' },
-            { move: 'walk', min: 15, text: 'Cruza Parliament Square y sigue por Birdcage Walk, junto a St James’s Park, hasta el palacio.', from: 'big_ben', to: 'buckingham' },
-            { t: '10:00', n: 'buckingham', icon: '👑', title: 'Cambio de Guardia · Buckingham Palace ⭐⭐', text: 'Llegar a las 10:00–10:15 para coger sitio junto a las verjas o en el monumento a la Reina Victoria. La ceremonia empieza a las 11:00 y dura unos 45 min. Es gratis. Comprobad el día en el calendario oficial (se confirma unas 6 semanas antes; si llueve mucho puede acortarse).' },
-            { move: 'walk', min: 15, text: 'Baja por Buckingham Palace Road hasta la zona de Victoria.', from: 'buckingham', to: 'almuerzo_victoria' },
-            { t: '12:30', n: 'almuerzo_victoria', icon: '🍽️', title: 'Comida en Victoria / Pimlico', text: 'Zona tranquila y con precios razonables. Sin gluten: Al Duca (italiano) o Casa do Frango.' },
-            { move: 'taxi', text: 'A Harrods: taxi o bus 10 min (≈£10 el taxi), o 25 min andando por Grosvenor Place y Knightsbridge.', from: 'almuerzo_victoria', to: 'harrods' },
-            { t: '14:00', n: 'harrods', icon: '🏬', title: 'Harrods', text: 'Fachada con miles de bombillas y escaparates navideños. Se puede entrar a ver la sección de comida.', today: 'lunes 10:00–21:00' },
-            { move: 'walk', min: 15, text: 'Sube por Knightsbridge hasta Hyde Park Corner y entra en el parque: Winter Wonderland está a la derecha.', from: 'harrods', to: 'hyde_park' },
-            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', mapa: 'winter-wonderland/', text: 'Noria, pista de hielo, atracciones y más de 100 puestos. Ros García: entradas RESERVADAS (entrar de 15:00 a 16:00, con 4 pases ilimitados de Santa Land); están en 🎟️ Entradas. Los demás: reservad online una franja de entrada; la pista de hielo va aparte.', today: '10:00–22:00 · entrar de 15:00 a 16:00', tickets: 'hyde_park' },
-            { move: 'taxi', text: 'Taxi desde Knightsbridge / Hyde Park Corner a Hammersmith: unos 15 min y £13–17.' }
+            { t: '09:15', icon: '🚇', title: 'Metro Hammersmith → St James’s Park', text: 'District directo, sin trasbordo (unos 18 min). En «Rutas de Metro» tienes el paso a paso.', metro: 'd3i' },
+            { move: 'walk', min: 10, text: 'Sal por Petty France / Broadway, baja por Queen Anne’s Gate hasta Birdcage Walk y sigue junto a St James’s Park hasta el palacio.', to: 'buckingham' },
+            { t: '10:00', n: 'buckingham', icon: '👑', title: 'Cambio de Guardia · Buckingham Palace ⭐⭐', text: 'Llegar sobre las 10:00–10:15 para coger sitio junto a las verjas o en el monumento a la Reina Victoria. La ceremonia empieza a las 11:00 y dura unos 45 min. Es gratis. Comprobad el día en el calendario oficial (se confirma unas 6 semanas antes; si llueve mucho puede acortarse).' },
+            { move: 'walk', min: 15, text: 'Vuelve por Birdcage Walk, junto a St James’s Park, hasta Parliament Square: el Big Ben aparece al fondo.', from: 'buckingham', to: 'big_ben' },
+            { t: '12:00', n: 'big_ben', icon: '🏛️', title: 'Big Ben, Parlamento y Westminster Bridge', text: 'Las fotos más famosas del viaje: el Big Ben, el Parlamento desde Parliament Square y el paseo por Westminster Bridge con el London Eye enfrente.' },
+            { move: 'walk', min: 15, text: 'Por Victoria Street, dejando a la izquierda la Abadía de Westminster, hasta la zona de Victoria.', from: 'big_ben', to: 'almuerzo_victoria' },
+            { t: '13:15', n: 'almuerzo_victoria', icon: '🍽️', title: 'Comida en Victoria / Pimlico', text: 'Zona tranquila y con precios razonables. Sin gluten: Al Duca (italiano) o Casa do Frango.' },
+            { move: 'taxi', text: 'A Hyde Park Corner: taxi unos 10 min (≈£10) o 20 min andando por Grosvenor Place. Entrad al parque: Winter Wonderland está a unos 10 min.', from: 'almuerzo_victoria', to: 'hyde_park' },
+            { t: '15:00', n: 'hyde_park', icon: '🎡', title: 'Hyde Park Winter Wonderland ⭐⭐', mapa: 'winter-wonderland/', text: 'Toda la tarde aquí. Noria, pista de hielo, atracciones y más de 100 puestos. Ros García: entradas RESERVADAS (entrar de 15:00 a 16:00, con 4 pases ilimitados de Santa Land); están en 🎟️ Entradas. Los demás: reservad online una franja de entrada; la pista de hielo va aparte.', today: '10:00–22:00 · entrar de 15:00 a 16:00', tickets: 'hyde_park' },
+            { move: 'taxi', text: 'Vuelta en taxi desde Hyde Park Corner a Hammersmith: unos 15 min y £13–17. O metro: Piccadilly DIRECTO de Hyde Park Corner a Hammersmith, sin trasbordo (unos 15 min; en «Rutas de Metro», botón Vuelta).', metro: 'd3v' }
           ],
           gf: 'Al Duca (Willow Place, Victoria): italiano con amplio menú sin gluten · Casa do Frango Victoria.' },
         d4: { title: 'Día 4 · Martes 8 Dic', zone: 'Notting Hill · Kensington · Royal Albert Hall · Harrods · Battersea', back: '🚕 Vuelta £13–15', grad: '#9b59b6,#7d3c98',
@@ -1905,9 +1890,9 @@
             { move: 'walk', min: 10, text: 'Baja por Exhibition Road (pasarás junto a los museos) hasta South Kensington.', from: 'royal_albert', to: 'almuerzo_skensington' },
             { t: '13:15', n: 'almuerzo_skensington', icon: '🍽️', title: 'Comida en South Kensington', text: 'Old Brompton Road y alrededores: buenas opciones y precios razonables. Sin gluten: Zizzi Kensington.' },
             { move: 'walk', min: 15, text: 'Por Brompton Road hasta Harrods, viendo escaparates navideños.', from: 'almuerzo_skensington', to: 'harrods_toy' },
-            { t: '14:30', n: 'harrods_toy', icon: '🛍️', title: 'Harrods · Toy Kingdom', text: 'El reino de los juguetes de Harrods y su fachada iluminada. Unos 45 min con calma.', today: 'martes 10:00–21:00' },
+            { t: '14:30', n: 'harrods_toy', icon: '🛍️', title: 'Harrods entero · Toy Kingdom, Food Halls y fachada ⭐', text: 'Hoy toca Harrods completo: el Toy Kingdom (4.ª planta), los Food Halls de la planta baja, los escaparates navideños y la fachada con miles de bombillas, que luce al anochecer (sobre las 15:50). Calculad 1 h – 1 h 30 con calma.', today: 'martes 10:00–21:00' },
             { move: 'taxi', text: 'A Battersea en taxi: unos 15 min (≈£10–15). Andando son unos 40 min: no merece la pena.', from: 'harrods_toy', to: 'battersea' },
-            { t: '16:00', n: 'battersea', icon: '⚡', title: 'Battersea Power Station · mercadillo navideño ⭐⭐', mapa: 'mapa-battersea/', text: 'La antigua central eléctrica iluminada junto al río, con tiendas y mercadillo navideño.', today: 'mercadillo 11:00–20:00' },
+            { t: '16:15', n: 'battersea', icon: '⚡', title: 'Battersea Power Station · mercadillo navideño ⭐⭐', mapa: 'mapa-battersea/', text: 'La antigua central eléctrica iluminada junto al río, con tiendas y mercadillo navideño.', today: 'mercadillo 11:00–20:00' },
             { move: 'taxi', text: 'Taxi de Battersea a Hammersmith: unos 15 min y £13–15.' }
           ],
           gf: 'Libby’s Bakery (Notting Hill, 100 % sin gluten) · Los Mochis (Notting Hill, 100 % sin gluten) · Zizzi Kensington.' }
@@ -1946,7 +1931,7 @@
                 const ic = st.move === 'walk' ? '🚶' : st.move === 'taxi' ? '🚕' : st.move === 'metro' ? '🚇' : '⛴️';
                 const mode = st.move === 'walk' ? 'walking' : st.move === 'taxi' ? 'driving' : 'transit';
                 const link = st.to ? '<a class="itin-go" target="_blank" rel="noopener" href="' + gDir(st.from, st.to, mode) + '">🗺️ Ver el camino</a>' : '';
-                h += '<div class="itin-move"><div class="mv-ic">' + ic + '</div><div class="mv-tx"><b>Cómo ir' + (st.min ? ' · ' + st.min + ' min' : '') + ':</b> ' + st.text + link + '</div></div>';
+                h += '<div class="itin-move"><div class="mv-ic">' + ic + '</div><div class="mv-tx"><b>Cómo ir' + (st.min ? ' · ' + st.min + ' min' : '') + ':</b> ' + st.text + link + (st.metro ? '<a class="itin-go" href="metro/?v=7&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '') + '</div></div>';
                 return;
             }
             const loc = st.n ? locById(st.n) : null;
@@ -1955,7 +1940,7 @@
             h += '<div class="itinerary-item ' + day + '"><span class="itinerary-time">' + st.t + '</span><span class="itinerary-icon">' + (num || st.icon) + '</span><div class="itinerary-details">'
               + (st.mapa ? '<h4 class="h4-map"><span>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</span><a class="itin-mapa" href="' + st.mapa + '" aria-label="Ver el mapa de ' + st.title.replace(/[⭐"]/g, '').trim() + '" title="Ver el mapa">🗺️</a></h4>' : '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4>') + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
               + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
-              + (st.metro ? '<a class="itin-go" href="metro/?v=6&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
+              + (st.metro ? '<a class="itin-go" href="metro/?v=7&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
               + '</div></div>';
         });
         if (D.gf) h += '<div class="itin-gf"><b>🌾 Sin gluten hoy:</b> ' + D.gf + '</div>';

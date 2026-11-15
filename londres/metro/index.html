@@ -165,7 +165,7 @@ const HOME={name:'Hammersmith',hint:/dist|picc/i};
 const DAYS=[
  {n:'D1',date:'2026-12-05',label:'Sábado 5 dic',zone:'South Bank · Covent Garden',col:'#e74c3c',to:{name:'Waterloo'}},
  {n:'D2',date:'2026-12-06',label:'Domingo 6 dic',zone:'Borough Market · Tower Bridge',col:'#3498db',to:{name:'London Bridge'}},
- {n:'D3',date:'2026-12-07',label:'Lunes 7 dic',zone:'Westminster · Buckingham',col:'#2ecc71',to:{name:'Westminster'},extra:{label:'Tramo opcional: Green Park → Hyde Park Corner',a:{name:'Green Park'},b:{name:'Hyde Park Corner'}}},
+ {n:'D3',date:'2026-12-07',label:'Lunes 7 dic',zone:'Buckingham · Westminster · Hyde Park',col:'#2ecc71',to:{name:"St. James's Park"},back:'Vuelta desde Hyde Park Corner'},
  {n:'D4',date:'2026-12-08',label:'Martes 8 dic',zone:'Notting Hill · Kensington',col:'#9b59b6',to:{name:'Notting Hill Gate'}}
 ];
 /* ===== RUTAS FIJAS DE CADA DÍA (escritas a mano; TfL las confirma en segundo plano) ===== */
@@ -202,18 +202,14 @@ const ROUTES={
    {t:'change',at:'Westminster',to:'district',x:CH_WM_DIS},
    Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
    {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
- d3i:{a:'Hammersmith',b:'Westminster',min:'unos 20 min',changes:0,lines:['district'],steps:[
+ d3i:{a:'Hammersmith',b:"St. James's Park",min:'unos 18 min',changes:0,lines:['district'],steps:[
    {t:'enter',x:ENTER_HAM},
-   Object.assign({t:'ride',board:'Hammersmith',alight:'Westminster',stops:D_HAM_WM,min:17},D_EAST),
-   {t:'exit',x:'Al salir, sigue los carteles hacia Houses of Parliament / Westminster Bridge. El Big Ben está justo enfrente.'}]},
- d3v:{a:'Westminster',b:'Hammersmith',min:'unos 20 min',changes:0,lines:['district'],steps:[
-   {t:'enter',x:'Entra en la estación de Westminster y sigue los carteles verdes de la línea District.'},
-   Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
+   Object.assign({t:'ride',board:'Hammersmith',alight:"St. James's Park",stops:D_HAM_WM.slice(0,-1),min:16},D_EAST),
+   {t:'exit',x:'Sal por la salida de Petty France / Broadway y baja hacia St James’s Park por Queen Anne’s Gate y Birdcage Walk: Buckingham Palace está a unos 10 min andando.'}]},
+ d3v:{a:'Hyde Park Corner',b:'Hammersmith',min:'unos 15 min',changes:0,lines:['piccadilly'],steps:[
+   {t:'enter',x:'Desde Winter Wonderland, sal del parque por Hyde Park Corner y entra en la estación de metro (los accesos están en los pasos subterráneos). Sigue los carteles azul oscuro de la línea Piccadilly.'},
+   {t:'ride',line:'piccadilly',board:'Hyde Park Corner',platform:'Westbound (dirección oeste)',trains:'Cualquier tren de la Piccadilly en dirección Heathrow, Uxbridge o Rayners Lane.',alight:'Hammersmith',stops:['Knightsbridge','South Kensington','Gloucester Road',"Earl's Court",'Barons Court','Hammersmith'],min:12},
    {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
- d3x:{a:'Green Park',b:'Hyde Park Corner',min:'unos 5 min',changes:0,lines:['piccadilly'],steps:[
-   {t:'enter',x:'Entra en la estación de Green Park y sigue los carteles azul oscuro de la línea Piccadilly.'},
-   {t:'ride',line:'piccadilly',board:'Green Park',platform:'Westbound (dirección oeste)',trains:'Cualquier tren de la Piccadilly en dirección Heathrow, Uxbridge o Rayners Lane.',alight:'Hyde Park Corner',stops:['Hyde Park Corner'],min:2},
-   {t:'exit',x:'Sal hacia Hyde Park. El Winter Wonderland está a unos 10 min andando por el parque.'}]},
  d4i:{a:'Hammersmith',b:'Notting Hill Gate',min:'unos 18 min',changes:1,lines:['district','district'],steps:[
    {t:'enter',x:ENTER_HAM},
    Object.assign({t:'ride',board:'Hammersmith',alight:"Earl's Court",stops:['Barons Court','West Kensington',"Earl's Court"],min:6},D_EAST),
@@ -382,7 +378,7 @@ function closeRoute(){ $('#route').hidden=true; $('#home').hidden=false; showLas
 window.addEventListener('popstate',()=>{ if(!$('#route').hidden) closeRoute(); });
 /* Busca la estación por nombre en TfL (y la recuerda para no repetir) */
 /* Códigos oficiales (NaPTAN) de las estaciones del viaje: no dependen de ninguna búsqueda */
-const KNOWN={hammersmith:'940GZZLUHSD',waterloo:'940GZZLUWLO',londonbridge:'940GZZLULNB',westminster:'940GZZLUWSM',nottinghillgate:'940GZZLUNHG',earlscourt:'940GZZLUECT',greenpark:'940GZZLUGPK',hydeparkcorner:'940GZZLUHPC'};
+const KNOWN={hammersmith:'940GZZLUHSD',waterloo:'940GZZLUWLO',londonbridge:'940GZZLULNB',westminster:'940GZZLUWSM',nottinghillgate:'940GZZLUNHG',earlscourt:'940GZZLUECT',greenpark:'940GZZLUGPK',stjamesspark:'940GZZLUSJP',hydeparkcorner:'940GZZLUHPC'};
 async function resolveSt(st){
   if(KNOWN[norm(st.name)]) return {id:KNOWN[norm(st.name)],name:st.name};
   const key='metro.st2.'+norm(st.name)+(st.hint?'.h':'');
@@ -409,7 +405,7 @@ function renderDays(){
   const today=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/London'});
   $('#days').innerHTML='<p class="base">🏠 Salís de <b style="color:#f8fafc">Hammersmith</b> (líneas District y Piccadilly, a 5 min del apartamento).</p>'+
   DAYS.map((d,i)=>'<div class="day'+(d.date===today?' today':'')+'"><div class="dh"><span class="dn" style="background:'+d.col+'">'+d.n+'</span><div class="dt">'+esc(d.label)+'<small>'+esc(d.zone)+'</small></div>'+(d.date===today?'<span class="hoy">HOY</span>':'')+'</div>'+
-    '<div class="trip">Hammersmith → '+esc(d.to.name)+'</div>'+
+    '<div class="trip">Hammersmith → '+esc(d.to.name)+(d.back?'<br><small>'+esc(d.back)+'</small>':'')+'</div>'+
     '<div class="bt"><button type="button" class="btn ida" data-day="'+i+'" data-way="ida">Ida</button><button type="button" class="btn" data-day="'+i+'" data-way="vuelta">Vuelta</button></div>'+
     (d.extra?'<button type="button" class="btn" data-day="'+i+'" data-way="extra" style="min-height:48px">'+esc(d.extra.label)+'</button>':'')+
     '</div>').join('');
