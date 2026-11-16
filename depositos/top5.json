@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-09T08:41:45+01:00",
- "fechaTexto": "lunes 9 de noviembre",
+ "actualizado": "2026-11-16T08:41:51+01:00",
+ "fechaTexto": "lunes 16 de noviembre",
  "estado": "ok",
  "top": [],
  "anteriores": [
@@ -33,6 +33,9 @@
    }
   }
  ],
- "fuentes": [],
- "nota": "Hoy tampoco se ha podido actualizar el ranking: la herramienta para abrir páginas web no estaba disponible en esta revisión automática y las búsquedas solo devolvían títulos de artículos (por ejemplo, rankings de noviembre «hasta 3,75 % TAE» en Rankia y «hasta 3,50 % TAE» en HelpMyCash), sin el banco, la TAE, el plazo ni las condiciones de cada depósito. Para no publicar datos sin verificar, el ranking queda vacío hasta la próxima revisión. El último ranking comprobado (lunes 26 de octubre) lo encabezaba MyInvestor con un 3,00 % TAE a 12 meses, pero esa promoción terminaba el 31 de octubre."
+ "fuentes": [
+  "helpmycash.com",
+  "rankia.com"
+ ],
+ "nota": "Hoy no se ha podido actualizar el ranking: en esta revisión automática no estaba disponible la herramienta para abrir páginas web, y las búsquedas solo devolvían títulos de artículos (rankings de noviembre de 2026 en HelpMyCash y Rankia, entre ellos uno de «depósitos al 3 % TAE»), sin el banco, la TAE, el plazo ni las condiciones de cada depósito. Para no publicar datos sin verificar, el ranking queda vacío hasta la próxima revisión. El último ranking comprobado (lunes 26 de octubre) lo encabezaba MyInvestor con un 3,00 % TAE a 12 meses, pero esa promoción terminaba el 31 de octubre."
 }
