@@ -80,6 +80,25 @@ label.lb{font-size:15px;font-weight:800}
 .day .bt .btn.ida{background:var(--accent);border-color:var(--accent);color:#fff}
 .day .extra{font-size:14px;font-weight:700;color:var(--muted)}
 .base{font-size:15px;font-weight:700;color:var(--muted);line-height:1.45;padding:2px 2px 0}
+/* Billetes: Oyster y tarifas */
+.oy{background:var(--card);border:1.5px solid var(--warn);border-radius:18px;margin-bottom:10px}
+.oy>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:14px;min-height:56px;font-size:17px;font-weight:800}
+.oy>summary::-webkit-details-marker{display:none}
+.oy>summary small{display:block;font-size:13px;font-weight:700;color:var(--muted)}
+.oy>summary .ch{margin-left:auto;font-size:20px;transition:transform .2s}
+.oy[open]>summary .ch{transform:rotate(180deg)}
+.oy-b{padding:0 14px 14px;display:flex;flex-direction:column;gap:12px}
+.oy-b h3{margin:4px 0 0;font-size:16px;font-weight:800;color:var(--warn)}
+.oy-b p,.oy-b li{margin:0;font-size:15px;font-weight:600;line-height:1.45;color:var(--ink)}
+.oy-b ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.oy-who{display:flex;flex-direction:column;gap:8px}
+.oy-who div{background:var(--card2);border-radius:14px;padding:10px 12px}
+.oy-who b{display:block;font-size:16px}
+.oy-who span{display:block;font-size:14px;font-weight:600;color:var(--muted);margin-top:2px}
+.oy-who em{font-style:normal;color:var(--ok);font-weight:800}
+.oy-say{background:#fff;color:#0f172a;border-radius:14px;padding:12px 14px;font-size:16px;font-weight:700;line-height:1.4}
+.oy-say small{display:block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#64748b;margin-bottom:4px}
+.oy-note{font-size:13px!important;color:var(--muted)!important}
 .opt{padding:14px;border-radius:16px;background:#0c2a3a;border:2px solid #38bdf8}
 .opt h3{margin:0 0 6px;font-size:17px;color:#7dd3fc}
 .opt p{margin:6px 0 0;font-size:16px;font-weight:700;line-height:1.45}
@@ -98,6 +117,38 @@ label.lb{font-size:15px;font-weight:800}
       <p class="sub">Toca el día y te digo cómo ir · v4</p>
     </div>
   </header>
+
+  <details class="oy" id="oyster">
+    <summary><span style="font-size:26px">💳</span><span>Billetes: Oyster y tarifas<small>Qué tarjeta usa cada uno y cuánto cuesta</small></span><span class="ch" aria-hidden="true">⌄</span></summary>
+    <div class="oy-b">
+      <div class="oy-who">
+        <div><b>Menores de 11 años</b><span><em>Gratis</em>, viajando con un adulto que paga. No necesitan tarjeta.</span></div>
+        <div><b>De 11 a 15 años</b><span>Tarjeta Oyster con el descuento <b style="display:inline;font-size:inherit">Young Visitor</b>. Un trayecto en zonas 1–2: £1,55 (fuera de hora punta) o £1,80 (hora punta). Tope diario: £4,45.</span></div>
+        <div><b>De 16 años en adelante</b><span>Tarjeta bancaria sin contacto (o el móvil). Un trayecto en zonas 1–2: £3,10 o £3,60 en hora punta. Tope diario: £8,90.</span></div>
+      </div>
+      <ul>
+        <li>Cada uno pasa su propia tarjeta al entrar y al salir.</li>
+        <li>El cambio de línea dentro de la estación cuenta como el mismo trayecto.</li>
+        <li>Al llegar al tope diario, el resto de viajes de ese día salen gratis.</li>
+      </ul>
+
+      <h3>Cómo sacar la Oyster de 11 a 15 años</h3>
+      <ul>
+        <li>En la estación de Hammersmith (District y Piccadilly), pedid ayuda junto a las máquinas.</li>
+        <li>Comprad una Oyster azul por cada niño: £7 la tarjeta, más el saldo que carguéis.</li>
+        <li>Antes de viajar, pedid al personal que active <b>Young Visitor</b>. Los niños tienen que estar delante, con un adulto. No piden documentación.</li>
+        <li>El descuento dura 14 días y deja tarifas y topes a la mitad.</li>
+      </ul>
+      <div class="oy-say"><small>Para decírselo al personal</small>Could you help us buy standard Oyster cards for these children and add the Young Visitor discount to each card, please?</div>
+
+      <h3>¿Compensa el billete de grupo?</h3>
+      <p>Para el centro (zonas 1 y 2), no: la Group Day Travelcard cuesta desde £11 por adulto y £5,50 por menor de 16, y con pago por uso el día nunca pasa de £8,90 y £4,45. Solo tendría sentido para zonas más lejanas: cubre de la 1 a la 6, exige 10 viajeros de pago juntos y entre semana vale desde las 9:30. Además, con ese billete los niños de 5 a 10 años dejan de viajar gratis.</p>
+
+      <h3>Cuánto saldrá el metro (4 días)</h3>
+      <p>Contando dos trayectos al día en zonas 1 y 2: <b>£24,80–£26,80</b> por persona de 16 años o más y <b>£12,40–£13,40</b> de 11 a 15 años, más £7 por cada Oyster. Los menores de 11, gratis. Sin contar los aeropuertos.</p>
+      <p class="oy-note">Datos de la guía del grupo, con tarifas de 2026. Antes de salir, mirad el estado del metro en TfL.</p>
+    </div>
+  </details>
 
   <div id="lastBox"></div>
   <div id="days"></div>
