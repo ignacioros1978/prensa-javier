@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-11-16T08:41:51+01:00",
- "fechaTexto": "lunes 16 de noviembre",
+ "actualizado": "2026-11-23T08:41:55+01:00",
+ "fechaTexto": "lunes 23 de noviembre",
  "estado": "ok",
  "top": [],
  "anteriores": [
@@ -37,5 +37,5 @@
   "helpmycash.com",
   "rankia.com"
  ],
- "nota": "Hoy no se ha podido actualizar el ranking: en esta revisión automática no estaba disponible la herramienta para abrir páginas web, y las búsquedas solo devolvían títulos de artículos (rankings de noviembre de 2026 en HelpMyCash y Rankia, entre ellos uno de «depósitos al 3 % TAE»), sin el banco, la TAE, el plazo ni las condiciones de cada depósito. Para no publicar datos sin verificar, el ranking queda vacío hasta la próxima revisión. El último ranking comprobado (lunes 26 de octubre) lo encabezaba MyInvestor con un 3,00 % TAE a 12 meses, pero esa promoción terminaba el 31 de octubre."
+ "nota": "Hoy no se ha podido actualizar el ranking: en esta revisión automática no estaba disponible la herramienta para abrir páginas web, y las búsquedas solo devolvían títulos de artículos, sin las condiciones completas de cada depósito. Entre esos títulos, Rankia anunciaba que WiZink ha activado un depósito al 3,30 % TAE a 18 meses por Black Friday, y que SME Bank y Mano Bank pagan un 3,40 % a un año (estos dos son bancos lituanos sin IBAN español, así que no entrarían). Para no publicar datos sin verificar (TIN, importes y condiciones), el ranking queda vacío hasta la próxima revisión."
 }
