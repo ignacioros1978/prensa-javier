@@ -1061,7 +1061,7 @@
             <div class="progress-bar-segment" style="background:#9b59b6;" title="Día 4"></div>
         </div>
         <div class="hb4">
-            <a href="metro/?v=8" class="hb4b" style="background:#e74c3c">🚇 Rutas de Metro</a>
+            <a href="metro/?v=9" class="hb4b" style="background:#e74c3c">🚇 Rutas de Metro</a>
             <button type="button" onclick="openTravel()" class="hb4b" style="background:#1d4ed8">✈️ Vuelos y traslados</button>
             <button type="button" onclick="openSeguro()" class="hb4b" style="background:#15803d">🛡️ Seguro de viaje</button>
             <button type="button" onclick="openEntradas()" class="hb4b" style="background:#7c3aed">🎟️ Entradas</button>
@@ -1229,12 +1229,12 @@
             id: 'base',
             name: 'Lamington Apartments',
             address: '109 Hammersmith Grove, W6 0NQ',
-            lat: 51.4933,
-            lng: -0.2243,
+            lat: 51.49802,
+            lng: -0.22766,
             day: 'base',
             category: 'servicios',
             emoji: '🏠',
-            desc: 'Base familiar del viaje. Apartamento en Hammersmith.',
+            desc: 'Base familiar del viaje. Oficina de Lamington en 109 Hammersmith Grove (sus apartamentos están repartidos por varias casas de la zona). A unos 10 min andando del metro de Hammersmith.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hammersmith_Grove_-_geograph.org.uk_ -_1739502.jpg/640px-Hammersmith_Grove_-_geograph.org.uk_-_1739502.jpg'
         },
         // SERVICIOS Y METRO
@@ -1252,15 +1252,44 @@
         },
         {
             id: 'tesco',
-            name: 'Tesco Express',
-            address: 'Hammersmith Grove',
-            lat: 51.4930,
-            lng: -0.2235,
+            name: 'Tesco Superstore',
+            address: '180 Shepherds Bush Rd, W6 7NL',
+            lat: 51.49769,
+            lng: -0.22398,
             day: 'all',
             category: 'servicios',
             emoji: '🛒',
-            desc: 'Supermercado cercano para compras rápidas y desayunos.',
+            desc: 'El supermercado grande más cercano: unos 260 m en línea recta desde el apartamento (unos 4–5 min andando).',
+            hours: 'Lun–sáb 8:00–22:00 · dom 10:00–16:00',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Tesco_Express%2C_Salisbury_%281%29.jpg/640px-Tesco_Express%2C_Salisbury_%281%29.jpg'
+        },
+        {
+            id: 'sainsburys_local',
+            name: "Sainsbury's Local",
+            address: '48–50 Shepherds Bush Rd, W6 7PH',
+            lat: 51.50118,
+            lng: -0.22228,
+            day: 'all',
+            category: 'servicios',
+            emoji: '🛒',
+            desc: 'Supermercado pequeño, el segundo más cercano: unos 510 m en línea recta (unos 7–8 min andando). Abre todos los días hasta las 23:00.',
+            hours: 'Todos los días 7:00–23:00',
+            photo: ''
+        },
+        {
+            id: 'broadway_sc',
+            name: 'Hammersmith Broadway Shopping Centre',
+            address: 'Hammersmith Broadway, W6 9YE',
+            lat: 51.49221,
+            lng: -0.22456,
+            day: 'all',
+            category: 'servicios',
+            emoji: '🏬',
+            desc: 'Centro comercial encima de la estación de metro (District y Piccadilly). Dentro: Tesco Express, Sainsbury’s Local, Boots, McDonald’s, Greggs y cafés. Aseos públicos (50p) y cambiador de bebés en la planta baja, al fondo, junto a Tesco. A unos 680 m en línea recta del apartamento.',
+            hours: 'Lun–vie 8:00–20:00 · sáb 10:00–19:00 · dom 11:00–18:00 (en Navidad y cada tienda pueden variar)',
+            plano: 'https://www.hammersmithbroadway.co.uk/media/fsqkxd5h/hammersmith_goad_aug2026.png',
+            web: 'https://www.hammersmithbroadway.co.uk/your-visit',
+            photo: ''
         },
 
         {
@@ -1931,7 +1960,7 @@
                 const ic = st.move === 'walk' ? '🚶' : st.move === 'taxi' ? '🚕' : st.move === 'metro' ? '🚇' : '⛴️';
                 const mode = st.move === 'walk' ? 'walking' : st.move === 'taxi' ? 'driving' : 'transit';
                 const link = st.to ? '<a class="itin-go" target="_blank" rel="noopener" href="' + gDir(st.from, st.to, mode) + '">🗺️ Ver el camino</a>' : '';
-                h += '<div class="itin-move"><div class="mv-ic">' + ic + '</div><div class="mv-tx"><b>Cómo ir' + (st.min ? ' · ' + st.min + ' min' : '') + ':</b> ' + st.text + link + (st.metro ? '<a class="itin-go" href="metro/?v=8&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '') + '</div></div>';
+                h += '<div class="itin-move"><div class="mv-ic">' + ic + '</div><div class="mv-tx"><b>Cómo ir' + (st.min ? ' · ' + st.min + ' min' : '') + ':</b> ' + st.text + link + (st.metro ? '<a class="itin-go" href="metro/?v=9&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '') + '</div></div>';
                 return;
             }
             const loc = st.n ? locById(st.n) : null;
@@ -1940,7 +1969,7 @@
             h += '<div class="itinerary-item ' + day + '"><span class="itinerary-time">' + st.t + '</span><span class="itinerary-icon">' + (num || st.icon) + '</span><div class="itinerary-details">'
               + (st.mapa ? '<h4 class="h4-map"><span>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</span><a class="itin-mapa" href="' + st.mapa + '" aria-label="Ver el mapa de ' + st.title.replace(/[⭐"]/g, '').trim() + '" title="Ver el mapa">🗺️</a></h4>' : '<h4>' + circ + (st.num ? st.icon + ' ' : '') + st.title + '</h4>') + (st.tickets ? ticketBtn(st.tickets) : '') + '<p>' + st.text + '</p>'
               + (st.today ? '<p class="itin-hours">🕒 Ese día: ' + st.today + '</p>' : (loc && loc.hours ? '<p class="itin-hours">🕒 ' + loc.hours + '</p>' : ''))
-              + (st.metro ? '<a class="itin-go" href="metro/?v=8&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
+              + (st.metro ? '<a class="itin-go" href="metro/?v=9&r=' + st.metro + '">🚇 Ver la ruta paso a paso</a>' : '')
               + '</div></div>';
         });
         if (D.gf) h += '<div class="itin-gf"><b>🌾 Sin gluten hoy:</b> ' + D.gf + '</div>';
@@ -2600,7 +2629,7 @@
                 + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
                 + (loc.hours ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#fff7ed;border:1px solid #fed7aa;font-size:12px;color:#7c2d12;line-height:1.4;"><b>🕒 Horario:</b> ' + loc.hours + '</div>' : '')
-                + directionsBtn + photosBtn + checkboxHtml
+                + directionsBtn + (loc.plano ? '<button onclick="viewImg(\'' + loc.plano + '\')" style="width:100%;margin-top:6px;padding:8px 10px;background:#7c3aed;color:#fff;border:0;border-radius:8px;font-size:0.78rem;font-weight:700;cursor:pointer;">🗺️ Plano del centro comercial</button>' : '') + photosBtn + checkboxHtml
                 + '</div>';
 
             marker.bindPopup(infoContent, { maxWidth: 250, autoPanPaddingTopLeft: L.point(12, 70), autoPanPaddingBottomRight: L.point(12, 78) });
@@ -2625,7 +2654,11 @@
 
     function centerMapOnDay(dayFilter) {
         if (!gMap) return;
-        if (dayFilter === 'all' || dayFilter === 'base') {
+        if (dayFilter === 'base') {
+            gMap.setView([51.4955, -0.2255], 16);
+            return;
+        }
+        if (dayFilter === 'all') {
             gMap.setView([51.505, -0.13], 13);
             return;
         }
@@ -2671,15 +2704,17 @@
                     <div class="card-grid">
                         <div class="mini-card">
                             <h5>🚇 Metro Hammersmith</h5>
-                            <p>Líneas District y Piccadilly (a 5 min).</p>
+                            <p>Líneas District y Piccadilly, dentro del centro comercial Broadway (unos 10 min andando).</p>
                         </div>
                         <div class="mini-card">
-                            <h5>🛒 Tesco Express & Boots</h5>
-                            <p>Para compras rápidas y farmacia.</p>
+                            <h5>🛒 Supermercados más cercanos</h5>
+                            <p>Tesco Superstore (180 Shepherds Bush Rd): ~260 m. Sainsbury's Local (48–50 Shepherds Bush Rd): ~510 m. Distancias en línea recta.</p>
                         </div>
                         <div class="mini-card">
-                            <h5>🍔 McDonald's 24h</h5>
-                            <p>En Hammersmith Broadway.</p>
+                            <h5>🏬 Broadway Shopping Centre</h5>
+                            <p>Tesco Express, Sainsbury's, Boots, McDonald's 24h y aseos.</p>
+                            <button type="button" onclick="viewImg('https://www.hammersmithbroadway.co.uk/media/fsqkxd5h/hammersmith_goad_aug2026.png')" style="margin-top:6px;width:100%;padding:8px;border:0;border-radius:8px;background:#7c3aed;color:#fff;font-weight:700;cursor:pointer">🗺️ Ver plano</button>
+                            <a href="https://www.hammersmithbroadway.co.uk/your-visit" target="_blank" rel="noopener" style="display:block;margin-top:4px;font-size:.75rem;text-align:center">Plano en la web del centro</a>
                         </div>
                         <div class="mini-card">
                             <h5>🏥 Charing Cross Hospital</h5>

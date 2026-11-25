@@ -224,7 +224,7 @@ const D_EAST={line:'district',platform:'Eastbound (dirección este)',trains:'Sir
 const D_WEST={line:'district',platform:'Westbound (dirección oeste)',trains:'Coge SOLO el tren que ponga Richmond o Ealing Broadway. Los que ponen Wimbledon o Edgware Road NO van a Hammersmith.'};
 const D_HAM_WM=['Barons Court','West Kensington',"Earl's Court",'Gloucester Road','South Kensington','Sloane Square','Victoria',"St. James's Park",'Westminster'];
 const D_WM_HAM=["St. James's Park",'Victoria','Sloane Square','South Kensington','Gloucester Road',"Earl's Court",'West Kensington','Barons Court','Hammersmith'];
-const ENTER_HAM='Entra en la estación de Hammersmith de las líneas District y Piccadilly (la de Hammersmith Broadway, a 5 min del apartamento). No es la de la acera de enfrente (Hammersmith & City y Circle).';
+const ENTER_HAM='Entra en la estación de Hammersmith de las líneas District y Piccadilly (la de Hammersmith Broadway, a unos 10 min andando del apartamento). No es la de la acera de enfrente (Hammersmith & City y Circle).';
 const CH_WM_JUB='Sigue los carteles grises de la línea Jubilee. Son pasillos y escaleras mecánicas largas, unos 4–5 min, sin salir a la calle.';
 const CH_WM_DIS='Sigue los carteles verdes de la línea District, andén Westbound. Escaleras mecánicas y pasillos, unos 4–5 min, sin salir a la calle.';
 const ROUTES={
@@ -240,7 +240,7 @@ const ROUTES={
    {t:'ride',line:'jubilee',board:'Waterloo',platform:'Westbound (dirección Stanmore)',trains:'Cualquier tren que ponga Stanmore o Wembley Park.',alight:'Westminster',stops:['Westminster'],min:2},
    {t:'change',at:'Westminster',to:'district',x:CH_WM_DIS},
    Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
-   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 10 min andando, subiendo por Hammersmith Grove.'}]},
  d2i:{a:'Hammersmith',b:'London Bridge',min:'unos 32 min',changes:1,lines:['district','jubilee'],steps:[
    {t:'enter',x:ENTER_HAM},
    Object.assign({t:'ride',board:'Hammersmith',alight:'Westminster',stops:D_HAM_WM,min:17},D_EAST),
@@ -252,7 +252,7 @@ const ROUTES={
    {t:'ride',line:'jubilee',board:'London Bridge',platform:'Westbound (dirección Stanmore)',trains:'Cualquier tren que ponga Stanmore o Wembley Park.',alight:'Westminster',stops:['Southwark','Waterloo','Westminster'],min:5},
    {t:'change',at:'Westminster',to:'district',x:CH_WM_DIS},
    Object.assign({t:'ride',board:'Westminster',alight:'Hammersmith',stops:D_WM_HAM,min:17},D_WEST),
-   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 10 min andando, subiendo por Hammersmith Grove.'}]},
  d3i:{a:'Hammersmith',b:"St. James's Park",min:'unos 18 min',changes:0,lines:['district'],steps:[
    {t:'enter',x:ENTER_HAM},
    Object.assign({t:'ride',board:'Hammersmith',alight:"St. James's Park",stops:D_HAM_WM.slice(0,-1),min:16},D_EAST),
@@ -260,7 +260,7 @@ const ROUTES={
  d3v:{a:'Hyde Park Corner',b:'Hammersmith',min:'unos 15 min',changes:0,lines:['piccadilly'],steps:[
    {t:'enter',x:'Desde Winter Wonderland, sal del parque por Hyde Park Corner y entra en la estación de metro (los accesos están en los pasos subterráneos). Sigue los carteles azul oscuro de la línea Piccadilly.'},
    {t:'ride',line:'piccadilly',board:'Hyde Park Corner',platform:'Westbound (dirección oeste)',trains:'Cualquier tren de la Piccadilly en dirección Heathrow, Uxbridge o Rayners Lane.',alight:'Hammersmith',stops:['Knightsbridge','South Kensington','Gloucester Road',"Earl's Court",'Barons Court','Hammersmith'],min:12},
-   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]},
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 10 min andando, subiendo por Hammersmith Grove.'}]},
  d4i:{a:'Hammersmith',b:'Notting Hill Gate',min:'unos 18 min',changes:1,lines:['district','district'],steps:[
    {t:'enter',x:ENTER_HAM},
    Object.assign({t:'ride',board:'Hammersmith',alight:"Earl's Court",stops:['Barons Court','West Kensington',"Earl's Court"],min:6},D_EAST),
@@ -272,7 +272,7 @@ const ROUTES={
    {t:'ride',line:'district',board:'Notting Hill Gate',platform:'Hacia High Street Kensington / Earl\'s Court',trains:'Coge el tren de la District que ponga Wimbledon o Earl\'s Court (no el de la Circle).',alight:"Earl's Court",stops:['High Street Kensington',"Earl's Court"],min:4},
    {t:'change',at:"Earl's Court",to:'district',x:'Te quedas en la línea District pero cambias de tren: ve al andén Westbound.'},
    Object.assign({t:'ride',board:"Earl's Court",alight:'Hammersmith',stops:['West Kensington','Barons Court','Hammersmith'],min:6},D_WEST),
-   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 5 min andando.'}]}
+   {t:'exit',x:'Sal a Hammersmith Broadway; el apartamento está a unos 10 min andando, subiendo por Hammersmith Grove.'}]}
 };
 const LNAME={district:'District',jubilee:'Jubilee',piccadilly:'Piccadilly',circle:'Circle'};
 function renderFixed(r){
@@ -454,7 +454,7 @@ async function planPair(a,b){
 }
 function renderDays(){
   const today=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/London'});
-  $('#days').innerHTML='<p class="base">🏠 Salís de <b style="color:#f8fafc">Hammersmith</b> (líneas District y Piccadilly, a 5 min del apartamento).</p>'+
+  $('#days').innerHTML='<p class="base">🏠 Salís de <b style="color:#f8fafc">Hammersmith</b> (líneas District y Piccadilly, a unos 10 min andando del apartamento).</p>'+
   DAYS.map((d,i)=>'<div class="day'+(d.date===today?' today':'')+'"><div class="dh"><span class="dn" style="background:'+d.col+'">'+d.n+'</span><div class="dt">'+esc(d.label)+'<small>'+esc(d.zone)+'</small></div>'+(d.date===today?'<span class="hoy">HOY</span>':'')+'</div>'+
     '<div class="trip">Hammersmith → '+esc(d.to.name)+(d.back?'<br><small>'+esc(d.back)+'</small>':'')+'</div>'+
     '<div class="bt"><button type="button" class="btn ida" data-day="'+i+'" data-way="ida">Ida</button><button type="button" class="btn" data-day="'+i+'" data-way="vuelta">Vuelta</button></div>'+
