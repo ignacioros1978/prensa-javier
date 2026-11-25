@@ -2312,6 +2312,68 @@
             + '<button type="submit" class="tv-btn">Ver entradas</button></form>'
             + '<p class="en-err" role="alert">' + (err || '') + '</p></div>';
     }
+
+    // ── Reserva del alojamiento (datos sensibles cifrados con el mismo código que las entradas) ──
+    async function alojDecrypt(pin) {
+        let r; try { r = await fetch('entradas/aloj.json?v=' + Date.now().toString(36).slice(0, 5), { cache: 'no-store' }); } catch (e) { throw new Error('net'); }
+        if (!r.ok) throw new Error('net'); const B = await r.json();
+        const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pin), 'PBKDF2', false, ['deriveKey']);
+        const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(B.salt), iterations: B.it, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+        return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(B.iv) }, key, b64(B.ct))));
+    }
+    function alojPrivHtml(d) {
+        const L = (t, v) => '<div class="tv-leg"><span class="tv-t">' + t + '</span><span>' + v + '</span></div>';
+        return '<div class="tv-card"><h4>🔐 Datos de la reserva</h4>'
+            + L('🔢', '<b>Nº de confirmación:</b> <span style="font-size:20px;font-weight:800;letter-spacing:.5px">' + entEsc(d.conf) + '</span>')
+            + L('🔑', '<b>Código PIN de Booking:</b> <span style="font-size:20px;font-weight:800">' + entEsc(d.pin) + '</span>')
+            + L('👤', '<b>A nombre de:</b> ' + entEsc(d.titular))
+            + L('💶', '<b>Total:</b> ' + entEsc(d.total) + '<br>' + entEsc(d.apto) + ' · ' + entEsc(d.iva))
+            + L('🧾', entEsc(d.factura)) + '</div>';
+    }
+    async function alojUnlock(pin, box) {
+        try { const d = await alojDecrypt(pin); try { localStorage.setItem(ENT_KEY, pin); } catch (e) {} box.innerHTML = alojPrivHtml(d); }
+        catch (e) { box.innerHTML = alojLockHtml(e.message === 'net' ? 'Sin conexión. Inténtalo con internet.' : 'Código incorrecto.'); alojBind(box); }
+    }
+    function alojLockHtml(err) {
+        return '<div class="tv-card"><h4>🔐 Nº de confirmación, PIN y precio</h4><p style="margin:0 0 8px">Escribe el mismo código de 6 cifras que usas para las entradas.</p>'
+            + '<form class="aloj-f" autocomplete="off" style="display:flex;gap:8px"><input type="password" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••••" aria-label="Código de 6 cifras" style="flex:1;min-width:0;font-size:20px;padding:10px;border-radius:10px;border:2px solid #cbd5e1">'
+            + '<button type="submit" class="tv-btn" style="margin:0">Ver</button></form><p style="color:#b91c1c;font-weight:700;margin:6px 0 0">' + (err || '') + '</p></div>';
+    }
+    function alojBind(box) { const f = box.querySelector('.aloj-f'); if (f) f.onsubmit = e => { e.preventDefault(); const v = f.querySelector('input').value.trim(); if (v) alojUnlock(v, box); }; }
+    window.openAloj = function() {
+        const L = (t, v) => '<div class="tv-leg"><span class="tv-t">' + t + '</span><span>' + v + '</span></div>';
+        const apt = (n, who) => L('🛏️', '<b>Apartamento ' + n + ':</b> ' + who);
+        const html = '<div class="tv-card"><h4>🏠 Lamington Apartments · London Hammersmith</h4>'
+            + L('📍', '109 Hammersmith Grove, Hammersmith and Fulham, Londres W6 0NQ<br><a href="https://www.google.com/maps/dir/?api=1&destination=51.49802,-0.22766" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>')
+            + L('📞', 'Alojamiento: <a href="tel:+442087482645">+44 20 8748 2645</a><br>Fuera de horario: <a href="tel:+442039880220">020 3988 0220</a>')
+            + L('📅', '<b>Entrada:</b> viernes 4 de diciembre, de 16:00 a 21:00<br><b>Salida:</b> miércoles 9 de diciembre, de 09:00 a 11:00<br>5 noches · 4 apartamentos')
+            + L('🕔', 'Avisamos de que llegamos entre las 17:00 y las 18:00.') + '</div>'
+            + '<div id="aloj-priv"></div>'
+            + '<div class="tv-card"><h4>👨‍👩‍👧‍👦 Los 4 apartamentos (2 dormitorios cada uno)</h4>'
+            + '<p style="margin:0 0 6px">7 adultos y 9 niños en total. Ninguno incluye comidas.</p>'
+            + apt(1, '2 adultos y 2 niños (4 y 8 años)') + apt(2, '2 adultos y 2 niños (12 y 12 años)') + apt(3, '2 adultos y 2 niños (13 y 15 años)') + apt(4, '1 adulto y 3 niños (10, 11 y 12 años)')
+            + L('✅', 'Cada uno tiene baño privado, cocina con horno, placa, microondas, lavavajillas, nevera, hervidor y tostadora, lavadora, tendedero, plancha, secador de pelo, calefacción, TV, sofá y mesa de comedor, toallas, ropa de cama y artículos de aseo.')
+            + L('📶', 'Wi-Fi gratis. No hay parking.') + '</div>'
+            + '<div class="tv-card"><h4>🔑 Llegada y llaves</h4>'
+            + L('🏢', 'La oficina abre de <b>lunes a viernes de 09:00 a 18:00</b>. Hay check-in por tu cuenta: mandan las instrucciones antes de llegar.')
+            + L('🗝️', 'Las llaves se dan a partir de las <b>16:00</b>. Si llegáis antes, guardan el equipaje hasta que el apartamento esté listo.')
+            + L('💳', '<b>Depósito de £400</b> (unos 478 €) con tarjeta de crédito al llegar. Lo devuelven al salir, después de revisar el apartamento.')
+            + L('⚠️', 'Entrar fuera del horario de oficina tiene un <b>recargo de £50</b>. Cada uno es responsable de sus llaves.')
+            + L('🧳', '<b>No hay ascensor</b>: las plantas de arriba son solo por escaleras. En horario de oficina ayudan con las maletas.')
+            + L('👶', 'Los menores de 18 años tienen que ir con su padre, madre o tutor.') + '</div>'
+            + '<div class="tv-card"><h4>❌ Cancelación</h4>'
+            + L('📆', 'Gratis hasta 1 día antes de la llegada. Si se cancela el día antes o no os presentáis, cobran la primera noche.')
+            + L('ℹ️', 'Las camas supletorias y otros extras no están incluidos. Las fotos de Booking pueden no coincidir con vuestro apartamento.') + '</div>'
+            + '<div class="tv-card"><h4>🆘 Ayuda</h4>'
+            + L('📱', 'Gestionar la reserva: <a href="https://your.booking.com" target="_blank" rel="noopener">your.booking.com</a>')
+            + L('☎️', 'Booking 24 h en español: <a href="tel:+34912768614">+34 91 27 68 614</a><br>Desde Reino Unido: <a href="tel:+442033202609">+44 20 3320 2609</a>')
+            + L('🚨', 'Emergencias: <a href="tel:112">112</a> (también funciona el 999 en Reino Unido)') + '</div>';
+        openInfo('🏠 Reserva del alojamiento', html);
+        const box = document.getElementById('aloj-priv');
+        let pin = ''; try { pin = localStorage.getItem(ENT_KEY) || ''; } catch (e) {}
+        if (pin) { box.innerHTML = '<div class="tv-card"><h4>🔐 Cargando datos de la reserva…</h4></div>'; alojUnlock(pin, box); }
+        else { box.innerHTML = alojLockHtml(''); alojBind(box); }
+    };
     let ENT_SEL = 0;
     window.entPick = function(i) { ENT_SEL = i; entShow(); };
     function entListHtml() {
@@ -2659,7 +2721,7 @@
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
                 + (loc.dist ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#eff6ff;border:1px solid #bfdbfe;font-size:12px;color:#1e3a8a;line-height:1.4;"><b>🏠 Desde el apartamento:</b> ' + loc.dist + '</div>' : '')
                 + (loc.hours ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#fff7ed;border:1px solid #fed7aa;font-size:12px;color:#7c2d12;line-height:1.4;"><b>🕒 Horario:</b> ' + loc.hours + '</div>' : '')
-                + directionsBtn + (loc.plano ? '<button onclick="viewImg(\'' + loc.plano + '\')" style="width:100%;margin-top:6px;padding:8px 10px;background:#7c3aed;color:#fff;border:0;border-radius:8px;font-size:0.78rem;font-weight:700;cursor:pointer;">🗺️ Plano del centro comercial</button>' : '') + photosBtn + checkboxHtml
+                + directionsBtn + (loc.id === 'base' ? '<button onclick="openAloj()" style="width:100%;margin-top:6px;padding:9px 10px;background:#ea580c;color:#fff;border:0;border-radius:8px;font-size:0.82rem;font-weight:800;cursor:pointer;">🏠 Reserva del alojamiento</button>' : '') + (loc.plano ? '<button onclick="viewImg(\'' + loc.plano + '\')" style="width:100%;margin-top:6px;padding:8px 10px;background:#7c3aed;color:#fff;border:0;border-radius:8px;font-size:0.78rem;font-weight:700;cursor:pointer;">🗺️ Plano del centro comercial</button>' : '') + photosBtn + checkboxHtml
                 + '</div>';
 
             marker.bindPopup(infoContent, { maxWidth: 250, autoPanPaddingTopLeft: L.point(12, 70), autoPanPaddingBottomRight: L.point(12, 78) });
