@@ -1259,8 +1259,9 @@
             day: 'all',
             category: 'servicios',
             emoji: '🛒',
-            desc: 'El supermercado grande más cercano: unos 260 m en línea recta desde el apartamento (unos 4–5 min andando).',
+            desc: 'El supermercado grande más cercano al apartamento.',
             hours: 'Lun–sáb 8:00–22:00 · dom 10:00–16:00',
+            dist: '260 m en línea recta · unos 4–5 min andando',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Tesco_Express%2C_Salisbury_%281%29.jpg/640px-Tesco_Express%2C_Salisbury_%281%29.jpg'
         },
         {
@@ -1272,8 +1273,23 @@
             day: 'all',
             category: 'servicios',
             emoji: '🛒',
-            desc: 'Supermercado pequeño, el segundo más cercano: unos 510 m en línea recta (unos 7–8 min andando). Abre todos los días hasta las 23:00.',
+            desc: 'Supermercado pequeño, el segundo más cercano al apartamento. Abre todos los días hasta las 23:00.',
             hours: 'Todos los días 7:00–23:00',
+            dist: '510 m en línea recta · unos 7–8 min andando',
+            photo: ''
+        },
+        {
+            id: 'lidl_kings',
+            name: 'Lidl (Kings Mall)',
+            address: 'Kings Mall, King St, W6 9HW',
+            lat: 51.49325,
+            lng: -0.22791,
+            day: 'all',
+            category: 'servicios',
+            emoji: '🛒',
+            desc: 'Supermercado barato dentro del centro comercial Kings Mall, en King Street. El tercero más cercano al apartamento.',
+            hours: 'Lun–sáb 8:00–21:00 · dom 11:00–17:00',
+            dist: '530 m en línea recta · unos 7–8 min andando',
             photo: ''
         },
         {
@@ -2628,6 +2644,7 @@
                 + '<div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:4px;">' + loc.emoji + ' ' + loc.name + '</div>'
                 + '<div style="font-size:11px;color:#475569;margin-bottom:3px;">📍 ' + loc.address + '</div>'
                 + '<div style="font-size:11px;color:#334155;line-height:1.4;">' + loc.desc + '</div>'
+                + (loc.dist ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#eff6ff;border:1px solid #bfdbfe;font-size:12px;color:#1e3a8a;line-height:1.4;"><b>🏠 Desde el apartamento:</b> ' + loc.dist + '</div>' : '')
                 + (loc.hours ? '<div style="margin-top:6px;padding:6px 8px;border-radius:8px;background:#fff7ed;border:1px solid #fed7aa;font-size:12px;color:#7c2d12;line-height:1.4;"><b>🕒 Horario:</b> ' + loc.hours + '</div>' : '')
                 + directionsBtn + (loc.plano ? '<button onclick="viewImg(\'' + loc.plano + '\')" style="width:100%;margin-top:6px;padding:8px 10px;background:#7c3aed;color:#fff;border:0;border-radius:8px;font-size:0.78rem;font-weight:700;cursor:pointer;">🗺️ Plano del centro comercial</button>' : '') + photosBtn + checkboxHtml
                 + '</div>';
@@ -2708,7 +2725,7 @@
                         </div>
                         <div class="mini-card">
                             <h5>🛒 Supermercados más cercanos</h5>
-                            <p>Tesco Superstore (180 Shepherds Bush Rd): ~260 m. Sainsbury's Local (48–50 Shepherds Bush Rd): ~510 m. Distancias en línea recta.</p>
+                            <p>Tesco Superstore (180 Shepherds Bush Rd): ~260 m. Sainsbury's Local (48–50 Shepherds Bush Rd): ~510 m. Lidl (Kings Mall): ~530 m. Distancias en línea recta.</p>
                         </div>
                         <div class="mini-card">
                             <h5>🏬 Broadway Shopping Centre</h5>
