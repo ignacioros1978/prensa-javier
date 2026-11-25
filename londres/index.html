@@ -1240,15 +1240,28 @@
         // SERVICIOS Y METRO
         {
             id: 'metro_hammersmith',
-            name: 'Metro Hammersmith',
-            address: 'Hammersmith Station, W6 9LJ',
-            lat: 51.4925,
-            lng: -0.2224,
+            name: 'Metro Hammersmith (District y Piccadilly) ✅',
+            address: 'Dentro del Broadway Shopping Centre, Hammersmith Broadway',
+            lat: 51.49221,
+            lng: -0.22369,
             day: 'all',
             category: 'metro',
             emoji: '🚇',
-            desc: 'Estación principal de metro (District & Piccadilly lines).',
+            desc: 'LA ESTACIÓN QUE USAMOS TODOS LOS DÍAS. Líneas District (verde) y Piccadilly (azul oscuro). Se entra por el centro comercial Broadway: tiene dos entradas, una a cada lado del centro. A unos 10 min andando del apartamento.',
             photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Hammersmith_H&C_and_Circle_lines_station_building.JPG/640px-Hammersmith_H&C_and_Circle_lines_station_building.JPG'
+        },
+        {
+            id: 'metro_hammersmith_hc',
+            name: 'Metro Hammersmith (Circle y H&C) ❌ NO es la nuestra',
+            address: 'Beadon Road, W6 7AA (enfrente del centro comercial)',
+            lat: 51.49343,
+            lng: -0.22501,
+            day: 'all',
+            category: 'metro',
+            emoji: '🚇',
+            crossed: true,
+            desc: 'Es OTRA estación con el mismo nombre, a unos 150 m, al otro lado de la calle. Solo tiene las líneas Circle (amarilla) y Hammersmith & City (rosa), que no usamos en ninguna ruta del viaje. No entréis por aquí: id a la del centro comercial Broadway.',
+            photo: ''
         },
         {
             id: 'tesco',
@@ -2607,7 +2620,7 @@
             const isVisited = showNum && !!getVisited()[loc.id];
 
             const marker = L.marker([loc.lat, loc.lng], {
-                icon: makePinIcon(isVisited ? '#9ca3af' : color, label, showNum, pinImg(loc)),
+                icon: loc.crossed ? L.divIcon({ html: '<div style="position:relative;width:32px;height:32px;border-radius:50%;background:#9ca3af;border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;font:400 15px Arial,sans-serif;box-shadow:0 2px 5px rgba(0,0,0,.4);opacity:.85">' + loc.emoji + '<span style="position:absolute;left:-4px;right:-4px;top:50%;height:4px;margin-top:-2px;background:#dc2626;border-radius:2px;transform:rotate(-45deg);box-shadow:0 0 0 1.5px #fff"></span></div>', className: 'pin-icon', iconSize: [32, 32], iconAnchor: [16, 16], popupAnchor: [0, -16] }) : makePinIcon(isVisited ? '#9ca3af' : color, label, showNum, pinImg(loc)),
                 title: loc.name,
                 zIndexOffset: loc.id === 'base' ? 1000 : showNum ? 100 + loc.order : 0,
                 opacity: isVisited ? 0.55 : 1
